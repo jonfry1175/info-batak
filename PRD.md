@@ -30,11 +30,9 @@ This document contains the functional and technical specifications for the cultu
 - **Aesthetic:** Clean, modern, and highly readable.
 - **Main Color Palette:** Inspired by the Batak flag (Red, White, Black).
 - **Mandatory Feature: Dark Mode Toggle**
-
   - There must be a toggle button (in the header/navbar) to switch between Light and Dark Mode. User preference should be saved (e.g., in `localStorage`).
 
 - **Palette Implementation (Light Mode / Default):**
-
   - **Background:** Predominantly **White** (`#FFFFFF` or `#FEFEFE`).
   - **Main Text:** **Black** (`#212121`).
   - **Accent (Links, Buttons, Headings):** **Red** (A deep, Batak-style blood red).

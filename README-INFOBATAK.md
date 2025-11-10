@@ -5,27 +5,34 @@ Portal informasi digital yang menyajikan konten tentang sejarah, budaya, adat, a
 ## 🚀 Fitur Utama
 
 ### 1. **Halaman Aksara Batak** (`/budaya/aksara-batak`)
+
 Halaman edukatif yang menjelaskan:
+
 - Definisi dan sejarah Aksara Batak
 - Ina ni Surat (19 huruf induk)
 - Anak ni Surat (tanda diakritik)
 - Panduan membaca aksara dengan contoh
 
 ### 2. **Halaman Marga Interaktif** (`/marga`)
+
 Fitur pencarian marga dengan:
+
 - Filter untuk 6 rumpun: Toba, Karo, Simalungun, Pakpak, Angkola, Mandailing
 - Galeri kartu marga yang responsif
 - Animasi smooth dengan Framer Motion
 - 30+ data marga dari berbagai rumpun
 
 ### 3. **Komponen "Tahukah Kamu?"**
+
 Komponen reusable yang menampilkan fakta menarik:
+
 - Data dari `content/data/fakta.json` (12 fakta)
 - Ditampilkan di Homepage (random)
 - Di Sidebar halaman Sejarah
 - Dapat diembed di konten Markdown
 
 ### 4. **Dark Mode Toggle**
+
 - Tombol toggle di Navbar
 - Persisten dengan localStorage
 - Smooth transition
@@ -74,6 +81,7 @@ info-batak/
 ## 🎨 Desain & Tema
 
 ### Color Palette (Bendera Batak)
+
 - **Light Mode:**
   - Background: `#FEFEFE` (Putih)
   - Foreground: `#212121` (Hitam)
@@ -85,6 +93,7 @@ info-batak/
   - Accent: `#C1272D` (Merah Batak - konsisten)
 
 ### Typography
+
 - Primary Font: Geist Sans
 - Monospace Font: Geist Mono
 
@@ -100,35 +109,49 @@ info-batak/
 ## 📦 Installation & Development
 
 ### Prerequisites
+
 - Node.js 18+
-- npm atau yarn
+- pnpm (Package Manager)
 
 ### Install Dependencies
+
 ```bash
-npm install
+pnpm install
 ```
 
 ### Run Development Server
+
 ```bash
-npm run dev
+pnpm dev
 ```
+
 Buka [http://localhost:3000](http://localhost:3000)
 
 ### Build for Production (Static Export)
+
 ```bash
-npm run build
+pnpm build
 ```
 
 Output akan berada di folder `out/` sebagai static HTML yang siap di-deploy.
 
 ### Preview Production Build
+
 ```bash
-npx serve out
+pnpx serve out
+```
+
+### Code Quality
+
+```bash
+pnpm lint            # Run ESLint
+pnpm format          # Format code with Prettier
 ```
 
 ## 🚀 Deployment
 
 Karena website ini adalah static site, dapat di-deploy ke:
+
 - **Vercel** (Recommended)
 - **Netlify**
 - **GitHub Pages**
@@ -136,15 +159,18 @@ Karena website ini adalah static site, dapat di-deploy ke:
 - Any static hosting service
 
 ### Deploy ke Vercel
+
 ```bash
-npm install -g vercel
+pnpm add -g vercel
 vercel --prod
 ```
 
 ## 📝 Content Management
 
 ### Menambahkan Fakta Baru
+
 Edit `content/data/fakta.json`:
+
 ```json
 {
   "id": "13",
@@ -154,7 +180,9 @@ Edit `content/data/fakta.json`:
 ```
 
 ### Menambahkan Marga Baru
+
 Edit `content/data/marga.json`:
+
 ```json
 {
   "id": "31",
