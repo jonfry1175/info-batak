@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "teks": "Aksara Batak memiliki 19 huruf induk yang disebut 'Ina ni Surat' dan dilengkapi dengan tanda diakritik yang disebut 'Anak ni Surat'.",
+    "kategori": "Aksara"
+  },
+  {
+    "id": "2",
+    "teks": "Dalihan Na Tolu adalah filosofi sosial masyarakat Batak yang terdiri dari tiga pilar: Hula-hula (pihak pemberi istri), Dongan Tubu (sesama marga), dan Boru (pihak penerima istri).",
+    "kategori": "Budaya"
+  },
+  {
+    "id": "3",
+    "teks": "Pustaha adalah kitab kuno Batak yang ditulis di atas kulit kayu dengan menggunakan Aksara Batak, berisi ramalan, mantra, dan pengetahuan tradisional.",
+    "kategori": "Sejarah"
+  },
+  {
+    "id": "4",
+    "teks": "Terdapat 6 sub-etnis Batak: Toba, Karo, Simalungun, Pakpak, Angkola, dan Mandailing, masing-masing dengan bahasa dan adat istiadat yang unik.",
+    "kategori": "Budaya"
+  },
+  {
+    "id": "5",
+    "teks": "Tortor adalah tarian tradisional Batak yang dilakukan dalam berbagai upacara adat, dengan gerakan yang mengandung makna filosofis mendalam.",
+    "kategori": "Kesenian"
+  },
+  {
+    "id": "6",
+    "teks": "Gondang Sabangunan adalah ansambel musik tradisional Batak Toba yang terdiri dari beberapa jenis gendang dan instrumen tiup bernama Sarune.",
+    "kategori": "Kesenian"
+  },
+  {
+    "id": "7",
+    "teks": "Sistem marga dalam budaya Batak bersifat patrilineal, artinya marga diturunkan dari garis ayah ke anak laki-laki.",
+    "kategori": "Marga"
+  },
+  {
+    "id": "8",
+    "teks": "Ulos adalah kain tradisional Batak yang ditenun dengan tangan dan memiliki makna filosofis sebagai simbol kasih sayang dan kehangatan.",
+    "kategori": "Kesenian"
+  },
+  {
+    "id": "9",
+    "teks": "Rumah adat Batak Toba disebut 'Ruma Bolon' atau 'Jabu', memiliki atap berbentuk perahu terbalik yang melambangkan nenek moyang yang datang melalui laut.",
+    "kategori": "Budaya"
+  },
+  {
+    "id": "10",
+    "teks": "Tuak adalah minuman tradisional Batak yang terbuat dari fermentasi nira pohon aren, sering disajikan dalam acara adat.",
+    "kategori": "Kuliner"
+  },
+  {
+    "id": "11",
+    "teks": "Raja Sisingamangaraja XII adalah pahlawan nasional Indonesia dari Batak Toba yang melawan penjajahan Belanda di Tapanuli.",
+    "kategori": "Sejarah"
+  },
+  {
+    "id": "12",
+    "teks": "Bahasa Batak memiliki sistem sapaan yang kompleks berdasarkan hubungan kekerabatan dan marga, mencerminkan struktur sosial yang terorganisir.",
+    "kategori": "Bahasa"
+  }
+]

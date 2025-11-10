@@ -1,0 +1,182 @@
+[
+  {
+    "id": "1",
+    "nama": "Sitorus",
+    "rumpun": "Toba",
+    "deskripsi": "Salah satu marga besar di Batak Toba"
+  },
+  {
+    "id": "2",
+    "nama": "Siahaan",
+    "rumpun": "Toba",
+    "deskripsi": "Marga Batak Toba yang tersebar luas"
+  },
+  {
+    "id": "3",
+    "nama": "Simbolon",
+    "rumpun": "Toba",
+    "deskripsi": "Marga Toba dengan sejarah panjang"
+  },
+  {
+    "id": "4",
+    "nama": "Sinaga",
+    "rumpun": "Toba",
+    "deskripsi": "Marga Toba yang populer"
+  },
+  {
+    "id": "5",
+    "nama": "Hutabarat",
+    "rumpun": "Toba",
+    "deskripsi": "Marga Toba dari daerah Tapanuli"
+  },
+  {
+    "id": "6",
+    "nama": "Napitupulu",
+    "rumpun": "Toba",
+    "deskripsi": "Marga Toba yang terkenal"
+  },
+  {
+    "id": "7",
+    "nama": "Ginting",
+    "rumpun": "Karo",
+    "deskripsi": "Salah satu dari lima marga utama Karo (merga silima)"
+  },
+  {
+    "id": "8",
+    "nama": "Sembiring",
+    "rumpun": "Karo",
+    "deskripsi": "Marga Karo yang besar dan terhormat"
+  },
+  {
+    "id": "9",
+    "nama": "Tarigan",
+    "rumpun": "Karo",
+    "deskripsi": "Bagian dari merga silima Karo"
+  },
+  {
+    "id": "10",
+    "nama": "Karo-Karo",
+    "rumpun": "Karo",
+    "deskripsi": "Marga utama Karo"
+  },
+  {
+    "id": "11",
+    "nama": "Perangin-angin",
+    "rumpun": "Karo",
+    "deskripsi": "Salah satu merga silima Karo"
+  },
+  {
+    "id": "12",
+    "nama": "Saragih",
+    "rumpun": "Simalungun",
+    "deskripsi": "Marga Simalungun yang besar"
+  },
+  {
+    "id": "13",
+    "nama": "Purba",
+    "rumpun": "Simalungun",
+    "deskripsi": "Marga Simalungun yang populer"
+  },
+  {
+    "id": "14",
+    "nama": "Sinaga",
+    "rumpun": "Simalungun",
+    "deskripsi": "Marga Simalungun yang tersebar"
+  },
+  {
+    "id": "15",
+    "nama": "Damanik",
+    "rumpun": "Simalungun",
+    "deskripsi": "Marga besar Simalungun"
+  },
+  {
+    "id": "16",
+    "nama": "Simatupang",
+    "rumpun": "Simalungun",
+    "deskripsi": "Marga Simalungun yang terkenal"
+  },
+  {
+    "id": "17",
+    "nama": "Tumanggor",
+    "rumpun": "Pakpak",
+    "deskripsi": "Marga Pakpak yang besar"
+  },
+  {
+    "id": "18",
+    "nama": "Manik",
+    "rumpun": "Pakpak",
+    "deskripsi": "Marga utama Pakpak"
+  },
+  {
+    "id": "19",
+    "nama": "Banurea",
+    "rumpun": "Pakpak",
+    "deskripsi": "Marga Pakpak yang terkenal"
+  },
+  {
+    "id": "20",
+    "nama": "Bancin",
+    "rumpun": "Pakpak",
+    "deskripsi": "Marga Pakpak yang populer"
+  },
+  {
+    "id": "21",
+    "nama": "Nasution",
+    "rumpun": "Mandailing",
+    "deskripsi": "Marga besar Mandailing"
+  },
+  {
+    "id": "22",
+    "nama": "Lubis",
+    "rumpun": "Mandailing",
+    "deskripsi": "Marga Mandailing yang tersebar luas"
+  },
+  {
+    "id": "23",
+    "nama": "Rangkuti",
+    "rumpun": "Mandailing",
+    "deskripsi": "Marga Mandailing yang terkenal"
+  },
+  {
+    "id": "24",
+    "nama": "Daulay",
+    "rumpun": "Mandailing",
+    "deskripsi": "Marga Mandailing yang populer"
+  },
+  {
+    "id": "25",
+    "nama": "Hasibuan",
+    "rumpun": "Mandailing",
+    "deskripsi": "Marga besar Mandailing"
+  },
+  {
+    "id": "26",
+    "nama": "Harahap",
+    "rumpun": "Angkola",
+    "deskripsi": "Marga besar Angkola"
+  },
+  {
+    "id": "27",
+    "nama": "Siregar",
+    "rumpun": "Angkola",
+    "deskripsi": "Marga Angkola yang populer"
+  },
+  {
+    "id": "28",
+    "nama": "Rambe",
+    "rumpun": "Angkola",
+    "deskripsi": "Marga Angkola yang terkenal"
+  },
+  {
+    "id": "29",
+    "nama": "Batubara",
+    "rumpun": "Angkola",
+    "deskripsi": "Marga Angkola yang tersebar"
+  },
+  {
+    "id": "30",
+    "nama": "Pohan",
+    "rumpun": "Angkola",
+    "deskripsi": "Marga Angkola yang terkenal"
+  }
+]
