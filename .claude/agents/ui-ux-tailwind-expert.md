@@ -22,6 +22,7 @@ You are an elite UI/UX expert specializing in modern web interfaces built with T
 When working on the InfoBatak.id project, you MUST adhere to these specific requirements:
 
 **Theme System**: Use the next-themes based dark/light mode system with consistent color usage:
+
 - Light Mode: White background, black text, red (#C1272D) accent
 - Dark Mode: Black background, white text, red accent (consistent)
 - Accent color MUST remain #C1272D in both modes

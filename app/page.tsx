@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { TahukahKamu } from '@/components/ui/TahukahKamu';
+import { Button } from '@/components/ui/button';
 
 export default function Home() {
   return (
@@ -19,18 +20,12 @@ export default function Home() {
               aksara, dan sistem marga Batak kepada generasi muda dan masyarakat luas.
             </p>
             <div className="flex flex-col justify-center gap-4 sm:flex-row">
-              <Link
-                href="/sejarah"
-                className="bg-accent hover:bg-accent/90 rounded-lg px-8 py-3 font-semibold text-white transition-colors"
-              >
-                Jelajahi Sejarah
-              </Link>
-              <Link
-                href="/marga"
-                className="border-accent text-accent hover:bg-accent/10 rounded-lg border-2 px-8 py-3 font-semibold transition-colors"
-              >
-                Lihat Marga
-              </Link>
+              <Button asChild size="lg">
+                <Link href="/sejarah">Jelajahi Sejarah</Link>
+              </Button>
+              <Button asChild variant="outline" size="lg">
+                <Link href="/marga">Lihat Marga</Link>
+              </Button>
             </div>
           </div>
         </div>

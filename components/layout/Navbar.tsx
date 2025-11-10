@@ -3,7 +3,25 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { DarkModeToggle } from '@/components/ui/DarkModeToggle';
-import { useState } from 'react';
+import { Button } from '@/components/ui/button';
+import { Menu } from 'lucide-react';
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
+} from '@/components/ui/navigation-menu';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
+import { cn } from '@/lib/utils';
 
 const navLinks = [
   { href: '/', label: 'Beranda' },
@@ -23,7 +41,6 @@ const navLinks = [
 
 export function Navbar() {
   const pathname = usePathname();
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <nav className="bg-background/80 border-foreground/10 sticky top-0 z-50 border-b backdrop-blur-md">
@@ -35,115 +52,106 @@ export function Navbar() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden items-center space-x-6 md:flex">
-            {navLinks.map((link) =>
-              link.subLinks ? (
-                <div key={link.label} className="group relative">
-                  <button className="text-foreground/80 hover:text-accent font-medium transition-colors">
-                    {link.label}
-                  </button>
-                  <div className="bg-background border-foreground/10 invisible absolute left-0 mt-2 w-48 rounded-md border opacity-0 shadow-lg transition-all duration-200 group-hover:visible group-hover:opacity-100">
-                    {link.subLinks.map((subLink) => (
-                      <Link
-                        key={subLink.href}
-                        href={subLink.href}
-                        className={`hover:bg-accent/10 block px-4 py-2 text-sm transition-colors first:rounded-t-md last:rounded-b-md ${
-                          pathname === subLink.href
-                            ? 'text-accent font-medium'
-                            : 'text-foreground/80'
-                        }`}
+          <div className="hidden items-center space-x-2 md:flex">
+            <NavigationMenu>
+              <NavigationMenuList>
+                {navLinks.map((link) =>
+                  link.subLinks ? (
+                    <NavigationMenuItem key={link.label}>
+                      <NavigationMenuTrigger>{link.label}</NavigationMenuTrigger>
+                      <NavigationMenuContent>
+                        <ul className="grid w-[200px] gap-3 p-4">
+                          {link.subLinks.map((subLink) => (
+                            <li key={subLink.href}>
+                              <NavigationMenuLink asChild>
+                                <Link
+                                  href={subLink.href}
+                                  className={cn(
+                                    'hover:bg-accent/10 hover:text-accent focus:bg-accent/10 focus:text-accent block space-y-1 rounded-md p-3 leading-none no-underline transition-colors outline-none select-none',
+                                    pathname === subLink.href && 'text-accent font-medium'
+                                  )}
+                                >
+                                  <div className="text-sm leading-none font-medium">
+                                    {subLink.label}
+                                  </div>
+                                </Link>
+                              </NavigationMenuLink>
+                            </li>
+                          ))}
+                        </ul>
+                      </NavigationMenuContent>
+                    </NavigationMenuItem>
+                  ) : (
+                    <NavigationMenuItem key={link.href}>
+                      <NavigationMenuLink
+                        asChild
+                        className={cn(
+                          navigationMenuTriggerStyle,
+                          pathname === link.href && 'text-accent'
+                        )}
                       >
-                        {subLink.label}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              ) : (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className={`font-medium transition-colors ${
-                    pathname === link.href ? 'text-accent' : 'text-foreground/80 hover:text-accent'
-                  }`}
-                >
-                  {link.label}
-                </Link>
-              )
-            )}
+                        <Link href={link.href}>{link.label}</Link>
+                      </NavigationMenuLink>
+                    </NavigationMenuItem>
+                  )
+                )}
+              </NavigationMenuList>
+            </NavigationMenu>
             <DarkModeToggle />
           </div>
 
           {/* Mobile menu button */}
           <div className="flex items-center space-x-2 md:hidden">
             <DarkModeToggle />
-            <button
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="hover:bg-foreground/10 rounded-md p-2 transition-colors"
-              aria-label="Toggle mobile menu"
-            >
-              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                {mobileMenuOpen ? (
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                ) : (
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button variant="ghost" size="icon" aria-label="Toggle mobile menu">
+                  <Menu className="h-5 w-5" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end" className="w-[200px]">
+                {navLinks.map((link, index) =>
+                  link.subLinks ? (
+                    <div key={link.label}>
+                      <DropdownMenuItem disabled className="text-foreground/60 font-semibold">
+                        {link.label}
+                      </DropdownMenuItem>
+                      {link.subLinks.map((subLink) => (
+                        <DropdownMenuItem key={subLink.href} asChild>
+                          <Link
+                            href={subLink.href}
+                            className={cn(
+                              'pl-6',
+                              pathname === subLink.href && 'text-accent font-medium'
+                            )}
+                          >
+                            {subLink.label}
+                          </Link>
+                        </DropdownMenuItem>
+                      ))}
+                      {index < navLinks.length - 1 && <DropdownMenuSeparator />}
+                    </div>
+                  ) : (
+                    <div key={link.href}>
+                      <DropdownMenuItem asChild>
+                        <Link
+                          href={link.href}
+                          className={cn(pathname === link.href && 'text-accent font-medium')}
+                        >
+                          {link.label}
+                        </Link>
+                      </DropdownMenuItem>
+                      {index < navLinks.length - 1 && link.href === '/sejarah' && (
+                        <DropdownMenuSeparator />
+                      )}
+                    </div>
+                  )
                 )}
-              </svg>
-            </button>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
         </div>
       </div>
-
-      {/* Mobile menu */}
-      {mobileMenuOpen && (
-        <div className="border-foreground/10 bg-background border-t md:hidden">
-          <div className="space-y-1 px-4 py-2">
-            {navLinks.map((link) =>
-              link.subLinks ? (
-                <div key={link.label} className="space-y-1">
-                  <div className="text-foreground/60 py-2 font-medium">{link.label}</div>
-                  {link.subLinks.map((subLink) => (
-                    <Link
-                      key={subLink.href}
-                      href={subLink.href}
-                      onClick={() => setMobileMenuOpen(false)}
-                      className={`block py-2 pl-4 transition-colors ${
-                        pathname === subLink.href
-                          ? 'text-accent font-medium'
-                          : 'text-foreground/80 hover:text-accent'
-                      }`}
-                    >
-                      {subLink.label}
-                    </Link>
-                  ))}
-                </div>
-              ) : (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  onClick={() => setMobileMenuOpen(false)}
-                  className={`block py-2 transition-colors ${
-                    pathname === link.href
-                      ? 'text-accent font-medium'
-                      : 'text-foreground/80 hover:text-accent'
-                  }`}
-                >
-                  {link.label}
-                </Link>
-              )
-            )}
-          </div>
-        </div>
-      )}
     </nav>
   );
 }
