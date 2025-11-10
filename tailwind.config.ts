@@ -1,7 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  darkMode: ["class"],
+  darkMode: "class",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -57,8 +57,8 @@ const config: Config = {
         sm: "calc(0.5rem - 4px)",
       },
       fontFamily: {
-        sans: ["var(--font-geist-sans)", "Arial", "Helvetica", "sans-serif"],
-        mono: ["var(--font-geist-mono)", "monospace"],
+        sans: ["Arial", "Helvetica", "sans-serif"],
+        mono: ["monospace"],
       },
       keyframes: {
         "accordion-down": {
