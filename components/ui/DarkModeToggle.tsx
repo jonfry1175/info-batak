@@ -13,15 +13,13 @@ export function DarkModeToggle() {
   }, []);
 
   if (!mounted) {
-    return (
-      <div className="h-9 w-9 rounded-md bg-foreground/10 animate-pulse" />
-    );
+    return <div className="bg-foreground/10 h-9 w-9 animate-pulse rounded-md" />;
   }
 
   return (
     <button
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-      className="h-9 w-9 rounded-md bg-foreground/10 hover:bg-foreground/20 transition-colors flex items-center justify-center"
+      className="bg-foreground/10 hover:bg-foreground/20 flex h-9 w-9 items-center justify-center rounded-md transition-colors"
       aria-label="Toggle dark mode"
     >
       {theme === 'dark' ? (
@@ -31,7 +29,7 @@ export function DarkModeToggle() {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-5 h-5"
+          className="h-5 w-5"
         >
           <path
             strokeLinecap="round"
@@ -46,7 +44,7 @@ export function DarkModeToggle() {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-5 h-5"
+          className="h-5 w-5"
         >
           <path
             strokeLinecap="round"

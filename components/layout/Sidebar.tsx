@@ -7,10 +7,10 @@ export function Sidebar() {
       <TahukahKamu />
 
       {/* Optional: Popular Articles */}
-      <div className="bg-foreground/5 rounded-lg p-6 border border-foreground/10">
-        <h3 className="font-bold text-lg mb-4">Artikel Populer</h3>
+      <div className="bg-foreground/5 border-foreground/10 rounded-lg border p-6">
+        <h3 className="mb-4 text-lg font-bold">Artikel Populer</h3>
         <div className="space-y-3">
-          <p className="text-sm text-foreground/60">Segera hadir...</p>
+          <p className="text-foreground/60 text-sm">Segera hadir...</p>
         </div>
       </div>
     </aside>

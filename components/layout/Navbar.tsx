@@ -26,28 +26,28 @@ export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-foreground/10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+    <nav className="bg-background/80 border-foreground/10 sticky top-0 z-50 border-b backdrop-blur-md">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <span className="text-xl font-bold text-accent">InfoBatak.id</span>
+            <span className="text-accent text-xl font-bold">InfoBatak.id</span>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-6">
+          <div className="hidden items-center space-x-6 md:flex">
             {navLinks.map((link) =>
               link.subLinks ? (
-                <div key={link.label} className="relative group">
-                  <button className="text-foreground/80 hover:text-accent transition-colors font-medium">
+                <div key={link.label} className="group relative">
+                  <button className="text-foreground/80 hover:text-accent font-medium transition-colors">
                     {link.label}
                   </button>
-                  <div className="absolute left-0 mt-2 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 bg-background border border-foreground/10 rounded-md shadow-lg">
+                  <div className="bg-background border-foreground/10 invisible absolute left-0 mt-2 w-48 rounded-md border opacity-0 shadow-lg transition-all duration-200 group-hover:visible group-hover:opacity-100">
                     {link.subLinks.map((subLink) => (
                       <Link
                         key={subLink.href}
                         href={subLink.href}
-                        className={`block px-4 py-2 text-sm hover:bg-accent/10 transition-colors first:rounded-t-md last:rounded-b-md ${
+                        className={`hover:bg-accent/10 block px-4 py-2 text-sm transition-colors first:rounded-t-md last:rounded-b-md ${
                           pathname === subLink.href
                             ? 'text-accent font-medium'
                             : 'text-foreground/80'
@@ -62,10 +62,8 @@ export function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`transition-colors font-medium ${
-                    pathname === link.href
-                      ? 'text-accent'
-                      : 'text-foreground/80 hover:text-accent'
+                  className={`font-medium transition-colors ${
+                    pathname === link.href ? 'text-accent' : 'text-foreground/80 hover:text-accent'
                   }`}
                 >
                   {link.label}
@@ -76,19 +74,14 @@ export function Navbar() {
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden flex items-center space-x-2">
+          <div className="flex items-center space-x-2 md:hidden">
             <DarkModeToggle />
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 rounded-md hover:bg-foreground/10 transition-colors"
+              className="hover:bg-foreground/10 rounded-md p-2 transition-colors"
               aria-label="Toggle mobile menu"
             >
-              <svg
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
+              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 {mobileMenuOpen ? (
                   <path
                     strokeLinecap="round"
@@ -112,14 +105,12 @@ export function Navbar() {
 
       {/* Mobile menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden border-t border-foreground/10 bg-background">
-          <div className="px-4 py-2 space-y-1">
+        <div className="border-foreground/10 bg-background border-t md:hidden">
+          <div className="space-y-1 px-4 py-2">
             {navLinks.map((link) =>
               link.subLinks ? (
                 <div key={link.label} className="space-y-1">
-                  <div className="py-2 font-medium text-foreground/60">
-                    {link.label}
-                  </div>
+                  <div className="text-foreground/60 py-2 font-medium">{link.label}</div>
                   {link.subLinks.map((subLink) => (
                     <Link
                       key={subLink.href}

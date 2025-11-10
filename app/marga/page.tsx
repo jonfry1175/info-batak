@@ -17,14 +17,14 @@ export default function MargaPage() {
       : allMarga.filter((marga) => marga.rumpun === selectedRumpun);
 
   return (
-    <div className="w-full py-12 px-4">
-      <div className="max-w-7xl mx-auto">
+    <div className="w-full px-4 py-12">
+      <div className="mx-auto max-w-7xl">
         {/* Header */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-accent">Sistem Marga Batak</h1>
-          <p className="text-lg text-foreground/70 max-w-3xl mx-auto">
-            Jelajahi sistem kekeluargaan Batak yang diwariskan secara patrilineal dari garis ayah
-            ke anak laki-laki. Pilih rumpun untuk melihat marga-marga yang termasuk di dalamnya.
+        <div className="mb-12 text-center">
+          <h1 className="text-accent mb-4 text-4xl font-bold md:text-5xl">Sistem Marga Batak</h1>
+          <p className="text-foreground/70 mx-auto max-w-3xl text-lg">
+            Jelajahi sistem kekeluargaan Batak yang diwariskan secara patrilineal dari garis ayah ke
+            anak laki-laki. Pilih rumpun untuk melihat marga-marga yang termasuk di dalamnya.
           </p>
         </div>
 
@@ -33,7 +33,7 @@ export default function MargaPage() {
           <div className="flex flex-wrap justify-center gap-3">
             <button
               onClick={() => setSelectedRumpun('Semua')}
-              className={`px-6 py-3 rounded-lg font-semibold transition-all ${
+              className={`rounded-lg px-6 py-3 font-semibold transition-all ${
                 selectedRumpun === 'Semua'
                   ? 'bg-accent text-white shadow-lg'
                   : 'bg-foreground/5 hover:bg-foreground/10 text-foreground/70'
@@ -45,7 +45,7 @@ export default function MargaPage() {
               <button
                 key={rumpun}
                 onClick={() => setSelectedRumpun(rumpun)}
-                className={`px-6 py-3 rounded-lg font-semibold transition-all ${
+                className={`rounded-lg px-6 py-3 font-semibold transition-all ${
                   selectedRumpun === rumpun
                     ? 'bg-accent text-white shadow-lg'
                     : 'bg-foreground/5 hover:bg-foreground/10 text-foreground/70'
@@ -58,18 +58,23 @@ export default function MargaPage() {
         </div>
 
         {/* Marga Count */}
-        <div className="text-center mb-8">
+        <div className="mb-8 text-center">
           <p className="text-foreground/60">
-            Menampilkan <span className="font-bold text-accent">{filteredMarga.length}</span>{' '}
-            marga
+            Menampilkan <span className="text-accent font-bold">{filteredMarga.length}</span> marga
             {selectedRumpun !== 'Semua' && (
-              <span> dari rumpun <span className="font-bold">{selectedRumpun}</span></span>
+              <span>
+                {' '}
+                dari rumpun <span className="font-bold">{selectedRumpun}</span>
+              </span>
             )}
           </p>
         </div>
 
         {/* Marga Gallery Grid */}
-        <motion.div layout className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <motion.div
+          layout
+          className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+        >
           <AnimatePresence mode="popLayout">
             {filteredMarga.map((marga) => (
               <motion.div
@@ -79,21 +84,21 @@ export default function MargaPage() {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.8 }}
                 transition={{ duration: 0.3 }}
-                className="group p-6 rounded-lg border border-foreground/10 bg-foreground/5 hover:border-accent/50 hover:shadow-lg transition-all cursor-pointer"
+                className="group border-foreground/10 bg-foreground/5 hover:border-accent/50 cursor-pointer rounded-lg border p-6 transition-all hover:shadow-lg"
               >
-                <div className="flex items-start justify-between mb-3">
-                  <h3 className="text-xl font-bold group-hover:text-accent transition-colors">
+                <div className="mb-3 flex items-start justify-between">
+                  <h3 className="group-hover:text-accent text-xl font-bold transition-colors">
                     {marga.nama}
                   </h3>
                   <span className="text-2xl">👤</span>
                 </div>
                 <div className="space-y-2">
                   <p className="text-sm">
-                    <span className="font-medium text-foreground/60">Rumpun:</span>{' '}
-                    <span className="font-semibold text-accent">{marga.rumpun}</span>
+                    <span className="text-foreground/60 font-medium">Rumpun:</span>{' '}
+                    <span className="text-accent font-semibold">{marga.rumpun}</span>
                   </p>
                   {marga.deskripsi && (
-                    <p className="text-sm text-foreground/70">{marga.deskripsi}</p>
+                    <p className="text-foreground/70 text-sm">{marga.deskripsi}</p>
                   )}
                 </div>
               </motion.div>
@@ -102,9 +107,9 @@ export default function MargaPage() {
         </motion.div>
 
         {/* Info Section */}
-        <div className="mt-16 p-8 bg-accent/10 border-l-4 border-accent rounded-lg">
-          <h2 className="text-2xl font-bold mb-4 text-accent">Tentang Sistem Marga</h2>
-          <div className="space-y-3 text-foreground/80">
+        <div className="bg-accent/10 border-accent mt-16 rounded-lg border-l-4 p-8">
+          <h2 className="text-accent mb-4 text-2xl font-bold">Tentang Sistem Marga</h2>
+          <div className="text-foreground/80 space-y-3">
             <p>
               Sistem marga dalam budaya Batak adalah sistem kekerabatan patrilineal yang sangat
               penting dalam struktur sosial masyarakat Batak. Marga diturunkan dari garis ayah ke

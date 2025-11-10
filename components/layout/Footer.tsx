@@ -4,21 +4,21 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-foreground/5 border-t border-foreground/10 mt-auto">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+    <footer className="bg-foreground/5 border-foreground/10 mt-auto border-t">
+      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           {/* About */}
           <div className="col-span-1 md:col-span-2">
-            <h3 className="text-lg font-bold text-accent mb-3">InfoBatak.id</h3>
-            <p className="text-foreground/70 text-sm mb-4">
-              Portal informasi digital yang menyajikan konten tentang sejarah, budaya, adat,
-              aksara, dan sistem marga Batak secara modern dan informatif.
+            <h3 className="text-accent mb-3 text-lg font-bold">InfoBatak.id</h3>
+            <p className="text-foreground/70 mb-4 text-sm">
+              Portal informasi digital yang menyajikan konten tentang sejarah, budaya, adat, aksara,
+              dan sistem marga Batak secara modern dan informatif.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-semibold mb-3">Navigasi</h4>
+            <h4 className="mb-3 font-semibold">Navigasi</h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link href="/" className="text-foreground/70 hover:text-accent transition-colors">
@@ -26,17 +26,26 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/sejarah" className="text-foreground/70 hover:text-accent transition-colors">
+                <Link
+                  href="/sejarah"
+                  className="text-foreground/70 hover:text-accent transition-colors"
+                >
                   Sejarah
                 </Link>
               </li>
               <li>
-                <Link href="/marga" className="text-foreground/70 hover:text-accent transition-colors">
+                <Link
+                  href="/marga"
+                  className="text-foreground/70 hover:text-accent transition-colors"
+                >
                   Marga
                 </Link>
               </li>
               <li>
-                <Link href="/berita" className="text-foreground/70 hover:text-accent transition-colors">
+                <Link
+                  href="/berita"
+                  className="text-foreground/70 hover:text-accent transition-colors"
+                >
                   Berita
                 </Link>
               </li>
@@ -45,7 +54,7 @@ export function Footer() {
 
           {/* Budaya Links */}
           <div>
-            <h4 className="font-semibold mb-3">Budaya</h4>
+            <h4 className="mb-3 font-semibold">Budaya</h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
@@ -83,7 +92,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 pt-8 border-t border-foreground/10 text-center text-sm text-foreground/60">
+        <div className="border-foreground/10 text-foreground/60 mt-8 border-t pt-8 text-center text-sm">
           <p>&copy; {currentYear} InfoBatak.id. Semua hak dilindungi.</p>
         </div>
       </div>

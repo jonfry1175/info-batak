@@ -13,19 +13,19 @@ export function TahukahKamu() {
 
   if (!fakta) {
     return (
-      <div className="bg-accent/10 border-l-4 border-accent rounded-lg p-6 animate-pulse">
-        <div className="h-6 bg-accent/20 rounded w-3/4 mb-3"></div>
-        <div className="h-4 bg-accent/20 rounded w-full mb-2"></div>
-        <div className="h-4 bg-accent/20 rounded w-5/6"></div>
+      <div className="bg-accent/10 border-accent animate-pulse rounded-lg border-l-4 p-6">
+        <div className="bg-accent/20 mb-3 h-6 w-3/4 rounded"></div>
+        <div className="bg-accent/20 mb-2 h-4 w-full rounded"></div>
+        <div className="bg-accent/20 h-4 w-5/6 rounded"></div>
       </div>
     );
   }
 
   return (
-    <div className="bg-accent/10 border-l-4 border-accent rounded-lg p-6 transition-all hover:shadow-md">
+    <div className="bg-accent/10 border-accent rounded-lg border-l-4 p-6 transition-all hover:shadow-md">
       <div className="flex items-start space-x-3">
         <svg
-          className="w-6 h-6 text-accent flex-shrink-0 mt-0.5"
+          className="text-accent mt-0.5 h-6 w-6 flex-shrink-0"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -38,10 +38,10 @@ export function TahukahKamu() {
           />
         </svg>
         <div>
-          <h3 className="font-bold text-accent mb-2">Tahukah Kamu?</h3>
-          <p className="text-sm text-foreground/80 leading-relaxed">{fakta.teks}</p>
+          <h3 className="text-accent mb-2 font-bold">Tahukah Kamu?</h3>
+          <p className="text-foreground/80 text-sm leading-relaxed">{fakta.teks}</p>
           {fakta.kategori && (
-            <span className="inline-block mt-3 text-xs px-2 py-1 bg-accent/20 text-accent rounded">
+            <span className="bg-accent/20 text-accent mt-3 inline-block rounded px-2 py-1 text-xs">
               {fakta.kategori}
             </span>
           )}
