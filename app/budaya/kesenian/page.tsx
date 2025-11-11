@@ -1,4 +1,12 @@
+import { Gallery } from '@/components/ui/Gallery';
+import { getImagesByCategory } from '@/lib/data';
+
 export default function KesenianPage() {
+  // Get images for galleries
+  const gondangImages = getImagesByCategory('Budaya', 'Gondang');
+  const tortorImages = getImagesByCategory('Budaya', 'Tortor');
+  const ulosImages = getImagesByCategory('Budaya', 'Ulos');
+
   return (
     <div className="w-full px-4 py-12">
       <div className="mx-auto max-w-5xl">
@@ -79,6 +87,22 @@ export default function KesenianPage() {
           </div>
         </section>
 
+        {/* Gondang Gallery */}
+        {gondangImages.length > 0 && (
+          <section className="mb-16">
+            <h2 className="mb-6 text-3xl font-bold">Galeri Instrumen Gondang</h2>
+            <p className="text-foreground/70 mb-6 leading-relaxed">
+              Koleksi foto instrumen musik tradisional Gondang Sabangunan, dari taganing hingga sarune.
+            </p>
+            <Gallery
+              images={gondangImages}
+              columns={3}
+              aspectRatio="square"
+              showCredits={true}
+            />
+          </section>
+        )}
+
         {/* Tarian Tradisional */}
         <section className="mb-16">
           <h2 className="mb-6 text-3xl font-bold">Tarian Tradisional</h2>
@@ -127,6 +151,22 @@ export default function KesenianPage() {
           </div>
         </section>
 
+        {/* Tortor Gallery */}
+        {tortorImages.length > 0 && (
+          <section className="mb-16">
+            <h2 className="mb-6 text-3xl font-bold">Galeri Gerakan Tortor</h2>
+            <p className="text-foreground/70 mb-6 leading-relaxed">
+              Dokumentasi visual dari berbagai gerakan tarian Tortor dalam upacara adat Batak.
+            </p>
+            <Gallery
+              images={tortorImages}
+              columns={4}
+              aspectRatio="portrait"
+              showCredits={true}
+            />
+          </section>
+        )}
+
         {/* Kerajinan */}
         <section className="mb-16">
           <h2 className="mb-6 text-3xl font-bold">Kerajinan Tradisional</h2>
@@ -172,6 +212,22 @@ export default function KesenianPage() {
             </div>
           </div>
         </section>
+
+        {/* Ulos Patterns Gallery */}
+        {ulosImages.length > 0 && (
+          <section className="mb-16">
+            <h2 className="mb-6 text-3xl font-bold">Galeri Motif Ulos</h2>
+            <p className="text-foreground/70 mb-6 leading-relaxed">
+              Detail close-up dari berbagai motif dan pola tenun ulos tradisional Batak yang indah dan sarat makna.
+            </p>
+            <Gallery
+              images={ulosImages}
+              columns={4}
+              aspectRatio="square"
+              showCredits={true}
+            />
+          </section>
+        )}
 
         {/* Sastra Lisan */}
         <section className="mb-16">

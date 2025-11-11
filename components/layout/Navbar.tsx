@@ -29,9 +29,14 @@ const navLinks = [
   {
     label: 'Budaya',
     subLinks: [
+      { href: '/budaya', label: 'Semua Kategori' },
       { href: '/budaya/adat-istiadat', label: 'Adat Istiadat' },
       { href: '/budaya/kesenian', label: 'Kesenian' },
       { href: '/budaya/aksara-batak', label: 'Aksara Batak' },
+      { href: '/budaya/arsitektur', label: 'Arsitektur' },
+      { href: '/budaya/kuliner', label: 'Kuliner' },
+      { href: '/budaya/pakaian-adat', label: 'Pakaian Adat' },
+      { href: '/budaya/bahasa', label: 'Bahasa' },
     ],
   },
   { href: '/marga', label: 'Marga' },

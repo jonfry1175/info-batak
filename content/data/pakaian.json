@@ -1,0 +1,347 @@
+{
+  "mensAttire": {
+    "description": "Pakaian adat pria Batak menunjukkan status sosial dan identitas kultural dengan berbagai komponen yang sarat makna.",
+    "components": [
+      {
+        "id": "ulos-sadum",
+        "name": "Ulos Sadum",
+        "type": "shoulder_cloth",
+        "description": "Kain ulos yang diselempangkan di bahu kanan, melintang ke pinggang kiri. Merupakan simbol identitas dan status.",
+        "usage": "Dipakai dalam acara adat dan upacara formal",
+        "symbolism": "Melambangkan kehormatan dan tanggung jawab sebagai laki-laki Batak",
+        "colors": ["Merah", "Hitam", "Putih", "Emas (untuk raja/tokoh tinggi)"],
+        "image": "/images/budaya/pakaian/ulos-sadum.jpg"
+      },
+      {
+        "id": "ampe-ampe",
+        "name": "Ampe-ampe",
+        "type": "headcloth",
+        "description": "Tutup kepala tradisional yang terbuat dari kain, dililitkan membentuk sorban atau dipakai seperti ikat kepala.",
+        "variations": [
+          {
+            "style": "Bulang",
+            "description": "Berbentuk sorban, dipakai oleh raja dan bangsawan"
+          },
+          {
+            "style": "Suri-suri",
+            "description": "Dipakai tegak di kepala, untuk acara sakral"
+          }
+        ],
+        "symbolism": "Tanda kedewasaan dan kebijaksanaan",
+        "image": "/images/budaya/pakaian/ampe-ampe.jpg"
+      },
+      {
+        "id": "baju-kurung",
+        "name": "Baju Kurung/Baju Khas",
+        "type": "shirt",
+        "description": "Baju lengan panjang dengan kerah tegak, biasanya berwarna hitam atau putih.",
+        "material": "Kain katun atau sutra",
+        "design": "Lengan panjang, kancing depan, kerah shanghai",
+        "colors": ["Hitam (formal)", "Putih (sakral)", "Merah (perayaan)"],
+        "image": "/images/budaya/pakaian/baju-kurung-pria.jpg"
+      },
+      {
+        "id": "celana-panjang",
+        "name": "Celana Panjang Tradisional",
+        "type": "pants",
+        "description": "Celana panjang berwarna gelap (hitam atau cokelat tua) dengan potongan lurus.",
+        "material": "Kain katun tebal",
+        "image": "/images/budaya/pakaian/celana-panjang.jpg"
+      },
+      {
+        "id": "piso-gaja-dompak",
+        "name": "Piso Gaja Dompak",
+        "type": "weapon_accessory",
+        "description": "Golok tradisional Batak dengan sarung ukiran khas. Bukan hanya senjata, tapi simbol keperkasaan dan status.",
+        "symbolism": "Simbol kejantanan, keberanian, dan kemampuan melindungi keluarga",
+        "usage": "Diselipkan di pinggang saat acara adat formal",
+        "design": "Sarung kayu dengan ukiran Gorga, gagang tanduk kerbau atau kayu",
+        "image": "/images/budaya/pakaian/piso-gaja-dompak.jpg"
+      },
+      {
+        "id": "tungkot-malehat",
+        "name": "Tungkot Malehat",
+        "type": "staff",
+        "description": "Tongkat kebesaran dengan ukiran rumit, simbol kepemimpinan dan kebijaksanaan.",
+        "usage": "Dibawa oleh raja, datu (dukun), atau tokoh adat",
+        "symbolism": "Kekuasaan, otoritas spiritual, kebijaksanaan",
+        "design": "Kayu keras dengan ukiran Singa-singa atau motif sakral",
+        "image": "/images/budaya/pakaian/tungkot-malehat.jpg"
+      }
+    ],
+    "completeOutfit": {
+      "formal": ["Baju kurung hitam", "Celana hitam", "Ulos sadum", "Ampe-ampe bulang", "Piso gaja dompak"],
+      "ceremonial": ["Baju kurung putih", "Celana hitam", "Ulos adat", "Ampe-ampe suri-suri", "Tungkot malehat (untuk pemimpin)"],
+      "casual": ["Baju khas", "Celana", "Ulos diselempang"]
+    }
+  },
+  "womensAttire": {
+    "description": "Pakaian adat wanita Batak sangat elegan dengan dominasi kain ulos yang ditenun dengan motif khas.",
+    "components": [
+      {
+        "id": "kebaya",
+        "name": "Kebaya",
+        "type": "blouse",
+        "description": "Blus lengan panjang dengan kancing depan atau samping, biasanya berwarna cerah atau putih.",
+        "material": "Brokat, sutra, atau kain halus",
+        "colors": ["Putih", "Merah", "Emas", "Hitam (untuk duka)"],
+        "design": "Lengan panjang, pas badan, dipadukan dengan ulos",
+        "image": "/images/budaya/pakaian/kebaya.jpg"
+      },
+      {
+        "id": "ulos-ragi-hotang",
+        "name": "Ulos Ragi Hotang (Kain Sarung)",
+        "type": "skirt_cloth",
+        "description": "Kain ulos yang dililitkan sebagai rok, motif Ragi Hotang adalah yang paling sakral.",
+        "usage": "Rok tradisional untuk wanita dalam acara adat",
+        "symbolism": "Kesucian, kehormatan, kesuburan",
+        "wearingMethod": "Dililitkan dari pinggang hingga mata kaki",
+        "motifs": ["Ragi Hotang (paling sakral)", "Sibolang", "Tumtuman"],
+        "image": "/images/budaya/pakaian/ulos-ragi-hotang.jpg"
+      },
+      {
+        "id": "ulos-pintu-ragi",
+        "name": "Ulos Pintu Ragi (Selendang)",
+        "type": "shoulder_cloth",
+        "description": "Selendang ulos yang diselempangkan di bahu atau dipakai menutupi kepala.",
+        "usage": "Pelengkap pakaian adat, simbol kehangatan dan kasih sayang",
+        "symbolism": "Berkat, perlindungan, kasih sayang dari keluarga",
+        "wearingMethod": "Diselempangkan di bahu kanan atau di kedua bahu",
+        "image": "/images/budaya/pakaian/ulos-pintu-ragi.jpg"
+      },
+      {
+        "id": "hiasan-kepala",
+        "name": "Hiasan Kepala (Sunting)",
+        "type": "headpiece",
+        "description": "Mahkota atau hiasan kepala tradisional, terutama untuk pengantin.",
+        "types": [
+          {
+            "name": "Bulang-bulang",
+            "description": "Mahkota berbentuk bulan sabit untuk pengantin",
+            "material": "Emas atau kuningan dengan hiasan permata"
+          },
+          {
+            "name": "Bintang Maratur",
+            "description": "Hiasan kepala berbentuk bintang untuk acara formal"
+          }
+        ],
+        "usage": "Dipakai dalam acara pernikahan atau upacara besar",
+        "image": "/images/budaya/pakaian/sunting.jpg"
+      },
+      {
+        "id": "perhiasan",
+        "name": "Perhiasan Tradisional",
+        "type": "jewelry",
+        "description": "Berbagai perhiasan emas atau perak yang menunjukkan status sosial.",
+        "items": [
+          {
+            "name": "Giwang (Anting)",
+            "description": "Anting-anting besar berbentuk bulan atau geometris"
+          },
+          {
+            "name": "Rantai Leher",
+            "description": "Kalung emas dengan liontin khas Batak"
+          },
+          {
+            "name": "Gelang Tangan",
+            "description": "Gelang emas atau perak dengan motif ukiran"
+          }
+        ],
+        "symbolism": "Kemakmuran keluarga dan status sosial",
+        "image": "/images/budaya/pakaian/perhiasan.jpg"
+      }
+    ],
+    "completeOutfit": {
+      "bridal": ["Kebaya emas/merah", "Ulos Ragi Hotang", "Ulos Pintu Ragi", "Bulang-bulang (mahkota)", "Set perhiasan lengkap"],
+      "formal": ["Kebaya putih/warna", "Ulos sebagai rok", "Ulos selendang", "Perhiasan"],
+      "ceremonial": ["Kebaya", "Ulos lengkap", "Hiasan kepala", "Perhiasan adat"]
+    }
+  },
+  "ulosSignificance": {
+    "description": "Ulos adalah lebih dari sekadar kain, ia adalah simbol budaya Batak yang paling sakral dan bermakna filosofis mendalam.",
+    "philosophy": "Ulos berarti 'memberi kehangatan'. Dalam filosofi Batak, ulos adalah simbol cinta, berkat, dan perlindungan dari keluarga.",
+    "types": [
+      {
+        "name": "Ulos Ragi Hotang",
+        "status": "Paling sakral",
+        "usage": "Pengantin, upacara besar, pemberian kepada orang tua/hula-hula",
+        "meaning": "Kehormatan tertinggi, kesucian, kesuburan",
+        "motif": "Ragi Hotang (tumbuhan sakral yang indah dan kuat)",
+        "colors": "Dominan merah, hitam, putih dengan benang emas",
+        "image": "/images/budaya/pakaian/ulos/ragi-hotang.jpg"
+      },
+      {
+        "name": "Ulos Sibolang",
+        "status": "Sangat terhormat",
+        "usage": "Acara kematian, penghormatan kepada yang lebih tua",
+        "meaning": "Dukacita, penghormatan, perpisahan",
+        "motif": "Garis-garis vertikal yang melambangkan air mata",
+        "colors": "Hitam, putih, merah",
+        "image": "/images/budaya/pakaian/ulos/sibolang.jpg"
+      },
+      {
+        "name": "Ulos Sadum",
+        "status": "Formal",
+        "usage": "Pakaian sehari-hari acara adat, dipakai pria",
+        "meaning": "Identitas, kebersamaan",
+        "motif": "Sederhana dengan garis-garis",
+        "colors": "Merah, hitam, putih",
+        "image": "/images/budaya/pakaian/ulos/sadum.jpg"
+      },
+      {
+        "name": "Ulos Bintang Maratur",
+        "status": "Adat",
+        "usage": "Pernikahan, acara gembira",
+        "meaning": "Kebahagiaan, harapan, keberuntungan",
+        "motif": "Bintang tersusun rapi (maratur = tersusun)",
+        "colors": "Merah, emas, hitam",
+        "image": "/images/budaya/pakaian/ulos/bintang-maratur.jpg"
+      },
+      {
+        "name": "Ulos Tumtuman",
+        "status": "Adat",
+        "usage": "Pemberian kepada anak yang menikah",
+        "meaning": "Berkat untuk kehidupan baru, perlindungan",
+        "motif": "Motif tumbuhan yang rimbun",
+        "colors": "Merah, hitam, putih, emas",
+        "image": "/images/budaya/pakaian/ulos/tumtuman.jpg"
+      },
+      {
+        "name": "Ulos Mangiring",
+        "status": "Khusus",
+        "usage": "Mengiringi perjalanan jauh, pindah rumah",
+        "meaning": "Pengiring, pelindung dalam perjalanan",
+        "motif": "Motif yang melambangkan jalan dan perlindungan",
+        "colors": "Variasi merah-hitam-putih",
+        "image": "/images/budaya/pakaian/ulos/mangiring.jpg"
+      }
+    ],
+    "givingTradition": {
+      "description": "Tradisi mangulosi (memberi ulos) adalah bagian penting dalam setiap upacara adat Batak.",
+      "occasions": [
+        {
+          "event": "Pernikahan",
+          "giver": "Orang tua dan hula-hula",
+          "receiver": "Pengantin",
+          "meaning": "Berkat, doa restu, harapan kebahagiaan"
+        },
+        {
+          "event": "Kelahiran",
+          "giver": "Keluarga",
+          "receiver": "Bayi dan ibu",
+          "meaning": "Perlindungan, kehangatan, kasih sayang"
+        },
+        {
+          "event": "Kematian",
+          "giver": "Keluarga",
+          "receiver": "Jenazah",
+          "meaning": "Penghormatan terakhir, perpisahan"
+        },
+        {
+          "event": "Merantau",
+          "giver": "Keluarga",
+          "receiver": "Yang akan pergi",
+          "meaning": "Pengiring, perlindungan dalam perjalanan"
+        }
+      ],
+      "ceremony": "Ulos diberikan dengan doa dan ungkapan harapan (umpasa), diselempangkan langsung ke bahu penerima",
+      "symbolism": "Ulos yang diberikan membawa kehangatan cinta keluarga kemanapun penerima pergi"
+    },
+    "weavingTradition": {
+      "description": "Menenun ulos adalah keahlian turun-temurun yang dikuasai oleh wanita Batak.",
+      "process": [
+        "Mempersiapkan benang (manggansal)",
+        "Mewarnai benang dengan pewarna alami",
+        "Menyusun benang di alat tenun (sorha)",
+        "Menenun dengan pola yang sudah ditentukan",
+        "Penyelesaian akhir dan pembersihan"
+      ],
+      "timeRequired": "1-3 bulan untuk satu lembar ulos (tergantung kompleksitas motif)",
+      "materials": "Benang kapas atau sutra, pewarna alami dari tumbuhan",
+      "skill": "Keahlian turun-temurun, dimulai sejak remaja",
+      "modernContext": "Masih banyak diproduksi secara tradisional di desa-desa, namun ada juga produksi modern"
+    }
+  },
+  "regionalVariations": {
+    "description": "Setiap sub-etnis Batak memiliki gaya pakaian adat yang sedikit berbeda.",
+    "variations": [
+      {
+        "region": "Toba",
+        "characteristics": "Ulos dominan dengan motif Ragi Hotang, warna merah-hitam-putih-emas",
+        "distinctive": "Penggunaan ulos yang sangat kompleks dalam upacara",
+        "headpiece": "Ampe-ampe bulang untuk pria, bulang-bulang untuk pengantin wanita"
+      },
+      {
+        "region": "Karo",
+        "characteristics": "Warna lebih cerah (merah-hijau-kuning), motif berbeda",
+        "distinctive": "Uis Gara (ulos Karo) dengan warna hijau khas",
+        "headpiece": "Gotong untuk wanita, bulang untuk pria"
+      },
+      {
+        "region": "Simalungun",
+        "characteristics": "Mirip Toba dengan variasi warna lebih soft",
+        "distinctive": "Hiou (ulos Simalungun) dengan motif khas",
+        "headpiece": "Similar dengan Toba dengan variasi lokal"
+      },
+      {
+        "region": "Pakpak",
+        "characteristics": "Lebih sederhana, warna natural",
+        "distinctive": "Gatip (kain Pakpak) dengan tenun khas",
+        "headpiece": "Tutup kepala khas Pakpak"
+      },
+      {
+        "region": "Mandailing",
+        "characteristics": "Pengaruh Melayu lebih kuat, songket dan bordir",
+        "distinctive": "Songket Mandailing dengan benang emas",
+        "headpiece": "Tengkuluk (tutup kepala wanita)"
+      }
+    ]
+  },
+  "modernAdaptation": {
+    "description": "Pakaian adat Batak telah beradaptasi dengan zaman modern namun tetap mempertahankan esensinya.",
+    "adaptations": [
+      {
+        "context": "Acara resmi pemerintahan",
+        "style": "Baju kurung/kebaya dengan ulos sebagai aksesoris (selendang atau syal)",
+        "meaning": "Identitas budaya dalam konteks formal modern"
+      },
+      {
+        "context": "Pernikahan modern",
+        "style": "Gaun pengantin modern dengan sentuhan ulos dan hiasan adat",
+        "meaning": "Perpaduan tradisi dan modernitas"
+      },
+      {
+        "context": "Fashion contemporary",
+        "style": "Motif ulos diaplikasikan pada baju, tas, aksesoris modern",
+        "meaning": "Pelestarian budaya melalui fashion"
+      }
+    ],
+    "conservation": "Banyak desainer muda Batak yang mengangkat ulos dan pakaian adat ke ranah fashion modern untuk melestarikan budaya"
+  },
+  "colorSymbolism": {
+    "description": "Warna dalam pakaian adat Batak memiliki makna filosofis yang dalam.",
+    "colors": [
+      {
+        "color": "Merah",
+        "meaning": "Keberanian, kekuatan, kehidupan, kegembiraan",
+        "usage": "Dominan dalam ulos dan pakaian adat"
+      },
+      {
+        "color": "Hitam",
+        "meaning": "Kebijaksanaan, keteguhan, keseriusan, kedukaan",
+        "usage": "Kombinasi dengan merah dan putih"
+      },
+      {
+        "color": "Putih",
+        "meaning": "Kesucian, kejujuran, spiritualitas",
+        "usage": "Pakaian sakral dan upacara keagamaan"
+      },
+      {
+        "color": "Emas/Kuning",
+        "meaning": "Kemakmuran, keagungan, status tinggi",
+        "usage": "Benang emas dalam ulos raja dan bangsawan"
+      }
+    ],
+    "philosophy": "Tiga warna utama (merah-hitam-putih) melambangkan dalihan na tolu - tiga tungku yang saling menyeimbangkan dalam masyarakat Batak"
+  }
+}

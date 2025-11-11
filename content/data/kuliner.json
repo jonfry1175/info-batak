@@ -1,0 +1,289 @@
+{
+  "dishes": [
+    {
+      "id": "arsik",
+      "name": "Arsik",
+      "alternateName": "Ikan Arsik Batak",
+      "region": "Toba, Simalungun",
+      "category": "main_dish",
+      "type": "fish",
+      "description": "Ikan mas yang dimasak dengan bumbu khas Batak menggunakan andaliman (merica Batak), kunyit, dan bahan rempah lainnya. Terkenal dengan rasa asam dan pedas yang khas.",
+      "mainIngredients": [
+        "Ikan mas segar",
+        "Andaliman (Merica Batak/Sichuan pepper)",
+        "Kunyit",
+        "Asam kandis/asam gelugur",
+        "Bawang merah",
+        "Bawang putih",
+        "Cabai merah",
+        "Jahe"
+      ],
+      "cookingMethod": "Dimasak dengan teknik bumbu halus, ikan tidak digoreng terlebih dahulu, dimasak hingga bumbu meresap",
+      "taste": "Asam, pedas, gurih dengan sensasi kesemutan dari andaliman",
+      "significance": "Hidangan wajib dalam acara adat dan jamuan tamu kehormatan",
+      "servingSuggestion": "Disajikan panas dengan nasi putih",
+      "image": "/images/budaya/kuliner/arsik.jpg"
+    },
+    {
+      "id": "saksang",
+      "name": "Saksang",
+      "alternateName": "Sangsang",
+      "region": "Toba, Karo, Pakpak",
+      "category": "main_dish",
+      "type": "pork",
+      "description": "Masakan daging babi dengan darah yang dimasak bersama bumbu rempah khas Batak. Warnanya hitam pekat dengan cita rasa yang kaya dan kompleks.",
+      "mainIngredients": [
+        "Daging babi",
+        "Darah babi segar",
+        "Andaliman",
+        "Bawang merah",
+        "Bawang putih",
+        "Jahe",
+        "Lengkuas",
+        "Cabai merah",
+        "Kelapa parut sangrai"
+      ],
+      "cookingMethod": "Daging dipotong kecil, dimasak dengan bumbu halus dan darah hingga bumbu meresap dan berwarna hitam",
+      "taste": "Gurih, sedikit manis, pedas dengan aroma rempah yang kuat",
+      "significance": "Hidangan sakral untuk upacara adat seperti pernikahan, kematian, dan syukuran",
+      "culturalNote": "Saksang adalah simbol kebersamaan dalam masyarakat Batak. Proses memasaknya panjang dan melibatkan banyak orang.",
+      "servingSuggestion": "Disajikan dalam acara besar bersama nasi dan lauk lainnya",
+      "image": "/images/budaya/kuliner/saksang.jpg"
+    },
+    {
+      "id": "dali-ni-horbo",
+      "name": "Dali ni Horbo",
+      "alternateName": "Gulai Kulit Kerbau",
+      "region": "Toba, Simalungun",
+      "category": "main_dish",
+      "type": "buffalo",
+      "description": "Gulai kulit kerbau yang dimasak dengan bumbu kaya rempah. Teksturnya kenyal dan bumbu santan yang gurih meresap sempurna.",
+      "mainIngredients": [
+        "Kulit kerbau (dali)",
+        "Santan kelapa",
+        "Andaliman",
+        "Kunyit",
+        "Jahe",
+        "Lengkuas",
+        "Bawang merah",
+        "Bawang putih",
+        "Cabai merah"
+      ],
+      "cookingMethod": "Kulit kerbau direbus terlebih dahulu hingga empuk, lalu dimasak dengan bumbu dan santan kental",
+      "taste": "Gurih, creamy, pedas dengan tekstur kenyal yang khas",
+      "significance": "Hidangan istimewa yang disajikan dalam acara adat besar",
+      "preparationTime": "6-8 jam (termasuk merebus kulit)",
+      "servingSuggestion": "Disajikan panas dengan nasi putih",
+      "image": "/images/budaya/kuliner/dali-ni-horbo.jpg"
+    },
+    {
+      "id": "naniura",
+      "name": "Naniura",
+      "alternateName": "Ikan Na Niura",
+      "region": "Toba",
+      "category": "appetizer",
+      "type": "fish",
+      "description": "Ikan mas mentah yang 'dimasak' dengan jeruk limau (asinan). Mirip dengan ceviche, dagingnya menjadi putih dan kenyal.",
+      "mainIngredients": [
+        "Ikan mas segar",
+        "Jeruk limau/jeruk purut (asam na niura)",
+        "Andaliman",
+        "Bawang merah",
+        "Cabai rawit",
+        "Jahe muda"
+      ],
+      "cookingMethod": "Ikan segar difilet, direndam dalam perasan jeruk limau hingga dagingnya berubah warna (3-4 jam)",
+      "taste": "Asam segar, pedas, dengan sensasi kesemutan dari andaliman",
+      "significance": "Hidangan tradisional yang menunjukkan kesegaran ikan dari Danau Toba",
+      "culturalNote": "Naniura adalah bukti keahlian leluhur dalam mengawetkan ikan tanpa api",
+      "servingSuggestion": "Dimakan langsung sebagai appetizer atau dengan nasi hangat",
+      "healthNote": "Harus menggunakan ikan yang benar-benar segar untuk keamanan",
+      "image": "/images/budaya/kuliner/naniura.jpg"
+    },
+    {
+      "id": "dengke-mas-na-niura",
+      "name": "Dengke Mas Na Niura",
+      "alternateName": "Ikan Mas Bakar",
+      "region": "Toba",
+      "category": "main_dish",
+      "type": "fish",
+      "description": "Ikan mas bakar dengan bumbu khas Batak. Ikan dibakar utuh dengan isian bumbu di dalamnya.",
+      "mainIngredients": [
+        "Ikan mas utuh",
+        "Andaliman",
+        "Bawang merah",
+        "Bawang putih",
+        "Cabai merah",
+        "Jahe",
+        "Kunyit",
+        "Tomat"
+      ],
+      "cookingMethod": "Ikan mas dibersihkan, diisi bumbu halus, dibungkus daun pisang, lalu dibakar",
+      "taste": "Gurih, asap, pedas dengan aroma bumbu yang kuat",
+      "significance": "Hidangan kesukaan raja-raja Batak di masa lalu",
+      "servingSuggestion": "Disajikan utuh dalam acara besar",
+      "image": "/images/budaya/kuliner/dengke-mas.jpg"
+    },
+    {
+      "id": "natinombur",
+      "name": "Natinombur",
+      "alternateName": "Sayur Natinombur",
+      "region": "Toba, Simalungun",
+      "category": "soup",
+      "type": "vegetable",
+      "description": "Sup sayuran dengan ikan pora-pora (ikan kecil dari Danau Toba) yang diasinkan. Rasanya asam segar.",
+      "mainIngredients": [
+        "Ikan pora-pora kering",
+        "Terung",
+        "Kacang panjang",
+        "Daun salam",
+        "Andaliman",
+        "Bawang merah",
+        "Cabai rawit",
+        "Asam jawa"
+      ],
+      "cookingMethod": "Ikan pora-pora digoreng kering, sayuran direbus dengan bumbu dan ikan hingga asam segar",
+      "taste": "Asam, gurih, segar",
+      "significance": "Sayur sehari-hari yang menyehatkan",
+      "servingSuggestion": "Disajikan hangat sebagai lauk pendamping",
+      "image": "/images/budaya/kuliner/natinombur.jpg"
+    }
+  ],
+  "drinks": [
+    {
+      "id": "tuak",
+      "name": "Tuak",
+      "type": "alcoholic",
+      "region": "Semua sub-etnis Batak",
+      "description": "Minuman tradisional fermentasi dari nira pohon aren (enau). Memiliki kadar alkohol sekitar 4-5%. Tuak adalah minuman sakral dalam budaya Batak.",
+      "ingredients": [
+        "Nira pohon aren (tuak manis)",
+        "Ragi tradisional (opsional untuk mempercepat fermentasi)"
+      ],
+      "process": "Nira pohon aren ditampung pagi hari, dibiarkan fermentasi alami selama 1-2 hari",
+      "taste": "Asam manis, sedikit beralkohol, menyegarkan",
+      "alcoholContent": "4-5%",
+      "significance": "Minuman wajib dalam setiap upacara adat Batak",
+      "culturalRole": [
+        "Simbol keakraban dan persaudaraan",
+        "Wajib dihidangkan saat menerima tamu kehormatan",
+        "Bagian dari ritual adat (gondang, mangokkal holi)",
+        "Tanda penghormatan kepada tamu"
+      ],
+      "tradition": "Tuak diminum dari mangkok kayu (bumbungan) secara bergantian sebagai simbol persaudaraan",
+      "modernContext": "Masih diproduksi secara tradisional di desa-desa Batak, dijual di pasar tradisional",
+      "image": "/images/budaya/kuliner/tuak.jpg"
+    },
+    {
+      "id": "lappung",
+      "name": "Lappung",
+      "type": "non-alcoholic",
+      "region": "Toba",
+      "description": "Minuman segar dari nira aren yang belum difermentasi. Rasanya manis alami tanpa alkohol.",
+      "taste": "Manis segar, tidak beralkohol",
+      "significance": "Minuman sehari-hari yang menyegarkan",
+      "image": "/images/budaya/kuliner/lappung.jpg"
+    }
+  ],
+  "ceremonialFoods": [
+    {
+      "id": "lomang",
+      "name": "Lomang",
+      "occasion": "Upacara adat, perayaan",
+      "description": "Ketan yang dimasak dalam bambu dengan santan. Mirip dengan lemang Melayu.",
+      "preparation": "Ketan dicampur santan dan garam, dimasukkan ke bambu, dibakar hingga matang",
+      "significance": "Makanan wajib saat acara horja (pesta adat)",
+      "image": "/images/budaya/kuliner/lomang.jpg"
+    },
+    {
+      "id": "ombus-ombus",
+      "name": "Ombus-ombus",
+      "occasion": "Pesta pernikahan, kematian",
+      "description": "Nasi yang dibungkus daun pisang dan diikat. Dibagikan kepada tamu sebagai berkah.",
+      "significance": "Simbol berbagi berkat dan kebersamaan",
+      "tradition": "Dibawa pulang oleh tamu sebagai bagian dari horja",
+      "image": "/images/budaya/kuliner/ombus-ombus.jpg"
+    }
+  ],
+  "ingredients": {
+    "andaliman": {
+      "name": "Andaliman (Merica Batak)",
+      "scientificName": "Zanthoxylum acanthopodium",
+      "description": "Rempah khas Batak yang memberikan sensasi kesemutan di lidah. Mirip dengan Sichuan pepper dari China.",
+      "taste": "Pedas, kesemutan (numbing sensation), aroma jeruk",
+      "usage": "Bumbu utama hampir semua masakan Batak",
+      "health": "Dipercaya memiliki manfaat kesehatan untuk pencernaan",
+      "availability": "Tumbuh di dataran tinggi Sumatera Utara",
+      "image": "/images/budaya/kuliner/andaliman.jpg"
+    },
+    "nira-aren": {
+      "name": "Nira Pohon Aren",
+      "source": "Pohon aren (Arenga pinnata)",
+      "description": "Cairan manis yang disadap dari bunga pohon aren, menjadi bahan baku tuak",
+      "uses": ["Tuak (fermentasi)", "Gula aren (dimasak)", "Lappung (diminum langsung)"],
+      "tradition": "Menyadap nira adalah keahlian turun-temurun",
+      "image": "/images/budaya/kuliner/nira-aren.jpg"
+    }
+  },
+  "cookingPhilosophy": {
+    "description": "Filosofi kuliner Batak mencerminkan kehidupan masyarakat yang dekat dengan alam dan menjunjung tinggi kebersamaan.",
+    "principles": [
+      {
+        "name": "Kesederhanaan dengan rasa kompleks",
+        "explanation": "Bahan-bahan sederhana dari alam, diolah dengan bumbu yang kaya menghasilkan cita rasa yang kompleks"
+      },
+      {
+        "name": "Memanfaatkan seluruh bagian",
+        "explanation": "Tidak ada yang terbuang - daging, jeroan, darah, kulit, semuanya diolah menjadi hidangan lezat"
+      },
+      {
+        "name": "Makanan sebagai simbol sosial",
+        "explanation": "Setiap hidangan memiliki makna sosial dan ritual dalam budaya Batak"
+      },
+      {
+        "name": "Rempah sebagai identitas",
+        "explanation": "Andaliman adalah identitas kuliner Batak yang membedakannya dari kuliner Nusantara lainnya"
+      }
+    ]
+  },
+  "diningEtiquette": {
+    "description": "Tata cara makan dalam budaya Batak memiliki aturan adat yang harus dihormati.",
+    "rules": [
+      "Tamu kehormatan (hula-hula) duduk di tempat terhormat dan dilayani terlebih dahulu",
+      "Tuak diedarkan sebagai pembuka sebelum makan",
+      "Makan bersama sebagai simbol kebersamaan (dalihan na tolu)",
+      "Saksang dan arsik adalah hidangan wajib untuk tamu istimewa",
+      "Ombus-ombus dibagikan kepada tamu sebagai penutup acara"
+    ]
+  },
+  "regionalVariations": {
+    "description": "Setiap sub-etnis Batak memiliki variasi kuliner yang unik.",
+    "variations": [
+      {
+        "region": "Toba",
+        "specialty": ["Arsik", "Saksang", "Naniura", "Dali ni Horbo"],
+        "characteristics": "Bumbu kaya rempah, dominan andaliman"
+      },
+      {
+        "region": "Karo",
+        "specialty": ["Terites (jeroan babi)", "Cimpa (kue kering)", "Babi panggang Karo"],
+        "characteristics": "Lebih pedas, sering menggunakan jahe dan kunyit"
+      },
+      {
+        "region": "Simalungun",
+        "specialty": ["Arsik Simalungun", "Na Niura"],
+        "characteristics": "Mirip Toba dengan variasi bumbu lokal"
+      },
+      {
+        "region": "Pakpak",
+        "specialty": ["Saksang Pakpak", "Tuak Pakpak"],
+        "characteristics": "Bumbu lebih kuat, teknik memasak unik"
+      },
+      {
+        "region": "Mandailing",
+        "specialty": ["Gulai ikan", "Rendang Mandailing"],
+        "characteristics": "Pengaruh Minang, lebih banyak santan"
+      }
+    ]
+  }
+}

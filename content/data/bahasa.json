@@ -1,0 +1,525 @@
+{
+  "overview": {
+    "description": "Bahasa Batak adalah sekelompok bahasa Austronesia yang dituturkan oleh berbagai sub-etnis Batak di Sumatera Utara. Setiap sub-etnis memiliki dialek yang berbeda namun tetap dalam rumpun bahasa yang sama.",
+    "classification": "Austronesia > Melayu-Polinesia > Sumatra Barat Laut > Batak",
+    "speakers": "Sekitar 8-9 juta penutur (semua dialek)",
+    "region": "Sumatera Utara, Indonesia",
+    "status": "Bahasa daerah yang aktif digunakan, diajarkan di sekolah sebagai muatan lokal",
+    "script": "Aksara Batak (tradisional), Latin (modern)"
+  },
+  "dialects": [
+    {
+      "id": "toba",
+      "name": "Bahasa Batak Toba",
+      "alternateName": "Hata Batak Toba",
+      "region": "Danau Toba, Samosir, Toba, Humbang Hasundutan",
+      "speakers": "±2-3 juta",
+      "status": "Dialek paling banyak penutur dan paling dominan",
+      "characteristics": [
+        "Penggunaan 'h' yang khas (misal: 'hita' = kita)",
+        "Akhiran '-hon' untuk perintah halus",
+        "Kosakata yang kaya untuk istilah adat dan kekerabatan",
+        "Intonasi yang tegas dan jelas"
+      ],
+      "examples": [
+        {
+          "toba": "Horas!",
+          "indonesian": "Selamat/Hidup!",
+          "context": "Salam khas Batak Toba"
+        },
+        {
+          "toba": "Boasa do ho?",
+          "indonesian": "Bagaimana kabarmu?",
+          "context": "Sapaan sehari-hari"
+        },
+        {
+          "toba": "Mauliate",
+          "indonesian": "Terima kasih",
+          "context": "Ucapan terima kasih"
+        }
+      ]
+    },
+    {
+      "id": "karo",
+      "name": "Bahasa Batak Karo",
+      "alternateName": "Cakap Karo",
+      "region": "Kabupaten Karo, Deli Serdang, Langkat",
+      "speakers": "±1 juta",
+      "status": "Dialek yang sangat berbeda dari Toba, hampir seperti bahasa terpisah",
+      "characteristics": [
+        "Tidak menggunakan 'h' di awal kata seperti Toba",
+        "Penggunaan 'e' taling (è) yang khas",
+        "Kosakata yang cukup berbeda dari Toba",
+        "Pengaruh bahasa Melayu Deli lebih kuat"
+      ],
+      "examples": [
+        {
+          "karo": "Mejuah-juah!",
+          "indonesian": "Selamat/Hidup!",
+          "context": "Salam khas Batak Karo (beda dari Horas)"
+        },
+        {
+          "karo": "Nggeluh mo?",
+          "indonesian": "Bagaimana kabarmu?",
+          "context": "Sapaan sehari-hari"
+        },
+        {
+          "karo": "Bujur",
+          "indonesian": "Terima kasih",
+          "context": "Ucapan terima kasih"
+        }
+      ]
+    },
+    {
+      "id": "simalungun",
+      "name": "Bahasa Batak Simalungun",
+      "alternateName": "Hata Simalungun",
+      "region": "Kabupaten Simalungun, Pematang Siantar",
+      "speakers": "±1,5 juta",
+      "status": "Dialek yang mirip dengan Toba namun memiliki kekhasan sendiri",
+      "characteristics": [
+        "Campuran antara Toba dan Karo",
+        "Penggunaan 'ai' yang khas di akhir kalimat",
+        "Kosakata unik yang berbeda dari Toba dan Karo",
+        "Intonasi lebih lembut dari Toba"
+      ],
+      "examples": [
+        {
+          "simalungun": "Njuah-juah!",
+          "indonesian": "Selamat!",
+          "context": "Salam khas (mirip Karo)"
+        },
+        {
+          "simalungun": "Sai bas ho?",
+          "indonesian": "Bagaimana kabarmu?",
+          "context": "Sapaan sehari-hari"
+        },
+        {
+          "simalungun": "Tarima asi",
+          "indonesian": "Terima kasih",
+          "context": "Ucapan terima kasih (serapan dari Indonesia)"
+        }
+      ]
+    },
+    {
+      "id": "pakpak",
+      "name": "Bahasa Batak Pakpak/Dairi",
+      "alternateName": "Hata Pakpak",
+      "region": "Kabupaten Pakpak Bharat, Dairi",
+      "speakers": "±50.000",
+      "status": "Dialek dengan penutur paling sedikit, terancam punah",
+      "characteristics": [
+        "Kosakata dan grammar yang unik",
+        "Pengaruh bahasa Gayo dan Aceh",
+        "Sistem kekerabatan istilah yang sangat kompleks",
+        "Banyak kata yang tidak ada di dialek lain"
+      ],
+      "examples": [
+        {
+          "pakpak": "Horas!",
+          "indonesian": "Selamat!",
+          "context": "Salam (sama dengan Toba)"
+        },
+        {
+          "pakpak": "Mbah nggo?",
+          "indonesian": "Bagaimana kabarmu?",
+          "context": "Sapaan sehari-hari"
+        }
+      ]
+    },
+    {
+      "id": "angkola",
+      "name": "Bahasa Batak Angkola",
+      "alternateName": "Hata Angkola",
+      "region": "Tapanuli Selatan (Angkola)",
+      "speakers": "±800.000",
+      "status": "Dialek di wilayah selatan",
+      "characteristics": [
+        "Mirip dengan Mandailing",
+        "Pengaruh bahasa Minangkabau",
+        "Lebih halus intonasinya dari Toba",
+        "Kosakata campuran Batak dan Melayu"
+      ],
+      "examples": [
+        {
+          "angkola": "Horas!",
+          "indonesian": "Selamat!",
+          "context": "Salam"
+        }
+      ]
+    },
+    {
+      "id": "mandailing",
+      "name": "Bahasa Batak Mandailing",
+      "alternateName": "Hata Mandailing",
+      "region": "Tapanuli Selatan (Mandailing), Padang Lawas",
+      "speakers": "±1-1,5 juta",
+      "status": "Dialek dengan identitas Islam yang kuat",
+      "characteristics": [
+        "Pengaruh bahasa Melayu dan Minangkabau sangat kuat",
+        "Banyak kosakata Arab karena pengaruh Islam",
+        "Paling berbeda dari Toba dalam hal kosakata",
+        "Sistem sapaan yang lebih Melayu"
+      ],
+      "examples": [
+        {
+          "mandailing": "Assalamualaikum",
+          "indonesian": "Salam sejahtera",
+          "context": "Salam (pengaruh Islam)"
+        },
+        {
+          "mandailing": "Mbah kana?",
+          "indonesian": "Bagaimana kabarmu?",
+          "context": "Sapaan sehari-hari"
+        }
+      ]
+    }
+  ],
+  "commonPhrases": {
+    "description": "Frasa umum dalam berbagai dialek Batak (fokus pada Toba sebagai yang paling banyak digunakan)",
+    "greetings": [
+      {
+        "toba": "Horas!",
+        "indonesian": "Selamat! / Hidup!",
+        "usage": "Salam khas Batak Toba, ucapan selamat umum",
+        "response": "Horas!"
+      },
+      {
+        "toba": "Boasa do ho?",
+        "indonesian": "Bagaimana kabarmu?",
+        "usage": "Menanyakan kabar (informal)",
+        "response": "Boasa do au. Boasa do ho? (Saya baik. Bagaimana denganmu?)"
+      },
+      {
+        "toba": "Aha gabar ni ho?",
+        "indonesian": "Apa kabarmu?",
+        "usage": "Menanyakan kabar (formal)",
+        "response": "Madingin-dingin dope au (Saya baik-baik saja)"
+      },
+      {
+        "toba": "Jumolo do ho?",
+        "indonesian": "Kamu lebih dulu?",
+        "usage": "Memberi salam saat bertemu di jalan",
+        "response": "Jumolo do ho! (Kamu lebih dulu)"
+      }
+    ],
+    "courtesy": [
+      {
+        "toba": "Mauliate",
+        "indonesian": "Terima kasih",
+        "usage": "Ucapan terima kasih",
+        "response": "Sai ma (Sama-sama)"
+      },
+      {
+        "toba": "Ma'af do au",
+        "indonesian": "Maafkan saya",
+        "usage": "Meminta maaf",
+        "response": "Ndang hapé (Tidak apa-apa)"
+      },
+      {
+        "toba": "Anggiat ma hamu!",
+        "indonesian": "Selamat jalan! / Hati-hati!",
+        "usage": "Mengucapkan selamat jalan",
+        "response": "Sai marjalo do! (Semoga bertemu lagi)"
+      },
+      {
+        "toba": "Nuaeng ma ho!",
+        "indonesian": "Silakan duduk!",
+        "usage": "Mempersilakan tamu duduk",
+        "response": "Mauliate (Terima kasih)"
+      }
+    ],
+    "family": [
+      {
+        "toba": "Amang",
+        "indonesian": "Ayah",
+        "usage": "Panggilan untuk ayah"
+      },
+      {
+        "toba": "Inang",
+        "indonesian": "Ibu",
+        "usage": "Panggilan untuk ibu"
+      },
+      {
+        "toba": "Lae",
+        "indonesian": "Saudara laki-laki (dari laki-laki) / Saudara laki-laki istri",
+        "usage": "Istilah kekerabatan penting dalam Dalihan Na Tolu"
+      },
+      {
+        "toba": "Ito",
+        "indonesian": "Saudara perempuan (dari laki-laki)",
+        "usage": "Istilah kekerabatan"
+      },
+      {
+        "toba": "Eda",
+        "indonesian": "Kakak perempuan (dari perempuan)",
+        "usage": "Panggilan untuk kakak perempuan"
+      },
+      {
+        "toba": "Anggi",
+        "indonesian": "Adik",
+        "usage": "Panggilan untuk adik (laki-laki atau perempuan)"
+      },
+      {
+        "toba": "Tulang",
+        "indonesian": "Saudara laki-laki ibu / Paman",
+        "usage": "Panggilan untuk paman dari pihak ibu (sangat penting dalam adat)"
+      },
+      {
+        "toba": "Nantulang",
+        "indonesian": "Istri dari tulang / Bibi",
+        "usage": "Panggilan untuk bibi"
+      },
+      {
+        "toba": "Haha",
+        "indonesian": "Kakek / Nenek",
+        "usage": "Panggilan untuk kakek atau nenek"
+      }
+    ],
+    "everyday": [
+      {
+        "toba": "Mangan ma hu",
+        "indonesian": "Saya mau makan",
+        "usage": "Menyatakan keinginan makan"
+      },
+      {
+        "toba": "Diop do au",
+        "indonesian": "Saya lapar",
+        "usage": "Menyatakan lapar"
+      },
+      {
+        "toba": "Jonjongkon ma ho!",
+        "indonesian": "Duduk saja kamu!",
+        "usage": "Meminta seseorang duduk (informal)"
+      },
+      {
+        "toba": "Aha do goarmu?",
+        "indonesian": "Siapa namamu?",
+        "usage": "Menanyakan nama"
+      },
+      {
+        "toba": "Molo tung",
+        "indonesian": "Besok",
+        "usage": "Waktu: besok"
+      },
+      {
+        "toba": "Sadia",
+        "indonesian": "Sekarang",
+        "usage": "Waktu: sekarang"
+      }
+    ]
+  },
+  "kinshipTerminology": {
+    "description": "Sistem kekerabatan Batak sangat kompleks dengan istilah-istilah spesifik yang mencerminkan struktur sosial Dalihan Na Tolu.",
+    "dalihanNaTolu": {
+      "description": "Tiga pilar kekerabatan yang menjadi fondasi masyarakat Batak",
+      "hulahula": {
+        "term": "Hula-hula",
+        "meaning": "Pemberi istri (pihak keluarga istri/ibu)",
+        "status": "Paling dihormati (somba)",
+        "examples": ["Tulang (saudara laki-laki ibu)", "Orang tua istri"]
+      },
+      "dongantubu": {
+        "term": "Dongan Tubu",
+        "meaning": "Saudara semarga (kerabat sedarah)",
+        "status": "Sejajar (manat marsimaranan)",
+        "examples": ["Lae (saudara laki-laki)", "Ito (saudara perempuan)"]
+      },
+      "boruunsure": {
+        "term": "Boru",
+        "meaning": "Penerima istri (pihak yang menikahi anak perempuan kita)",
+        "status": "Dihargai (elek)",
+        "examples": ["Suami anak perempuan", "Keluarga yang menikahi anak perempuan"]
+      }
+    },
+    "complexTerms": [
+      {
+        "term": "Amangboru",
+        "literal": "Ayah dari boru (anak perempuan yang menikah)",
+        "meaning": "Ayah dari menantu perempuan / Bapak mertua",
+        "context": "Istilah untuk menyebut ayah dari pihak yang menikahi anak perempuan kita"
+      },
+      {
+        "term": "Hela",
+        "meaning": "Suami dari saudara perempuan",
+        "context": "Termasuk dalam kelompok boru"
+      },
+      {
+        "term": "Pariban",
+        "meaning": "Sepupu satu marga (parallel cousin)",
+        "context": "Anak dari saudara laki-laki ayah atau saudara perempuan ibu"
+      },
+      {
+        "term": "Amanguda",
+        "meaning": "Adik laki-laki ayah",
+        "context": "Paman dari pihak ayah (lebih muda)"
+      },
+      {
+        "term": "Amangtua",
+        "meaning": "Kakak laki-laki ayah",
+        "context": "Paman dari pihak ayah (lebih tua)"
+      }
+    ]
+  },
+  "umpasa": {
+    "description": "Umpasa adalah peribahasa atau ungkapan tradisional Batak yang berisi nasihat, filosofi hidup, dan kebijaksanaan. Umpasa selalu disampaikan dalam bentuk puitis dan berpasangan.",
+    "characteristics": [
+      "Berbentuk syair berpasangan (sampiran dan isi)",
+      "Menggunakan bahasa metaforis dan simbolis",
+      "Disampaikan dalam acara adat sebagai nasihat atau doa",
+      "Mencerminkan kebijaksanaan leluhur"
+    ],
+    "examples": [
+      {
+        "toba": "Tao toba diparjolo, / Tao barita diparudi. / Tao sude diparorot, / Tao hadatuon dipaingot.",
+        "indonesian": "Belajar menulis dimulai dari depan, / Belajar membaca dimulai dari belakang. / Belajar menari dimulai dari kaki, / Belajar menjadi datu (bijaksana) dimulai dari mengingat.",
+        "meaning": "Pentingnya belajar dan mengingat nasihat leluhur",
+        "usage": "Disampaikan saat memberi nasihat kepada anak muda"
+      },
+      {
+        "toba": "Sada bongot, / Sada tording. / Sada hi dinding, / Sada hi atopan.",
+        "indonesian": "Satu pohon beringin, / Satu batang bambu. / Satu sebagai dinding, / Satu sebagai atap.",
+        "meaning": "Suami istri saling melengkapi, bekerja sama membangun keluarga",
+        "usage": "Disampaikan dalam upacara pernikahan"
+      },
+      {
+        "toba": "Hamoraon di na tongtong, / Hagabeon di na so pola, / Hasangapon di na marroha.",
+        "indonesian": "Kekayaan pada yang benar (jujur), / Banyak keturunan pada yang setia (tidak selingkuh), / Kehormatan pada yang berbelas kasihan.",
+        "meaning": "Nilai-nilai luhur yang harus dimiliki: kejujuran, kesetiaan, dan kasih sayang",
+        "usage": "Nasihat untuk kehidupan yang baik"
+      },
+      {
+        "toba": "Naeng pe huida, / Boi salpu lobei. / Tubu pe do hita, / Boi salpu mate.",
+        "indonesian": "Kalaupun saya lihat, / Suatu saat akan hilang juga. / Hidup pun kita, / Suatu saat akan mati juga.",
+        "meaning": "Kesadaran akan kefanaan hidup, pentingnya berbuat baik",
+        "usage": "Renungan filosofis tentang kehidupan"
+      },
+      {
+        "toba": "Lao ju lao ma ate gabe burju. / Roh ju roh ma ate gabe dapotan.",
+        "indonesian": "Pergilah dengan hati yang baik. / Pulanglah dengan membawa hasil.",
+        "meaning": "Nasihat untuk orang yang akan merantau: bersikap baik dan bekerja keras",
+        "usage": "Diberikan saat seseorang akan pergi merantau"
+      }
+    ],
+    "types": [
+      {
+        "type": "Umpasa Mangupa",
+        "description": "Umpasa untuk memberikan berkat dan doa",
+        "occasion": "Upacara pernikahan, kelahiran, syukuran"
+      },
+      {
+        "type": "Umpasa Mangalusi",
+        "description": "Umpasa saat memberikan ulos",
+        "occasion": "Pemberian ulos dalam acara adat"
+      },
+      {
+        "type": "Umpasa Mangokal Holi",
+        "description": "Umpasa dalam upacara pemakaman atau pemindahan tulang",
+        "occasion": "Upacara kematian"
+      },
+      {
+        "type": "Umpasa Horja",
+        "description": "Umpasa dalam pesta adat",
+        "occasion": "Berbagai acara pesta (pernikahan, syukuran)"
+      }
+    ]
+  },
+  "proverbs": {
+    "description": "Peribahasa Batak yang sering digunakan dalam percakapan sehari-hari",
+    "examples": [
+      {
+        "toba": "Songon harimau na macan-macan",
+        "indonesian": "Seperti harimau yang sedang beranak",
+        "meaning": "Seseorang yang sangat galak dan waspada (biasanya ibu yang melindungi anaknya)"
+      },
+      {
+        "toba": "Jala ndang hea marlapik sihol",
+        "indonesian": "Dan jangan mudah mengelap air liur",
+        "meaning": "Jangan mudah menarik kembali ucapan atau janji"
+      },
+      {
+        "toba": "Rap do dalihan sitolu tong",
+        "indonesian": "Lengkaplah tungku yang tiga kaki",
+        "meaning": "Kehadiran ketiga elemen dalihan na tolu membuat acara sempurna"
+      },
+      {
+        "toba": "Ise songon ni ambarita, ai tung",
+        "indonesian": "Siapa seperti cendrawasih, selalu besok",
+        "meaning": "Orang yang suka menunda-nunda pekerjaan"
+      }
+    ]
+  },
+  "literature": {
+    "description": "Tradisi sastra lisan dan tulisan Batak yang kaya dan beragam",
+    "oralTradition": {
+      "description": "Tradisi lisan yang diwariskan turun-temurun",
+      "forms": [
+        {
+          "name": "Turiturian (Cerita Rakyat)",
+          "description": "Cerita-cerita tentang asal-usul, sejarah raja-raja, dan dongeng",
+          "examples": ["Si Singamangaraja", "Raja Batak", "Tuan Sorba Dibanua"]
+        },
+        {
+          "name": "Ende (Nyanyian Tradisional)",
+          "description": "Nyanyian yang berisi nasihat, kesedihan, atau kegembiraan",
+          "context": "Dinyanyikan dalam berbagai acara adat"
+        },
+        {
+          "name": "Andung (Ratapan)",
+          "description": "Ratapan dalam upacara kematian, berisi kesedihan dan kenangan",
+          "context": "Dibawakan oleh keluarga yang berduka"
+        }
+      ]
+    },
+    "writtenTradition": {
+      "description": "Tradisi tulisan menggunakan Aksara Batak pada media pustaha",
+      "pustaha": {
+        "description": "Naskah kuno berisi ilmu pengetahuan Batak",
+        "content": ["Ramalan (porbinuon)", "Pengobatan tradisional", "Mantra (tangiang)", "Kalender (porhalaan)", "Astrologi"],
+        "material": "Kulit kayu, bambu, atau tanduk kerbau",
+        "script": "Aksara Batak",
+        "keepers": "Datu (dukun, orang bijak)"
+      }
+    },
+    "modernLiterature": {
+      "description": "Sastra Batak modern dalam bahasa Indonesia",
+      "authors": [
+        "M. Simanjuntak",
+        "T.D. Pardede",
+        "Welas Hutagalung"
+      ],
+      "themes": ["Adat dan tradisi", "Diaspora Batak", "Modernisasi vs tradisi", "Identitas budaya"]
+    }
+  },
+  "languagePreservation": {
+    "description": "Upaya pelestarian bahasa Batak di era modern",
+    "challenges": [
+      "Generasi muda lebih fasih bahasa Indonesia",
+      "Urbanisasi dan migrasi ke kota besar",
+      "Pengaruh media massa dan internet dalam bahasa Indonesia",
+      "Dialek tertentu (Pakpak, Angkola) terancam punah"
+    ],
+    "efforts": [
+      {
+        "initiative": "Muatan Lokal di Sekolah",
+        "description": "Pengajaran bahasa Batak sebagai mata pelajaran muatan lokal di Sumut"
+      },
+      {
+        "initiative": "Kamus Digital",
+        "description": "Pembuatan kamus bahasa Batak online dan aplikasi mobile"
+      },
+      {
+        "initiative": "Ibadah Bahasa Batak",
+        "description": "Gereja HKBP menggunakan bahasa Batak Toba dalam ibadah"
+      },
+      {
+        "initiative": "Media Sosial",
+        "description": "Kampanye pelestarian bahasa melalui konten digital dan media sosial"
+      },
+      {
+        "initiative": "Festival Budaya",
+        "description": "Lomba pidato, mendongeng, dan menulis dalam bahasa Batak"
+      }
+    ]
+  }
+}

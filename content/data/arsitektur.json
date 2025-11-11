@@ -1,0 +1,235 @@
+{
+  "houseTypes": [
+    {
+      "id": "ruma-bolon-toba",
+      "name": "Ruma Bolon (Rumah Adat Batak Toba)",
+      "region": "Toba",
+      "type": "residence",
+      "description": "Rumah adat tradisional Batak Toba yang megah dengan atap pelana berbentuk perahu terbalik. Konstruksi tanpa paku dengan sistem pasak kayu yang kokoh.",
+      "characteristics": [
+        "Atap tinggi berbentuk perahu terbalik (suri-suri)",
+        "Konstruksi tanpa paku (knockdown system)",
+        "Tiang penyangga dari kayu besar",
+        "Ornamen ukiran Gorga pada dinding dan tiang",
+        "Tinggi mencapai 10-15 meter",
+        "Rumah panggung dengan kolong tinggi"
+      ],
+      "structure": {
+        "foundation": "Tiang kayu besar tertanam di tanah dengan batu pondasi",
+        "walls": "Papan kayu dengan ukiran Gorga",
+        "roof": "Ijuk atau seng dengan bentuk pelana tinggi",
+        "floor": "Papan kayu tebal di atas balok penyangga"
+      },
+      "symbolism": "Atap tinggi melambangkan kedekatan dengan Debata Mulajadi Nabolon (Tuhan), ruang tengah untuk kehidupan manusia, dan kolong untuk dunia bawah",
+      "capacity": "10-15 keluarga (dalihan na tolu)",
+      "images": [
+        "/images/budaya/arsitektur/ruma-bolon-exterior.jpg",
+        "/images/budaya/arsitektur/ruma-bolon-interior.jpg",
+        "/images/budaya/arsitektur/ruma-bolon-ornamen.jpg"
+      ]
+    },
+    {
+      "id": "sopo-toba",
+      "name": "Sopo (Lumbung Padi Toba)",
+      "region": "Toba",
+      "type": "granary",
+      "description": "Bangunan lumbung padi tradisional yang juga berfungsi sebagai tempat pertemuan dan musyawarah adat.",
+      "characteristics": [
+        "Bentuk mirip Ruma Bolon tapi lebih kecil",
+        "Atap pelana dengan ornamen khas",
+        "Ruang terbuka tanpa dinding penuh",
+        "Platform untuk menyimpan padi",
+        "Tempat berkumpul dan musyawarah"
+      ],
+      "structure": {
+        "foundation": "Tiang kayu dengan batu alam",
+        "walls": "Setengah terbuka dengan papan pada bagian bawah",
+        "roof": "Ijuk berbentuk pelana",
+        "floor": "Papan kayu untuk platform penyimpanan"
+      },
+      "symbolism": "Simbol kesejahteraan dan kemakmuran masyarakat",
+      "function": "Penyimpanan padi, tempat musyawarah adat, tempat pemuda tidur",
+      "images": [
+        "/images/budaya/arsitektur/sopo-exterior.jpg",
+        "/images/budaya/arsitektur/sopo-function.jpg"
+      ]
+    },
+    {
+      "id": "rumah-karo",
+      "name": "Siwaluh Jabu (Rumah Adat Karo)",
+      "region": "Karo",
+      "type": "residence",
+      "description": "Rumah adat Karo yang unik dengan kapasitas 8 keluarga (siwaluh = delapan, jabu = keluarga), memiliki atap jerami tinggi dan ruang yang luas.",
+      "characteristics": [
+        "Kapasitas 8 keluarga dalam satu rumah",
+        "Atap jerami tebal setinggi 15-18 meter",
+        "Ruang tengah (jabu) sangat luas",
+        "Dinding kayu tanpa jendela",
+        "Pintu rendah dan kecil",
+        "Tangga dari batang kayu dengan pahatan"
+      ],
+      "structure": {
+        "foundation": "4 tiang utama (tiang rumah) dari kayu besar",
+        "walls": "Papan kayu horizontal tanpa ventilasi",
+        "roof": "Jerami tebal berbentuk pelana curam",
+        "floor": "Papan kayu di atas balok penyangga"
+      },
+      "symbolism": "Konsep kebersamaan dan gotong royong dalam kehidupan bermasyarakat",
+      "capacity": "8 keluarga (daliken si waluh)",
+      "images": [
+        "/images/budaya/arsitektur/siwaluh-jabu-exterior.jpg",
+        "/images/budaya/arsitektur/siwaluh-jabu-interior.jpg"
+      ]
+    },
+    {
+      "id": "rumah-simalungun",
+      "name": "Ruma Bolon Simalungun",
+      "region": "Simalungun",
+      "type": "residence",
+      "description": "Rumah adat Simalungun dengan arsitektur yang mirip Toba namun memiliki ciri khas ornamen dan warna yang berbeda.",
+      "characteristics": [
+        "Atap berbentuk perahu dengan kemiringan lebih landai",
+        "Ornamen Gorga dengan motif khas Simalungun",
+        "Warna dominan merah, hitam, dan putih",
+        "Tangga masuk di bagian tengah depan",
+        "Ukuran lebih kecil dari Ruma Bolon Toba"
+      ],
+      "structure": {
+        "foundation": "Tiang kayu dengan batu pondasi",
+        "walls": "Papan kayu dengan ukiran dan cat warna-warni",
+        "roof": "Ijuk atau seng dengan bentuk pelana",
+        "floor": "Papan kayu tebal"
+      },
+      "symbolism": "Keharmonisan hubungan dengan Tuhan, sesama, dan alam",
+      "capacity": "6-10 keluarga",
+      "images": [
+        "/images/budaya/arsitektur/ruma-bolon-simalungun.jpg"
+      ]
+    }
+  ],
+  "constructionTechniques": [
+    {
+      "id": "no-nail-construction",
+      "name": "Sistem Konstruksi Tanpa Paku",
+      "description": "Teknik tradisional yang menggunakan pasak kayu (pen and mortise) dan sistem knockdown yang memungkinkan rumah dibongkar-pasang.",
+      "methods": [
+        "Pasak kayu (takik dan lubang) untuk sambungan",
+        "Tali ijuk untuk mengikat bagian tertentu",
+        "Sistem interlocking pada balok-balok utama",
+        "Tidak menggunakan paku besi sama sekali"
+      ],
+      "advantages": [
+        "Tahan gempa karena fleksibel",
+        "Dapat dibongkar dan dipindahkan",
+        "Awet hingga ratusan tahun",
+        "Ramah lingkungan"
+      ]
+    },
+    {
+      "id": "earthquake-resistant",
+      "name": "Desain Tahan Gempa",
+      "description": "Arsitektur tradisional Batak secara alami memiliki ketahanan terhadap gempa bumi.",
+      "features": [
+        "Struktur fleksibel yang bisa bergoyang",
+        "Sambungan kayu yang tidak kaku",
+        "Pondasi batu yang dapat menyerap getaran",
+        "Distribusi beban yang merata"
+      ]
+    },
+    {
+      "id": "material-selection",
+      "name": "Pemilihan Material",
+      "description": "Material alami yang dipilih dengan cermat untuk ketahanan dan kenyamanan.",
+      "materials": [
+        {
+          "name": "Kayu keras",
+          "usage": "Tiang utama dan balok penyangga",
+          "types": ["Kayu bitti", "Kayu borpis", "Kayu marsihul"]
+        },
+        {
+          "name": "Ijuk",
+          "usage": "Atap dan tali pengikat",
+          "durability": "20-30 tahun dengan perawatan"
+        },
+        {
+          "name": "Bambu",
+          "usage": "Anyaman dinding dan lantai tambahan"
+        },
+        {
+          "name": "Batu alam",
+          "usage": "Pondasi dan penahan tiang"
+        }
+      ]
+    }
+  ],
+  "spatialOrganization": {
+    "description": "Pembagian ruang dalam rumah adat Batak mencerminkan kosmologi dan struktur sosial masyarakat.",
+    "verticalDivision": [
+      {
+        "level": "Atap (Banua Ginjang)",
+        "meaning": "Dunia atas, tempat roh dan leluhur",
+        "function": "Loteng penyimpanan, simbol spiritual"
+      },
+      {
+        "level": "Ruang tengah (Banua Tonga)",
+        "meaning": "Dunia tengah, tempat manusia hidup",
+        "function": "Ruang keluarga, tidur, dapur"
+      },
+      {
+        "level": "Kolong (Banua Toru)",
+        "meaning": "Dunia bawah",
+        "function": "Kandang ternak, penyimpanan, sirkulasi udara"
+      }
+    ],
+    "horizontalDivision": [
+      {
+        "area": "Jabu Bona (Ruang utama)",
+        "function": "Ruang tamu dan upacara adat",
+        "position": "Tengah depan"
+      },
+      {
+        "area": "Jabu Suhat",
+        "function": "Ruang keluarga dan tidur",
+        "position": "Samping"
+      },
+      {
+        "area": "Dapur (Parguratan)",
+        "function": "Memasak dan berkumpul keluarga",
+        "position": "Belakang"
+      }
+    ]
+  },
+  "ornaments": {
+    "description": "Ornamen ukiran dan lukisan yang sarat makna filosofis.",
+    "types": [
+      {
+        "name": "Gorga",
+        "description": "Ukiran khas Batak dengan motif flora, fauna, dan geometris",
+        "locations": ["Tiang utama", "Dinding depan", "Atap bagian depan"],
+        "motifs": ["Singa-singa (naga)", "Cicak (boraspati)", "Pucuk rebung", "Bunga"]
+      },
+      {
+        "name": "Singa-singa",
+        "description": "Patung kepala naga/singa sebagai penjaga rumah",
+        "symbolism": "Pelindung dari roh jahat dan pembawa keberuntungan",
+        "placement": "Puncak atap bagian depan"
+      },
+      {
+        "name": "Warna tradisional",
+        "description": "Tiga warna utama dengan makna filosofis",
+        "colors": [
+          {"name": "Merah", "meaning": "Keberanian dan kekuatan"},
+          {"name": "Hitam", "meaning": "Kebijaksanaan dan keteguhan"},
+          {"name": "Putih", "meaning": "Kesucian dan kejujuran"}
+        ]
+      }
+    ]
+  },
+  "culturalSignificance": {
+    "socialStructure": "Rumah adat mencerminkan sistem dalihan na tolu (tungku berkaki tiga) dalam masyarakat Batak",
+    "cosmology": "Arsitektur vertikal melambangkan tiga tingkat kosmologi: dunia atas, tengah, dan bawah",
+    "communityLiving": "Satu rumah ditempati beberapa keluarga, memperkuat ikatan kekerabatan",
+    "status": "Ruma Bolon milik raja atau kepala adat menunjukkan status sosial tinggi",
+    "sustainability": "Penggunaan material lokal dan teknik tradisional yang ramah lingkungan"
+  }
+}

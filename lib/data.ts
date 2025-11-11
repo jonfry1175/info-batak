@@ -1,7 +1,22 @@
-import { Fakta, Marga, MediaLibrary, MediaImage, MediaVideo, MediaAudio } from '@/types';
+import {
+  Fakta,
+  Marga,
+  MediaLibrary,
+  MediaImage,
+  MediaVideo,
+  MediaAudio,
+  ArsitekturData,
+  KulinerData,
+  PakaianData,
+  BahasaData
+} from '@/types';
 import faktaData from '@/content/data/fakta.json';
 import margaData from '@/content/data/marga.json';
 import mediaData from '@/content/data/media.json';
+import arsitekturData from '@/content/data/arsitektur.json';
+import kulinerData from '@/content/data/kuliner.json';
+import pakaianData from '@/content/data/pakaian.json';
+import bahasaData from '@/content/data/bahasa.json';
 
 export function getAllFakta(): Fakta[] {
   return faktaData as Fakta[];
@@ -88,4 +103,104 @@ export function searchMedia(query: string): {
   );
 
   return { images, videos, audio };
+}
+
+// Arsitektur functions
+export function getArsitekturData(): ArsitekturData {
+  return arsitekturData as ArsitekturData;
+}
+
+export function getAllHouseTypes() {
+  return getArsitekturData().houseTypes;
+}
+
+export function getHouseTypeById(id: string) {
+  return getAllHouseTypes().find(house => house.id === id);
+}
+
+export function getHouseTypesByRegion(region: string) {
+  return getAllHouseTypes().filter(house => house.region === region);
+}
+
+export function getConstructionTechniques() {
+  return getArsitekturData().constructionTechniques;
+}
+
+// Kuliner functions
+export function getKulinerData(): KulinerData {
+  return kulinerData as KulinerData;
+}
+
+export function getAllDishes() {
+  return getKulinerData().dishes;
+}
+
+export function getDishById(id: string) {
+  return getAllDishes().find(dish => dish.id === id);
+}
+
+export function getDishesByRegion(region: string) {
+  return getAllDishes().filter(dish => dish.region.includes(region));
+}
+
+export function getDishesByCategory(category: string) {
+  return getAllDishes().filter(dish => dish.category === category);
+}
+
+export function getAllDrinks() {
+  return getKulinerData().drinks;
+}
+
+export function getCeremonialFoods() {
+  return getKulinerData().ceremonialFoods;
+}
+
+// Pakaian functions
+export function getPakaianData(): PakaianData {
+  return pakaianData as PakaianData;
+}
+
+export function getMensAttire() {
+  return getPakaianData().mensAttire;
+}
+
+export function getWomensAttire() {
+  return getPakaianData().womensAttire;
+}
+
+export function getUlosTypes() {
+  return getPakaianData().ulosSignificance.types;
+}
+
+export function getUlosTypeByName(name: string) {
+  return getUlosTypes().find(ulos => ulos.name === name);
+}
+
+export function getRegionalClothingVariations() {
+  return getPakaianData().regionalVariations;
+}
+
+// Bahasa functions
+export function getBahasaData(): BahasaData {
+  return bahasaData as BahasaData;
+}
+
+export function getAllDialects() {
+  return getBahasaData().dialects;
+}
+
+export function getDialectById(id: string) {
+  return getAllDialects().find(dialect => dialect.id === id);
+}
+
+export function getCommonPhrases() {
+  return getBahasaData().commonPhrases;
+}
+
+export function getUmpasaExamples() {
+  return getBahasaData().umpasa.examples;
+}
+
+export function getKinshipTerms() {
+  return getBahasaData().kinshipTerminology;
 }

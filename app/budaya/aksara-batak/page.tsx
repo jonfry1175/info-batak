@@ -1,4 +1,10 @@
+import { Gallery } from '@/components/ui/Gallery';
+import { getImagesByCategory } from '@/lib/data';
+
 export default function AksaraBatakPage() {
+  // Get images for Pustaha gallery
+  const pustahaImages = getImagesByCategory('Budaya', 'Aksara Batak');
+
   return (
     <div className="w-full px-4 py-12">
       <div className="mx-auto max-w-5xl">
@@ -200,6 +206,24 @@ export default function AksaraBatakPage() {
             </div>
           </div>
         </section>
+
+        {/* Pustaha Gallery Section */}
+        {pustahaImages.length > 0 && (
+          <section className="mb-16">
+            <h2 className="mb-6 text-3xl font-bold">Galeri Pustaha</h2>
+            <p className="text-foreground/70 mb-6 leading-relaxed">
+              Koleksi foto naskah Pustaha kuno dengan tulisan Aksara Batak. Pustaha adalah buku tradisional
+              yang berisi ilmu pengetahuan leluhur, ditulis oleh para datu (ahli spiritual) menggunakan
+              Aksara Batak pada kulit kayu.
+            </p>
+            <Gallery
+              images={pustahaImages}
+              columns={3}
+              aspectRatio="portrait"
+              showCredits={true}
+            />
+          </section>
+        )}
 
         {/* Call to Action */}
         <section className="bg-foreground/5 rounded-lg p-8 text-center">
