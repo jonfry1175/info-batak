@@ -29,15 +29,18 @@ This document outlines the comprehensive plan to integrate 21st.dev UI component
 ### Existing Component Inventory
 
 **UI Components** (`/components/ui/`):
+
 - `DarkModeToggle.tsx` - Custom dark/light mode toggle
 - `TahukahKamu.tsx` - Custom "Did You Know?" information card
 
 **Layout Components** (`/components/layout/`):
+
 - `Navbar.tsx` - Navigation with dropdown menus and mobile hamburger
 - `Footer.tsx` - Multi-column footer with links
 - `Sidebar.tsx` - Sidebar wrapper for TahukahKamu
 
 **Provider Components**:
+
 - `ThemeProvider.tsx` - next-themes wrapper
 
 **Total**: 6 custom components, ~500 lines of code
@@ -57,23 +60,25 @@ This document outlines the comprehensive plan to integrate 21st.dev UI component
 ### Theme System
 
 **Color Palette** (Batak Flag Colors):
+
 - **Red**: `#C1272D` (Accent - MUST remain consistent)
 - **White**: `#FEFEFE` (Light mode background)
 - **Black**: `#212121` (Dark mode background)
 
 **Current Implementation**:
+
 - CSS custom properties in `globals.css`
 - Inline `@theme` directive (Tailwind v4)
 - Dark mode via `next-themes` with class strategy
 
 ### Configuration Gaps
 
-| File | Status | Action Needed |
-|------|--------|---------------|
-| `components.json` | ❌ Missing | **CREATE** - shadcn/ui configuration |
+| File                 | Status     | Action Needed                        |
+| -------------------- | ---------- | ------------------------------------ |
+| `components.json`    | ❌ Missing | **CREATE** - shadcn/ui configuration |
 | `tailwind.config.ts` | ❌ Missing | **CREATE** - Migrate from inline CSS |
-| `lib/utils.ts` | ❌ Missing | **CREATE** - cn() helper function |
-| `globals.css` | ✓ Exists | **UPDATE** - Add shadcn/ui variables |
+| `lib/utils.ts`       | ❌ Missing | **CREATE** - cn() helper function    |
+| `globals.css`        | ✓ Exists   | **UPDATE** - Add shadcn/ui variables |
 
 ---
 
@@ -82,6 +87,7 @@ This document outlines the comprehensive plan to integrate 21st.dev UI component
 ### Selected Strategy: Full Refactor
 
 **Rationale**:
+
 - User explicitly chose full refactor approach
 - Provides best long-term maintainability
 - Complete design system consistency
@@ -89,6 +95,7 @@ This document outlines the comprehensive plan to integrate 21st.dev UI component
 - Better IDE support and autocomplete
 
 **Key Principles**:
+
 1. **Preserve Cultural Identity** - Batak red (#C1272D) stays constant
 2. **Maintain SSG Compatibility** - All components client-side only
 3. **Accessibility First** - WCAG 2.1 AA minimum
@@ -104,6 +111,7 @@ This document outlines the comprehensive plan to integrate 21st.dev UI component
 **Objective**: Establish shadcn/ui infrastructure
 
 **Tasks**:
+
 1. ✅ Create `components.json` configuration file
 2. ✅ Create `tailwind.config.ts` with theme migration
 3. ✅ Update `globals.css` with shadcn/ui CSS variables
@@ -111,6 +119,7 @@ This document outlines the comprehensive plan to integrate 21st.dev UI component
 5. ✅ Install dependencies (CVA, clsx, tailwind-merge, lucide-react)
 
 **Deliverables**:
+
 - Working shadcn/ui foundation
 - Theme system compatible with both existing and new components
 - Utility functions ready for use
@@ -152,18 +161,20 @@ This document outlines the comprehensive plan to integrate 21st.dev UI component
    - Features: Keyboard navigation, positioning
 
 **Installation Method**:
+
 ```typescript
 // Use Magic MCP tool for each component
 mcp__magic__21st_magic_component_builder({
-  message: "Install [Component] from 21st.dev",
-  searchQuery: "[component-name]",
-  absolutePathToCurrentFile: "/path/to/components/ui/[component].tsx",
-  absolutePathToProjectDirectory: "/home/jonfry/Desktop/project/info-batak",
-  standaloneRequestQuery: "Detailed component requirements..."
-})
+  message: 'Install [Component] from 21st.dev',
+  searchQuery: '[component-name]',
+  absolutePathToCurrentFile: '/path/to/components/ui/[component].tsx',
+  absolutePathToProjectDirectory: '/home/jonfry/Desktop/project/info-batak',
+  standaloneRequestQuery: 'Detailed component requirements...',
+});
 ```
 
 **Deliverables**:
+
 - 6 new UI components in `/components/ui/`
 - Type-safe component APIs
 - Full documentation in component files
@@ -177,17 +188,17 @@ mcp__magic__21st_magic_component_builder({
 #### 3.1 DarkModeToggle.tsx Refactor
 
 **Current Implementation**:
+
 ```tsx
 // Custom button with SVG icons
-<button onClick={toggleTheme}>
-  {theme === 'dark' ? <SunIcon /> : <MoonIcon />}
-</button>
+<button onClick={toggleTheme}>{theme === 'dark' ? <SunIcon /> : <MoonIcon />}</button>
 ```
 
 **New Implementation**:
+
 ```tsx
-import { Button } from "@/components/ui/button"
-import { Moon, Sun } from "lucide-react"
+import { Button } from '@/components/ui/button';
+import { Moon, Sun } from 'lucide-react';
 
 export function DarkModeToggle() {
   return (
@@ -197,14 +208,15 @@ export function DarkModeToggle() {
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
       aria-label="Toggle theme"
     >
-      <Sun className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-      <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+      <Sun className="h-5 w-5 scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90" />
+      <Moon className="absolute h-5 w-5 scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0" />
     </Button>
-  )
+  );
 }
 ```
 
 **Benefits**:
+
 - Consistent button styling
 - Better accessibility
 - Smooth icon transitions
@@ -215,35 +227,38 @@ export function DarkModeToggle() {
 #### 3.2 TahukahKamu.tsx Refactor
 
 **Current Implementation**:
+
 ```tsx
 // Custom card with left border accent
-<div className="border-l-4 border-accent bg-background p-4">
+<div className="border-accent bg-background border-l-4 p-4">
   <h3>Tahukah Kamu?</h3>
   <p>{fakta.teks}</p>
 </div>
 ```
 
 **New Implementation**:
+
 ```tsx
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
-import { Badge } from "@/components/ui/badge"
-import { Info } from "lucide-react"
+import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
+import { Badge } from '@/components/ui/badge';
+import { Info } from 'lucide-react';
 
 export function TahukahKamu() {
   return (
-    <Alert className="border-l-4 border-l-accent">
-      <Info className="h-4 w-4 text-accent" />
+    <Alert className="border-l-accent border-l-4">
+      <Info className="text-accent h-4 w-4" />
       <AlertTitle className="flex items-center gap-2">
         Tahukah Kamu?
         <Badge variant="secondary">{fakta.kategori}</Badge>
       </AlertTitle>
       <AlertDescription>{fakta.teks}</AlertDescription>
     </Alert>
-  )
+  );
 }
 ```
 
 **Benefits**:
+
 - Proper semantic structure
 - Category badge for filtering
 - Icon for visual interest
@@ -254,12 +269,14 @@ export function TahukahKamu() {
 #### 3.3 Navbar.tsx Refactor
 
 **Current Implementation**:
+
 - Custom CSS dropdown menus
 - Manual focus management
 - Inline styled buttons
 - Complex mobile hamburger logic
 
 **New Implementation**:
+
 ```tsx
 import {
   NavigationMenu,
@@ -315,6 +332,7 @@ import {
 ```
 
 **Benefits**:
+
 - Built-in keyboard navigation
 - ARIA labels automatic
 - Better mobile UX
@@ -326,26 +344,25 @@ import {
 #### 3.4 Page-Level Button Replacements
 
 **Files to Update**:
+
 - `app/page.tsx` - Homepage CTAs
 - `app/marga/page.tsx` - Filter buttons (Rumpun selector)
 - `app/budaya/*/page.tsx` - Navigation buttons
 
 **Pattern**:
+
 ```tsx
 // Before
-<button className="px-4 py-2 bg-accent text-white rounded">
-  Lihat Semua Marga
-</button>
+<button className="bg-accent rounded px-4 py-2 text-white">Lihat Semua Marga</button>;
 
 // After
-import { Button } from "@/components/ui/button"
+import { Button } from '@/components/ui/button';
 
-<Button variant="default">
-  Lihat Semua Marga
-</Button>
+<Button variant="default">Lihat Semua Marga</Button>;
 ```
 
 **Marga Filter Buttons**:
+
 ```tsx
 // Before
 <button
@@ -369,30 +386,35 @@ import { Button } from "@/components/ui/button"
 #### 3.5 Badge Integration
 
 **Add to Marga Cards** (`app/marga/page.tsx`):
-```tsx
-import { Badge } from "@/components/ui/badge"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 
-{margaList.map((marga) => (
-  <Card key={marga.id}>
-    <CardHeader>
-      <CardTitle className="flex items-center justify-between">
-        {marga.nama}
-        <Badge variant="secondary">{marga.rumpun}</Badge>
-      </CardTitle>
-      <CardDescription>{marga.deskripsi}</CardDescription>
-    </CardHeader>
-  </Card>
-))}
+```tsx
+import { Badge } from '@/components/ui/badge';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+
+{
+  margaList.map((marga) => (
+    <Card key={marga.id}>
+      <CardHeader>
+        <CardTitle className="flex items-center justify-between">
+          {marga.nama}
+          <Badge variant="secondary">{marga.rumpun}</Badge>
+        </CardTitle>
+        <CardDescription>{marga.deskripsi}</CardDescription>
+      </CardHeader>
+    </Card>
+  ));
+}
 ```
 
 **Add to Fakta Categories**:
+
 ```tsx
 // In TahukahKamu component
 <Badge variant="outline">{fakta.kategori}</Badge>
 ```
 
 **Deliverables**:
+
 - All custom components refactored
 - Consistent component patterns
 - Improved accessibility
@@ -407,6 +429,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 #### 4.1 Theme Testing
 
 **Test Cases**:
+
 1. ✅ Light mode renders correctly
 2. ✅ Dark mode renders correctly
 3. ✅ Theme toggle works smoothly
@@ -416,6 +439,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 7. ✅ Smooth transitions on theme switch (0.3s)
 
 **Testing Method**:
+
 ```bash
 # Start dev server
 pnpm dev
@@ -432,17 +456,20 @@ pnpm dev
 #### 4.2 Responsive Behavior Testing
 
 **Breakpoints to Test**:
+
 - Mobile: 320px - 640px
 - Tablet: 640px - 1024px
 - Desktop: 1024px+
 
 **Components to Test**:
+
 - Navbar (mobile hamburger vs desktop menu)
 - Marga cards (grid responsiveness)
 - Footer (column stacking)
 - Buttons (touch targets min 44px)
 
 **Testing Method**:
+
 ```bash
 # Use browser responsive mode
 # Test at: 375px, 768px, 1280px, 1920px
@@ -453,6 +480,7 @@ pnpm dev
 #### 4.3 Accessibility Audit
 
 **Checks**:
+
 1. ✅ All buttons have accessible names
 2. ✅ Keyboard navigation works (Tab, Enter, Escape)
 3. ✅ Focus indicators visible
@@ -462,6 +490,7 @@ pnpm dev
 7. ✅ Screen reader compatibility
 
 **Tools**:
+
 - Chrome Lighthouse
 - axe DevTools browser extension
 - Manual keyboard navigation test
@@ -471,6 +500,7 @@ pnpm dev
 #### 4.4 Build & SSG Verification
 
 **Test Commands**:
+
 ```bash
 # Clean previous builds
 rm -rf .next out
@@ -489,6 +519,7 @@ pnpx serve out
 ```
 
 **Expected Output**:
+
 - No build errors
 - All pages exported to `out/` directory
 - Images unoptimized (as configured)
@@ -500,16 +531,19 @@ pnpx serve out
 #### 4.5 Code Quality
 
 **Format Code**:
+
 ```bash
 pnpm format
 ```
 
 **Lint Code**:
+
 ```bash
 pnpm lint
 ```
 
 **Expected**:
+
 - No linting errors
 - Consistent Tailwind class ordering
 - TypeScript types correct
@@ -554,79 +588,79 @@ pnpm lint
 #### 1.2 Create `tailwind.config.ts`
 
 ```typescript
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
-  darkMode: ["class"],
+  darkMode: ['class'],
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background: 'var(--background)',
+        foreground: 'var(--foreground)',
         accent: {
-          DEFAULT: "var(--accent)",
-          foreground: "var(--foreground)",
+          DEFAULT: 'var(--accent)',
+          foreground: 'var(--foreground)',
         },
         batak: {
-          red: "#c1272d",
-          white: "#fefefe",
-          black: "#212121",
+          red: '#c1272d',
+          white: '#fefefe',
+          black: '#212121',
         },
         card: {
-          DEFAULT: "var(--background)",
-          foreground: "var(--foreground)",
+          DEFAULT: 'var(--background)',
+          foreground: 'var(--foreground)',
         },
         popover: {
-          DEFAULT: "var(--background)",
-          foreground: "var(--foreground)",
+          DEFAULT: 'var(--background)',
+          foreground: 'var(--foreground)',
         },
         primary: {
-          DEFAULT: "var(--accent)",
-          foreground: "var(--foreground)",
+          DEFAULT: 'var(--accent)',
+          foreground: 'var(--foreground)',
         },
         secondary: {
-          DEFAULT: "hsl(0 0% 96%)",
-          foreground: "var(--foreground)",
+          DEFAULT: 'hsl(0 0% 96%)',
+          foreground: 'var(--foreground)',
         },
         muted: {
-          DEFAULT: "hsl(0 0% 96%)",
-          foreground: "hsl(0 0% 45%)",
+          DEFAULT: 'hsl(0 0% 96%)',
+          foreground: 'hsl(0 0% 45%)',
         },
         destructive: {
-          DEFAULT: "hsl(0 84% 60%)",
-          foreground: "var(--foreground)",
+          DEFAULT: 'hsl(0 84% 60%)',
+          foreground: 'var(--foreground)',
         },
-        border: "hsl(0 0% 90%)",
-        input: "hsl(0 0% 90%)",
-        ring: "var(--accent)",
+        border: 'hsl(0 0% 90%)',
+        input: 'hsl(0 0% 90%)',
+        ring: 'var(--accent)',
       },
       borderRadius: {
-        lg: "0.5rem",
-        md: "calc(0.5rem - 2px)",
-        sm: "calc(0.5rem - 4px)",
+        lg: '0.5rem',
+        md: 'calc(0.5rem - 2px)',
+        sm: 'calc(0.5rem - 4px)',
       },
       fontFamily: {
-        sans: ["var(--font-geist-sans)", "Arial", "Helvetica", "sans-serif"],
-        mono: ["var(--font-geist-mono)", "monospace"],
+        sans: ['var(--font-geist-sans)', 'Arial', 'Helvetica', 'sans-serif'],
+        mono: ['var(--font-geist-mono)', 'monospace'],
       },
       keyframes: {
-        "accordion-down": {
-          from: { height: "0" },
-          to: { height: "var(--radix-accordion-content-height)" },
+        'accordion-down': {
+          from: { height: '0' },
+          to: { height: 'var(--radix-accordion-content-height)' },
         },
-        "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: "0" },
+        'accordion-up': {
+          from: { height: 'var(--radix-accordion-content-height)' },
+          to: { height: '0' },
         },
       },
       animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
+        'accordion-down': 'accordion-down 0.2s ease-out',
+        'accordion-up': 'accordion-up 0.2s ease-out',
       },
     },
   },
@@ -649,8 +683,8 @@ export default config;
 #### 1.4 Create `lib/utils.ts`
 
 ```typescript
-import { clsx, type ClassValue } from "clsx";
-import { twMerge } from "tailwind-merge";
+import { clsx, type ClassValue } from 'clsx';
+import { twMerge } from 'tailwind-merge';
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -680,15 +714,17 @@ pnpm install class-variance-authority clsx tailwind-merge lucide-react
 ```typescript
 // Tool call
 mcp__magic__21st_magic_component_builder({
-  message: "Install Button component from 21st.dev with variants",
-  searchQuery: "button",
-  absolutePathToCurrentFile: "/home/jonfry/Desktop/project/info-batak/components/ui/button.tsx",
-  absolutePathToProjectDirectory: "/home/jonfry/Desktop/project/info-batak",
-  standaloneRequestQuery: "Create a Button component with variants (default, destructive, outline, secondary, ghost, link) and sizes (sm, default, lg, icon) using CVA"
-})
+  message: 'Install Button component from 21st.dev with variants',
+  searchQuery: 'button',
+  absolutePathToCurrentFile: '/home/jonfry/Desktop/project/info-batak/components/ui/button.tsx',
+  absolutePathToProjectDirectory: '/home/jonfry/Desktop/project/info-batak',
+  standaloneRequestQuery:
+    'Create a Button component with variants (default, destructive, outline, secondary, ghost, link) and sizes (sm, default, lg, icon) using CVA',
+});
 ```
 
 **Alternative**: Manual shadcn/ui installation
+
 ```bash
 npx shadcn@latest add button
 ```
@@ -701,15 +737,17 @@ npx shadcn@latest add button
 
 ```typescript
 mcp__magic__21st_magic_component_builder({
-  message: "Install Card component from 21st.dev",
-  searchQuery: "card",
-  absolutePathToCurrentFile: "/home/jonfry/Desktop/project/info-batak/components/ui/card.tsx",
-  absolutePathToProjectDirectory: "/home/jonfry/Desktop/project/info-batak",
-  standaloneRequestQuery: "Create Card component with CardHeader, CardTitle, CardDescription, CardContent, CardFooter sub-components"
-})
+  message: 'Install Card component from 21st.dev',
+  searchQuery: 'card',
+  absolutePathToCurrentFile: '/home/jonfry/Desktop/project/info-batak/components/ui/card.tsx',
+  absolutePathToProjectDirectory: '/home/jonfry/Desktop/project/info-batak',
+  standaloneRequestQuery:
+    'Create Card component with CardHeader, CardTitle, CardDescription, CardContent, CardFooter sub-components',
+});
 ```
 
 **Alternative**:
+
 ```bash
 npx shadcn@latest add card
 ```
@@ -739,6 +777,7 @@ npx shadcn@latest add navigation-menu
 ```
 
 **Note**: Requires additional dependencies
+
 ```bash
 pnpm install @radix-ui/react-navigation-menu
 ```
@@ -752,6 +791,7 @@ npx shadcn@latest add dropdown-menu
 ```
 
 **Note**: Requires additional dependencies
+
 ```bash
 pnpm install @radix-ui/react-dropdown-menu
 ```
@@ -793,6 +833,7 @@ pnpm install @radix-ui/react-dropdown-menu
 **File**: `/app/page.tsx`
 
 **Changes**:
+
 - Replace inline button styles with `<Button>` component
 - Add icon support with `lucide-react`
 - Ensure responsive sizing
@@ -804,6 +845,7 @@ pnpm install @radix-ui/react-dropdown-menu
 **File**: `/app/marga/page.tsx`
 
 **Changes**:
+
 - Replace filter buttons with `<Button variant="outline">`
 - Add `<Badge>` to marga cards
 - Use `<Card>` component for marga display
@@ -813,6 +855,7 @@ pnpm install @radix-ui/react-dropdown-menu
 #### 3.6 Update Other Pages
 
 **Files**:
+
 - `/app/sejarah/page.tsx`
 - `/app/budaya/adat-istiadat/page.tsx`
 - `/app/budaya/kesenian/page.tsx`
@@ -877,6 +920,7 @@ pnpx serve out
 ```
 
 **Checklist**:
+
 - [ ] Build completes without errors
 - [ ] All pages exported to `out/`
 - [ ] Production site works correctly
@@ -896,6 +940,7 @@ pnpm lint
 ```
 
 **Checklist**:
+
 - [ ] No linting errors
 - [ ] Code properly formatted
 - [ ] No unused imports
@@ -907,16 +952,16 @@ pnpm lint
 
 ### Before → After
 
-| Current Component | 21st.dev Replacement | Complexity | Time Est. |
-|-------------------|----------------------|------------|-----------|
-| Custom buttons (inline) | `<Button>` | Low | 30 min |
-| DarkModeToggle.tsx | `<Button variant="ghost">` + icons | Low | 30 min |
-| TahukahKamu.tsx | `<Alert>` + `<Badge>` | Medium | 1 hour |
-| Navbar.tsx (desktop) | `<NavigationMenu>` | High | 2 hours |
-| Navbar.tsx (mobile) | `<DropdownMenu>` | Medium | 1 hour |
-| Marga cards | `<Card>` + `<Badge>` | Medium | 1 hour |
-| Filter buttons | `<Button variant="outline">` | Low | 30 min |
-| Footer links | Keep as-is (no change) | N/A | N/A |
+| Current Component       | 21st.dev Replacement               | Complexity | Time Est. |
+| ----------------------- | ---------------------------------- | ---------- | --------- |
+| Custom buttons (inline) | `<Button>`                         | Low        | 30 min    |
+| DarkModeToggle.tsx      | `<Button variant="ghost">` + icons | Low        | 30 min    |
+| TahukahKamu.tsx         | `<Alert>` + `<Badge>`              | Medium     | 1 hour    |
+| Navbar.tsx (desktop)    | `<NavigationMenu>`                 | High       | 2 hours   |
+| Navbar.tsx (mobile)     | `<DropdownMenu>`                   | Medium     | 1 hour    |
+| Marga cards             | `<Card>` + `<Badge>`               | Medium     | 1 hour    |
+| Filter buttons          | `<Button variant="outline">`       | Low        | 30 min    |
+| Footer links            | Keep as-is (no change)             | N/A        | N/A       |
 
 **Total Estimated Time**: ~8 hours of development
 
@@ -927,6 +972,7 @@ pnpm lint
 ### Functional Requirements
 
 ✅ **All existing functionality preserved**
+
 - Dark/light mode toggle works
 - Navigation (desktop + mobile) functional
 - Marga filtering works
@@ -934,6 +980,7 @@ pnpm lint
 - All internal links work
 
 ✅ **New functionality added**
+
 - Consistent button system across site
 - Professional card components
 - Badge system for categorization
@@ -945,6 +992,7 @@ pnpm lint
 ### Design Requirements
 
 ✅ **Visual Consistency**
+
 - Batak red (#C1272D) appears consistently
 - Spacing follows consistent scale
 - Typography hierarchy maintained
@@ -952,6 +1000,7 @@ pnpm lint
 - Transitions feel natural
 
 ✅ **Theme System**
+
 - Light mode renders correctly
 - Dark mode renders correctly
 - No FOUC on page load
@@ -963,6 +1012,7 @@ pnpm lint
 ### Accessibility Requirements
 
 ✅ **WCAG 2.1 AA Compliance**
+
 - Color contrast ratios pass
 - Keyboard navigation works
 - ARIA labels present
@@ -975,6 +1025,7 @@ pnpm lint
 ### Technical Requirements
 
 ✅ **Build & Performance**
+
 - `pnpm build` succeeds
 - SSG outputs to `out/` directory
 - No runtime errors
@@ -982,6 +1033,7 @@ pnpm lint
 - Client-side JS < 200KB increase
 
 ✅ **Code Quality**
+
 - No ESLint errors
 - TypeScript types correct
 - Prettier formatted
@@ -995,12 +1047,14 @@ pnpm lint
 ### Manual Testing Protocol
 
 **1. Visual Inspection**
+
 - Load each page in browser
 - Toggle dark/light mode
 - Check color consistency
 - Verify layout responsiveness
 
 **2. Interaction Testing**
+
 - Click all buttons
 - Navigate all menus
 - Test mobile hamburger
@@ -1008,11 +1062,13 @@ pnpm lint
 - Test theme toggle
 
 **3. Cross-Browser Testing**
+
 - Chrome/Edge (Chromium)
 - Firefox
 - Safari (if available)
 
 **4. Device Testing**
+
 - Desktop (1920x1080)
 - Laptop (1366x768)
 - Tablet (768x1024)
@@ -1023,6 +1079,7 @@ pnpm lint
 ### Automated Testing
 
 **Lighthouse Audit**:
+
 ```bash
 # Run in Chrome DevTools
 # Target scores:
@@ -1033,6 +1090,7 @@ pnpm lint
 ```
 
 **axe DevTools**:
+
 - Install browser extension
 - Run on each page
 - Fix all critical/serious issues
@@ -1044,6 +1102,7 @@ pnpm lint
 ### If Critical Issues Arise
 
 **Git Rollback**:
+
 ```bash
 # If integrated but broken
 git log --oneline  # Find last good commit
@@ -1054,11 +1113,13 @@ git reset --hard <commit-hash>
 ```
 
 **Selective Rollback**:
+
 - Keep foundation files (`components.json`, `tailwind.config.ts`)
 - Rollback only problematic component refactors
 - Debug and fix incrementally
 
 **Component-Level Rollback**:
+
 ```bash
 # Restore individual component
 git checkout HEAD~1 -- components/ui/TahukahKamu.tsx
@@ -1146,6 +1207,7 @@ info-batak/
 ```
 
 **Legend**:
+
 - ✅ KEEP AS-IS: No changes needed
 - 🔄 TO UPDATE: Needs modification
 - 🆕 NEW: New file to create
@@ -1157,6 +1219,7 @@ info-batak/
 ### 1. Component Documentation
 
 Create `/docs/components.md` with:
+
 - Usage examples for each component
 - Variant demonstrations
 - Accessibility notes
@@ -1165,6 +1228,7 @@ Create `/docs/components.md` with:
 ### 2. Storybook (Optional Future Enhancement)
 
 Consider adding Storybook for component development:
+
 ```bash
 pnpm add -D @storybook/nextjs
 npx storybook@latest init
@@ -1173,6 +1237,7 @@ npx storybook@latest init
 ### 3. Component Testing (Optional Future Enhancement)
 
 Add Jest + React Testing Library:
+
 ```bash
 pnpm add -D @testing-library/react @testing-library/jest-dom jest jest-environment-jsdom
 ```
@@ -1180,6 +1245,7 @@ pnpm add -D @testing-library/react @testing-library/jest-dom jest jest-environme
 ### 4. CI/CD Integration
 
 Add GitHub Actions workflow to:
+
 - Run `pnpm lint` on PRs
 - Run `pnpm build` to verify SSG
 - Check for TypeScript errors
@@ -1190,24 +1256,28 @@ Add GitHub Actions workflow to:
 ## Timeline Estimate
 
 ### Day 1 (Foundation)
+
 - ✅ Create configuration files (1 hour) **COMPLETED**
 - ✅ Install dependencies (30 min) **COMPLETED**
 - Install core components via Magic MCP (2 hours)
 - **Total**: 3.5 hours
 
 ### Day 2 (Refactoring)
+
 - Refactor DarkModeToggle (30 min)
 - Refactor TahukahKamu (1 hour)
 - Refactor Navbar (3 hours)
 - **Total**: 4.5 hours
 
 ### Day 3 (Page Updates)
+
 - Update homepage (1 hour)
 - Update Marga page (1.5 hours)
 - Update other pages (1.5 hours)
 - **Total**: 4 hours
 
 ### Day 4 (Testing & Polish)
+
 - Theme testing (1 hour)
 - Responsive testing (1 hour)
 - Accessibility audit (1 hour)
@@ -1222,18 +1292,21 @@ Add GitHub Actions workflow to:
 ## Notes & Considerations
 
 ### Cultural Sensitivity
+
 - All component text should remain in Indonesian
 - Maintain educational tone in component descriptions
 - Preserve Batak cultural references and context
 - Ensure component naming doesn't conflict with cultural terms
 
 ### Performance Considerations
+
 - Monitor bundle size increase (target: <200KB)
 - Lazy load components where possible
 - Use code splitting for route-based chunks
 - Optimize Framer Motion animations
 
 ### Future Scalability
+
 - Component library can be extended easily
 - Design tokens centralized in Tailwind config
 - Easy to add new shadcn/ui components
@@ -1263,6 +1336,7 @@ A: Absolutely. Footer and Sidebar are staying as-is. Mix and match as needed.
 ## Resources
 
 ### Documentation
+
 - [21st.dev Official Docs](https://21st.dev)
 - [shadcn/ui Documentation](https://ui.shadcn.com)
 - [Tailwind CSS v4 Docs](https://tailwindcss.com)
@@ -1270,10 +1344,12 @@ A: Absolutely. Footer and Sidebar are staying as-is. Mix and match as needed.
 - [Lucide Icons](https://lucide.dev)
 
 ### Community
+
 - [shadcn/ui Discord](https://discord.com/invite/shadcn)
 - [Tailwind CSS Discord](https://discord.com/invite/tailwindcss)
 
 ### Tools
+
 - [Lighthouse](https://developer.chrome.com/docs/lighthouse)
 - [axe DevTools](https://www.deque.com/axe/devtools/)
 - [Color Contrast Checker](https://webaim.org/resources/contrastchecker/)
@@ -1285,6 +1361,7 @@ A: Absolutely. Footer and Sidebar are staying as-is. Mix and match as needed.
 This plan provides a comprehensive roadmap for integrating 21st.dev into InfoBatak.id. The foundation has been established (✅ Phase 1 complete), and the remaining phases are clearly defined with specific tasks, timelines, and success criteria.
 
 The integration will:
+
 - ✅ Maintain cultural identity (Batak red preserved)
 - ✅ Improve accessibility (WCAG AA compliance)
 - ✅ Enhance maintainability (component library)

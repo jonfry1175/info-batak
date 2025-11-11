@@ -4,6 +4,8 @@ import { useState } from 'react';
 import { getAllMarga } from '@/lib/data';
 import { Rumpun } from '@/types';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
 
 const rumpunOptions: Rumpun[] = ['Toba', 'Karo', 'Simalungun', 'Pakpak', 'Angkola', 'Mandailing'];
 
@@ -31,28 +33,20 @@ export default function MargaPage() {
         {/* Filter Tabs */}
         <div className="mb-12">
           <div className="flex flex-wrap justify-center gap-3">
-            <button
+            <Button
+              variant={selectedRumpun === 'Semua' ? 'default' : 'outline'}
               onClick={() => setSelectedRumpun('Semua')}
-              className={`rounded-lg px-6 py-3 font-semibold transition-all ${
-                selectedRumpun === 'Semua'
-                  ? 'bg-accent text-white shadow-lg'
-                  : 'bg-foreground/5 hover:bg-foreground/10 text-foreground/70'
-              }`}
             >
               Semua
-            </button>
+            </Button>
             {rumpunOptions.map((rumpun) => (
-              <button
+              <Button
                 key={rumpun}
+                variant={selectedRumpun === rumpun ? 'default' : 'outline'}
                 onClick={() => setSelectedRumpun(rumpun)}
-                className={`rounded-lg px-6 py-3 font-semibold transition-all ${
-                  selectedRumpun === rumpun
-                    ? 'bg-accent text-white shadow-lg'
-                    : 'bg-foreground/5 hover:bg-foreground/10 text-foreground/70'
-                }`}
               >
                 {rumpun}
-              </button>
+              </Button>
             ))}
           </div>
         </div>
@@ -90,13 +84,9 @@ export default function MargaPage() {
                   <h3 className="group-hover:text-accent text-xl font-bold transition-colors">
                     {marga.nama}
                   </h3>
-                  <span className="text-2xl">👤</span>
+                  <Badge variant="secondary">{marga.rumpun}</Badge>
                 </div>
                 <div className="space-y-2">
-                  <p className="text-sm">
-                    <span className="text-foreground/60 font-medium">Rumpun:</span>{' '}
-                    <span className="text-accent font-semibold">{marga.rumpun}</span>
-                  </p>
                   {marga.deskripsi && (
                     <p className="text-foreground/70 text-sm">{marga.deskripsi}</p>
                   )}
