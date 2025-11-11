@@ -1,0 +1,135 @@
+{
+  "images": [
+    {
+      "id": "hero-lake-toba",
+      "src": "/images/homepage/hero-lake-toba.jpg",
+      "alt": "Pemandangan indah Danau Toba dengan pulau Samosir",
+      "category": "Homepage",
+      "subcategory": "Hero",
+      "photographer": "To be credited",
+      "year": 2024,
+      "license": "TBD",
+      "description": "Aerial view of Lake Toba, the largest volcanic lake in the world and ancestral homeland of Batak people",
+      "keywords": ["lake toba", "samosir", "landscape", "batak homeland"],
+      "width": 1920,
+      "height": 800,
+      "placeholder": true
+    },
+    {
+      "id": "hero-tortor",
+      "src": "/images/homepage/hero-tortor.jpg",
+      "alt": "Penari Tortor dalam pakaian adat Batak",
+      "category": "Homepage",
+      "subcategory": "Hero",
+      "photographer": "To be credited",
+      "year": 2024,
+      "license": "TBD",
+      "description": "Traditional Tortor dancers performing in ceremonial attire",
+      "keywords": ["tortor", "dance", "traditional", "ceremony"],
+      "width": 1920,
+      "height": 800,
+      "placeholder": true
+    },
+    {
+      "id": "hero-pustaha",
+      "src": "/images/homepage/hero-pustaha.jpg",
+      "alt": "Naskah Pustaha kuno dengan tulisan Aksara Batak",
+      "category": "Homepage",
+      "subcategory": "Hero",
+      "photographer": "To be credited",
+      "year": 2024,
+      "license": "TBD",
+      "description": "Ancient Pustaha manuscript showing traditional Batak script",
+      "keywords": ["pustaha", "aksara", "manuscript", "ancient"],
+      "width": 1920,
+      "height": 800,
+      "placeholder": true
+    }
+  ],
+  "videos": [
+    {
+      "id": "intro-batak-script",
+      "src": "/videos/educational/intro-batak-script.mp4",
+      "thumbnail": "/images/budaya/aksara/video-thumbnail.jpg",
+      "title": "Pengantar Aksara Batak",
+      "description": "Video edukasi singkat tentang sejarah dan cara membaca Aksara Batak",
+      "category": "Educational",
+      "subcategory": "Aksara Batak",
+      "duration": 180,
+      "creator": "To be credited",
+      "year": 2024,
+      "license": "TBD",
+      "keywords": ["aksara batak", "education", "script", "tutorial"],
+      "hasCaption": false,
+      "hasTranscript": false,
+      "placeholder": true
+    }
+  ],
+  "audio": [
+    {
+      "id": "taganing-sample",
+      "src": "/audio/instruments/taganing-sample.mp3",
+      "title": "Taganing - Sample Audio",
+      "description": "Short sample of Taganing drum sound",
+      "category": "Kesenian",
+      "subcategory": "Gondang Sabangunan",
+      "duration": 15,
+      "performer": "To be credited",
+      "year": 2024,
+      "license": "TBD",
+      "keywords": ["taganing", "gondang", "drum", "music"],
+      "placeholder": true
+    }
+  ],
+  "_schema": {
+    "description": "Media library for InfoBatak.id - Centralized metadata for images, videos, and audio",
+    "version": "1.0.0",
+    "lastUpdated": "2025-11-11",
+    "imageFields": {
+      "id": "Unique identifier (string, kebab-case)",
+      "src": "Relative path from /public (string)",
+      "alt": "Alternative text for accessibility (string, Indonesian)",
+      "category": "Main category: Homepage, Budaya, Sejarah, Marga, Fakta, General (string)",
+      "subcategory": "Specific subsection (string, optional)",
+      "photographer": "Photo credit (string)",
+      "year": "Year taken (number)",
+      "license": "Usage rights: CC BY-SA 4.0, Public Domain, Permission Granted, etc. (string)",
+      "description": "Detailed description in English for international audience (string)",
+      "keywords": "Search tags (array of strings)",
+      "width": "Image width in pixels (number, optional)",
+      "height": "Image height in pixels (number, optional)",
+      "placeholder": "True if this is a placeholder entry awaiting real content (boolean)"
+    },
+    "videoFields": {
+      "id": "Unique identifier (string, kebab-case)",
+      "src": "Relative path or external URL (string)",
+      "thumbnail": "Video thumbnail image path (string)",
+      "title": "Video title (string, Indonesian)",
+      "description": "Video description (string, Indonesian)",
+      "category": "Educational, Performances, Documentaries, Tutorials (string)",
+      "subcategory": "Specific topic (string)",
+      "duration": "Duration in seconds (number)",
+      "creator": "Video creator/producer credit (string)",
+      "year": "Year produced (number)",
+      "license": "Usage rights (string)",
+      "keywords": "Search tags (array of strings)",
+      "hasCaption": "True if captions available (boolean)",
+      "hasTranscript": "True if transcript available (boolean)",
+      "placeholder": "True if placeholder entry (boolean)"
+    },
+    "audioFields": {
+      "id": "Unique identifier (string, kebab-case)",
+      "src": "Relative path or external URL (string)",
+      "title": "Audio title (string)",
+      "description": "Audio description (string)",
+      "category": "Main category (string)",
+      "subcategory": "Specific topic (string)",
+      "duration": "Duration in seconds (number)",
+      "performer": "Performer/musician credit (string)",
+      "year": "Year recorded (number)",
+      "license": "Usage rights (string)",
+      "keywords": "Search tags (array of strings)",
+      "placeholder": "True if placeholder entry (boolean)"
+    }
+  }
+}

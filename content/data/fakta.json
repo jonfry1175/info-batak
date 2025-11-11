@@ -2,7 +2,11 @@
   {
     "id": "1",
     "teks": "Aksara Batak memiliki 19 huruf induk yang disebut 'Ina ni Surat' dan dilengkapi dengan tanda diakritik yang disebut 'Anak ni Surat'.",
-    "kategori": "Aksara"
+    "kategori": "Aksara",
+    "image": "/images/fakta/aksara-sample.jpg",
+    "imageAlt": "Close-up tulisan Aksara Batak pada naskah Pustaha kuno",
+    "imageCredit": "Placeholder - To be replaced",
+    "relatedPage": "/budaya/aksara-batak"
   },
   {
     "id": "2",
@@ -22,7 +26,11 @@
   {
     "id": "5",
     "teks": "Tortor adalah tarian tradisional Batak yang dilakukan dalam berbagai upacara adat, dengan gerakan yang mengandung makna filosofis mendalam.",
-    "kategori": "Kesenian"
+    "kategori": "Kesenian",
+    "image": "/images/fakta/kesenian-tortor.jpg",
+    "imageAlt": "Penari Tortor dalam pakaian adat Batak",
+    "imageCredit": "Placeholder - To be replaced",
+    "relatedPage": "/budaya/kesenian"
   },
   {
     "id": "6",
@@ -37,12 +45,20 @@
   {
     "id": "8",
     "teks": "Ulos adalah kain tradisional Batak yang ditenun dengan tangan dan memiliki makna filosofis sebagai simbol kasih sayang dan kehangatan.",
-    "kategori": "Kesenian"
+    "kategori": "Kesenian",
+    "image": "/images/fakta/kesenian-ulos.jpg",
+    "imageAlt": "Detail motif Ulos tradisional Batak dengan warna merah, hitam, dan putih",
+    "imageCredit": "Placeholder - To be replaced",
+    "relatedPage": "/budaya/kesenian"
   },
   {
     "id": "9",
     "teks": "Rumah adat Batak Toba disebut 'Ruma Bolon' atau 'Jabu', memiliki atap berbentuk perahu terbalik yang melambangkan nenek moyang yang datang melalui laut.",
-    "kategori": "Budaya"
+    "kategori": "Budaya",
+    "image": "/images/fakta/budaya-ruma-bolon.jpg",
+    "imageAlt": "Rumah adat Batak Toba (Ruma Bolon) dengan atap berbentuk perahu terbalik",
+    "imageCredit": "Placeholder - To be replaced",
+    "relatedPage": "/budaya/arsitektur"
   },
   {
     "id": "10",
