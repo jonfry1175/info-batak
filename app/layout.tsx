@@ -8,6 +8,11 @@ export const metadata: Metadata = {
   title: 'InfoBatak.id - Portal Budaya Batak',
   description:
     'Portal informasi digital tentang sejarah, budaya, adat, aksara, dan sistem marga Batak.',
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/logo.png',
+  },
 };
 
 export default function RootLayout({
