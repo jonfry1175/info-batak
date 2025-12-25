@@ -310,3 +310,20 @@ export interface BahasaData {
   literature: any;
   languagePreservation: any;
 }
+
+
+// Auth types (Supabase)
+export interface UserProfile {
+  id: string;
+  email: string;
+  display_name: string | null;
+  avatar_url: string | null;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface AuthState {
+  user: UserProfile | null;
+  loading: boolean;
+  error: string | null;
+}
