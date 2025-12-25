@@ -11,8 +11,8 @@ export function Hero() {
       {/* Dynamic Background */}
       <div className="bg-background absolute inset-0">
         <div className="pattern-gorga absolute inset-0 animate-pulse opacity-10" />
-        <div className="via-background/50 to-background absolute inset-0 bg-gradient-to-b from-transparent" />
-        <div className="from-accent/5 absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] via-transparent to-transparent" />
+        <div className="via-background/50 to-background absolute inset-0 bg-linear-to-b from-transparent" />
+        <div className="from-accent/5 absolute inset-0 bg-[radial-gradient(circle_at_center,var(--tw-gradient-stops))] via-transparent to-transparent" />
       </div>
 
       {/* Content Container */}
@@ -37,7 +37,7 @@ export function Hero() {
 
           {/* Main Title */}
           <h1 className="text-5xl font-bold tracking-tight text-balance md:text-7xl lg:text-8xl">
-            <span className="from-foreground via-foreground/90 to-foreground/70 bg-gradient-to-r bg-clip-text text-transparent">
+            <span className="from-foreground via-foreground/90 to-foreground/70 bg-linear-to-r bg-clip-text text-transparent">
               InfoBatak
             </span>
             <span className="text-accent">.id</span>
@@ -94,7 +94,7 @@ export function Hero() {
         className="text-muted-foreground/50 absolute bottom-8 left-1/2 flex -translate-x-1/2 flex-col items-center gap-2"
       >
         <span className="text-xs tracking-widest uppercase">Scroll</span>
-        <div className="from-muted-foreground/50 h-12 w-px bg-gradient-to-b to-transparent" />
+        <div className="from-muted-foreground/50 h-12 w-px bg-linear-to-b to-transparent" />
       </motion.div>
     </section>
   );
