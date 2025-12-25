@@ -4,10 +4,8 @@ import { useState } from 'react';
 import { getAllMarga } from '@/lib/data';
 import { Rumpun } from '@/types';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-
-const rumpunOptions: Rumpun[] = ['Toba', 'Karo', 'Simalungun', 'Pakpak', 'Angkola', 'Mandailing'];
+import { MargaFilterVisual } from '@/components/marga/MargaFilterVisual';
 
 export default function MargaPage() {
   const [selectedRumpun, setSelectedRumpun] = useState<Rumpun | 'Semua'>('Semua');
@@ -30,26 +28,11 @@ export default function MargaPage() {
           </p>
         </div>
 
-        {/* Filter Tabs */}
-        <div className="mb-12">
-          <div className="flex flex-wrap justify-center gap-3">
-            <Button
-              variant={selectedRumpun === 'Semua' ? 'default' : 'outline'}
-              onClick={() => setSelectedRumpun('Semua')}
-            >
-              Semua
-            </Button>
-            {rumpunOptions.map((rumpun) => (
-              <Button
-                key={rumpun}
-                variant={selectedRumpun === rumpun ? 'default' : 'outline'}
-                onClick={() => setSelectedRumpun(rumpun)}
-              >
-                {rumpun}
-              </Button>
-            ))}
-          </div>
-        </div>
+        {/* Visual Filter Section */}
+        <MargaFilterVisual 
+          selectedRumpun={selectedRumpun} 
+          onSelectRumpun={setSelectedRumpun}
+        />
 
         {/* Marga Count */}
         <div className="mb-8 text-center">
