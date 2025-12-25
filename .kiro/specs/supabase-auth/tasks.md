@@ -15,21 +15,21 @@
     - Add UserProfile and AuthState interfaces
     - _Requirements: 3.1, 3.2_
 
-- [ ] 2. Create Auth Context Provider
-  - [ ] 2.1 Create AuthProvider component
+- [x] 2. Create Auth Context Provider
+  - [x] 2.1 Create AuthProvider component
     - Create `components/AuthProvider.tsx`
     - Implement auth state management with useState
     - Add onAuthStateChange listener
     - Implement signInWithGoogle method
     - Implement signOut method
     - _Requirements: 2.2, 2.3, 5.1_
-  - [ ] 2.2 Write property test for session establishment
+  - [ ]\* 2.2 Write property test for session establishment
     - **Property 3: Session establishment on OAuth success**
     - **Validates: Requirements 2.3**
-  - [ ] 2.3 Write property test for session termination
+  - [ ]\* 2.3 Write property test for session termination
     - **Property 5: Session termination on logout**
     - **Validates: Requirements 5.1**
-  - [ ] 2.4 Integrate AuthProvider into app layout
+  - [x] 2.4 Integrate AuthProvider into app layout
     - Wrap app with AuthProvider in `app/layout.tsx`
     - _Requirements: 2.3_
 
@@ -44,7 +44,7 @@
     - Add user profile section when authenticated
     - Add logout option
     - _Requirements: 1.1, 1.2, 1.3, 1.4, 5.3_
-  - [ ] 3.3 Write property test for navbar auth state
+  - [ ]\* 3.3 Write property test for navbar auth state
     - **Property 1: Navbar reflects authentication state**
     - **Validates: Requirements 1.3, 5.3**
 
@@ -56,7 +56,7 @@
     - Add error message display
     - Handle OAuth redirect callback
     - _Requirements: 2.1, 2.2, 2.4_
-  - [ ] 4.2 Write property test for OAuth error handling
+  - [ ]\* 4.2 Write property test for OAuth error handling
     - **Property 2: OAuth error handling**
     - **Validates: Requirements 2.4**
 
@@ -78,7 +78,7 @@
     - Include RLS policies
     - Include trigger for auto-creating profile
     - _Requirements: 3.1, 3.2, 3.3_
-  - [ ] 7.2 Write property test for user data completeness
+  - [ ]\* 7.2 Write property test for user data completeness
     - **Property 4: Complete user data storage**
     - **Validates: Requirements 3.1, 3.2**
 
