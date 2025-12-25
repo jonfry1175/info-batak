@@ -133,7 +133,10 @@ export function Navbar() {
                 {navLinks.map((link, index) =>
                   link.subLinks ? (
                     <div key={link.label}>
-                      <DropdownMenuItem disabled className="text-foreground/60 font-semibold text-base">
+                      <DropdownMenuItem
+                        disabled
+                        className="text-foreground/60 text-base font-semibold"
+                      >
                         {link.label}
                       </DropdownMenuItem>
                       {link.subLinks.map((subLink) => (
