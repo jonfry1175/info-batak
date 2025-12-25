@@ -17,6 +17,8 @@ interface MediaCardProps {
   category?: string;
   icon?: React.ReactNode;
   index?: number;
+  className?: string;
+  aspectRatio?: string;
 }
 
 export function MediaCard({
@@ -28,17 +30,20 @@ export function MediaCard({
   category,
   icon,
   index = 0,
+  className,
+  aspectRatio = "aspect-video",
 }: MediaCardProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, delay: index * 0.1 }}
+      className={`h-full ${className || ''}`}
     >
       <Link href={href} className="group block h-full">
-        <Card className="h-full overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-accent/10 hover:border-accent/50">
+        <Card className="h-full overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-accent/10 hover:border-accent/50 flex flex-col">
           {image ? (
-            <div className="relative aspect-video overflow-hidden">
+            <div className={`relative ${aspectRatio} overflow-hidden shrink-0`}>
               <Image
                 src={image}
                 alt={imageAlt || title}
