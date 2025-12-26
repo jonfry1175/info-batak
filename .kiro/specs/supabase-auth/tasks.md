@@ -50,8 +50,8 @@
     - **Property 1: Navbar reflects authentication state**
     - **Validates: Requirements 1.3, 5.3**
 
-- [ ] 4. Create Login page
-  - [ ] 4.1 Create login page component
+- [x] 4. Create Login page
+  - [x] 4.1 Create login page component
     - Create `app/login/page.tsx`
     - Add "Masuk dengan Google" button
     - Add link to register page
