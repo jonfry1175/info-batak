@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { DarkModeToggle } from '@/components/ui/DarkModeToggle';
 import { Button } from '@/components/ui/button';
-import { Menu } from 'lucide-react';
+import { Menu, LogOut, User } from 'lucide-react';
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -23,6 +23,7 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import { cn } from '@/lib/utils';
+import { useAuth } from '@/components/AuthProvider';
 
 const navLinks = [
   { href: '/', label: 'Beranda' },
@@ -47,6 +48,7 @@ const navLinks = [
 
 export function Navbar() {
   const pathname = usePathname();
+  const { user, loading, signOut } = useAuth();
 
   return (
     <nav className="bg-background/80 border-foreground/10 sticky top-0 z-50 border-b backdrop-blur-md">
@@ -118,6 +120,53 @@ export function Navbar() {
               </NavigationMenuList>
             </NavigationMenu>
             <DarkModeToggle />
+
+            {/* Auth Button / User Menu - Desktop */}
+            {loading ? (
+              <div className="bg-foreground/10 h-10 w-24 animate-pulse rounded-md" />
+            ) : user ? (
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Button
+                    variant="ghost"
+                    className="flex items-center gap-2 px-2"
+                    aria-label="Menu pengguna"
+                  >
+                    {user.avatar_url ? (
+                      <Image
+                        src={user.avatar_url}
+                        alt={user.display_name || 'Avatar pengguna'}
+                        width={32}
+                        height={32}
+                        className="h-8 w-8 rounded-full"
+                      />
+                    ) : (
+                      <div className="bg-accent flex h-8 w-8 items-center justify-center rounded-full text-white">
+                        <User className="h-4 w-4" />
+                      </div>
+                    )}
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="end" className="w-[200px]">
+                  <div className="px-2 py-1.5">
+                    <p className="text-sm font-medium">{user.display_name || 'Pengguna'}</p>
+                    <p className="text-foreground/60 text-xs">{user.email}</p>
+                  </div>
+                  <DropdownMenuSeparator />
+                  <DropdownMenuItem
+                    onClick={() => signOut()}
+                    className="cursor-pointer text-red-600 focus:text-red-600"
+                  >
+                    <LogOut className="mr-2 h-4 w-4" />
+                    Keluar
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
+            ) : (
+              <Button asChild variant="default" className="bg-accent hover:bg-accent/90 text-white">
+                <Link href="/login">Daftar/Masuk</Link>
+              </Button>
+            )}
           </div>
 
           {/* Mobile menu button */}
@@ -130,6 +179,47 @@ export function Navbar() {
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end" className="w-[240px] text-base">
+                {/* Auth Section - Mobile */}
+                {loading ? (
+                  <div className="px-2 py-3">
+                    <div className="bg-foreground/10 h-10 w-full animate-pulse rounded-md" />
+                  </div>
+                ) : user ? (
+                  <>
+                    <div className="flex items-center gap-3 px-2 py-3">
+                      {user.avatar_url ? (
+                        <Image
+                          src={user.avatar_url}
+                          alt={user.display_name || 'Avatar pengguna'}
+                          width={40}
+                          height={40}
+                          className="h-10 w-10 rounded-full"
+                        />
+                      ) : (
+                        <div className="bg-accent flex h-10 w-10 items-center justify-center rounded-full text-white">
+                          <User className="h-5 w-5" />
+                        </div>
+                      )}
+                      <div className="min-w-0 flex-1">
+                        <p className="truncate text-sm font-medium">
+                          {user.display_name || 'Pengguna'}
+                        </p>
+                        <p className="text-foreground/60 truncate text-xs">{user.email}</p>
+                      </div>
+                    </div>
+                    <DropdownMenuSeparator />
+                  </>
+                ) : (
+                  <>
+                    <DropdownMenuItem asChild>
+                      <Link href="/login" className="text-accent text-base font-medium">
+                        Daftar/Masuk
+                      </Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuSeparator />
+                  </>
+                )}
+
                 {navLinks.map((link, index) =>
                   link.subLinks ? (
                     <div key={link.label}>
@@ -172,6 +262,20 @@ export function Navbar() {
                       )}
                     </div>
                   )
+                )}
+
+                {/* Logout Option - Mobile */}
+                {user && (
+                  <>
+                    <DropdownMenuSeparator />
+                    <DropdownMenuItem
+                      onClick={() => signOut()}
+                      className="cursor-pointer text-red-600 focus:text-red-600"
+                    >
+                      <LogOut className="mr-2 h-4 w-4" />
+                      Keluar
+                    </DropdownMenuItem>
+                  </>
                 )}
               </DropdownMenuContent>
             </DropdownMenu>
