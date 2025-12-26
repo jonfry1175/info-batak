@@ -70,11 +70,11 @@
     - Add info text about Google OAuth
     - _Requirements: 2.5_
 
-- [-] 6. Checkpoint - Ensure all tests pass
+- [x] 6. Checkpoint - Ensure all tests pass
   - Ensure all tests pass, ask the user if questions arise.
 
-- [ ] 7. Create Supabase database schema documentation
-  - [ ] 7.1 Create SQL migration file
+- [x] 7. Create Supabase database schema documentation
+  - [x] 7.1 Create SQL migration file
     - Create `supabase/migrations/001_profiles.sql`
     - Include profiles table creation
     - Include RLS policies
