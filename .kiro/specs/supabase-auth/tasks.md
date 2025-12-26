@@ -62,15 +62,15 @@
     - **Property 2: OAuth error handling**
     - **Validates: Requirements 2.4**
 
-- [ ] 5. Create Register page
-  - [ ] 5.1 Create register page component
+- [x] 5. Create Register page
+  - [x] 5.1 Create register page component
     - Create `app/register/page.tsx`
     - Add "Daftar dengan Google" button (same OAuth flow)
     - Add link to login page
     - Add info text about Google OAuth
     - _Requirements: 2.5_
 
-- [ ] 6. Checkpoint - Ensure all tests pass
+- [-] 6. Checkpoint - Ensure all tests pass
   - Ensure all tests pass, ask the user if questions arise.
 
 - [ ] 7. Create Supabase database schema documentation
