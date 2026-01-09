@@ -34,6 +34,25 @@ export interface Article extends ArticleMetadata {
   content: string;
 }
 
+// Berita (News) types
+export type BeritaKategori = 'Budaya' | 'Sejarah' | 'Komunitas' | 'Event' | 'Wisata' | 'Kuliner';
+
+export interface Berita {
+  id: string;
+  slug: string;
+  judul: string;
+  ringkasan: string;
+  konten: string;
+  kategori: BeritaKategori;
+  tanggal: string;
+  penulis: string;
+  gambar: string;
+  gambarAlt: string;
+  gambarCredit: string;
+  tags: string[];
+  featured?: boolean;
+}
+
 // Media types
 export type MediaCategory = 'Homepage' | 'Budaya' | 'Sejarah' | 'Marga' | 'Fakta' | 'General';
 export type VideoCategory = 'Educational' | 'Performances' | 'Documentaries' | 'Tutorials';

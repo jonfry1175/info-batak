@@ -8,7 +8,9 @@ import {
   ArsitekturData,
   KulinerData,
   PakaianData,
-  BahasaData
+  BahasaData,
+  Berita,
+  BeritaKategori
 } from '@/types';
 import faktaData from '@/content/data/fakta.json';
 import margaData from '@/content/data/marga.json';
@@ -17,6 +19,7 @@ import arsitekturData from '@/content/data/arsitektur.json';
 import kulinerData from '@/content/data/kuliner.json';
 import pakaianData from '@/content/data/pakaian.json';
 import bahasaData from '@/content/data/bahasa.json';
+import beritaData from '@/content/data/berita.json';
 
 export function getAllFakta(): Fakta[] {
   return faktaData as Fakta[];
@@ -203,4 +206,28 @@ export function getUmpasaExamples() {
 
 export function getKinshipTerms() {
   return getBahasaData().kinshipTerminology;
+}
+
+
+// Berita (News) functions
+export function getAllBerita(): Berita[] {
+  return beritaData as Berita[];
+}
+
+export function getBeritaBySlug(slug: string): Berita | undefined {
+  return getAllBerita().find((berita) => berita.slug === slug);
+}
+
+export function getBeritaByKategori(kategori: BeritaKategori): Berita[] {
+  return getAllBerita().filter((berita) => berita.kategori === kategori);
+}
+
+export function getFeaturedBerita(): Berita[] {
+  return getAllBerita().filter((berita) => berita.featured);
+}
+
+export function getLatestBerita(count: number = 6): Berita[] {
+  return getAllBerita()
+    .sort((a, b) => new Date(b.tanggal).getTime() - new Date(a.tanggal).getTime())
+    .slice(0, count);
 }
