@@ -8,11 +8,15 @@ import { MargaSearch } from './MargaSearch';
 export function Hero() {
   return (
     <section className="relative flex min-h-[90vh] items-center justify-center overflow-hidden pt-16">
-      {/* Dynamic Background */}
-      <div className="bg-background absolute inset-0">
-        <div className="pattern-gorga absolute inset-0 animate-pulse opacity-10" />
-        <div className="via-background/50 to-background absolute inset-0 bg-linear-to-b from-transparent" />
-        <div className="from-accent/5 absolute inset-0 bg-[radial-gradient(circle_at_center,var(--tw-gradient-stops))] via-transparent to-transparent" />
+      {/* Video Background */}
+      <div className="absolute inset-0">
+        <video autoPlay loop muted playsInline className="h-full w-full object-cover">
+          <source src="/videos/batak-culture.mp4" type="video/mp4" />
+        </video>
+        {/* Dark overlay for better text readability */}
+        <div className="absolute inset-0 bg-black/60" />
+        {/* Additional gradient overlay */}
+        <div className="to-background absolute inset-0 bg-gradient-to-b from-black/40 via-black/30" />
       </div>
 
       {/* Content Container */}
@@ -30,20 +34,18 @@ export function Hero() {
             transition={{ delay: 0.2 }}
             className="inline-block"
           >
-            <span className="border-accent/20 bg-accent/5 text-accent rounded-full border px-4 py-1.5 text-sm font-medium tracking-wide uppercase">
+            <span className="rounded-full border border-white/30 bg-white/10 px-4 py-1.5 text-sm font-medium tracking-wide text-white uppercase backdrop-blur-sm">
               Horas! Selamat Datang
             </span>
           </motion.div>
 
           {/* Main Title */}
           <h1 className="text-5xl font-bold tracking-tight text-balance md:text-7xl lg:text-8xl">
-            <span className="from-foreground via-foreground/90 to-foreground/70 bg-linear-to-r bg-clip-text text-transparent">
-              InfoBatak
-            </span>
-            <span className="text-accent">.id</span>
+            <span className="text-white drop-shadow-2xl">InfoBatak</span>
+            <span className="text-accent drop-shadow-2xl">.id</span>
           </h1>
 
-          <p className="text-muted-foreground mx-auto max-w-2xl text-xl leading-relaxed text-balance md:text-2xl">
+          <p className="mx-auto max-w-2xl text-xl leading-relaxed text-balance text-white/90 drop-shadow-lg md:text-2xl">
             Jelajahi kekayaan budaya Batak. Dari sejarah, adat istiadat, hingga jejak silsilah marga
             dalam satu portal modern.
           </p>
@@ -51,13 +53,13 @@ export function Hero() {
           {/* Interactive Search */}
           <div className="py-8">
             <MargaSearch />
-            <div className="text-muted-foreground mt-4 flex flex-wrap justify-center gap-4 text-sm">
+            <div className="mt-4 flex flex-wrap justify-center gap-4 text-sm text-white/70">
               <span>Populer:</span>
               {['Sinaga', 'Lubis', 'Simanjuntak', 'Siregar'].map((m) => (
                 <Link
                   key={m}
                   href={`/marga?search=${m}`}
-                  className="hover:text-accent underline decoration-dotted transition-colors"
+                  className="hover:text-accent text-white underline decoration-dotted transition-colors"
                 >
                   {m}
                 </Link>
