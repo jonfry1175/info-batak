@@ -9,8 +9,15 @@ export function Hero() {
   return (
     <section className="relative flex min-h-[90vh] items-center justify-center overflow-hidden pt-16">
       {/* Video Background */}
-      <div className="absolute inset-0">
-        <video autoPlay loop muted playsInline className="h-full w-full object-cover">
+      <div className="absolute inset-0 bg-black">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="h-full w-full object-cover"
+          poster="/images/homepage/hero-tortor.jpg"
+        >
           <source src="/videos/batak-culture.mp4" type="video/mp4" />
         </video>
         {/* Dark overlay for better text readability */}
@@ -93,10 +100,10 @@ export function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5, duration: 1 }}
-        className="text-muted-foreground/50 absolute bottom-8 left-1/2 flex -translate-x-1/2 flex-col items-center gap-2"
+        className="text-white/50 absolute bottom-8 left-1/2 flex -translate-x-1/2 flex-col items-center gap-2"
       >
         <span className="text-xs tracking-widest uppercase">Scroll</span>
-        <div className="from-muted-foreground/50 h-12 w-px bg-linear-to-b to-transparent" />
+        <div className="from-white/50 h-12 w-px bg-gradient-to-b to-transparent" />
       </motion.div>
     </section>
   );
