@@ -66,25 +66,25 @@ Implementasi fitur diskusi per halaman untuk InfoBatak.id menggunakan TypeScript
     - **Property 14: Comment Count Display** - Count matches actual comments
     - **Validates: Requirements 1.1, 1.5, 7.2**
 
-- [ ] 5. Create Comment Components
-  - [ ] 5.1 Create CommentForm component
+- [x] 5. Create Comment Components
+  - [x] 5.1 Create CommentForm component in components/discussion/CommentForm.tsx
     - Text input with character counter (max 1000)
     - Submit button (disabled when empty or over limit)
     - Cancel button for reply mode
     - Login prompt for guests
     - _Requirements: 2.2, 2.3, 2.4, 2.5, 3.1_
-  - [ ] 5.2 Write property tests for CommentForm validation
+  - [ ]* 5.2 Write property tests for CommentForm validation
     - **Property 6: Empty Comment Validation** - Whitespace-only rejected
     - **Property 7: Comment Length Validation** - Over 1000 chars rejected
     - **Validates: Requirements 2.3, 2.5**
-  - [ ] 5.3 Create CommentItem component
+  - [x] 5.3 Create CommentItem component in components/discussion/CommentItem.tsx
     - Display avatar, name, content, timestamp, like count
     - Like button with toggle state
     - Reply button (shows form when clicked)
     - Delete button (only for owner)
     - Nested replies display
     - _Requirements: 1.2, 1.3, 4.3, 5.1_
-  - [ ] 5.4 Write property tests for CommentItem
+  - [ ]* 5.4 Write property tests for CommentItem
     - **Property 2: Comment Display Fields** - All required fields shown
     - **Property 3: Reply Association** - Replies nested under parent
     - **Property 10: Like Status Display** - is_liked correctly shown
@@ -97,7 +97,7 @@ Implementasi fitur diskusi per halaman untuk InfoBatak.id menggunakan TypeScript
   - Ask the user if questions arise
 
 - [ ] 7. Create DiscussionSection Container
-  - [ ] 7.1 Create DiscussionSection component
+  - [ ] 7.1 Create DiscussionSection component in components/discussion/DiscussionSection.tsx
     - Section header with comment count
     - CommentForm for new comments
     - CommentList with all comments
@@ -105,7 +105,7 @@ Implementasi fitur diskusi per halaman untuk InfoBatak.id menggunakan TypeScript
     - Empty state message
     - Dark/light mode support
     - _Requirements: 1.4, 7.1, 7.2, 7.3, 7.4, 7.5_
-  - [ ] 7.2 Create CommentList component
+  - [ ] 7.2 Create CommentList component in components/discussion/CommentList.tsx
     - Render list of CommentItem components
     - Handle reply state (which comment is being replied to)
     - Load more button for pagination
@@ -134,16 +134,16 @@ Implementasi fitur diskusi per halaman untuk InfoBatak.id menggunakan TypeScript
   - Ask the user if questions arise
 
 - [ ] 10. Additional Property Tests
-  - [ ] 10.1 Write property test for single nesting level
+  - [ ]* 10.1 Write property test for single nesting level
     - **Property 8: Single Nesting Level** - Cannot reply to replies
     - **Validates: Requirements 3.4**
-  - [ ] 10.2 Write property test for like toggle round-trip
+  - [ ]* 10.2 Write property test for like toggle round-trip
     - **Property 9: Like Toggle Round-Trip** - Like then unlike returns to original
     - **Validates: Requirements 4.1, 4.2**
-  - [ ] 10.3 Write property test for self-like prevention
+  - [ ]* 10.3 Write property test for self-like prevention
     - **Property 11: Self-Like Prevention** - Cannot like own comment
     - **Validates: Requirements 4.5**
-  - [ ] 10.4 Write property test for cascade delete
+  - [ ]* 10.4 Write property test for cascade delete
     - **Property 13: Cascade Delete** - Deleting parent deletes replies
     - **Validates: Requirements 5.3**
 
@@ -154,7 +154,7 @@ Implementasi fitur diskusi per halaman untuk InfoBatak.id menggunakan TypeScript
 
 ## Notes
 
-- All tasks are required for comprehensive implementation
+- Tasks marked with `*` are optional and can be skipped for faster MVP
 - Each task references specific requirements for traceability
 - Checkpoints ensure incremental validation
 - Property tests validate universal correctness properties
