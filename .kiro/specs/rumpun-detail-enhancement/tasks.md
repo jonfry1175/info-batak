@@ -111,13 +111,13 @@ Implementasi enhancement halaman detail rumpun Batak dengan peta interaktif, kon
     - **Validates: Requirements 3.1, 3.2**
     - Test file: `components/sejarah/BudayaSection.test.tsx`
 
-- [-] 8. Checkpoint - Verifikasi komponen section
+- [x] 8. Checkpoint - Verifikasi komponen section
   - Ensure MapEmbed, Timeline, SejarahSection, BudayaSection render correctly
   - Ensure all property tests pass
   - Ask user if questions arise
 
-- [ ] 9. Buat komponen TokohCard enhanced
-  - [ ] 9.1 Implementasi komponen `components/sejarah/TokohCard.tsx` (enhanced)
+- [x] 9. Buat komponen TokohCard enhanced
+  - [x] 9.1 Implementasi komponen `components/sejarah/TokohCard.tsx` (enhanced)
     - Avatar/foto dengan fallback placeholder
     - Periode hidup (tahun lahir - wafat)
     - Bidang/kontribusi badge
@@ -126,21 +126,21 @@ Implementasi enhancement halaman detail rumpun Batak dengan peta interaktif, kon
     - Hover animation dengan Framer Motion
     - _Requirements: 4.1, 4.2, 4.3, 4.4, 4.5_
 
-  - [ ] 9.2 Write property test untuk tokoh card completeness
+  - [x] 9.2 Write property test untuk tokoh card completeness
     - **Property 6: Tokoh Card Completeness**
     - **Validates: Requirements 4.1, 4.2**
     - Test file: `components/sejarah/TokohCard.test.tsx`
 
-- [ ] 10. Buat komponen TableOfContents
-  - [ ] 10.1 Implementasi komponen `components/sejarah/TableOfContents.tsx`
+- [x] 10. Buat komponen TableOfContents
+  - [x] 10.1 Implementasi komponen `components/sejarah/TableOfContents.tsx`
     - Sticky positioning on desktop
     - Smooth scroll to section
     - Active section highlighting dengan Intersection Observer
     - Hidden on mobile
     - _Requirements: 6.3_
 
-- [ ] 11. Update halaman detail rumpun
-  - [ ] 11.1 Refactor `app/sejarah/[slug]/page.tsx`
+- [-] 11. Update halaman detail rumpun
+  - [-] 11.1 Refactor `app/sejarah/[slug]/page.tsx`
     - Integrate semua komponen baru
     - Use normalizeRumpunData untuk handle data
     - Add TableOfContents sidebar layout
