@@ -92,26 +92,26 @@ Implementasi enhancement halaman detail rumpun Batak dengan peta interaktif, kon
     - **Validates: Requirements 2.1**
     - Test file: `components/sejarah/SejarahSection.test.tsx`
 
-- [-] 7. Buat komponen BudayaSection dengan CategoryTabs
+- [x] 7. Buat komponen BudayaSection dengan CategoryTabs
   - [x] 7.1 Implementasi komponen `components/sejarah/CategoryTabs.tsx`
     - Horizontal scrollable tabs on mobile
     - Icon + label untuk setiap tab
     - Active state dengan accent color
     - _Requirements: 3.4_
 
-  - [ ] 7.2 Implementasi komponen `components/sejarah/BudayaSection.tsx`
+  - [x] 7.2 Implementasi komponen `components/sejarah/BudayaSection.tsx`
     - Integrate CategoryTabs
     - Category content cards
     - Gallery component untuk images
     - Placeholder untuk empty categories
     - _Requirements: 3.1, 3.2, 3.3, 3.5_
 
-  - [ ] 7.3 Write property test untuk budaya category completeness
+  - [x] 7.3 Write property test untuk budaya category completeness
     - **Property 5: Budaya Category Completeness**
     - **Validates: Requirements 3.1, 3.2**
     - Test file: `components/sejarah/BudayaSection.test.tsx`
 
-- [ ] 8. Checkpoint - Verifikasi komponen section
+- [-] 8. Checkpoint - Verifikasi komponen section
   - Ensure MapEmbed, Timeline, SejarahSection, BudayaSection render correctly
   - Ensure all property tests pass
   - Ask user if questions arise
