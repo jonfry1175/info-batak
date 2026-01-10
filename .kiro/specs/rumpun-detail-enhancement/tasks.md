@@ -53,7 +53,7 @@ Implementasi enhancement halaman detail rumpun Batak dengan peta interaktif, kon
   - Ensure all property tests pass
   - Ask user if questions arise
 
-- [-] 4. Buat komponen MapEmbed
+- [x] 4. Buat komponen MapEmbed
   - [x] 4.1 Implementasi komponen `components/sejarah/MapEmbed.tsx`
     - Google Maps iframe embed dengan koordinat
     - Fallback image jika embed gagal
@@ -61,39 +61,39 @@ Implementasi enhancement halaman detail rumpun Batak dengan peta interaktif, kon
     - Loading skeleton state
     - _Requirements: 1.1, 1.4, 1.5_
 
-  - [-] 4.2 Write property test untuk map coordinate validation
+  - [x] 4.2 Write property test untuk map coordinate validation
     - **Property 2: Map Component Data Binding**
     - **Validates: Requirements 1.1, 1.3**
     - Test file: `components/sejarah/MapEmbed.test.tsx`
 
-- [ ] 5. Buat komponen TimelineComponent
-  - [ ] 5.1 Implementasi komponen `components/sejarah/Timeline.tsx`
+- [x] 5. Buat komponen TimelineComponent
+  - [x] 5.1 Implementasi komponen `components/sejarah/Timeline.tsx`
     - Vertical timeline dengan alternating layout
     - Year badge dengan accent color
     - Animated entry dengan Framer Motion
     - Optional image per event
     - _Requirements: 2.2, 2.3_
 
-  - [ ] 5.2 Write property test untuk timeline chronological order
+  - [x] 5.2 Write property test untuk timeline chronological order
     - **Property 3: Timeline Chronological Order**
     - **Validates: Requirements 2.2, 2.3**
     - Test file: `components/sejarah/Timeline.test.tsx`
 
-- [ ] 6. Buat komponen SejarahSection
-  - [ ] 6.1 Implementasi komponen `components/sejarah/SejarahSection.tsx`
+- [x] 6. Buat komponen SejarahSection
+  - [x] 6.1 Implementasi komponen `components/sejarah/SejarahSection.tsx`
     - Overview dengan ringkasan
     - Collapsible sub-sections (Asal Usul, Kerajaan, Perlawanan, Era Modern)
     - Integrate TimelineComponent
     - Image gallery untuk sejarah
     - _Requirements: 2.1, 2.4, 2.5_
 
-  - [ ] 6.2 Write property test untuk sejarah section structure
+  - [x] 6.2 Write property test untuk sejarah section structure
     - **Property 4: Sejarah Section Structure**
     - **Validates: Requirements 2.1**
     - Test file: `components/sejarah/SejarahSection.test.tsx`
 
-- [ ] 7. Buat komponen BudayaSection dengan CategoryTabs
-  - [ ] 7.1 Implementasi komponen `components/sejarah/CategoryTabs.tsx`
+- [-] 7. Buat komponen BudayaSection dengan CategoryTabs
+  - [x] 7.1 Implementasi komponen `components/sejarah/CategoryTabs.tsx`
     - Horizontal scrollable tabs on mobile
     - Icon + label untuk setiap tab
     - Active state dengan accent color
