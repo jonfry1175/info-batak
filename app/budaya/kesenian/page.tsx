@@ -15,6 +15,12 @@ export default function KesenianPage() {
   const gondangImages = getImagesByCategory('Budaya', 'Gondang');
   const tortorImages = getImagesByCategory('Budaya', 'Tortor');
   const ulosImages = getImagesByCategory('Budaya', 'Ulos');
+  const arsitekturImages = getImagesByCategory('Budaya', 'Arsitektur');
+  const ukirImages = getImagesByCategory('Budaya', 'Seni Ukir');
+  const senjataImages = getImagesByCategory('Budaya', 'Senjata');
+  const gondangKaroImages = getImagesByCategory('Budaya', 'Gondang Karo');
+  const gondangMandailingImages = getImagesByCategory('Budaya', 'Gondang Mandailing');
+  const tariKaroImages = getImagesByCategory('Budaya', 'Tari Karo');
 
   return (
     <>
@@ -127,7 +133,7 @@ export default function KesenianPage() {
                 description="Musik tradisional Batak Karo dengan instrumen gendang dan kulcapi. Memiliki karakter dinamis dan sering mengiringi tarian pergaulan muda-mudi."
                 href="#"
                 category="Karo"
-                icon={<Music className="h-10 w-10" />}
+                image={gondangKaroImages[0]?.src}
                 className="bg-card"
               />
               <MediaCard
@@ -135,7 +141,7 @@ export default function KesenianPage() {
                 description="Ansambel Gordang Sambilan (sembilan gendang besar) yang megah. Menghasilkan ritme yang kuat dan menggetarkan, warisan budaya yang tetap lestari."
                 href="#"
                 category="Mandailing"
-                icon={<Music className="h-10 w-10" />}
+                image={gondangMandailingImages[0]?.src}
                 className="bg-card"
               />
             </div>
@@ -210,6 +216,7 @@ export default function KesenianPage() {
                   description="Tarian khas Karo yang menggambarkan penantian seorang gadis. Diiringi lagu Piso Surit yang mendayu-dayu."
                   href="#"
                   category="Karo"
+                  image={tariKaroImages[0]?.src}
                   aspectRatio="aspect-[4/3]"
                 />
                 <div className="flex-1 rounded-2xl border border-border bg-accent/5 p-8 flex flex-col justify-center text-center">
@@ -255,7 +262,7 @@ export default function KesenianPage() {
                 description="Rumah adat panggung dengan atap melengkung seperti kerbau, penuh ukiran gorga pelindung."
                 href="#"
                 category="Arsitektur"
-                icon={<div className="text-4xl">🏠</div>}
+                image={arsitekturImages[0]?.src}
                 className="h-full"
               />
               <MediaCard
@@ -263,7 +270,7 @@ export default function KesenianPage() {
                 description="Seni ukir tiga warna (merah, hitam, putih) dengan motif cicak dan singa sebagai penolak bala."
                 href="#"
                 category="Seni Ukir"
-                icon={<div className="text-4xl">🎨</div>}
+                image={ukirImages[0]?.src}
                 className="h-full"
               />
               <MediaCard
@@ -271,7 +278,7 @@ export default function KesenianPage() {
                 description="Pusaka kerajaan Sisingamangaraja XII. Pedang dengan ukiran gajah yang melambangkan kekuatan."
                 href="#"
                 category="Senjata"
-                icon={<div className="text-4xl">⚔️</div>}
+                image={senjataImages[0]?.src}
                 className="h-full"
               />
             </div>

@@ -399,6 +399,42 @@
         "indonesian": "Pergilah dengan hati yang baik. / Pulanglah dengan membawa hasil.",
         "meaning": "Nasihat untuk orang yang akan merantau: bersikap baik dan bekerja keras",
         "usage": "Diberikan saat seseorang akan pergi merantau"
+      },
+      {
+        "toba": "Jolo nitiktik sanggar laho bahenon huru-huruan, / Jolo sinukkun marga asa binoto partuturan.",
+        "indonesian": "Lebih dulu mengetuk sangkar untuk dibuat jadi kurungan, / Lebih dulu bertanya marga supaya tahu kekerabatan.",
+        "meaning": "Pentingnya menanyakan marga saat berkenalan untuk mengetahui hubungan kekerabatan (tutur) dan cara menyapa yang sopan.",
+        "usage": "Saat perkenalan pertama kali"
+      },
+      {
+        "toba": "Bagot na marhalto naniagatan di robean. / Horas ma hamu na manganthon, / Tu ganda na antong di hami na mangalehon.",
+        "indonesian": "Aren yang berbuah dipukul di lereng bukit. / Selamatlah kalian yang memakan, / Berlipat ganda rezeki bagi kami yang memberi.",
+        "meaning": "Doa agar makanan yang disajikan membawa berkat bagi yang makan dan rezeki bagi yang memberi.",
+        "usage": "Disampaikan saat menjamu tamu atau pesta adat"
+      },
+      {
+        "toba": "Sahat sahat ni solu, / Sai sahat ma tu bontean. / Leleng hita mangolu, / Sai sahatma tu panggabean.",
+        "indonesian": "Sampailah sampan, / Semoga sampai ke pelabuhan. / Panjanglah umur kita, / Semoga sampai pada kesuksesan/kebahagiaan.",
+        "meaning": "Doa penutup sapu jagat untuk memohon panjang umur dan kesuksesan hidup.",
+        "usage": "Penutup pidato atau acara adat"
+      },
+      {
+        "toba": "Bintang na rumiris, ombun na sumorop. / Anak pe riris, boru pe torop.",
+        "indonesian": "Bintang berderet-deret, embun yang meresap. / Anak laki-laki banyak, anak perempuan pun banyak.",
+        "meaning": "Doa agar pasangan dikaruniai banyak keturunan (anak laki-laki dan perempuan).",
+        "usage": "Disampaikan dalam upacara pernikahan"
+      },
+      {
+        "toba": "Aek Sihurukhuruk tu silanlan aek Toba. / Ndang adong be na marungutungut, nungnga sude hita marlas ni roha.",
+        "indonesian": "Air Sihurukhuruk mengalir ke Danau Toba. / Tidak ada lagi yang bersungut-sungut, semua kita sudah bersukacita.",
+        "meaning": "Ungkapan rasa syukur atas perdamaian dan kebahagiaan bersama, menghilangkan perselisihan.",
+        "usage": "Saat berdamai atau penutup acara syukuran"
+      },
+      {
+        "toba": "Eme sitamba tua ma parlinggoman ni siborok. / Amanta Debata do silehon tua, saluhut ma hita diparorot.",
+        "indonesian": "Padi sitamba tua tempat berlindung katak. / Tuhanlah pemberi tuah (berkat), semoga kita semua dilindungi-Nya.",
+        "meaning": "Menyerahkan segala perlindungan dan berkat kepada Tuhan Yang Maha Esa.",
+        "usage": "Doa pembuka atau penutup"
       }
     ],
     "types": [
@@ -446,6 +482,41 @@
         "toba": "Ise songon ni ambarita, ai tung",
         "indonesian": "Siapa seperti cendrawasih, selalu besok",
         "meaning": "Orang yang suka menunda-nunda pekerjaan"
+      },
+      {
+        "toba": "Ingkon songon poting, lam marisi lam so marsoara",
+        "indonesian": "Harus seperti bambu air, semakin berisi semakin tidak bersuara",
+        "meaning": "Semakin tinggi ilmu atau kekayaan seseorang, seharusnya semakin rendah hati (tidak sombong)."
+      },
+      {
+        "toba": "Jolo dinilat bibir asa nidok hata",
+        "indonesian": "Jilat dulu bibir baru ucapkan kata",
+        "meaning": "Berpikirlah masak-masak sebelum berbicara agar tidak menyakiti orang lain."
+      },
+      {
+        "toba": "Molo litok aek di toruan, tingkiron ma tu julu",
+        "indonesian": "Jika keruh air di hilir, periksalah ke hulu",
+        "meaning": "Jika timbul masalah atau kekacauan, carilah akar penyebabnya dari sumbernya."
+      },
+      {
+        "toba": "Ndang adong amporik na so siallang eme",
+        "indonesian": "Tidak ada burung pipit yang tidak makan padi",
+        "meaning": "Tidak ada manusia yang sempurna, setiap orang pasti pernah berbuat kesalahan."
+      },
+      {
+        "toba": "Ndang piga halak sigandai sidabuan, alai godang sigandai hata",
+        "indonesian": "Tidak banyak orang yang melipatgandakan sumbangan, tapi banyak yang melipatgandakan kata-kata",
+        "meaning": "Menyindir orang yang sedikit bekerja/memberi tapi banyak bicara atau melebih-lebihkan cerita (gosip)."
+      },
+      {
+        "toba": "Tampulon aek do na mardongan tubu",
+        "indonesian": "Membelah air adalah perselisihan saudara kandung",
+        "meaning": "Pertengkaran antar saudara tidak akan memisahkan mereka selamanya; seperti air yang dibelah akan menyatu kembali."
+      },
+      {
+        "toba": "Manat mardongan tubu, elek marboru, somba marhula-hula",
+        "indonesian": "Hati-hati dengan teman semarga, sayang kepada boru, hormat kepada hula-hula",
+        "meaning": "Inti falsafah Dalihan Na Tolu: menjaga harmoni hubungan kekerabatan dengan sikap yang tepat kepada setiap kelompok."
       }
     ]
   },
@@ -457,7 +528,11 @@
         {
           "name": "Turiturian (Cerita Rakyat)",
           "description": "Cerita-cerita tentang asal-usul, sejarah raja-raja, dan dongeng",
-          "examples": ["Si Singamangaraja", "Raja Batak", "Tuan Sorba Dibanua"]
+          "examples": [
+            "Si Singamangaraja",
+            "Raja Batak",
+            "Tuan Sorba Dibanua"
+          ]
         },
         {
           "name": "Ende (Nyanyian Tradisional)",
@@ -475,7 +550,13 @@
       "description": "Tradisi tulisan menggunakan Aksara Batak pada media pustaha",
       "pustaha": {
         "description": "Naskah kuno berisi ilmu pengetahuan Batak",
-        "content": ["Ramalan (porbinuon)", "Pengobatan tradisional", "Mantra (tangiang)", "Kalender (porhalaan)", "Astrologi"],
+        "content": [
+          "Ramalan (porbinuon)",
+          "Pengobatan tradisional",
+          "Mantra (tangiang)",
+          "Kalender (porhalaan)",
+          "Astrologi"
+        ],
         "material": "Kulit kayu, bambu, atau tanduk kerbau",
         "script": "Aksara Batak",
         "keepers": "Datu (dukun, orang bijak)"
@@ -488,7 +569,12 @@
         "T.D. Pardede",
         "Welas Hutagalung"
       ],
-      "themes": ["Adat dan tradisi", "Diaspora Batak", "Modernisasi vs tradisi", "Identitas budaya"]
+      "themes": [
+        "Adat dan tradisi",
+        "Diaspora Batak",
+        "Modernisasi vs tradisi",
+        "Identitas budaya"
+      ]
     }
   },
   "languagePreservation": {

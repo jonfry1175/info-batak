@@ -122,6 +122,45 @@
       "description": "Antique Batak sword called Piso Gaja Dompak",
       "keywords": ["batak", "senjata", "pusaka", "piso", "gajah"],
       "placeholder": false
+    },
+    {
+      "id": "kesenian-musik-gondang-karo",
+      "src": "/images/budaya/kesenian/musik-gondang-karo.png",
+      "alt": "Musik Tradisional Karo",
+      "category": "Budaya",
+      "subcategory": "Gondang Karo",
+      "photographer": "AI Generated",
+      "year": 2025,
+      "license": "Public Domain",
+      "description": "Traditional Batak Karo music ensemble performing",
+      "keywords": ["batak", "musik", "karo", "gondang", "kulcapi"],
+      "placeholder": false
+    },
+    {
+      "id": "kesenian-gondang-mandailing",
+      "src": "/images/budaya/kesenian/gondang-mandailing.png",
+      "alt": "Gondang Mandailing",
+      "category": "Budaya",
+      "subcategory": "Gondang Mandailing",
+      "photographer": "AI Generated",
+      "year": 2025,
+      "license": "Public Domain",
+      "description": "Gordang Sambilan ensemble from Mandailing",
+      "keywords": ["batak", "musik", "mandailing", "gondang", "gordang sambilan"],
+      "placeholder": false
+    },
+    {
+      "id": "kesenian-tari-piso-surit",
+      "src": "/images/budaya/kesenian/tari-piso-surit.png",
+      "alt": "Tari Piso Surit",
+      "category": "Budaya",
+      "subcategory": "Tari Karo",
+      "photographer": "AI Generated",
+      "year": 2025,
+      "license": "Public Domain",
+      "description": "Batak Karo dancers performing Tari Piso Surit",
+      "keywords": ["batak", "tari", "karo", "piso surit"],
+      "placeholder": false
     }
   ],
   "videos": [
