@@ -1,17 +1,19 @@
 # Research Task: Data Detail Marga Batak Karo
 
 ## Konteks
+
 Anda adalah peneliti budaya Batak yang bertugas mengisi data detail marga untuk website InfoBatak.id. Website ini bertujuan melestarikan dan mengedukasi tentang sejarah, budaya, adat istiadat, aksara, dan sistem marga Batak.
 
 ## Tugas
+
 Lakukan research mendalam untuk 4 marga berikut dari rumpun **Karo** (Merga Silima):
 
-| ID | Nama | Slug | Deskripsi |
-|----|------|------|-----------|
-| 8 | Sembiring | sembiring | Marga Karo yang besar dan terhormat |
-| 9 | Tarigan | tarigan | Bagian dari merga silima Karo |
-| 10 | Karo-Karo | karo-karo | Marga utama Karo |
-| 11 | Perangin-angin | perangin-angin | Salah satu merga silima Karo |
+| ID  | Nama           | Slug           | Deskripsi                           |
+| --- | -------------- | -------------- | ----------------------------------- |
+| 8   | Sembiring      | sembiring      | Marga Karo yang besar dan terhormat |
+| 9   | Tarigan        | tarigan        | Bagian dari merga silima Karo       |
+| 10  | Karo-Karo      | karo-karo      | Marga utama Karo                    |
+| 11  | Perangin-angin | perangin-angin | Salah satu merga silima Karo        |
 
 ## Schema JSON yang HARUS Diikuti
 
@@ -65,6 +67,7 @@ Lakukan research mendalam untuk 4 marga berikut dari rumpun **Karo** (Merga Sili
 ## Slug Marga Valid untuk relatedMargas
 
 Gunakan HANYA slug berikut untuk field relatedMargas:
+
 - Toba: sitorus, siahaan, simbolon, sinaga, hutabarat, napitupulu
 - Karo: ginting, sembiring, tarigan, karo-karo, perangin-angin
 - Simalungun: saragih, purba, damanik, simatupang
@@ -131,6 +134,7 @@ Gunakan HANYA slug berikut untuk field relatedMargas:
 ## Panduan Kualitas Konten
 
 ### WAJIB:
+
 1. Gunakan terminologi Karo yang benar (Merga Silima, rakut sitelu, erpangir ku lau, perkulunen, dll)
 2. Minimal 2 ancestors dalam tarombo
 3. Minimal 2 sub-marga dalam tarombo
@@ -140,11 +144,13 @@ Gunakan HANYA slug berikut untuk field relatedMargas:
 7. relatedMargas harus menggunakan slug yang valid (prioritas sesama Karo)
 
 ### HINDARI:
+
 1. Jangan fabrikasi informasi jika tidak yakin
 2. Jangan copy-paste dari marga lain
 3. Jangan campur terminologi Toba dengan Karo
 
 ### JIKA INFORMASI TIDAK TERSEDIA:
+
 - Untuk ancestors: gunakan leluhur generik Karo
 - Untuk tokoh: cari tokoh kontemporer dari marga tersebut
 - Untuk tradisi: gunakan tradisi umum Karo yang relevan
@@ -155,9 +161,17 @@ Hasilkan output dalam format JSON array yang valid dengan 4 marga:
 
 ```json
 [
-  { /* Sembiring */ },
-  { /* Tarigan */ },
-  { /* Karo-Karo */ },
-  { /* Perangin-angin */ }
+  {
+    /* Sembiring */
+  },
+  {
+    /* Tarigan */
+  },
+  {
+    /* Karo-Karo */
+  },
+  {
+    /* Perangin-angin */
+  }
 ]
 ```

@@ -108,66 +108,57 @@ describe('Property 2: Map Component Data Binding', () => {
   describe('Real rumpun data coordinate validation', () => {
     it('should have valid coordinates for all enhanced rumpun data', () => {
       fc.assert(
-        fc.property(
-          fc.constantFrom(...allEnhancedRumpun),
-          (rumpun: RumpunBatakEnhanced) => {
-            const { latitude, longitude } = rumpun.wilayah.koordinat;
+        fc.property(fc.constantFrom(...allEnhancedRumpun), (rumpun: RumpunBatakEnhanced) => {
+          const { latitude, longitude } = rumpun.wilayah.koordinat;
 
-            // Coordinates should be valid
-            expect(isValidCoordinate(latitude, longitude)).toBe(true);
+          // Coordinates should be valid
+          expect(isValidCoordinate(latitude, longitude)).toBe(true);
 
-            // Coordinates should be within Sumatera Utara region (roughly 0-4°N, 97-100°E)
-            expect(latitude).toBeGreaterThanOrEqual(0);
-            expect(latitude).toBeLessThanOrEqual(4);
-            expect(longitude).toBeGreaterThanOrEqual(97);
-            expect(longitude).toBeLessThanOrEqual(100);
+          // Coordinates should be within Sumatera Utara region (roughly 0-4°N, 97-100°E)
+          expect(latitude).toBeGreaterThanOrEqual(0);
+          expect(latitude).toBeLessThanOrEqual(4);
+          expect(longitude).toBeGreaterThanOrEqual(97);
+          expect(longitude).toBeLessThanOrEqual(100);
 
-            return true;
-          }
-        ),
+          return true;
+        }),
         { numRuns: 100 }
       );
     });
 
     it('should generate valid map URLs for all enhanced rumpun data', () => {
       fc.assert(
-        fc.property(
-          fc.constantFrom(...allEnhancedRumpun),
-          (rumpun: RumpunBatakEnhanced) => {
-            const { latitude, longitude } = rumpun.wilayah.koordinat;
-            const url = generateMapEmbedUrl(latitude, longitude);
+        fc.property(fc.constantFrom(...allEnhancedRumpun), (rumpun: RumpunBatakEnhanced) => {
+          const { latitude, longitude } = rumpun.wilayah.koordinat;
+          const url = generateMapEmbedUrl(latitude, longitude);
 
-            // URL should be valid and contain coordinates
-            expect(url).toContain('https://www.google.com/maps/embed');
-            expect(typeof url).toBe('string');
-            expect(url.length).toBeGreaterThan(0);
+          // URL should be valid and contain coordinates
+          expect(url).toContain('https://www.google.com/maps/embed');
+          expect(typeof url).toBe('string');
+          expect(url.length).toBeGreaterThan(0);
 
-            return true;
-          }
-        ),
+          return true;
+        }),
         { numRuns: 100 }
       );
     });
 
     it('should have valid landmark coordinates for all enhanced rumpun', () => {
       fc.assert(
-        fc.property(
-          fc.constantFrom(...allEnhancedRumpun),
-          (rumpun: RumpunBatakEnhanced) => {
-            rumpun.wilayah.landmarks.forEach((landmark) => {
-              // Each landmark should have valid coordinates
-              expect(isValidCoordinate(landmark.latitude, landmark.longitude)).toBe(true);
+        fc.property(fc.constantFrom(...allEnhancedRumpun), (rumpun: RumpunBatakEnhanced) => {
+          rumpun.wilayah.landmarks.forEach((landmark) => {
+            // Each landmark should have valid coordinates
+            expect(isValidCoordinate(landmark.latitude, landmark.longitude)).toBe(true);
 
-              // Landmark coordinates should be within Sumatera Utara region
-              expect(landmark.latitude).toBeGreaterThanOrEqual(0);
-              expect(landmark.latitude).toBeLessThanOrEqual(4);
-              expect(landmark.longitude).toBeGreaterThanOrEqual(97);
-              expect(landmark.longitude).toBeLessThanOrEqual(100);
-            });
+            // Landmark coordinates should be within Sumatera Utara region
+            expect(landmark.latitude).toBeGreaterThanOrEqual(0);
+            expect(landmark.latitude).toBeLessThanOrEqual(4);
+            expect(landmark.longitude).toBeGreaterThanOrEqual(97);
+            expect(landmark.longitude).toBeLessThanOrEqual(100);
+          });
 
-            return true;
-          }
-        ),
+          return true;
+        }),
         { numRuns: 100 }
       );
     });

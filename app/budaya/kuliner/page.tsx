@@ -17,9 +17,9 @@ export default function KulinerPage() {
   const kulinerImages = getImagesByCategory('Budaya', 'Kuliner');
 
   // Group dishes by category
-  const mainDishes = dishes.filter(d => d.category === 'main_dish');
-  const appetizers = dishes.filter(d => d.category === 'appetizer');
-  const soups = dishes.filter(d => d.category === 'soup');
+  const mainDishes = dishes.filter((d) => d.category === 'main_dish');
+  const appetizers = dishes.filter((d) => d.category === 'appetizer');
+  const soups = dishes.filter((d) => d.category === 'soup');
 
   return (
     <div className="w-full px-4 py-12">
@@ -39,7 +39,7 @@ export default function KulinerPage() {
         <section className="mb-16">
           <h2 className="mb-6 text-3xl font-bold">Hidangan Utama</h2>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-            {mainDishes.map(dish => (
+            {mainDishes.map((dish) => (
               <div key={dish.id} className="bg-foreground/5 overflow-hidden rounded-lg">
                 <div className="p-6">
                   <h3 className="text-accent mb-2 text-2xl font-semibold">{dish.name}</h3>
@@ -93,7 +93,7 @@ export default function KulinerPage() {
           <section className="mb-16">
             <h2 className="mb-6 text-3xl font-bold">Hidangan Pembuka & Sayur</h2>
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-              {[...appetizers, ...soups].map(dish => (
+              {[...appetizers, ...soups].map((dish) => (
                 <div key={dish.id} className="bg-foreground/5 rounded-lg p-6">
                   <h3 className="text-accent mb-2 text-xl font-semibold">{dish.name}</h3>
                   <p className="text-foreground/70 mb-4 text-sm leading-relaxed">
@@ -154,8 +154,8 @@ export default function KulinerPage() {
         <section className="mb-16">
           <h2 className="mb-6 text-3xl font-bold">Tuak: Minuman Sakral Batak</h2>
           {drinks
-            .filter(drink => drink.id === 'tuak')
-            .map(drink => (
+            .filter((drink) => drink.id === 'tuak')
+            .map((drink) => (
               <div key={drink.id} className="bg-foreground/5 rounded-lg p-8">
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
                   <div>
@@ -205,11 +205,11 @@ export default function KulinerPage() {
           <section className="mb-16">
             <h2 className="mb-6 text-3xl font-bold">Makanan Upacara Adat</h2>
             <p className="text-foreground/70 mb-8 leading-relaxed">
-              Makanan tertentu memiliki peran khusus dalam upacara adat Batak, melambangkan
-              berbagi berkat dan kebersamaan.
+              Makanan tertentu memiliki peran khusus dalam upacara adat Batak, melambangkan berbagi
+              berkat dan kebersamaan.
             </p>
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-              {ceremonialFoods.map(food => (
+              {ceremonialFoods.map((food) => (
                 <div key={food.id} className="bg-foreground/5 rounded-lg p-6">
                   <h3 className="text-accent mb-2 text-xl font-semibold">{food.name}</h3>
                   <p className="text-foreground/60 mb-4 text-sm">Acara: {food.occasion}</p>

@@ -30,8 +30,8 @@
     "wilayah": {
       "nama": "Padang Bolak dan Padangsidimpuan",
       "deskripsi": "Wilayah Tapanuli Selatan, khususnya Padang Bolak, adalah basis tradisional marga Harahap.",
-      "latitude": 1.5000,
-      "longitude": 99.6000,
+      "latitude": 1.5,
+      "longitude": 99.6,
       "provinsi": "Sumatera Utara",
       "kabupaten": "Padang Lawas Utara/Tapanuli Selatan"
     },
@@ -95,7 +95,7 @@
     "wilayah": {
       "nama": "Sipirok, Tapanuli Selatan",
       "deskripsi": "Sipirok adalah pusat budaya marga Siregar di Tanah Angkola.",
-      "latitude": 1.6000,
+      "latitude": 1.6,
       "longitude": 99.2833,
       "provinsi": "Sumatera Utara",
       "kabupaten": "Tapanuli Selatan"
@@ -152,15 +152,12 @@
     "wilayah": {
       "nama": "Dolok Sigompulon, Padang Lawas Utara",
       "deskripsi": "Kecamatan Dolok adalah basis utama marga Rambe di wilayah selatan.",
-      "latitude": 1.7000,
-      "longitude": 99.6500,
+      "latitude": 1.7,
+      "longitude": 99.65,
       "provinsi": "Sumatera Utara",
       "kabupaten": "Padang Lawas Utara"
     },
-    "tradisi": [
-      "Partangiangan Rambe",
-      "Adat Dalihan Na Tolu khas Angkola"
-    ],
+    "tradisi": ["Partangiangan Rambe", "Adat Dalihan Na Tolu khas Angkola"],
     "tokoh": [
       {
         "nama": "Rambe Kamarul Zaman",
@@ -209,15 +206,12 @@
     "wilayah": {
       "nama": "Sipirok dan Panyabungan",
       "deskripsi": "Tersebar merata di wilayah Angkola dan Mandailing.",
-      "latitude": 1.6000,
-      "longitude": 99.3000,
+      "latitude": 1.6,
+      "longitude": 99.3,
       "provinsi": "Sumatera Utara",
       "kabupaten": "Tapanuli Selatan"
     },
-    "tradisi": [
-      "Pesta Adat Borbor Marsada",
-      "Keikutsertaan dalam Horja Godang Angkola"
-    ],
+    "tradisi": ["Pesta Adat Borbor Marsada", "Keikutsertaan dalam Horja Godang Angkola"],
     "tokoh": [
       {
         "nama": "Ucok Baba (Usnan Batubara)",
@@ -267,14 +261,11 @@
       "nama": "Barus dan Sipirok",
       "deskripsi": "Wilayah perantauan Pohan di selatan meliputi jalur Barus hingga ke pedalaman Angkola.",
       "latitude": 1.9833,
-      "longitude": 98.4000,
+      "longitude": 98.4,
       "provinsi": "Sumatera Utara",
       "kabupaten": "Tapanuli Tengah/Selatan"
     },
-    "tradisi": [
-      "Adat istiadat Angkola yang diadopsi penuh",
-      "Partangiangan Pohan"
-    ],
+    "tradisi": ["Adat istiadat Angkola yang diadopsi penuh", "Partangiangan Pohan"],
     "tokoh": [
       {
         "nama": "Ramadhan Pohan",

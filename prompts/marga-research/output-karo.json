@@ -39,7 +39,7 @@
       "nama": "Tanah Karo",
       "deskripsi": "Tersebar luas di Dataran Tinggi Karo, dengan konsentrasi sub-marga tertentu di wilayah seperti Sarinembah dan sekitarnya.",
       "latitude": 3.107,
-      "longitude": 98.490,
+      "longitude": 98.49,
       "provinsi": "Sumatera Utara",
       "kabupaten": "Karo"
     },
@@ -99,8 +99,8 @@
     "wilayah": {
       "nama": "Juhar dan Tiga Binanga",
       "deskripsi": "Wilayah Juhar sering disebut sebagai pusat persebaran Tarigan Sibero, sementara daerah perbatasan Simalungun menjadi asal Tarigan lainnya.",
-      "latitude": 3.050,
-      "longitude": 98.300,
+      "latitude": 3.05,
+      "longitude": 98.3,
       "provinsi": "Sumatera Utara",
       "kabupaten": "Karo"
     },
@@ -164,8 +164,8 @@
     "wilayah": {
       "nama": "Lingga dan Barusjahe",
       "deskripsi": "Desa Lingga adalah pusat Sibayak Lingga (Karo-Karo Sinulingga) dengan rumah adat yang masih terawat.",
-      "latitude": 3.120,
-      "longitude": 98.520,
+      "latitude": 3.12,
+      "longitude": 98.52,
       "provinsi": "Sumatera Utara",
       "kabupaten": "Karo"
     },
@@ -229,8 +229,8 @@
     "wilayah": {
       "nama": "Batukarang dan Kutabuluh",
       "deskripsi": "Batukarang dan Kutabuluh adalah wilayah basis utama beberapa sub-marga Perangin-angin.",
-      "latitude": 3.080,
-      "longitude": 98.350,
+      "latitude": 3.08,
+      "longitude": 98.35,
       "provinsi": "Sumatera Utara",
       "kabupaten": "Karo"
     },

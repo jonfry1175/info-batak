@@ -1,18 +1,20 @@
 # Research Task: Data Detail Marga Batak Toba
 
 ## Konteks
+
 Anda adalah peneliti budaya Batak yang bertugas mengisi data detail marga untuk website InfoBatak.id. Website ini bertujuan melestarikan dan mengedukasi tentang sejarah, budaya, adat istiadat, aksara, dan sistem marga Batak.
 
 ## Tugas
+
 Lakukan research mendalam untuk 5 marga berikut dari rumpun **Toba**:
 
-| ID | Nama | Slug | Deskripsi |
-|----|------|------|-----------|
-| 2 | Siahaan | siahaan | Marga Batak Toba yang tersebar luas |
-| 3 | Simbolon | simbolon | Marga Toba dengan sejarah panjang |
-| 4 | Sinaga | sinaga | Marga Toba yang populer |
-| 5 | Hutabarat | hutabarat | Marga Toba dari daerah Tapanuli |
-| 6 | Napitupulu | napitupulu | Marga Toba yang terkenal |
+| ID  | Nama       | Slug       | Deskripsi                           |
+| --- | ---------- | ---------- | ----------------------------------- |
+| 2   | Siahaan    | siahaan    | Marga Batak Toba yang tersebar luas |
+| 3   | Simbolon   | simbolon   | Marga Toba dengan sejarah panjang   |
+| 4   | Sinaga     | sinaga     | Marga Toba yang populer             |
+| 5   | Hutabarat  | hutabarat  | Marga Toba dari daerah Tapanuli     |
+| 6   | Napitupulu | napitupulu | Marga Toba yang terkenal            |
 
 ## Schema JSON yang HARUS Diikuti
 
@@ -68,6 +70,7 @@ Setiap marga HARUS menghasilkan object JSON dengan struktur berikut:
 ## Slug Marga Valid untuk relatedMargas
 
 Gunakan HANYA slug berikut untuk field relatedMargas:
+
 - Toba: sitorus, siahaan, simbolon, sinaga, hutabarat, napitupulu
 - Karo: ginting, sembiring, tarigan, karo-karo, perangin-angin
 - Simalungun: saragih, purba, damanik, simatupang
@@ -135,6 +138,7 @@ Gunakan HANYA slug berikut untuk field relatedMargas:
 ## Panduan Kualitas Konten
 
 ### WAJIB:
+
 1. Gunakan terminologi Batak Toba yang benar (Dalihan Na Tolu, huta, ulos, horja, dll)
 2. Minimal 2 ancestors dalam tarombo
 3. Minimal 2 sub-marga dalam tarombo
@@ -144,11 +148,13 @@ Gunakan HANYA slug berikut untuk field relatedMargas:
 7. relatedMargas harus menggunakan slug yang valid
 
 ### HINDARI:
+
 1. Jangan fabrikasi informasi jika tidak yakin
 2. Jangan copy-paste dari marga lain
 3. Jangan gunakan placeholder seperti "[TBD]" atau "[Unknown]"
 
 ### JIKA INFORMASI TIDAK TERSEDIA:
+
 - Untuk ancestors: gunakan "Ompu [Nama Marga]" sebagai leluhur generik
 - Untuk tokoh: cari tokoh kontemporer dari marga tersebut
 - Untuk tradisi: gunakan tradisi umum Batak Toba yang relevan
@@ -159,10 +165,20 @@ Hasilkan output dalam format JSON array yang valid dengan 5 marga:
 
 ```json
 [
-  { /* Siahaan */ },
-  { /* Simbolon */ },
-  { /* Sinaga */ },
-  { /* Hutabarat */ },
-  { /* Napitupulu */ }
+  {
+    /* Siahaan */
+  },
+  {
+    /* Simbolon */
+  },
+  {
+    /* Sinaga */
+  },
+  {
+    /* Hutabarat */
+  },
+  {
+    /* Napitupulu */
+  }
 ]
 ```

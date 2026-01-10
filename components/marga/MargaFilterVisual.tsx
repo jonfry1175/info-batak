@@ -37,13 +37,15 @@ const rumpunGradients = {
   },
   Pakpak: {
     gradient: 'from-orange-500 via-amber-500 to-yellow-600',
-    hoverGradient: 'group-hover:from-orange-600 group-hover:via-amber-600 group-hover:to-yellow-700',
+    hoverGradient:
+      'group-hover:from-orange-600 group-hover:via-amber-600 group-hover:to-yellow-700',
     textColor: 'text-white',
     borderColor: 'border-orange-500',
   },
   Angkola: {
     gradient: 'from-amber-700 via-yellow-700 to-orange-700',
-    hoverGradient: 'group-hover:from-amber-800 group-hover:via-yellow-800 group-hover:to-orange-800',
+    hoverGradient:
+      'group-hover:from-amber-800 group-hover:via-yellow-800 group-hover:to-orange-800',
     textColor: 'text-white',
     borderColor: 'border-amber-700',
   },
@@ -122,8 +124,10 @@ export function MargaFilterVisual({ selectedRumpun, onSelectRumpun }: MargaFilte
                     <motion.button
                       key={rumpun}
                       onClick={() => onSelectRumpun(rumpun)}
-                      className={`group relative overflow-hidden rounded-xl transition-all focus:outline-none focus:ring-4 focus:ring-accent/50 ${
-                        isSelected ? `ring-4 ${config.borderColor} ring-offset-2 ring-offset-background` : ''
+                      className={`group focus:ring-accent/50 relative overflow-hidden rounded-xl transition-all focus:ring-4 focus:outline-none ${
+                        isSelected
+                          ? `ring-4 ${config.borderColor} ring-offset-background ring-offset-2`
+                          : ''
                       }`}
                       initial={{ opacity: 0, scale: 0.8 }}
                       animate={{ opacity: 1, scale: 1 }}
@@ -177,7 +181,7 @@ export function MargaFilterVisual({ selectedRumpun, onSelectRumpun }: MargaFilte
                         {/* Selected Indicator */}
                         {isSelected && (
                           <motion.div
-                            className="bg-background absolute bottom-2 right-2 rounded-full p-1"
+                            className="bg-background absolute right-2 bottom-2 rounded-full p-1"
                             initial={{ scale: 0 }}
                             animate={{ scale: 1 }}
                             transition={{ type: 'spring', stiffness: 500 }}
@@ -210,4 +214,3 @@ export function MargaFilterVisual({ selectedRumpun, onSelectRumpun }: MargaFilte
     </div>
   );
 }
-

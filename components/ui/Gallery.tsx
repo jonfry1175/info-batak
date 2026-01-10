@@ -59,8 +59,8 @@ export function Gallery({
 
   if (displayImages.length === 0) {
     return (
-      <div className="rounded-lg border border-dashed border-foreground/20 p-8 text-center">
-        <p className="text-sm text-foreground/60">
+      <div className="border-foreground/20 rounded-lg border border-dashed p-8 text-center">
+        <p className="text-foreground/60 text-sm">
           Gallery belum tersedia. Gambar akan ditambahkan segera.
         </p>
       </div>
@@ -76,7 +76,7 @@ export function Gallery({
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: index * 0.05 }}
-            className="group cursor-pointer overflow-hidden rounded-lg bg-background/50"
+            className="group bg-background/50 cursor-pointer overflow-hidden rounded-lg"
             onClick={() => openLightbox(image, index)}
           >
             <div className={`relative ${aspectRatios[aspectRatio]} overflow-hidden`}>
@@ -91,7 +91,7 @@ export function Gallery({
             </div>
             {showCredits && image.photographer && (
               <div className="p-2">
-                <p className="text-xs text-foreground/60">
+                <p className="text-foreground/60 text-xs">
                   © {image.photographer}
                   {image.year && ` (${image.year})`}
                 </p>
@@ -114,7 +114,7 @@ export function Gallery({
             {/* Close button */}
             <button
               onClick={closeLightbox}
-              className="absolute right-4 top-4 rounded-full bg-white/10 p-2 text-white transition-colors hover:bg-white/20"
+              className="absolute top-4 right-4 rounded-full bg-white/10 p-2 text-white transition-colors hover:bg-white/20"
               aria-label="Tutup"
             >
               <X className="h-6 w-6" />
@@ -196,9 +196,7 @@ export function Gallery({
                   </p>
                 )}
                 {selectedImage.description && (
-                  <p className="mt-2 text-xs text-white/80">
-                    {selectedImage.description}
-                  </p>
+                  <p className="mt-2 text-xs text-white/80">{selectedImage.description}</p>
                 )}
               </div>
             </motion.div>

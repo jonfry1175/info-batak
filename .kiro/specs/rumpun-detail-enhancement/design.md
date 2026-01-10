@@ -38,18 +38,18 @@ graph TD
     A --> E[SejarahSection]
     A --> F[BudayaSection]
     A --> G[TokohSection]
-    
+
     D --> D1[MapEmbed]
     D --> D2[LocationInfo]
-    
+
     E --> E1[SejarahOverview]
     E --> E2[TimelineComponent]
     E --> E3[CollapsibleSubsections]
-    
+
     F --> F1[CategoryTabs]
     F --> F2[CategoryCard]
     F --> F3[GalleryComponent]
-    
+
     G --> G1[TokohCard]
     G --> G2[TokohModal]
 ```
@@ -79,6 +79,7 @@ interface MapMarker {
 ```
 
 Features:
+
 - Google Maps iframe embed (no API key required for basic embed)
 - Fallback static image jika embed gagal
 - Responsive container dengan aspect ratio 16:9
@@ -102,6 +103,7 @@ interface TimelineEvent {
 ```
 
 Features:
+
 - Vertical timeline dengan alternating layout
 - Animated entry on scroll
 - Year badge dengan accent color
@@ -128,6 +130,7 @@ interface BudayaCategory {
 ```
 
 Features:
+
 - Horizontal scrollable tabs on mobile
 - Icon + label untuk setiap tab
 - Smooth transition antar kategori
@@ -157,6 +160,7 @@ interface EnhancedTokoh {
 ```
 
 Features:
+
 - Avatar/foto dengan fallback placeholder
 - Periode hidup (tahun lahir - wafat)
 - Expandable biography
@@ -181,6 +185,7 @@ interface TOCSection {
 ```
 
 Features:
+
 - Sticky positioning on desktop
 - Smooth scroll to section
 - Active section highlighting
@@ -197,7 +202,7 @@ interface RumpunBatakEnhanced {
   slug: string;
   deskripsi: string;
   gambar: string;
-  
+
   // Enhanced Wilayah
   wilayah: {
     nama: string;
@@ -214,7 +219,7 @@ interface RumpunBatakEnhanced {
       deskripsi?: string;
     }[];
   };
-  
+
   // Enhanced Sejarah
   sejarah: {
     ringkasan: string;
@@ -229,7 +234,7 @@ interface RumpunBatakEnhanced {
       caption: string;
     }[];
   };
-  
+
   // Enhanced Budaya
   budaya: {
     ringkasan: string;
@@ -259,7 +264,7 @@ interface RumpunBatakEnhanced {
       category: string;
     }[];
   };
-  
+
   // Enhanced Tokoh
   tokoh: EnhancedTokoh[];
 }
@@ -287,6 +292,7 @@ interface EnhancedTokoh {
 ### Backward Compatibility
 
 Untuk menjaga backward compatibility, sistem akan:
+
 1. Memeriksa apakah data menggunakan format baru atau lama
 2. Jika format lama, konversi otomatis ke format baru dengan default values
 3. Komponen akan handle missing fields dengan graceful fallbacks
@@ -302,12 +308,12 @@ function normalizeRumpunData(data: any): RumpunBatakEnhanced {
         deskripsi: data.wilayah,
         koordinat: getDefaultCoordinates(data.slug),
         kabupaten: [],
-        landmarks: []
+        landmarks: [],
       },
       sejarah: {
         ringkasan: data.sejarah,
         asalUsul: data.sejarah,
-        timeline: []
+        timeline: [],
       },
       budaya: {
         ringkasan: data.budaya,
@@ -315,9 +321,9 @@ function normalizeRumpunData(data: any): RumpunBatakEnhanced {
         musikTarian: { deskripsi: '' },
         pakaian: { deskripsi: '' },
         rumahAdat: { deskripsi: '' },
-        upacaraAdat: { deskripsi: '' }
+        upacaraAdat: { deskripsi: '' },
       },
-      tokoh: data.tokoh.map(normalizeTokhData)
+      tokoh: data.tokoh.map(normalizeTokhData),
     };
   }
   return data;
@@ -326,47 +332,47 @@ function normalizeRumpunData(data: any): RumpunBatakEnhanced {
 
 ## Correctness Properties
 
-*A property is a characteristic or behavior that should hold true across all valid executions of a system-essentially, a formal statement about what the system should do. Properties serve as the bridge between human-readable specifications and machine-verifiable correctness guarantees.*
+_A property is a characteristic or behavior that should hold true across all valid executions of a system-essentially, a formal statement about what the system should do. Properties serve as the bridge between human-readable specifications and machine-verifiable correctness guarantees._
 
 ### Property 1: Data Schema Validity
 
-*For any* rumpun data object in the enhanced format, it SHALL contain all required fields: wilayah object with koordinat, sejarah object with ringkasan, budaya object with category fields, and tokoh array with enhanced fields.
+_For any_ rumpun data object in the enhanced format, it SHALL contain all required fields: wilayah object with koordinat, sejarah object with ringkasan, budaya object with category fields, and tokoh array with enhanced fields.
 
 **Validates: Requirements 5.1, 5.2, 5.3, 5.4**
 
 ### Property 2: Map Component Data Binding
 
-*For any* rumpun with wilayah.koordinat data, the MapEmbed component SHALL receive valid latitude and longitude values within valid ranges (-90 to 90 for lat, -180 to 180 for lng).
+_For any_ rumpun with wilayah.koordinat data, the MapEmbed component SHALL receive valid latitude and longitude values within valid ranges (-90 to 90 for lat, -180 to 180 for lng).
 
 **Validates: Requirements 1.1, 1.3**
 
 ### Property 3: Timeline Chronological Order
 
-*For any* sejarah.timeline array with multiple events, the rendered timeline SHALL display events sorted in chronological order by year.
+_For any_ sejarah.timeline array with multiple events, the rendered timeline SHALL display events sorted in chronological order by year.
 
 **Validates: Requirements 2.2, 2.3**
 
 ### Property 4: Sejarah Section Structure
 
-*For any* rumpun with sejarah data, the rendered Section_Sejarah SHALL contain the ringkasan and at least one sub-section (asalUsul, kerajaan, perlawananKolonial, or eraModern).
+_For any_ rumpun with sejarah data, the rendered Section_Sejarah SHALL contain the ringkasan and at least one sub-section (asalUsul, kerajaan, perlawananKolonial, or eraModern).
 
 **Validates: Requirements 2.1**
 
 ### Property 5: Budaya Category Completeness
 
-*For any* rumpun with budaya data, the rendered Section_Budaya SHALL display all non-empty categories with their title and description.
+_For any_ rumpun with budaya data, the rendered Section_Budaya SHALL display all non-empty categories with their title and description.
 
 **Validates: Requirements 3.1, 3.2**
 
 ### Property 6: Tokoh Card Completeness
 
-*For any* tokoh in the tokoh array, the rendered TokohCard SHALL display nama, gelar, and either foto or placeholder avatar.
+_For any_ tokoh in the tokoh array, the rendered TokohCard SHALL display nama, gelar, and either foto or placeholder avatar.
 
 **Validates: Requirements 4.1, 4.2**
 
 ### Property 7: Backward Compatibility
 
-*For any* rumpun data in the old format (wilayah as string), the normalizeRumpunData function SHALL produce a valid enhanced format object without data loss.
+_For any_ rumpun data in the old format (wilayah as string), the normalizeRumpunData function SHALL produce a valid enhanced format object without data loss.
 
 **Validates: Requirements 5.5**
 
@@ -395,6 +401,7 @@ function normalizeRumpunData(data: any): RumpunBatakEnhanced {
 ### Unit Tests
 
 Unit tests akan fokus pada:
+
 - Data normalization function (old to new format conversion)
 - Component rendering dengan berbagai props
 - Edge cases (empty arrays, missing fields)
@@ -402,12 +409,14 @@ Unit tests akan fokus pada:
 ### Property-Based Tests
 
 Property-based tests menggunakan `fast-check` library untuk:
+
 - Validasi schema data rumpun enhanced
 - Validasi timeline sorting
 - Validasi coordinate ranges
 - Validasi backward compatibility conversion
 
 Konfigurasi:
+
 - Minimum 100 iterations per property test
 - Tag format: **Feature: rumpun-detail-enhancement, Property {number}: {property_text}**
 
@@ -417,4 +426,3 @@ Konfigurasi:
 - Map embed loading dan fallback
 - Tab navigation dalam budaya section
 - Tokoh card expand/collapse functionality
-

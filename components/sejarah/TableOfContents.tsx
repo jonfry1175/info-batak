@@ -37,7 +37,10 @@ function getIcon(sectionId: string, iconName?: string): React.ReactNode {
  * - Active section highlighting with Intersection Observer
  * - Hidden on mobile
  */
-export function TableOfContents({ sections, activeSection: controlledActiveSection }: TableOfContentsProps) {
+export function TableOfContents({
+  sections,
+  activeSection: controlledActiveSection,
+}: TableOfContentsProps) {
   const [activeSection, setActiveSection] = useState<string>(
     controlledActiveSection || (sections.length > 0 ? sections[0].id : '')
   );
@@ -103,13 +106,10 @@ export function TableOfContents({ sections, activeSection: controlledActiveSecti
   }
 
   return (
-    <nav
-      className="hidden lg:block"
-      aria-label="Daftar Isi"
-    >
+    <nav className="hidden lg:block" aria-label="Daftar Isi">
       <div className="sticky top-24">
-        <div className="rounded-xl border border-foreground/10 bg-background p-4 shadow-sm">
-          <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-foreground/60">
+        <div className="border-foreground/10 bg-background rounded-xl border p-4 shadow-sm">
+          <h3 className="text-foreground/60 mb-4 text-sm font-semibold tracking-wider uppercase">
             Daftar Isi
           </h3>
           <ul className="space-y-1">
@@ -139,7 +139,7 @@ export function TableOfContents({ sections, activeSection: controlledActiveSecti
                     {isActive && (
                       <motion.div
                         layoutId="activeIndicator"
-                        className="h-1.5 w-1.5 rounded-full bg-accent"
+                        className="bg-accent h-1.5 w-1.5 rounded-full"
                         initial={false}
                         transition={{ type: 'spring', stiffness: 500, damping: 30 }}
                       />

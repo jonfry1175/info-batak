@@ -35,7 +35,7 @@
       "nama": "Raya, Simalungun",
       "deskripsi": "Pematang Raya adalah pusat kerajaan dan kebudayaan marga Saragih.",
       "latitude": 2.9667,
-      "longitude": 98.8500,
+      "longitude": 98.85,
       "provinsi": "Sumatera Utara",
       "kabupaten": "Simalungun"
     },
@@ -96,7 +96,7 @@
       "nama": "Pematang Purba",
       "deskripsi": "Lokasi Rumah Bolon Pematang Purba, istana raja-raja Purba yang masih berdiri kokoh.",
       "latitude": 2.9167,
-      "longitude": 98.7500,
+      "longitude": 98.75,
       "provinsi": "Sumatera Utara",
       "kabupaten": "Simalungun"
     },
@@ -152,8 +152,8 @@
     "wilayah": {
       "nama": "Tanah Jawa, Simalungun",
       "deskripsi": "Kecamatan Tanah Jawa adalah bekas pusat kekuasaan marga Sinaga di Simalungun.",
-      "latitude": 2.8500,
-      "longitude": 99.1000,
+      "latitude": 2.85,
+      "longitude": 99.1,
       "provinsi": "Sumatera Utara",
       "kabupaten": "Simalungun"
     },
@@ -214,7 +214,7 @@
       "nama": "Pematangsiantar",
       "deskripsi": "Pematangsiantar adalah pusat Kerajaan Siantar yang diperintah oleh raja-raja Damanik.",
       "latitude": 2.9611,
-      "longitude": 99.0600,
+      "longitude": 99.06,
       "provinsi": "Sumatera Utara",
       "kabupaten": "Simalungun"
     },
@@ -274,8 +274,8 @@
     "wilayah": {
       "nama": "Simalungun (Migrasi)",
       "deskripsi": "Tersebar di berbagai kecamatan di Simalungun seperti Sidamanik dan Tanah Jawa, hidup berdampingan dengan marga asli SISADAPUR.",
-      "latitude": 2.9000,
-      "longitude": 99.0000,
+      "latitude": 2.9,
+      "longitude": 99.0,
       "provinsi": "Sumatera Utara",
       "kabupaten": "Simalungun"
     },

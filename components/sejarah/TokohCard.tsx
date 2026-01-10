@@ -27,10 +27,7 @@ export function getInitials(nama: string): string {
 /**
  * Formats the life period string from birth and death years
  */
-export function formatLifePeriod(
-  tahunLahir?: number,
-  tahunWafat?: number
-): string | null {
+export function formatLifePeriod(tahunLahir?: number, tahunWafat?: number): string | null {
   if (!tahunLahir && !tahunWafat) return null;
   if (tahunLahir && tahunWafat) return `${tahunLahir} - ${tahunWafat}`;
   if (tahunLahir) return `${tahunLahir} - sekarang`;
@@ -61,7 +58,7 @@ export function TokohCard({ tokoh, onExpand }: TokohCardProps) {
 
   return (
     <motion.div
-      className="group overflow-hidden rounded-xl border border-foreground/10 bg-background shadow-sm transition-shadow hover:shadow-lg"
+      className="group border-foreground/10 bg-background overflow-hidden rounded-xl border shadow-sm transition-shadow hover:shadow-lg"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       whileHover={{ y: -4 }}
@@ -70,7 +67,7 @@ export function TokohCard({ tokoh, onExpand }: TokohCardProps) {
       {/* Header Section */}
       <div className="flex gap-4 p-4">
         {/* Avatar/Photo */}
-        <div className="relative h-20 w-20 flex-shrink-0 overflow-hidden rounded-full border-2 border-accent/20">
+        <div className="border-accent/20 relative h-20 w-20 flex-shrink-0 overflow-hidden rounded-full border-2">
           {hasFoto ? (
             <Image
               src={tokoh.foto!}
@@ -81,29 +78,27 @@ export function TokohCard({ tokoh, onExpand }: TokohCardProps) {
               sizes="80px"
             />
           ) : (
-            <div className="flex h-full w-full items-center justify-center bg-accent/10">
+            <div className="bg-accent/10 flex h-full w-full items-center justify-center">
               {initials ? (
-                <span className="text-xl font-bold text-accent">{initials}</span>
+                <span className="text-accent text-xl font-bold">{initials}</span>
               ) : (
-                <User className="h-8 w-8 text-accent/60" />
+                <User className="text-accent/60 h-8 w-8" />
               )}
             </div>
           )}
         </div>
 
         {/* Basic Info */}
-        <div className="flex-1 min-w-0">
-          <h3 className="text-lg font-bold text-foreground truncate">{tokoh.nama}</h3>
-          <p className="text-sm text-accent font-medium">{tokoh.gelar}</p>
-          
+        <div className="min-w-0 flex-1">
+          <h3 className="text-foreground truncate text-lg font-bold">{tokoh.nama}</h3>
+          <p className="text-accent text-sm font-medium">{tokoh.gelar}</p>
+
           {/* Life Period */}
-          {lifePeriod && (
-            <p className="mt-1 text-xs text-foreground/60">{lifePeriod}</p>
-          )}
+          {lifePeriod && <p className="text-foreground/60 mt-1 text-xs">{lifePeriod}</p>}
 
           {/* Bidang Badge */}
           {tokoh.bidang && (
-            <span className="mt-2 inline-flex items-center gap-1 rounded-full bg-accent/10 px-2.5 py-0.5 text-xs font-medium text-accent">
+            <span className="bg-accent/10 text-accent mt-2 inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-xs font-medium">
               <Award className="h-3 w-3" />
               {tokoh.bidang}
             </span>
@@ -113,21 +108,18 @@ export function TokohCard({ tokoh, onExpand }: TokohCardProps) {
 
       {/* Ringkasan */}
       <div className="px-4 pb-3">
-        <p className="text-sm text-foreground/70 line-clamp-2">{tokoh.ringkasan}</p>
+        <p className="text-foreground/70 line-clamp-2 text-sm">{tokoh.ringkasan}</p>
       </div>
 
       {/* Expand Button */}
       <button
         onClick={handleExpand}
-        className="flex w-full items-center justify-center gap-2 border-t border-foreground/10 py-3 text-sm font-medium text-foreground/60 transition-colors hover:bg-foreground/5 hover:text-foreground"
+        className="border-foreground/10 text-foreground/60 hover:bg-foreground/5 hover:text-foreground flex w-full items-center justify-center gap-2 border-t py-3 text-sm font-medium transition-colors"
         aria-expanded={isExpanded}
         aria-controls={`tokoh-detail-${tokoh.nama.replace(/\s+/g, '-').toLowerCase()}`}
       >
         <span>{isExpanded ? 'Tutup' : 'Lihat Selengkapnya'}</span>
-        <motion.div
-          animate={{ rotate: isExpanded ? 180 : 0 }}
-          transition={{ duration: 0.2 }}
-        >
+        <motion.div animate={{ rotate: isExpanded ? 180 : 0 }} transition={{ duration: 0.2 }}>
           <ChevronDown className="h-4 w-4" />
         </motion.div>
       </button>
@@ -141,25 +133,21 @@ export function TokohCard({ tokoh, onExpand }: TokohCardProps) {
             animate={{ height: 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="overflow-hidden border-t border-foreground/10"
+            className="border-foreground/10 overflow-hidden border-t"
           >
             <div className="space-y-4 p-4">
               {/* Full Biography */}
               {tokoh.biografi && (
                 <div>
-                  <h4 className="mb-2 text-sm font-semibold text-foreground">Biografi</h4>
-                  <p className="text-sm leading-relaxed text-foreground/70">
-                    {tokoh.biografi}
-                  </p>
+                  <h4 className="text-foreground mb-2 text-sm font-semibold">Biografi</h4>
+                  <p className="text-foreground/70 text-sm leading-relaxed">{tokoh.biografi}</p>
                 </div>
               )}
 
               {/* Achievements */}
               {tokoh.pencapaian && tokoh.pencapaian.length > 0 && (
                 <div>
-                  <h4 className="mb-2 text-sm font-semibold text-foreground">
-                    Pencapaian
-                  </h4>
+                  <h4 className="text-foreground mb-2 text-sm font-semibold">Pencapaian</h4>
                   <ul className="space-y-2">
                     {tokoh.pencapaian.map((achievement, index) => (
                       <motion.li
@@ -167,9 +155,9 @@ export function TokohCard({ tokoh, onExpand }: TokohCardProps) {
                         initial={{ opacity: 0, x: -10 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.2, delay: index * 0.05 }}
-                        className="flex items-start gap-2 text-sm text-foreground/70"
+                        className="text-foreground/70 flex items-start gap-2 text-sm"
                       >
-                        <Award className="mt-0.5 h-4 w-4 flex-shrink-0 text-accent" />
+                        <Award className="text-accent mt-0.5 h-4 w-4 flex-shrink-0" />
                         <span>{achievement}</span>
                       </motion.li>
                     ))}

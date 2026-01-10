@@ -89,7 +89,8 @@ export function Navbar() {
                                   href={subLink.href}
                                   className={cn(
                                     'hover:bg-accent/15 hover:text-foreground focus:bg-accent/15 focus:text-foreground block space-y-1 rounded-md p-3 leading-none no-underline transition-colors outline-none select-none',
-                                    pathname === subLink.href && 'bg-accent/20 text-foreground font-medium'
+                                    pathname === subLink.href &&
+                                      'bg-accent/20 text-foreground font-medium'
                                   )}
                                 >
                                   <div className="text-base leading-tight font-medium">

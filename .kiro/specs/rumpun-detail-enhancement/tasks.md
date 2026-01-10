@@ -171,4 +171,3 @@ Implementasi enhancement halaman detail rumpun Batak dengan peta interaktif, kon
 - Property-based tests menggunakan fast-check library
 - Semua komponen harus responsive (mobile-first)
 - Warna accent tetap #C1272D sesuai design system
-

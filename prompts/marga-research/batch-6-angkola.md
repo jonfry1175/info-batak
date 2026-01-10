@@ -1,18 +1,20 @@
 # Research Task: Data Detail Marga Batak Angkola
 
 ## Konteks
+
 Anda adalah peneliti budaya Batak yang bertugas mengisi data detail marga untuk website InfoBatak.id. Website ini bertujuan melestarikan dan mengedukasi tentang sejarah, budaya, adat istiadat, aksara, dan sistem marga Batak.
 
 ## Tugas
+
 Lakukan research mendalam untuk 5 marga berikut dari rumpun **Angkola**:
 
-| ID | Nama | Slug | Deskripsi |
-|----|------|------|-----------|
-| 26 | Harahap | harahap | Marga besar Angkola |
-| 27 | Siregar | siregar | Marga Angkola yang populer |
-| 28 | Rambe | rambe | Marga Angkola yang terkenal |
-| 29 | Batubara | batubara | Marga Angkola yang tersebar |
-| 30 | Pohan | pohan | Marga Angkola yang terkenal |
+| ID  | Nama     | Slug     | Deskripsi                   |
+| --- | -------- | -------- | --------------------------- |
+| 26  | Harahap  | harahap  | Marga besar Angkola         |
+| 27  | Siregar  | siregar  | Marga Angkola yang populer  |
+| 28  | Rambe    | rambe    | Marga Angkola yang terkenal |
+| 29  | Batubara | batubara | Marga Angkola yang tersebar |
+| 30  | Pohan    | pohan    | Marga Angkola yang terkenal |
 
 ## Schema JSON yang HARUS Diikuti
 
@@ -66,6 +68,7 @@ Lakukan research mendalam untuk 5 marga berikut dari rumpun **Angkola**:
 ## Slug Marga Valid untuk relatedMargas
 
 Gunakan HANYA slug berikut untuk field relatedMargas:
+
 - Toba: sitorus, siahaan, simbolon, sinaga, hutabarat, napitupulu
 - Karo: ginting, sembiring, tarigan, karo-karo, perangin-angin
 - Simalungun: saragih, purba, damanik, simatupang
@@ -76,6 +79,7 @@ Gunakan HANYA slug berikut untuk field relatedMargas:
 ## Panduan Kualitas Konten
 
 ### WAJIB:
+
 1. Gunakan terminologi Angkola yang benar (Dalihan Na Tolu versi Angkola, gordang, tortor, dll)
 2. Minimal 2 ancestors dalam tarombo
 3. Minimal 2 sub-marga dalam tarombo
@@ -85,11 +89,13 @@ Gunakan HANYA slug berikut untuk field relatedMargas:
 7. relatedMargas harus menggunakan slug yang valid (prioritas sesama Angkola atau Mandailing)
 
 ### HINDARI:
+
 1. Jangan fabrikasi informasi jika tidak yakin
 2. Jangan copy-paste dari marga lain
 3. Jangan campur terminologi dengan Toba atau Karo
 
 ### JIKA INFORMASI TIDAK TERSEDIA:
+
 - Untuk ancestors: gunakan leluhur generik Angkola
 - Untuk tokoh: cari tokoh kontemporer dari marga tersebut
 - Untuk tradisi: gunakan tradisi umum Angkola yang relevan
@@ -100,10 +106,20 @@ Hasilkan output dalam format JSON array yang valid dengan 5 marga:
 
 ```json
 [
-  { /* Harahap */ },
-  { /* Siregar */ },
-  { /* Rambe */ },
-  { /* Batubara */ },
-  { /* Pohan */ }
+  {
+    /* Harahap */
+  },
+  {
+    /* Siregar */
+  },
+  {
+    /* Rambe */
+  },
+  {
+    /* Batubara */
+  },
+  {
+    /* Pohan */
+  }
 ]
 ```

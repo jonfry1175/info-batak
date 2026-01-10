@@ -77,6 +77,7 @@ Update card di halaman `/marga` untuk menjadi clickable dengan Link ke detail pa
 Halaman detail dengan sections yang render berdasarkan data availability.
 
 Sections:
+
 1. Hero section dengan nama marga dan rumpun badge
 2. Sejarah section (if sejarah exists)
 3. Asal Usul section (if asalUsul exists)
@@ -101,6 +102,7 @@ interface MapProps {
 ```
 
 Options for implementation:
+
 - Static map image from OpenStreetMap/Google Static Maps
 - Embedded iframe from Google Maps
 - Leaflet.js for interactive map (recommended for future)
@@ -118,7 +120,7 @@ interface Marga {
   nama: string;
   rumpun: Rumpun;
   deskripsi?: string;
-  slug: string;  // NEW: URL-friendly identifier
+  slug: string; // NEW: URL-friendly identifier
 }
 ```
 
@@ -126,16 +128,16 @@ interface Marga {
 
 ```typescript
 interface MargaDetail {
-  margaId: string;           // Reference to Marga.id
-  slug: string;              // URL-friendly, matches Marga.slug
-  sejarah?: string;          // History of the marga
-  asalUsul?: string;         // Origin story
-  tarombo?: Tarombo;         // Genealogy structure
-  wilayah?: Wilayah;         // Region of origin
-  tradisi?: string[];        // Traditions specific to marga
-  tokoh?: TokohMarga[];      // Famous figures
-  relatedMargas?: string[];  // Array of related marga slugs
-  updatedAt?: string;        // For future CRUD tracking
+  margaId: string; // Reference to Marga.id
+  slug: string; // URL-friendly, matches Marga.slug
+  sejarah?: string; // History of the marga
+  asalUsul?: string; // Origin story
+  tarombo?: Tarombo; // Genealogy structure
+  wilayah?: Wilayah; // Region of origin
+  tradisi?: string[]; // Traditions specific to marga
+  tokoh?: TokohMarga[]; // Famous figures
+  relatedMargas?: string[]; // Array of related marga slugs
+  updatedAt?: string; // For future CRUD tracking
 }
 
 interface Tarombo {
@@ -207,10 +209,7 @@ File: `content/data/marga-detail.json`
       "provinsi": "Sumatera Utara",
       "kabupaten": "Tapanuli Utara"
     },
-    "tradisi": [
-      "Upacara adat khusus marga Sitorus",
-      "Tradisi pernikahan khas"
-    ],
+    "tradisi": ["Upacara adat khusus marga Sitorus", "Tradisi pernikahan khas"],
     "tokoh": [
       {
         "nama": "Dr. T.B. Simatupang",
@@ -231,43 +230,43 @@ File: `content/data/marga-detail.json`
 // lib/data.ts additions
 
 // Get marga with slug (update existing function or add new)
-export function getMargaBySlug(slug: string): Marga | undefined
+export function getMargaBySlug(slug: string): Marga | undefined;
 
 // Get marga detail by slug
-export function getMargaDetailBySlug(slug: string): MargaDetail | undefined
+export function getMargaDetailBySlug(slug: string): MargaDetail | undefined;
 
 // Get combined marga + detail data
-export function getFullMargaBySlug(slug: string): (Marga & MargaDetail) | undefined
+export function getFullMargaBySlug(slug: string): (Marga & MargaDetail) | undefined;
 
 // Get all marga slugs for static generation
-export function getAllMargaSlugs(): string[]
+export function getAllMargaSlugs(): string[];
 ```
 
 ## Correctness Properties
 
-*A property is a characteristic or behavior that should hold true across all valid executions of a system-essentially, a formal statement about what the system should do. Properties serve as the bridge between human-readable specifications and machine-verifiable correctness guarantees.*
+_A property is a characteristic or behavior that should hold true across all valid executions of a system-essentially, a formal statement about what the system should do. Properties serve as the bridge between human-readable specifications and machine-verifiable correctness guarantees._
 
 ### Property 1: Navigation from Card to Detail
 
-*For any* marga card clicked, the navigation SHALL route to `/marga/{slug}` where slug matches the marga's slug property.
+_For any_ marga card clicked, the navigation SHALL route to `/marga/{slug}` where slug matches the marga's slug property.
 
 **Validates: Requirements 1.1**
 
 ### Property 2: Basic Info Rendering Completeness
 
-*For any* marga detail page, the rendered page SHALL contain the marga name as title, the rumpun badge, a hero section, and a back navigation link to `/marga`.
+_For any_ marga detail page, the rendered page SHALL contain the marga name as title, the rumpun badge, a hero section, and a back navigation link to `/marga`.
 
 **Validates: Requirements 2.1, 2.2, 2.3, 2.4**
 
 ### Property 3: Conditional Section Rendering
 
-*For any* marga detail data, if a section's data exists (sejarah, asalUsul, tarombo, wilayah, tradisi, tokoh, relatedMargas), the corresponding section SHALL be rendered; if the data is missing, the section SHALL NOT be rendered and no error SHALL occur.
+_For any_ marga detail data, if a section's data exists (sejarah, asalUsul, tarombo, wilayah, tradisi, tokoh, relatedMargas), the corresponding section SHALL be rendered; if the data is missing, the section SHALL NOT be rendered and no error SHALL occur.
 
 **Validates: Requirements 3.1, 3.2, 4.1, 4.2, 4.3, 5.1, 5.2, 5.4, 6.1, 6.2, 6.3, 7.4**
 
 ### Property 4: Data Schema Validity
 
-*For any* marga detail object in marga-detail.json, it SHALL contain margaId and slug fields, and the margaId SHALL reference a valid id in marga.json.
+_For any_ marga detail object in marga-detail.json, it SHALL contain margaId and slug fields, and the margaId SHALL reference a valid id in marga.json.
 
 **Validates: Requirements 7.2, 7.6**
 
@@ -293,6 +292,7 @@ export function getAllMargaSlugs(): string[]
 ### Unit Tests
 
 Unit tests akan fokus pada:
+
 - Data access functions (`getMargaBySlug`, `getMargaDetailBySlug`, `getFullMargaBySlug`)
 - Component rendering dengan berbagai props
 - Edge cases (missing data, partial data)
@@ -300,11 +300,13 @@ Unit tests akan fokus pada:
 ### Property-Based Tests
 
 Property-based tests menggunakan `fast-check` library untuk:
+
 - Validasi schema data marga detail
 - Validasi conditional rendering logic
 - Validasi navigation URL generation
 
 Konfigurasi:
+
 - Minimum 100 iterations per property test
 - Tag format: **Feature: marga-detail-pages, Property {number}: {property_text}**
 
@@ -314,4 +316,3 @@ Konfigurasi:
 - Page rendering dengan real data
 - 404 handling untuk invalid routes
 - Partial data rendering
-

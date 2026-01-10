@@ -5,33 +5,33 @@ import { createClient, SupabaseClient } from '@supabase/supabase-js';
  * Throws an error with a clear message if any are missing.
  */
 export function validateSupabaseEnv(): {
-    supabaseUrl: string;
-    supabaseAnonKey: string;
+  supabaseUrl: string;
+  supabaseAnonKey: string;
 } {
-    const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-    const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
-    const missingVars: string[] = [];
+  const missingVars: string[] = [];
 
-    if (!supabaseUrl) {
-        missingVars.push('NEXT_PUBLIC_SUPABASE_URL');
-    }
+  if (!supabaseUrl) {
+    missingVars.push('NEXT_PUBLIC_SUPABASE_URL');
+  }
 
-    if (!supabaseAnonKey) {
-        missingVars.push('NEXT_PUBLIC_SUPABASE_ANON_KEY');
-    }
+  if (!supabaseAnonKey) {
+    missingVars.push('NEXT_PUBLIC_SUPABASE_ANON_KEY');
+  }
 
-    if (missingVars.length > 0) {
-        throw new Error(
-            `Missing required Supabase environment variable(s): ${missingVars.join(', ')}. ` +
-            'Please add them to your .env.local file.'
-        );
-    }
+  if (missingVars.length > 0) {
+    throw new Error(
+      `Missing required Supabase environment variable(s): ${missingVars.join(', ')}. ` +
+        'Please add them to your .env.local file.'
+    );
+  }
 
-    return {
-        supabaseUrl: supabaseUrl!,
-        supabaseAnonKey: supabaseAnonKey!,
-    };
+  return {
+    supabaseUrl: supabaseUrl!,
+    supabaseAnonKey: supabaseAnonKey!,
+  };
 }
 
 /**
@@ -39,8 +39,8 @@ export function validateSupabaseEnv(): {
  * Validates environment variables before creating the client.
  */
 export function createSupabaseClient(): SupabaseClient {
-    const { supabaseUrl, supabaseAnonKey } = validateSupabaseEnv();
-    return createClient(supabaseUrl, supabaseAnonKey);
+  const { supabaseUrl, supabaseAnonKey } = validateSupabaseEnv();
+  return createClient(supabaseUrl, supabaseAnonKey);
 }
 
 // Lazy-initialized singleton client
@@ -51,16 +51,16 @@ let supabaseInstance: SupabaseClient | null = null;
  * The client is lazily initialized on first access.
  */
 export function getSupabaseClient(): SupabaseClient {
-    if (!supabaseInstance) {
-        supabaseInstance = createSupabaseClient();
-    }
-    return supabaseInstance;
+  if (!supabaseInstance) {
+    supabaseInstance = createSupabaseClient();
+  }
+  return supabaseInstance;
 }
 
 // Export a convenience getter for the client
 // Note: This will throw if env vars are not set when accessed
 export const supabase = {
-    get client(): SupabaseClient {
-        return getSupabaseClient();
-    },
+  get client(): SupabaseClient {
+    return getSupabaseClient();
+  },
 };

@@ -102,9 +102,7 @@
       },
       "symbolism": "Keharmonisan hubungan dengan Tuhan, sesama, dan alam",
       "capacity": "6-10 keluarga",
-      "images": [
-        "/images/budaya/arsitektur/ruma-bolon-simalungun.jpg"
-      ]
+      "images": ["/images/budaya/arsitektur/ruma-bolon-simalungun.jpg"]
     }
   ],
   "constructionTechniques": [
@@ -218,9 +216,9 @@
         "name": "Warna tradisional",
         "description": "Tiga warna utama dengan makna filosofis",
         "colors": [
-          {"name": "Merah", "meaning": "Keberanian dan kekuatan"},
-          {"name": "Hitam", "meaning": "Kebijaksanaan dan keteguhan"},
-          {"name": "Putih", "meaning": "Kesucian dan kejujuran"}
+          { "name": "Merah", "meaning": "Keberanian dan kekuatan" },
+          { "name": "Hitam", "meaning": "Kebijaksanaan dan keteguhan" },
+          { "name": "Putih", "meaning": "Kesucian dan kejujuran" }
         ]
       }
     ]

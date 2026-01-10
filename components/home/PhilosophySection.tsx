@@ -8,7 +8,8 @@ const philosophies = [
   {
     title: 'Somba Marhula-hula',
     meaning: 'Hormat kepada Hula-hula',
-    description: 'Sikap hormat kepada pihak keluarga pemberi istri (Hula-hula). Mereka dianggap sebagai sumber berkat ("Mata ni ari binsar").',
+    description:
+      'Sikap hormat kepada pihak keluarga pemberi istri (Hula-hula). Mereka dianggap sebagai sumber berkat ("Mata ni ari binsar").',
     icon: Users,
     color: 'text-blue-500',
     delay: 0.1,
@@ -24,7 +25,8 @@ const philosophies = [
   {
     title: 'Manat Mardongan Tubu',
     meaning: 'Hati-hati kepada Teman Semarga',
-    description: 'Sikap berhati-hati dan saling menjaga perasaan dengan teman semarga (Dongan Tubu) untuk menghindari konflik.',
+    description:
+      'Sikap berhati-hati dan saling menjaga perasaan dengan teman semarga (Dongan Tubu) untuk menghindari konflik.',
     icon: Shield,
     color: 'text-amber-500',
     delay: 0.3,
@@ -33,28 +35,29 @@ const philosophies = [
 
 export function PhilosophySection() {
   return (
-    <section className="py-20 relative overflow-hidden">
+    <section className="relative overflow-hidden py-20">
       {/* Background Pattern */}
-      <div className="absolute inset-0 pattern-gorga opacity-30" />
-      
-      <div className="container px-4 mx-auto relative z-10">
-        <div className="text-center mb-16 max-w-2xl mx-auto">
+      <div className="pattern-gorga absolute inset-0 opacity-30" />
+
+      <div className="relative z-10 container mx-auto px-4">
+        <div className="mx-auto mb-16 max-w-2xl text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-3xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">
+            <h2 className="from-foreground to-foreground/70 mb-6 bg-gradient-to-r bg-clip-text text-3xl font-bold text-transparent md:text-5xl">
               Dalihan Na Tolu
             </h2>
-            <p className="text-lg text-muted-foreground text-balance">
-              Falsafah hidup masyarakat Batak yang menjadi landasan sistem kekerabatan dan interaksi sosial yang harmonis.
+            <p className="text-muted-foreground text-lg text-balance">
+              Falsafah hidup masyarakat Batak yang menjadi landasan sistem kekerabatan dan interaksi
+              sosial yang harmonis.
             </p>
           </motion.div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {philosophies.map((item, index) => (
             <motion.div
               key={item.title}
@@ -63,16 +66,20 @@ export function PhilosophySection() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: item.delay }}
             >
-              <Card className="h-full border-none bg-background/50 backdrop-blur-sm shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 overflow-hidden group">
-                <div className={`absolute top-0 left-0 w-1 h-full ${item.color.replace('text-', 'bg-')} opacity-50 group-hover:opacity-100 transition-opacity`} />
-                <CardHeader className="text-center pb-4">
-                  <div className={`mx-auto w-16 h-16 rounded-full bg-background shadow-inner flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                    <item.icon className={`w-8 h-8 ${item.color}`} />
+              <Card className="bg-background/50 group h-full overflow-hidden border-none shadow-xl backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl">
+                <div
+                  className={`absolute top-0 left-0 h-full w-1 ${item.color.replace('text-', 'bg-')} opacity-50 transition-opacity group-hover:opacity-100`}
+                />
+                <CardHeader className="pb-4 text-center">
+                  <div
+                    className={`bg-background mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full shadow-inner transition-transform duration-300 group-hover:scale-110`}
+                  >
+                    <item.icon className={`h-8 w-8 ${item.color}`} />
                   </div>
                   <CardTitle className="text-xl font-bold">{item.title}</CardTitle>
-                  <p className="text-sm font-medium text-accent">{item.meaning}</p>
+                  <p className="text-accent text-sm font-medium">{item.meaning}</p>
                 </CardHeader>
-                <CardContent className="text-center text-muted-foreground">
+                <CardContent className="text-muted-foreground text-center">
                   {item.description}
                 </CardContent>
               </Card>
@@ -83,4 +90,3 @@ export function PhilosophySection() {
     </section>
   );
 }
-

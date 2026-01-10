@@ -70,8 +70,20 @@
       }
     ],
     "completeOutfit": {
-      "formal": ["Baju kurung hitam", "Celana hitam", "Ulos sadum", "Ampe-ampe bulang", "Piso gaja dompak"],
-      "ceremonial": ["Baju kurung putih", "Celana hitam", "Ulos adat", "Ampe-ampe suri-suri", "Tungkot malehat (untuk pemimpin)"],
+      "formal": [
+        "Baju kurung hitam",
+        "Celana hitam",
+        "Ulos sadum",
+        "Ampe-ampe bulang",
+        "Piso gaja dompak"
+      ],
+      "ceremonial": [
+        "Baju kurung putih",
+        "Celana hitam",
+        "Ulos adat",
+        "Ampe-ampe suri-suri",
+        "Tungkot malehat (untuk pemimpin)"
+      ],
       "casual": ["Baju khas", "Celana", "Ulos diselempang"]
     }
   },
@@ -152,7 +164,13 @@
       }
     ],
     "completeOutfit": {
-      "bridal": ["Kebaya emas/merah", "Ulos Ragi Hotang", "Ulos Pintu Ragi", "Bulang-bulang (mahkota)", "Set perhiasan lengkap"],
+      "bridal": [
+        "Kebaya emas/merah",
+        "Ulos Ragi Hotang",
+        "Ulos Pintu Ragi",
+        "Bulang-bulang (mahkota)",
+        "Set perhiasan lengkap"
+      ],
       "formal": ["Kebaya putih/warna", "Ulos sebagai rok", "Ulos selendang", "Perhiasan"],
       "ceremonial": ["Kebaya", "Ulos lengkap", "Hiasan kepala", "Perhiasan adat"]
     }

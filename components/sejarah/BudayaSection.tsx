@@ -20,8 +20,8 @@ interface CategoryContentProps {
 function CategoryContent({ category, title }: CategoryContentProps) {
   if (!category.deskripsi) {
     return (
-      <div className="rounded-lg border border-dashed border-foreground/20 p-8 text-center">
-        <p className="text-sm text-foreground/60">
+      <div className="border-foreground/20 rounded-lg border border-dashed p-8 text-center">
+        <p className="text-foreground/60 text-sm">
           Informasi tentang {title.toLowerCase()} akan segera ditambahkan.
         </p>
       </div>
@@ -30,13 +30,13 @@ function CategoryContent({ category, title }: CategoryContentProps) {
 
   return (
     <div className="space-y-4">
-      <p className="text-sm leading-relaxed text-foreground/80 md:text-base">
+      <p className="text-foreground/80 text-sm leading-relaxed md:text-base">
         {category.deskripsi}
       </p>
 
       {category.jenis && category.jenis.length > 0 && (
         <div className="mt-4">
-          <h4 className="mb-3 text-sm font-semibold text-foreground">Jenis-jenis:</h4>
+          <h4 className="text-foreground mb-3 text-sm font-semibold">Jenis-jenis:</h4>
           <ul className="grid gap-2 sm:grid-cols-2">
             {category.jenis.map((item, index) => (
               <motion.li
@@ -44,9 +44,9 @@ function CategoryContent({ category, title }: CategoryContentProps) {
                 initial={{ opacity: 0, x: -10 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.3, delay: index * 0.05 }}
-                className="flex items-center gap-2 text-sm text-foreground/70"
+                className="text-foreground/70 flex items-center gap-2 text-sm"
               >
-                <ChevronRight className="h-4 w-4 text-accent" />
+                <ChevronRight className="text-accent h-4 w-4" />
                 <span>{item}</span>
               </motion.li>
             ))}
@@ -77,7 +77,7 @@ function BudayaGallery({ images, categoryFilter }: BudayaGalleryProps) {
   return (
     <>
       <div className="mt-6">
-        <h4 className="mb-4 text-sm font-semibold text-foreground">Galeri</h4>
+        <h4 className="text-foreground mb-4 text-sm font-semibold">Galeri</h4>
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
           {filteredImages.map((image, index) => (
             <motion.div
@@ -115,7 +115,7 @@ function BudayaGallery({ images, categoryFilter }: BudayaGalleryProps) {
           >
             <button
               onClick={() => setSelectedImage(null)}
-              className="absolute right-4 top-4 rounded-full bg-white/10 p-2 text-white transition-colors hover:bg-white/20"
+              className="absolute top-4 right-4 rounded-full bg-white/10 p-2 text-white transition-colors hover:bg-white/20"
               aria-label="Tutup"
             >
               <X className="h-6 w-6" />
@@ -145,14 +145,10 @@ function BudayaGallery({ images, categoryFilter }: BudayaGalleryProps) {
   );
 }
 
-
 /**
  * Gets the category data from BudayaEnhanced by category ID
  */
-export function getCategoryData(
-  budaya: BudayaEnhanced,
-  categoryId: string
-): BudayaCategory | null {
+export function getCategoryData(budaya: BudayaEnhanced, categoryId: string): BudayaCategory | null {
   switch (categoryId) {
     case 'sistemKekerabatan':
       return budaya.sistemKekerabatan;
@@ -197,9 +193,7 @@ export function BudayaSection({ budaya, rumpunNama }: BudayaSectionProps) {
   const currentCategoryTitle = getCategoryTitle(activeCategory);
 
   // Filter gallery images for current category
-  const categoryGalleryImages = budaya.gallery?.filter(
-    (img) => img.category === activeCategory
-  );
+  const categoryGalleryImages = budaya.gallery?.filter((img) => img.category === activeCategory);
 
   return (
     <section id="budaya" className="scroll-mt-20">
@@ -210,15 +204,13 @@ export function BudayaSection({ budaya, rumpunNama }: BudayaSectionProps) {
       >
         {/* Section Header */}
         <div className="mb-6">
-          <h2 className="text-2xl font-bold text-foreground md:text-3xl">
-            Budaya {rumpunNama}
-          </h2>
-          <div className="mt-2 h-1 w-16 rounded-full bg-accent" />
+          <h2 className="text-foreground text-2xl font-bold md:text-3xl">Budaya {rumpunNama}</h2>
+          <div className="bg-accent mt-2 h-1 w-16 rounded-full" />
         </div>
 
         {/* Overview/Ringkasan */}
-        <div className="mb-8 rounded-xl border border-foreground/10 bg-background p-6 shadow-sm">
-          <p className="text-base leading-relaxed text-foreground/80">{budaya.ringkasan}</p>
+        <div className="border-foreground/10 bg-background mb-8 rounded-xl border p-6 shadow-sm">
+          <p className="text-foreground/80 text-base leading-relaxed">{budaya.ringkasan}</p>
         </div>
 
         {/* Category Tabs */}
@@ -241,22 +233,16 @@ export function BudayaSection({ budaya, rumpunNama }: BudayaSectionProps) {
             id={`panel-${activeCategory}`}
             role="tabpanel"
             aria-labelledby={activeCategory}
-            className="rounded-xl border border-foreground/10 bg-background p-6 shadow-sm"
+            className="border-foreground/10 bg-background rounded-xl border p-6 shadow-sm"
           >
-            <h3 className="mb-4 text-lg font-semibold text-foreground">
-              {currentCategoryTitle}
-            </h3>
+            <h3 className="text-foreground mb-4 text-lg font-semibold">{currentCategoryTitle}</h3>
 
             {currentCategoryData ? (
-              <CategoryContent
-                category={currentCategoryData}
-                title={currentCategoryTitle}
-              />
+              <CategoryContent category={currentCategoryData} title={currentCategoryTitle} />
             ) : (
-              <div className="rounded-lg border border-dashed border-foreground/20 p-8 text-center">
-                <p className="text-sm text-foreground/60">
-                  Informasi tentang {currentCategoryTitle.toLowerCase()} akan segera
-                  ditambahkan.
+              <div className="border-foreground/20 rounded-lg border border-dashed p-8 text-center">
+                <p className="text-foreground/60 text-sm">
+                  Informasi tentang {currentCategoryTitle.toLowerCase()} akan segera ditambahkan.
                 </p>
               </div>
             )}
@@ -271,7 +257,7 @@ export function BudayaSection({ budaya, rumpunNama }: BudayaSectionProps) {
         {/* Full Gallery (all categories) */}
         {budaya.gallery && budaya.gallery.length > 0 && (
           <div className="mt-8">
-            <h3 className="mb-4 text-lg font-semibold text-foreground">
+            <h3 className="text-foreground mb-4 text-lg font-semibold">
               Galeri Budaya {rumpunNama}
             </h3>
             <BudayaGallery images={budaya.gallery} />

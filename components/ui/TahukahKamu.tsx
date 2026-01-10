@@ -35,33 +35,37 @@ export function TahukahKamu() {
     <Alert className="border-l-accent border-l-4">
       <div className="flex flex-col gap-4 md:flex-row">
         {fakta.image && (
-          <div className="relative h-48 w-full flex-shrink-0 overflow-hidden rounded-lg md:w-64">
+          <div className="relative h-48 w-full flex-shrink-0 overflow-hidden rounded-lg md:h-64 md:w-48">
             <Image
               src={fakta.image}
               alt={fakta.imageAlt || fakta.teks}
               fill
               className="object-cover"
-              sizes="(max-width: 768px) 100vw, 256px"
+              sizes="(max-width: 768px) 100vw, 192px"
             />
             {fakta.imageCredit && !fakta.imageCredit.includes('Placeholder') && (
-              <div className="absolute bottom-0 left-0 right-0 bg-black/60 px-2 py-1 text-xs text-white">
+              <div className="absolute right-0 bottom-0 left-0 bg-black/60 px-2 py-1 text-xs text-white">
                 © {fakta.imageCredit}
               </div>
             )}
           </div>
         )}
 
-        <div className="flex-1">
-          <div className="mb-2 flex items-start gap-2">
-            <Info className="text-accent mt-0.5 h-4 w-4 flex-shrink-0" />
-            <AlertTitle className="flex flex-wrap items-center gap-2">
-              Tahukah Kamu?
-              {fakta.kategori && <Badge variant="secondary">{fakta.kategori}</Badge>}
-            </AlertTitle>
+        <div className="flex min-w-0 flex-1 flex-col justify-between">
+          <div>
+            <div className="mb-3 flex items-start gap-2">
+              <Info className="text-accent mt-0.5 h-4 w-4 flex-shrink-0" />
+              <AlertTitle className="flex flex-wrap items-center gap-2">
+                Tahukah Kamu?
+                {fakta.kategori && <Badge variant="secondary">{fakta.kategori}</Badge>}
+              </AlertTitle>
+            </div>
+            <AlertDescription className="text-foreground/80 break-words">
+              {fakta.teks}
+            </AlertDescription>
           </div>
-          <AlertDescription className="text-foreground/80 mb-4">{fakta.teks}</AlertDescription>
 
-          <div className="flex flex-wrap gap-2">
+          <div className="mt-4 flex flex-wrap gap-2">
             <Button onClick={refreshFakta} variant="outline" size="sm">
               <RefreshCw className="mr-2 h-3 w-3" />
               Fakta Lain

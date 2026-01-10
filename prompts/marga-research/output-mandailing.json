@@ -88,7 +88,7 @@
       "nama": "Runding, Mandailing Natal",
       "deskripsi": "Desa Runding di Panyabungan Barat adalah tanah asal marga Rangkuti.",
       "latitude": 0.8833,
-      "longitude": 99.5500,
+      "longitude": 99.55,
       "provinsi": "Sumatera Utara",
       "kabupaten": "Mandailing Natal"
     },
@@ -144,8 +144,8 @@
     "wilayah": {
       "nama": "Panyabungan dan Sibuhuan",
       "deskripsi": "Selain di Sibuhuan (asal), Daulay banyak bermukim di Panyabungan Selatan dan sekitarnya.",
-      "latitude": 1.0500,
-      "longitude": 99.7000,
+      "latitude": 1.05,
+      "longitude": 99.7,
       "provinsi": "Sumatera Utara",
       "kabupaten": "Mandailing Natal dan Padang Lawas"
     },
@@ -201,8 +201,8 @@
     "wilayah": {
       "nama": "Barumun, Padang Lawas",
       "deskripsi": "Wilayah Barumun dan Sibuhuan adalah pusat konsentrasi marga Hasibuan di wilayah selatan.",
-      "latitude": 1.0500,
-      "longitude": 99.7000,
+      "latitude": 1.05,
+      "longitude": 99.7,
       "provinsi": "Sumatera Utara",
       "kabupaten": "Padang Lawas"
     },

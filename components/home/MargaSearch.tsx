@@ -8,6 +8,7 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { getAllMarga } from '@/lib/data';
 import { Marga } from '@/types';
+import { InlineLoader } from '@/components/ui/Loader';
 
 export function MargaSearch() {
   const router = useRouter();
@@ -15,10 +16,17 @@ export function MargaSearch() {
   const [results, setResults] = React.useState<Marga[]>([]);
   const [isOpen, setIsOpen] = React.useState(false);
   const [allMarga, setAllMarga] = React.useState<Marga[]>([]);
+  const [isLoading, setIsLoading] = React.useState(true);
 
   React.useEffect(() => {
     // Load marga data on mount
-    setAllMarga(getAllMarga());
+    setIsLoading(true);
+    try {
+      const margaData = getAllMarga();
+      setAllMarga(margaData);
+    } finally {
+      setIsLoading(false);
+    }
   }, []);
 
   React.useEffect(() => {
@@ -43,22 +51,30 @@ export function MargaSearch() {
   };
 
   return (
-    <div className="relative w-full max-w-lg mx-auto">
-      <form onSubmit={handleSearch} className="relative group">
+    <div className="relative mx-auto w-full max-w-lg">
+      <form onSubmit={handleSearch} className="group relative">
         <div className="relative flex items-center">
-          <Search className="absolute left-3 h-5 w-5 text-muted-foreground group-focus-within:text-accent transition-colors" />
+          {isLoading ? (
+            <div className="absolute left-3">
+              <InlineLoader />
+            </div>
+          ) : (
+            <Search className="text-muted-foreground group-focus-within:text-accent absolute left-3 h-5 w-5 transition-colors" />
+          )}
           <Input
             type="text"
-            placeholder="Cari marga kamu (contoh: Sinaga, Lubis)..."
-            className="pl-10 h-12 text-base shadow-lg border-accent/20 focus-visible:ring-accent bg-background/90 backdrop-blur-sm"
+            placeholder={isLoading ? 'Memuat data marga...' : 'Cari marga kamu (contoh: Sinaga, Lubis)...'}
+            className="border-accent/20 focus-visible:ring-accent bg-background/90 h-12 pl-10 text-base shadow-lg backdrop-blur-sm"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             onFocus={() => query.length > 1 && setIsOpen(true)}
+            disabled={isLoading}
           />
-          <Button 
-            type="submit" 
+          <Button
+            type="submit"
             size="icon"
-            className="absolute right-1 h-10 w-10 bg-accent hover:bg-accent/90"
+            className="bg-accent hover:bg-accent/90 absolute right-1 h-10 w-10"
+            disabled={isLoading}
           >
             <ChevronRight className="h-5 w-5" />
           </Button>
@@ -71,9 +87,9 @@ export function MargaSearch() {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
-            className="absolute top-full left-0 right-0 mt-2 p-2 bg-background/95 backdrop-blur-md border border-border rounded-xl shadow-xl z-50 overflow-hidden"
+            className="bg-background/95 border-border absolute top-full right-0 left-0 z-50 mt-2 overflow-hidden rounded-xl border p-2 shadow-xl backdrop-blur-md"
           >
-            <div className="text-xs font-medium text-muted-foreground px-3 py-2">
+            <div className="text-muted-foreground px-3 py-2 text-xs font-medium">
               Hasil Pencarian
             </div>
             <ul className="space-y-1">
@@ -85,20 +101,20 @@ export function MargaSearch() {
                       router.push(`/marga?search=${encodeURIComponent(marga.nama)}`);
                       setIsOpen(false);
                     }}
-                    className="w-full flex items-center justify-between px-3 py-2 rounded-lg hover:bg-accent/10 hover:text-accent transition-colors text-left"
+                    className="hover:bg-accent/10 hover:text-accent flex w-full items-center justify-between rounded-lg px-3 py-2 text-left transition-colors"
                   >
                     <span className="font-medium">{marga.nama}</span>
-                    <span className="text-xs text-muted-foreground bg-secondary px-2 py-0.5 rounded-full">
+                    <span className="text-muted-foreground bg-secondary rounded-full px-2 py-0.5 text-xs">
                       {marga.rumpun}
                     </span>
                   </button>
                 </li>
               ))}
             </ul>
-            <div className="mt-2 border-t pt-2 px-2">
+            <div className="mt-2 border-t px-2 pt-2">
               <button
                 onClick={() => handleSearch()}
-                className="w-full text-center text-sm text-accent hover:underline py-1"
+                className="text-accent w-full py-1 text-center text-sm hover:underline"
               >
                 Lihat semua hasil "{query}"
               </button>
@@ -109,4 +125,3 @@ export function MargaSearch() {
     </div>
   );
 }
-

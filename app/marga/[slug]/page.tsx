@@ -11,11 +11,7 @@ export async function generateStaticParams() {
   return getAllMargaSlugs().map((slug) => ({ slug }));
 }
 
-export default async function MargaDetailPage({
-  params
-}: {
-  params: Promise<Params> | Params;
-}) {
+export default async function MargaDetailPage({ params }: { params: Promise<Params> | Params }) {
   const resolvedParams = await params;
   const slug = resolvedParams.slug;
 
@@ -41,7 +37,7 @@ export default async function MargaDetailPage({
     <div className="w-full px-4 py-12">
       <div className="mx-auto flex max-w-6xl flex-col gap-10">
         {/* Hero Section */}
-        <section className="overflow-hidden rounded-2xl border border-foreground/10 bg-gradient-to-r from-accent/10 via-foreground/5 to-background shadow-lg">
+        <section className="border-foreground/10 from-accent/10 via-foreground/5 to-background overflow-hidden rounded-2xl border bg-gradient-to-r shadow-lg">
           <div className="grid gap-0 md:grid-cols-[1.2fr,1fr] md:gap-8">
             <div className="p-8 md:p-10">
               <div className="mb-4 flex items-center gap-3">
@@ -59,10 +55,10 @@ export default async function MargaDetailPage({
                 </p>
               )}
               <div className="mt-6 flex flex-wrap gap-3">
-                <span className="rounded-full bg-foreground/10 px-4 py-2 text-sm text-foreground/80">
+                <span className="bg-foreground/10 text-foreground/80 rounded-full px-4 py-2 text-sm">
                   Identitas marga Batak
                 </span>
-                <span className="rounded-full bg-accent/10 px-4 py-2 text-sm text-accent">
+                <span className="bg-accent/10 text-accent rounded-full px-4 py-2 text-sm">
                   Rumpun {marga.rumpun}
                 </span>
               </div>
@@ -84,13 +80,13 @@ export default async function MargaDetailPage({
         {/* Sejarah & Asal Usul */}
         <div className="grid gap-6 md:grid-cols-2">
           {detail.sejarah && (
-            <section className="rounded-xl border border-foreground/10 bg-foreground/5 p-6 shadow-sm">
+            <section className="border-foreground/10 bg-foreground/5 rounded-xl border p-6 shadow-sm">
               <h2 className="text-accent mb-3 text-2xl font-bold">Sejarah</h2>
               <p className="text-foreground/80 leading-relaxed">{detail.sejarah}</p>
             </section>
           )}
           {detail.asalUsul && (
-            <section className="rounded-xl border border-foreground/10 bg-foreground/5 p-6 shadow-sm">
+            <section className="border-foreground/10 bg-foreground/5 rounded-xl border p-6 shadow-sm">
               <h2 className="text-accent mb-3 text-2xl font-bold">Asal Usul</h2>
               <p className="text-foreground/80 leading-relaxed">{detail.asalUsul}</p>
             </section>
@@ -99,27 +95,29 @@ export default async function MargaDetailPage({
 
         {/* Tarombo */}
         {detail.tarombo && (
-          <section className="rounded-xl border border-foreground/10 bg-background p-6 shadow-sm">
+          <section className="border-foreground/10 bg-background rounded-xl border p-6 shadow-sm">
             <div className="mb-4 flex items-center justify-between gap-3">
               <div>
-                <p className="text-foreground/60 text-sm uppercase tracking-wide">Silsilah</p>
+                <p className="text-foreground/60 text-sm tracking-wide uppercase">Silsilah</p>
                 <h2 className="text-accent text-2xl font-bold">Tarombo</h2>
               </div>
               <Badge variant="outline">Patrilineal</Badge>
             </div>
             {detail.tarombo.description && (
-              <p className="text-foreground/80 mb-4 leading-relaxed">{detail.tarombo.description}</p>
+              <p className="text-foreground/80 mb-4 leading-relaxed">
+                {detail.tarombo.description}
+              </p>
             )}
 
             <div className="grid gap-6 md:grid-cols-2">
               {detail.tarombo.ancestors && detail.tarombo.ancestors.length > 0 && (
-                <div className="rounded-lg border border-foreground/10 bg-foreground/5 p-4">
+                <div className="border-foreground/10 bg-foreground/5 rounded-lg border p-4">
                   <h3 className="text-foreground mb-3 text-lg font-semibold">Leluhur Utama</h3>
                   <ul className="space-y-3">
                     {detail.tarombo.ancestors.map((ancestor) => (
                       <li
                         key={ancestor.nama}
-                        className="rounded-md border border-foreground/10 bg-background p-3"
+                        className="border-foreground/10 bg-background rounded-md border p-3"
                       >
                         <p className="font-semibold">{ancestor.nama}</p>
                         {ancestor.gelar && (
@@ -134,13 +132,13 @@ export default async function MargaDetailPage({
                 </div>
               )}
               {detail.tarombo.subMargas && detail.tarombo.subMargas.length > 0 && (
-                <div className="rounded-lg border border-foreground/10 bg-foreground/5 p-4">
+                <div className="border-foreground/10 bg-foreground/5 rounded-lg border p-4">
                   <h3 className="text-foreground mb-3 text-lg font-semibold">Sub-marga</h3>
                   <ul className="space-y-3">
                     {detail.tarombo.subMargas.map((sub) => (
                       <li
                         key={sub.nama}
-                        className="rounded-md border border-foreground/10 bg-background p-3"
+                        className="border-foreground/10 bg-background rounded-md border p-3"
                       >
                         <p className="font-semibold">{sub.nama}</p>
                         {sub.deskripsi && (
@@ -157,10 +155,10 @@ export default async function MargaDetailPage({
 
         {/* Wilayah */}
         {detail.wilayah && (
-          <section className="rounded-xl border border-foreground/10 bg-foreground/5 p-6 shadow-sm">
+          <section className="border-foreground/10 bg-foreground/5 rounded-xl border p-6 shadow-sm">
             <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
               <div>
-                <p className="text-foreground/60 text-sm uppercase tracking-wide">Wilayah Asal</p>
+                <p className="text-foreground/60 text-sm tracking-wide uppercase">Wilayah Asal</p>
                 <h2 className="text-accent text-2xl font-bold">{detail.wilayah.nama}</h2>
               </div>
               <Badge variant="secondary">Geo-heritage</Badge>
@@ -169,7 +167,7 @@ export default async function MargaDetailPage({
 
             <div className="grid gap-4 md:grid-cols-[1.3fr,1fr]">
               {mapEmbedSrc && (
-                <div className="overflow-hidden rounded-lg border border-foreground/10 bg-background">
+                <div className="border-foreground/10 bg-background overflow-hidden rounded-lg border">
                   <iframe
                     title={`Peta wilayah ${detail.wilayah.nama}`}
                     src={mapEmbedSrc}
@@ -179,7 +177,7 @@ export default async function MargaDetailPage({
                   />
                 </div>
               )}
-              <div className="grid gap-3 rounded-lg border border-foreground/10 bg-background p-4 text-sm text-foreground/80">
+              <div className="border-foreground/10 bg-background text-foreground/80 grid gap-3 rounded-lg border p-4 text-sm">
                 <div className="flex items-center justify-between">
                   <span>Provinsi</span>
                   <span className="font-semibold">{detail.wilayah.provinsi ?? 'N/A'}</span>
@@ -201,13 +199,13 @@ export default async function MargaDetailPage({
 
         {/* Tradisi */}
         {detail.tradisi && detail.tradisi.length > 0 && (
-          <section className="rounded-xl border border-foreground/10 bg-background p-6 shadow-sm">
+          <section className="border-foreground/10 bg-background rounded-xl border p-6 shadow-sm">
             <h2 className="text-accent mb-4 text-2xl font-bold">Tradisi &amp; Adat</h2>
             <ul className="space-y-3">
               {detail.tradisi.map((item) => (
                 <li
                   key={item}
-                  className="rounded-lg border border-foreground/10 bg-foreground/5 p-4 text-foreground/80"
+                  className="border-foreground/10 bg-foreground/5 text-foreground/80 rounded-lg border p-4"
                 >
                   {item}
                 </li>
@@ -218,7 +216,7 @@ export default async function MargaDetailPage({
 
         {/* Tokoh */}
         {detail.tokoh && detail.tokoh.length > 0 && (
-          <section className="rounded-xl border border-foreground/10 bg-foreground/5 p-6 shadow-sm">
+          <section className="border-foreground/10 bg-foreground/5 rounded-xl border p-6 shadow-sm">
             <div className="mb-4 flex items-center gap-3">
               <h2 className="text-accent text-2xl font-bold">Tokoh Terkenal</h2>
               <Badge variant="outline">Figur</Badge>
@@ -227,7 +225,7 @@ export default async function MargaDetailPage({
               {detail.tokoh.map((tokoh) => (
                 <div
                   key={tokoh.nama}
-                  className="rounded-lg border border-foreground/10 bg-background p-4 shadow-sm"
+                  className="border-foreground/10 bg-background rounded-lg border p-4 shadow-sm"
                 >
                   <div className="flex items-center justify-between">
                     <div>
@@ -235,7 +233,7 @@ export default async function MargaDetailPage({
                       {tokoh.gelar && <p className="text-foreground/70 text-sm">{tokoh.gelar}</p>}
                     </div>
                     {tokoh.bidang && (
-                      <span className="rounded-full bg-accent/10 px-3 py-1 text-xs text-accent">
+                      <span className="bg-accent/10 text-accent rounded-full px-3 py-1 text-xs">
                         {tokoh.bidang}
                       </span>
                     )}
@@ -251,7 +249,7 @@ export default async function MargaDetailPage({
 
         {/* Related Margas */}
         {relatedMargas.length > 0 && (
-          <section className="rounded-xl border border-foreground/10 bg-background p-6 shadow-sm">
+          <section className="border-foreground/10 bg-background rounded-xl border p-6 shadow-sm">
             <div className="mb-4 flex items-center justify-between">
               <h2 className="text-accent text-2xl font-bold">Marga Terkait</h2>
               <Badge variant="outline">Koneksi</Badge>
@@ -261,7 +259,7 @@ export default async function MargaDetailPage({
                 <Link
                   key={related.slug}
                   href={`/marga/${related.slug}`}
-                  className="rounded-full border border-foreground/10 bg-foreground/5 px-4 py-2 text-sm font-medium text-foreground/80 transition-colors hover:border-accent/60 hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
+                  className="border-foreground/10 bg-foreground/5 text-foreground/80 hover:border-accent/60 hover:text-accent focus-visible:ring-accent rounded-full border px-4 py-2 text-sm font-medium transition-colors focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none"
                 >
                   {related.nama}
                 </Link>
@@ -274,7 +272,7 @@ export default async function MargaDetailPage({
         <div className="flex justify-center">
           <Link
             href="/marga"
-            className="rounded-full border border-foreground/20 bg-foreground/5 px-5 py-3 text-sm font-semibold text-foreground/80 transition-all hover:-translate-y-0.5 hover:border-accent/60 hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
+            className="border-foreground/20 bg-foreground/5 text-foreground/80 hover:border-accent/60 hover:text-accent focus-visible:ring-accent rounded-full border px-5 py-3 text-sm font-semibold transition-all hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none"
           >
             Kembali ke daftar marga
           </Link>
