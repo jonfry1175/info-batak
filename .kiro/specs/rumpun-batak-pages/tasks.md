@@ -26,14 +26,14 @@ Implementasi fitur halaman rumpun Batak dengan card visual dan halaman detail un
     - **Property 5: Data Schema Validity**
     - **Validates: Requirements 6.2**
 
-- [-] 2. Download dan setup gambar rumpun
-  - [-] 2.1 Download gambar representatif untuk setiap rumpun
+- [x] 2. Download dan setup gambar rumpun
+  - [x] 2.1 Download gambar representatif untuk setiap rumpun
     - Buat folder `public/images/rumpun/`
     - Download 6 gambar dari Unsplash atau sumber free
     - Verifikasi gambar tersedia dengan curl
     - _Requirements: 1.1_
 
-  - [ ] 2.2 Buat placeholder image untuk fallback
+  - [x] 2.2 Buat placeholder image untuk fallback
     - File: `public/images/rumpun/placeholder.jpg`
     - _Requirements: 1.3_
 
