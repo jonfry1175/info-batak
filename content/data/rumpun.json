@@ -1,0 +1,1152 @@
+[
+  {
+    "id": "toba",
+    "nama": "Batak Toba",
+    "slug": "toba",
+    "deskripsi": "Sub-etnis terbesar yang mendiami kawasan sekitar Danau Toba, dikenal dengan tradisi marga yang kuat dan musik Gondang.",
+    "gambar": "/images/rumpun/toba.jpg",
+    "wilayah": {
+      "nama": "Tanah Batak Toba",
+      "deskripsi": "Wilayah Batak Toba membentang di sekitar Danau Toba, danau vulkanik terbesar di dunia. Kawasan ini meliputi dataran tinggi dengan ketinggian 900-1.500 meter di atas permukaan laut, dikelilingi pegunungan Bukit Barisan.",
+      "koordinat": {
+        "latitude": 2.6167,
+        "longitude": 98.8500
+      },
+      "kabupaten": [
+        "Kabupaten Toba",
+        "Kabupaten Samosir",
+        "Kabupaten Tapanuli Utara",
+        "Kabupaten Humbang Hasundutan"
+      ],
+      "landmarks": [
+        {
+          "nama": "Danau Toba",
+          "latitude": 2.6167,
+          "longitude": 98.8500,
+          "deskripsi": "Danau vulkanik terbesar di dunia, pusat peradaban Batak Toba"
+        },
+        {
+          "nama": "Pulau Samosir",
+          "latitude": 2.6333,
+          "longitude": 98.8167,
+          "deskripsi": "Pulau di tengah Danau Toba, tempat asal mula suku Batak"
+        },
+        {
+          "nama": "Pusuk Buhit",
+          "latitude": 2.5833,
+          "longitude": 98.7833,
+          "deskripsi": "Gunung suci tempat turunnya Si Raja Batak menurut legenda"
+        },
+        {
+          "nama": "Makam Raja Sisingamangaraja XII",
+          "latitude": 2.3500,
+          "longitude": 98.9333,
+          "deskripsi": "Makam pahlawan nasional di Balige"
+        }
+      ]
+    },
+    "sejarah": {
+      "ringkasan": "Batak Toba adalah sub-etnis Batak terbesar yang mendiami wilayah sekitar Danau Toba di Sumatera Utara. Menurut tradisi lisan, nenek moyang Batak Toba berasal dari Si Raja Batak yang turun dari Pusuk Buhit, sebuah gunung suci di tepi Danau Toba.",
+      "asalUsul": "Menurut legenda, Si Raja Batak turun dari langit ke Pusuk Buhit dan memiliki dua putra: Guru Tatea Bulan dan Raja Isumbaon. Dari keturunan mereka lahir berbagai marga yang tersebar di seluruh Tanah Batak. Tradisi ini menjadi dasar sistem kekerabatan dan marga yang sangat kuat dalam masyarakat Batak Toba.",
+      "kerajaan": "Masyarakat Batak Toba tidak memiliki kerajaan terpusat, melainkan sistem pemerintahan berbasis marga dan huta (kampung). Setiap huta dipimpin oleh Raja Huta yang dipilih berdasarkan garis keturunan. Sistem ini menciptakan struktur sosial yang demokratis namun tetap menghormati senioritas dan garis keturunan.",
+      "perlawananKolonial": "Perlawanan Batak Toba terhadap kolonialisme Belanda dipimpin oleh Raja Sisingamangaraja XII yang berjuang selama hampir 30 tahun (1878-1907). Beliau memimpin perang gerilya di pegunungan dan hutan Tanah Batak, menjadi simbol perlawanan rakyat Batak terhadap penjajahan.",
+      "eraModern": "Setelah kemerdekaan Indonesia, masyarakat Batak Toba aktif dalam pembangunan nasional. Banyak tokoh Batak Toba yang berperan penting dalam pemerintahan, militer, pendidikan, dan berbagai bidang lainnya. Tradisi merantau membawa orang Batak Toba ke seluruh Indonesia dan dunia.",
+      "timeline": [
+        {
+          "year": "Abad ke-14",
+          "title": "Asal Mula Si Raja Batak",
+          "description": "Menurut tradisi lisan, Si Raja Batak turun dari Pusuk Buhit dan menjadi nenek moyang seluruh suku Batak."
+        },
+        {
+          "year": 1824,
+          "title": "Lahirnya Sisingamangaraja XII",
+          "description": "Patuan Bosar Ompu Pulo Batu lahir di Bakara, kelak menjadi Raja Sisingamangaraja XII."
+        },
+        {
+          "year": 1861,
+          "title": "Kedatangan Misionaris",
+          "description": "Dr. Ingwer Ludwig Nommensen tiba di Tanah Batak dan memulai misi penyebaran Kristen."
+        },
+        {
+          "year": 1878,
+          "title": "Awal Perlawanan Sisingamangaraja XII",
+          "description": "Raja Sisingamangaraja XII memulai perlawanan bersenjata melawan kolonial Belanda."
+        },
+        {
+          "year": 1907,
+          "title": "Gugurnya Sisingamangaraja XII",
+          "description": "Raja Sisingamangaraja XII gugur dalam pertempuran di Pakpak pada 17 Juni 1907."
+        },
+        {
+          "year": 1961,
+          "title": "Penetapan Pahlawan Nasional",
+          "description": "Raja Sisingamangaraja XII ditetapkan sebagai Pahlawan Nasional Indonesia."
+        }
+      ],
+      "images": [
+        {
+          "src": "/images/rumpun/toba.jpg",
+          "alt": "Pemandangan Danau Toba",
+          "caption": "Danau Toba, pusat peradaban Batak Toba"
+        }
+      ]
+    },
+    "budaya": {
+      "ringkasan": "Budaya Batak Toba sangat kaya dengan tradisi adat yang masih dijaga hingga kini. Sistem kekerabatan Dalihan Na Tolu menjadi fondasi hubungan sosial masyarakat, sementara Ulos, musik Gondang, dan tarian Tortor menjadi identitas budaya yang kuat.",
+      "sistemKekerabatan": {
+        "deskripsi": "Dalihan Na Tolu (Tungku Nan Tiga) adalah sistem kekerabatan yang mengatur hubungan sosial masyarakat Batak Toba. Sistem ini terdiri dari tiga unsur: Dongan Tubu (saudara semarga), Hula-hula (keluarga pemberi istri), dan Boru (keluarga penerima istri). Keseimbangan ketiga unsur ini menjadi dasar harmoni sosial.",
+        "jenis": [
+          "Dongan Tubu - Saudara semarga",
+          "Hula-hula - Keluarga pemberi istri",
+          "Boru - Keluarga penerima istri"
+        ]
+      },
+      "musikTarian": {
+        "deskripsi": "Musik Gondang Sabangunan adalah ensambel musik tradisional yang terdiri dari taganing (drum melodis), sarune (oboe), ogung (gong), dan hesek (simbal). Musik ini mengiringi tarian Tortor dalam berbagai upacara adat. Tortor adalah tarian sakral yang memiliki gerakan simbolis untuk berkomunikasi dengan roh leluhur.",
+        "jenis": [
+          "Gondang Sabangunan",
+          "Tortor Somba",
+          "Tortor Hasahatan",
+          "Tortor Mangaliat"
+        ]
+      },
+      "pakaian": {
+        "deskripsi": "Ulos adalah kain tenun tradisional yang memiliki makna sakral dalam setiap upacara adat. Setiap jenis Ulos memiliki fungsi dan makna berbeda, dari Ulos Ragidup untuk kelahiran hingga Ulos Saput untuk kematian. Pembuatan Ulos dilakukan dengan teknik tenun tradisional yang diwariskan turun-temurun.",
+        "jenis": [
+          "Ulos Ragidup",
+          "Ulos Sibolang",
+          "Ulos Ragi Hotang",
+          "Ulos Sadum",
+          "Ulos Mangiring"
+        ]
+      },
+      "rumahAdat": {
+        "deskripsi": "Ruma Bolon (Rumah Besar) adalah rumah adat Batak Toba dengan atap melengkung khas berbentuk tanduk kerbau. Rumah ini dibangun di atas tiang-tiang kayu tanpa menggunakan paku, hanya dengan sistem pasak. Ornamen gorga (ukiran) menghiasi dinding dengan motif dan warna simbolis.",
+        "jenis": [
+          "Ruma Bolon",
+          "Sopo (Lumbung)",
+          "Ruma Parsantian"
+        ]
+      },
+      "upacaraAdat": {
+        "deskripsi": "Upacara adat Batak Toba menandai setiap tahap kehidupan dari kelahiran hingga kematian. Setiap upacara melibatkan pemberian Ulos, penyembelihan hewan, dan ritual Gondang Tortor. Upacara besar seperti pernikahan dan kematian melibatkan seluruh unsur Dalihan Na Tolu.",
+        "jenis": [
+          "Martutuaek (Kelahiran)",
+          "Marpaniaran (Pernikahan)",
+          "Saur Matua (Kematian)",
+          "Mangongkal Holi (Pemindahan Tulang)"
+        ]
+      },
+      "gallery": [
+        {
+          "src": "/images/budaya/pakaian/ulos/ragi-hotang.jpg",
+          "alt": "Ulos Ragi Hotang",
+          "category": "pakaian"
+        },
+        {
+          "src": "/images/budaya/arsitektur/ruma-bolon-exterior.jpg",
+          "alt": "Ruma Bolon Batak Toba",
+          "category": "rumahAdat"
+        }
+      ]
+    },
+    "tokoh": [
+      {
+        "nama": "Raja Sisingamangaraja XII",
+        "gelar": "Pahlawan Nasional Indonesia",
+        "foto": "/images/tokoh/sisingamangaraja.jpg",
+        "tahunLahir": 1849,
+        "tahunWafat": 1907,
+        "bidang": "Pejuang Kemerdekaan",
+        "ringkasan": "Pemimpin spiritual dan pejuang kemerdekaan yang memimpin perlawanan terhadap kolonial Belanda selama hampir 30 tahun.",
+        "biografi": "Patuan Bosar Ompu Pulo Batu, yang kemudian dikenal sebagai Raja Sisingamangaraja XII, lahir di Bakara pada tahun 1849. Beliau adalah raja ke-12 dari dinasti Sisingamangaraja yang memimpin masyarakat Batak Toba. Sejak tahun 1878, beliau memimpin perlawanan bersenjata melawan kolonial Belanda yang berusaha menguasai Tanah Batak. Selama hampir 30 tahun, beliau memimpin perang gerilya di pegunungan dan hutan, menjadi simbol perlawanan rakyat Batak. Pada 17 Juni 1907, beliau gugur dalam pertempuran di Pakpak bersama dua putranya.",
+        "pencapaian": [
+          "Memimpin perlawanan terhadap Belanda selama 30 tahun (1878-1907)",
+          "Menyatukan berbagai marga Batak dalam perlawanan",
+          "Ditetapkan sebagai Pahlawan Nasional Indonesia (1961)",
+          "Simbol perlawanan dan keberanian rakyat Batak"
+        ]
+      },
+      {
+        "nama": "Dr. Ingwer Ludwig Nommensen",
+        "gelar": "Apostel Batak",
+        "foto": "/images/tokoh/nommensen.jpg",
+        "tahunLahir": 1834,
+        "tahunWafat": 1918,
+        "bidang": "Misionaris dan Pendidikan",
+        "ringkasan": "Misionaris Jerman yang mendirikan HKBP dan berperan besar dalam penyebaran pendidikan serta penulisan aksara Batak.",
+        "biografi": "Ingwer Ludwig Nommensen lahir di Nordstrand, Jerman pada 6 Februari 1834. Pada tahun 1861, ia tiba di Tanah Batak sebagai misionaris dari Rheinische Missionsgesellschaft. Selama lebih dari 50 tahun mengabdi di Tanah Batak, ia mendirikan HKBP (Huria Kristen Batak Protestan), membangun sekolah-sekolah, dan menyusun tata bahasa serta kamus Batak. Ia juga berperan dalam penulisan dan pelestarian aksara Batak. Nommensen wafat di Sigumpar pada 23 Mei 1918 dan dimakamkan di sana.",
+        "pencapaian": [
+          "Mendirikan HKBP (Huria Kristen Batak Protestan)",
+          "Membangun lebih dari 500 sekolah di Tanah Batak",
+          "Menyusun tata bahasa dan kamus Batak",
+          "Melestarikan aksara Batak dalam bentuk tertulis"
+        ]
+      },
+      {
+        "nama": "TB Silalahi",
+        "gelar": "Tokoh Pendidikan",
+        "foto": "/images/tokoh/placeholder.jpg",
+        "tahunLahir": 1920,
+        "tahunWafat": 2005,
+        "bidang": "Pendidikan",
+        "ringkasan": "Pendiri Universitas HKBP Nommensen dan tokoh pendidikan yang berjasa mengembangkan pendidikan tinggi di Tanah Batak.",
+        "biografi": "TB Silalahi adalah tokoh pendidikan Batak yang mendedikasikan hidupnya untuk pengembangan pendidikan tinggi di Tanah Batak. Beliau mendirikan Universitas HKBP Nommensen di Medan yang kini menjadi salah satu universitas swasta terbesar di Sumatera Utara. Melalui visinya, ribuan generasi muda Batak mendapat kesempatan mengenyam pendidikan tinggi.",
+        "pencapaian": [
+          "Mendirikan Universitas HKBP Nommensen",
+          "Mengembangkan pendidikan tinggi di Sumatera Utara",
+          "Mencetak ribuan sarjana dari Tanah Batak"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "karo",
+    "nama": "Batak Karo",
+    "slug": "karo",
+    "deskripsi": "Mendiami dataran tinggi Karo dengan budaya Merga Silima dan tradisi pertanian yang kuat.",
+    "gambar": "/images/rumpun/karo.jpg",
+    "wilayah": {
+      "nama": "Tanah Karo",
+      "deskripsi": "Wilayah Batak Karo terletak di dataran tinggi Tanah Karo yang subur di kaki Gunung Sinabung dan Sibayak. Kawasan ini berada pada ketinggian 600-1.400 meter di atas permukaan laut dengan iklim sejuk yang cocok untuk pertanian sayuran dan buah-buahan.",
+      "koordinat": {
+        "latitude": 3.1000,
+        "longitude": 98.5000
+      },
+      "kabupaten": [
+        "Kabupaten Karo",
+        "Sebagian Kabupaten Langkat",
+        "Sebagian Kabupaten Deli Serdang",
+        "Sebagian Kabupaten Dairi"
+      ],
+      "landmarks": [
+        {
+          "nama": "Gunung Sinabung",
+          "latitude": 3.1700,
+          "longitude": 98.3900,
+          "deskripsi": "Gunung berapi aktif yang menjadi ikon Tanah Karo"
+        },
+        {
+          "nama": "Gunung Sibayak",
+          "latitude": 3.2000,
+          "longitude": 98.5000,
+          "deskripsi": "Gunung berapi dengan pemandian air panas alami"
+        },
+        {
+          "nama": "Berastagi",
+          "latitude": 3.1833,
+          "longitude": 98.5000,
+          "deskripsi": "Kota wisata utama di dataran tinggi Karo"
+        },
+        {
+          "nama": "Desa Lingga",
+          "latitude": 3.2500,
+          "longitude": 98.3500,
+          "deskripsi": "Desa adat dengan rumah Siwaluh Jabu yang masih terjaga"
+        }
+      ]
+    },
+    "sejarah": {
+      "ringkasan": "Batak Karo mendiami dataran tinggi Tanah Karo yang subur di kaki Gunung Sinabung dan Sibayak. Masyarakat Karo dikenal sebagai petani ulung yang mengembangkan pertanian sayuran dan buah-buahan di dataran tinggi.",
+      "asalUsul": "Menurut tradisi lisan, nenek moyang Karo berasal dari Pak Paku yang turun dari Gunung Sinabung. Dari keturunannya lahir lima marga utama (Merga Silima) yang menjadi dasar sistem kekerabatan Karo. Masyarakat Karo mengembangkan peradaban agraris yang maju di dataran tinggi.",
+      "kerajaan": "Masyarakat Karo memiliki sistem pemerintahan berbasis Sibayak (raja) dan Pengulu (kepala kampung). Terdapat beberapa kerajaan kecil seperti Kerajaan Lingga, Kerajaan Sarinembah, dan Kerajaan Barusjahe. Para Sibayak memimpin dengan sistem musyawarah bersama tetua adat.",
+      "perlawananKolonial": "Perlawanan Karo terhadap kolonial Belanda dipimpin oleh berbagai Sibayak yang menolak takluk pada kekuasaan asing. Kiras Bangun adalah salah satu pejuang yang memimpin perlawanan rakyat Karo melawan Belanda dan Jepang, hingga ditetapkan sebagai Pahlawan Nasional.",
+      "eraModern": "Setelah kemerdekaan, masyarakat Karo terus mengembangkan pertanian sebagai mata pencaharian utama. Berastagi berkembang menjadi kota wisata dan pusat perdagangan hasil bumi. Masyarakat Karo juga aktif dalam berbagai bidang di tingkat nasional.",
+      "timeline": [
+        {
+          "year": "Abad ke-13",
+          "title": "Asal Mula Merga Silima",
+          "description": "Terbentuknya lima marga utama Karo yang menjadi dasar sistem kekerabatan."
+        },
+        {
+          "year": 1872,
+          "title": "Kedatangan Belanda",
+          "description": "Belanda mulai memasuki wilayah Tanah Karo dan membangun perkebunan."
+        },
+        {
+          "year": 1904,
+          "title": "Lahirnya Kiras Bangun",
+          "description": "Kiras Bangun lahir di Kuta Bangun, kelak menjadi pahlawan nasional."
+        },
+        {
+          "year": 1945,
+          "title": "Perlawanan Kiras Bangun",
+          "description": "Kiras Bangun memimpin perlawanan rakyat Karo dalam mempertahankan kemerdekaan."
+        },
+        {
+          "year": 1946,
+          "title": "Gugurnya Kiras Bangun",
+          "description": "Kiras Bangun gugur dalam pertempuran melawan Belanda pada 17 Agustus 1946."
+        },
+        {
+          "year": 2023,
+          "title": "Erupsi Sinabung",
+          "description": "Gunung Sinabung terus aktif, mempengaruhi kehidupan masyarakat Karo."
+        }
+      ],
+      "images": [
+        {
+          "src": "/images/rumpun/karo.jpg",
+          "alt": "Pemandangan Tanah Karo",
+          "caption": "Dataran tinggi Karo dengan latar Gunung Sinabung"
+        }
+      ]
+    },
+    "budaya": {
+      "ringkasan": "Budaya Karo memiliki keunikan tersendiri dengan sistem kekerabatan Merga Silima dan Rakut Sitelu. Rumah adat Siwaluh Jabu, tarian Guro-guro Aron, dan musik Gendang Lima Sendalanen menjadi identitas budaya Karo.",
+      "sistemKekerabatan": {
+        "deskripsi": "Sistem kekerabatan Karo terdiri dari Merga Silima (lima marga utama: Ginting, Karo-karo, Tarigan, Sembiring, Perangin-angin) dan Rakut Sitelu (tiga ikatan: Kalimbubu, Senina, Anak Beru). Sistem ini mengatur hubungan sosial dan perkawinan dalam masyarakat Karo.",
+        "jenis": [
+          "Merga Ginting",
+          "Merga Karo-karo",
+          "Merga Tarigan",
+          "Merga Sembiring",
+          "Merga Perangin-angin"
+        ]
+      },
+      "musikTarian": {
+        "deskripsi": "Musik Gendang Lima Sendalanen adalah ensambel musik tradisional Karo yang terdiri dari lima gendang dengan ukuran berbeda. Tarian Guro-guro Aron adalah tarian pergaulan muda-mudi yang dilakukan saat pesta panen. Tarian ini diiringi musik gendang dan nyanyian tradisional.",
+        "jenis": [
+          "Gendang Lima Sendalanen",
+          "Tari Guro-guro Aron",
+          "Tari Piso Surit",
+          "Tari Mbuah-buah"
+        ]
+      },
+      "pakaian": {
+        "deskripsi": "Uis (kain tenun Karo) memiliki motif dan warna yang berbeda dari Ulos Toba. Uis Gara (merah) dan Uis Jongkit adalah jenis yang paling terkenal. Pakaian adat pria terdiri dari baju kurung dan celana panjang, sementara wanita mengenakan kebaya dengan Uis sebagai selendang.",
+        "jenis": [
+          "Uis Gara",
+          "Uis Jongkit",
+          "Uis Nipes",
+          "Uis Kelam-kelam"
+        ]
+      },
+      "rumahAdat": {
+        "deskripsi": "Siwaluh Jabu adalah rumah adat Karo yang megah dan dapat menampung delapan keluarga. Rumah ini dibangun di atas tiang-tiang kayu dengan atap berbentuk tanduk kerbau. Setiap keluarga menempati satu jabu (ruangan) dengan dapur bersama di tengah.",
+        "jenis": [
+          "Siwaluh Jabu",
+          "Geriten (Lumbung)",
+          "Jambur (Balai)"
+        ]
+      },
+      "upacaraAdat": {
+        "deskripsi": "Upacara adat Karo menandai berbagai tahap kehidupan dan siklus pertanian. Kerja Tahun adalah upacara syukur panen yang melibatkan seluruh masyarakat. Upacara pernikahan Karo melibatkan prosesi yang panjang dengan berbagai ritual adat.",
+        "jenis": [
+          "Kerja Tahun (Pesta Panen)",
+          "Erdemu Bayu (Pernikahan)",
+          "Cawir Metua (Kematian)",
+          "Nganting Manuk (Pertunangan)"
+        ]
+      },
+      "gallery": [
+        {
+          "src": "/images/budaya/arsitektur/siwaluh-jabu-exterior.jpg",
+          "alt": "Rumah Siwaluh Jabu",
+          "category": "rumahAdat"
+        }
+      ]
+    },
+    "tokoh": [
+      {
+        "nama": "Kiras Bangun",
+        "gelar": "Pahlawan Nasional Indonesia",
+        "foto": "/images/tokoh/kiras-bangun.jpg",
+        "tahunLahir": 1904,
+        "tahunWafat": 1946,
+        "bidang": "Pejuang Kemerdekaan",
+        "ringkasan": "Pejuang kemerdekaan dari Karo yang memimpin perlawanan rakyat Karo melawan kolonial Belanda dan Jepang.",
+        "biografi": "Kiras Bangun lahir di Kuta Bangun, Tanah Karo pada tahun 1904. Sejak muda, ia aktif dalam pergerakan kemerdekaan dan memimpin perlawanan rakyat Karo melawan penjajah. Pada masa pendudukan Jepang, ia memimpin perlawanan bawah tanah. Setelah proklamasi kemerdekaan, ia terus berjuang mempertahankan kemerdekaan dari agresi Belanda. Pada 17 Agustus 1946, tepat setahun setelah kemerdekaan, Kiras Bangun gugur dalam pertempuran melawan Belanda.",
+        "pencapaian": [
+          "Memimpin perlawanan rakyat Karo melawan Belanda dan Jepang",
+          "Ditetapkan sebagai Pahlawan Nasional Indonesia",
+          "Simbol keberanian dan patriotisme rakyat Karo"
+        ]
+      },
+      {
+        "nama": "Ngerajai Meliala",
+        "gelar": "Sibayak Lingga",
+        "foto": "/images/tokoh/placeholder.jpg",
+        "tahunLahir": 1870,
+        "tahunWafat": 1930,
+        "bidang": "Pemimpin Tradisional",
+        "ringkasan": "Raja Lingga yang memimpin perlawanan terhadap Belanda dan menjadi simbol keberanian rakyat Karo.",
+        "biografi": "Ngerajai Meliala adalah Sibayak (raja) Lingga yang memimpin kerajaan pada masa kolonial Belanda. Beliau menolak tunduk pada kekuasaan Belanda dan memimpin perlawanan rakyat Lingga. Meskipun akhirnya harus mengakui kekuasaan Belanda, beliau tetap mempertahankan tradisi dan adat istiadat Karo.",
+        "pencapaian": [
+          "Memimpin Kerajaan Lingga",
+          "Mempertahankan tradisi adat Karo",
+          "Simbol perlawanan terhadap kolonialisme"
+        ]
+      },
+      {
+        "nama": "Rakutta Sembiring",
+        "gelar": "Tokoh Pergerakan",
+        "foto": "/images/tokoh/placeholder.jpg",
+        "tahunLahir": 1900,
+        "tahunWafat": 1975,
+        "bidang": "Pergerakan Nasional",
+        "ringkasan": "Tokoh pergerakan nasional dari Karo yang aktif dalam perjuangan kemerdekaan Indonesia.",
+        "biografi": "Rakutta Sembiring adalah tokoh pergerakan nasional dari Tanah Karo yang aktif dalam berbagai organisasi pergerakan kemerdekaan. Beliau berperan dalam menyebarkan semangat nasionalisme di kalangan masyarakat Karo dan Sumatera Utara.",
+        "pencapaian": [
+          "Aktif dalam pergerakan kemerdekaan",
+          "Menyebarkan semangat nasionalisme di Tanah Karo",
+          "Tokoh pendiri organisasi pergerakan di Sumatera Utara"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "simalungun",
+    "nama": "Batak Simalungun",
+    "slug": "simalungun",
+    "deskripsi": "Dikenal dengan kerajaan Simalungun dan tradisi Tortor Simalungun yang anggun.",
+    "gambar": "/images/rumpun/simalungun.jpg",
+    "wilayah": {
+      "nama": "Tanah Simalungun",
+      "deskripsi": "Wilayah Batak Simalungun terletak di bagian timur Danau Toba, membentang dari dataran tinggi hingga pesisir timur Sumatera Utara. Kawasan ini memiliki topografi yang bervariasi dari pegunungan hingga dataran rendah.",
+      "koordinat": {
+        "latitude": 2.9667,
+        "longitude": 99.0667
+      },
+      "kabupaten": [
+        "Kabupaten Simalungun",
+        "Kota Pematangsiantar"
+      ],
+      "landmarks": [
+        {
+          "nama": "Pematangsiantar",
+          "latitude": 2.9667,
+          "longitude": 99.0667,
+          "deskripsi": "Kota terbesar di Simalungun, pusat pemerintahan dan perdagangan"
+        },
+        {
+          "nama": "Istana Raja Siantar",
+          "latitude": 2.9500,
+          "longitude": 99.0500,
+          "deskripsi": "Bekas istana Kerajaan Siantar yang kini menjadi museum"
+        },
+        {
+          "nama": "Pematang Raya",
+          "latitude": 2.9333,
+          "longitude": 99.1000,
+          "deskripsi": "Pusat kebudayaan Simalungun"
+        },
+        {
+          "nama": "Danau Toba (sisi timur)",
+          "latitude": 2.7500,
+          "longitude": 99.0000,
+          "deskripsi": "Bagian timur Danau Toba yang berbatasan dengan Simalungun"
+        }
+      ]
+    },
+    "sejarah": {
+      "ringkasan": "Batak Simalungun memiliki sejarah kerajaan yang panjang dengan empat kerajaan utama: Siantar, Tanah Jawa, Panei, dan Silimakuta. Masyarakat Simalungun dikenal ramah dan terbuka terhadap pengaruh luar sambil tetap mempertahankan identitas budayanya.",
+      "asalUsul": "Menurut tradisi lisan, nenek moyang Simalungun berasal dari Tuan Saribu Raja yang memiliki empat putra. Keempat putra ini kemudian mendirikan empat kerajaan utama Simalungun. Masyarakat Simalungun mengembangkan peradaban yang unik dengan pengaruh dari berbagai budaya sekitar.",
+      "kerajaan": "Simalungun memiliki empat kerajaan utama yang dipimpin oleh Tuan (raja): Kerajaan Siantar, Kerajaan Tanah Jawa, Kerajaan Panei, dan Kerajaan Silimakuta. Sistem pemerintahan berbasis parbapaan (kerajaan) dengan struktur yang terorganisir. Kerajaan Simalungun pernah menjadi salah satu yang terkuat di Sumatera Utara.",
+      "perlawananKolonial": "Kerajaan-kerajaan Simalungun menghadapi tekanan kolonial Belanda pada akhir abad ke-19. Meskipun akhirnya harus mengakui kekuasaan Belanda, para raja Simalungun tetap mempertahankan tradisi dan adat istiadat. Beberapa tokoh Simalungun aktif dalam pergerakan kemerdekaan.",
+      "eraModern": "Setelah kemerdekaan, Pematangsiantar berkembang menjadi kota industri dan perdagangan. Masyarakat Simalungun aktif dalam berbagai bidang pembangunan nasional. Upaya pelestarian budaya Simalungun terus dilakukan melalui berbagai kegiatan dan organisasi adat.",
+      "timeline": [
+        {
+          "year": "Abad ke-15",
+          "title": "Berdirinya Kerajaan Simalungun",
+          "description": "Empat kerajaan utama Simalungun mulai terbentuk dari keturunan Tuan Saribu Raja."
+        },
+        {
+          "year": 1890,
+          "title": "Kedatangan Belanda",
+          "description": "Belanda mulai memasuki wilayah Simalungun dan membangun perkebunan."
+        },
+        {
+          "year": 1907,
+          "title": "Perjanjian dengan Belanda",
+          "description": "Kerajaan-kerajaan Simalungun menandatangani perjanjian dengan Belanda."
+        },
+        {
+          "year": 1945,
+          "title": "Kemerdekaan Indonesia",
+          "description": "Masyarakat Simalungun mendukung kemerdekaan Indonesia."
+        },
+        {
+          "year": 1947,
+          "title": "Penghapusan Sistem Kerajaan",
+          "description": "Sistem kerajaan dihapuskan dan Simalungun menjadi bagian dari Republik Indonesia."
+        }
+      ],
+      "images": [
+        {
+          "src": "/images/rumpun/simalungun.jpg",
+          "alt": "Pemandangan Simalungun",
+          "caption": "Wilayah Simalungun dengan latar pegunungan"
+        }
+      ]
+    },
+    "budaya": {
+      "ringkasan": "Budaya Simalungun memiliki keunikan tersendiri dengan sistem marga yang berbeda dari Toba. Tortor Simalungun dikenal lebih anggun dan lemah gemulai, sementara Hiou (kain tenun) memiliki motif geometris yang khas.",
+      "sistemKekerabatan": {
+        "deskripsi": "Sistem kekerabatan Simalungun berbasis marga dengan struktur Tolu Sahundulan (tiga tungku). Sistem ini mirip dengan Dalihan Na Tolu namun dengan istilah dan praktik yang berbeda. Hubungan kekerabatan diatur melalui Sanina, Tondong, dan Boru.",
+        "jenis": [
+          "Sanina (Saudara semarga)",
+          "Tondong (Keluarga pemberi istri)",
+          "Boru (Keluarga penerima istri)"
+        ]
+      },
+      "musikTarian": {
+        "deskripsi": "Tortor Simalungun dikenal lebih anggun dan lemah gemulai dibanding tarian Batak lainnya. Gerakan tangan yang halus dan langkah kaki yang lembut menjadi ciri khas. Musik pengiring menggunakan gendang, garantung, dan sarune.",
+        "jenis": [
+          "Tortor Simalungun",
+          "Tortor Huda-huda",
+          "Musik Gonrang",
+          "Musik Garantung"
+        ]
+      },
+      "pakaian": {
+        "deskripsi": "Hiou adalah kain tenun tradisional Simalungun dengan motif geometris yang khas. Warna dominan adalah merah, hitam, dan putih. Pakaian adat pria dan wanita memiliki keunikan tersendiri dengan ornamen dan aksesoris yang berbeda dari sub-etnis lain.",
+        "jenis": [
+          "Hiou Suri-suri",
+          "Hiou Ragi Panei",
+          "Hiou Ragi Siantar",
+          "Bulang (Ikat kepala)"
+        ]
+      },
+      "rumahAdat": {
+        "deskripsi": "Rumah Bolon Simalungun memiliki arsitektur yang berbeda dengan ornamen dan ukiran yang lebih halus. Rumah ini dibangun di atas tiang dengan atap berbentuk pelana. Ukiran dan ornamen menggambarkan simbol-simbol kerajaan dan kepercayaan tradisional.",
+        "jenis": [
+          "Rumah Bolon",
+          "Jambur (Balai)",
+          "Sopo (Lumbung)"
+        ]
+      },
+      "upacaraAdat": {
+        "deskripsi": "Upacara adat Simalungun memiliki keunikan dengan prosesi yang lebih halus dan teratur. Upacara pernikahan, kematian, dan syukuran melibatkan seluruh unsur kekerabatan dengan tata cara yang telah diwariskan turun-temurun.",
+        "jenis": [
+          "Marpangir (Pernikahan)",
+          "Mambere Tungkot (Pemberian Tongkat)",
+          "Rondang Bittang (Upacara Kematian)",
+          "Mangan Napaet (Syukuran)"
+        ]
+      },
+      "gallery": [
+        {
+          "src": "/images/budaya/arsitektur/ruma-bolon-simalungun.jpg",
+          "alt": "Rumah Bolon Simalungun",
+          "category": "rumahAdat"
+        }
+      ]
+    },
+    "tokoh": [
+      {
+        "nama": "Tuan Rondahaim",
+        "gelar": "Raja Siantar",
+        "foto": "/images/tokoh/placeholder.jpg",
+        "tahunLahir": 1870,
+        "tahunWafat": 1947,
+        "bidang": "Pemimpin Tradisional",
+        "ringkasan": "Raja terakhir Kerajaan Siantar yang memimpin pada masa transisi kolonial dan menjaga tradisi kerajaan Simalungun.",
+        "biografi": "Tuan Rondahaim adalah raja terakhir Kerajaan Siantar yang memimpin pada masa transisi dari era kolonial ke kemerdekaan Indonesia. Beliau berusaha mempertahankan tradisi dan adat istiadat Simalungun di tengah perubahan zaman. Setelah penghapusan sistem kerajaan, beliau tetap dihormati sebagai tokoh adat.",
+        "pencapaian": [
+          "Raja terakhir Kerajaan Siantar",
+          "Mempertahankan tradisi adat Simalungun",
+          "Tokoh transisi dari era kerajaan ke republik"
+        ]
+      },
+      {
+        "nama": "Waldemar Hoetagaloeng",
+        "gelar": "Tokoh Pendidikan",
+        "foto": "/images/tokoh/placeholder.jpg",
+        "tahunLahir": 1890,
+        "tahunWafat": 1960,
+        "bidang": "Pendidikan",
+        "ringkasan": "Pendiri sekolah-sekolah di Simalungun dan tokoh yang berjasa dalam pengembangan pendidikan masyarakat Simalungun.",
+        "biografi": "Waldemar Hoetagaloeng adalah tokoh pendidikan Simalungun yang mendedikasikan hidupnya untuk pengembangan pendidikan di Tanah Simalungun. Beliau mendirikan berbagai sekolah dan lembaga pendidikan yang membuka akses pendidikan bagi masyarakat Simalungun.",
+        "pencapaian": [
+          "Mendirikan sekolah-sekolah di Simalungun",
+          "Mengembangkan pendidikan masyarakat Simalungun",
+          "Tokoh perintis pendidikan modern di Simalungun"
+        ]
+      },
+      {
+        "nama": "J. Wismar Saragih",
+        "gelar": "Budayawan",
+        "foto": "/images/tokoh/placeholder.jpg",
+        "tahunLahir": 1930,
+        "tahunWafat": 2010,
+        "bidang": "Budaya",
+        "ringkasan": "Tokoh budaya Simalungun yang berjasa dalam pelestarian dan dokumentasi budaya Simalungun.",
+        "biografi": "J. Wismar Saragih adalah budayawan Simalungun yang mendedikasikan hidupnya untuk pelestarian dan dokumentasi budaya Simalungun. Beliau menulis berbagai buku tentang sejarah, adat istiadat, dan bahasa Simalungun yang menjadi referensi penting bagi generasi berikutnya.",
+        "pencapaian": [
+          "Mendokumentasikan budaya Simalungun",
+          "Menulis buku-buku tentang adat Simalungun",
+          "Tokoh pelestarian budaya Simalungun"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pakpak",
+    "nama": "Batak Pakpak",
+    "slug": "pakpak",
+    "deskripsi": "Mendiami wilayah Dairi dengan tradisi Sulang-sulang dan kearifan lokal yang unik.",
+    "gambar": "/images/rumpun/pakpak.jpg",
+    "wilayah": {
+      "nama": "Tanah Pakpak",
+      "deskripsi": "Wilayah Batak Pakpak terletak di pegunungan Dairi di barat Danau Toba. Kawasan ini memiliki topografi bergunung-gunung dengan ketinggian 800-1.500 meter di atas permukaan laut. Masyarakat Pakpak hidup dari pertanian dan hasil hutan.",
+      "koordinat": {
+        "latitude": 2.7500,
+        "longitude": 98.2500
+      },
+      "kabupaten": [
+        "Kabupaten Dairi",
+        "Kabupaten Pakpak Bharat"
+      ],
+      "landmarks": [
+        {
+          "nama": "Sidikalang",
+          "latitude": 2.7333,
+          "longitude": 98.3167,
+          "deskripsi": "Ibu kota Kabupaten Dairi, pusat pemerintahan dan perdagangan"
+        },
+        {
+          "nama": "Salak",
+          "latitude": 2.6500,
+          "longitude": 98.2000,
+          "deskripsi": "Ibu kota Kabupaten Pakpak Bharat"
+        },
+        {
+          "nama": "Lokasi Gugurnya Sisingamangaraja XII",
+          "latitude": 2.6000,
+          "longitude": 98.2500,
+          "deskripsi": "Tempat gugurnya Raja Sisingamangaraja XII pada 17 Juni 1907"
+        },
+        {
+          "nama": "Pegunungan Pakpak",
+          "latitude": 2.7000,
+          "longitude": 98.2000,
+          "deskripsi": "Pegunungan yang menjadi wilayah tradisional masyarakat Pakpak"
+        }
+      ]
+    },
+    "sejarah": {
+      "ringkasan": "Batak Pakpak mendiami wilayah pegunungan Dairi di barat Danau Toba. Wilayah Pakpak menjadi medan pertempuran terakhir Raja Sisingamangaraja XII melawan Belanda. Masyarakat Pakpak mengembangkan kearifan lokal dalam mengelola sumber daya alam pegunungan.",
+      "asalUsul": "Menurut tradisi lisan, nenek moyang Pakpak berasal dari keturunan yang bermigrasi ke pegunungan Dairi. Masyarakat Pakpak mengembangkan sistem marga Suak (lima marga utama) yang menjadi dasar struktur sosial. Kehidupan di pegunungan membentuk karakter masyarakat yang tangguh dan mandiri.",
+      "kerajaan": "Masyarakat Pakpak memiliki sistem pemerintahan berbasis Pertaki (pemimpin adat). Setiap wilayah dipimpin oleh Pertaki yang mengatur kehidupan sosial dan adat istiadat. Sistem ini lebih bersifat federatif dengan otonomi yang kuat di setiap wilayah.",
+      "perlawananKolonial": "Wilayah Pakpak menjadi medan pertempuran terakhir Raja Sisingamangaraja XII melawan Belanda. Pada 17 Juni 1907, Raja Sisingamangaraja XII gugur di tanah Pakpak bersama dua putranya. Masyarakat Pakpak memberikan perlindungan dan dukungan kepada pejuang kemerdekaan.",
+      "eraModern": "Setelah kemerdekaan, Kabupaten Pakpak Bharat dibentuk sebagai pemekaran dari Kabupaten Dairi pada tahun 2003. Masyarakat Pakpak terus mengembangkan pertanian dan pariwisata sebagai sumber ekonomi. Upaya pelestarian budaya Pakpak terus dilakukan.",
+      "timeline": [
+        {
+          "year": "Abad ke-14",
+          "title": "Asal Mula Marga Suak",
+          "description": "Terbentuknya lima marga utama Pakpak yang menjadi dasar sistem kekerabatan."
+        },
+        {
+          "year": 1878,
+          "title": "Perlawanan Sisingamangaraja XII",
+          "description": "Wilayah Pakpak menjadi basis perlawanan Raja Sisingamangaraja XII."
+        },
+        {
+          "year": 1907,
+          "title": "Gugurnya Sisingamangaraja XII",
+          "description": "Raja Sisingamangaraja XII gugur di tanah Pakpak pada 17 Juni 1907."
+        },
+        {
+          "year": 1945,
+          "title": "Kemerdekaan Indonesia",
+          "description": "Masyarakat Pakpak mendukung kemerdekaan Indonesia."
+        },
+        {
+          "year": 2003,
+          "title": "Pembentukan Kabupaten Pakpak Bharat",
+          "description": "Kabupaten Pakpak Bharat dibentuk sebagai pemekaran dari Kabupaten Dairi."
+        }
+      ],
+      "images": [
+        {
+          "src": "/images/rumpun/pakpak.jpg",
+          "alt": "Pemandangan Tanah Pakpak",
+          "caption": "Pegunungan Pakpak di Dairi"
+        }
+      ]
+    },
+    "budaya": {
+      "ringkasan": "Budaya Pakpak memiliki keunikan dengan sistem marga Suak dan tradisi Sulang-sulang. Tarian Tortor Pakpak dan musik Gendang Pakpak memiliki irama yang berbeda dari sub-etnis lain. Oles (kain tenun Pakpak) memiliki motif dan warna yang khas.",
+      "sistemKekerabatan": {
+        "deskripsi": "Sistem kekerabatan Pakpak berbasis marga Suak (lima marga utama). Sistem ini mengatur hubungan sosial dan perkawinan dalam masyarakat Pakpak. Hubungan kekerabatan diatur melalui Berru, Kula-kula, dan Sinina.",
+        "jenis": [
+          "Marga Berutu",
+          "Marga Padang",
+          "Marga Manik",
+          "Marga Angkat",
+          "Marga Cibro"
+        ]
+      },
+      "musikTarian": {
+        "deskripsi": "Musik Gendang Pakpak memiliki irama yang berbeda dari sub-etnis Batak lainnya. Tarian Tortor Pakpak diiringi musik gendang dan nyanyian tradisional. Tradisi Sulang-sulang adalah upacara adat penting yang melibatkan musik dan tarian.",
+        "jenis": [
+          "Gendang Pakpak",
+          "Tortor Pakpak",
+          "Sulang-sulang",
+          "Ende-ende (Nyanyian)"
+        ]
+      },
+      "pakaian": {
+        "deskripsi": "Oles adalah kain tenun tradisional Pakpak dengan motif dan warna yang khas. Pakaian adat Pakpak memiliki keunikan tersendiri yang mencerminkan identitas budaya masyarakat pegunungan.",
+        "jenis": [
+          "Oles Pakpak",
+          "Oles Sibolang",
+          "Baju Adat Pakpak"
+        ]
+      },
+      "rumahAdat": {
+        "deskripsi": "Rumah adat Pakpak memiliki arsitektur yang disesuaikan dengan kondisi pegunungan. Rumah dibangun di atas tiang dengan atap berbentuk pelana. Konstruksi rumah menggunakan bahan-bahan lokal dari hutan sekitar.",
+        "jenis": [
+          "Rumah Adat Pakpak",
+          "Jambur (Balai)",
+          "Sopo (Lumbung)"
+        ]
+      },
+      "upacaraAdat": {
+        "deskripsi": "Tradisi Sulang-sulang adalah upacara adat penting dalam masyarakat Pakpak. Upacara ini melibatkan pemberian makanan dan minuman kepada tamu sebagai tanda penghormatan. Upacara pernikahan dan kematian juga memiliki tata cara yang khas.",
+        "jenis": [
+          "Sulang-sulang",
+          "Merbayo (Pernikahan)",
+          "Mate Dibata (Kematian)",
+          "Kerja Tahun (Pesta Panen)"
+        ]
+      },
+      "gallery": [
+        {
+          "src": "/images/rumpun/pakpak.jpg",
+          "alt": "Budaya Pakpak",
+          "category": "budaya"
+        }
+      ]
+    },
+    "tokoh": [
+      {
+        "nama": "Raja Sisingamangaraja XII",
+        "gelar": "Pahlawan Nasional",
+        "foto": "/images/tokoh/sisingamangaraja.jpg",
+        "tahunLahir": 1849,
+        "tahunWafat": 1907,
+        "bidang": "Pejuang Kemerdekaan",
+        "ringkasan": "Meskipun berasal dari Toba, beliau gugur di tanah Pakpak (Dairi) pada 17 Juni 1907 dalam pertempuran melawan Belanda.",
+        "biografi": "Raja Sisingamangaraja XII memilih wilayah Pakpak sebagai basis terakhir perlawanannya melawan Belanda. Masyarakat Pakpak memberikan perlindungan dan dukungan kepada beliau. Pada 17 Juni 1907, beliau gugur dalam pertempuran di Pakpak bersama dua putranya, Patuan Nagari dan Patuan Anggi.",
+        "pencapaian": [
+          "Memimpin perlawanan terhadap Belanda selama 30 tahun",
+          "Gugur sebagai pahlawan di tanah Pakpak",
+          "Simbol persatuan seluruh suku Batak"
+        ]
+      },
+      {
+        "nama": "Berutu Manik",
+        "gelar": "Pertaki Pakpak",
+        "foto": "/images/tokoh/placeholder.jpg",
+        "tahunLahir": 1850,
+        "tahunWafat": 1920,
+        "bidang": "Pemimpin Tradisional",
+        "ringkasan": "Pemimpin adat Pakpak yang berjuang mempertahankan wilayah dan tradisi Pakpak dari pengaruh luar.",
+        "biografi": "Berutu Manik adalah Pertaki (pemimpin adat) Pakpak yang memimpin masyarakatnya pada masa kolonial. Beliau berjuang mempertahankan wilayah dan tradisi Pakpak dari pengaruh kolonial Belanda. Beliau juga memberikan dukungan kepada perlawanan Raja Sisingamangaraja XII.",
+        "pencapaian": [
+          "Memimpin masyarakat Pakpak sebagai Pertaki",
+          "Mempertahankan tradisi adat Pakpak",
+          "Mendukung perlawanan Sisingamangaraja XII"
+        ]
+      },
+      {
+        "nama": "Dja Endar Moeda",
+        "gelar": "Wartawan dan Sastrawan",
+        "foto": "/images/tokoh/placeholder.jpg",
+        "tahunLahir": 1890,
+        "tahunWafat": 1950,
+        "bidang": "Jurnalisme dan Sastra",
+        "ringkasan": "Tokoh pers dan sastrawan Pakpak yang aktif dalam pergerakan nasional dan pengembangan jurnalisme di Sumatera.",
+        "biografi": "Dja Endar Moeda adalah tokoh pers dan sastrawan dari Pakpak yang aktif dalam pergerakan nasional. Beliau mendirikan dan memimpin berbagai surat kabar di Sumatera Utara. Karya-karya sastranya menjadi bagian penting dari khazanah sastra Indonesia awal.",
+        "pencapaian": [
+          "Mendirikan surat kabar di Sumatera Utara",
+          "Aktif dalam pergerakan nasional",
+          "Menulis karya sastra dalam bahasa Melayu"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "angkola",
+    "nama": "Batak Angkola",
+    "slug": "angkola",
+    "deskripsi": "Mendiami Tapanuli Selatan dengan pengaruh budaya Minangkabau dan tradisi Gordang Sambilan.",
+    "gambar": "/images/rumpun/angkola.jpg",
+    "wilayah": {
+      "nama": "Tanah Angkola",
+      "deskripsi": "Wilayah Batak Angkola terletak di Tapanuli Selatan bagian utara, membentang dari pegunungan hingga lembah sungai. Kawasan ini memiliki pengaruh budaya Minangkabau karena letaknya yang berbatasan dengan Sumatera Barat.",
+      "koordinat": {
+        "latitude": 1.4000,
+        "longitude": 99.2500
+      },
+      "kabupaten": [
+        "Kabupaten Tapanuli Selatan (bagian utara)",
+        "Kabupaten Padang Lawas",
+        "Kabupaten Padang Lawas Utara"
+      ],
+      "landmarks": [
+        {
+          "nama": "Padangsidimpuan",
+          "latitude": 1.3833,
+          "longitude": 99.2667,
+          "deskripsi": "Kota utama di wilayah Angkola, pusat pemerintahan dan perdagangan"
+        },
+        {
+          "nama": "Sipirok",
+          "latitude": 1.6500,
+          "longitude": 99.2500,
+          "deskripsi": "Pusat kebudayaan Angkola dengan tradisi adat yang kuat"
+        },
+        {
+          "nama": "Padang Bolak",
+          "latitude": 1.5000,
+          "longitude": 99.5000,
+          "deskripsi": "Wilayah kerajaan Padang Bolak yang bersejarah"
+        },
+        {
+          "nama": "Gunung Lubuk Raya",
+          "latitude": 1.4500,
+          "longitude": 99.3000,
+          "deskripsi": "Gunung yang menjadi ikon wilayah Angkola"
+        }
+      ]
+    },
+    "sejarah": {
+      "ringkasan": "Batak Angkola mendiami wilayah Tapanuli Selatan bagian utara. Sejarah Angkola dipengaruhi oleh kedatangan Islam melalui pedagang Minangkabau pada abad ke-17. Masyarakat Angkola mengembangkan budaya yang memadukan tradisi Batak dengan pengaruh Islam dan Minangkabau.",
+      "asalUsul": "Menurut tradisi lisan, nenek moyang Angkola berasal dari keturunan yang bermigrasi dari wilayah Toba ke selatan. Masyarakat Angkola mengembangkan identitas budaya yang unik dengan memadukan tradisi Batak dan pengaruh Islam yang datang kemudian.",
+      "kerajaan": "Kerajaan-kerajaan Angkola seperti Kerajaan Padang Bolak memiliki hubungan dagang dengan kerajaan-kerajaan di pesisir barat Sumatera. Para raja Angkola memimpin dengan sistem yang memadukan adat Batak dan nilai-nilai Islam.",
+      "perlawananKolonial": "Masyarakat Angkola terlibat dalam berbagai perlawanan terhadap kolonial Belanda. Beberapa tokoh Angkola aktif dalam pergerakan kemerdekaan dan perjuangan mempertahankan kemerdekaan Indonesia.",
+      "eraModern": "Setelah kemerdekaan, masyarakat Angkola aktif dalam berbagai bidang pembangunan nasional. Banyak tokoh Angkola yang berperan penting dalam pemerintahan, militer, dan pendidikan. Tradisi merantau membawa orang Angkola ke seluruh Indonesia.",
+      "timeline": [
+        {
+          "year": "Abad ke-17",
+          "title": "Kedatangan Islam",
+          "description": "Islam masuk ke Angkola melalui pedagang Minangkabau dan mengubah struktur sosial masyarakat."
+        },
+        {
+          "year": 1820,
+          "title": "Perang Padri",
+          "description": "Wilayah Angkola terkena dampak Perang Padri yang membawa perubahan sosial dan keagamaan."
+        },
+        {
+          "year": 1918,
+          "title": "Lahirnya Abdul Haris Nasution",
+          "description": "Abdul Haris Nasution lahir di Kotanopan, kelak menjadi Jenderal Besar TNI."
+        },
+        {
+          "year": 1945,
+          "title": "Kemerdekaan Indonesia",
+          "description": "Masyarakat Angkola aktif dalam perjuangan kemerdekaan Indonesia."
+        },
+        {
+          "year": 2007,
+          "title": "Pemekaran Wilayah",
+          "description": "Kabupaten Padang Lawas dan Padang Lawas Utara dibentuk sebagai pemekaran."
+        }
+      ],
+      "images": [
+        {
+          "src": "/images/rumpun/angkola.jpg",
+          "alt": "Pemandangan Tanah Angkola",
+          "caption": "Wilayah Angkola di Tapanuli Selatan"
+        }
+      ]
+    },
+    "budaya": {
+      "ringkasan": "Budaya Angkola memiliki keunikan dengan perpaduan tradisi Batak dan Islam. Sistem kekerabatan Dalihan Na Tolu tetap dipertahankan dengan penyesuaian nilai-nilai Islam. Gordang Sambilan adalah ensambel musik tradisional yang menjadi identitas budaya Angkola.",
+      "sistemKekerabatan": {
+        "deskripsi": "Sistem kekerabatan Angkola berbasis Dalihan Na Tolu yang disesuaikan dengan nilai-nilai Islam. Hubungan kekerabatan diatur melalui Kahanggi (saudara semarga), Mora (keluarga pemberi istri), dan Anak Boru (keluarga penerima istri).",
+        "jenis": [
+          "Kahanggi (Saudara semarga)",
+          "Mora (Keluarga pemberi istri)",
+          "Anak Boru (Keluarga penerima istri)"
+        ]
+      },
+      "musikTarian": {
+        "deskripsi": "Gordang Sambilan adalah ensambel musik tradisional dengan sembilan gendang yang dimainkan bersama. Musik ini mengiringi tarian Tor-tor Angkola dalam berbagai upacara adat. Gerakan tarian lebih halus dan dipengaruhi nilai-nilai Islam.",
+        "jenis": [
+          "Gordang Sambilan",
+          "Tor-tor Angkola",
+          "Musik Gondang",
+          "Ende-ende (Nyanyian)"
+        ]
+      },
+      "pakaian": {
+        "deskripsi": "Ulos Angkola memiliki motif yang dipengaruhi seni Islam dengan warna-warna yang lebih lembut. Pakaian adat pria dan wanita mencerminkan perpaduan tradisi Batak dan Islam dengan kesopanan yang dijaga.",
+        "jenis": [
+          "Ulos Angkola",
+          "Ulos Sibolang",
+          "Baju Kurung",
+          "Songket Angkola"
+        ]
+      },
+      "rumahAdat": {
+        "deskripsi": "Bagas Godang adalah rumah adat Angkola yang menjadi pusat kegiatan adat. Rumah ini memiliki arsitektur yang memadukan gaya Batak dengan pengaruh Minangkabau. Sopo Godang adalah balai pertemuan untuk musyawarah adat.",
+        "jenis": [
+          "Bagas Godang",
+          "Sopo Godang",
+          "Sopo Bolon"
+        ]
+      },
+      "upacaraAdat": {
+        "deskripsi": "Upacara adat Angkola memadukan tradisi Batak dengan nilai-nilai Islam. Upacara pernikahan, kematian, dan syukuran dilakukan dengan tata cara yang menghormati kedua tradisi. Gordang Sambilan mengiringi berbagai upacara adat.",
+        "jenis": [
+          "Horja Godang (Pesta Besar)",
+          "Markobar (Pernikahan)",
+          "Mangupa (Pemberkatan)",
+          "Siriaon (Syukuran)"
+        ]
+      },
+      "gallery": [
+        {
+          "src": "/images/rumpun/angkola.jpg",
+          "alt": "Budaya Angkola",
+          "category": "budaya"
+        }
+      ]
+    },
+    "tokoh": [
+      {
+        "nama": "Abdul Haris Nasution",
+        "gelar": "Jenderal Besar TNI",
+        "foto": "/images/tokoh/nasution.jpg",
+        "tahunLahir": 1918,
+        "tahunWafat": 2000,
+        "bidang": "Militer dan Politik",
+        "ringkasan": "Jenderal TNI dan tokoh militer Indonesia yang berasal dari Angkola, berperan penting dalam sejarah militer Indonesia.",
+        "biografi": "Abdul Haris Nasution lahir di Kotanopan, Mandailing Natal pada 3 Desember 1918. Beliau adalah salah satu tokoh militer terpenting Indonesia yang berperan dalam perjuangan kemerdekaan dan pembangunan TNI. Beliau pernah menjabat sebagai Kepala Staf Angkatan Darat dan Ketua MPRS. Nasution dikenal sebagai pencetus doktrin perang gerilya dan konsep Dwifungsi ABRI.",
+        "pencapaian": [
+          "Jenderal Besar TNI",
+          "Kepala Staf Angkatan Darat",
+          "Ketua MPRS",
+          "Pencetus doktrin perang gerilya"
+        ]
+      },
+      {
+        "nama": "Sutan Soripada Mulia",
+        "gelar": "Tokoh Pendidikan Nasional",
+        "foto": "/images/tokoh/placeholder.jpg",
+        "tahunLahir": 1900,
+        "tahunWafat": 1970,
+        "bidang": "Pendidikan",
+        "ringkasan": "Pendiri Perguruan Taman Siswa cabang Tapanuli dan tokoh pendidikan yang berjasa dalam mencerdaskan masyarakat Angkola.",
+        "biografi": "Sutan Soripada Mulia adalah tokoh pendidikan dari Angkola yang mendirikan Perguruan Taman Siswa cabang Tapanuli. Beliau mendedikasikan hidupnya untuk pengembangan pendidikan di Tapanuli Selatan dan sekitarnya.",
+        "pencapaian": [
+          "Mendirikan Perguruan Taman Siswa cabang Tapanuli",
+          "Mengembangkan pendidikan di Tapanuli Selatan",
+          "Tokoh pendidikan nasional"
+        ]
+      },
+      {
+        "nama": "Raja Inal Siregar",
+        "gelar": "Raja Padang Bolak",
+        "foto": "/images/tokoh/placeholder.jpg",
+        "tahunLahir": 1850,
+        "tahunWafat": 1920,
+        "bidang": "Pemimpin Tradisional",
+        "ringkasan": "Raja Padang Bolak yang memimpin kerajaan pada masa kejayaannya dan menjaga tradisi adat Angkola.",
+        "biografi": "Raja Inal Siregar adalah raja Padang Bolak yang memimpin kerajaan pada masa kejayaannya. Beliau menjaga tradisi adat Angkola dan memimpin masyarakatnya dengan bijaksana. Kerajaan Padang Bolak di bawah kepemimpinannya menjadi pusat kebudayaan Angkola.",
+        "pencapaian": [
+          "Memimpin Kerajaan Padang Bolak",
+          "Menjaga tradisi adat Angkola",
+          "Mengembangkan kebudayaan Angkola"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mandailing",
+    "nama": "Batak Mandailing",
+    "slug": "mandailing",
+    "deskripsi": "Mendiami Mandailing Natal dengan tradisi Islam yang kuat dan Gordang Sambilan.",
+    "gambar": "/images/rumpun/mandailing.jpg",
+    "wilayah": {
+      "nama": "Tanah Mandailing",
+      "deskripsi": "Wilayah Batak Mandailing terletak di Mandailing Natal di selatan Tapanuli. Kawasan ini berbatasan langsung dengan Sumatera Barat dan memiliki pengaruh budaya Minangkabau yang kuat. Islam masuk lebih awal ke wilayah ini dibanding wilayah Batak lainnya.",
+      "koordinat": {
+        "latitude": 0.8500,
+        "longitude": 99.5500
+      },
+      "kabupaten": [
+        "Kabupaten Mandailing Natal",
+        "Sebagian Kabupaten Tapanuli Selatan (bagian selatan)"
+      ],
+      "landmarks": [
+        {
+          "nama": "Panyabungan",
+          "latitude": 0.8333,
+          "longitude": 99.5500,
+          "deskripsi": "Ibu kota Kabupaten Mandailing Natal, pusat pemerintahan dan perdagangan"
+        },
+        {
+          "nama": "Kotanopan",
+          "latitude": 0.9500,
+          "longitude": 99.6000,
+          "deskripsi": "Kota kelahiran Abdul Haris Nasution"
+        },
+        {
+          "nama": "Natal",
+          "latitude": 0.5500,
+          "longitude": 99.0500,
+          "deskripsi": "Kota pelabuhan di pesisir barat Mandailing"
+        },
+        {
+          "nama": "Gunung Sorik Marapi",
+          "latitude": 0.6833,
+          "longitude": 99.5333,
+          "deskripsi": "Gunung berapi yang menjadi ikon wilayah Mandailing"
+        }
+      ]
+    },
+    "sejarah": {
+      "ringkasan": "Batak Mandailing mendiami wilayah Mandailing Natal di selatan Tapanuli. Islam masuk ke Mandailing lebih awal dibanding wilayah Batak lainnya melalui Perang Padri (1803-1837). Meskipun mayoritas Muslim, masyarakat Mandailing tetap mempertahankan tradisi adat Batak.",
+      "asalUsul": "Menurut tradisi lisan, nenek moyang Mandailing berasal dari keturunan yang bermigrasi dari wilayah Toba ke selatan. Masyarakat Mandailing mengembangkan identitas budaya yang unik di perbatasan dengan Minangkabau.",
+      "kerajaan": "Mandailing memiliki sistem pemerintahan berbasis kerajaan dengan raja-raja yang memimpin wilayah masing-masing. Kerajaan-kerajaan Mandailing memiliki hubungan dagang dengan kerajaan-kerajaan di pesisir barat Sumatera.",
+      "perlawananKolonial": "Perang Padri (1803-1837) membawa perubahan besar di Mandailing. Tuanku Rao dan pasukan Padri membawa Islam ke Mandailing, mengubah struktur sosial dan budaya masyarakat. Setelah Perang Padri, Belanda menguasai wilayah Mandailing.",
+      "eraModern": "Setelah kemerdekaan, masyarakat Mandailing aktif dalam berbagai bidang pembangunan nasional. Banyak tokoh Mandailing yang berperan penting dalam pemerintahan, diplomasi, dan berbagai bidang lainnya. Adam Malik, Wakil Presiden RI ke-3, adalah salah satu tokoh Mandailing yang paling terkenal.",
+      "timeline": [
+        {
+          "year": 1803,
+          "title": "Awal Perang Padri",
+          "description": "Perang Padri dimulai, membawa perubahan besar di wilayah Mandailing."
+        },
+        {
+          "year": 1820,
+          "title": "Kedatangan Tuanku Rao",
+          "description": "Tuanku Rao dan pasukan Padri membawa Islam ke Mandailing."
+        },
+        {
+          "year": 1837,
+          "title": "Akhir Perang Padri",
+          "description": "Perang Padri berakhir dengan kemenangan Belanda."
+        },
+        {
+          "year": 1917,
+          "title": "Lahirnya Adam Malik",
+          "description": "Adam Malik lahir di Pematangsiantar, kelak menjadi Wakil Presiden RI."
+        },
+        {
+          "year": 1945,
+          "title": "Kemerdekaan Indonesia",
+          "description": "Masyarakat Mandailing aktif dalam perjuangan kemerdekaan Indonesia."
+        },
+        {
+          "year": 1998,
+          "title": "Pembentukan Kabupaten Mandailing Natal",
+          "description": "Kabupaten Mandailing Natal dibentuk sebagai pemekaran dari Tapanuli Selatan."
+        }
+      ],
+      "images": [
+        {
+          "src": "/images/rumpun/mandailing.jpg",
+          "alt": "Pemandangan Tanah Mandailing",
+          "caption": "Wilayah Mandailing di Mandailing Natal"
+        }
+      ]
+    },
+    "budaya": {
+      "ringkasan": "Budaya Mandailing merupakan perpaduan harmonis antara tradisi Batak dan Islam. Sistem Dalihan Na Tolu tetap menjadi fondasi hubungan sosial dengan istilah Mora, Kahanggi, dan Anak Boru. Gordang Sambilan menjadi musik tradisional yang dimainkan dalam upacara adat.",
+      "sistemKekerabatan": {
+        "deskripsi": "Sistem kekerabatan Mandailing berbasis Dalihan Na Tolu yang disesuaikan dengan nilai-nilai Islam. Hubungan kekerabatan diatur melalui Mora (keluarga pemberi istri), Kahanggi (saudara semarga), dan Anak Boru (keluarga penerima istri).",
+        "jenis": [
+          "Mora (Keluarga pemberi istri)",
+          "Kahanggi (Saudara semarga)",
+          "Anak Boru (Keluarga penerima istri)"
+        ]
+      },
+      "musikTarian": {
+        "deskripsi": "Gordang Sambilan adalah ensambel musik tradisional dengan sembilan gendang yang dimainkan bersama. Musik ini mengiringi tarian Tor-tor Mandailing dalam berbagai upacara adat. Gerakan tarian mencerminkan nilai-nilai Islam dengan kesopanan yang dijaga.",
+        "jenis": [
+          "Gordang Sambilan",
+          "Tor-tor Mandailing",
+          "Musik Gondang",
+          "Ende-ende (Nyanyian)"
+        ]
+      },
+      "pakaian": {
+        "deskripsi": "Ulos Mandailing (Abit Godang) memiliki motif yang dipengaruhi seni Islam. Pakaian adat pria dan wanita mencerminkan perpaduan tradisi Batak dan Islam. Songket Mandailing juga menjadi pakaian adat yang penting.",
+        "jenis": [
+          "Abit Godang (Ulos Mandailing)",
+          "Songket Mandailing",
+          "Baju Kurung",
+          "Sabe-sabe"
+        ]
+      },
+      "rumahAdat": {
+        "deskripsi": "Bagas Godang dan Sopo Godang adalah bangunan adat penting dalam masyarakat Mandailing. Bagas Godang adalah rumah besar tempat tinggal raja, sementara Sopo Godang adalah balai pertemuan untuk musyawarah adat.",
+        "jenis": [
+          "Bagas Godang",
+          "Sopo Godang",
+          "Sopo Bolon"
+        ]
+      },
+      "upacaraAdat": {
+        "deskripsi": "Upacara adat Mandailing memadukan tradisi Batak dengan nilai-nilai Islam. Upacara pernikahan, kematian, dan syukuran dilakukan dengan tata cara yang menghormati kedua tradisi. Horja Godang adalah pesta besar yang melibatkan seluruh masyarakat.",
+        "jenis": [
+          "Horja Godang (Pesta Besar)",
+          "Markobar (Pernikahan)",
+          "Mangupa (Pemberkatan)",
+          "Siriaon (Syukuran)"
+        ]
+      },
+      "gallery": [
+        {
+          "src": "/images/rumpun/mandailing.jpg",
+          "alt": "Budaya Mandailing",
+          "category": "budaya"
+        }
+      ]
+    },
+    "tokoh": [
+      {
+        "nama": "Adam Malik",
+        "gelar": "Wakil Presiden RI ke-3",
+        "foto": "/images/tokoh/adam-malik.jpg",
+        "tahunLahir": 1917,
+        "tahunWafat": 1984,
+        "bidang": "Diplomasi dan Politik",
+        "ringkasan": "Diplomat dan politisi Indonesia yang menjabat sebagai Wakil Presiden RI (1978-1983) dan Ketua Sidang Umum PBB.",
+        "biografi": "Adam Malik lahir di Pematangsiantar pada 22 Juli 1917 dari keluarga Mandailing. Beliau adalah salah satu tokoh penting dalam sejarah Indonesia yang berperan dalam diplomasi dan politik. Beliau pernah menjabat sebagai Menteri Luar Negeri, Ketua Sidang Umum PBB ke-26, dan Wakil Presiden RI ke-3 (1978-1983). Adam Malik dikenal sebagai diplomat ulung yang berperan dalam pengakuan internasional terhadap Indonesia.",
+        "pencapaian": [
+          "Wakil Presiden RI ke-3 (1978-1983)",
+          "Ketua Sidang Umum PBB ke-26",
+          "Menteri Luar Negeri Indonesia",
+          "Salah satu pendiri Antara News Agency"
+        ]
+      },
+      {
+        "nama": "Tuanku Rao",
+        "gelar": "Pemimpin Padri",
+        "foto": "/images/tokoh/placeholder.jpg",
+        "tahunLahir": 1790,
+        "tahunWafat": 1833,
+        "bidang": "Pemimpin Agama dan Militer",
+        "ringkasan": "Pemimpin pasukan Padri yang membawa Islam ke Mandailing dan memimpin perlawanan terhadap Belanda.",
+        "biografi": "Tuanku Rao adalah pemimpin pasukan Padri yang berperan penting dalam penyebaran Islam di Mandailing. Beliau memimpin ekspedisi militer dari Minangkabau ke Mandailing pada tahun 1820-an. Meskipun metodenya kontroversial, beliau berhasil mengislamkan sebagian besar masyarakat Mandailing. Tuanku Rao juga memimpin perlawanan terhadap kolonial Belanda hingga gugur pada tahun 1833.",
+        "pencapaian": [
+          "Menyebarkan Islam di Mandailing",
+          "Memimpin pasukan Padri",
+          "Memimpin perlawanan terhadap Belanda"
+        ]
+      },
+      {
+        "nama": "Willem Iskander",
+        "gelar": "Bapak Pendidikan Mandailing",
+        "foto": "/images/tokoh/placeholder.jpg",
+        "tahunLahir": 1840,
+        "tahunWafat": 1876,
+        "bidang": "Pendidikan dan Sastra",
+        "ringkasan": "Tokoh pendidikan yang mendirikan sekolah-sekolah di Mandailing dan menulis buku pelajaran dalam bahasa Mandailing.",
+        "biografi": "Willem Iskander, nama asli Sati Nasution, adalah tokoh pendidikan Mandailing yang mendirikan sekolah-sekolah di Mandailing. Beliau menulis buku pelajaran dalam bahasa Mandailing yang menjadi perintis pendidikan modern di wilayah tersebut. Karya sastranya, Si Bulus-bulus Si Rumbuk-rumbuk, menjadi karya sastra Mandailing yang terkenal.",
+        "pencapaian": [
+          "Mendirikan sekolah-sekolah di Mandailing",
+          "Menulis buku pelajaran dalam bahasa Mandailing",
+          "Menulis karya sastra Si Bulus-bulus Si Rumbuk-rumbuk",
+          "Perintis pendidikan modern di Mandailing"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,161 @@
+[
+  {
+    "margaId": "1",
+    "slug": "sitorus",
+    "sejarah": "Marga Sitorus dikenal sebagai salah satu marga tua di Balige dan daerah sekitar Danau Toba. Tradisi lisan menyebutkan perannya dalam membuka huta-huta baru serta menjaga hubungan Dalihan Na Tolu.",
+    "asalUsul": "Asal usul Sitorus ditelusuri ke keturunan Guru Tatea Bulan yang menetap di pesisir Danau Toba. Penamaan Sitorus merujuk pada leluhur yang dikenal tangguh dan dekat dengan alam danau.",
+    "tarombo": {
+      "description": "Tarombo Sitorus menegaskan garis keturunan patrilineal yang menjaga keterhubungan antar dongan tubu dan boru.",
+      "ancestors": [
+        {
+          "nama": "Ompu Raja Sitorus",
+          "gelar": "Raja Sitorus",
+          "deskripsi": "Leluhur yang menjadi rujukan utama tarombo Sitorus di Balige."
+        },
+        {
+          "nama": "Guru Tatea Bulan",
+          "deskripsi": "Figur besar dalam tarombo Batak yang menurunkan berbagai marga termasuk Sitorus."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Sitorus Pane",
+          "deskripsi": "Cabang yang banyak bermukim di sekitar Balige dan Porsea."
+        },
+        {
+          "nama": "Sitorus Lumban Siantar",
+          "deskripsi": "Cabang yang berkembang di wilayah Silindung."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Balige, Toba",
+      "deskripsi": "Wilayah asal Sitorus berada di tepian Danau Toba dengan budaya maritim dan pertanian yang kuat.",
+      "latitude": 2.334,
+      "longitude": 99.066,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Toba"
+    },
+    "tradisi": [
+      "Horja adat Sitorus untuk merayakan pencapaian keluarga besar",
+      "Penggunaan ulos khas dalam upacara mangulosi generasi baru"
+    ],
+    "tokoh": [
+      {
+        "nama": "Ompu Sitorus Parhusip",
+        "gelar": "Pemuka Adat",
+        "bidang": "Adat",
+        "deskripsi": "Tokoh adat yang dikenal menjaga arsip tarombo dan memimpin horja Sitorus."
+      }
+    ],
+    "relatedMargas": [
+      "siahaan",
+      "simbolon"
+    ],
+    "updatedAt": "2024-01-15"
+  },
+  {
+    "margaId": "7",
+    "slug": "ginting",
+    "sejarah": "Marga Ginting adalah bagian dari Merga Silima dalam budaya Karo dan memiliki peran penting dalam struktur pemerintahan adat di Tanah Karo.",
+    "asalUsul": "Nama Ginting diyakini berasal dari leluhur yang menetap di wilayah Kabanjahe dan sekitarnya. Garis keturunan dijaga ketat melalui aturan perkawinan Merga Silima.",
+    "tarombo": {
+      "description": "Tarombo Ginting menempatkan leluhur sebagai penjaga adat dan penyebar nilai gotong royong di dataran tinggi Karo.",
+      "ancestors": [
+        {
+          "nama": "Guru Kinayan",
+          "deskripsi": "Leluhur yang menjadi rujukan beberapa cabang marga Ginting."
+        },
+        {
+          "nama": "Sembiring Pelawi",
+          "deskripsi": "Tokoh yang menjaga hubungan antar merga di Tanah Karo."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Ginting Mergana",
+          "deskripsi": "Sub-marga yang banyak ditemukan di wilayah Kabanjahe."
+        },
+        {
+          "nama": "Ginting Suka",
+          "deskripsi": "Cabang yang dikenal sebagai penjaga lahan ladang di perbukitan."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Kabanjahe, Tanah Karo",
+      "deskripsi": "Berada di dataran tinggi Karo dengan tradisi ladang dan kebun yang kuat serta kedekatan dengan Gunung Sinabung.",
+      "latitude": 3.1034,
+      "longitude": 98.4891,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Karo"
+    },
+    "tradisi": [
+      "Erpangir ku lau sebagai ritual pembersihan diri dan kampung",
+      "Perkulunen untuk mengatur tata cara pesta adat Ginting"
+    ],
+    "tokoh": [
+      {
+        "nama": "Djamin Ginting",
+        "gelar": "Letjen TNI",
+        "bidang": "Militer",
+        "deskripsi": "Pahlawan nasional dari Tanah Karo yang dikenal memperjuangkan kemerdekaan."
+      }
+    ],
+    "relatedMargas": [
+      "tarigan",
+      "karo-karo"
+    ],
+    "updatedAt": "2024-02-20"
+  },
+  {
+    "margaId": "21",
+    "slug": "nasution",
+    "sejarah": "Marga Nasution berasal dari Mandailing Godang dengan sejarah panjang dalam perdagangan dan pendidikan di Sumatera Utara.",
+    "asalUsul": "Asal usul Nasution dikaitkan dengan keturunan Nasution yang bermukim di Pidoli dan Hutapungkut sebelum menyebar ke berbagai wilayah rantau.",
+    "tarombo": {
+      "description": "Tarombo Nasution menekankan hubungan erat antar mora, kahanggi, dan anak boru dalam struktur Mandailing.",
+      "ancestors": [
+        {
+          "nama": "Ompu Nasution",
+          "deskripsi": "Leluhur yang menjadi rujukan utama banyak cabang Nasution."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Nasution Pidoli",
+          "deskripsi": "Cabang yang menjaga tradisi ulos bulang dan gondang Naposo."
+        },
+        {
+          "nama": "Nasution Hutapungkut",
+          "deskripsi": "Cabang yang berkembang di daerah Mandailing Julu."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Mandailing Godang",
+      "deskripsi": "Wilayah asal di sepanjang aliran Sungai Batang Gadis dengan budaya agraris dan literasi Al-Qur'an yang kuat.",
+      "latitude": 0.7667,
+      "longitude": 99.4503,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Mandailing Natal"
+    },
+    "tradisi": [
+      "Markobar untuk menghubungkan kekerabatan antar huta",
+      "Upacara manyapai pada siklus pertanian dan pesta adat"
+    ],
+    "tokoh": [
+      {
+        "nama": "Abdul Haris Nasution",
+        "gelar": "Jenderal TNI",
+        "bidang": "Militer",
+        "deskripsi": "Tokoh nasional kelahiran Hutapungkut yang berperan besar dalam sejarah TNI."
+      }
+    ],
+    "relatedMargas": [
+      "lubis",
+      "harahap"
+    ],
+    "updatedAt": "2024-03-12"
+  }
+]

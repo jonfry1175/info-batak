@@ -1,6 +1,7 @@
 import {
   Fakta,
   Marga,
+  MargaDetail,
   MediaLibrary,
   MediaImage,
   MediaVideo,
@@ -10,16 +11,22 @@ import {
   PakaianData,
   BahasaData,
   Berita,
-  BeritaKategori
+  BeritaKategori,
+  RumpunBatak,
+  RumpunBatakEnhanced,
+  EnhancedTokoh,
+  Tokoh
 } from '@/types';
 import faktaData from '@/content/data/fakta.json';
 import margaData from '@/content/data/marga.json';
+import margaDetailData from '@/content/data/marga-detail.json';
 import mediaData from '@/content/data/media.json';
 import arsitekturData from '@/content/data/arsitektur.json';
 import kulinerData from '@/content/data/kuliner.json';
 import pakaianData from '@/content/data/pakaian.json';
 import bahasaData from '@/content/data/bahasa.json';
 import beritaData from '@/content/data/berita.json';
+import rumpunData from '@/content/data/rumpun.json';
 
 export function getAllFakta(): Fakta[] {
   return faktaData as Fakta[];
@@ -35,8 +42,34 @@ export function getAllMarga(): Marga[] {
   return margaData as Marga[];
 }
 
+export function getMargaBySlug(slug: string): Marga | undefined {
+  return getAllMarga().find((marga) => marga.slug === slug);
+}
+
 export function getMargaByRumpun(rumpun: string): Marga[] {
   return getAllMarga().filter((marga) => marga.rumpun === rumpun);
+}
+
+export function getAllMargaSlugs(): string[] {
+  return getAllMarga().map((marga) => marga.slug);
+}
+
+export function getMargaDetailBySlug(slug: string): MargaDetail | undefined {
+  return (margaDetailData as MargaDetail[]).find((detail) => detail.slug === slug);
+}
+
+export function getFullMargaBySlug(slug: string): (Marga & Partial<MargaDetail>) | undefined {
+  const baseMarga = getMargaBySlug(slug);
+
+  if (!baseMarga) {
+    return undefined;
+  }
+
+  const detail = getMargaDetailBySlug(slug);
+  return {
+    ...baseMarga,
+    ...(detail ?? {})
+  };
 }
 
 // Media Library functions
@@ -230,4 +263,98 @@ export function getLatestBerita(count: number = 6): Berita[] {
   return getAllBerita()
     .sort((a, b) => new Date(b.tanggal).getTime() - new Date(a.tanggal).getTime())
     .slice(0, count);
+}
+
+// Rumpun Batak functions
+export function getAllRumpun(): RumpunBatakEnhanced[] {
+  return rumpunData as RumpunBatakEnhanced[];
+}
+
+export function getRumpunBySlug(slug: string): RumpunBatakEnhanced | undefined {
+  return getAllRumpun().find((rumpun) => rumpun.slug === slug);
+}
+
+// Default coordinates for each rumpun
+const defaultCoordinates: Record<string, { latitude: number; longitude: number }> = {
+  toba: { latitude: 2.6167, longitude: 98.8500 },
+  karo: { latitude: 3.1000, longitude: 98.5000 },
+  simalungun: { latitude: 2.9500, longitude: 99.0500 },
+  pakpak: { latitude: 2.5500, longitude: 98.3000 },
+  angkola: { latitude: 1.5000, longitude: 99.2000 },
+  mandailing: { latitude: 0.8500, longitude: 99.5500 }
+};
+
+function getDefaultCoordinates(slug: string): { latitude: number; longitude: number } {
+  return defaultCoordinates[slug] || { latitude: 2.5, longitude: 98.5 };
+}
+
+function normalizeTokohData(tokoh: Tokoh): EnhancedTokoh {
+  return {
+    nama: tokoh.nama,
+    gelar: tokoh.gelar,
+    foto: undefined,
+    tahunLahir: undefined,
+    tahunWafat: undefined,
+    bidang: tokoh.gelar || 'Tokoh',
+    ringkasan: tokoh.deskripsi,
+    biografi: tokoh.deskripsi,
+    pencapaian: []
+  };
+}
+
+function isEnhancedFormat(data: RumpunBatak | RumpunBatakEnhanced): data is RumpunBatakEnhanced {
+  return typeof data.wilayah === 'object' && data.wilayah !== null && 'koordinat' in data.wilayah;
+}
+
+export function normalizeRumpunData(data: RumpunBatak | RumpunBatakEnhanced): RumpunBatakEnhanced {
+  // If already in enhanced format, return as-is
+  if (isEnhancedFormat(data)) {
+    return data;
+  }
+
+  // Convert old format to new format
+  const oldData = data as RumpunBatak;
+  const coords = getDefaultCoordinates(oldData.slug);
+
+  return {
+    id: oldData.id,
+    nama: oldData.nama,
+    slug: oldData.slug,
+    deskripsi: oldData.deskripsi,
+    gambar: oldData.gambar,
+    wilayah: {
+      nama: oldData.wilayah,
+      deskripsi: oldData.wilayah,
+      koordinat: coords,
+      kabupaten: [],
+      landmarks: []
+    },
+    sejarah: {
+      ringkasan: oldData.sejarah,
+      asalUsul: oldData.sejarah,
+      kerajaan: undefined,
+      perlawananKolonial: undefined,
+      eraModern: undefined,
+      timeline: [],
+      images: undefined
+    },
+    budaya: {
+      ringkasan: oldData.budaya,
+      sistemKekerabatan: { deskripsi: '' },
+      musikTarian: { deskripsi: '' },
+      pakaian: { deskripsi: '' },
+      rumahAdat: { deskripsi: '' },
+      upacaraAdat: { deskripsi: '' },
+      gallery: undefined
+    },
+    tokoh: oldData.tokoh.map(normalizeTokohData)
+  };
+}
+
+export function getRumpunEnhancedBySlug(slug: string): RumpunBatakEnhanced | undefined {
+  return getRumpunBySlug(slug);
+}
+
+export function getAllRumpunEnhanced(): RumpunBatakEnhanced[] {
+  return getAllRumpun();
 }

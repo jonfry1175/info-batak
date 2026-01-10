@@ -5,7 +5,54 @@ export interface Marga {
   id: string;
   nama: string;
   rumpun: Rumpun;
+  slug: string;
   deskripsi?: string;
+}
+
+export interface Ancestor {
+  nama: string;
+  gelar?: string;
+  deskripsi?: string;
+}
+
+export interface SubMarga {
+  nama: string;
+  deskripsi?: string;
+}
+
+export interface Tarombo {
+  description: string;
+  ancestors?: Ancestor[];
+  subMargas?: SubMarga[];
+}
+
+export interface Wilayah {
+  nama: string;
+  deskripsi: string;
+  latitude: number;
+  longitude: number;
+  provinsi?: string;
+  kabupaten?: string;
+}
+
+export interface TokohMarga {
+  nama: string;
+  gelar?: string;
+  bidang?: string;
+  deskripsi: string;
+}
+
+export interface MargaDetail {
+  margaId: string;
+  slug: string;
+  sejarah?: string;
+  asalUsul?: string;
+  tarombo?: Tarombo;
+  wilayah?: Wilayah;
+  tradisi?: string[];
+  tokoh?: TokohMarga[];
+  relatedMargas?: string[];
+  updatedAt?: string;
 }
 
 // Fakta (Did You Know) types
@@ -330,6 +377,117 @@ export interface BahasaData {
   languagePreservation: any;
 }
 
+
+// Rumpun Batak types
+export interface Tokoh {
+  nama: string;
+  gelar: string;
+  deskripsi: string;
+}
+
+export interface RumpunBatak {
+  id: string;
+  nama: string;
+  slug: string;
+  deskripsi: string;
+  gambar: string;
+  sejarah: string;
+  budaya: string;
+  wilayah: string;
+  tokoh: Tokoh[];
+}
+
+// Enhanced Rumpun Batak types
+export interface MapMarker {
+  lat: number;
+  lng: number;
+  label: string;
+  type: 'kabupaten' | 'landmark' | 'center';
+}
+
+export interface TimelineEvent {
+  year: number | string;
+  title: string;
+  description: string;
+  image?: string;
+}
+
+export interface EnhancedTokoh {
+  nama: string;
+  gelar: string;
+  foto?: string;
+  tahunLahir?: number;
+  tahunWafat?: number;
+  bidang: string;
+  ringkasan: string;
+  biografi: string;
+  pencapaian: string[];
+}
+
+export interface WilayahEnhanced {
+  nama: string;
+  deskripsi: string;
+  koordinat: {
+    latitude: number;
+    longitude: number;
+  };
+  kabupaten: string[];
+  landmarks: {
+    nama: string;
+    latitude: number;
+    longitude: number;
+    deskripsi?: string;
+  }[];
+}
+
+export interface SejarahImage {
+  src: string;
+  alt: string;
+  caption: string;
+}
+
+export interface SejarahEnhanced {
+  ringkasan: string;
+  asalUsul: string;
+  kerajaan?: string;
+  perlawananKolonial?: string;
+  eraModern?: string;
+  timeline: TimelineEvent[];
+  images?: SejarahImage[];
+}
+
+export interface BudayaCategory {
+  deskripsi: string;
+  jenis?: string[];
+}
+
+export interface BudayaGalleryItem {
+  src: string;
+  alt: string;
+  category: string;
+}
+
+export interface BudayaEnhanced {
+  ringkasan: string;
+  sistemKekerabatan: BudayaCategory;
+  musikTarian: BudayaCategory;
+  pakaian: BudayaCategory;
+  rumahAdat: BudayaCategory;
+  upacaraAdat: BudayaCategory;
+  gallery?: BudayaGalleryItem[];
+}
+
+export interface RumpunBatakEnhanced {
+  id: string;
+  nama: string;
+  slug: string;
+  deskripsi: string;
+  gambar: string;
+  wilayah: WilayahEnhanced;
+  sejarah: SejarahEnhanced;
+  budaya: BudayaEnhanced;
+  tokoh: EnhancedTokoh[];
+}
 
 // Auth types (Supabase)
 export interface UserProfile {
