@@ -73,7 +73,7 @@ Implementasi fitur diskusi per halaman untuk InfoBatak.id menggunakan TypeScript
     - Cancel button for reply mode
     - Login prompt for guests
     - _Requirements: 2.2, 2.3, 2.4, 2.5, 3.1_
-  - [ ]* 5.2 Write property tests for CommentForm validation
+  - [ ] 5.2 Write property tests for CommentForm validation
     - **Property 6: Empty Comment Validation** - Whitespace-only rejected
     - **Property 7: Comment Length Validation** - Over 1000 chars rejected
     - **Validates: Requirements 2.3, 2.5**
@@ -128,22 +128,22 @@ Implementasi fitur diskusi per halaman untuk InfoBatak.id menggunakan TypeScript
     - Pass page path as prop
     - _Requirements: 7.1_
 
-- [ ] 9. Checkpoint - Integration
+- [x] 9. Checkpoint - Integration
   - Ensure discussion section appears on all content pages
   - Verify real-time updates work across pages
   - Ask the user if questions arise
 
-- [ ] 10. Additional Property Tests
-  - [ ]* 10.1 Write property test for single nesting level
+- [x] 10. Additional Property Tests
+  - [x]* 10.1 Write property test for single nesting level
     - **Property 8: Single Nesting Level** - Cannot reply to replies
     - **Validates: Requirements 3.4**
-  - [ ]* 10.2 Write property test for like toggle round-trip
+  - [x]* 10.2 Write property test for like toggle round-trip
     - **Property 9: Like Toggle Round-Trip** - Like then unlike returns to original
     - **Validates: Requirements 4.1, 4.2**
-  - [ ]* 10.3 Write property test for self-like prevention
+  - [x]* 10.3 Write property test for self-like prevention
     - **Property 11: Self-Like Prevention** - Cannot like own comment
     - **Validates: Requirements 4.5**
-  - [ ]* 10.4 Write property test for cascade delete
+  - [x]* 10.4 Write property test for cascade delete
     - **Property 13: Cascade Delete** - Deleting parent deletes replies
     - **Validates: Requirements 5.3**
 
