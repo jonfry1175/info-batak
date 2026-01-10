@@ -8,6 +8,7 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { getAllMarga } from '@/lib/data';
 import { Marga } from '@/types';
+import { InlineLoader } from '@/components/ui/Loader';
 
 export function MargaSearch() {
   const router = useRouter();
@@ -15,10 +16,17 @@ export function MargaSearch() {
   const [results, setResults] = React.useState<Marga[]>([]);
   const [isOpen, setIsOpen] = React.useState(false);
   const [allMarga, setAllMarga] = React.useState<Marga[]>([]);
+  const [isLoading, setIsLoading] = React.useState(true);
 
   React.useEffect(() => {
     // Load marga data on mount
-    setAllMarga(getAllMarga());
+    setIsLoading(true);
+    try {
+      const margaData = getAllMarga();
+      setAllMarga(margaData);
+    } finally {
+      setIsLoading(false);
+    }
   }, []);
 
   React.useEffect(() => {
@@ -46,19 +54,27 @@ export function MargaSearch() {
     <div className="relative mx-auto w-full max-w-lg">
       <form onSubmit={handleSearch} className="group relative">
         <div className="relative flex items-center">
-          <Search className="text-muted-foreground group-focus-within:text-accent absolute left-3 h-5 w-5 transition-colors" />
+          {isLoading ? (
+            <div className="absolute left-3">
+              <InlineLoader />
+            </div>
+          ) : (
+            <Search className="text-muted-foreground group-focus-within:text-accent absolute left-3 h-5 w-5 transition-colors" />
+          )}
           <Input
             type="text"
-            placeholder="Cari marga kamu (contoh: Sinaga, Lubis)..."
+            placeholder={isLoading ? 'Memuat data marga...' : 'Cari marga kamu (contoh: Sinaga, Lubis)...'}
             className="border-accent/20 focus-visible:ring-accent bg-background/90 h-12 pl-10 text-base shadow-lg backdrop-blur-sm"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             onFocus={() => query.length > 1 && setIsOpen(true)}
+            disabled={isLoading}
           />
           <Button
             type="submit"
             size="icon"
             className="bg-accent hover:bg-accent/90 absolute right-1 h-10 w-10"
+            disabled={isLoading}
           >
             <ChevronRight className="h-5 w-5" />
           </Button>

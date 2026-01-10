@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Alert, AlertDescription } from '@/components/ui/alert';
 import { AlertCircle, Loader2 } from 'lucide-react';
+import { PageLoader } from '@/components/ui/Loader';
 
 /**
  * Maps OAuth error codes from URL to user-friendly Indonesian messages
@@ -73,20 +74,12 @@ function LoginPageContent() {
 
   // Show loading state while checking auth
   if (loading) {
-    return (
-      <div className="flex min-h-[60vh] items-center justify-center">
-        <Loader2 className="text-accent h-8 w-8 animate-spin" />
-      </div>
-    );
+    return <PageLoader text="Memuat..." />;
   }
 
   // Don't render login form if already authenticated (will redirect)
   if (user) {
-    return (
-      <div className="flex min-h-[60vh] items-center justify-center">
-        <Loader2 className="text-accent h-8 w-8 animate-spin" />
-      </div>
-    );
+    return <PageLoader text="Mengalihkan..." />;
   }
 
   // Combine errors from OAuth callback and auth context
@@ -168,11 +161,7 @@ function LoginPageContent() {
 }
 
 function LoginPageFallback() {
-  return (
-    <div className="flex min-h-[60vh] items-center justify-center">
-      <Loader2 className="text-accent h-8 w-8 animate-spin" />
-    </div>
-  );
+  return <PageLoader text="Memuat..." />;
 }
 
 export default function LoginPage() {
