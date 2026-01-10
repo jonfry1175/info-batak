@@ -10,9 +10,13 @@ export const metadata: Metadata = {
   description:
     'Portal informasi digital tentang sejarah, budaya, adat, aksara, dan sistem marga Batak.',
   icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon.ico',
-    apple: '/logo.png',
+    icon: [
+      { url: '/favicon.png', sizes: '32x32' },
+      { url: '/icon-192.png', sizes: '192x192' },
+    ],
+    apple: [
+      { url: '/apple-icon.png', sizes: '180x180' },
+    ],
   },
 };
 

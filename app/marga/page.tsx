@@ -6,6 +6,7 @@ import { Rumpun } from '@/types';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Badge } from '@/components/ui/badge';
 import { MargaFilterVisual } from '@/components/marga/MargaFilterVisual';
+import { PageHero } from '@/components/layout/PageHero';
 import Link from 'next/link';
 
 export default function MargaPage() {
@@ -18,16 +19,20 @@ export default function MargaPage() {
       : allMarga.filter((marga) => marga.rumpun === selectedRumpun);
 
   return (
-    <div className="w-full px-4 py-12">
-      <div className="mx-auto max-w-7xl">
-        {/* Header */}
-        <div className="mb-12 text-center">
-          <h1 className="text-accent mb-4 text-4xl font-bold md:text-5xl">Sistem Marga Batak</h1>
-          <p className="text-foreground/70 mx-auto max-w-3xl text-lg">
-            Jelajahi sistem kekeluargaan Batak yang diwariskan secara patrilineal dari garis ayah ke
-            anak laki-laki. Pilih rumpun untuk melihat marga-marga yang termasuk di dalamnya.
-          </p>
-        </div>
+    <>
+      <PageHero
+        title="Sistem Marga Batak"
+        subtitle="Jelajahi sistem kekeluargaan Batak yang diwariskan secara patrilineal dari garis ayah ke anak laki-laki"
+        backgroundImage="/images/homepage/card-marga.jpg"
+      />
+      <div className="w-full px-4 py-12">
+        <div className="mx-auto max-w-7xl">
+          {/* Filter Info */}
+          <div className="mb-8 text-center">
+            <p className="text-foreground/70 mx-auto max-w-3xl">
+              Pilih rumpun untuk melihat marga-marga yang termasuk di dalamnya.
+            </p>
+          </div>
 
         {/* Visual Filter Section */}
         <MargaFilterVisual 
@@ -112,5 +117,6 @@ export default function MargaPage() {
         </div>
       </div>
     </div>
+    </>
   );
 }

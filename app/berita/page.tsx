@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { getAllBerita, getFeaturedBerita } from '@/lib/data';
 import { BeritaKategori } from '@/types';
+import { PageHero } from '@/components/layout/PageHero';
 
 const kategoriList: BeritaKategori[] = [
   'Budaya',
@@ -35,17 +36,15 @@ export default function BeritaPage() {
       : allBerita.filter((b) => b.kategori === selectedKategori);
 
   return (
-    <div className="w-full px-4 py-12">
-      <div className="mx-auto max-w-7xl">
-        <div className="mb-12 text-center">
-          <h1 className="text-accent mb-4 text-4xl font-bold md:text-5xl">
-            Berita &amp; Artikel
-          </h1>
-          <p className="text-foreground/70 mx-auto max-w-3xl text-lg">
-            Informasi terkini dan artikel menarik seputar budaya, sejarah, dan kehidupan
-            masyarakat Batak
-          </p>
-        </div>
+    <>
+      <PageHero
+        title="Berita & Artikel"
+        subtitle="Informasi terkini dan artikel menarik seputar budaya, sejarah, dan kehidupan masyarakat Batak"
+        backgroundImage="/images/homepage/hero-lake-toba.jpg"
+        overlayOpacity={0.5}
+      />
+      <div className="w-full px-4 py-12">
+        <div className="mx-auto max-w-7xl">
 
         {featuredBerita.length > 0 && (
           <FeaturedSection berita={featuredBerita} formatTanggal={formatTanggal} />
@@ -62,8 +61,9 @@ export default function BeritaPage() {
           filteredBerita={filteredBerita}
           formatTanggal={formatTanggal}
         />
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

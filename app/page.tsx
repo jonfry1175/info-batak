@@ -1,11 +1,15 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { TahukahKamu } from '@/components/ui/TahukahKamu';
 import { Button } from '@/components/ui/button';
 import { MediaCard } from '@/components/ui/MediaCard';
 import { Hero } from '@/components/home/Hero';
 import { PhilosophySection } from '@/components/home/PhilosophySection';
+import { getLatestBerita } from '@/lib/data';
 
 export default function Home() {
+  const latestBerita = getLatestBerita(3);
+
   return (
     <div className="w-full bg-background overflow-x-hidden">
       <Hero />
@@ -135,24 +139,28 @@ export default function Home() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[1, 2, 3].map((i) => (
-              <div key={i} className="group cursor-pointer">
-                <div className="bg-muted aspect-video rounded-xl mb-4 overflow-hidden relative">
-                   <div className="absolute inset-0 bg-accent/10 flex items-center justify-center text-muted-foreground/50 font-medium">
-                     Coming Soon
-                   </div>
+            {latestBerita.map((berita) => (
+              <Link key={berita.id} href={`/berita/${berita.slug}`} className="group cursor-pointer">
+                <div className="aspect-video rounded-xl mb-4 overflow-hidden relative">
+                  <Image
+                    src={berita.gambar}
+                    alt={berita.gambarAlt}
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    unoptimized
+                  />
                 </div>
                 <div className="space-y-2">
                   <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                    <span className="bg-accent/10 text-accent px-2 py-0.5 rounded-full">Berita</span>
-                    <span>• 25 Des 2025</span>
+                    <span className="bg-accent/10 text-accent px-2 py-0.5 rounded-full">{berita.kategori}</span>
+                    <span>• {new Date(berita.tanggal).toLocaleDateString('id-ID', { day: 'numeric', month: 'short', year: 'numeric' })}</span>
                   </div>
-                  <h3 className="font-bold text-lg group-hover:text-accent transition-colors">Artikel Menarik Segera Hadir</h3>
+                  <h3 className="font-bold text-lg group-hover:text-accent transition-colors">{berita.judul}</h3>
                   <p className="text-muted-foreground text-sm line-clamp-2">
-                    Kami sedang menyiapkan konten berkualitas mendalam tentang sejarah dan perkembangan budaya Batak di era modern.
+                    {berita.ringkasan}
                   </p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
           <div className="mt-8 text-center sm:hidden">
