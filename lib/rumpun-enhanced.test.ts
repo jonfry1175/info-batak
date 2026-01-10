@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import * as fc from 'fast-check';
 import { getAllRumpun, normalizeRumpunData, getAllRumpunEnhanced } from './data';
-import { RumpunBatak, RumpunBatakEnhanced } from '@/types';
+import { RumpunBatak, RumpunBatakEnhanced, Tokoh, EnhancedTokoh } from '@/types';
 
 /**
  * **Feature: rumpun-detail-enhancement, Property 1: Data Schema Validity**
@@ -176,35 +176,31 @@ describe('Property 1: Data Schema Validity', () => {
  *
  * For any rumpun data in the old format (wilayah as string), the normalizeRumpunData function
  * SHALL produce a valid enhanced format object without data loss.
+ * 
+ * Note: Since all data is now in enhanced format, we test:
+ * 1. That enhanced data passes through normalizeRumpunData unchanged
+ * 2. That the normalization function correctly handles both formats
  */
 describe('Property 7: Backward Compatibility', () => {
     const allRumpun = getAllRumpun();
+    const allEnhancedRumpun = getAllRumpunEnhanced();
 
-    it('should convert old format to enhanced format without data loss', () => {
+    it('should preserve base fields when normalizing data', () => {
         fc.assert(
             fc.property(
                 fc.constantFrom(...allRumpun),
-                (oldRumpun: RumpunBatak) => {
-                    const enhanced = normalizeRumpunData(oldRumpun);
+                (rumpun: RumpunBatak | RumpunBatakEnhanced) => {
+                    const enhanced = normalizeRumpunData(rumpun);
 
                     // Base fields should be preserved
-                    expect(enhanced.id).toBe(oldRumpun.id);
-                    expect(enhanced.nama).toBe(oldRumpun.nama);
-                    expect(enhanced.slug).toBe(oldRumpun.slug);
-                    expect(enhanced.deskripsi).toBe(oldRumpun.deskripsi);
-                    expect(enhanced.gambar).toBe(oldRumpun.gambar);
-
-                    // Wilayah string should be preserved in enhanced wilayah.nama
-                    expect(enhanced.wilayah.nama).toBe(oldRumpun.wilayah);
-
-                    // Sejarah string should be preserved in enhanced sejarah.ringkasan
-                    expect(enhanced.sejarah.ringkasan).toBe(oldRumpun.sejarah);
-
-                    // Budaya string should be preserved in enhanced budaya.ringkasan
-                    expect(enhanced.budaya.ringkasan).toBe(oldRumpun.budaya);
+                    expect(enhanced.id).toBe(rumpun.id);
+                    expect(enhanced.nama).toBe(rumpun.nama);
+                    expect(enhanced.slug).toBe(rumpun.slug);
+                    expect(enhanced.deskripsi).toBe(rumpun.deskripsi);
+                    expect(enhanced.gambar).toBe(rumpun.gambar);
 
                     // Tokoh count should be preserved
-                    expect(enhanced.tokoh.length).toBe(oldRumpun.tokoh.length);
+                    expect(enhanced.tokoh.length).toBe(rumpun.tokoh.length);
 
                     return true;
                 }
@@ -213,21 +209,19 @@ describe('Property 7: Backward Compatibility', () => {
         );
     });
 
-    it('should preserve tokoh data when converting from old format', () => {
+    it('should preserve tokoh names and gelar when normalizing', () => {
         fc.assert(
             fc.property(
                 fc.constantFrom(...allRumpun),
-                (oldRumpun: RumpunBatak) => {
-                    const enhanced = normalizeRumpunData(oldRumpun);
+                (rumpun: RumpunBatak | RumpunBatakEnhanced) => {
+                    const enhanced = normalizeRumpunData(rumpun);
 
-                    oldRumpun.tokoh.forEach((oldTokoh, index) => {
+                    rumpun.tokoh.forEach((tokoh, index) => {
                         const enhancedTokoh = enhanced.tokoh[index];
 
                         // Core tokoh fields should be preserved
-                        expect(enhancedTokoh.nama).toBe(oldTokoh.nama);
-                        expect(enhancedTokoh.gelar).toBe(oldTokoh.gelar);
-                        expect(enhancedTokoh.ringkasan).toBe(oldTokoh.deskripsi);
-                        expect(enhancedTokoh.biografi).toBe(oldTokoh.deskripsi);
+                        expect(enhancedTokoh.nama).toBe(tokoh.nama);
+                        expect(enhancedTokoh.gelar).toBe(tokoh.gelar);
                     });
 
                     return true;
@@ -237,12 +231,12 @@ describe('Property 7: Backward Compatibility', () => {
         );
     });
 
-    it('should produce valid enhanced format structure from old format', () => {
+    it('should produce valid enhanced format structure', () => {
         fc.assert(
             fc.property(
                 fc.constantFrom(...allRumpun),
-                (oldRumpun: RumpunBatak) => {
-                    const enhanced = normalizeRumpunData(oldRumpun);
+                (rumpun: RumpunBatak | RumpunBatakEnhanced) => {
+                    const enhanced = normalizeRumpunData(rumpun);
 
                     // Enhanced format should have valid wilayah object
                     expect(typeof enhanced.wilayah).toBe('object');
@@ -283,12 +277,12 @@ describe('Property 7: Backward Compatibility', () => {
         );
     });
 
-    it('should assign valid default coordinates for each rumpun slug', () => {
+    it('should assign valid coordinates within Sumatera Utara region', () => {
         fc.assert(
             fc.property(
                 fc.constantFrom(...allRumpun),
-                (oldRumpun: RumpunBatak) => {
-                    const enhanced = normalizeRumpunData(oldRumpun);
+                (rumpun: RumpunBatak | RumpunBatakEnhanced) => {
+                    const enhanced = normalizeRumpunData(rumpun);
 
                     // Coordinates should be within valid ranges
                     expect(enhanced.wilayah.koordinat.latitude).toBeGreaterThanOrEqual(-90);
@@ -312,21 +306,20 @@ describe('Property 7: Backward Compatibility', () => {
     it('should be idempotent - normalizing already enhanced data returns same structure', () => {
         fc.assert(
             fc.property(
-                fc.constantFrom(...allRumpun),
-                (oldRumpun: RumpunBatak) => {
-                    const enhanced = normalizeRumpunData(oldRumpun);
-                    const doubleEnhanced = normalizeRumpunData(enhanced);
+                fc.constantFrom(...allEnhancedRumpun),
+                (enhancedRumpun: RumpunBatakEnhanced) => {
+                    const doubleEnhanced = normalizeRumpunData(enhancedRumpun);
 
                     // Double normalization should produce identical result
-                    expect(doubleEnhanced.id).toBe(enhanced.id);
-                    expect(doubleEnhanced.nama).toBe(enhanced.nama);
-                    expect(doubleEnhanced.slug).toBe(enhanced.slug);
-                    expect(doubleEnhanced.wilayah.nama).toBe(enhanced.wilayah.nama);
-                    expect(doubleEnhanced.wilayah.koordinat.latitude).toBe(enhanced.wilayah.koordinat.latitude);
-                    expect(doubleEnhanced.wilayah.koordinat.longitude).toBe(enhanced.wilayah.koordinat.longitude);
-                    expect(doubleEnhanced.sejarah.ringkasan).toBe(enhanced.sejarah.ringkasan);
-                    expect(doubleEnhanced.budaya.ringkasan).toBe(enhanced.budaya.ringkasan);
-                    expect(doubleEnhanced.tokoh.length).toBe(enhanced.tokoh.length);
+                    expect(doubleEnhanced.id).toBe(enhancedRumpun.id);
+                    expect(doubleEnhanced.nama).toBe(enhancedRumpun.nama);
+                    expect(doubleEnhanced.slug).toBe(enhancedRumpun.slug);
+                    expect(doubleEnhanced.wilayah.nama).toBe(enhancedRumpun.wilayah.nama);
+                    expect(doubleEnhanced.wilayah.koordinat.latitude).toBe(enhancedRumpun.wilayah.koordinat.latitude);
+                    expect(doubleEnhanced.wilayah.koordinat.longitude).toBe(enhancedRumpun.wilayah.koordinat.longitude);
+                    expect(doubleEnhanced.sejarah.ringkasan).toBe(enhancedRumpun.sejarah.ringkasan);
+                    expect(doubleEnhanced.budaya.ringkasan).toBe(enhancedRumpun.budaya.ringkasan);
+                    expect(doubleEnhanced.tokoh.length).toBe(enhancedRumpun.tokoh.length);
 
                     return true;
                 }

@@ -29,7 +29,7 @@ Implementasi enhancement halaman detail rumpun Batak dengan peta interaktif, kon
     - **Validates: Requirements 5.5**
     - Test file: `lib/rumpun-enhanced.test.ts`
 
-- [-] 2. Update data rumpun.json dengan enhanced content
+- [x] 2. Update data rumpun.json dengan enhanced content
   - [x] 2.1 Update data Batak Toba dengan format enhanced
     - Tambah koordinat wilayah (2.6167, 98.8500 - Danau Toba)
     - Tambah kabupaten dan landmarks
@@ -43,25 +43,25 @@ Implementasi enhancement halaman detail rumpun Batak dengan peta interaktif, kon
     - Struktur sama seperti Toba
     - _Requirements: 5.1, 5.2, 5.3, 5.4_
 
-  - [-] 2.3 Update data 4 rumpun lainnya (Simalungun, Pakpak, Angkola, Mandailing)
+  - [x] 2.3 Update data 4 rumpun lainnya (Simalungun, Pakpak, Angkola, Mandailing)
     - Koordinat dan data enhanced untuk masing-masing
     - _Requirements: 5.1, 5.2, 5.3, 5.4_
 
-- [ ] 3. Checkpoint - Verifikasi data layer
+- [x] 3. Checkpoint - Verifikasi data layer
   - Ensure semua data rumpun sudah dalam format enhanced
   - Ensure backward compatibility function bekerja
   - Ensure all property tests pass
   - Ask user if questions arise
 
-- [ ] 4. Buat komponen MapEmbed
-  - [ ] 4.1 Implementasi komponen `components/sejarah/MapEmbed.tsx`
+- [-] 4. Buat komponen MapEmbed
+  - [x] 4.1 Implementasi komponen `components/sejarah/MapEmbed.tsx`
     - Google Maps iframe embed dengan koordinat
     - Fallback image jika embed gagal
     - Responsive container 16:9 aspect ratio
     - Loading skeleton state
     - _Requirements: 1.1, 1.4, 1.5_
 
-  - [ ] 4.2 Write property test untuk map coordinate validation
+  - [-] 4.2 Write property test untuk map coordinate validation
     - **Property 2: Map Component Data Binding**
     - **Validates: Requirements 1.1, 1.3**
     - Test file: `components/sejarah/MapEmbed.test.tsx`
