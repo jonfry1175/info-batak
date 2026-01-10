@@ -28,18 +28,18 @@ Implementasi fitur diskusi per halaman untuk InfoBatak.id menggunakan TypeScript
     - DELETE: Only like owner
     - _Requirements: 8.2, 4.5_
 
-- [-] 2. Create TypeScript Types and Data Layer
-  - [ ] 2.1 Add discussion types to types/index.ts
+- [x] 2. Create TypeScript Types and Data Layer
+  - [x] 2.1 Add discussion types to types/index.ts
     - Comment, CommentWithUser, CommentWithReplies, CommentLike interfaces
     - DiscussionError type and error messages
     - _Requirements: 1.2, 8.3_
-  - [ ] 2.2 Create lib/discussion.ts with Supabase queries
+  - [x] 2.2 Create lib/discussion.ts with Supabase queries
     - fetchComments(pagePath, page, limit): Fetch paginated comments with user info and like counts
     - createComment(pagePath, content, parentId?): Create new comment
     - deleteComment(commentId): Delete comment (cascade handled by DB)
     - toggleLike(commentId): Add or remove like
     - _Requirements: 1.1, 2.1, 4.1, 4.2, 5.2_
-  - [ ] 2.3 Write property tests for data layer
+  - [x] 2.3 Write property tests for data layer
     - **Property 5: Comment Creation** - Valid comments are persisted correctly
     - **Property 15: Comment Data Completeness** - Stored comments have all required fields
     - **Validates: Requirements 2.1, 8.3**
