@@ -108,26 +108,26 @@ Implementasi fitur halaman detail marga dengan navigasi dari card marga ke halam
     - **Property 3: Conditional Section Rendering**
     - **Validates: Requirements 3.1, 3.2, 4.1, 4.2, 4.3, 5.1, 5.2, 5.4, 6.1, 6.2, 6.3, 7.4**
 
-- [ ] 5. Checkpoint - Verifikasi halaman detail
+- [x] 5. Checkpoint - Verifikasi halaman detail
   - Ensure halaman detail render dengan benar
   - Ensure sections conditional rendering bekerja
   - Ensure map menampilkan lokasi
   - Ask user if questions arise
 
-- [ ] 6. Final testing dan polish
-  - [ ] 6.1 Test navigasi end-to-end
+- [x] 6. Final testing dan polish
+  - [x] 6.1 Test navigasi end-to-end
     - Klik card → navigasi ke detail → klik back → kembali ke list
     - _Requirements: 1.1, 2.4_
 
-  - [ ] 6.2 Test 404 handling
+  - [x] 6.2 Test 404 handling
     - Akses `/marga/invalid-slug` → tampilkan 404
     - _Requirements: 1.3_
 
-  - [ ] 6.3 Test partial data handling
+  - [x] 6.3 Test partial data handling
     - Marga tanpa detail data → tampilkan info dasar saja
     - _Requirements: 7.4_
 
-- [ ] 7. Final checkpoint - Verifikasi semua fitur
+- [x] 7. Final checkpoint - Verifikasi semua fitur
   - Ensure semua routes berfungsi
   - Ensure navigasi dari card ke detail benar
   - Ensure map menampilkan lokasi dengan benar
