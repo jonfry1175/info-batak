@@ -38,7 +38,7 @@ Implementasi fitur halaman detail marga dengan navigasi dari card marga ke halam
     - **Property 4: Data Schema Validity**
     - **Validates: Requirements 7.2, 7.6**
 
-- [ ] 2. Checkpoint - Verifikasi data layer
+- [x] 2. Checkpoint - Verifikasi data layer
   - Ensure types compile tanpa error
   - Ensure data functions return correct data
   - Ask user if questions arise
