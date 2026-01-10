@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { TahukahKamu } from '@/components/ui/TahukahKamu';
+import { UmpasaUmpamaSection } from '@/components/ui/UmpasaUmpamaSection';
 import { Button } from '@/components/ui/button';
 import { MediaCard } from '@/components/ui/MediaCard';
 import { Hero } from '@/components/home/Hero';
@@ -122,6 +123,13 @@ export default function Home() {
           <div className="mx-auto max-w-4xl">
             <TahukahKamu />
           </div>
+        </div>
+      </section>
+
+      {/* Sastra Lisan: Umpasa & Umpama */}
+      <section className="px-4 py-24 bg-background">
+        <div className="container mx-auto max-w-7xl">
+          <UmpasaUmpamaSection />
         </div>
       </section>
 

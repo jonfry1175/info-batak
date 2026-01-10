@@ -5,9 +5,10 @@ import { getImagesByCategory } from '@/lib/data';
 import { PageHero } from '@/components/layout/PageHero';
 import { MediaCard } from '@/components/ui/MediaCard';
 import { Button } from '@/components/ui/button';
+import { UmpasaUmpamaSection } from '@/components/ui/UmpasaUmpamaSection';
 import Link from 'next/link';
 import Image from 'next/image';
-import { PlayCircle, Music, Move, Scissors, BookOpen, Quote } from 'lucide-react';
+import { PlayCircle, Music, Move, Scissors, BookOpen } from 'lucide-react';
 
 export default function KesenianPage() {
   // Get images for galleries
@@ -284,46 +285,7 @@ export default function KesenianPage() {
           </section>
 
           {/* Sastra Lisan */}
-          <section id="sastra" className="mb-24 scroll-mt-24">
-            <div className="relative overflow-hidden rounded-3xl bg-foreground text-background p-8 md:p-16 text-center">
-              <div className="absolute inset-0 bg-[url('/images/pattern-batak.png')] opacity-10" />
-              <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-transparent" />
-              
-              <div className="relative z-10 mx-auto max-w-3xl">
-                <div className="mb-6 flex justify-center">
-                  <div className="rounded-full bg-background/10 p-4 backdrop-blur-sm">
-                    <Quote className="h-8 w-8 text-accent" />
-                  </div>
-                </div>
-                
-                <h2 className="mb-8 text-3xl font-bold md:text-4xl">Sastra Lisan: Umpasa & Umpama</h2>
-                
-                <div className="mb-10 space-y-2">
-                  <p className="text-xl italic font-medium md:text-2xl text-background/90">
-                    &quot;Annon do haganupan di bagasan, annon do hasangapon di uhum&quot;
-                  </p>
-                  <p className="text-background/60">
-                    (Kehormatan bukan terletak pada pakaian, tetapi pada perilaku yang baik)
-                  </p>
-                </div>
-
-                <div className="grid gap-6 text-left md:grid-cols-2 text-background/80">
-                  <div className="rounded-xl bg-background/5 p-6 backdrop-blur-sm border border-white/10">
-                    <h3 className="mb-2 font-bold text-accent">Umpasa (Pantun)</h3>
-                    <p className="text-sm">
-                      Digunakan dalam upacara adat untuk menyampaikan berkat (pasu-pasu). Memiliki sampiran dan isi yang rimanya teratur.
-                    </p>
-                  </div>
-                  <div className="rounded-xl bg-background/5 p-6 backdrop-blur-sm border border-white/10">
-                    <h3 className="mb-2 font-bold text-accent">Umpama (Perumpamaan)</h3>
-                    <p className="text-sm">
-                      Ungkapan kiasan yang mengambil contoh dari alam atau sifat binatang untuk menasihati kebijaksanaan hidup.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+          <UmpasaUmpamaSection />
 
         </div>
       </div>

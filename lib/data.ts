@@ -237,6 +237,10 @@ export function getUmpasaExamples() {
   return getBahasaData().umpasa.examples;
 }
 
+export function getProverbsExamples() {
+  return getBahasaData().proverbs.examples;
+}
+
 export function getKinshipTerms() {
   return getBahasaData().kinshipTerminology;
 }
