@@ -10,7 +10,8 @@ import {
   PakaianData,
   BahasaData,
   Berita,
-  BeritaKategori
+  BeritaKategori,
+  RumpunBatak
 } from '@/types';
 import faktaData from '@/content/data/fakta.json';
 import margaData from '@/content/data/marga.json';
@@ -20,6 +21,7 @@ import kulinerData from '@/content/data/kuliner.json';
 import pakaianData from '@/content/data/pakaian.json';
 import bahasaData from '@/content/data/bahasa.json';
 import beritaData from '@/content/data/berita.json';
+import rumpunData from '@/content/data/rumpun.json';
 
 export function getAllFakta(): Fakta[] {
   return faktaData as Fakta[];
@@ -230,4 +232,13 @@ export function getLatestBerita(count: number = 6): Berita[] {
   return getAllBerita()
     .sort((a, b) => new Date(b.tanggal).getTime() - new Date(a.tanggal).getTime())
     .slice(0, count);
+}
+
+// Rumpun Batak functions
+export function getAllRumpun(): RumpunBatak[] {
+  return rumpunData as RumpunBatak[];
+}
+
+export function getRumpunBySlug(slug: string): RumpunBatak | undefined {
+  return getAllRumpun().find((rumpun) => rumpun.slug === slug);
 }

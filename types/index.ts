@@ -331,6 +331,25 @@ export interface BahasaData {
 }
 
 
+// Rumpun Batak types
+export interface Tokoh {
+  nama: string;
+  gelar: string;
+  deskripsi: string;
+}
+
+export interface RumpunBatak {
+  id: string;
+  nama: string;
+  slug: string;
+  deskripsi: string;
+  gambar: string;
+  sejarah: string;
+  budaya: string;
+  wilayah: string;
+  tokoh: Tokoh[];
+}
+
 // Auth types (Supabase)
 export interface UserProfile {
   id: string;
