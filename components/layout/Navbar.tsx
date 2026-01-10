@@ -61,7 +61,7 @@ export function Navbar() {
             aria-label="InfoBatak.id - Kembali ke Beranda"
           >
             <Image
-              src="/logo.png"
+              src="/logo-web.png"
               alt="InfoBatak.id Logo"
               width={112}
               height={112}
