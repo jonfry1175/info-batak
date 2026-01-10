@@ -12,7 +12,10 @@ import {
   BahasaData,
   Berita,
   BeritaKategori,
-  RumpunBatak
+  RumpunBatak,
+  RumpunBatakEnhanced,
+  EnhancedTokoh,
+  Tokoh
 } from '@/types';
 import faktaData from '@/content/data/fakta.json';
 import margaData from '@/content/data/marga.json';
@@ -269,4 +272,91 @@ export function getAllRumpun(): RumpunBatak[] {
 
 export function getRumpunBySlug(slug: string): RumpunBatak | undefined {
   return getAllRumpun().find((rumpun) => rumpun.slug === slug);
+}
+
+// Default coordinates for each rumpun
+const defaultCoordinates: Record<string, { latitude: number; longitude: number }> = {
+  toba: { latitude: 2.6167, longitude: 98.8500 },
+  karo: { latitude: 3.1000, longitude: 98.5000 },
+  simalungun: { latitude: 2.9500, longitude: 99.0500 },
+  pakpak: { latitude: 2.5500, longitude: 98.3000 },
+  angkola: { latitude: 1.5000, longitude: 99.2000 },
+  mandailing: { latitude: 0.8500, longitude: 99.5500 }
+};
+
+function getDefaultCoordinates(slug: string): { latitude: number; longitude: number } {
+  return defaultCoordinates[slug] || { latitude: 2.5, longitude: 98.5 };
+}
+
+function normalizeTokohData(tokoh: Tokoh): EnhancedTokoh {
+  return {
+    nama: tokoh.nama,
+    gelar: tokoh.gelar,
+    foto: undefined,
+    tahunLahir: undefined,
+    tahunWafat: undefined,
+    bidang: tokoh.gelar || 'Tokoh',
+    ringkasan: tokoh.deskripsi,
+    biografi: tokoh.deskripsi,
+    pencapaian: []
+  };
+}
+
+function isEnhancedFormat(data: RumpunBatak | RumpunBatakEnhanced): data is RumpunBatakEnhanced {
+  return typeof data.wilayah === 'object' && data.wilayah !== null && 'koordinat' in data.wilayah;
+}
+
+export function normalizeRumpunData(data: RumpunBatak | RumpunBatakEnhanced): RumpunBatakEnhanced {
+  // If already in enhanced format, return as-is
+  if (isEnhancedFormat(data)) {
+    return data;
+  }
+
+  // Convert old format to new format
+  const oldData = data as RumpunBatak;
+  const coords = getDefaultCoordinates(oldData.slug);
+
+  return {
+    id: oldData.id,
+    nama: oldData.nama,
+    slug: oldData.slug,
+    deskripsi: oldData.deskripsi,
+    gambar: oldData.gambar,
+    wilayah: {
+      nama: oldData.wilayah,
+      deskripsi: oldData.wilayah,
+      koordinat: coords,
+      kabupaten: [],
+      landmarks: []
+    },
+    sejarah: {
+      ringkasan: oldData.sejarah,
+      asalUsul: oldData.sejarah,
+      kerajaan: undefined,
+      perlawananKolonial: undefined,
+      eraModern: undefined,
+      timeline: [],
+      images: undefined
+    },
+    budaya: {
+      ringkasan: oldData.budaya,
+      sistemKekerabatan: { deskripsi: '' },
+      musikTarian: { deskripsi: '' },
+      pakaian: { deskripsi: '' },
+      rumahAdat: { deskripsi: '' },
+      upacaraAdat: { deskripsi: '' },
+      gallery: undefined
+    },
+    tokoh: oldData.tokoh.map(normalizeTokohData)
+  };
+}
+
+export function getRumpunEnhancedBySlug(slug: string): RumpunBatakEnhanced | undefined {
+  const rumpun = getRumpunBySlug(slug);
+  if (!rumpun) return undefined;
+  return normalizeRumpunData(rumpun);
+}
+
+export function getAllRumpunEnhanced(): RumpunBatakEnhanced[] {
+  return getAllRumpun().map(normalizeRumpunData);
 }
