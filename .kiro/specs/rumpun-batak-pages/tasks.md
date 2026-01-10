@@ -37,15 +37,16 @@ Implementasi fitur halaman rumpun Batak dengan card visual dan halaman detail un
     - File: `public/images/rumpun/placeholder.jpg`
     - _Requirements: 1.3_
 
-- [ ] 3. Buat komponen RumpunCard
-  - [ ] 3.1 Implementasi komponen `components/sejarah/RumpunCard.tsx`
+- [x] 3. Buat komponen RumpunCard
+read prompts/expert-ui-ux-visual.md
+  - [x] 3.1 Implementasi komponen `components/sejarah/RumpunCard.tsx`
     - Card dengan gambar, nama, dan deskripsi
     - Clickable dengan Link ke `/sejarah/[slug]`
     - Hover animation dengan Framer Motion
     - Image fallback handling
     - _Requirements: 1.1, 1.2, 1.3, 2.1_
 
-  - [ ] 3.2 Write property test untuk card rendering
+  - [x] 3.2 Write property test untuk card rendering
     - **Property 1: Card Rendering Completeness**
     - **Validates: Requirements 1.1, 1.2**
 
