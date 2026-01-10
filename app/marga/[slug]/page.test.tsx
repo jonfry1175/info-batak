@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest';
 import { render, screen, cleanup } from '@testing-library/react';
 import * as fc from 'fast-check';
 import MargaDetailPage from './page';
-import { getAllMarga, getMargaDetailBySlug } from '@/lib/data';
+import { getAllMarga, getFullMargaBySlug, getMargaDetailBySlug } from '@/lib/data';
 import { Marga } from '@/types';
 
 /**
@@ -18,12 +18,14 @@ describe('Property 2: Basic Info Rendering Completeness', () => {
   it('should render hero with title, rumpun badge, imagery, and back link for any marga', async () => {
     await fc.assert(
       fc.asyncProperty(fc.constantFrom(...allMarga), async (marga: Marga) => {
+        const expected = getFullMargaBySlug(marga.slug);
         render(await MargaDetailPage({ params: Promise.resolve({ slug: marga.slug }) }));
 
         const title = screen.getByText(marga.nama);
         expect(title).toBeInTheDocument();
 
-        const rumpunBadges = screen.getAllByText(new RegExp(`^${marga.rumpun}$`, 'i'));
+        const rumpunLabel = expected?.rumpun ?? marga.rumpun;
+        const rumpunBadges = screen.getAllByText(new RegExp(`^${rumpunLabel}$`, 'i'));
         expect(rumpunBadges.length).toBeGreaterThan(0);
 
         const heroImage = screen.getByAltText(`Ilustrasi marga ${marga.nama}`);
