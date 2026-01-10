@@ -1,0 +1,295 @@
+[
+  {
+    "margaId": "26",
+    "slug": "harahap",
+    "sejarah": "Marga Harahap berasal dari Tapanuli Selatan dan merupakan salah satu marga terbesar di Angkola. Mereka adalah keturunan dari Ompu Toga Langit yang sering dikaitkan dengan sejarah Islam awal (Kesultanan Aru) di wilayah tersebut, meskipun versi lain menyebut garis keturunan dari Batak Toba (Si Raja Batak).",
+    "asalUsul": "Leluhurnya, Ompu Toga Langit, diyakini mendirikan kampung di wilayah Padang Bolak/Angkola. Harahap adalah saudara marga Siregar (sama-sama keturunan Lontung dalam beberapa versi atau memiliki kaitan erat).",
+    "tarombo": {
+      "description": "Tarombo Harahap sering dikaitkan dengan garis keturunan yang memiliki pengaruh Islam kuat sejak awal.",
+      "ancestors": [
+        {
+          "nama": "Ompu Toga Langit",
+          "deskripsi": "Leluhur utama marga Harahap."
+        },
+        {
+          "nama": "Sutan Bugis",
+          "deskripsi": "Tokoh leluhur dalam legenda Harahap."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Harahap (Padang Bolak)",
+          "deskripsi": "Kelompok terbesar di wilayah Padang Lawas Utara."
+        },
+        {
+          "nama": "Harahap (Angkola)",
+          "deskripsi": "Bermukim di sekitar Batang Angkola dan Sipirok."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Padang Bolak dan Padangsidimpuan",
+      "deskripsi": "Wilayah Tapanuli Selatan, khususnya Padang Bolak, adalah basis tradisional marga Harahap.",
+      "latitude": 1.5000,
+      "longitude": 99.6000,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Padang Lawas Utara/Tapanuli Selatan"
+    },
+    "tradisi": [
+      "Horja Godang dengan adat Harahap yang kental",
+      "Pakaian adat yang didominasi warna merah dan emas khas Angkola"
+    ],
+    "tokoh": [
+      {
+        "nama": "Burhanuddin Harahap",
+        "gelar": "Mr.",
+        "bidang": "Politik",
+        "deskripsi": "Perdana Menteri Indonesia ke-9."
+      },
+      {
+        "nama": "Rinto Harahap",
+        "gelar": "-",
+        "bidang": "Seni",
+        "deskripsi": "Musisi legendaris Indonesia."
+      }
+    ],
+    "relatedMargas": ["siregar", "hasibuan"],
+    "updatedAt": "2025-01-10"
+  },
+  {
+    "margaId": "27",
+    "slug": "siregar",
+    "sejarah": "Marga Siregar adalah keturunan Toga Siregar, anak dari Raja Lontung. Mereka bermigrasi dari Muara (Toba) ke wilayah Angkola dan menjadi salah satu marga dominan di Sipirok dan sekitarnya.",
+    "asalUsul": "Berasal dari Muara, Tapanuli Utara. Toga Siregar memiliki 4 anak: Silo, Dongoran, Silali, Siagian. Di Angkola, Siregar Dongoran dan Siagian cukup dominan.",
+    "tarombo": {
+      "description": "Tarombo Siregar terbagi menjadi empat cabang utama (Silo, Dongoran, Silali, Siagian).",
+      "ancestors": [
+        {
+          "nama": "Toga Siregar",
+          "deskripsi": "Leluhur marga Siregar dari Muara."
+        },
+        {
+          "nama": "Raja Lontung",
+          "deskripsi": "Ayah Toga Siregar."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Siregar Dongoran",
+          "deskripsi": "Dominan di wilayah Sipirok."
+        },
+        {
+          "nama": "Siregar Siagian",
+          "deskripsi": "Banyak ditemukan di wilayah Angkola."
+        },
+        {
+          "nama": "Siregar Silo",
+          "deskripsi": "Cabang lain dari Siregar."
+        },
+        {
+          "nama": "Siregar Silali",
+          "deskripsi": "Cabang Sili-Sili."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Sipirok, Tapanuli Selatan",
+      "deskripsi": "Sipirok adalah pusat budaya marga Siregar di Tanah Angkola.",
+      "latitude": 1.6000,
+      "longitude": 99.2833,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Tapanuli Selatan"
+    },
+    "tradisi": [
+      "Marsalap Ari (gotong royong)",
+      "Adat perkawinan dengan tutur sapa yang santun (partuturon)"
+    ],
+    "tokoh": [
+      {
+        "nama": "Raja Inal Siregar",
+        "gelar": "Letjen TNI",
+        "bidang": "Militer/Pemerintahan",
+        "deskripsi": "Mantan Gubernur Sumatera Utara yang menggagas 'Marsipature Hutanabe'."
+      },
+      {
+        "nama": "Merari Siregar",
+        "gelar": "-",
+        "bidang": "Sastra",
+        "deskripsi": "Sastrawan Angkatan Balai Pustaka, penulis 'Azab dan Sengsara'."
+      }
+    ],
+    "relatedMargas": ["harahap", "ritonga"],
+    "updatedAt": "2025-01-10"
+  },
+  {
+    "margaId": "28",
+    "slug": "rambe",
+    "sejarah": "Marga Rambe berasal dari keturunan Toga Simamora (Debataraja) yang merantau ke wilayah Angkola dan Padang Lawas. Mereka banyak bermukim di daerah Dolok Sigompulon.",
+    "asalUsul": "Leluhur Rambe berasal dari Pakkat (Humbang). Tuan Habonaran Rambe adalah tokoh yang membuka wilayah di selatan.",
+    "tarombo": {
+      "description": "Tarombo Rambe terkait dengan marga Simamora (Manalu, Purba, Debataraja).",
+      "ancestors": [
+        {
+          "nama": "Tuan Sumerham",
+          "deskripsi": "Leluhur marga Rambe."
+        },
+        {
+          "nama": "Tuan Habonaran",
+          "deskripsi": "Tokoh penyebar marga Rambe ke wilayah Angkola."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Rambe (Dolok Sigompulon)",
+          "deskripsi": "Kelompok utama di wilayah Padang Lawas Utara."
+        },
+        {
+          "nama": "Rambe (Rantau)",
+          "deskripsi": "Menyebar di Tapanuli Selatan."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Dolok Sigompulon, Padang Lawas Utara",
+      "deskripsi": "Kecamatan Dolok adalah basis utama marga Rambe di wilayah selatan.",
+      "latitude": 1.7000,
+      "longitude": 99.6500,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Padang Lawas Utara"
+    },
+    "tradisi": [
+      "Partangiangan Rambe",
+      "Adat Dalihan Na Tolu khas Angkola"
+    ],
+    "tokoh": [
+      {
+        "nama": "Rambe Kamarul Zaman",
+        "gelar": "-",
+        "bidang": "Politik",
+        "deskripsi": "Politisi senior Partai Golkar."
+      },
+      {
+        "nama": "T.S. Rambe",
+        "gelar": "-",
+        "bidang": "Pendidikan",
+        "deskripsi": "Tokoh pendidikan di Tapanuli Selatan."
+      }
+    ],
+    "relatedMargas": ["simamora", "manalu"],
+    "updatedAt": "2025-01-10"
+  },
+  {
+    "margaId": "29",
+    "slug": "batubara",
+    "sejarah": "Marga Batubara adalah bagian dari kelompok Borbor (Tuan Sariburaja). Mereka menyebar dari Toba ke wilayah Angkola dan Mandailing, beradaptasi dengan budaya setempat.",
+    "asalUsul": "Leluhur marga ini adalah Raja Dohang Batubara, keturunan dari Raja Hatorusan/Raja Borbor.",
+    "tarombo": {
+      "description": "Tarombo Batubara masuk dalam rumpun Borbor Marsada.",
+      "ancestors": [
+        {
+          "nama": "Raja Dohang Batubara",
+          "deskripsi": "Leluhur marga Batubara."
+        },
+        {
+          "nama": "Tuan Sariburaja",
+          "deskripsi": "Leluhur utama kelompok Borbor."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Batubara (Angkola)",
+          "deskripsi": "Kelompok yang bermukim di Sipirok dan sekitarnya."
+        },
+        {
+          "nama": "Batubara (Mandailing)",
+          "deskripsi": "Menyebar ke wilayah Mandailing."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Sipirok dan Panyabungan",
+      "deskripsi": "Tersebar merata di wilayah Angkola dan Mandailing.",
+      "latitude": 1.6000,
+      "longitude": 99.3000,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Tapanuli Selatan"
+    },
+    "tradisi": [
+      "Pesta Adat Borbor Marsada",
+      "Keikutsertaan dalam Horja Godang Angkola"
+    ],
+    "tokoh": [
+      {
+        "nama": "Ucok Baba (Usnan Batubara)",
+        "gelar": "-",
+        "bidang": "Seni/Hiburan",
+        "deskripsi": "Komedian dan aktor terkenal."
+      },
+      {
+        "nama": "Juli Batubara",
+        "gelar": "-",
+        "bidang": "Politik",
+        "deskripsi": "Politisi muda."
+      }
+    ],
+    "relatedMargas": ["lubis", "pasaribu"],
+    "updatedAt": "2025-01-10"
+  },
+  {
+    "margaId": "30",
+    "slug": "pohan",
+    "sejarah": "Marga Pohan (Sibagotni Pohan) berasal dari Balige, Toba, namun memiliki keturunan yang migrasi ke Angkola (Barus, Sipirok) dan menjadi bagian masyarakat Angkola.",
+    "asalUsul": "Berasal dari Sibagotni Pohan, anak Tuan Sorbadibanua. Di Angkola, mereka sering berafiliasi dengan Siagian atau Simanjuntak, atau tetap memakai Pohan.",
+    "tarombo": {
+      "description": "Tarombo Pohan adalah induk dari marga-marga Pohan (Tampubolon, dll), namun di Angkola nama Pohan sering dipakai sebagai marga langsung.",
+      "ancestors": [
+        {
+          "nama": "Sibagotni Pohan",
+          "deskripsi": "Leluhur marga Pohan."
+        },
+        {
+          "nama": "Tuan Sorbadibanua",
+          "deskripsi": "Ayah Sibagotni Pohan."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Pohan (Barus)",
+          "deskripsi": "Kelompok Pohan yang bermukim di wilayah Barus dan Tapanuli Tengah/Selatan."
+        },
+        {
+          "nama": "Pohan (Sipirok)",
+          "deskripsi": "Kelompok Pohan di Angkola."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Barus dan Sipirok",
+      "deskripsi": "Wilayah perantauan Pohan di selatan meliputi jalur Barus hingga ke pedalaman Angkola.",
+      "latitude": 1.9833,
+      "longitude": 98.4000,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Tapanuli Tengah/Selatan"
+    },
+    "tradisi": [
+      "Adat istiadat Angkola yang diadopsi penuh",
+      "Partangiangan Pohan"
+    ],
+    "tokoh": [
+      {
+        "nama": "Ramadhan Pohan",
+        "gelar": "-",
+        "bidang": "Politik",
+        "deskripsi": "Politisi dan mantan anggota DPR RI."
+      },
+      {
+        "nama": "Zainul Arifin Pohan",
+        "gelar": "-",
+        "bidang": "Pendidikan",
+        "deskripsi": "Akademisi."
+      }
+    ],
+    "relatedMargas": ["siagian", "simanjuntak"],
+    "updatedAt": "2025-01-10"
+  }
+]

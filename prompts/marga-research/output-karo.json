@@ -1,0 +1,258 @@
+[
+  {
+    "margaId": "8",
+    "slug": "sembiring",
+    "sejarah": "Marga Sembiring adalah salah satu dari Merga Silima (lima marga induk) Karo. Nama Sembiring berasal dari 'si' + 'mbiring' yang berarti 'yang si hitam', mencerminkan asal-usul yang diyakini berkaitan dengan kedatangan leluhur dari India Selatan (Tamil/Keling) yang berasimilasi dengan penduduk setempat.",
+    "asalUsul": "Leluhur Sembiring diyakini datang dari India Selatan melalui pesisir. Marga ini unik karena mengizinkan pernikahan sesama marga Sembiring asalkan berbeda sub-marga (misal Sembiring Brahmana dengan Sembiring Tekang).",
+    "tarombo": {
+      "description": "Tarombo Sembiring terbagi dalam dua kelompok besar berdasarkan tradisi: Si Man Biang (memakan anjing) dan Si La Man Biang (tidak memakan anjing, terkait tradisi Hindu).",
+      "ancestors": [
+        {
+          "nama": "Nenek Moyang Sembiring",
+          "deskripsi": "Tokoh leluhur yang diyakini berasal dari keturunan India Selatan."
+        },
+        {
+          "nama": "Pagid Meliala",
+          "deskripsi": "Salah satu leluhur awal sub-marga Sembiring Meliala."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Sembiring Brahmana",
+          "deskripsi": "Sub-marga yang termasuk kelompok Si La Man Biang (Pantang memakan anjing)."
+        },
+        {
+          "nama": "Sembiring Meliala",
+          "deskripsi": "Sub-marga yang memiliki peran penting sebagai penghulu di Sarinembah."
+        },
+        {
+          "nama": "Sembiring Pelawi",
+          "deskripsi": "Sub-marga yang dikenal menurunkan tokoh Guru Patimpus Sembiring Pelawi."
+        },
+        {
+          "nama": "Sembiring Kembaren",
+          "deskripsi": "Sub-marga yang termasuk kelompok Si Man Biang."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Tanah Karo",
+      "deskripsi": "Tersebar luas di Dataran Tinggi Karo, dengan konsentrasi sub-marga tertentu di wilayah seperti Sarinembah dan sekitarnya.",
+      "latitude": 3.107,
+      "longitude": 98.490,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Karo"
+    },
+    "tradisi": [
+      "Ritual pembakaran jenazah dan menghanyutkan abu ke sungai (pada masa lalu untuk kelompok Si La Man Biang)",
+      "Pernikahan semarga antar sub-marga yang berbeda (impal)"
+    ],
+    "tokoh": [
+      {
+        "nama": "Guru Patimpus Sembiring Pelawi",
+        "gelar": "Pendiri Kota Medan",
+        "bidang": "Sejarah",
+        "deskripsi": "Tokoh besar yang mendirikan Kota Medan."
+      },
+      {
+        "nama": "Tifatul Sembiring",
+        "gelar": "Ir.",
+        "bidang": "Politik",
+        "deskripsi": "Politisi dan mantan Menteri Komunikasi dan Informatika."
+      }
+    ],
+    "relatedMargas": ["tarigan", "karo-karo"],
+    "updatedAt": "2025-01-10"
+  },
+  {
+    "margaId": "9",
+    "slug": "tarigan",
+    "sejarah": "Marga Tarigan adalah bagian dari Merga Silima yang memiliki hubungan sejarah erat dengan wilayah Simalungun. Diyakini berasal dari marga Purba di Simalungun yang bermigrasi ke Karo.",
+    "asalUsul": "Nama Tarigan konon berasal dari peristiwa 'tarik hotang' (menarik rotan) untuk menentukan batas wilayah. Leluhur awalnya bermukim di daerah Purba, Simalungun sebelum menyebar ke Karo.",
+    "tarombo": {
+      "description": "Tarombo Tarigan mencatat hubungan erat dengan marga Purba (Simalungun) dan terbagi menjadi banyak cabang sub-marga.",
+      "ancestors": [
+        {
+          "nama": "Tuan Tarigan",
+          "deskripsi": "Leluhur awal yang menurunkan marga Tarigan."
+        },
+        {
+          "nama": "Pangulu Tambak Bawang",
+          "deskripsi": "Tokoh leluhur yang terkait dengan asal-usul Tarigan Tambak."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Tarigan Sibero",
+          "deskripsi": "Salah satu sub-marga terbesar yang tersebar di wilayah Juhar."
+        },
+        {
+          "nama": "Tarigan Tambak",
+          "deskripsi": "Cabang yang berasal dari daerah Dolog Silou."
+        },
+        {
+          "nama": "Tarigan Gerneng",
+          "deskripsi": "Sub-marga yang banyak bermukim di Cingkes."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Juhar dan Tiga Binanga",
+      "deskripsi": "Wilayah Juhar sering disebut sebagai pusat persebaran Tarigan Sibero, sementara daerah perbatasan Simalungun menjadi asal Tarigan lainnya.",
+      "latitude": 3.050,
+      "longitude": 98.300,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Karo"
+    },
+    "tradisi": [
+      "Kerja Tahun (pesta tahunan) yang meriah di kampung-kampung basis Tarigan",
+      "Tradisi Guro-guro Aron sebagai ajang muda-mudi"
+    ],
+    "tokoh": [
+      {
+        "nama": "Likas Tarigan",
+        "gelar": "-",
+        "bidang": "Politik",
+        "deskripsi": "Tokoh perempuan Karo dan istri pahlawan nasional Djamin Ginting."
+      },
+      {
+        "nama": "Henry Guntur Tarigan",
+        "gelar": "Prof. Dr.",
+        "bidang": "Akademisi",
+        "deskripsi": "Ahli bahasa dan penulis buku tata bahasa yang produktif."
+      }
+    ],
+    "relatedMargas": ["purba", "ginting"],
+    "updatedAt": "2025-01-10"
+  },
+  {
+    "margaId": "10",
+    "slug": "karo-karo",
+    "sejarah": "Marga Karo-Karo adalah salah satu Merga Silima yang menyandang nama etnisnya sendiri. Marga ini memiliki posisi penting dan tersebar luas di seluruh Tanah Karo hingga Langkat.",
+    "asalUsul": "Leluhur Karo-Karo diyakini berasal dari Simalungun (Purba) yang masuk ke dataran tinggi Karo. Kisah lain menyebutkan kaitan dengan India Selatan melalui seorang panglima bernama Karo.",
+    "tarombo": {
+      "description": "Tarombo Karo-Karo memiliki banyak cabang (sekitar 18 sub-marga) yang menyebar mendirikan kampung-kampung (kuta).",
+      "ancestors": [
+        {
+          "nama": "Nenek Moyang Karo-Karo",
+          "deskripsi": "Tokoh pendiri yang menurunkan berbagai sub-marga Karo-Karo."
+        },
+        {
+          "nama": "Raja Barus",
+          "deskripsi": "Leluhur yang terkait dengan sub-marga Karo-Karo Barus."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Karo-Karo Sitepu",
+          "deskripsi": "Sub-marga yang banyak bermukim di Naman Teran dan sekitarnya."
+        },
+        {
+          "nama": "Karo-Karo Sinulingga",
+          "deskripsi": "Sub-marga yang mendirikan Lingga dan menjadi raja di sana (Sibayak Lingga)."
+        },
+        {
+          "nama": "Karo-Karo Barus",
+          "deskripsi": "Sub-marga yang banyak terdapat di Barusjahe."
+        },
+        {
+          "nama": "Karo-Karo Surbakti",
+          "deskripsi": "Sub-marga yang berkuasa di wilayah Surbakti."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Lingga dan Barusjahe",
+      "deskripsi": "Desa Lingga adalah pusat Sibayak Lingga (Karo-Karo Sinulingga) dengan rumah adat yang masih terawat.",
+      "latitude": 3.120,
+      "longitude": 98.520,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Karo"
+    },
+    "tradisi": [
+      "Merdiang Merasah (membersihkan desa) sebelum masa tanam",
+      "Perayaan Pesta Bunga dan Buah sebagai ungkapan syukur hasil panen"
+    ],
+    "tokoh": [
+      {
+        "nama": "Sindoedarsono Sudjojono (Kisah S. Sudjojono)",
+        "gelar": "Pelukis",
+        "bidang": "Seni",
+        "deskripsi": "Maestro pelukis Indonesia yang memiliki darah Karo dari ibunya (Karo-Karo)."
+      },
+      {
+        "nama": "Armen Putu Karo-Karo",
+        "gelar": "-",
+        "bidang": "Jurnalis/Politik",
+        "deskripsi": "Tokoh pers dan politisi dari Tanah Karo."
+      }
+    ],
+    "relatedMargas": ["sinaga", "sembiring"],
+    "updatedAt": "2025-01-10"
+  },
+  {
+    "margaId": "11",
+    "slug": "perangin-angin",
+    "sejarah": "Marga Perangin-angin adalah bagian dari Merga Silima yang memiliki sub-marga terbanyak (sekitar 18). Nama ini sering dikaitkan dengan 'angin' yang membawa mereka berpindah atau sifat yang dinamis.",
+    "asalUsul": "Marga ini menyebar ke segala penjuru mata angin di Tanah Karo. Ada kaitan sejarah dengan Kerajaan Pinem dan migrasi dari Dairi.",
+    "tarombo": {
+      "description": "Tarombo Perangin-angin sangat luas dengan sub-marga yang memiliki wilayah adat masing-masing.",
+      "ancestors": [
+        {
+          "nama": "Raja Enggang",
+          "deskripsi": "Salah satu leluhur yang dikaitkan dengan sub-marga Pinem."
+        },
+        {
+          "nama": "Raja Lambing",
+          "deskripsi": "Tokoh leluhur yang terkait dengan sub-marga Sebayang."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Perangin-angin Bangun",
+          "deskripsi": "Sub-marga yang banyak bermukim di Batukarang."
+        },
+        {
+          "nama": "Perangin-angin Sebayang",
+          "deskripsi": "Sub-marga yang mendirikan kuta Perbesi dan Kuala."
+        },
+        {
+          "nama": "Perangin-angin Pinem",
+          "deskripsi": "Sub-marga yang memiliki hubungan erat dengan Dairi/Pakpak."
+        },
+        {
+          "nama": "Perangin-angin Sukatendel",
+          "deskripsi": "Sub-marga yang berasal dari Sukatendel."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Batukarang dan Kutabuluh",
+      "deskripsi": "Batukarang dan Kutabuluh adalah wilayah basis utama beberapa sub-marga Perangin-angin.",
+      "latitude": 3.080,
+      "longitude": 98.350,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Karo"
+    },
+    "tradisi": [
+      "Naka Lalo, upacara syukuran panen padi",
+      "Musyawarah adat di Jambur (balai desa) untuk menyelesaikan sengketa"
+    ],
+    "tokoh": [
+      {
+        "nama": "Kiras Bangun (Garamata)",
+        "gelar": "Pahlawan Nasional",
+        "bidang": "Perjuangan",
+        "deskripsi": "Pejuang kemerdekaan dari Batukarang yang melawan penjajah Belanda."
+      },
+      {
+        "nama": "Effendy B. Perangin-angin",
+        "gelar": "-",
+        "bidang": "Birokrasi",
+        "deskripsi": "Pejabat tinggi di lingkungan keimigrasian."
+      }
+    ],
+    "relatedMargas": ["ginting", "sembiring"],
+    "updatedAt": "2025-01-10"
+  }
+]

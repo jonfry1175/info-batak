@@ -1,13 +1,15 @@
+import { PageHero } from '@/components/layout/PageHero';
+
 export default function TentangPage() {
   return (
-    <div className="w-full px-4 py-12">
-      <div className="mx-auto max-w-4xl">
-        <h1 className="text-accent mb-6 text-center text-4xl font-bold md:text-5xl">
-          Tentang InfoBatak.id
-        </h1>
-        <p className="text-foreground/70 mx-auto mb-12 max-w-2xl text-center text-lg">
-          Portal digital yang berkomitmen melestarikan dan membagikan kekayaan budaya Batak
-        </p>
+    <>
+      <PageHero
+        title="Tentang InfoBatak.id"
+        subtitle="Portal digital yang berkomitmen melestarikan dan membagikan kekayaan budaya Batak"
+        backgroundImage="/images/homepage/hero-pustaha.jpg"
+      />
+      <div className="w-full px-4 py-12">
+        <div className="mx-auto max-w-4xl">
 
         {/* Visi & Misi */}
         <section className="mb-16">
@@ -156,5 +158,6 @@ export default function TentangPage() {
         </section>
       </div>
     </div>
+    </>
   );
 }

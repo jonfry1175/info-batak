@@ -1,0 +1,304 @@
+[
+  {
+    "margaId": "2",
+    "slug": "siahaan",
+    "sejarah": "Marga Siahaan adalah keturunan dari Ompu Somba Debata Siahaan, anak sulung dari Tuan Somanimbil. Posisi ini menempatkan Siahaan sebagai 'hahan doli' (abang tertua) di antara marga-marga keturunan Tuan Somanimbil lainnya seperti Simanjuntak dan Hutagaol.",
+    "asalUsul": "Berasal dari Balige, nama Siahaan memiliki arti 'si hahaan' atau 'yang disulungkan', merujuk pada statusnya sebagai anak pertama. Tradisi mencatat bahwa Ompu Somba Debata Siahaan membuka huta (kampung) awal di wilayah Balige.",
+    "tarombo": {
+      "description": "Tarombo Siahaan sangat dihormati karena status kesulungannya dalam silsilah Tuan Somanimbil.",
+      "ancestors": [
+        {
+          "nama": "Ompu Somba Debata Siahaan",
+          "gelar": "Raja Siahaan",
+          "deskripsi": "Leluhur pertama marga Siahaan, anak sulung Tuan Somanimbil."
+        },
+        {
+          "nama": "Tuan Somanimbil",
+          "deskripsi": "Ayah dari Ompu Somba Debata Siahaan, Simanjuntak, dan Hutagaol."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Siahaan Raja Marhite Ombun",
+          "deskripsi": "Salah satu dari tujuh cabang besar (Siahaan Juara Monang, Marhite Ombun, dll) keturunan Siahaan."
+        },
+        {
+          "nama": "Siahaan Raja Hinalang",
+          "deskripsi": "Cabang Siahaan yang banyak bermukim di daerah Hinalang."
+        },
+        {
+          "nama": "Siahaan Tuan Mauli",
+          "deskripsi": "Cabang Siahaan yang tersebar di wilayah Paindoan."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Balige",
+      "deskripsi": "Balige merupakan bona pasogit (kampung halaman) marga Siahaan, tempat Tugu Ompu Somba Debata Siahaan berdiri.",
+      "latitude": 2.3339,
+      "longitude": 99.0664,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Toba"
+    },
+    "tradisi": [
+      "Pesta Tugu Siahaan yang rutin diadakan oleh Parsadaan Pomparan Somba Debata (PPSD)",
+      "Tradisi memanggil 'Abang' kepada sesama marga Siahaan oleh marga adik (Simanjuntak/Hutagaol) sebagai penghormatan"
+    ],
+    "tokoh": [
+      {
+        "nama": "Maruarar Siahaan",
+        "gelar": "SH",
+        "bidang": "Hukum",
+        "deskripsi": "Mantan Hakim Konstitusi Republik Indonesia."
+      },
+      {
+        "nama": "Marcell Siahaan",
+        "gelar": "-",
+        "bidang": "Seni",
+        "deskripsi": "Penyanyi dan musisi terkenal Indonesia."
+      }
+    ],
+    "relatedMargas": ["simbolon", "napitupulu"],
+    "updatedAt": "2025-01-10"
+  },
+  {
+    "margaId": "3",
+    "slug": "simbolon",
+    "sejarah": "Marga Simbolon adalah salah satu marga tertua yang berasal dari Pulau Samosir dan merupakan bagian dari kelompok Parna (Pomparanni Raja Nai Ambaton). Dalam tradisi Parna, Simbolon memegang peranan penting sebagai salah satu marga tertua.",
+    "asalUsul": "Berasal dari Pangururan, Samosir. Simbolon Tua adalah anak dari Raja Bolon. Keturunannya berkembang menjadi 'Si Pitu Sohe' atau tujuh kelompok turunan Simbolon.",
+    "tarombo": {
+      "description": "Tarombo Simbolon sangat kompleks dengan pembagian menjadi tujuh sohe (kelompok) utama yang menyebar ke berbagai wilayah.",
+      "ancestors": [
+        {
+          "nama": "Simbolon Tua",
+          "deskripsi": "Leluhur marga Simbolon yang menurunkan tujuh cabang utama."
+        },
+        {
+          "nama": "Tuan Sori Raja",
+          "deskripsi": "Salah satu putra Simbolon Tua yang menurunkan beberapa cabang Simbolon."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Simbolon Tuan Nahoda Raja",
+          "deskripsi": "Cabang tertua dari Si Pitu Sohe."
+        },
+        {
+          "nama": "Simbolon Suhut Nihuta",
+          "deskripsi": "Cabang yang banyak menetap dan menjaga kampung halaman (Huta)."
+        },
+        {
+          "nama": "Simbolon Sirimbang",
+          "deskripsi": "Salah satu cabang dari Si Pitu Sohe."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Pangururan",
+      "deskripsi": "Wilayah pesisir Pulau Samosir yang menjadi pusat persebaran awal marga Simbolon.",
+      "latitude": 2.6047,
+      "longitude": 98.7181,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Samosir"
+    },
+    "tradisi": [
+      "Pesta Bolon Simbolon yang mengumpulkan seluruh keturunan PSBI (Punguan Simbolon dohot Boruna Indonesia)",
+      "Larangan menikah dengan sesama marga yang tergabung dalam Parna (Pomparanni Raja Nai Ambaton)"
+    ],
+    "tokoh": [
+      {
+        "nama": "Effendi Simbolon",
+        "gelar": "Dr.",
+        "bidang": "Politik",
+        "deskripsi": "Politisi senior dan Ketua Umum PSBI."
+      },
+      {
+        "nama": "Maludin Simbolon",
+        "gelar": "Kolonel",
+        "bidang": "Militer",
+        "deskripsi": "Pejuang kemerdekaan dan tokoh militer terkemuka."
+      }
+    ],
+    "relatedMargas": ["sinaga", "sitorus"],
+    "updatedAt": "2025-01-10"
+  },
+  {
+    "margaId": "4",
+    "slug": "sinaga",
+    "sejarah": "Marga Sinaga adalah keturunan dari Toga Sinaga, anak dari Raja Lontung. Dikenal dengan sebutan 'Si Sia Ama, Si Tolu Ompu' karena terbagi menjadi tiga cabang besar yang masing-masing memiliki tiga turunan lagi.",
+    "asalUsul": "Berasal dari wilayat Urat di Pulau Samosir. Sinaga diyakini sebagai anak sulung Raja Lontung (dalam beberapa versi tarombo).",
+    "tarombo": {
+      "description": "Struktur tarombo Sinaga unik dengan konsep Si Sia Ama (Sembilan Bapak/Cabang) dari Tolu Ompu (Tiga Kakek).",
+      "ancestors": [
+        {
+          "nama": "Toga Sinaga",
+          "deskripsi": "Leluhur utama marga Sinaga, anak Raja Lontung."
+        },
+        {
+          "nama": "Raja Lontung",
+          "deskripsi": "Leluhur besar yang menurunkan marga-marga Lontung termasuk Sinaga, Situmorang, Pandiangan, dan lainnya."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Sinaga Bonor",
+          "deskripsi": "Salah satu dari tiga cabang utama (ompu) Sinaga."
+        },
+        {
+          "nama": "Sinaga Ratus",
+          "deskripsi": "Salah satu dari tiga cabang utama (ompu) Sinaga."
+        },
+        {
+          "nama": "Sinaga Uruk",
+          "deskripsi": "Salah satu dari tiga cabang utama (ompu) Sinaga."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Urat, Samosir",
+      "deskripsi": "Desa Urat di Samosir dianggap sebagai bona pasogit marga Sinaga.",
+      "latitude": 2.5333,
+      "longitude": 98.8167,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Samosir"
+    },
+    "tradisi": [
+      "Musyawarah Toga Sinaga dalam Parsadaan Pomparan Toga Sinaga dohot Boruna (PPTSB)",
+      "Ziarah ke Tugu Toga Sinaga di Urat, Samosir"
+    ],
+    "tokoh": [
+      {
+        "nama": "Anicetus Bongsu Antonius Sinaga",
+        "gelar": "Mgr.",
+        "bidang": "Agama",
+        "deskripsi": "Uskup Agung Medan yang dihormati."
+      },
+      {
+        "nama": "Ferdinand Sinaga",
+        "gelar": "-",
+        "bidang": "Olahraga",
+        "deskripsi": "Pemain sepak bola profesional Indonesia."
+      }
+    ],
+    "relatedMargas": ["sitorus", "simbolon"],
+    "updatedAt": "2025-01-10"
+  },
+  {
+    "margaId": "5",
+    "slug": "hutabarat",
+    "sejarah": "Marga Hutabarat adalah keturunan dari Si Raja Nabarat, anak sulung dari Guru Mangaloksa. Mereka merupakan bagian dari 'Si Opat Pusoran' (Empat Pusaran) bersama Panggabean, Hutagalung, dan Hutatoruan.",
+    "asalUsul": "Berasal dari Tarutung, Rura Silindung. Nama Hutabarat secara harfiah bisa berarti kampung barat, namun sering dikaitkan dengan makna 'berlawanan' atau penjaga sisi barat dalam konteks adat.",
+    "tarombo": {
+      "description": "Tarombo Hutabarat dimulai dari Guru Mangaloksa, yang merupakan cucu Si Raja Sobu.",
+      "ancestors": [
+        {
+          "nama": "Si Raja Nabarat",
+          "deskripsi": "Leluhur marga Hutabarat, anak pertama Guru Mangaloksa."
+        },
+        {
+          "nama": "Guru Mangaloksa",
+          "deskripsi": "Tokoh besar yang membuka wilayah Silindung dan menurunkan marga-marga Si Opat Pusoran."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Hutabarat Sosunggulon",
+          "deskripsi": "Cabang keturunan anak pertama Si Raja Nabarat."
+        },
+        {
+          "nama": "Hutabarat Hapoltahan",
+          "deskripsi": "Cabang keturunan anak kedua Si Raja Nabarat."
+        },
+        {
+          "nama": "Hutabarat Pohan",
+          "deskripsi": "Cabang keturunan anak ketiga Si Raja Nabarat."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Tarutung",
+      "deskripsi": "Lembah Rura Silindung, khususnya Tarutung, adalah pusat asal marga Hutabarat.",
+      "latitude": 2.0232,
+      "longitude": 98.9669,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Tapanuli Utara"
+    },
+    "tradisi": [
+      "Partangiangan Bolon marga Hutabarat",
+      "Tradisi Padan (sumpah setia) dengan marga Silaban yang melarang perkawinan antar keduanya"
+    ],
+    "tokoh": [
+      {
+        "nama": "Irma Hutabarat",
+        "gelar": "-",
+        "bidang": "Aktivis",
+        "deskripsi": "Aktivis sosial dan politisi Indonesia."
+      },
+      {
+        "nama": "Felix Hutabarat",
+        "gelar": "-",
+        "bidang": "Hukum",
+        "deskripsi": "Tokoh hukum yang pernah menjabat di Kejaksaan."
+      }
+    ],
+    "relatedMargas": ["napitupulu", "siahaan"],
+    "updatedAt": "2025-01-10"
+  },
+  {
+    "margaId": "6",
+    "slug": "napitupulu",
+    "sejarah": "Marga Napitupulu adalah keturunan dari Raja Napitupulu, anak ketiga dari Sonak Malela. Termasuk dalam kelompok marga Sonak Malela bersama Simangunsong, Marpaung, dan Pardede.",
+    "asalUsul": "Berasal dari Balige. Nama Napitupulu bermakna 'yang ketujuh puluh'. Legenda menyebutkan kaitan dengan angka tujuh puluh dalam perjalanannya.",
+    "tarombo": {
+      "description": "Tarombo Napitupulu terbagi menjadi dua cabang utama dari anak-anak Raja Napitupulu.",
+      "ancestors": [
+        {
+          "nama": "Raja Napitupulu",
+          "deskripsi": "Leluhur marga Napitupulu, anak Sonak Malela."
+        },
+        {
+          "nama": "Sonak Malela",
+          "deskripsi": "Leluhur yang menurunkan empat marga: Simangunsong, Marpaung, Napitupulu, Pardede."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Salim Babiat (Sangkar Nihuta)",
+          "deskripsi": "Cabang keturunan anak pertama Raja Napitupulu."
+        },
+        {
+          "nama": "Ulubalang Raja (Parjanggut Huting)",
+          "deskripsi": "Cabang keturunan anak kedua Raja Napitupulu."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Balige",
+      "deskripsi": "Wilayah Balige dan sekitarnya (seperti Sangkar Nihuta) adalah basis utama marga Napitupulu.",
+      "latitude": 2.3339,
+      "longitude": 99.0664,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Toba"
+    },
+    "tradisi": [
+      "Gondang Napitupulu dalam upacara adat",
+      "Kisah 'Batu Basiha' yang menjadi legenda lokal dan situs budaya terkait marga ini"
+    ],
+    "tokoh": [
+      {
+        "nama": "Adian Napitupulu",
+        "gelar": "SH",
+        "bidang": "Politik",
+        "deskripsi": "Politisi dan anggota DPR RI yang vokal."
+      },
+      {
+        "nama": "Jimmy Napitupulu",
+        "gelar": "-",
+        "bidang": "Olahraga",
+        "deskripsi": "Wasit sepak bola internasional asal Indonesia."
+      }
+    ],
+    "relatedMargas": ["siahaan", "simbolon"],
+    "updatedAt": "2025-01-10"
+  }
+]

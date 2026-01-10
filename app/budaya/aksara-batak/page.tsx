@@ -1,20 +1,20 @@
 import { Gallery } from '@/components/ui/Gallery';
 import { getImagesByCategory } from '@/lib/data';
+import { PageHero } from '@/components/layout/PageHero';
 
 export default function AksaraBatakPage() {
   // Get images for Pustaha gallery
   const pustahaImages = getImagesByCategory('Budaya', 'Aksara Batak');
 
   return (
-    <div className="w-full px-4 py-12">
-      <div className="mx-auto max-w-5xl">
-        {/* Header */}
-        <div className="mb-12 text-center">
-          <h1 className="text-accent mb-4 text-4xl font-bold md:text-5xl">Aksara Batak</h1>
-          <p className="text-foreground/70 mx-auto max-w-3xl text-lg">
-            Jelajahi kekayaan aksara tradisional Batak yang menjadi warisan budaya leluhur
-          </p>
-        </div>
+    <>
+      <PageHero
+        title="Aksara Batak"
+        subtitle="Jelajahi kekayaan aksara tradisional Batak yang menjadi warisan budaya leluhur"
+        backgroundImage="/images/homepage/card-aksara.jpg"
+      />
+      <div className="w-full px-4 py-12">
+        <div className="mx-auto max-w-5xl">
 
         {/* Definition */}
         <section className="mb-16">
@@ -233,7 +233,8 @@ export default function AksaraBatakPage() {
             dengan mempelajari, menggunakan, dan mengajarkannya kepada generasi selanjutnya.
           </p>
         </section>
+        </div>
       </div>
-    </div>
+    </>
   );
 }

@@ -1,5 +1,6 @@
 import { Gallery } from '@/components/ui/Gallery';
 import { getImagesByCategory } from '@/lib/data';
+import { PageHero } from '@/components/layout/PageHero';
 
 export default function KesenianPage() {
   // Get images for galleries
@@ -8,12 +9,14 @@ export default function KesenianPage() {
   const ulosImages = getImagesByCategory('Budaya', 'Ulos');
 
   return (
-    <div className="w-full px-4 py-12">
-      <div className="mx-auto max-w-5xl">
-        <h1 className="text-accent mb-6 text-4xl font-bold md:text-5xl">Kesenian Batak</h1>
-        <p className="text-foreground/70 mb-12 text-lg">
-          Menjelajahi kekayaan seni musik, tari, dan kerajinan tradisional Batak
-        </p>
+    <>
+      <PageHero
+        title="Kesenian Batak"
+        subtitle="Menjelajahi kekayaan seni musik, tari, dan kerajinan tradisional Batak"
+        backgroundImage="/images/homepage/card-kesenian.jpg"
+      />
+      <div className="w-full px-4 py-12">
+        <div className="mx-auto max-w-5xl">
 
         {/* Musik Tradisional */}
         <section className="mb-16">
@@ -250,7 +253,8 @@ export default function KesenianPage() {
             </div>
           </div>
         </section>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
