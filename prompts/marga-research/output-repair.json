@@ -1,0 +1,181 @@
+[
+  {
+    "margaId": "1",
+    "slug": "sitorus",
+    "sejarah": "Marga Sitorus adalah keturunan Raja Sitorus, anak dari Raja Sumba, yang merupakan keturunan ketujuh dari Si Raja Batak. Nama Sitorus berarti 'Torop' atau teguh pendirian.",
+    "asalUsul": "Berasal dari Sibisa, Toba. Raja Sitorus memiliki tiga anak: Raja Pane, Raja Dori, dan Raja Boltok. Termasuk dalam rumpun Nai Rasaon (Manurung, Sitorus, Sirait, Butarbutar).",
+    "tarombo": {
+      "description": "Tarombo Sitorus terbagi menjadi tiga cabang utama dari putra-putra Raja Sitorus.",
+      "ancestors": [
+        {
+          "nama": "Raja Sitorus",
+          "deskripsi": "Leluhur utama marga Sitorus."
+        },
+        {
+          "nama": "Raja Sumba",
+          "deskripsi": "Ayah dari Raja Sitorus."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Sitorus Pane",
+          "deskripsi": "Keturunan anak pertama, Raja Pane."
+        },
+        {
+          "nama": "Sitorus Dori",
+          "deskripsi": "Keturunan anak kedua, Raja Dori."
+        },
+        {
+          "nama": "Sitorus Boltok",
+          "deskripsi": "Keturunan anak ketiga, Raja Boltok."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Sibisa, Toba",
+      "deskripsi": "Sibisa dianggap sebagai bona pasogit marga Sitorus, meskipun banyak menyebar ke Balige, Porsea, dan Laguboti.",
+      "latitude": 2.5833,
+      "longitude": 99.0167,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Toba"
+    },
+    "tradisi": [
+      "Pesta Tugu Sitorus di Sibisa",
+      "Kekerabatan kuat dengan rumpun Nai Rasaon"
+    ],
+    "tokoh": [
+      {
+        "nama": "D.L. Sitorus",
+        "gelar": "-",
+        "bidang": "Bisnis",
+        "deskripsi": "Pengusaha sukses dan tokoh masyarakat Batak."
+      },
+      {
+        "nama": "Poltak Sitorus",
+        "gelar": "Ir.",
+        "bidang": "Pemerintahan",
+        "deskripsi": "Bupati Toba."
+      }
+    ],
+    "relatedMargas": ["manurung", "sirait"],
+    "updatedAt": "2025-01-11"
+  },
+  {
+    "margaId": "7",
+    "slug": "ginting",
+    "sejarah": "Marga Ginting adalah salah satu dari Merga Silima di Karo. Diyakini berasal dari 'Siwah Sada Ginting' (Sembilan Ginting yang satu) yang bermula dari Gurubenua.",
+    "asalUsul": "Leluhur Ginting bermigrasi dari Kalasan (Pakpak) ke Samosir, Tinjo, dan akhirnya Gurubenua. Nama Ginting berarti 'emas' atau bijaksana.",
+    "tarombo": {
+      "description": "Tarombo Ginting sangat kompleks dengan banyak sub-marga (sekitar 16), termasuk 9 sub-marga utama (Siwah Sada Ginting) seperti Ginting Suka, Ginting Babo, dll.",
+      "ancestors": [
+        {
+          "nama": "Nenek Moyang Ginting",
+          "deskripsi": "Leluhur yang mendirikan kuta Gurubenua."
+        },
+        {
+          "nama": "Leluhur dari Kalasan",
+          "deskripsi": "Leluhur awal yang bermigrasi dari wilayah Kalasan (Pakpak)."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Ginting Suka",
+          "deskripsi": "Sub-marga yang berasal dari desa Suka."
+        },
+        {
+          "nama": "Ginting Babo",
+          "deskripsi": "Sub-marga dari Gurubenua."
+        },
+        {
+          "nama": "Ginting Munte",
+          "deskripsi": "Sub-marga yang berkuasa di wilayah Munte dan Tongging."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Gurubenua dan Suka",
+      "deskripsi": "Gurubenua dan Suka adalah dua desa adat penting bagi sejarah marga Ginting.",
+      "latitude": 3.1167,
+      "longitude": 98.4667,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Karo"
+    },
+    "tradisi": [
+      "Pesta kerja tahun di desa-desa basis Ginting",
+      "Larangan menikah sesama marga Ginting (kecuali sub-marga tertentu dengan aturan khusus di masa lalu, namun kini umumnya dilarang)"
+    ],
+    "tokoh": [
+      {
+        "nama": "Jamin Ginting",
+        "gelar": "Letjen TNI",
+        "bidang": "Militer/Pahlawan Nasional",
+        "deskripsi": "Pahlawan Nasional Indonesia dari Tanah Karo."
+      },
+      {
+        "nama": "Anthony Sinisuka Ginting",
+        "gelar": "-",
+        "bidang": "Olahraga",
+        "deskripsi": "Atlet bulu tangkis dunia."
+      }
+    ],
+    "relatedMargas": ["perangin-angin", "tarigan"],
+    "updatedAt": "2025-01-11"
+  },
+  {
+    "margaId": "21",
+    "slug": "nasution",
+    "sejarah": "Marga Nasution adalah marga Mandailing yang besar dan berpengaruh. Berasal dari keturunan Si Baroar (Sutan Diaru Nasaktion) yang mendirikan kerajaan di Panyabungan Tonga-tonga.",
+    "asalUsul": "Legenda Si Baroar yang ditemukan di hutan oleh Sutan Pulungan. Gelar Nasaktion (Sakti) menjadi asal nama Nasution. Ada juga versi kaitan dengan Pagaruyung.",
+    "tarombo": {
+      "description": "Tarombo Nasution berpusat pada Si Baroar Nan Sakti. Keturunannya menyebar ke seluruh Mandailing Godang.",
+      "ancestors": [
+        {
+          "nama": "Si Baroar (Sutan Diaru Nasaktion)",
+          "deskripsi": "Leluhur pendiri marga Nasution."
+        },
+        {
+          "nama": "Sutan Pulungan",
+          "deskripsi": "Raja yang mengangkat Si Baroar (meski bukan ayah kandung, penting dalam sejarah)."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Nasution Mandailing Godang",
+          "deskripsi": "Kelompok utama di Panyabungan."
+        },
+        {
+          "nama": "Nasution Jambu",
+          "deskripsi": "Cabang keturunan Baginda Tobing."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Panyabungan (Mandailing Godang)",
+      "deskripsi": "Panyabungan adalah pusat sejarah dan kekuasaan marga Nasution.",
+      "latitude": 0.8667,
+      "longitude": 99.5667,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Mandailing Natal"
+    },
+    "tradisi": [
+      "Adat Raja-Raja Mandailing",
+      "Sistem kekerabatan yang kuat dengan gelar Sutan dan Baginda"
+    ],
+    "tokoh": [
+      {
+        "nama": "A.H. Nasution",
+        "gelar": "Jenderal Besar TNI",
+        "bidang": "Militer/Pahlawan Nasional",
+        "deskripsi": "Salah satu tokoh militer terbesar Indonesia, penggagas perang gerilya."
+      },
+      {
+        "nama": "Adnan Buyung Nasution",
+        "gelar": "Prof. Dr.",
+        "bidang": "Hukum",
+        "deskripsi": "Pengacara senior dan aktivis HAM."
+      }
+    ],
+    "relatedMargas": ["lubis", "pulungan"],
+    "updatedAt": "2025-01-11"
+  }
+]

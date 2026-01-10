@@ -5,6 +5,7 @@ const OUTPUT_DIR = path.resolve(process.cwd(), 'prompts/marga-research');
 const FINAL_OUTPUT_PATH = path.resolve(process.cwd(), 'content/data/marga-detail.json');
 
 const BATCH_FILES = [
+    'output-repair.json',
     'output-toba.json',
     'output-karo.json',
     'output-simalungun.json',
