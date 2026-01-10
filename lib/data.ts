@@ -1,6 +1,7 @@
 import {
   Fakta,
   Marga,
+  MargaDetail,
   MediaLibrary,
   MediaImage,
   MediaVideo,
@@ -15,6 +16,7 @@ import {
 } from '@/types';
 import faktaData from '@/content/data/fakta.json';
 import margaData from '@/content/data/marga.json';
+import margaDetailData from '@/content/data/marga-detail.json';
 import mediaData from '@/content/data/media.json';
 import arsitekturData from '@/content/data/arsitektur.json';
 import kulinerData from '@/content/data/kuliner.json';
@@ -37,8 +39,34 @@ export function getAllMarga(): Marga[] {
   return margaData as Marga[];
 }
 
+export function getMargaBySlug(slug: string): Marga | undefined {
+  return getAllMarga().find((marga) => marga.slug === slug);
+}
+
 export function getMargaByRumpun(rumpun: string): Marga[] {
   return getAllMarga().filter((marga) => marga.rumpun === rumpun);
+}
+
+export function getAllMargaSlugs(): string[] {
+  return getAllMarga().map((marga) => marga.slug);
+}
+
+export function getMargaDetailBySlug(slug: string): MargaDetail | undefined {
+  return (margaDetailData as MargaDetail[]).find((detail) => detail.slug === slug);
+}
+
+export function getFullMargaBySlug(slug: string): (Marga & Partial<MargaDetail>) | undefined {
+  const baseMarga = getMargaBySlug(slug);
+
+  if (!baseMarga) {
+    return undefined;
+  }
+
+  const detail = getMargaDetailBySlug(slug);
+  return {
+    ...baseMarga,
+    ...(detail ?? {})
+  };
 }
 
 // Media Library functions

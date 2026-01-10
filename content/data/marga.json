@@ -2,180 +2,210 @@
   {
     "id": "1",
     "nama": "Sitorus",
+    "slug": "sitorus",
     "rumpun": "Toba",
     "deskripsi": "Salah satu marga besar di Batak Toba"
   },
   {
     "id": "2",
     "nama": "Siahaan",
+    "slug": "siahaan",
     "rumpun": "Toba",
     "deskripsi": "Marga Batak Toba yang tersebar luas"
   },
   {
     "id": "3",
     "nama": "Simbolon",
+    "slug": "simbolon",
     "rumpun": "Toba",
     "deskripsi": "Marga Toba dengan sejarah panjang"
   },
   {
     "id": "4",
     "nama": "Sinaga",
+    "slug": "sinaga",
     "rumpun": "Toba",
     "deskripsi": "Marga Toba yang populer"
   },
   {
     "id": "5",
     "nama": "Hutabarat",
+    "slug": "hutabarat",
     "rumpun": "Toba",
     "deskripsi": "Marga Toba dari daerah Tapanuli"
   },
   {
     "id": "6",
     "nama": "Napitupulu",
+    "slug": "napitupulu",
     "rumpun": "Toba",
     "deskripsi": "Marga Toba yang terkenal"
   },
   {
     "id": "7",
     "nama": "Ginting",
+    "slug": "ginting",
     "rumpun": "Karo",
     "deskripsi": "Salah satu dari lima marga utama Karo (merga silima)"
   },
   {
     "id": "8",
     "nama": "Sembiring",
+    "slug": "sembiring",
     "rumpun": "Karo",
     "deskripsi": "Marga Karo yang besar dan terhormat"
   },
   {
     "id": "9",
     "nama": "Tarigan",
+    "slug": "tarigan",
     "rumpun": "Karo",
     "deskripsi": "Bagian dari merga silima Karo"
   },
   {
     "id": "10",
     "nama": "Karo-Karo",
+    "slug": "karo-karo",
     "rumpun": "Karo",
     "deskripsi": "Marga utama Karo"
   },
   {
     "id": "11",
     "nama": "Perangin-angin",
+    "slug": "perangin-angin",
     "rumpun": "Karo",
     "deskripsi": "Salah satu merga silima Karo"
   },
   {
     "id": "12",
     "nama": "Saragih",
+    "slug": "saragih",
     "rumpun": "Simalungun",
     "deskripsi": "Marga Simalungun yang besar"
   },
   {
     "id": "13",
     "nama": "Purba",
+    "slug": "purba",
     "rumpun": "Simalungun",
     "deskripsi": "Marga Simalungun yang populer"
   },
   {
     "id": "14",
     "nama": "Sinaga",
+    "slug": "sinaga",
     "rumpun": "Simalungun",
     "deskripsi": "Marga Simalungun yang tersebar"
   },
   {
     "id": "15",
     "nama": "Damanik",
+    "slug": "damanik",
     "rumpun": "Simalungun",
     "deskripsi": "Marga besar Simalungun"
   },
   {
     "id": "16",
     "nama": "Simatupang",
+    "slug": "simatupang",
     "rumpun": "Simalungun",
     "deskripsi": "Marga Simalungun yang terkenal"
   },
   {
     "id": "17",
     "nama": "Tumanggor",
+    "slug": "tumanggor",
     "rumpun": "Pakpak",
     "deskripsi": "Marga Pakpak yang besar"
   },
   {
     "id": "18",
     "nama": "Manik",
+    "slug": "manik",
     "rumpun": "Pakpak",
     "deskripsi": "Marga utama Pakpak"
   },
   {
     "id": "19",
     "nama": "Banurea",
+    "slug": "banurea",
     "rumpun": "Pakpak",
     "deskripsi": "Marga Pakpak yang terkenal"
   },
   {
     "id": "20",
     "nama": "Bancin",
+    "slug": "bancin",
     "rumpun": "Pakpak",
     "deskripsi": "Marga Pakpak yang populer"
   },
   {
     "id": "21",
     "nama": "Nasution",
+    "slug": "nasution",
     "rumpun": "Mandailing",
     "deskripsi": "Marga besar Mandailing"
   },
   {
     "id": "22",
     "nama": "Lubis",
+    "slug": "lubis",
     "rumpun": "Mandailing",
     "deskripsi": "Marga Mandailing yang tersebar luas"
   },
   {
     "id": "23",
     "nama": "Rangkuti",
+    "slug": "rangkuti",
     "rumpun": "Mandailing",
     "deskripsi": "Marga Mandailing yang terkenal"
   },
   {
     "id": "24",
     "nama": "Daulay",
+    "slug": "daulay",
     "rumpun": "Mandailing",
     "deskripsi": "Marga Mandailing yang populer"
   },
   {
     "id": "25",
     "nama": "Hasibuan",
+    "slug": "hasibuan",
     "rumpun": "Mandailing",
     "deskripsi": "Marga besar Mandailing"
   },
   {
     "id": "26",
     "nama": "Harahap",
+    "slug": "harahap",
     "rumpun": "Angkola",
     "deskripsi": "Marga besar Angkola"
   },
   {
     "id": "27",
     "nama": "Siregar",
+    "slug": "siregar",
     "rumpun": "Angkola",
     "deskripsi": "Marga Angkola yang populer"
   },
   {
     "id": "28",
     "nama": "Rambe",
+    "slug": "rambe",
     "rumpun": "Angkola",
     "deskripsi": "Marga Angkola yang terkenal"
   },
   {
     "id": "29",
     "nama": "Batubara",
+    "slug": "batubara",
     "rumpun": "Angkola",
     "deskripsi": "Marga Angkola yang tersebar"
   },
   {
     "id": "30",
     "nama": "Pohan",
+    "slug": "pohan",
     "rumpun": "Angkola",
     "deskripsi": "Marga Angkola yang terkenal"
   }

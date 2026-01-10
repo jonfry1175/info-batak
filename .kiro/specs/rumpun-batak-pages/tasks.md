@@ -69,14 +69,14 @@ Implementasi fitur halaman rumpun Batak dengan card visual dan halaman detail un
   - Ensure section yang dihapus tidak muncul
   - Ask user if questions arise
 
-- [-] 6. Buat halaman detail rumpun
-  - [ ] 6.1 Buat dynamic route `app/sejarah/[slug]/page.tsx`
+- [x] 6. Buat halaman detail rumpun
+  - [x] 6.1 Buat dynamic route `app/sejarah/[slug]/page.tsx`
     - Implementasi `generateStaticParams` untuk SSG
     - Load data dengan `getRumpunBySlug()`
     - Handle 404 untuk invalid slug dengan `notFound()`
     - _Requirements: 2.2, 2.3_
 
-  - [ ] 6.2 Implementasi layout halaman detail
+  - [x] 6.2 Implementasi layout halaman detail
     - Hero section dengan gambar besar
     - Section sejarah rumpun
     - Section budaya dan tradisi
@@ -84,11 +84,11 @@ Implementasi fitur halaman rumpun Batak dengan card visual dan halaman detail un
     - Back navigation ke `/sejarah`
     - _Requirements: 3.1, 3.2, 3.3, 3.4, 3.5_
 
-  - [ ] 6.3 Write property test untuk detail page structure
+  - [x] 6.3 Write property test untuk detail page structure
     - **Property 3: Detail Page Structure**
     - **Validates: Requirements 3.1, 3.2, 3.3, 3.5**
 
-  - [ ] 6.4 Write property test untuk tokoh display
+  - [x] 6.4 Write property test untuk tokoh display
     - **Property 4: Tokoh Display Correctness**
     - **Validates: Requirements 3.4, 5.2, 5.3**
 

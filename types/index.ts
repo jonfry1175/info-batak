@@ -5,7 +5,54 @@ export interface Marga {
   id: string;
   nama: string;
   rumpun: Rumpun;
+  slug: string;
   deskripsi?: string;
+}
+
+export interface Ancestor {
+  nama: string;
+  gelar?: string;
+  deskripsi?: string;
+}
+
+export interface SubMarga {
+  nama: string;
+  deskripsi?: string;
+}
+
+export interface Tarombo {
+  description: string;
+  ancestors?: Ancestor[];
+  subMargas?: SubMarga[];
+}
+
+export interface Wilayah {
+  nama: string;
+  deskripsi: string;
+  latitude: number;
+  longitude: number;
+  provinsi?: string;
+  kabupaten?: string;
+}
+
+export interface TokohMarga {
+  nama: string;
+  gelar?: string;
+  bidang?: string;
+  deskripsi: string;
+}
+
+export interface MargaDetail {
+  margaId: string;
+  slug: string;
+  sejarah?: string;
+  asalUsul?: string;
+  tarombo?: Tarombo;
+  wilayah?: Wilayah;
+  tradisi?: string[];
+  tokoh?: TokohMarga[];
+  relatedMargas?: string[];
+  updatedAt?: string;
 }
 
 // Fakta (Did You Know) types

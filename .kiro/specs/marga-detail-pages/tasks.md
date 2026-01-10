@@ -6,35 +6,35 @@ Implementasi fitur halaman detail marga dengan navigasi dari card marga ke halam
 
 ## Tasks
 
-- [ ] 1. Setup data layer dan types
-  - [ ] 1.1 Update type Marga di `types/index.ts` untuk menambahkan slug field
+- [x] 1. Setup data layer dan types
+  - [x] 1.1 Update type Marga di `types/index.ts` untuk menambahkan slug field
     - Tambahkan `slug: string` ke interface Marga
     - _Requirements: 7.2_
 
-  - [ ] 1.2 Tambahkan types baru di `types/index.ts` untuk MargaDetail
+  - [x] 1.2 Tambahkan types baru di `types/index.ts` untuk MargaDetail
     - Interface MargaDetail dengan fields: margaId, slug, sejarah, asalUsul, tarombo, wilayah, tradisi, tokoh, relatedMargas, updatedAt
     - Interface Tarombo, Ancestor, SubMarga
     - Interface Wilayah dengan koordinat
     - Interface TokohMarga
     - _Requirements: 7.2_
 
-  - [ ] 1.3 Update `content/data/marga.json` untuk menambahkan slug ke setiap marga
+  - [x] 1.3 Update `content/data/marga.json` untuk menambahkan slug ke setiap marga
     - Generate slug dari nama marga (lowercase, no spaces)
     - _Requirements: 7.2_
 
-  - [ ] 1.4 Buat file data `content/data/marga-detail.json` dengan sample data
+  - [x] 1.4 Buat file data `content/data/marga-detail.json` dengan sample data
     - Buat data detail untuk minimal 3 marga sebagai contoh (Sitorus, Ginting, Nasution)
     - Include semua fields: sejarah, asalUsul, tarombo, wilayah, tradisi
     - _Requirements: 7.1, 7.2_
 
-  - [ ] 1.5 Tambahkan fungsi data access di `lib/data.ts`
+  - [x] 1.5 Tambahkan fungsi data access di `lib/data.ts`
     - `getMargaBySlug(slug)`: return marga by slug
     - `getMargaDetailBySlug(slug)`: return marga detail by slug
     - `getFullMargaBySlug(slug)`: return combined marga + detail
     - `getAllMargaSlugs()`: return all slugs for static generation
     - _Requirements: 7.2, 7.6_
 
-  - [ ] 1.6 Write property test untuk data schema validity
+  - [x] 1.6 Write property test untuk data schema validity
     - **Property 4: Data Schema Validity**
     - **Validates: Requirements 7.2, 7.6**
 
@@ -142,4 +142,3 @@ Implementasi fitur halaman detail marga dengan navigasi dari card marga ke halam
 - Struktur data siap untuk future CRUD operations
 - Menggunakan Next.js static generation untuk performa optimal
 - Property-based tests menggunakan fast-check library
-
