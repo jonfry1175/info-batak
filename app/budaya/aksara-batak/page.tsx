@@ -233,7 +233,8 @@ export default function AksaraBatakPage() {
             dengan mempelajari, menggunakan, dan mengajarkannya kepada generasi selanjutnya.
           </p>
         </section>
+        </div>
       </div>
-    </div>
+    </>
   );
 }

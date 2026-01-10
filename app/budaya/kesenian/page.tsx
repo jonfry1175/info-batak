@@ -253,7 +253,8 @@ export default function KesenianPage() {
             </div>
           </div>
         </section>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
