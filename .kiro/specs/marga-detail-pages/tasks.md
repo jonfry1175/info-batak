@@ -43,13 +43,13 @@ Implementasi fitur halaman detail marga dengan navigasi dari card marga ke halam
   - Ensure data functions return correct data
   - Ask user if questions arise
 
-- [ ] 3. Update halaman Marga utama
-  - [ ] 3.1 Update `app/marga/page.tsx` untuk membuat card clickable
+- [x] 3. Update halaman Marga utama
+  - [x] 3.1 Update `app/marga/page.tsx` untuk membuat card clickable
     - Wrap card dengan Next.js Link ke `/marga/[slug]`
     - Tambahkan hover effect dan cursor pointer
     - _Requirements: 1.1, 1.2_
 
-  - [ ] 3.2 Write property test untuk navigation from card
+  - [x] 3.2 Write property test untuk navigation from card
     - **Property 1: Navigation from Card to Detail**
     - **Validates: Requirements 1.1**
 

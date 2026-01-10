@@ -6,6 +6,7 @@ import { Rumpun } from '@/types';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Badge } from '@/components/ui/badge';
 import { MargaFilterVisual } from '@/components/marga/MargaFilterVisual';
+import Link from 'next/link';
 
 export default function MargaPage() {
   const [selectedRumpun, setSelectedRumpun] = useState<Rumpun | 'Semua'>('Semua');
@@ -61,19 +62,27 @@ export default function MargaPage() {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.8 }}
                 transition={{ duration: 0.3 }}
-                className="group border-foreground/10 bg-foreground/5 hover:border-accent/50 cursor-pointer rounded-lg border p-6 transition-all hover:shadow-lg"
+                className="h-full"
               >
-                <div className="mb-3 flex items-start justify-between">
-                  <h3 className="group-hover:text-accent text-xl font-bold transition-colors">
-                    {marga.nama}
-                  </h3>
-                  <Badge variant="secondary">{marga.rumpun}</Badge>
-                </div>
-                <div className="space-y-2">
-                  {marga.deskripsi && (
-                    <p className="text-foreground/70 text-sm">{marga.deskripsi}</p>
-                  )}
-                </div>
+                <Link
+                  href={`/marga/${marga.slug}`}
+                  className="group flex h-full flex-col rounded-lg border border-foreground/10 bg-foreground/5 p-6 transition-all hover:-translate-y-1 hover:border-accent/50 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
+                >
+                  <div className="mb-3 flex items-start justify-between">
+                    <h3 className="group-hover:text-accent text-xl font-bold transition-colors">
+                      {marga.nama}
+                    </h3>
+                    <Badge variant="secondary">{marga.rumpun}</Badge>
+                  </div>
+                  <div className="space-y-2">
+                    {marga.deskripsi && (
+                      <p className="text-foreground/70 text-sm">{marga.deskripsi}</p>
+                    )}
+                  </div>
+                  <div className="text-foreground/60 mt-4 text-sm font-medium group-hover:text-accent">
+                    Lihat detail marga →
+                  </div>
+                </Link>
               </motion.div>
             ))}
           </AnimatePresence>
