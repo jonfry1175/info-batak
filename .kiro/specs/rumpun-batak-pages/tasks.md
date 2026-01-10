@@ -8,7 +8,7 @@ Implementasi fitur halaman rumpun Batak dengan card visual dan halaman detail un
 
 - [x] 1. Setup data layer dan types
   - [x] 1.1 Tambahkan type Rumpun dan Tokoh di `types/index.ts`
-    - Interface Rumpun dengan fields: id, nama, slug, deskripsi, gambar, sejarah, budaya, wilayah, tokoh
+    - Interface RumpunBatak dengan fields: id, nama, slug, deskripsi, gambar, sejarah, budaya, wilayah, tokoh
     - Interface Tokoh dengan fields: nama, gelar, deskripsi
     - _Requirements: 6.2_
 
@@ -25,55 +25,55 @@ Implementasi fitur halaman rumpun Batak dengan card visual dan halaman detail un
   - [x] 1.4 Write property test untuk data schema validity
     - **Property 5: Data Schema Validity**
     - **Validates: Requirements 6.2**
+    - Test file: `lib/rumpun.test.ts`
 
 - [x] 2. Download dan setup gambar rumpun
   - [x] 2.1 Download gambar representatif untuk setiap rumpun
-    - Buat folder `public/images/rumpun/`
-    - Download 6 gambar dari Unsplash atau sumber free
-    - Verifikasi gambar tersedia dengan curl
+    - Folder `public/images/rumpun/` sudah ada
+    - 6 gambar tersedia: toba.jpg, karo.jpg, simalungun.jpg, pakpak.jpg, angkola.jpg, mandailing.jpg
     - _Requirements: 1.1_
 
   - [x] 2.2 Buat placeholder image untuk fallback
-    - File: `public/images/rumpun/placeholder.jpg`
+    - File: `public/images/rumpun/placeholder.jpg` sudah ada
     - _Requirements: 1.3_
 
 - [x] 3. Buat komponen RumpunCard
-read prompts/expert-ui-ux-visual.md
   - [x] 3.1 Implementasi komponen `components/sejarah/RumpunCard.tsx`
     - Card dengan gambar, nama, dan deskripsi
     - Clickable dengan Link ke `/sejarah/[slug]`
     - Hover animation dengan Framer Motion
-    - Image fallback handling
+    - Image fallback handling dengan useState
     - _Requirements: 1.1, 1.2, 1.3, 2.1_
 
   - [x] 3.2 Write property test untuk card rendering
     - **Property 1: Card Rendering Completeness**
     - **Validates: Requirements 1.1, 1.2**
+    - Test file: `components/sejarah/RumpunCard.test.tsx`
 
-- [ ] 4. Update halaman Sejarah utama
-  - [ ] 4.1 Modifikasi `app/sejarah/page.tsx`
+- [x] 4. Update halaman Sejarah utama
+  - [x] 4.1 Modifikasi `app/sejarah/page.tsx`
     - Hapus section "Batak di Era Modern"
     - Hapus section "Tokoh Penting dalam Sejarah Batak"
     - Ganti card rumpun statis dengan RumpunCard component
     - Load data dari `getAllRumpun()`
     - _Requirements: 4.1, 4.2, 5.1_
 
-  - [ ] 4.2 Write unit test untuk halaman sejarah
+  - [x] 4.2 Write unit test untuk halaman sejarah
     - Test absence of "Batak di Era Modern" section
     - Test absence of "Tokoh Penting" section
     - Test presence of 6 RumpunCard
     - _Requirements: 4.1, 5.1_
 
-- [ ] 5. Checkpoint - Verifikasi halaman utama
+- [x] 5. Checkpoint - Verifikasi halaman utama
   - Ensure halaman sejarah menampilkan 6 card rumpun dengan gambar
   - Ensure section yang dihapus tidak muncul
   - Ask user if questions arise
 
-- [ ] 6. Buat halaman detail rumpun
+- [-] 6. Buat halaman detail rumpun
   - [ ] 6.1 Buat dynamic route `app/sejarah/[slug]/page.tsx`
     - Implementasi `generateStaticParams` untuk SSG
     - Load data dengan `getRumpunBySlug()`
-    - Handle 404 untuk invalid slug
+    - Handle 404 untuk invalid slug dengan `notFound()`
     - _Requirements: 2.2, 2.3_
 
   - [ ] 6.2 Implementasi layout halaman detail
@@ -111,7 +111,8 @@ read prompts/expert-ui-ux-visual.md
 ## Notes
 
 - Semua tasks termasuk testing adalah required
-- Gambar akan didownload dari Unsplash dengan verifikasi curl
+- Gambar sudah tersedia di `public/images/rumpun/`
 - Menggunakan Next.js Image component untuk optimasi
 - Framer Motion untuk animasi hover pada card
 - Property-based tests menggunakan fast-check library
+- Static export dengan `output: 'export'` di next.config.ts
