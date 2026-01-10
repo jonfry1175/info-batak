@@ -1,11 +1,15 @@
+import { PageHero } from '@/components/layout/PageHero';
+
 export default function AdatIstiadatPage() {
   return (
-    <div className="w-full px-4 py-12">
-      <div className="mx-auto max-w-5xl">
-        <h1 className="text-accent mb-6 text-4xl font-bold md:text-5xl">Adat Istiadat Batak</h1>
-        <p className="text-foreground/70 mb-12 text-lg">
-          Memahami nilai-nilai filosofis dan tradisi yang mengatur kehidupan masyarakat Batak
-        </p>
+    <>
+      <PageHero
+        title="Adat Istiadat Batak"
+        subtitle="Memahami nilai-nilai filosofis dan tradisi yang mengatur kehidupan masyarakat Batak"
+        backgroundImage="/images/homepage/card-adat.jpg"
+      />
+      <div className="w-full px-4 py-12">
+        <div className="mx-auto max-w-5xl">
 
         {/* Dalihan Na Tolu */}
         <section className="mb-16">
@@ -143,5 +147,6 @@ export default function AdatIstiadatPage() {
         </section>
       </div>
     </div>
+    </>
   );
 }

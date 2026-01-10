@@ -1,4 +1,5 @@
 import { MediaCard, MediaCardGrid } from '@/components/ui/MediaCard';
+import { PageHero } from '@/components/layout/PageHero';
 
 export default function BudayaPage() {
   const budayaCategories = [
@@ -54,21 +55,19 @@ export default function BudayaPage() {
   ];
 
   return (
-    <div className="w-full px-4 py-12">
-      <div className="mx-auto max-w-6xl">
-        {/* Header */}
-        <h1 className="text-accent mb-6 text-4xl font-bold md:text-5xl">
-          Budaya Batak
-        </h1>
-        <p className="text-foreground/70 mb-4 text-lg leading-relaxed">
-          Masyarakat Batak memiliki kekayaan budaya yang luar biasa, mulai dari sistem adat
-          yang mengatur kehidupan sosial, seni musik dan tari yang energik, aksara tradisional
-          yang unik, hingga kuliner yang kaya akan rasa dan filosofi.
-        </p>
-        <p className="text-foreground/70 mb-12 text-lg leading-relaxed">
-          Setiap aspek budaya Batak mencerminkan kebijaksanaan leluhur dan nilai-nilai luhur
-          yang diwariskan turun-temurun. Jelajahi berbagai kategori budaya Batak di bawah ini:
-        </p>
+    <>
+      <PageHero
+        title="Budaya Batak"
+        subtitle="Masyarakat Batak memiliki kekayaan budaya yang luar biasa, mulai dari sistem adat, seni musik dan tari, aksara tradisional, hingga kuliner yang kaya akan rasa dan filosofi"
+        backgroundImage="/images/homepage/hero-tortor.jpg"
+      />
+      <div className="w-full px-4 py-12">
+        <div className="mx-auto max-w-6xl">
+          {/* Intro */}
+          <p className="text-foreground/70 mb-12 text-lg leading-relaxed">
+            Setiap aspek budaya Batak mencerminkan kebijaksanaan leluhur dan nilai-nilai luhur
+            yang diwariskan turun-temurun. Jelajahi berbagai kategori budaya Batak di bawah ini:
+          </p>
 
         {/* Category Cards Grid */}
         <section>
@@ -193,7 +192,8 @@ export default function BudayaPage() {
             </div>
           </div>
         </section>
+        </div>
       </div>
-    </div>
+    </>
   );
 }

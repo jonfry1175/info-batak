@@ -1,19 +1,22 @@
 import { Sidebar } from '@/components/layout/Sidebar';
 import { RumpunCard } from '@/components/sejarah/RumpunCard';
 import { getAllRumpun } from '@/lib/data';
+import { PageHero } from '@/components/layout/PageHero';
 
 export default function SejarahPage() {
   const rumpunList = getAllRumpun();
   return (
-    <div className="w-full px-4 py-12">
-      <div className="mx-auto max-w-7xl">
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
-          {/* Main Content */}
-          <div className="lg:col-span-2">
-            <h1 className="text-accent mb-6 text-4xl font-bold md:text-5xl">Sejarah Batak</h1>
-            <p className="text-foreground/70 mb-8 text-lg">
-              Menelusuri jejak sejarah dan asal usul masyarakat Batak di Sumatera Utara
-            </p>
+    <>
+      <PageHero
+        title="Sejarah Batak"
+        subtitle="Menelusuri jejak sejarah dan asal usul masyarakat Batak di Sumatera Utara"
+        backgroundImage="/images/homepage/hero-lake-toba.jpg"
+      />
+      <div className="w-full px-4 py-12">
+        <div className="mx-auto max-w-7xl">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+            {/* Main Content */}
+            <div className="lg:col-span-2">
 
             {/* Asal Usul */}
             <section className="mb-12">
@@ -50,7 +53,7 @@ export default function SejarahPage() {
                 ))}
               </div>
             </section>
-          </div>
+            </div>
 
           {/* Sidebar */}
           <div className="lg:col-span-1">
@@ -58,6 +61,7 @@ export default function SejarahPage() {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    </>
   );
 }
