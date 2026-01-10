@@ -29,8 +29,8 @@ Implementasi enhancement halaman detail rumpun Batak dengan peta interaktif, kon
     - **Validates: Requirements 5.5**
     - Test file: `lib/rumpun-enhanced.test.ts`
 
-- [ ] 2. Update data rumpun.json dengan enhanced content
-  - [ ] 2.1 Update data Batak Toba dengan format enhanced
+- [-] 2. Update data rumpun.json dengan enhanced content
+  - [x] 2.1 Update data Batak Toba dengan format enhanced
     - Tambah koordinat wilayah (2.6167, 98.8500 - Danau Toba)
     - Tambah kabupaten dan landmarks
     - Tambah timeline sejarah dengan events
@@ -38,12 +38,12 @@ Implementasi enhancement halaman detail rumpun Batak dengan peta interaktif, kon
     - Enhance tokoh dengan foto placeholder, tahun, biografi, pencapaian
     - _Requirements: 5.1, 5.2, 5.3, 5.4_
 
-  - [ ] 2.2 Update data Batak Karo dengan format enhanced
+  - [x] 2.2 Update data Batak Karo dengan format enhanced
     - Tambah koordinat wilayah (3.1000, 98.5000 - Tanah Karo)
     - Struktur sama seperti Toba
     - _Requirements: 5.1, 5.2, 5.3, 5.4_
 
-  - [ ] 2.3 Update data 4 rumpun lainnya (Simalungun, Pakpak, Angkola, Mandailing)
+  - [-] 2.3 Update data 4 rumpun lainnya (Simalungun, Pakpak, Angkola, Mandailing)
     - Koordinat dan data enhanced untuk masing-masing
     - _Requirements: 5.1, 5.2, 5.3, 5.4_
 
