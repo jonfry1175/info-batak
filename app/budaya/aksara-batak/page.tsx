@@ -226,7 +226,7 @@ export default function AksaraBatakPage() {
               <Gallery
                 images={pustahaImages}
                 columns={3}
-                aspectRatio="portrait"
+                aspectRatio="video"
                 showCredits={true}
               />
             </section>
