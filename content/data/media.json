@@ -1,6 +1,32 @@
 {
   "images": [
     {
+      "id": "hero-arsitektur",
+      "src": "/images/budaya/arsitektur/hero-arsitektur.png",
+      "alt": "Ruma Bolon megah dengan latar belakang Danau Toba",
+      "category": "Budaya",
+      "subcategory": "Arsitektur",
+      "photographer": "AI Generated",
+      "year": 2025,
+      "license": "Public Domain",
+      "description": "Majestic Ruma Bolon with Lake Toba background",
+      "keywords": ["batak", "ruma bolon", "arsitektur", "danau toba"],
+      "placeholder": false
+    },
+    {
+      "id": "diagram-struktur-ruma",
+      "src": "/images/budaya/arsitektur/diagram-struktur-ruma.png",
+      "alt": "Diagram struktur vertikal Ruma Bolon (Kosmologi)",
+      "category": "Budaya",
+      "subcategory": "Arsitektur",
+      "photographer": "AI Generated",
+      "year": 2025,
+      "license": "Public Domain",
+      "description": "Cross-section diagram showing Banua Ginjang, Banua Tonga, and Banua Toru",
+      "keywords": ["batak", "arsitektur", "diagram", "struktur", "kosmologi"],
+      "placeholder": false
+    },
+    {
       "id": "hero-lake-toba",
       "src": "/images/homepage/hero-lake-toba.jpg",
       "alt": "Pemandangan indah Danau Toba dengan pulau Samosir",

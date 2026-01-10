@@ -1,4 +1,6 @@
 import { Gallery } from '@/components/ui/Gallery';
+import { PageHero } from '@/components/layout/PageHero';
+import Image from 'next/image';
 import { getAllHouseTypes, getConstructionTechniques, getArsitekturData } from '@/lib/data';
 import { getImagesByCategory } from '@/lib/data';
 
@@ -11,17 +13,21 @@ export default function ArsitekturPage() {
   const rumaImages = getImagesByCategory('Budaya', 'Arsitektur');
 
   return (
-    <div className="w-full px-4 py-12">
-      <div className="mx-auto max-w-5xl">
-        {/* Header */}
-        <h1 className="text-accent mb-6 text-4xl font-bold md:text-5xl">
-          Arsitektur Tradisional Batak
-        </h1>
-        <p className="text-foreground/70 mb-12 text-lg leading-relaxed">
-          Arsitektur tradisional Batak adalah salah satu warisan budaya yang paling menakjubkan.
-          Rumah adat Batak tidak hanya indah secara visual, tetapi juga sarat dengan filosofi,
-          teknologi konstruksi canggih, dan harmoni dengan alam.
-        </p>
+    <>
+      <PageHero
+        title="Arsitektur Tradisional Batak"
+        subtitle="Harmoni filosofi, teknologi, dan seni dalam hunian leluhur"
+        backgroundImage="/images/budaya/arsitektur/hero-arsitektur.png"
+      />
+      
+      <div className="w-full px-4 py-12">
+        <div className="mx-auto max-w-5xl">
+          {/* Intro Text */}
+          <p className="text-foreground/70 mb-12 text-lg leading-relaxed">
+            Arsitektur tradisional Batak adalah salah satu warisan budaya yang paling menakjubkan.
+            Rumah adat Batak tidak hanya indah secara visual, tetapi juga sarat dengan filosofi,
+            teknologi konstruksi canggih, dan harmoni dengan alam.
+          </p>
 
         {/* Ruma Bolon Toba Section */}
         <section className="mb-16">
@@ -218,6 +224,20 @@ export default function ArsitekturPage() {
           </p>
 
           <h3 className="mb-4 text-2xl font-semibold">Pembagian Vertikal (Kosmologi)</h3>
+          
+          <div className="mb-8 overflow-hidden rounded-lg shadow-lg">
+            <div className="relative aspect-video w-full bg-neutral-100">
+               <Image
+                 src="/images/budaya/arsitektur/diagram-struktur-ruma.png"
+                 alt="Diagram Kosmologi Rumah Batak"
+                 fill
+                 className="object-contain p-4"
+               />
+            </div>
+            <p className="p-4 text-center text-sm text-foreground/70 italic bg-accent/5">
+              Diagram pembagian ruang vertikal berdasarkan filosofi Banua Ginjang, Banua Tonga, dan Banua Toru
+            </p>
+          </div>
           <div className="mb-8 grid grid-cols-1 gap-6 md:grid-cols-3">
             {arsitekturData.spatialOrganization.verticalDivision.map(
               (level: any, index: number) => (
@@ -342,5 +362,6 @@ export default function ArsitekturPage() {
         </section>
       </div>
     </div>
+    </>
   );
 }
