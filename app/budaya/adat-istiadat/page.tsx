@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { PageHero } from '@/components/layout/PageHero';
+import { PageDiscussion } from '@/components/discussion';
 
 export default function AdatIstiadatPage() {
   return (
@@ -280,6 +281,9 @@ export default function AdatIstiadatPage() {
               </div>
             </div>
           </section>
+
+          {/* Discussion Section */}
+          <PageDiscussion />
         </div>
       </div>
     </>

@@ -1,4 +1,5 @@
 import { Gallery } from '@/components/ui/Gallery';
+import { PageDiscussion } from '@/components/discussion';
 import {
   getAllDishes,
   getAllDrinks,
@@ -308,6 +309,9 @@ export default function KulinerPage() {
             <Gallery images={kulinerImages} columns={3} aspectRatio="square" showCredits={true} />
           </section>
         )}
+
+        {/* Discussion Section */}
+        <PageDiscussion />
       </div>
     </div>
   );

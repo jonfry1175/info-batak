@@ -1,4 +1,5 @@
 import { Gallery } from '@/components/ui/Gallery';
+import { PageDiscussion } from '@/components/discussion';
 import {
   getMensAttire,
   getWomensAttire,
@@ -372,6 +373,9 @@ export default function PakaianAdatPage() {
             <Gallery images={ulosImages} columns={4} aspectRatio="square" showCredits={true} />
           </section>
         )}
+
+        {/* Discussion Section */}
+        <PageDiscussion />
       </div>
     </div>
   );

@@ -96,8 +96,8 @@ Implementasi fitur diskusi per halaman untuk InfoBatak.id menggunakan TypeScript
   - Verify form validation works
   - Ask the user if questions arise
 
-- [ ] 7. Create DiscussionSection Container
-  - [ ] 7.1 Create DiscussionSection component in components/discussion/DiscussionSection.tsx
+- [x] 7. Create DiscussionSection Container
+  - [x] 7.1 Create DiscussionSection component in components/discussion/DiscussionSection.tsx
     - Section header with comment count
     - CommentForm for new comments
     - CommentList with all comments
@@ -105,25 +105,25 @@ Implementasi fitur diskusi per halaman untuk InfoBatak.id menggunakan TypeScript
     - Empty state message
     - Dark/light mode support
     - _Requirements: 1.4, 7.1, 7.2, 7.3, 7.4, 7.5_
-  - [ ] 7.2 Create CommentList component in components/discussion/CommentList.tsx
+  - [x] 7.2 Create CommentList component in components/discussion/CommentList.tsx
     - Render list of CommentItem components
     - Handle reply state (which comment is being replied to)
     - Load more button for pagination
     - _Requirements: 1.5, 3.1_
 
-- [ ] 8. Integrate with Pages
-  - [ ] 8.1 Add DiscussionSection to sejarah/[slug] page
+- [x] 8. Integrate with Pages
+  - [x] 8.1 Add DiscussionSection to sejarah/[slug] page
     - Import and place before footer
     - Pass page path as prop
     - _Requirements: 7.1_
-  - [ ] 8.2 Add DiscussionSection to marga/[slug] page
+  - [x] 8.2 Add DiscussionSection to marga/[slug] page
     - Import and place before footer
     - Pass page path as prop
     - _Requirements: 7.1_
-  - [ ] 8.3 Add DiscussionSection to budaya pages
+  - [x] 8.3 Add DiscussionSection to budaya pages
     - Add to adat-istiadat, kesenian, aksara-batak, arsitektur, kuliner, pakaian-adat, bahasa
     - _Requirements: 7.1_
-  - [ ] 8.4 Add DiscussionSection to berita/[slug] page
+  - [x] 8.4 Add DiscussionSection to berita/[slug] page
     - Import and place before footer
     - Pass page path as prop
     - _Requirements: 7.1_

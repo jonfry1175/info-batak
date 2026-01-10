@@ -1,5 +1,6 @@
 import { Gallery } from '@/components/ui/Gallery';
 import { PageHero } from '@/components/layout/PageHero';
+import { PageDiscussion } from '@/components/discussion';
 import Image from 'next/image';
 import { getAllHouseTypes, getConstructionTechniques, getArsitekturData } from '@/lib/data';
 import { getImagesByCategory } from '@/lib/data';
@@ -360,6 +361,9 @@ export default function ArsitekturPage() {
             </div>
           </div>
         </section>
+
+        {/* Discussion Section */}
+        <PageDiscussion />
       </div>
     </div>
     </>

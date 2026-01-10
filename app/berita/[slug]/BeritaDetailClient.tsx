@@ -3,7 +3,9 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { usePathname } from 'next/navigation';
 import { getLatestBerita } from '@/lib/data';
+import { DiscussionSection } from '@/components/discussion';
 import { Berita } from '@/types';
 
 interface BeritaDetailClientProps {
@@ -19,6 +21,7 @@ function formatTanggal(tanggal: string): string {
 }
 
 export default function BeritaDetailClient({ berita }: BeritaDetailClientProps) {
+  const pathname = usePathname();
   const relatedBerita = getLatestBerita(4)
     .filter((b) => b.slug !== berita.slug)
     .slice(0, 3);
@@ -104,6 +107,9 @@ export default function BeritaDetailClient({ berita }: BeritaDetailClientProps) 
               ))}
             </div>
           </div>
+
+          {/* Discussion Section */}
+          <DiscussionSection pagePath={pathname} />
 
           {/* Related Articles */}
           {relatedBerita.length > 0 && (

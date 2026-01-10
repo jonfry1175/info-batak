@@ -1,3 +1,4 @@
+import { PageDiscussion } from '@/components/discussion';
 import {
   getAllDialects,
   getCommonPhrases,
@@ -419,6 +420,9 @@ export default function BahasaPage() {
             </div>
           </div>
         </section>
+
+        {/* Discussion Section */}
+        <PageDiscussion />
       </div>
     </div>
   );
