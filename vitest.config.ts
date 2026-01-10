@@ -8,7 +8,8 @@ export default defineConfig({
         environment: 'jsdom',
         globals: true,
         include: ['**/*.test.ts', '**/*.test.tsx'],
-        setupFiles: ['./vitest.setup.ts'],
+        // Use an absolute path so Vitest resolves the setup file correctly regardless of cwd
+        setupFiles: [path.resolve(__dirname, 'vitest.setup.ts')],
     },
     resolve: {
         alias: {
