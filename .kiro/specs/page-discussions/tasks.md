@@ -6,29 +6,29 @@ Implementasi fitur diskusi per halaman untuk InfoBatak.id menggunakan TypeScript
 
 ## Tasks
 
-- [-] 1. Setup Database Schema
-  - [ ] 1.1 Create Supabase migration for comments table
+- [x] 1. Setup Database Schema
+  - [x] 1.1 Create Supabase migration for comments table
     - Create `comments` table with id, user_id, page_path, content, parent_id, created_at, updated_at
     - Add check constraint for content length (max 1000 chars)
     - Add indexes for page_path, parent_id, and created_at
     - _Requirements: 8.1, 8.3_
-  - [ ] 1.2 Create Supabase migration for comment_likes table
+  - [x] 1.2 Create Supabase migration for comment_likes table
     - Create `comment_likes` table with id, user_id, comment_id, created_at
     - Add unique constraint on (user_id, comment_id)
     - Add index on comment_id
     - _Requirements: 8.1_
-  - [ ] 1.3 Create RLS policies for comments table
+  - [x] 1.3 Create RLS policies for comments table
     - SELECT: Anyone can read
     - INSERT: Authenticated users only, user_id must match auth.uid()
     - DELETE: Only comment owner
     - _Requirements: 8.2_
-  - [ ] 1.4 Create RLS policies for comment_likes table
+  - [x] 1.4 Create RLS policies for comment_likes table
     - SELECT: Anyone can read
     - INSERT: Authenticated users, cannot like own comments
     - DELETE: Only like owner
     - _Requirements: 8.2, 4.5_
 
-- [ ] 2. Create TypeScript Types and Data Layer
+- [-] 2. Create TypeScript Types and Data Layer
   - [ ] 2.1 Add discussion types to types/index.ts
     - Comment, CommentWithUser, CommentWithReplies, CommentLike interfaces
     - DiscussionError type and error messages

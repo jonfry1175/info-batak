@@ -33,18 +33,21 @@ COMMENT ON COLUMN public.profiles.updated_at IS 'Timestamp when profile was last
 ALTER TABLE public.profiles ENABLE ROW LEVEL SECURITY;
 
 -- Policy: Users can view their own profile
+DROP POLICY IF EXISTS "Users can view own profile" ON public.profiles;
 CREATE POLICY "Users can view own profile" 
   ON public.profiles
   FOR SELECT 
   USING (auth.uid() = id);
 
 -- Policy: Users can update their own profile
+DROP POLICY IF EXISTS "Users can update own profile" ON public.profiles;
 CREATE POLICY "Users can update own profile" 
   ON public.profiles
   FOR UPDATE 
   USING (auth.uid() = id);
 
 -- Policy: Allow insert for authenticated users (for trigger)
+DROP POLICY IF EXISTS "Enable insert for authenticated users only" ON public.profiles;
 CREATE POLICY "Enable insert for authenticated users only" 
   ON public.profiles
   FOR INSERT 
