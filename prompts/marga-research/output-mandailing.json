@@ -1,0 +1,230 @@
+[
+  {
+    "margaId": "21",
+    "slug": "lubis",
+    "sejarah": "Marga Lubis adalah salah satu marga terbesar di Mandailing. Mereka memiliki sejarah panjang yang dikaitkan dengan kedatangan leluhur dari Bugis (Daeng Malela) ke wilayah Tamiang/Mandailing Julu.",
+    "asalUsul": "Leluhur marga Lubis yang terkenal adalah Namora Pande Bosi. Terdapat dua cabang utama: Lubis Singasoro (Silangkitang) dan Lubis Singa Sait (Sibaitang).",
+    "tarombo": {
+      "description": "Tarombo Lubis pecah menjadi dua garis utama dari Namora Pande Bosi.",
+      "ancestors": [
+        {
+          "nama": "Namora Pande Bosi",
+          "deskripsi": "Leluhur utama marga Lubis di Mandailing."
+        },
+        {
+          "nama": "Sutan Bugis",
+          "deskripsi": "Leluhur awal yang diyakini berasal dari Bugis."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Lubis Silangkitang",
+          "deskripsi": "Mendiami wilayah Mandailing Julu (Kotanopan)."
+        },
+        {
+          "nama": "Lubis Sibaitang",
+          "deskripsi": "Mendiami wilayah Tamiang dan sekitarnya."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Mandailing Julu",
+      "deskripsi": "Kecamatan Kotanopan dan Panyabungan adalah basis utama marga Lubis, dengan banyak kampung (Huta) tua.",
+      "latitude": 0.6667,
+      "longitude": 99.5667,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Mandailing Natal"
+    },
+    "tradisi": [
+      "Adat Markobar (berbalas pantun/pidato adat) yang sangat halus",
+      "Gordang Sambilan (musik adat) yang sakral"
+    ],
+    "tokoh": [
+      {
+        "nama": "Mochtar Lubis",
+        "gelar": "-",
+        "bidang": "Jurnalisme/Sastra",
+        "deskripsi": "Sastrawan dan jurnalis terkemuka Indonesia."
+      },
+      {
+        "nama": "Zulkifli Lubis",
+        "gelar": "Kolonel",
+        "bidang": "Militer",
+        "deskripsi": "Tokoh militer Indonesia, salah satu pendiri badan intelijen negara."
+      }
+    ],
+    "relatedMargas": ["nasution", "hutasuhut"],
+    "updatedAt": "2025-01-10"
+  },
+  {
+    "margaId": "22",
+    "slug": "rangkuti",
+    "sejarah": "Marga Rangkuti berasal dari wilayah Mandailing, tepatnya di daerah Runding. Mereka memiliki sejarah tua yang berkaitan dengan kerajaan lokal sebelum masuknya pengaruh Paderi.",
+    "asalUsul": "Rangkuti adalah keturunan dari Ompu Sutan Pane Paruhuman. Saudara dekat marga ini adalah Parinduri dan Mardia.",
+    "tarombo": {
+      "description": "Tarombo Rangkuti mencatat hubungan erat dengan Parinduri sebagai 'dongan sabutuha'.",
+      "ancestors": [
+        {
+          "nama": "Mangaraja Sutan Pane",
+          "deskripsi": "Leluhur pendiri Huta Runding yang menurunkan marga Rangkuti."
+        },
+        {
+          "nama": "Sutan Parapat",
+          "deskripsi": "Tokoh sakti dalam legenda Rangkuti yang bisa menunggang harimau."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Rangkuti (Runding)",
+          "deskripsi": "Kelompok asal di wilayah Runding."
+        },
+        {
+          "nama": "Parinduri",
+          "deskripsi": "Marga pecahan yang dianggap saudara kandung Rangkuti."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Runding, Mandailing Natal",
+      "deskripsi": "Desa Runding di Panyabungan Barat adalah tanah asal marga Rangkuti.",
+      "latitude": 0.8833,
+      "longitude": 99.5500,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Mandailing Natal"
+    },
+    "tradisi": [
+      "Menghormati harimau (Babiat) sebagai 'Ompung' (kiasan) karena legenda leluhur",
+      "Upacara adat memasuki rumah baru (mamasuhi bagas)"
+    ],
+    "tokoh": [
+      {
+        "nama": "H. Arwys Rangkuti",
+        "gelar": "-",
+        "bidang": "Politik/Tokoh Masyarakat",
+        "deskripsi": "Tokoh masyarakat Mandailing."
+      },
+      {
+        "nama": "Bahrum Rangkuti",
+        "gelar": "-",
+        "bidang": "Sastra",
+        "deskripsi": "Sastrawan dan penulis Indonesia angkatan Pujangga Baru."
+      }
+    ],
+    "relatedMargas": ["parinduri", "pulungan"],
+    "updatedAt": "2025-01-10"
+  },
+  {
+    "margaId": "23",
+    "slug": "daulay",
+    "sejarah": "Marga Daulay didominasi di wilayah Mandailing dan Angkola. Mereka berasal dari daerah Sibuhuan (Padang Lawas) dan menyebar ke Mandailing sebagai salah satu marga raja.",
+    "asalUsul": "Leluhur Daulay adalah Ompu Parmata Sapihak (Mata Sopiak), yang bermukim di Sibuhuan. Mereka masuk dalam kelompok Borbor.",
+    "tarombo": {
+      "description": "Tarombo Daulay terhubung dengan marga-marga Borbor Marsada. Silsilah dari Parmata Sapihak pecah menjadi beberapa Datu.",
+      "ancestors": [
+        {
+          "nama": "Parmata Sapihak",
+          "deskripsi": "Leluhur utama marga Daulay dengan legenda mata sebelah."
+        },
+        {
+          "nama": "Datu Porkas",
+          "deskripsi": "Salah satu putra Parmata Sapihak yang menurunkan keturunan."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Daulay (Sibuhuan)",
+          "deskripsi": "Kelompok di Padang Lawas yang memegang tradisi asal."
+        },
+        {
+          "nama": "Daulay (Mandailing)",
+          "deskripsi": "Menyebar ke Panyabungan dan menjadi bagian integral masyarakat Mandailing."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Panyabungan dan Sibuhuan",
+      "deskripsi": "Selain di Sibuhuan (asal), Daulay banyak bermukim di Panyabungan Selatan dan sekitarnya.",
+      "latitude": 1.0500,
+      "longitude": 99.7000,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Mandailing Natal dan Padang Lawas"
+    },
+    "tradisi": [
+      "Ziarah ke makam Ompu Parmata Sapihak di Padang Lawas",
+      "Marsalap Ari (gotong royong di sawah)"
+    ],
+    "tokoh": [
+      {
+        "nama": "Saleh Partaonan Daulay",
+        "gelar": "Dr.",
+        "bidang": "Politik",
+        "deskripsi": "Anggota DPR RI dan tokoh pemuda Muhammadiyah."
+      },
+      {
+        "nama": "H. Basyrah Lubis (Daulay)",
+        "gelar": "-",
+        "bidang": "Sejarah",
+        "deskripsi": "Penulis sejarah Mandailing (catatan: meski marga Lubis, sering membahas kaitan antar marga)."
+      }
+    ],
+    "relatedMargas": ["hasibuan", "pasaribu"],
+    "updatedAt": "2025-01-10"
+  },
+  {
+    "margaId": "24",
+    "slug": "hasibuan",
+    "sejarah": "Marga Hasibuan berasal dari Toba (Uluan) namun migrasi besar-besaran membuat mereka menjadi marga dominan di Tapanuli Selatan dan Mandailing (Padang Lawas).",
+    "asalUsul": "Leluhur Si Raja Hasibuan berasal dari Sigaol, Uluan. Anaknya Raja Manjalang merantau ke wilayah Barumun/Sibuhuan.",
+    "tarombo": {
+      "description": "Tarombo Hasibuan di Mandailing/Angkola berasal dari garis Raja Manjalang.",
+      "ancestors": [
+        {
+          "nama": "Si Raja Hasibuan",
+          "deskripsi": "Leluhur utama marga Hasibuan."
+        },
+        {
+          "nama": "Raja Manjalang",
+          "deskripsi": "Leluhur yang membuka kampung di wilayah Padang Lawas."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Hasibuan (Barumun)",
+          "deskripsi": "Kelompok terbesar di wilayah Padang Lawas/Barumun."
+        },
+        {
+          "nama": "Hasibuan (Sipirok)",
+          "deskripsi": "Kelompok yang bermukim di wilayah Angkola/Sipirok."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Barumun, Padang Lawas",
+      "deskripsi": "Wilayah Barumun dan Sibuhuan adalah pusat konsentrasi marga Hasibuan di wilayah selatan.",
+      "latitude": 1.0500,
+      "longitude": 99.7000,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Padang Lawas"
+    },
+    "tradisi": [
+      "Partangiangan Parsadaan Hasibuan",
+      "Horja Godang (pesta adat besar) dengan manortor"
+    ],
+    "tokoh": [
+      {
+        "nama": "Otto Hasibuan",
+        "gelar": "Prof. Dr.",
+        "bidang": "Hukum",
+        "deskripsi": "Pengacara kondang Indonesia."
+      },
+      {
+        "nama": "Albert Hasibuan",
+        "gelar": "-",
+        "bidang": "Politik/Hukum",
+        "deskripsi": "Pengacara senior dan mantan anggota Dewan Pertimbangan Presiden."
+      }
+    ],
+    "relatedMargas": ["hutangjulung", "daulay"],
+    "updatedAt": "2025-01-10"
+  }
+]

@@ -1,161 +1,1695 @@
 [
   {
-    "margaId": "1",
-    "slug": "sitorus",
-    "sejarah": "Marga Sitorus dikenal sebagai salah satu marga tua di Balige dan daerah sekitar Danau Toba. Tradisi lisan menyebutkan perannya dalam membuka huta-huta baru serta menjaga hubungan Dalihan Na Tolu.",
-    "asalUsul": "Asal usul Sitorus ditelusuri ke keturunan Guru Tatea Bulan yang menetap di pesisir Danau Toba. Penamaan Sitorus merujuk pada leluhur yang dikenal tangguh dan dekat dengan alam danau.",
+    "margaId": "2",
+    "slug": "siahaan",
+    "sejarah": "Marga Siahaan adalah keturunan dari Ompu Somba Debata Siahaan, anak sulung dari Tuan Somanimbil. Posisi ini menempatkan Siahaan sebagai 'hahan doli' (abang tertua) di antara marga-marga keturunan Tuan Somanimbil lainnya seperti Simanjuntak dan Hutagaol.",
+    "asalUsul": "Berasal dari Balige, nama Siahaan memiliki arti 'si hahaan' atau 'yang disulungkan', merujuk pada statusnya sebagai anak pertama. Tradisi mencatat bahwa Ompu Somba Debata Siahaan membuka huta (kampung) awal di wilayah Balige.",
     "tarombo": {
-      "description": "Tarombo Sitorus menegaskan garis keturunan patrilineal yang menjaga keterhubungan antar dongan tubu dan boru.",
+      "description": "Tarombo Siahaan sangat dihormati karena status kesulungannya dalam silsilah Tuan Somanimbil.",
       "ancestors": [
         {
-          "nama": "Ompu Raja Sitorus",
-          "gelar": "Raja Sitorus",
-          "deskripsi": "Leluhur yang menjadi rujukan utama tarombo Sitorus di Balige."
+          "nama": "Ompu Somba Debata Siahaan",
+          "gelar": "Raja Siahaan",
+          "deskripsi": "Leluhur pertama marga Siahaan, anak sulung Tuan Somanimbil."
         },
         {
-          "nama": "Guru Tatea Bulan",
-          "deskripsi": "Figur besar dalam tarombo Batak yang menurunkan berbagai marga termasuk Sitorus."
+          "nama": "Tuan Somanimbil",
+          "deskripsi": "Ayah dari Ompu Somba Debata Siahaan, Simanjuntak, dan Hutagaol."
         }
       ],
       "subMargas": [
         {
-          "nama": "Sitorus Pane",
-          "deskripsi": "Cabang yang banyak bermukim di sekitar Balige dan Porsea."
+          "nama": "Siahaan Raja Marhite Ombun",
+          "deskripsi": "Salah satu dari tujuh cabang besar (Siahaan Juara Monang, Marhite Ombun, dll) keturunan Siahaan."
         },
         {
-          "nama": "Sitorus Lumban Siantar",
-          "deskripsi": "Cabang yang berkembang di wilayah Silindung."
+          "nama": "Siahaan Raja Hinalang",
+          "deskripsi": "Cabang Siahaan yang banyak bermukim di daerah Hinalang."
+        },
+        {
+          "nama": "Siahaan Tuan Mauli",
+          "deskripsi": "Cabang Siahaan yang tersebar di wilayah Paindoan."
         }
       ]
     },
     "wilayah": {
-      "nama": "Balige, Toba",
-      "deskripsi": "Wilayah asal Sitorus berada di tepian Danau Toba dengan budaya maritim dan pertanian yang kuat.",
-      "latitude": 2.334,
-      "longitude": 99.066,
+      "nama": "Balige",
+      "deskripsi": "Balige merupakan bona pasogit (kampung halaman) marga Siahaan, tempat Tugu Ompu Somba Debata Siahaan berdiri.",
+      "latitude": 2.3339,
+      "longitude": 99.0664,
       "provinsi": "Sumatera Utara",
       "kabupaten": "Toba"
     },
     "tradisi": [
-      "Horja adat Sitorus untuk merayakan pencapaian keluarga besar",
-      "Penggunaan ulos khas dalam upacara mangulosi generasi baru"
+      "Pesta Tugu Siahaan yang rutin diadakan oleh Parsadaan Pomparan Somba Debata (PPSD)",
+      "Tradisi memanggil 'Abang' kepada sesama marga Siahaan oleh marga adik (Simanjuntak/Hutagaol) sebagai penghormatan"
     ],
     "tokoh": [
       {
-        "nama": "Ompu Sitorus Parhusip",
-        "gelar": "Pemuka Adat",
-        "bidang": "Adat",
-        "deskripsi": "Tokoh adat yang dikenal menjaga arsip tarombo dan memimpin horja Sitorus."
+        "nama": "Maruarar Siahaan",
+        "gelar": "SH",
+        "bidang": "Hukum",
+        "deskripsi": "Mantan Hakim Konstitusi Republik Indonesia."
+      },
+      {
+        "nama": "Marcell Siahaan",
+        "gelar": "-",
+        "bidang": "Seni",
+        "deskripsi": "Penyanyi dan musisi terkenal Indonesia."
+      }
+    ],
+    "relatedMargas": [
+      "simbolon",
+      "napitupulu"
+    ],
+    "updatedAt": "2025-01-10"
+  },
+  {
+    "margaId": "3",
+    "slug": "simbolon",
+    "sejarah": "Marga Simbolon adalah salah satu marga tertua yang berasal dari Pulau Samosir dan merupakan bagian dari kelompok Parna (Pomparanni Raja Nai Ambaton). Dalam tradisi Parna, Simbolon memegang peranan penting sebagai salah satu marga tertua.",
+    "asalUsul": "Berasal dari Pangururan, Samosir. Simbolon Tua adalah anak dari Raja Bolon. Keturunannya berkembang menjadi 'Si Pitu Sohe' atau tujuh kelompok turunan Simbolon.",
+    "tarombo": {
+      "description": "Tarombo Simbolon sangat kompleks dengan pembagian menjadi tujuh sohe (kelompok) utama yang menyebar ke berbagai wilayah.",
+      "ancestors": [
+        {
+          "nama": "Simbolon Tua",
+          "deskripsi": "Leluhur marga Simbolon yang menurunkan tujuh cabang utama."
+        },
+        {
+          "nama": "Tuan Sori Raja",
+          "deskripsi": "Salah satu putra Simbolon Tua yang menurunkan beberapa cabang Simbolon."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Simbolon Tuan Nahoda Raja",
+          "deskripsi": "Cabang tertua dari Si Pitu Sohe."
+        },
+        {
+          "nama": "Simbolon Suhut Nihuta",
+          "deskripsi": "Cabang yang banyak menetap dan menjaga kampung halaman (Huta)."
+        },
+        {
+          "nama": "Simbolon Sirimbang",
+          "deskripsi": "Salah satu cabang dari Si Pitu Sohe."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Pangururan",
+      "deskripsi": "Wilayah pesisir Pulau Samosir yang menjadi pusat persebaran awal marga Simbolon.",
+      "latitude": 2.6047,
+      "longitude": 98.7181,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Samosir"
+    },
+    "tradisi": [
+      "Pesta Bolon Simbolon yang mengumpulkan seluruh keturunan PSBI (Punguan Simbolon dohot Boruna Indonesia)",
+      "Larangan menikah dengan sesama marga yang tergabung dalam Parna (Pomparanni Raja Nai Ambaton)"
+    ],
+    "tokoh": [
+      {
+        "nama": "Effendi Simbolon",
+        "gelar": "Dr.",
+        "bidang": "Politik",
+        "deskripsi": "Politisi senior dan Ketua Umum PSBI."
+      },
+      {
+        "nama": "Maludin Simbolon",
+        "gelar": "Kolonel",
+        "bidang": "Militer",
+        "deskripsi": "Pejuang kemerdekaan dan tokoh militer terkemuka."
+      }
+    ],
+    "relatedMargas": [
+      "sinaga",
+      "sitorus"
+    ],
+    "updatedAt": "2025-01-10"
+  },
+  {
+    "margaId": "4",
+    "slug": "sinaga",
+    "sejarah": "Marga Sinaga adalah keturunan dari Toga Sinaga, anak dari Raja Lontung. Dikenal dengan sebutan 'Si Sia Ama, Si Tolu Ompu' karena terbagi menjadi tiga cabang besar yang masing-masing memiliki tiga turunan lagi.",
+    "asalUsul": "Berasal dari wilayat Urat di Pulau Samosir. Sinaga diyakini sebagai anak sulung Raja Lontung (dalam beberapa versi tarombo).",
+    "tarombo": {
+      "description": "Struktur tarombo Sinaga unik dengan konsep Si Sia Ama (Sembilan Bapak/Cabang) dari Tolu Ompu (Tiga Kakek).",
+      "ancestors": [
+        {
+          "nama": "Toga Sinaga",
+          "deskripsi": "Leluhur utama marga Sinaga, anak Raja Lontung."
+        },
+        {
+          "nama": "Raja Lontung",
+          "deskripsi": "Leluhur besar yang menurunkan marga-marga Lontung termasuk Sinaga, Situmorang, Pandiangan, dan lainnya."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Sinaga Bonor",
+          "deskripsi": "Salah satu dari tiga cabang utama (ompu) Sinaga."
+        },
+        {
+          "nama": "Sinaga Ratus",
+          "deskripsi": "Salah satu dari tiga cabang utama (ompu) Sinaga."
+        },
+        {
+          "nama": "Sinaga Uruk",
+          "deskripsi": "Salah satu dari tiga cabang utama (ompu) Sinaga."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Urat, Samosir",
+      "deskripsi": "Desa Urat di Samosir dianggap sebagai bona pasogit marga Sinaga.",
+      "latitude": 2.5333,
+      "longitude": 98.8167,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Samosir"
+    },
+    "tradisi": [
+      "Musyawarah Toga Sinaga dalam Parsadaan Pomparan Toga Sinaga dohot Boruna (PPTSB)",
+      "Ziarah ke Tugu Toga Sinaga di Urat, Samosir"
+    ],
+    "tokoh": [
+      {
+        "nama": "Anicetus Bongsu Antonius Sinaga",
+        "gelar": "Mgr.",
+        "bidang": "Agama",
+        "deskripsi": "Uskup Agung Medan yang dihormati."
+      },
+      {
+        "nama": "Ferdinand Sinaga",
+        "gelar": "-",
+        "bidang": "Olahraga",
+        "deskripsi": "Pemain sepak bola profesional Indonesia."
+      }
+    ],
+    "relatedMargas": [
+      "sitorus",
+      "simbolon"
+    ],
+    "updatedAt": "2025-01-10"
+  },
+  {
+    "margaId": "5",
+    "slug": "hutabarat",
+    "sejarah": "Marga Hutabarat adalah keturunan dari Si Raja Nabarat, anak sulung dari Guru Mangaloksa. Mereka merupakan bagian dari 'Si Opat Pusoran' (Empat Pusaran) bersama Panggabean, Hutagalung, dan Hutatoruan.",
+    "asalUsul": "Berasal dari Tarutung, Rura Silindung. Nama Hutabarat secara harfiah bisa berarti kampung barat, namun sering dikaitkan dengan makna 'berlawanan' atau penjaga sisi barat dalam konteks adat.",
+    "tarombo": {
+      "description": "Tarombo Hutabarat dimulai dari Guru Mangaloksa, yang merupakan cucu Si Raja Sobu.",
+      "ancestors": [
+        {
+          "nama": "Si Raja Nabarat",
+          "deskripsi": "Leluhur marga Hutabarat, anak pertama Guru Mangaloksa."
+        },
+        {
+          "nama": "Guru Mangaloksa",
+          "deskripsi": "Tokoh besar yang membuka wilayah Silindung dan menurunkan marga-marga Si Opat Pusoran."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Hutabarat Sosunggulon",
+          "deskripsi": "Cabang keturunan anak pertama Si Raja Nabarat."
+        },
+        {
+          "nama": "Hutabarat Hapoltahan",
+          "deskripsi": "Cabang keturunan anak kedua Si Raja Nabarat."
+        },
+        {
+          "nama": "Hutabarat Pohan",
+          "deskripsi": "Cabang keturunan anak ketiga Si Raja Nabarat."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Tarutung",
+      "deskripsi": "Lembah Rura Silindung, khususnya Tarutung, adalah pusat asal marga Hutabarat.",
+      "latitude": 2.0232,
+      "longitude": 98.9669,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Tapanuli Utara"
+    },
+    "tradisi": [
+      "Partangiangan Bolon marga Hutabarat",
+      "Tradisi Padan (sumpah setia) dengan marga Silaban yang melarang perkawinan antar keduanya"
+    ],
+    "tokoh": [
+      {
+        "nama": "Irma Hutabarat",
+        "gelar": "-",
+        "bidang": "Aktivis",
+        "deskripsi": "Aktivis sosial dan politisi Indonesia."
+      },
+      {
+        "nama": "Felix Hutabarat",
+        "gelar": "-",
+        "bidang": "Hukum",
+        "deskripsi": "Tokoh hukum yang pernah menjabat di Kejaksaan."
+      }
+    ],
+    "relatedMargas": [
+      "napitupulu",
+      "siahaan"
+    ],
+    "updatedAt": "2025-01-10"
+  },
+  {
+    "margaId": "6",
+    "slug": "napitupulu",
+    "sejarah": "Marga Napitupulu adalah keturunan dari Raja Napitupulu, anak ketiga dari Sonak Malela. Termasuk dalam kelompok marga Sonak Malela bersama Simangunsong, Marpaung, dan Pardede.",
+    "asalUsul": "Berasal dari Balige. Nama Napitupulu bermakna 'yang ketujuh puluh'. Legenda menyebutkan kaitan dengan angka tujuh puluh dalam perjalanannya.",
+    "tarombo": {
+      "description": "Tarombo Napitupulu terbagi menjadi dua cabang utama dari anak-anak Raja Napitupulu.",
+      "ancestors": [
+        {
+          "nama": "Raja Napitupulu",
+          "deskripsi": "Leluhur marga Napitupulu, anak Sonak Malela."
+        },
+        {
+          "nama": "Sonak Malela",
+          "deskripsi": "Leluhur yang menurunkan empat marga: Simangunsong, Marpaung, Napitupulu, Pardede."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Salim Babiat (Sangkar Nihuta)",
+          "deskripsi": "Cabang keturunan anak pertama Raja Napitupulu."
+        },
+        {
+          "nama": "Ulubalang Raja (Parjanggut Huting)",
+          "deskripsi": "Cabang keturunan anak kedua Raja Napitupulu."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Balige",
+      "deskripsi": "Wilayah Balige dan sekitarnya (seperti Sangkar Nihuta) adalah basis utama marga Napitupulu.",
+      "latitude": 2.3339,
+      "longitude": 99.0664,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Toba"
+    },
+    "tradisi": [
+      "Gondang Napitupulu dalam upacara adat",
+      "Kisah 'Batu Basiha' yang menjadi legenda lokal dan situs budaya terkait marga ini"
+    ],
+    "tokoh": [
+      {
+        "nama": "Adian Napitupulu",
+        "gelar": "SH",
+        "bidang": "Politik",
+        "deskripsi": "Politisi dan anggota DPR RI yang vokal."
+      },
+      {
+        "nama": "Jimmy Napitupulu",
+        "gelar": "-",
+        "bidang": "Olahraga",
+        "deskripsi": "Wasit sepak bola internasional asal Indonesia."
       }
     ],
     "relatedMargas": [
       "siahaan",
       "simbolon"
     ],
-    "updatedAt": "2024-01-15"
+    "updatedAt": "2025-01-10"
   },
   {
-    "margaId": "7",
-    "slug": "ginting",
-    "sejarah": "Marga Ginting adalah bagian dari Merga Silima dalam budaya Karo dan memiliki peran penting dalam struktur pemerintahan adat di Tanah Karo.",
-    "asalUsul": "Nama Ginting diyakini berasal dari leluhur yang menetap di wilayah Kabanjahe dan sekitarnya. Garis keturunan dijaga ketat melalui aturan perkawinan Merga Silima.",
+    "margaId": "8",
+    "slug": "sembiring",
+    "sejarah": "Marga Sembiring adalah salah satu dari Merga Silima (lima marga induk) Karo. Nama Sembiring berasal dari 'si' + 'mbiring' yang berarti 'yang si hitam', mencerminkan asal-usul yang diyakini berkaitan dengan kedatangan leluhur dari India Selatan (Tamil/Keling) yang berasimilasi dengan penduduk setempat.",
+    "asalUsul": "Leluhur Sembiring diyakini datang dari India Selatan melalui pesisir. Marga ini unik karena mengizinkan pernikahan sesama marga Sembiring asalkan berbeda sub-marga (misal Sembiring Brahmana dengan Sembiring Tekang).",
     "tarombo": {
-      "description": "Tarombo Ginting menempatkan leluhur sebagai penjaga adat dan penyebar nilai gotong royong di dataran tinggi Karo.",
+      "description": "Tarombo Sembiring terbagi dalam dua kelompok besar berdasarkan tradisi: Si Man Biang (memakan anjing) dan Si La Man Biang (tidak memakan anjing, terkait tradisi Hindu).",
       "ancestors": [
         {
-          "nama": "Guru Kinayan",
-          "deskripsi": "Leluhur yang menjadi rujukan beberapa cabang marga Ginting."
+          "nama": "Nenek Moyang Sembiring",
+          "deskripsi": "Tokoh leluhur yang diyakini berasal dari keturunan India Selatan."
         },
         {
-          "nama": "Sembiring Pelawi",
-          "deskripsi": "Tokoh yang menjaga hubungan antar merga di Tanah Karo."
+          "nama": "Pagid Meliala",
+          "deskripsi": "Salah satu leluhur awal sub-marga Sembiring Meliala."
         }
       ],
       "subMargas": [
         {
-          "nama": "Ginting Mergana",
-          "deskripsi": "Sub-marga yang banyak ditemukan di wilayah Kabanjahe."
+          "nama": "Sembiring Brahmana",
+          "deskripsi": "Sub-marga yang termasuk kelompok Si La Man Biang (Pantang memakan anjing)."
         },
         {
-          "nama": "Ginting Suka",
-          "deskripsi": "Cabang yang dikenal sebagai penjaga lahan ladang di perbukitan."
+          "nama": "Sembiring Meliala",
+          "deskripsi": "Sub-marga yang memiliki peran penting sebagai penghulu di Sarinembah."
+        },
+        {
+          "nama": "Sembiring Pelawi",
+          "deskripsi": "Sub-marga yang dikenal menurunkan tokoh Guru Patimpus Sembiring Pelawi."
+        },
+        {
+          "nama": "Sembiring Kembaren",
+          "deskripsi": "Sub-marga yang termasuk kelompok Si Man Biang."
         }
       ]
     },
     "wilayah": {
-      "nama": "Kabanjahe, Tanah Karo",
-      "deskripsi": "Berada di dataran tinggi Karo dengan tradisi ladang dan kebun yang kuat serta kedekatan dengan Gunung Sinabung.",
-      "latitude": 3.1034,
-      "longitude": 98.4891,
+      "nama": "Tanah Karo",
+      "deskripsi": "Tersebar luas di Dataran Tinggi Karo, dengan konsentrasi sub-marga tertentu di wilayah seperti Sarinembah dan sekitarnya.",
+      "latitude": 3.107,
+      "longitude": 98.49,
       "provinsi": "Sumatera Utara",
       "kabupaten": "Karo"
     },
     "tradisi": [
-      "Erpangir ku lau sebagai ritual pembersihan diri dan kampung",
-      "Perkulunen untuk mengatur tata cara pesta adat Ginting"
+      "Ritual pembakaran jenazah dan menghanyutkan abu ke sungai (pada masa lalu untuk kelompok Si La Man Biang)",
+      "Pernikahan semarga antar sub-marga yang berbeda (impal)"
     ],
     "tokoh": [
       {
-        "nama": "Djamin Ginting",
-        "gelar": "Letjen TNI",
-        "bidang": "Militer",
-        "deskripsi": "Pahlawan nasional dari Tanah Karo yang dikenal memperjuangkan kemerdekaan."
+        "nama": "Guru Patimpus Sembiring Pelawi",
+        "gelar": "Pendiri Kota Medan",
+        "bidang": "Sejarah",
+        "deskripsi": "Tokoh besar yang mendirikan Kota Medan."
+      },
+      {
+        "nama": "Tifatul Sembiring",
+        "gelar": "Ir.",
+        "bidang": "Politik",
+        "deskripsi": "Politisi dan mantan Menteri Komunikasi dan Informatika."
       }
     ],
     "relatedMargas": [
       "tarigan",
       "karo-karo"
     ],
-    "updatedAt": "2024-02-20"
+    "updatedAt": "2025-01-10"
   },
   {
-    "margaId": "21",
-    "slug": "nasution",
-    "sejarah": "Marga Nasution berasal dari Mandailing Godang dengan sejarah panjang dalam perdagangan dan pendidikan di Sumatera Utara.",
-    "asalUsul": "Asal usul Nasution dikaitkan dengan keturunan Nasution yang bermukim di Pidoli dan Hutapungkut sebelum menyebar ke berbagai wilayah rantau.",
+    "margaId": "9",
+    "slug": "tarigan",
+    "sejarah": "Marga Tarigan adalah bagian dari Merga Silima yang memiliki hubungan sejarah erat dengan wilayah Simalungun. Diyakini berasal dari marga Purba di Simalungun yang bermigrasi ke Karo.",
+    "asalUsul": "Nama Tarigan konon berasal dari peristiwa 'tarik hotang' (menarik rotan) untuk menentukan batas wilayah. Leluhur awalnya bermukim di daerah Purba, Simalungun sebelum menyebar ke Karo.",
     "tarombo": {
-      "description": "Tarombo Nasution menekankan hubungan erat antar mora, kahanggi, dan anak boru dalam struktur Mandailing.",
+      "description": "Tarombo Tarigan mencatat hubungan erat dengan marga Purba (Simalungun) dan terbagi menjadi banyak cabang sub-marga.",
       "ancestors": [
         {
-          "nama": "Ompu Nasution",
-          "deskripsi": "Leluhur yang menjadi rujukan utama banyak cabang Nasution."
+          "nama": "Tuan Tarigan",
+          "deskripsi": "Leluhur awal yang menurunkan marga Tarigan."
+        },
+        {
+          "nama": "Pangulu Tambak Bawang",
+          "deskripsi": "Tokoh leluhur yang terkait dengan asal-usul Tarigan Tambak."
         }
       ],
       "subMargas": [
         {
-          "nama": "Nasution Pidoli",
-          "deskripsi": "Cabang yang menjaga tradisi ulos bulang dan gondang Naposo."
+          "nama": "Tarigan Sibero",
+          "deskripsi": "Salah satu sub-marga terbesar yang tersebar di wilayah Juhar."
         },
         {
-          "nama": "Nasution Hutapungkut",
-          "deskripsi": "Cabang yang berkembang di daerah Mandailing Julu."
+          "nama": "Tarigan Tambak",
+          "deskripsi": "Cabang yang berasal dari daerah Dolog Silou."
+        },
+        {
+          "nama": "Tarigan Gerneng",
+          "deskripsi": "Sub-marga yang banyak bermukim di Cingkes."
         }
       ]
     },
     "wilayah": {
-      "nama": "Mandailing Godang",
-      "deskripsi": "Wilayah asal di sepanjang aliran Sungai Batang Gadis dengan budaya agraris dan literasi Al-Qur'an yang kuat.",
-      "latitude": 0.7667,
-      "longitude": 99.4503,
+      "nama": "Juhar dan Tiga Binanga",
+      "deskripsi": "Wilayah Juhar sering disebut sebagai pusat persebaran Tarigan Sibero, sementara daerah perbatasan Simalungun menjadi asal Tarigan lainnya.",
+      "latitude": 3.05,
+      "longitude": 98.3,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Karo"
+    },
+    "tradisi": [
+      "Kerja Tahun (pesta tahunan) yang meriah di kampung-kampung basis Tarigan",
+      "Tradisi Guro-guro Aron sebagai ajang muda-mudi"
+    ],
+    "tokoh": [
+      {
+        "nama": "Likas Tarigan",
+        "gelar": "-",
+        "bidang": "Politik",
+        "deskripsi": "Tokoh perempuan Karo dan istri pahlawan nasional Djamin Ginting."
+      },
+      {
+        "nama": "Henry Guntur Tarigan",
+        "gelar": "Prof. Dr.",
+        "bidang": "Akademisi",
+        "deskripsi": "Ahli bahasa dan penulis buku tata bahasa yang produktif."
+      }
+    ],
+    "relatedMargas": [
+      "purba",
+      "ginting"
+    ],
+    "updatedAt": "2025-01-10"
+  },
+  {
+    "margaId": "10",
+    "slug": "karo-karo",
+    "sejarah": "Marga Karo-Karo adalah salah satu Merga Silima yang menyandang nama etnisnya sendiri. Marga ini memiliki posisi penting dan tersebar luas di seluruh Tanah Karo hingga Langkat.",
+    "asalUsul": "Leluhur Karo-Karo diyakini berasal dari Simalungun (Purba) yang masuk ke dataran tinggi Karo. Kisah lain menyebutkan kaitan dengan India Selatan melalui seorang panglima bernama Karo.",
+    "tarombo": {
+      "description": "Tarombo Karo-Karo memiliki banyak cabang (sekitar 18 sub-marga) yang menyebar mendirikan kampung-kampung (kuta).",
+      "ancestors": [
+        {
+          "nama": "Nenek Moyang Karo-Karo",
+          "deskripsi": "Tokoh pendiri yang menurunkan berbagai sub-marga Karo-Karo."
+        },
+        {
+          "nama": "Raja Barus",
+          "deskripsi": "Leluhur yang terkait dengan sub-marga Karo-Karo Barus."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Karo-Karo Sitepu",
+          "deskripsi": "Sub-marga yang banyak bermukim di Naman Teran dan sekitarnya."
+        },
+        {
+          "nama": "Karo-Karo Sinulingga",
+          "deskripsi": "Sub-marga yang mendirikan Lingga dan menjadi raja di sana (Sibayak Lingga)."
+        },
+        {
+          "nama": "Karo-Karo Barus",
+          "deskripsi": "Sub-marga yang banyak terdapat di Barusjahe."
+        },
+        {
+          "nama": "Karo-Karo Surbakti",
+          "deskripsi": "Sub-marga yang berkuasa di wilayah Surbakti."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Lingga dan Barusjahe",
+      "deskripsi": "Desa Lingga adalah pusat Sibayak Lingga (Karo-Karo Sinulingga) dengan rumah adat yang masih terawat.",
+      "latitude": 3.12,
+      "longitude": 98.52,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Karo"
+    },
+    "tradisi": [
+      "Merdiang Merasah (membersihkan desa) sebelum masa tanam",
+      "Perayaan Pesta Bunga dan Buah sebagai ungkapan syukur hasil panen"
+    ],
+    "tokoh": [
+      {
+        "nama": "Sindoedarsono Sudjojono (Kisah S. Sudjojono)",
+        "gelar": "Pelukis",
+        "bidang": "Seni",
+        "deskripsi": "Maestro pelukis Indonesia yang memiliki darah Karo dari ibunya (Karo-Karo)."
+      },
+      {
+        "nama": "Armen Putu Karo-Karo",
+        "gelar": "-",
+        "bidang": "Jurnalis/Politik",
+        "deskripsi": "Tokoh pers dan politisi dari Tanah Karo."
+      }
+    ],
+    "relatedMargas": [
+      "sinaga",
+      "sembiring"
+    ],
+    "updatedAt": "2025-01-10"
+  },
+  {
+    "margaId": "11",
+    "slug": "perangin-angin",
+    "sejarah": "Marga Perangin-angin adalah bagian dari Merga Silima yang memiliki sub-marga terbanyak (sekitar 18). Nama ini sering dikaitkan dengan 'angin' yang membawa mereka berpindah atau sifat yang dinamis.",
+    "asalUsul": "Marga ini menyebar ke segala penjuru mata angin di Tanah Karo. Ada kaitan sejarah dengan Kerajaan Pinem dan migrasi dari Dairi.",
+    "tarombo": {
+      "description": "Tarombo Perangin-angin sangat luas dengan sub-marga yang memiliki wilayah adat masing-masing.",
+      "ancestors": [
+        {
+          "nama": "Raja Enggang",
+          "deskripsi": "Salah satu leluhur yang dikaitkan dengan sub-marga Pinem."
+        },
+        {
+          "nama": "Raja Lambing",
+          "deskripsi": "Tokoh leluhur yang terkait dengan sub-marga Sebayang."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Perangin-angin Bangun",
+          "deskripsi": "Sub-marga yang banyak bermukim di Batukarang."
+        },
+        {
+          "nama": "Perangin-angin Sebayang",
+          "deskripsi": "Sub-marga yang mendirikan kuta Perbesi dan Kuala."
+        },
+        {
+          "nama": "Perangin-angin Pinem",
+          "deskripsi": "Sub-marga yang memiliki hubungan erat dengan Dairi/Pakpak."
+        },
+        {
+          "nama": "Perangin-angin Sukatendel",
+          "deskripsi": "Sub-marga yang berasal dari Sukatendel."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Batukarang dan Kutabuluh",
+      "deskripsi": "Batukarang dan Kutabuluh adalah wilayah basis utama beberapa sub-marga Perangin-angin.",
+      "latitude": 3.08,
+      "longitude": 98.35,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Karo"
+    },
+    "tradisi": [
+      "Naka Lalo, upacara syukuran panen padi",
+      "Musyawarah adat di Jambur (balai desa) untuk menyelesaikan sengketa"
+    ],
+    "tokoh": [
+      {
+        "nama": "Kiras Bangun (Garamata)",
+        "gelar": "Pahlawan Nasional",
+        "bidang": "Perjuangan",
+        "deskripsi": "Pejuang kemerdekaan dari Batukarang yang melawan penjajah Belanda."
+      },
+      {
+        "nama": "Effendy B. Perangin-angin",
+        "gelar": "-",
+        "bidang": "Birokrasi",
+        "deskripsi": "Pejabat tinggi di lingkungan keimigrasian."
+      }
+    ],
+    "relatedMargas": [
+      "ginting",
+      "sembiring"
+    ],
+    "updatedAt": "2025-01-10"
+  },
+  {
+    "margaId": "12",
+    "slug": "saragih",
+    "sejarah": "Marga Saragih adalah salah satu dari empat marga utama (SISADAPUR) di Simalungun. Nama Saragih berasal dari 'Simada Ragih' yang berarti pemilik aturan atau undang-undang. Leluhurnya diyakini mendirikan kerajaan di Raya.",
+    "asalUsul": "Leluhur Saragih diyakini berasal dari India Selatan yang bermigrasi dan menetap di Simalungun. Mereka memegang peranan penting sebagai penguasa Partuanan Raya.",
+    "tarombo": {
+      "description": "Tarombo Saragih memiliki banyak cabang (sub-marga) yang menyebar di wilayah Simalungun.",
+      "ancestors": [
+        {
+          "nama": "Tuan Rondahaim Saragih",
+          "deskripsi": "Raja Raya yang terkenal sebagai pejuang melawan kolonial Belanda."
+        },
+        {
+          "nama": "Raja Banua Sobou",
+          "deskripsi": "Leluhur kuno yang menurunkan marga Saragih."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Saragih Garingging",
+          "deskripsi": "Cabang yang berasal dari Garingging dan memegang peran di Raya."
+        },
+        {
+          "nama": "Saragih Sumbayak",
+          "deskripsi": "Salah satu cabang utama Saragih."
+        },
+        {
+          "nama": "Saragih Dasalak",
+          "deskripsi": "Cabang Saragih yang banyak ditemukan di Simalungun."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Raya, Simalungun",
+      "deskripsi": "Pematang Raya adalah pusat kerajaan dan kebudayaan marga Saragih.",
+      "latitude": 2.9667,
+      "longitude": 98.85,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Simalungun"
+    },
+    "tradisi": [
+      "Pesta Rondang Bittang sebagai ungkapan syukur panen",
+      "Tradisi Haroan Bolon (gotong royong) di ladang"
+    ],
+    "tokoh": [
+      {
+        "nama": "Tuan Rondahaim Saragih",
+        "gelar": "Raja Raya",
+        "bidang": "Sejarah/Perjuangan",
+        "deskripsi": "Pejuang Simalungun yang gigih melawan Belanda dan diusulkan sebagai Pahlawan Nasional."
+      },
+      {
+        "nama": "Bill Saragih",
+        "gelar": "-",
+        "bidang": "Seni",
+        "deskripsi": "Musisi jazz legendaris Indonesia."
+      }
+    ],
+    "relatedMargas": [
+      "purba",
+      "damanik"
+    ],
+    "updatedAt": "2025-01-10"
+  },
+  {
+    "margaId": "13",
+    "slug": "purba",
+    "sejarah": "Marga Purba adalah bagian dari SISADAPUR Simalungun. Nama Purba berarti 'Timur' atau 'Cendekiawan'. Mereka mendirikan kerajaan di Pematang Purba dan dikenal sebagai penguasa wilayah tersebut.",
+    "asalUsul": "Leluhur Purba diyakini datang dari arah Timur (Purba) atau berasosiasi dengan Tuan Purba yang sakti. Pusat kekuasaan mereka ada di Pematang Purba dengan Istana Rumah Bolon yang megah.",
+    "tarombo": {
+      "description": "Tarombo Purba mencakup berbagai cabang yang menyebar dari Pematang Purba ke seluruh Simalungun dan Karo.",
+      "ancestors": [
+        {
+          "nama": "Tuan Pangultop Ultop",
+          "deskripsi": "Raja pertama Kerajaan Purba yang legendaris."
+        },
+        {
+          "nama": "Tuan Mogang",
+          "deskripsi": "Salah satu raja Purba yang terkenal."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Purba Pakpak",
+          "deskripsi": "Cabang utama yang memerintah di Kerajaan Purba."
+        },
+        {
+          "nama": "Purba Tambak",
+          "deskripsi": "Cabang yang berkuasa di Dolok Silou."
+        },
+        {
+          "nama": "Purba Girsang",
+          "deskripsi": "Cabang yang mendiami wilayah Silimakuta."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Pematang Purba",
+      "deskripsi": "Lokasi Rumah Bolon Pematang Purba, istana raja-raja Purba yang masih berdiri kokoh.",
+      "latitude": 2.9167,
+      "longitude": 98.75,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Simalungun"
+    },
+    "tradisi": [
+      "Menjaga Rumah Bolon Pematang Purba sebagai situs sejarah",
+      "Upacara Maranggir untuk pembersihan diri dan lingkungan"
+    ],
+    "tokoh": [
+      {
+        "nama": "Djamin Purba",
+        "gelar": "SH",
+        "bidang": "Hukum",
+        "deskripsi": "Tokoh hukum dan pengacara senior."
+      },
+      {
+        "nama": "Sihar Purba",
+        "gelar": "-",
+        "bidang": "Seni",
+        "deskripsi": "Seniman yang melestarikan musik Simalungun."
+      }
+    ],
+    "relatedMargas": [
+      "saragih",
+      "sinaga"
+    ],
+    "updatedAt": "2025-01-10"
+  },
+  {
+    "margaId": "14",
+    "slug": "sinaga",
+    "sejarah": "Di Simalungun, Sinaga adalah salah satu dari empat marga raja (SISADAPUR). Berbeda dengan Toba, Sinaga Simalungun memiliki sejarah kerajaan di Batangiou dan Tanah Jawa.",
+    "asalUsul": "Leluhur Sinaga di Simalungun dikaitkan dengan Raja Saniang Naga dari Kerajaan Batangiou. Mereka memiliki wilayah kedaulatan sendiri sebelum integrasi wilayah.",
+    "tarombo": {
+      "description": "Tarombo Sinaga Simalungun terfokus pada garis keturunan penguasa di Tanah Jawa dan Batangiou.",
+      "ancestors": [
+        {
+          "nama": "Raja Saniang Naga",
+          "deskripsi": "Leluhur mitologis marga Sinaga di Simalungun."
+        },
+        {
+          "nama": "Tuan Tanah Jawa",
+          "deskripsi": "Penguasa wilayah Tanah Jawa dari marga Sinaga."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Sinaga Dadihoyong",
+          "deskripsi": "Cabang Sinaga yang berkuasa di Tanah Jawa."
+        },
+        {
+          "nama": "Sinaga Porti",
+          "deskripsi": "Salah satu cabang Sinaga di Simalungun."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Tanah Jawa, Simalungun",
+      "deskripsi": "Kecamatan Tanah Jawa adalah bekas pusat kekuasaan marga Sinaga di Simalungun.",
+      "latitude": 2.85,
+      "longitude": 99.1,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Simalungun"
+    },
+    "tradisi": [
+      "Pesta Rondang Bintang di Tanah Jawa",
+      "Seni Huda-huda (topeng) yang sering ditampilkan dalam upacara adat"
+    ],
+    "tokoh": [
+      {
+        "nama": "Jhonny Buyung Saragih (Sinaga)",
+        "gelar": "-",
+        "bidang": "Politik",
+        "deskripsi": "Tokoh masyarakat Simalungun (catatan: nama kadang menggunakan afiliasi marga lain tapi berdarah Sinaga)."
+      },
+      {
+        "nama": "Poltak Sinaga",
+        "gelar": "Prof. Ki",
+        "bidang": "Budaya",
+        "deskripsi": "Budayawan yang meneliti sejarah Sinaga Simalungun."
+      }
+    ],
+    "relatedMargas": [
+      "damanik",
+      "purba"
+    ],
+    "updatedAt": "2025-01-10"
+  },
+  {
+    "margaId": "15",
+    "slug": "damanik",
+    "sejarah": "Marga Damanik adalah marga 'sipukka huta' (pembuka kampung) di banyak wilayah Simalungun dan penguasa Kerajaan Siantar. Nama Damanik berarti 'Simada Manik' atau pemilik manik/karisma.",
+    "asalUsul": "Leluhur Damanik diyakini berasal dari Nagur, sebuah kerajaan kuno yang besar. Mereka kemudian mendirikan Kerajaan Siantar.",
+    "tarombo": {
+      "description": "Tarombo Damanik berpusat pada garis keturunan Raja Nagur dan Raja Siantar.",
+      "ancestors": [
+        {
+          "nama": "Raja Nagur",
+          "deskripsi": "Penguasa kerajaan kuno Nagur yang menurunkan marga Damanik."
+        },
+        {
+          "nama": "Raja Sang Naualuh Damanik",
+          "deskripsi": "Raja Siantar ke-14 yang pahlawan dan sangat dihormati."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Damanik Bariba",
+          "deskripsi": "Cabang keturunan penguasa Siantar."
+        },
+        {
+          "nama": "Damanik Tomok",
+          "deskripsi": "Salah satu cabang Damanik."
+        },
+        {
+          "nama": "Damanik Usang",
+          "deskripsi": "Cabang Damanik yang tua."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Pematangsiantar",
+      "deskripsi": "Pematangsiantar adalah pusat Kerajaan Siantar yang diperintah oleh raja-raja Damanik.",
+      "latitude": 2.9611,
+      "longitude": 99.06,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Simalungun"
+    },
+    "tradisi": [
+      "Haul Raja Sang Naualuh Damanik untuk mengenang jasa beliau",
+      "Penggunaan Bulang (penutup kepala) khas raja Siantar"
+    ],
+    "tokoh": [
+      {
+        "nama": "Sang Naualuh Damanik",
+        "gelar": "Raja Siantar XIV",
+        "bidang": "Sejarah/Pahlawan",
+        "deskripsi": "Pahlawan nasional yang gigih melawan penjajahan dan penyebar agama Islam di Simalungun."
+      },
+      {
+        "nama": "Djabanten Damanik",
+        "gelar": "-",
+        "bidang": "Pemerintahan",
+        "deskripsi": "Mantan Bupati Simalungun."
+      }
+    ],
+    "relatedMargas": [
+      "saragih",
+      "simatupang"
+    ],
+    "updatedAt": "2025-01-10"
+  },
+  {
+    "margaId": "16",
+    "slug": "simatupang",
+    "sejarah": "Marga Simatupang, meskipun berasal dari Muara (Toba), memiliki populasi signifikan di Simalungun dan telah beradaptasi dengan budaya setempat (Simalungun). Di Simalungun, mereka menjadi bagian integral masyarakat.",
+    "asalUsul": "Berasal dari Toga Simatupang, anak Raja Lontung, dari Muara, Tapanuli Utara. Bermigrasi ke Simalungun dan berbaur dengan masyarakat lokal.",
+    "tarombo": {
+      "description": "Tarombo Simatupang terdiri dari tiga cabang utama (Togatorop, Sianturi, Siburian) yang juga diakui di Simalungun.",
+      "ancestors": [
+        {
+          "nama": "Toga Simatupang",
+          "deskripsi": "Leluhur marga Simatupang dari Muara."
+        },
+        {
+          "nama": "Raja Lontung",
+          "deskripsi": "Ayah dari Toga Simatupang."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Simatupang Togatorop",
+          "deskripsi": "Anak sulung Toga Simatupang."
+        },
+        {
+          "nama": "Simatupang Sianturi",
+          "deskripsi": "Anak kedua Toga Simatupang."
+        },
+        {
+          "nama": "Simatupang Siburian",
+          "deskripsi": "Anak bungsu Toga Simatupang."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Simalungun (Migrasi)",
+      "deskripsi": "Tersebar di berbagai kecamatan di Simalungun seperti Sidamanik dan Tanah Jawa, hidup berdampingan dengan marga asli SISADAPUR.",
+      "latitude": 2.9,
+      "longitude": 99,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Simalungun"
+    },
+    "tradisi": [
+      "Partangiangan Bolon Simatupang",
+      "Adaptasi adat Marharoan (gotong royong) Simalungun"
+    ],
+    "tokoh": [
+      {
+        "nama": "T.B. Simatupang",
+        "gelar": "Jenderal",
+        "bidang": "Militer",
+        "deskripsi": "Pahlawan Nasional Indonesia."
+      },
+      {
+        "nama": "Iwan Simatupang",
+        "gelar": "-",
+        "bidang": "Sastra",
+        "deskripsi": "Novelis terkenal Indonesia."
+      }
+    ],
+    "relatedMargas": [
+      "damanik",
+      "saragih"
+    ],
+    "updatedAt": "2025-01-10"
+  },
+  {
+    "margaId": "17",
+    "slug": "tumanggor",
+    "sejarah": "Marga Tumanggor berasal dari Sionom Hudon, Parlilitan. Mereka adalah keturunan dari Siraja Tumanggor, yang merupakan bagian dari kelompok marga keturunan Siraja Oloan. Dalam tradisi Pakpak, mereka masuk dalam Suak Kelasen.",
+    "asalUsul": "Leluhur Tumanggor (Siraja Tumanggor) adalah anak dari Siraja Oloan. Mereka menyebar dari Bakkara ke Parlilitan dan beradaptasi menjadi bagian dari etnis Pakpak (Suak Kelasen).",
+    "tarombo": {
+      "description": "Tarombo Tumanggor berakar pada silsilah Siraja Oloan. Di Pakpak, mereka memiliki struktur sosial yang kuat di wilayah Sionom Hudon.",
+      "ancestors": [
+        {
+          "nama": "Siraja Tumanggor",
+          "deskripsi": "Leluhur marga Tumanggor."
+        },
+        {
+          "nama": "Siraja Oloan",
+          "deskripsi": "Leluhur utama yang menurunkan marga-marga Naibaho, Sihotang, Bakkara, Sinambela, Sihite, dan Simanullang (termasuk Tumanggor)."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Tumanggor (Toba)",
+          "deskripsi": "Kelompok yang lebih mengidentifikasi diri dengan adat Toba di Humbang."
+        },
+        {
+          "nama": "Tumanggor (Pakpak)",
+          "deskripsi": "Kelompok yang sepenuhnya mengadopsi adat Pakpak di wilayah Kelasen (Parlilitan)."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Sionom Hudon, Parlilitan",
+      "deskripsi": "Wilayah Parlilitan (Suak Kelasen) adalah pusat persebaran marga Tumanggor di tanah Pakpak.",
+      "latitude": 2.2333,
+      "longitude": 98.4833,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Humbang Hasundutan"
+    },
+    "tradisi": [
+      "Upacara adat Sipaha Lima (meskipun lebih Toba, adaptasi lokal ada)",
+      "Tradisi 'Mangan Napinadar' dalam acara adat besar"
+    ],
+    "tokoh": [
+      {
+        "nama": "Master Parulian Tumanggor",
+        "gelar": "Bupati Dairi (Mantan)",
+        "bidang": "Pemerintahan",
+        "deskripsi": "Tokoh pemerintahan yang pernah menjabat sebagai Bupati Dairi dan berjasa dalam pemekaran Pakpak Bharat."
+      },
+      {
+        "nama": "Franc Bernhard Tumanggor",
+        "gelar": "-",
+        "bidang": "Politik",
+        "deskripsi": "Bupati Pakpak Bharat."
+      }
+    ],
+    "relatedMargas": [
+      "manik",
+      "bancin"
+    ],
+    "updatedAt": "2025-01-10"
+  },
+  {
+    "margaId": "18",
+    "slug": "manik",
+    "sejarah": "Marga Manik di Pakpak sangat dominan, terutama di Suak Pegagan dan Simsim. Mereka memiliki sejarah panjang sebagai salah satu marga *Sipukka Huta* (pembuka kampung) di Dairi.",
+    "asalUsul": "Ada beberapa versi, namun Manik Pakpak sering dikaitkan dengan keturunan Mpu Bada atau Mpung Gagan (untuk Manik Pegagan). Mereka berbeda dari Manik Toba (Damanik/Manik Raja).",
+    "tarombo": {
+      "description": "Tarombo Manik Pakpak cukup kompleks karena ada beberapa varian (Pegagan, Kecupak).",
+      "ancestors": [
+        {
+          "nama": "Mpung Gagan",
+          "deskripsi": "Leluhur Manik Pegagan."
+        },
+        {
+          "nama": "Mpu Bada",
+          "deskripsi": "Leluhur Manik Kecupak (Simsim)."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Manik Pegagan",
+          "deskripsi": "Mendiami wilayah Sumbul dan Pegagan Hilir."
+        },
+        {
+          "nama": "Manik Kecupak",
+          "deskripsi": "Mendiami wilayah Simsim (Pakpak Bharat)."
+        },
+        {
+          "nama": "Gajah Manik",
+          "deskripsi": "Salah satu varian di wilayah Keppas."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Sumbul dan Salak",
+      "deskripsi": "Kecamatan Sumbul (Pegagan) dan Salak (Simsim) adalah basis utama marga Manik Pakpak.",
+      "latitude": 2.75,
+      "longitude": 98.3333,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Dairi dan Pakpak Bharat"
+    },
+    "tradisi": [
+      "Menanda Tahun (Upacara pertanian tahunan)",
+      "Genderang Sisibah (Ensambel musik adat Pakpak)"
+    ],
+    "tokoh": [
+      {
+        "nama": "Liberty Manik",
+        "gelar": "Komponis",
+        "bidang": "Seni",
+        "deskripsi": "Pencipta lagu nasional 'Satu Nusa Satu Bangsa', berdarah Batak Pakpak."
+      },
+      {
+        "nama": "Safriadi Manik",
+        "gelar": "-",
+        "bidang": "Pemerintahan",
+        "deskripsi": "Tokoh masyarakat Pakpak."
+      }
+    ],
+    "relatedMargas": [
+      "banurea",
+      "berutu"
+    ],
+    "updatedAt": "2025-01-10"
+  },
+  {
+    "margaId": "19",
+    "slug": "banurea",
+    "sejarah": "Marga Banurea adalah salah satu marga asli Suak Simsim. Mereka dikenal sebagai marga yang memegang peranan penting dalam struktur adat 'Sulang Silima' di wilayah Salak.",
+    "asalUsul": "Banurea adalah keturunan dari Mpu Bada, bersaudara dengan marga Tendang dan Manik. Berasal dari Tanoh Sindeas.",
+    "tarombo": {
+      "description": "Tarombo Banurea terkait erat dengan keturunan Mpu Bada lainnya.",
+      "ancestors": [
+        {
+          "nama": "Mpu Bada",
+          "deskripsi": "Leluhur utama kelompok marga Simsim."
+        },
+        {
+          "nama": "Raja Banurea",
+          "deskripsi": "Leluhur spesifik marga Banurea."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Banurea (Salak)",
+          "deskripsi": "Kelompok utama yang mendiami ibu kota Pakpak Bharat, Salak."
+        },
+        {
+          "nama": "Banurea (Perantauan)",
+          "deskripsi": "Menyebar ke wilayah lain di Dairi."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Salak, Pakpak Bharat",
+      "deskripsi": "Kota Salak adalah pusat marga Banurea, dimana mereka memegang hak ulayat yang kuat.",
+      "latitude": 2.5833,
+      "longitude": 98.2833,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Pakpak Bharat"
+    },
+    "tradisi": [
+      "Sulang Silima (Struktur kekerabatan lima unsur)",
+      "Upacara Mersodip (Berdoa kepada penguasa alam)"
+    ],
+    "tokoh": [
+      {
+        "nama": "Erah Banurea",
+        "gelar": "-",
+        "bidang": "Adat/Budaya",
+        "deskripsi": "Tokoh pemangku adat yang dihormati di Pakpak Bharat."
+      },
+      {
+        "nama": "Remigo Yolando Berutu (Ibu Banurea)",
+        "gelar": "-",
+        "bidang": "Politik",
+        "deskripsi": "Mantan Bupati Pakpak Bharat (Jalur kekerabatan sering erat)."
+      }
+    ],
+    "relatedMargas": [
+      "berutu",
+      "manik"
+    ],
+    "updatedAt": "2025-01-10"
+  },
+  {
+    "margaId": "20",
+    "slug": "bancin",
+    "sejarah": "Marga Bancin adalah marga Pakpak dari Suak Simsim, tepatnya berasal dari wilayah Penanggalan. Mereka adalah keturunan dari Permesawari, putri Mpu Bada.",
+    "asalUsul": "Bancin adalah anak dari Permesawari (Putri Mpu Bada). Sering disebut juga *Kempu* (Cucu) Bada. Bersaudara dengan Boangmanalu.",
+    "tarombo": {
+      "description": "Tarombo Bancin unik karena ditarik dari garis ibu (Permesawari) yang merupakan putri tokoh besar Mpu Bada.",
+      "ancestors": [
+        {
+          "nama": "Mpu Bada",
+          "deskripsi": "Kakek dari leluhur Bancin."
+        },
+        {
+          "nama": "Permesawari",
+          "deskripsi": "Ibu dari leluhur marga Bancin dan Boangmanalu."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Bancin (Penanggalan)",
+          "deskripsi": "Kelompok utama di Kecamatan Penanggalan."
+        },
+        {
+          "nama": "Bancin (Aceh)",
+          "deskripsi": "Menyebar hingga ke Subulussalam dan Aceh Singkil."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Penanggalan, Pakpak Bharat",
+      "deskripsi": "Kecamatan Penanggalan adalah wilayah asal dan pusat marga Bancin.",
+      "latitude": 2.6167,
+      "longitude": 98.2333,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Pakpak Bharat"
+    },
+    "tradisi": [
+      "Ritual Menanda Tahun di Penanggalan",
+      "Adat perkawinan dengan sistem jujuran (Sinamot/Boli) khas Pakpak"
+    ],
+    "tokoh": [
+      {
+        "nama": "Makmur Syahputra Bancin",
+        "gelar": "-",
+        "bidang": "Politik",
+        "deskripsi": "Anggota DPRD dan tokoh masyarakat Pakpak."
+      },
+      {
+        "nama": "Rustam Effendi Bancin",
+        "gelar": "-",
+        "bidang": "Pendidikan",
+        "deskripsi": "Tokoh pendidikan di daerah Pakpak."
+      }
+    ],
+    "relatedMargas": [
+      "boangmanalu",
+      "berutu"
+    ],
+    "updatedAt": "2025-01-10"
+  },
+  {
+    "margaId": "21",
+    "slug": "lubis",
+    "sejarah": "Marga Lubis adalah salah satu marga terbesar di Mandailing. Mereka memiliki sejarah panjang yang dikaitkan dengan kedatangan leluhur dari Bugis (Daeng Malela) ke wilayah Tamiang/Mandailing Julu.",
+    "asalUsul": "Leluhur marga Lubis yang terkenal adalah Namora Pande Bosi. Terdapat dua cabang utama: Lubis Singasoro (Silangkitang) dan Lubis Singa Sait (Sibaitang).",
+    "tarombo": {
+      "description": "Tarombo Lubis pecah menjadi dua garis utama dari Namora Pande Bosi.",
+      "ancestors": [
+        {
+          "nama": "Namora Pande Bosi",
+          "deskripsi": "Leluhur utama marga Lubis di Mandailing."
+        },
+        {
+          "nama": "Sutan Bugis",
+          "deskripsi": "Leluhur awal yang diyakini berasal dari Bugis."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Lubis Silangkitang",
+          "deskripsi": "Mendiami wilayah Mandailing Julu (Kotanopan)."
+        },
+        {
+          "nama": "Lubis Sibaitang",
+          "deskripsi": "Mendiami wilayah Tamiang dan sekitarnya."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Mandailing Julu",
+      "deskripsi": "Kecamatan Kotanopan dan Panyabungan adalah basis utama marga Lubis, dengan banyak kampung (Huta) tua.",
+      "latitude": 0.6667,
+      "longitude": 99.5667,
       "provinsi": "Sumatera Utara",
       "kabupaten": "Mandailing Natal"
     },
     "tradisi": [
-      "Markobar untuk menghubungkan kekerabatan antar huta",
-      "Upacara manyapai pada siklus pertanian dan pesta adat"
+      "Adat Markobar (berbalas pantun/pidato adat) yang sangat halus",
+      "Gordang Sambilan (musik adat) yang sakral"
     ],
     "tokoh": [
       {
-        "nama": "Abdul Haris Nasution",
-        "gelar": "Jenderal TNI",
+        "nama": "Mochtar Lubis",
+        "gelar": "-",
+        "bidang": "Jurnalisme/Sastra",
+        "deskripsi": "Sastrawan dan jurnalis terkemuka Indonesia."
+      },
+      {
+        "nama": "Zulkifli Lubis",
+        "gelar": "Kolonel",
         "bidang": "Militer",
-        "deskripsi": "Tokoh nasional kelahiran Hutapungkut yang berperan besar dalam sejarah TNI."
+        "deskripsi": "Tokoh militer Indonesia, salah satu pendiri badan intelijen negara."
+      }
+    ],
+    "relatedMargas": [
+      "nasution",
+      "hutasuhut"
+    ],
+    "updatedAt": "2025-01-10"
+  },
+  {
+    "margaId": "22",
+    "slug": "rangkuti",
+    "sejarah": "Marga Rangkuti berasal dari wilayah Mandailing, tepatnya di daerah Runding. Mereka memiliki sejarah tua yang berkaitan dengan kerajaan lokal sebelum masuknya pengaruh Paderi.",
+    "asalUsul": "Rangkuti adalah keturunan dari Ompu Sutan Pane Paruhuman. Saudara dekat marga ini adalah Parinduri dan Mardia.",
+    "tarombo": {
+      "description": "Tarombo Rangkuti mencatat hubungan erat dengan Parinduri sebagai 'dongan sabutuha'.",
+      "ancestors": [
+        {
+          "nama": "Mangaraja Sutan Pane",
+          "deskripsi": "Leluhur pendiri Huta Runding yang menurunkan marga Rangkuti."
+        },
+        {
+          "nama": "Sutan Parapat",
+          "deskripsi": "Tokoh sakti dalam legenda Rangkuti yang bisa menunggang harimau."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Rangkuti (Runding)",
+          "deskripsi": "Kelompok asal di wilayah Runding."
+        },
+        {
+          "nama": "Parinduri",
+          "deskripsi": "Marga pecahan yang dianggap saudara kandung Rangkuti."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Runding, Mandailing Natal",
+      "deskripsi": "Desa Runding di Panyabungan Barat adalah tanah asal marga Rangkuti.",
+      "latitude": 0.8833,
+      "longitude": 99.55,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Mandailing Natal"
+    },
+    "tradisi": [
+      "Menghormati harimau (Babiat) sebagai 'Ompung' (kiasan) karena legenda leluhur",
+      "Upacara adat memasuki rumah baru (mamasuhi bagas)"
+    ],
+    "tokoh": [
+      {
+        "nama": "H. Arwys Rangkuti",
+        "gelar": "-",
+        "bidang": "Politik/Tokoh Masyarakat",
+        "deskripsi": "Tokoh masyarakat Mandailing."
+      },
+      {
+        "nama": "Bahrum Rangkuti",
+        "gelar": "-",
+        "bidang": "Sastra",
+        "deskripsi": "Sastrawan dan penulis Indonesia angkatan Pujangga Baru."
+      }
+    ],
+    "relatedMargas": [
+      "parinduri",
+      "pulungan"
+    ],
+    "updatedAt": "2025-01-10"
+  },
+  {
+    "margaId": "23",
+    "slug": "daulay",
+    "sejarah": "Marga Daulay didominasi di wilayah Mandailing dan Angkola. Mereka berasal dari daerah Sibuhuan (Padang Lawas) dan menyebar ke Mandailing sebagai salah satu marga raja.",
+    "asalUsul": "Leluhur Daulay adalah Ompu Parmata Sapihak (Mata Sopiak), yang bermukim di Sibuhuan. Mereka masuk dalam kelompok Borbor.",
+    "tarombo": {
+      "description": "Tarombo Daulay terhubung dengan marga-marga Borbor Marsada. Silsilah dari Parmata Sapihak pecah menjadi beberapa Datu.",
+      "ancestors": [
+        {
+          "nama": "Parmata Sapihak",
+          "deskripsi": "Leluhur utama marga Daulay dengan legenda mata sebelah."
+        },
+        {
+          "nama": "Datu Porkas",
+          "deskripsi": "Salah satu putra Parmata Sapihak yang menurunkan keturunan."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Daulay (Sibuhuan)",
+          "deskripsi": "Kelompok di Padang Lawas yang memegang tradisi asal."
+        },
+        {
+          "nama": "Daulay (Mandailing)",
+          "deskripsi": "Menyebar ke Panyabungan dan menjadi bagian integral masyarakat Mandailing."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Panyabungan dan Sibuhuan",
+      "deskripsi": "Selain di Sibuhuan (asal), Daulay banyak bermukim di Panyabungan Selatan dan sekitarnya.",
+      "latitude": 1.05,
+      "longitude": 99.7,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Mandailing Natal dan Padang Lawas"
+    },
+    "tradisi": [
+      "Ziarah ke makam Ompu Parmata Sapihak di Padang Lawas",
+      "Marsalap Ari (gotong royong di sawah)"
+    ],
+    "tokoh": [
+      {
+        "nama": "Saleh Partaonan Daulay",
+        "gelar": "Dr.",
+        "bidang": "Politik",
+        "deskripsi": "Anggota DPR RI dan tokoh pemuda Muhammadiyah."
+      },
+      {
+        "nama": "H. Basyrah Lubis (Daulay)",
+        "gelar": "-",
+        "bidang": "Sejarah",
+        "deskripsi": "Penulis sejarah Mandailing (catatan: meski marga Lubis, sering membahas kaitan antar marga)."
+      }
+    ],
+    "relatedMargas": [
+      "hasibuan",
+      "pasaribu"
+    ],
+    "updatedAt": "2025-01-10"
+  },
+  {
+    "margaId": "24",
+    "slug": "hasibuan",
+    "sejarah": "Marga Hasibuan berasal dari Toba (Uluan) namun migrasi besar-besaran membuat mereka menjadi marga dominan di Tapanuli Selatan dan Mandailing (Padang Lawas).",
+    "asalUsul": "Leluhur Si Raja Hasibuan berasal dari Sigaol, Uluan. Anaknya Raja Manjalang merantau ke wilayah Barumun/Sibuhuan.",
+    "tarombo": {
+      "description": "Tarombo Hasibuan di Mandailing/Angkola berasal dari garis Raja Manjalang.",
+      "ancestors": [
+        {
+          "nama": "Si Raja Hasibuan",
+          "deskripsi": "Leluhur utama marga Hasibuan."
+        },
+        {
+          "nama": "Raja Manjalang",
+          "deskripsi": "Leluhur yang membuka kampung di wilayah Padang Lawas."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Hasibuan (Barumun)",
+          "deskripsi": "Kelompok terbesar di wilayah Padang Lawas/Barumun."
+        },
+        {
+          "nama": "Hasibuan (Sipirok)",
+          "deskripsi": "Kelompok yang bermukim di wilayah Angkola/Sipirok."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Barumun, Padang Lawas",
+      "deskripsi": "Wilayah Barumun dan Sibuhuan adalah pusat konsentrasi marga Hasibuan di wilayah selatan.",
+      "latitude": 1.05,
+      "longitude": 99.7,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Padang Lawas"
+    },
+    "tradisi": [
+      "Partangiangan Parsadaan Hasibuan",
+      "Horja Godang (pesta adat besar) dengan manortor"
+    ],
+    "tokoh": [
+      {
+        "nama": "Otto Hasibuan",
+        "gelar": "Prof. Dr.",
+        "bidang": "Hukum",
+        "deskripsi": "Pengacara kondang Indonesia."
+      },
+      {
+        "nama": "Albert Hasibuan",
+        "gelar": "-",
+        "bidang": "Politik/Hukum",
+        "deskripsi": "Pengacara senior dan mantan anggota Dewan Pertimbangan Presiden."
+      }
+    ],
+    "relatedMargas": [
+      "hutangjulung",
+      "daulay"
+    ],
+    "updatedAt": "2025-01-10"
+  },
+  {
+    "margaId": "25",
+    "slug": "harahap",
+    "sejarah": "Marga Harahap berasal dari Tapanuli Selatan dan merupakan salah satu marga terbesar di Angkola. Mereka adalah keturunan dari Ompu Toga Langit yang sering dikaitkan dengan sejarah Islam awal (Kesultanan Aru) di wilayah tersebut, meskipun versi lain menyebut garis keturunan dari Batak Toba (Si Raja Batak).",
+    "asalUsul": "Leluhurnya, Ompu Toga Langit, diyakini mendirikan kampung di wilayah Padang Bolak/Angkola. Harahap adalah saudara marga Siregar (sama-sama keturunan Lontung dalam beberapa versi atau memiliki kaitan erat).",
+    "tarombo": {
+      "description": "Tarombo Harahap sering dikaitkan dengan garis keturunan yang memiliki pengaruh Islam kuat sejak awal.",
+      "ancestors": [
+        {
+          "nama": "Ompu Toga Langit",
+          "deskripsi": "Leluhur utama marga Harahap."
+        },
+        {
+          "nama": "Sutan Bugis",
+          "deskripsi": "Tokoh leluhur dalam legenda Harahap."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Harahap (Padang Bolak)",
+          "deskripsi": "Kelompok terbesar di wilayah Padang Lawas Utara."
+        },
+        {
+          "nama": "Harahap (Angkola)",
+          "deskripsi": "Bermukim di sekitar Batang Angkola dan Sipirok."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Padang Bolak dan Padangsidimpuan",
+      "deskripsi": "Wilayah Tapanuli Selatan, khususnya Padang Bolak, adalah basis tradisional marga Harahap.",
+      "latitude": 1.5,
+      "longitude": 99.6,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Padang Lawas Utara/Tapanuli Selatan"
+    },
+    "tradisi": [
+      "Horja Godang dengan adat Harahap yang kental",
+      "Pakaian adat yang didominasi warna merah dan emas khas Angkola"
+    ],
+    "tokoh": [
+      {
+        "nama": "Burhanuddin Harahap",
+        "gelar": "Mr.",
+        "bidang": "Politik",
+        "deskripsi": "Perdana Menteri Indonesia ke-9."
+      },
+      {
+        "nama": "Rinto Harahap",
+        "gelar": "-",
+        "bidang": "Seni",
+        "deskripsi": "Musisi legendaris Indonesia."
+      }
+    ],
+    "relatedMargas": [
+      "siregar",
+      "hasibuan"
+    ],
+    "updatedAt": "2025-01-10"
+  },
+  {
+    "margaId": "26",
+    "slug": "siregar",
+    "sejarah": "Marga Siregar adalah keturunan Toga Siregar, anak dari Raja Lontung. Mereka bermigrasi dari Muara (Toba) ke wilayah Angkola dan menjadi salah satu marga dominan di Sipirok dan sekitarnya.",
+    "asalUsul": "Berasal dari Muara, Tapanuli Utara. Toga Siregar memiliki 4 anak: Silo, Dongoran, Silali, Siagian. Di Angkola, Siregar Dongoran dan Siagian cukup dominan.",
+    "tarombo": {
+      "description": "Tarombo Siregar terbagi menjadi empat cabang utama (Silo, Dongoran, Silali, Siagian).",
+      "ancestors": [
+        {
+          "nama": "Toga Siregar",
+          "deskripsi": "Leluhur marga Siregar dari Muara."
+        },
+        {
+          "nama": "Raja Lontung",
+          "deskripsi": "Ayah Toga Siregar."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Siregar Dongoran",
+          "deskripsi": "Dominan di wilayah Sipirok."
+        },
+        {
+          "nama": "Siregar Siagian",
+          "deskripsi": "Banyak ditemukan di wilayah Angkola."
+        },
+        {
+          "nama": "Siregar Silo",
+          "deskripsi": "Cabang lain dari Siregar."
+        },
+        {
+          "nama": "Siregar Silali",
+          "deskripsi": "Cabang Sili-Sili."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Sipirok, Tapanuli Selatan",
+      "deskripsi": "Sipirok adalah pusat budaya marga Siregar di Tanah Angkola.",
+      "latitude": 1.6,
+      "longitude": 99.2833,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Tapanuli Selatan"
+    },
+    "tradisi": [
+      "Marsalap Ari (gotong royong)",
+      "Adat perkawinan dengan tutur sapa yang santun (partuturon)"
+    ],
+    "tokoh": [
+      {
+        "nama": "Raja Inal Siregar",
+        "gelar": "Letjen TNI",
+        "bidang": "Militer/Pemerintahan",
+        "deskripsi": "Mantan Gubernur Sumatera Utara yang menggagas 'Marsipature Hutanabe'."
+      },
+      {
+        "nama": "Merari Siregar",
+        "gelar": "-",
+        "bidang": "Sastra",
+        "deskripsi": "Sastrawan Angkatan Balai Pustaka, penulis 'Azab dan Sengsara'."
+      }
+    ],
+    "relatedMargas": [
+      "harahap",
+      "ritonga"
+    ],
+    "updatedAt": "2025-01-10"
+  },
+  {
+    "margaId": "27",
+    "slug": "rambe",
+    "sejarah": "Marga Rambe berasal dari keturunan Toga Simamora (Debataraja) yang merantau ke wilayah Angkola dan Padang Lawas. Mereka banyak bermukim di daerah Dolok Sigompulon.",
+    "asalUsul": "Leluhur Rambe berasal dari Pakkat (Humbang). Tuan Habonaran Rambe adalah tokoh yang membuka wilayah di selatan.",
+    "tarombo": {
+      "description": "Tarombo Rambe terkait dengan marga Simamora (Manalu, Purba, Debataraja).",
+      "ancestors": [
+        {
+          "nama": "Tuan Sumerham",
+          "deskripsi": "Leluhur marga Rambe."
+        },
+        {
+          "nama": "Tuan Habonaran",
+          "deskripsi": "Tokoh penyebar marga Rambe ke wilayah Angkola."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Rambe (Dolok Sigompulon)",
+          "deskripsi": "Kelompok utama di wilayah Padang Lawas Utara."
+        },
+        {
+          "nama": "Rambe (Rantau)",
+          "deskripsi": "Menyebar di Tapanuli Selatan."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Dolok Sigompulon, Padang Lawas Utara",
+      "deskripsi": "Kecamatan Dolok adalah basis utama marga Rambe di wilayah selatan.",
+      "latitude": 1.7,
+      "longitude": 99.65,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Padang Lawas Utara"
+    },
+    "tradisi": [
+      "Partangiangan Rambe",
+      "Adat Dalihan Na Tolu khas Angkola"
+    ],
+    "tokoh": [
+      {
+        "nama": "Rambe Kamarul Zaman",
+        "gelar": "-",
+        "bidang": "Politik",
+        "deskripsi": "Politisi senior Partai Golkar."
+      },
+      {
+        "nama": "T.S. Rambe",
+        "gelar": "-",
+        "bidang": "Pendidikan",
+        "deskripsi": "Tokoh pendidikan di Tapanuli Selatan."
+      }
+    ],
+    "relatedMargas": [
+      "simamora",
+      "manalu"
+    ],
+    "updatedAt": "2025-01-10"
+  },
+  {
+    "margaId": "28",
+    "slug": "batubara",
+    "sejarah": "Marga Batubara adalah bagian dari kelompok Borbor (Tuan Sariburaja). Mereka menyebar dari Toba ke wilayah Angkola dan Mandailing, beradaptasi dengan budaya setempat.",
+    "asalUsul": "Leluhur marga ini adalah Raja Dohang Batubara, keturunan dari Raja Hatorusan/Raja Borbor.",
+    "tarombo": {
+      "description": "Tarombo Batubara masuk dalam rumpun Borbor Marsada.",
+      "ancestors": [
+        {
+          "nama": "Raja Dohang Batubara",
+          "deskripsi": "Leluhur marga Batubara."
+        },
+        {
+          "nama": "Tuan Sariburaja",
+          "deskripsi": "Leluhur utama kelompok Borbor."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Batubara (Angkola)",
+          "deskripsi": "Kelompok yang bermukim di Sipirok dan sekitarnya."
+        },
+        {
+          "nama": "Batubara (Mandailing)",
+          "deskripsi": "Menyebar ke wilayah Mandailing."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Sipirok dan Panyabungan",
+      "deskripsi": "Tersebar merata di wilayah Angkola dan Mandailing.",
+      "latitude": 1.6,
+      "longitude": 99.3,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Tapanuli Selatan"
+    },
+    "tradisi": [
+      "Pesta Adat Borbor Marsada",
+      "Keikutsertaan dalam Horja Godang Angkola"
+    ],
+    "tokoh": [
+      {
+        "nama": "Ucok Baba (Usnan Batubara)",
+        "gelar": "-",
+        "bidang": "Seni/Hiburan",
+        "deskripsi": "Komedian dan aktor terkenal."
+      },
+      {
+        "nama": "Juli Batubara",
+        "gelar": "-",
+        "bidang": "Politik",
+        "deskripsi": "Politisi muda."
       }
     ],
     "relatedMargas": [
       "lubis",
-      "harahap"
+      "pasaribu"
     ],
-    "updatedAt": "2024-03-12"
+    "updatedAt": "2025-01-10"
+  },
+  {
+    "margaId": "29",
+    "slug": "pohan",
+    "sejarah": "Marga Pohan (Sibagotni Pohan) berasal dari Balige, Toba, namun memiliki keturunan yang migrasi ke Angkola (Barus, Sipirok) dan menjadi bagian masyarakat Angkola.",
+    "asalUsul": "Berasal dari Sibagotni Pohan, anak Tuan Sorbadibanua. Di Angkola, mereka sering berafiliasi dengan Siagian atau Simanjuntak, atau tetap memakai Pohan.",
+    "tarombo": {
+      "description": "Tarombo Pohan adalah induk dari marga-marga Pohan (Tampubolon, dll), namun di Angkola nama Pohan sering dipakai sebagai marga langsung.",
+      "ancestors": [
+        {
+          "nama": "Sibagotni Pohan",
+          "deskripsi": "Leluhur marga Pohan."
+        },
+        {
+          "nama": "Tuan Sorbadibanua",
+          "deskripsi": "Ayah Sibagotni Pohan."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Pohan (Barus)",
+          "deskripsi": "Kelompok Pohan yang bermukim di wilayah Barus dan Tapanuli Tengah/Selatan."
+        },
+        {
+          "nama": "Pohan (Sipirok)",
+          "deskripsi": "Kelompok Pohan di Angkola."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Barus dan Sipirok",
+      "deskripsi": "Wilayah perantauan Pohan di selatan meliputi jalur Barus hingga ke pedalaman Angkola.",
+      "latitude": 1.9833,
+      "longitude": 98.4,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Tapanuli Tengah/Selatan"
+    },
+    "tradisi": [
+      "Adat istiadat Angkola yang diadopsi penuh",
+      "Partangiangan Pohan"
+    ],
+    "tokoh": [
+      {
+        "nama": "Ramadhan Pohan",
+        "gelar": "-",
+        "bidang": "Politik",
+        "deskripsi": "Politisi dan mantan anggota DPR RI."
+      },
+      {
+        "nama": "Zainul Arifin Pohan",
+        "gelar": "-",
+        "bidang": "Pendidikan",
+        "deskripsi": "Akademisi."
+      }
+    ],
+    "relatedMargas": [
+      "siagian",
+      "simanjuntak"
+    ],
+    "updatedAt": "2025-01-10"
   }
 ]

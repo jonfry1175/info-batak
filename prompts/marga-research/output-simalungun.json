@@ -1,0 +1,303 @@
+[
+  {
+    "margaId": "12",
+    "slug": "saragih",
+    "sejarah": "Marga Saragih adalah salah satu dari empat marga utama (SISADAPUR) di Simalungun. Nama Saragih berasal dari 'Simada Ragih' yang berarti pemilik aturan atau undang-undang. Leluhurnya diyakini mendirikan kerajaan di Raya.",
+    "asalUsul": "Leluhur Saragih diyakini berasal dari India Selatan yang bermigrasi dan menetap di Simalungun. Mereka memegang peranan penting sebagai penguasa Partuanan Raya.",
+    "tarombo": {
+      "description": "Tarombo Saragih memiliki banyak cabang (sub-marga) yang menyebar di wilayah Simalungun.",
+      "ancestors": [
+        {
+          "nama": "Tuan Rondahaim Saragih",
+          "deskripsi": "Raja Raya yang terkenal sebagai pejuang melawan kolonial Belanda."
+        },
+        {
+          "nama": "Raja Banua Sobou",
+          "deskripsi": "Leluhur kuno yang menurunkan marga Saragih."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Saragih Garingging",
+          "deskripsi": "Cabang yang berasal dari Garingging dan memegang peran di Raya."
+        },
+        {
+          "nama": "Saragih Sumbayak",
+          "deskripsi": "Salah satu cabang utama Saragih."
+        },
+        {
+          "nama": "Saragih Dasalak",
+          "deskripsi": "Cabang Saragih yang banyak ditemukan di Simalungun."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Raya, Simalungun",
+      "deskripsi": "Pematang Raya adalah pusat kerajaan dan kebudayaan marga Saragih.",
+      "latitude": 2.9667,
+      "longitude": 98.8500,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Simalungun"
+    },
+    "tradisi": [
+      "Pesta Rondang Bittang sebagai ungkapan syukur panen",
+      "Tradisi Haroan Bolon (gotong royong) di ladang"
+    ],
+    "tokoh": [
+      {
+        "nama": "Tuan Rondahaim Saragih",
+        "gelar": "Raja Raya",
+        "bidang": "Sejarah/Perjuangan",
+        "deskripsi": "Pejuang Simalungun yang gigih melawan Belanda dan diusulkan sebagai Pahlawan Nasional."
+      },
+      {
+        "nama": "Bill Saragih",
+        "gelar": "-",
+        "bidang": "Seni",
+        "deskripsi": "Musisi jazz legendaris Indonesia."
+      }
+    ],
+    "relatedMargas": ["purba", "damanik"],
+    "updatedAt": "2025-01-10"
+  },
+  {
+    "margaId": "13",
+    "slug": "purba",
+    "sejarah": "Marga Purba adalah bagian dari SISADAPUR Simalungun. Nama Purba berarti 'Timur' atau 'Cendekiawan'. Mereka mendirikan kerajaan di Pematang Purba dan dikenal sebagai penguasa wilayah tersebut.",
+    "asalUsul": "Leluhur Purba diyakini datang dari arah Timur (Purba) atau berasosiasi dengan Tuan Purba yang sakti. Pusat kekuasaan mereka ada di Pematang Purba dengan Istana Rumah Bolon yang megah.",
+    "tarombo": {
+      "description": "Tarombo Purba mencakup berbagai cabang yang menyebar dari Pematang Purba ke seluruh Simalungun dan Karo.",
+      "ancestors": [
+        {
+          "nama": "Tuan Pangultop Ultop",
+          "deskripsi": "Raja pertama Kerajaan Purba yang legendaris."
+        },
+        {
+          "nama": "Tuan Mogang",
+          "deskripsi": "Salah satu raja Purba yang terkenal."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Purba Pakpak",
+          "deskripsi": "Cabang utama yang memerintah di Kerajaan Purba."
+        },
+        {
+          "nama": "Purba Tambak",
+          "deskripsi": "Cabang yang berkuasa di Dolok Silou."
+        },
+        {
+          "nama": "Purba Girsang",
+          "deskripsi": "Cabang yang mendiami wilayah Silimakuta."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Pematang Purba",
+      "deskripsi": "Lokasi Rumah Bolon Pematang Purba, istana raja-raja Purba yang masih berdiri kokoh.",
+      "latitude": 2.9167,
+      "longitude": 98.7500,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Simalungun"
+    },
+    "tradisi": [
+      "Menjaga Rumah Bolon Pematang Purba sebagai situs sejarah",
+      "Upacara Maranggir untuk pembersihan diri dan lingkungan"
+    ],
+    "tokoh": [
+      {
+        "nama": "Djamin Purba",
+        "gelar": "SH",
+        "bidang": "Hukum",
+        "deskripsi": "Tokoh hukum dan pengacara senior."
+      },
+      {
+        "nama": "Sihar Purba",
+        "gelar": "-",
+        "bidang": "Seni",
+        "deskripsi": "Seniman yang melestarikan musik Simalungun."
+      }
+    ],
+    "relatedMargas": ["saragih", "sinaga"],
+    "updatedAt": "2025-01-10"
+  },
+  {
+    "margaId": "14",
+    "slug": "sinaga",
+    "sejarah": "Di Simalungun, Sinaga adalah salah satu dari empat marga raja (SISADAPUR). Berbeda dengan Toba, Sinaga Simalungun memiliki sejarah kerajaan di Batangiou dan Tanah Jawa.",
+    "asalUsul": "Leluhur Sinaga di Simalungun dikaitkan dengan Raja Saniang Naga dari Kerajaan Batangiou. Mereka memiliki wilayah kedaulatan sendiri sebelum integrasi wilayah.",
+    "tarombo": {
+      "description": "Tarombo Sinaga Simalungun terfokus pada garis keturunan penguasa di Tanah Jawa dan Batangiou.",
+      "ancestors": [
+        {
+          "nama": "Raja Saniang Naga",
+          "deskripsi": "Leluhur mitologis marga Sinaga di Simalungun."
+        },
+        {
+          "nama": "Tuan Tanah Jawa",
+          "deskripsi": "Penguasa wilayah Tanah Jawa dari marga Sinaga."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Sinaga Dadihoyong",
+          "deskripsi": "Cabang Sinaga yang berkuasa di Tanah Jawa."
+        },
+        {
+          "nama": "Sinaga Porti",
+          "deskripsi": "Salah satu cabang Sinaga di Simalungun."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Tanah Jawa, Simalungun",
+      "deskripsi": "Kecamatan Tanah Jawa adalah bekas pusat kekuasaan marga Sinaga di Simalungun.",
+      "latitude": 2.8500,
+      "longitude": 99.1000,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Simalungun"
+    },
+    "tradisi": [
+      "Pesta Rondang Bintang di Tanah Jawa",
+      "Seni Huda-huda (topeng) yang sering ditampilkan dalam upacara adat"
+    ],
+    "tokoh": [
+      {
+        "nama": "Jhonny Buyung Saragih (Sinaga)",
+        "gelar": "-",
+        "bidang": "Politik",
+        "deskripsi": "Tokoh masyarakat Simalungun (catatan: nama kadang menggunakan afiliasi marga lain tapi berdarah Sinaga)."
+      },
+      {
+        "nama": "Poltak Sinaga",
+        "gelar": "Prof. Ki",
+        "bidang": "Budaya",
+        "deskripsi": "Budayawan yang meneliti sejarah Sinaga Simalungun."
+      }
+    ],
+    "relatedMargas": ["damanik", "purba"],
+    "updatedAt": "2025-01-10"
+  },
+  {
+    "margaId": "15",
+    "slug": "damanik",
+    "sejarah": "Marga Damanik adalah marga 'sipukka huta' (pembuka kampung) di banyak wilayah Simalungun dan penguasa Kerajaan Siantar. Nama Damanik berarti 'Simada Manik' atau pemilik manik/karisma.",
+    "asalUsul": "Leluhur Damanik diyakini berasal dari Nagur, sebuah kerajaan kuno yang besar. Mereka kemudian mendirikan Kerajaan Siantar.",
+    "tarombo": {
+      "description": "Tarombo Damanik berpusat pada garis keturunan Raja Nagur dan Raja Siantar.",
+      "ancestors": [
+        {
+          "nama": "Raja Nagur",
+          "deskripsi": "Penguasa kerajaan kuno Nagur yang menurunkan marga Damanik."
+        },
+        {
+          "nama": "Raja Sang Naualuh Damanik",
+          "deskripsi": "Raja Siantar ke-14 yang pahlawan dan sangat dihormati."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Damanik Bariba",
+          "deskripsi": "Cabang keturunan penguasa Siantar."
+        },
+        {
+          "nama": "Damanik Tomok",
+          "deskripsi": "Salah satu cabang Damanik."
+        },
+        {
+          "nama": "Damanik Usang",
+          "deskripsi": "Cabang Damanik yang tua."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Pematangsiantar",
+      "deskripsi": "Pematangsiantar adalah pusat Kerajaan Siantar yang diperintah oleh raja-raja Damanik.",
+      "latitude": 2.9611,
+      "longitude": 99.0600,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Simalungun"
+    },
+    "tradisi": [
+      "Haul Raja Sang Naualuh Damanik untuk mengenang jasa beliau",
+      "Penggunaan Bulang (penutup kepala) khas raja Siantar"
+    ],
+    "tokoh": [
+      {
+        "nama": "Sang Naualuh Damanik",
+        "gelar": "Raja Siantar XIV",
+        "bidang": "Sejarah/Pahlawan",
+        "deskripsi": "Pahlawan nasional yang gigih melawan penjajahan dan penyebar agama Islam di Simalungun."
+      },
+      {
+        "nama": "Djabanten Damanik",
+        "gelar": "-",
+        "bidang": "Pemerintahan",
+        "deskripsi": "Mantan Bupati Simalungun."
+      }
+    ],
+    "relatedMargas": ["saragih", "simatupang"],
+    "updatedAt": "2025-01-10"
+  },
+  {
+    "margaId": "16",
+    "slug": "simatupang",
+    "sejarah": "Marga Simatupang, meskipun berasal dari Muara (Toba), memiliki populasi signifikan di Simalungun dan telah beradaptasi dengan budaya setempat (Simalungun). Di Simalungun, mereka menjadi bagian integral masyarakat.",
+    "asalUsul": "Berasal dari Toga Simatupang, anak Raja Lontung, dari Muara, Tapanuli Utara. Bermigrasi ke Simalungun dan berbaur dengan masyarakat lokal.",
+    "tarombo": {
+      "description": "Tarombo Simatupang terdiri dari tiga cabang utama (Togatorop, Sianturi, Siburian) yang juga diakui di Simalungun.",
+      "ancestors": [
+        {
+          "nama": "Toga Simatupang",
+          "deskripsi": "Leluhur marga Simatupang dari Muara."
+        },
+        {
+          "nama": "Raja Lontung",
+          "deskripsi": "Ayah dari Toga Simatupang."
+        }
+      ],
+      "subMargas": [
+        {
+          "nama": "Simatupang Togatorop",
+          "deskripsi": "Anak sulung Toga Simatupang."
+        },
+        {
+          "nama": "Simatupang Sianturi",
+          "deskripsi": "Anak kedua Toga Simatupang."
+        },
+        {
+          "nama": "Simatupang Siburian",
+          "deskripsi": "Anak bungsu Toga Simatupang."
+        }
+      ]
+    },
+    "wilayah": {
+      "nama": "Simalungun (Migrasi)",
+      "deskripsi": "Tersebar di berbagai kecamatan di Simalungun seperti Sidamanik dan Tanah Jawa, hidup berdampingan dengan marga asli SISADAPUR.",
+      "latitude": 2.9000,
+      "longitude": 99.0000,
+      "provinsi": "Sumatera Utara",
+      "kabupaten": "Simalungun"
+    },
+    "tradisi": [
+      "Partangiangan Bolon Simatupang",
+      "Adaptasi adat Marharoan (gotong royong) Simalungun"
+    ],
+    "tokoh": [
+      {
+        "nama": "T.B. Simatupang",
+        "gelar": "Jenderal",
+        "bidang": "Militer",
+        "deskripsi": "Pahlawan Nasional Indonesia."
+      },
+      {
+        "nama": "Iwan Simatupang",
+        "gelar": "-",
+        "bidang": "Sastra",
+        "deskripsi": "Novelis terkenal Indonesia."
+      }
+    ],
+    "relatedMargas": ["damanik", "saragih"],
+    "updatedAt": "2025-01-10"
+  }
+]
