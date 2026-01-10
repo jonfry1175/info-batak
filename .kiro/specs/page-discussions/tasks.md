@@ -91,7 +91,7 @@ Implementasi fitur diskusi per halaman untuk InfoBatak.id menggunakan TypeScript
     - **Property 12: Delete Ownership** - Delete only shown for owner
     - **Validates: Requirements 1.2, 1.3, 4.3, 5.1, 5.4**
 
-- [ ] 6. Checkpoint - Components
+- [x] 6. Checkpoint - Components
   - Ensure all components render correctly
   - Verify form validation works
   - Ask the user if questions arise
