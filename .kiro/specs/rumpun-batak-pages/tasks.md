@@ -92,16 +92,16 @@ Implementasi fitur halaman rumpun Batak dengan card visual dan halaman detail un
     - **Property 4: Tokoh Display Correctness**
     - **Validates: Requirements 3.4, 5.2, 5.3**
 
-- [ ] 7. Implementasi navigasi dan routing
-  - [ ] 7.1 Verifikasi navigasi dari card ke detail page
+- [x] 7. Implementasi navigasi dan routing
+  - [x] 7.1 Verifikasi navigasi dari card ke detail page
     - Test klik card navigasi ke URL yang benar
     - _Requirements: 2.1_
 
-  - [ ] 7.2 Write property test untuk navigation correctness
+  - [x] 7.2 Write property test untuk navigation correctness
     - **Property 2: Navigation Correctness**
     - **Validates: Requirements 2.1**
 
-- [ ] 8. Final checkpoint - Verifikasi semua fitur
+- [-] 8. Final checkpoint - Verifikasi semua fitur
   - Ensure semua 6 route detail berfungsi
   - Ensure navigasi dari card ke detail benar
   - Ensure tokoh penting muncul di halaman detail
