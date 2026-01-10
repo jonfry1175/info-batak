@@ -266,11 +266,11 @@ export function getLatestBerita(count: number = 6): Berita[] {
 }
 
 // Rumpun Batak functions
-export function getAllRumpun(): RumpunBatak[] {
-  return rumpunData as RumpunBatak[];
+export function getAllRumpun(): RumpunBatakEnhanced[] {
+  return rumpunData as RumpunBatakEnhanced[];
 }
 
-export function getRumpunBySlug(slug: string): RumpunBatak | undefined {
+export function getRumpunBySlug(slug: string): RumpunBatakEnhanced | undefined {
   return getAllRumpun().find((rumpun) => rumpun.slug === slug);
 }
 
@@ -352,11 +352,9 @@ export function normalizeRumpunData(data: RumpunBatak | RumpunBatakEnhanced): Ru
 }
 
 export function getRumpunEnhancedBySlug(slug: string): RumpunBatakEnhanced | undefined {
-  const rumpun = getRumpunBySlug(slug);
-  if (!rumpun) return undefined;
-  return normalizeRumpunData(rumpun);
+  return getRumpunBySlug(slug);
 }
 
 export function getAllRumpunEnhanced(): RumpunBatakEnhanced[] {
-  return getAllRumpun().map(normalizeRumpunData);
+  return getAllRumpun();
 }

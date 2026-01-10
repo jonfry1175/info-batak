@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import * as fc from 'fast-check';
 import { getAllRumpun, getRumpunBySlug } from './data';
-import { RumpunBatak, Tokoh } from '@/types';
+import { RumpunBatakEnhanced, EnhancedTokoh } from '@/types';
 
 /**
  * **Feature: rumpun-batak-pages, Property 5: Data Schema Validity**
@@ -9,9 +9,11 @@ import { RumpunBatak, Tokoh } from '@/types';
  *
  * For any rumpun object in rumpun.json, it SHALL contain all required fields:
  * id, nama, slug, deskripsi, gambar, sejarah, budaya, wilayah, and tokoh.
+ * 
+ * Updated to support enhanced data structure where sejarah, budaya, and wilayah are objects.
  */
 describe('Property 5: Data Schema Validity', () => {
-    const allRumpun = getAllRumpun();
+    const allRumpun = getAllRumpun() as RumpunBatakEnhanced[];
 
     it('should have exactly 6 rumpun entries', () => {
         expect(allRumpun).toHaveLength(6);
@@ -21,7 +23,7 @@ describe('Property 5: Data Schema Validity', () => {
         fc.assert(
             fc.property(
                 fc.constantFrom(...allRumpun),
-                (rumpun: RumpunBatak) => {
+                (rumpun: RumpunBatakEnhanced) => {
                     // Check all required string fields exist and are non-empty
                     expect(typeof rumpun.id).toBe('string');
                     expect(rumpun.id.length).toBeGreaterThan(0);
@@ -38,14 +40,18 @@ describe('Property 5: Data Schema Validity', () => {
                     expect(typeof rumpun.gambar).toBe('string');
                     expect(rumpun.gambar.length).toBeGreaterThan(0);
 
-                    expect(typeof rumpun.sejarah).toBe('string');
-                    expect(rumpun.sejarah.length).toBeGreaterThan(0);
+                    // Enhanced structure: sejarah, budaya, wilayah are objects
+                    expect(typeof rumpun.sejarah).toBe('object');
+                    expect(rumpun.sejarah).not.toBeNull();
+                    expect(typeof rumpun.sejarah.ringkasan).toBe('string');
 
-                    expect(typeof rumpun.budaya).toBe('string');
-                    expect(rumpun.budaya.length).toBeGreaterThan(0);
+                    expect(typeof rumpun.budaya).toBe('object');
+                    expect(rumpun.budaya).not.toBeNull();
+                    expect(typeof rumpun.budaya.ringkasan).toBe('string');
 
-                    expect(typeof rumpun.wilayah).toBe('string');
-                    expect(rumpun.wilayah.length).toBeGreaterThan(0);
+                    expect(typeof rumpun.wilayah).toBe('object');
+                    expect(rumpun.wilayah).not.toBeNull();
+                    expect(typeof rumpun.wilayah.nama).toBe('string');
 
                     // Check tokoh array exists and has at least one entry
                     expect(Array.isArray(rumpun.tokoh)).toBe(true);
@@ -62,16 +68,17 @@ describe('Property 5: Data Schema Validity', () => {
         fc.assert(
             fc.property(
                 fc.constantFrom(...allRumpun),
-                (rumpun: RumpunBatak) => {
-                    rumpun.tokoh.forEach((tokoh: Tokoh) => {
+                (rumpun: RumpunBatakEnhanced) => {
+                    rumpun.tokoh.forEach((tokoh: EnhancedTokoh) => {
                         expect(typeof tokoh.nama).toBe('string');
                         expect(tokoh.nama.length).toBeGreaterThan(0);
 
                         expect(typeof tokoh.gelar).toBe('string');
                         expect(tokoh.gelar.length).toBeGreaterThan(0);
 
-                        expect(typeof tokoh.deskripsi).toBe('string');
-                        expect(tokoh.deskripsi.length).toBeGreaterThan(0);
+                        // Enhanced tokoh uses ringkasan instead of deskripsi
+                        expect(typeof tokoh.ringkasan).toBe('string');
+                        expect(tokoh.ringkasan.length).toBeGreaterThan(0);
                     });
 
                     return true;
@@ -91,7 +98,7 @@ describe('Property 5: Data Schema Validity', () => {
         fc.assert(
             fc.property(
                 fc.constantFrom(...allRumpun),
-                (rumpun: RumpunBatak) => {
+                (rumpun: RumpunBatakEnhanced) => {
                     const found = getRumpunBySlug(rumpun.slug);
                     expect(found).toBeDefined();
                     expect(found?.id).toBe(rumpun.id);

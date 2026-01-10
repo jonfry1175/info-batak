@@ -139,20 +139,20 @@ Implementasi enhancement halaman detail rumpun Batak dengan peta interaktif, kon
     - Hidden on mobile
     - _Requirements: 6.3_
 
-- [-] 11. Update halaman detail rumpun
-  - [-] 11.1 Refactor `app/sejarah/[slug]/page.tsx`
+- [x] 11. Update halaman detail rumpun
+  - [x] 11.1 Refactor `app/sejarah/[slug]/page.tsx`
     - Integrate semua komponen baru
     - Use normalizeRumpunData untuk handle data
     - Add TableOfContents sidebar layout
     - Add section IDs untuk navigation
     - _Requirements: 1.1, 2.1, 3.1, 4.1, 6.1, 6.2_
 
-  - [ ] 11.2 Add scroll animations dengan Framer Motion
+  - [x] 11.2 Add scroll animations dengan Framer Motion
     - Fade in on scroll untuk sections
     - Stagger animation untuk cards
     - _Requirements: 6.1, 6.2_
 
-- [ ] 12. Final checkpoint - Verifikasi semua fitur
+- [x] 12. Final checkpoint - Verifikasi semua fitur
   - Ensure halaman detail menampilkan semua section baru
   - Ensure peta interaktif berfungsi dengan fallback
   - Ensure timeline menampilkan events chronologically

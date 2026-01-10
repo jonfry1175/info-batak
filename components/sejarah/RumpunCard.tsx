@@ -3,11 +3,11 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
-import { RumpunBatak } from '@/types';
+import { RumpunBatakEnhanced } from '@/types';
 import { useState } from 'react';
 
 interface RumpunCardProps {
-  rumpun: RumpunBatak;
+  rumpun: RumpunBatakEnhanced;
 }
 
 export function RumpunCard({ rumpun }: RumpunCardProps) {
