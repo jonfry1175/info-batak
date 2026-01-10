@@ -10,7 +10,7 @@
       "deskripsi": "Wilayah Batak Toba membentang di sekitar Danau Toba, danau vulkanik terbesar di dunia. Kawasan ini meliputi dataran tinggi dengan ketinggian 900-1.500 meter di atas permukaan laut, dikelilingi pegunungan Bukit Barisan.",
       "koordinat": {
         "latitude": 2.6167,
-        "longitude": 98.8500
+        "longitude": 98.85
       },
       "kabupaten": [
         "Kabupaten Toba",
@@ -22,7 +22,7 @@
         {
           "nama": "Danau Toba",
           "latitude": 2.6167,
-          "longitude": 98.8500,
+          "longitude": 98.85,
           "deskripsi": "Danau vulkanik terbesar di dunia, pusat peradaban Batak Toba"
         },
         {
@@ -39,7 +39,7 @@
         },
         {
           "nama": "Makam Raja Sisingamangaraja XII",
-          "latitude": 2.3500,
+          "latitude": 2.35,
           "longitude": 98.9333,
           "deskripsi": "Makam pahlawan nasional di Balige"
         }
@@ -103,12 +103,7 @@
       },
       "musikTarian": {
         "deskripsi": "Musik Gondang Sabangunan adalah ensambel musik tradisional yang terdiri dari taganing (drum melodis), sarune (oboe), ogung (gong), dan hesek (simbal). Musik ini mengiringi tarian Tortor dalam berbagai upacara adat. Tortor adalah tarian sakral yang memiliki gerakan simbolis untuk berkomunikasi dengan roh leluhur.",
-        "jenis": [
-          "Gondang Sabangunan",
-          "Tortor Somba",
-          "Tortor Hasahatan",
-          "Tortor Mangaliat"
-        ]
+        "jenis": ["Gondang Sabangunan", "Tortor Somba", "Tortor Hasahatan", "Tortor Mangaliat"]
       },
       "pakaian": {
         "deskripsi": "Ulos adalah kain tenun tradisional yang memiliki makna sakral dalam setiap upacara adat. Setiap jenis Ulos memiliki fungsi dan makna berbeda, dari Ulos Ragidup untuk kelahiran hingga Ulos Saput untuk kematian. Pembuatan Ulos dilakukan dengan teknik tenun tradisional yang diwariskan turun-temurun.",
@@ -122,11 +117,7 @@
       },
       "rumahAdat": {
         "deskripsi": "Ruma Bolon (Rumah Besar) adalah rumah adat Batak Toba dengan atap melengkung khas berbentuk tanduk kerbau. Rumah ini dibangun di atas tiang-tiang kayu tanpa menggunakan paku, hanya dengan sistem pasak. Ornamen gorga (ukiran) menghiasi dinding dengan motif dan warna simbolis.",
-        "jenis": [
-          "Ruma Bolon",
-          "Sopo (Lumbung)",
-          "Ruma Parsantian"
-        ]
+        "jenis": ["Ruma Bolon", "Sopo (Lumbung)", "Ruma Parsantian"]
       },
       "upacaraAdat": {
         "deskripsi": "Upacara adat Batak Toba menandai setiap tahap kehidupan dari kelahiran hingga kematian. Setiap upacara melibatkan pemberian Ulos, penyembelihan hewan, dan ritual Gondang Tortor. Upacara besar seperti pernikahan dan kematian melibatkan seluruh unsur Dalihan Na Tolu.",
@@ -210,8 +201,8 @@
       "nama": "Tanah Karo",
       "deskripsi": "Wilayah Batak Karo terletak di dataran tinggi Tanah Karo yang subur di kaki Gunung Sinabung dan Sibayak. Kawasan ini berada pada ketinggian 600-1.400 meter di atas permukaan laut dengan iklim sejuk yang cocok untuk pertanian sayuran dan buah-buahan.",
       "koordinat": {
-        "latitude": 3.1000,
-        "longitude": 98.5000
+        "latitude": 3.1,
+        "longitude": 98.5
       },
       "kabupaten": [
         "Kabupaten Karo",
@@ -222,26 +213,26 @@
       "landmarks": [
         {
           "nama": "Gunung Sinabung",
-          "latitude": 3.1700,
-          "longitude": 98.3900,
+          "latitude": 3.17,
+          "longitude": 98.39,
           "deskripsi": "Gunung berapi aktif yang menjadi ikon Tanah Karo"
         },
         {
           "nama": "Gunung Sibayak",
-          "latitude": 3.2000,
-          "longitude": 98.5000,
+          "latitude": 3.2,
+          "longitude": 98.5,
           "deskripsi": "Gunung berapi dengan pemandian air panas alami"
         },
         {
           "nama": "Berastagi",
           "latitude": 3.1833,
-          "longitude": 98.5000,
+          "longitude": 98.5,
           "deskripsi": "Kota wisata utama di dataran tinggi Karo"
         },
         {
           "nama": "Desa Lingga",
-          "latitude": 3.2500,
-          "longitude": 98.3500,
+          "latitude": 3.25,
+          "longitude": 98.35,
           "deskripsi": "Desa adat dengan rumah Siwaluh Jabu yang masih terjaga"
         }
       ]
@@ -315,20 +306,11 @@
       },
       "pakaian": {
         "deskripsi": "Uis (kain tenun Karo) memiliki motif dan warna yang berbeda dari Ulos Toba. Uis Gara (merah) dan Uis Jongkit adalah jenis yang paling terkenal. Pakaian adat pria terdiri dari baju kurung dan celana panjang, sementara wanita mengenakan kebaya dengan Uis sebagai selendang.",
-        "jenis": [
-          "Uis Gara",
-          "Uis Jongkit",
-          "Uis Nipes",
-          "Uis Kelam-kelam"
-        ]
+        "jenis": ["Uis Gara", "Uis Jongkit", "Uis Nipes", "Uis Kelam-kelam"]
       },
       "rumahAdat": {
         "deskripsi": "Siwaluh Jabu adalah rumah adat Karo yang megah dan dapat menampung delapan keluarga. Rumah ini dibangun di atas tiang-tiang kayu dengan atap berbentuk tanduk kerbau. Setiap keluarga menempati satu jabu (ruangan) dengan dapur bersama di tengah.",
-        "jenis": [
-          "Siwaluh Jabu",
-          "Geriten (Lumbung)",
-          "Jambur (Balai)"
-        ]
+        "jenis": ["Siwaluh Jabu", "Geriten (Lumbung)", "Jambur (Balai)"]
       },
       "upacaraAdat": {
         "deskripsi": "Upacara adat Karo menandai berbagai tahap kehidupan dan siklus pertanian. Kerja Tahun adalah upacara syukur panen yang melibatkan seluruh masyarakat. Upacara pernikahan Karo melibatkan prosesi yang panjang dengan berbagai ritual adat.",
@@ -408,10 +390,7 @@
         "latitude": 2.9667,
         "longitude": 99.0667
       },
-      "kabupaten": [
-        "Kabupaten Simalungun",
-        "Kota Pematangsiantar"
-      ],
+      "kabupaten": ["Kabupaten Simalungun", "Kota Pematangsiantar"],
       "landmarks": [
         {
           "nama": "Pematangsiantar",
@@ -421,20 +400,20 @@
         },
         {
           "nama": "Istana Raja Siantar",
-          "latitude": 2.9500,
-          "longitude": 99.0500,
+          "latitude": 2.95,
+          "longitude": 99.05,
           "deskripsi": "Bekas istana Kerajaan Siantar yang kini menjadi museum"
         },
         {
           "nama": "Pematang Raya",
           "latitude": 2.9333,
-          "longitude": 99.1000,
+          "longitude": 99.1,
           "deskripsi": "Pusat kebudayaan Simalungun"
         },
         {
           "nama": "Danau Toba (sisi timur)",
-          "latitude": 2.7500,
-          "longitude": 99.0000,
+          "latitude": 2.75,
+          "longitude": 99.0,
           "deskripsi": "Bagian timur Danau Toba yang berbatasan dengan Simalungun"
         }
       ]
@@ -492,29 +471,15 @@
       },
       "musikTarian": {
         "deskripsi": "Tortor Simalungun dikenal lebih anggun dan lemah gemulai dibanding tarian Batak lainnya. Gerakan tangan yang halus dan langkah kaki yang lembut menjadi ciri khas. Musik pengiring menggunakan gendang, garantung, dan sarune.",
-        "jenis": [
-          "Tortor Simalungun",
-          "Tortor Huda-huda",
-          "Musik Gonrang",
-          "Musik Garantung"
-        ]
+        "jenis": ["Tortor Simalungun", "Tortor Huda-huda", "Musik Gonrang", "Musik Garantung"]
       },
       "pakaian": {
         "deskripsi": "Hiou adalah kain tenun tradisional Simalungun dengan motif geometris yang khas. Warna dominan adalah merah, hitam, dan putih. Pakaian adat pria dan wanita memiliki keunikan tersendiri dengan ornamen dan aksesoris yang berbeda dari sub-etnis lain.",
-        "jenis": [
-          "Hiou Suri-suri",
-          "Hiou Ragi Panei",
-          "Hiou Ragi Siantar",
-          "Bulang (Ikat kepala)"
-        ]
+        "jenis": ["Hiou Suri-suri", "Hiou Ragi Panei", "Hiou Ragi Siantar", "Bulang (Ikat kepala)"]
       },
       "rumahAdat": {
         "deskripsi": "Rumah Bolon Simalungun memiliki arsitektur yang berbeda dengan ornamen dan ukiran yang lebih halus. Rumah ini dibangun di atas tiang dengan atap berbentuk pelana. Ukiran dan ornamen menggambarkan simbol-simbol kerajaan dan kepercayaan tradisional.",
-        "jenis": [
-          "Rumah Bolon",
-          "Jambur (Balai)",
-          "Sopo (Lumbung)"
-        ]
+        "jenis": ["Rumah Bolon", "Jambur (Balai)", "Sopo (Lumbung)"]
       },
       "upacaraAdat": {
         "deskripsi": "Upacara adat Simalungun memiliki keunikan dengan prosesi yang lebih halus dan teratur. Upacara pernikahan, kematian, dan syukuran melibatkan seluruh unsur kekerabatan dengan tata cara yang telah diwariskan turun-temurun.",
@@ -591,13 +556,10 @@
       "nama": "Tanah Pakpak",
       "deskripsi": "Wilayah Batak Pakpak terletak di pegunungan Dairi di barat Danau Toba. Kawasan ini memiliki topografi bergunung-gunung dengan ketinggian 800-1.500 meter di atas permukaan laut. Masyarakat Pakpak hidup dari pertanian dan hasil hutan.",
       "koordinat": {
-        "latitude": 2.7500,
-        "longitude": 98.2500
+        "latitude": 2.75,
+        "longitude": 98.25
       },
-      "kabupaten": [
-        "Kabupaten Dairi",
-        "Kabupaten Pakpak Bharat"
-      ],
+      "kabupaten": ["Kabupaten Dairi", "Kabupaten Pakpak Bharat"],
       "landmarks": [
         {
           "nama": "Sidikalang",
@@ -607,20 +569,20 @@
         },
         {
           "nama": "Salak",
-          "latitude": 2.6500,
-          "longitude": 98.2000,
+          "latitude": 2.65,
+          "longitude": 98.2,
           "deskripsi": "Ibu kota Kabupaten Pakpak Bharat"
         },
         {
           "nama": "Lokasi Gugurnya Sisingamangaraja XII",
-          "latitude": 2.6000,
-          "longitude": 98.2500,
+          "latitude": 2.6,
+          "longitude": 98.25,
           "deskripsi": "Tempat gugurnya Raja Sisingamangaraja XII pada 17 Juni 1907"
         },
         {
           "nama": "Pegunungan Pakpak",
-          "latitude": 2.7000,
-          "longitude": 98.2000,
+          "latitude": 2.7,
+          "longitude": 98.2,
           "deskripsi": "Pegunungan yang menjadi wilayah tradisional masyarakat Pakpak"
         }
       ]
@@ -670,38 +632,19 @@
       "ringkasan": "Budaya Pakpak memiliki keunikan dengan sistem marga Suak dan tradisi Sulang-sulang. Tarian Tortor Pakpak dan musik Gendang Pakpak memiliki irama yang berbeda dari sub-etnis lain. Oles (kain tenun Pakpak) memiliki motif dan warna yang khas.",
       "sistemKekerabatan": {
         "deskripsi": "Sistem kekerabatan Pakpak berbasis marga Suak (lima marga utama). Sistem ini mengatur hubungan sosial dan perkawinan dalam masyarakat Pakpak. Hubungan kekerabatan diatur melalui Berru, Kula-kula, dan Sinina.",
-        "jenis": [
-          "Marga Berutu",
-          "Marga Padang",
-          "Marga Manik",
-          "Marga Angkat",
-          "Marga Cibro"
-        ]
+        "jenis": ["Marga Berutu", "Marga Padang", "Marga Manik", "Marga Angkat", "Marga Cibro"]
       },
       "musikTarian": {
         "deskripsi": "Musik Gendang Pakpak memiliki irama yang berbeda dari sub-etnis Batak lainnya. Tarian Tortor Pakpak diiringi musik gendang dan nyanyian tradisional. Tradisi Sulang-sulang adalah upacara adat penting yang melibatkan musik dan tarian.",
-        "jenis": [
-          "Gendang Pakpak",
-          "Tortor Pakpak",
-          "Sulang-sulang",
-          "Ende-ende (Nyanyian)"
-        ]
+        "jenis": ["Gendang Pakpak", "Tortor Pakpak", "Sulang-sulang", "Ende-ende (Nyanyian)"]
       },
       "pakaian": {
         "deskripsi": "Oles adalah kain tenun tradisional Pakpak dengan motif dan warna yang khas. Pakaian adat Pakpak memiliki keunikan tersendiri yang mencerminkan identitas budaya masyarakat pegunungan.",
-        "jenis": [
-          "Oles Pakpak",
-          "Oles Sibolang",
-          "Baju Adat Pakpak"
-        ]
+        "jenis": ["Oles Pakpak", "Oles Sibolang", "Baju Adat Pakpak"]
       },
       "rumahAdat": {
         "deskripsi": "Rumah adat Pakpak memiliki arsitektur yang disesuaikan dengan kondisi pegunungan. Rumah dibangun di atas tiang dengan atap berbentuk pelana. Konstruksi rumah menggunakan bahan-bahan lokal dari hutan sekitar.",
-        "jenis": [
-          "Rumah Adat Pakpak",
-          "Jambur (Balai)",
-          "Sopo (Lumbung)"
-        ]
+        "jenis": ["Rumah Adat Pakpak", "Jambur (Balai)", "Sopo (Lumbung)"]
       },
       "upacaraAdat": {
         "deskripsi": "Tradisi Sulang-sulang adalah upacara adat penting dalam masyarakat Pakpak. Upacara ini melibatkan pemberian makanan dan minuman kepada tamu sebagai tanda penghormatan. Upacara pernikahan dan kematian juga memiliki tata cara yang khas.",
@@ -778,8 +721,8 @@
       "nama": "Tanah Angkola",
       "deskripsi": "Wilayah Batak Angkola terletak di Tapanuli Selatan bagian utara, membentang dari pegunungan hingga lembah sungai. Kawasan ini memiliki pengaruh budaya Minangkabau karena letaknya yang berbatasan dengan Sumatera Barat.",
       "koordinat": {
-        "latitude": 1.4000,
-        "longitude": 99.2500
+        "latitude": 1.4,
+        "longitude": 99.25
       },
       "kabupaten": [
         "Kabupaten Tapanuli Selatan (bagian utara)",
@@ -795,20 +738,20 @@
         },
         {
           "nama": "Sipirok",
-          "latitude": 1.6500,
-          "longitude": 99.2500,
+          "latitude": 1.65,
+          "longitude": 99.25,
           "deskripsi": "Pusat kebudayaan Angkola dengan tradisi adat yang kuat"
         },
         {
           "nama": "Padang Bolak",
-          "latitude": 1.5000,
-          "longitude": 99.5000,
+          "latitude": 1.5,
+          "longitude": 99.5,
           "deskripsi": "Wilayah kerajaan Padang Bolak yang bersejarah"
         },
         {
           "nama": "Gunung Lubuk Raya",
-          "latitude": 1.4500,
-          "longitude": 99.3000,
+          "latitude": 1.45,
+          "longitude": 99.3,
           "deskripsi": "Gunung yang menjadi ikon wilayah Angkola"
         }
       ]
@@ -866,29 +809,15 @@
       },
       "musikTarian": {
         "deskripsi": "Gordang Sambilan adalah ensambel musik tradisional dengan sembilan gendang yang dimainkan bersama. Musik ini mengiringi tarian Tor-tor Angkola dalam berbagai upacara adat. Gerakan tarian lebih halus dan dipengaruhi nilai-nilai Islam.",
-        "jenis": [
-          "Gordang Sambilan",
-          "Tor-tor Angkola",
-          "Musik Gondang",
-          "Ende-ende (Nyanyian)"
-        ]
+        "jenis": ["Gordang Sambilan", "Tor-tor Angkola", "Musik Gondang", "Ende-ende (Nyanyian)"]
       },
       "pakaian": {
         "deskripsi": "Ulos Angkola memiliki motif yang dipengaruhi seni Islam dengan warna-warna yang lebih lembut. Pakaian adat pria dan wanita mencerminkan perpaduan tradisi Batak dan Islam dengan kesopanan yang dijaga.",
-        "jenis": [
-          "Ulos Angkola",
-          "Ulos Sibolang",
-          "Baju Kurung",
-          "Songket Angkola"
-        ]
+        "jenis": ["Ulos Angkola", "Ulos Sibolang", "Baju Kurung", "Songket Angkola"]
       },
       "rumahAdat": {
         "deskripsi": "Bagas Godang adalah rumah adat Angkola yang menjadi pusat kegiatan adat. Rumah ini memiliki arsitektur yang memadukan gaya Batak dengan pengaruh Minangkabau. Sopo Godang adalah balai pertemuan untuk musyawarah adat.",
-        "jenis": [
-          "Bagas Godang",
-          "Sopo Godang",
-          "Sopo Bolon"
-        ]
+        "jenis": ["Bagas Godang", "Sopo Godang", "Sopo Bolon"]
       },
       "upacaraAdat": {
         "deskripsi": "Upacara adat Angkola memadukan tradisi Batak dengan nilai-nilai Islam. Upacara pernikahan, kematian, dan syukuran dilakukan dengan tata cara yang menghormati kedua tradisi. Gordang Sambilan mengiringi berbagai upacara adat.",
@@ -966,8 +895,8 @@
       "nama": "Tanah Mandailing",
       "deskripsi": "Wilayah Batak Mandailing terletak di Mandailing Natal di selatan Tapanuli. Kawasan ini berbatasan langsung dengan Sumatera Barat dan memiliki pengaruh budaya Minangkabau yang kuat. Islam masuk lebih awal ke wilayah ini dibanding wilayah Batak lainnya.",
       "koordinat": {
-        "latitude": 0.8500,
-        "longitude": 99.5500
+        "latitude": 0.85,
+        "longitude": 99.55
       },
       "kabupaten": [
         "Kabupaten Mandailing Natal",
@@ -977,19 +906,19 @@
         {
           "nama": "Panyabungan",
           "latitude": 0.8333,
-          "longitude": 99.5500,
+          "longitude": 99.55,
           "deskripsi": "Ibu kota Kabupaten Mandailing Natal, pusat pemerintahan dan perdagangan"
         },
         {
           "nama": "Kotanopan",
-          "latitude": 0.9500,
-          "longitude": 99.6000,
+          "latitude": 0.95,
+          "longitude": 99.6,
           "deskripsi": "Kota kelahiran Abdul Haris Nasution"
         },
         {
           "nama": "Natal",
-          "latitude": 0.5500,
-          "longitude": 99.0500,
+          "latitude": 0.55,
+          "longitude": 99.05,
           "deskripsi": "Kota pelabuhan di pesisir barat Mandailing"
         },
         {
@@ -1058,29 +987,15 @@
       },
       "musikTarian": {
         "deskripsi": "Gordang Sambilan adalah ensambel musik tradisional dengan sembilan gendang yang dimainkan bersama. Musik ini mengiringi tarian Tor-tor Mandailing dalam berbagai upacara adat. Gerakan tarian mencerminkan nilai-nilai Islam dengan kesopanan yang dijaga.",
-        "jenis": [
-          "Gordang Sambilan",
-          "Tor-tor Mandailing",
-          "Musik Gondang",
-          "Ende-ende (Nyanyian)"
-        ]
+        "jenis": ["Gordang Sambilan", "Tor-tor Mandailing", "Musik Gondang", "Ende-ende (Nyanyian)"]
       },
       "pakaian": {
         "deskripsi": "Ulos Mandailing (Abit Godang) memiliki motif yang dipengaruhi seni Islam. Pakaian adat pria dan wanita mencerminkan perpaduan tradisi Batak dan Islam. Songket Mandailing juga menjadi pakaian adat yang penting.",
-        "jenis": [
-          "Abit Godang (Ulos Mandailing)",
-          "Songket Mandailing",
-          "Baju Kurung",
-          "Sabe-sabe"
-        ]
+        "jenis": ["Abit Godang (Ulos Mandailing)", "Songket Mandailing", "Baju Kurung", "Sabe-sabe"]
       },
       "rumahAdat": {
         "deskripsi": "Bagas Godang dan Sopo Godang adalah bangunan adat penting dalam masyarakat Mandailing. Bagas Godang adalah rumah besar tempat tinggal raja, sementara Sopo Godang adalah balai pertemuan untuk musyawarah adat.",
-        "jenis": [
-          "Bagas Godang",
-          "Sopo Godang",
-          "Sopo Bolon"
-        ]
+        "jenis": ["Bagas Godang", "Sopo Godang", "Sopo Bolon"]
       },
       "upacaraAdat": {
         "deskripsi": "Upacara adat Mandailing memadukan tradisi Batak dengan nilai-nilai Islam. Upacara pernikahan, kematian, dan syukuran dilakukan dengan tata cara yang menghormati kedua tradisi. Horja Godang adalah pesta besar yang melibatkan seluruh masyarakat.",

@@ -377,7 +377,6 @@ export interface BahasaData {
   languagePreservation: any;
 }
 
-
 // Rumpun Batak types
 export interface Tokoh {
   nama: string;

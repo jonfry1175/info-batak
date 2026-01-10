@@ -124,7 +124,7 @@ export default function BeritaDetailClient({ berita }: BeritaDetailClientProps) 
                       </div>
                       <div className="p-4">
                         <span className="text-accent text-xs font-medium">{item.kategori}</span>
-                        <h3 className="text-foreground group-hover:text-accent mt-1 font-bold leading-tight transition-colors line-clamp-2">
+                        <h3 className="text-foreground group-hover:text-accent mt-1 line-clamp-2 leading-tight font-bold transition-colors">
                           {item.judul}
                         </h3>
                         <span className="text-foreground/50 mt-2 block text-xs">

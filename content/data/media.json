@@ -46,6 +46,19 @@
       "placeholder": true
     },
     {
+      "id": "hero-berita",
+      "src": "/images/berita/hero-berita.png",
+      "alt": "Ancient Batak Pustaha manuscript and Ulos cloth",
+      "category": "Berita",
+      "subcategory": "Hero",
+      "photographer": "AI Generated",
+      "year": 2025,
+      "license": "Public Domain",
+      "description": "Header image for News & Articles section showing a Pustaha manuscript and Ulos cloth on a wooden table",
+      "keywords": ["berita", "news", "pustaha", "manuscript", "ulos", "culture"],
+      "placeholder": false
+    },
+    {
       "id": "kesenian-gondang-sabangunan",
       "src": "/images/budaya/kesenian/gondang-sabangunan.png",
       "alt": "Ansambel musik tradisional Gondang Sabangunan",
@@ -160,6 +173,45 @@
       "license": "Public Domain",
       "description": "Batak Karo dancers performing Tari Piso Surit",
       "keywords": ["batak", "tari", "karo", "piso surit"],
+      "placeholder": false
+    },
+    {
+      "id": "adat-dalihan-na-tolu",
+      "src": "/images/budaya/adat/dalihan-na-tolu.png",
+      "alt": "Filosofi Dalihan Na Tolu disimbolkan dengan tungku berkaki tiga",
+      "category": "Budaya",
+      "subcategory": "Adat Istiadat",
+      "photographer": "AI Generated",
+      "year": 2025,
+      "license": "Public Domain",
+      "description": "Artistic representation of Dalihan Na Tolu philosophy showing three hearth stones supporting a cooking pot",
+      "keywords": ["batak", "adat", "dalihan na tolu", "filosofi"],
+      "placeholder": false
+    },
+    {
+      "id": "adat-mangulosi",
+      "src": "/images/budaya/adat/mangulosi.png",
+      "alt": "Upacara Mangulosi",
+      "category": "Budaya",
+      "subcategory": "Upacara Adat",
+      "photographer": "AI Generated",
+      "year": 2025,
+      "license": "Public Domain",
+      "description": "Close-up of traditional Mangulosi ceremony with Ulos cloth",
+      "keywords": ["batak", "adat", "mangulosi", "ulos", "upacara"],
+      "placeholder": false
+    },
+    {
+      "id": "adat-gorga-pattern",
+      "src": "/images/budaya/adat/gorga-pattern.png",
+      "alt": "Motif Ukiran Gorga Batak",
+      "category": "Budaya",
+      "subcategory": "Pattern",
+      "photographer": "AI Generated",
+      "year": 2025,
+      "license": "Public Domain",
+      "description": "Seamless texture of traditional Batak Gorga wood carving patterns",
+      "keywords": ["batak", "pattern", "gorga", "texture", "background"],
       "placeholder": false
     }
   ],

@@ -47,7 +47,7 @@ export default function BahasaPage() {
           </p>
 
           <div className="space-y-6">
-            {dialects.map(dialect => (
+            {dialects.map((dialect) => (
               <div key={dialect.id} className="bg-foreground/5 rounded-lg p-6">
                 <div className="mb-4 flex items-start justify-between">
                   <div>
@@ -170,9 +170,7 @@ export default function BahasaPage() {
         {/* Dalihan Na Tolu Kinship */}
         <section className="mb-16">
           <h2 className="mb-6 text-3xl font-bold">Sistem Kekerabatan</h2>
-          <p className="text-foreground/70 mb-8 leading-relaxed">
-            {kinshipTerms.description}
-          </p>
+          <p className="text-foreground/70 mb-8 leading-relaxed">{kinshipTerms.description}</p>
 
           <div className="bg-accent/10 border-accent mb-8 rounded-lg border-l-4 p-8">
             <h3 className="text-accent mb-6 text-2xl font-semibold">Dalihan Na Tolu</h3>
@@ -242,9 +240,7 @@ export default function BahasaPage() {
         {/* Umpasa Section */}
         <section className="mb-16">
           <h2 className="mb-6 text-3xl font-bold">Umpasa (Peribahasa Batak)</h2>
-          <p className="text-foreground/70 mb-6 leading-relaxed">
-            {bahasaData.umpasa.description}
-          </p>
+          <p className="text-foreground/70 mb-6 leading-relaxed">{bahasaData.umpasa.description}</p>
 
           <div className="bg-foreground/5 mb-8 rounded-lg p-6">
             <h3 className="text-accent mb-4 text-lg font-semibold">Karakteristik Umpasa:</h3>
@@ -262,7 +258,7 @@ export default function BahasaPage() {
           <div className="space-y-6">
             {umpasaExamples.map((umpasa, idx) => (
               <div key={idx} className="bg-accent/10 border-accent rounded-lg border-l-4 p-6">
-                <p className="text-accent mb-4 text-lg font-medium italic leading-relaxed">
+                <p className="text-accent mb-4 text-lg leading-relaxed font-medium italic">
                   "{umpasa.toba}"
                 </p>
                 <div className="bg-foreground/5 mb-4 rounded p-4">
@@ -363,7 +359,7 @@ export default function BahasaPage() {
                           <span className="text-accent mr-2">→</span>
                           {content}
                         </li>
-                      ),
+                      )
                     )}
                   </ul>
                 </div>

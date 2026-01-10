@@ -29,10 +29,9 @@ export default function KesenianPage() {
         subtitle="Menjelajahi kekayaan seni musik, tari, dan kerajinan tradisional Batak yang sarat makna dan filosofi"
         backgroundImage="/images/homepage/card-kesenian.jpg"
       />
-      
-      <div className="w-full bg-background pb-20 pt-16">
+
+      <div className="bg-background w-full pt-16 pb-20">
         <div className="mx-auto max-w-7xl px-4">
-          
           {/* Navigation Pills */}
           <div className="mb-16 flex flex-wrap justify-center gap-3">
             {[
@@ -44,7 +43,7 @@ export default function KesenianPage() {
               <Button
                 key={item.name}
                 variant="outline"
-                className="rounded-full border-accent/20 hover:bg-accent hover:text-white"
+                className="border-accent/20 hover:bg-accent rounded-full hover:text-white"
                 asChild
               >
                 <Link href={item.href}>
@@ -58,7 +57,7 @@ export default function KesenianPage() {
           {/* Musik Tradisional */}
           <section id="musik" className="mb-24 scroll-mt-24">
             <div className="mb-10 flex items-center gap-4">
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-accent/10 text-accent">
+              <div className="bg-accent/10 text-accent flex h-12 w-12 items-center justify-center rounded-xl">
                 <Music className="h-6 w-6" />
               </div>
               <div>
@@ -68,7 +67,7 @@ export default function KesenianPage() {
             </div>
 
             {/* Featured: Gondang Sabangunan */}
-            <div className="mb-12 overflow-hidden rounded-2xl border border-border bg-card shadow-sm lg:grid lg:grid-cols-2">
+            <div className="border-border bg-card mb-12 overflow-hidden rounded-2xl border shadow-sm lg:grid lg:grid-cols-2">
               <div className="relative aspect-video lg:aspect-auto lg:h-full">
                 {gondangImages.length > 0 ? (
                   <div className="relative h-full w-full">
@@ -81,40 +80,57 @@ export default function KesenianPage() {
                     />
                   </div>
                 ) : (
-                  <div className="flex h-full w-full items-center justify-center bg-muted">
-                    <Music className="h-20 w-20 text-muted-foreground/30" />
+                  <div className="bg-muted flex h-full w-full items-center justify-center">
+                    <Music className="text-muted-foreground/30 h-20 w-20" />
                   </div>
                 )}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-black/60 lg:hidden" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent lg:hidden lg:bg-gradient-to-r lg:from-transparent lg:to-black/60" />
               </div>
               <div className="flex flex-col justify-center p-8 lg:p-12">
-                <div className="mb-4 inline-flex items-center rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent">
+                <div className="bg-accent/10 text-accent mb-4 inline-flex items-center rounded-full px-3 py-1 text-xs font-medium">
                   Ansambel Utama
                 </div>
                 <h3 className="mb-4 text-3xl font-bold">Gondang Sabangunan</h3>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
-                  Ansambel musik tradisional Batak Toba yang dimainkan dalam berbagai upacara adat sakral. 
-                  &quot;Sabangunan&quot; berarti satu kesatuan utuh, melambangkan harmoni kosmos dan masyarakat.
+                  Ansambel musik tradisional Batak Toba yang dimainkan dalam berbagai upacara adat
+                  sakral. &quot;Sabangunan&quot; berarti satu kesatuan utuh, melambangkan harmoni
+                  kosmos dan masyarakat.
                 </p>
-                
-                <div className="mb-8 rounded-xl bg-muted/50 p-6">
-                  <h4 className="mb-4 font-semibold text-foreground">Instrumen Utama:</h4>
+
+                <div className="bg-muted/50 mb-8 rounded-xl p-6">
+                  <h4 className="text-foreground mb-4 font-semibold">Instrumen Utama:</h4>
                   <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-                    <li className="flex items-center gap-3 text-sm text-muted-foreground">
-                      <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-background text-xs font-bold text-accent">1</span>
-                      <span><strong>Taganing:</strong> 5 gendang melodis</span>
+                    <li className="text-muted-foreground flex items-center gap-3 text-sm">
+                      <span className="bg-background text-accent flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs font-bold">
+                        1
+                      </span>
+                      <span>
+                        <strong>Taganing:</strong> 5 gendang melodis
+                      </span>
                     </li>
-                    <li className="flex items-center gap-3 text-sm text-muted-foreground">
-                      <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-background text-xs font-bold text-accent">2</span>
-                      <span><strong>Gordang:</strong> Gendang bass besar</span>
+                    <li className="text-muted-foreground flex items-center gap-3 text-sm">
+                      <span className="bg-background text-accent flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs font-bold">
+                        2
+                      </span>
+                      <span>
+                        <strong>Gordang:</strong> Gendang bass besar
+                      </span>
                     </li>
-                    <li className="flex items-center gap-3 text-sm text-muted-foreground">
-                      <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-background text-xs font-bold text-accent">3</span>
-                      <span><strong>Sarune:</strong> Alat tiup melodi</span>
+                    <li className="text-muted-foreground flex items-center gap-3 text-sm">
+                      <span className="bg-background text-accent flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs font-bold">
+                        3
+                      </span>
+                      <span>
+                        <strong>Sarune:</strong> Alat tiup melodi
+                      </span>
                     </li>
-                    <li className="flex items-center gap-3 text-sm text-muted-foreground">
-                      <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-background text-xs font-bold text-accent">4</span>
-                      <span><strong>Ogung:</strong> Gong pengiring</span>
+                    <li className="text-muted-foreground flex items-center gap-3 text-sm">
+                      <span className="bg-background text-accent flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs font-bold">
+                        4
+                      </span>
+                      <span>
+                        <strong>Ogung:</strong> Gong pengiring
+                      </span>
                     </li>
                   </ul>
                 </div>
@@ -145,7 +161,7 @@ export default function KesenianPage() {
                 className="bg-card"
               />
             </div>
-            
+
             {gondangImages.length > 0 && (
               <div className="mt-12">
                 <h3 className="mb-6 text-xl font-bold">Galeri Instrumen</h3>
@@ -157,7 +173,7 @@ export default function KesenianPage() {
           {/* Tarian Tradisional */}
           <section id="tarian" className="mb-24 scroll-mt-24">
             <div className="mb-10 flex items-center gap-4">
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-accent/10 text-accent">
+              <div className="bg-accent/10 text-accent flex h-12 w-12 items-center justify-center rounded-xl">
                 <Move className="h-6 w-6" />
               </div>
               <div>
@@ -169,7 +185,7 @@ export default function KesenianPage() {
             <div className="grid gap-8 lg:grid-cols-3">
               {/* Featured Tortor Card */}
               <div className="lg:col-span-2">
-                <div className="group relative h-full overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all hover:shadow-md">
+                <div className="group border-border bg-card relative h-full overflow-hidden rounded-2xl border shadow-sm transition-all hover:shadow-md">
                   <div className="relative aspect-[16/9] w-full overflow-hidden">
                     {tortorImages.length > 0 ? (
                       <div className="relative h-full w-full">
@@ -182,28 +198,36 @@ export default function KesenianPage() {
                         />
                       </div>
                     ) : (
-                      <div className="h-full w-full bg-muted" />
+                      <div className="bg-muted h-full w-full" />
                     )}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
                     <div className="absolute bottom-0 left-0 p-8">
                       <h3 className="mb-2 text-3xl font-bold text-white">Tortor Batak</h3>
                       <p className="max-w-xl text-white/90">
-                        Lebih dari sekadar tarian, Tortor adalah medium spiritual. Setiap gerakan tangan (manortor) memiliki arti penghormatan kepada Tuhan, leluhur, dan sesama.
+                        Lebih dari sekadar tarian, Tortor adalah medium spiritual. Setiap gerakan
+                        tangan (manortor) memiliki arti penghormatan kepada Tuhan, leluhur, dan
+                        sesama.
                       </p>
                     </div>
                   </div>
-                  <div className="grid gap-4 p-8 sm:grid-cols-3 bg-card">
-                    <div className="rounded-lg bg-muted/50 p-4">
-                      <h4 className="font-semibold text-accent mb-1">Pangurason</h4>
-                      <p className="text-xs text-muted-foreground">Tarian pembersihan lokasi acara dari roh jahat</p>
+                  <div className="bg-card grid gap-4 p-8 sm:grid-cols-3">
+                    <div className="bg-muted/50 rounded-lg p-4">
+                      <h4 className="text-accent mb-1 font-semibold">Pangurason</h4>
+                      <p className="text-muted-foreground text-xs">
+                        Tarian pembersihan lokasi acara dari roh jahat
+                      </p>
                     </div>
-                    <div className="rounded-lg bg-muted/50 p-4">
-                      <h4 className="font-semibold text-accent mb-1">Sipitu Cawan</h4>
-                      <p className="text-xs text-muted-foreground">Tarian keseimbangan dengan 7 cawan di kepala/tangan</p>
+                    <div className="bg-muted/50 rounded-lg p-4">
+                      <h4 className="text-accent mb-1 font-semibold">Sipitu Cawan</h4>
+                      <p className="text-muted-foreground text-xs">
+                        Tarian keseimbangan dengan 7 cawan di kepala/tangan
+                      </p>
                     </div>
-                    <div className="rounded-lg bg-muted/50 p-4">
-                      <h4 className="font-semibold text-accent mb-1">Tunggal Panaluan</h4>
-                      <p className="text-xs text-muted-foreground">Tarian ritual pemanggilan hujan atau tolak bala</p>
+                    <div className="bg-muted/50 rounded-lg p-4">
+                      <h4 className="text-accent mb-1 font-semibold">Tunggal Panaluan</h4>
+                      <p className="text-muted-foreground text-xs">
+                        Tarian ritual pemanggilan hujan atau tolak bala
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -219,11 +243,12 @@ export default function KesenianPage() {
                   image={tariKaroImages[0]?.src}
                   aspectRatio="aspect-[4/3]"
                 />
-                <div className="flex-1 rounded-2xl border border-border bg-accent/5 p-8 flex flex-col justify-center text-center">
-                  <Move className="mx-auto mb-4 h-12 w-12 text-accent opacity-50" />
+                <div className="border-border bg-accent/5 flex flex-1 flex-col justify-center rounded-2xl border p-8 text-center">
+                  <Move className="text-accent mx-auto mb-4 h-12 w-12 opacity-50" />
                   <h3 className="mb-2 text-lg font-bold">Filosofi Gerakan</h3>
-                  <p className="text-sm text-muted-foreground">
-                    &quot;Tangan ke atas memohon berkat, tangan di dada menyimpan amanah, tangan terbuka memberi kasih.&quot;
+                  <p className="text-muted-foreground text-sm">
+                    &quot;Tangan ke atas memohon berkat, tangan di dada menyimpan amanah, tangan
+                    terbuka memberi kasih.&quot;
                   </p>
                 </div>
               </div>
@@ -239,12 +264,14 @@ export default function KesenianPage() {
           {/* Kerajinan Tradisional */}
           <section id="kerajinan" className="mb-24 scroll-mt-24">
             <div className="mb-10 flex items-center gap-4">
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-accent/10 text-accent">
+              <div className="bg-accent/10 text-accent flex h-12 w-12 items-center justify-center rounded-xl">
                 <Scissors className="h-6 w-6" />
               </div>
               <div>
                 <h2 className="text-3xl font-bold">Kerajinan & Arsitektur</h2>
-                <p className="text-muted-foreground mt-1">Karya tangan yang memadukan fungsi dan estetika</p>
+                <p className="text-muted-foreground mt-1">
+                  Karya tangan yang memadukan fungsi dan estetika
+                </p>
               </div>
             </div>
 
@@ -282,7 +309,7 @@ export default function KesenianPage() {
                 className="h-full"
               />
             </div>
-            
+
             {ulosImages.length > 0 && (
               <div className="mt-12">
                 <h3 className="mb-6 text-xl font-bold">Keindahan Motif Ulos</h3>
@@ -293,7 +320,6 @@ export default function KesenianPage() {
 
           {/* Sastra Lisan */}
           <UmpasaUmpamaSection />
-
         </div>
       </div>
     </>

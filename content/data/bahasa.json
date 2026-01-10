@@ -528,11 +528,7 @@
         {
           "name": "Turiturian (Cerita Rakyat)",
           "description": "Cerita-cerita tentang asal-usul, sejarah raja-raja, dan dongeng",
-          "examples": [
-            "Si Singamangaraja",
-            "Raja Batak",
-            "Tuan Sorba Dibanua"
-          ]
+          "examples": ["Si Singamangaraja", "Raja Batak", "Tuan Sorba Dibanua"]
         },
         {
           "name": "Ende (Nyanyian Tradisional)",
@@ -564,17 +560,8 @@
     },
     "modernLiterature": {
       "description": "Sastra Batak modern dalam bahasa Indonesia",
-      "authors": [
-        "M. Simanjuntak",
-        "T.D. Pardede",
-        "Welas Hutagalung"
-      ],
-      "themes": [
-        "Adat dan tradisi",
-        "Diaspora Batak",
-        "Modernisasi vs tradisi",
-        "Identitas budaya"
-      ]
+      "authors": ["M. Simanjuntak", "T.D. Pardede", "Welas Hutagalung"],
+      "themes": ["Adat dan tradisi", "Diaspora Batak", "Modernisasi vs tradisi", "Identitas budaya"]
     }
   },
   "languagePreservation": {

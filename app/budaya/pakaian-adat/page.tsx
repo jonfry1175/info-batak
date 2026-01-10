@@ -24,8 +24,9 @@ export default function PakaianAdatPage() {
         <h1 className="text-accent mb-6 text-4xl font-bold md:text-5xl">Pakaian Adat Batak</h1>
         <p className="text-foreground/70 mb-12 text-lg leading-relaxed">
           Pakaian adat Batak bukan sekadar busana, melainkan identitas budaya yang sarat dengan
-          makna filosofis. Setiap komponen pakaian, terutama <span className="font-semibold">ulos</span>,
-          memiliki simbolisme mendalam yang mencerminkan nilai-nilai luhur masyarakat Batak.
+          makna filosofis. Setiap komponen pakaian, terutama{' '}
+          <span className="font-semibold">ulos</span>, memiliki simbolisme mendalam yang
+          mencerminkan nilai-nilai luhur masyarakat Batak.
         </p>
 
         {/* Men's Attire Section */}
@@ -34,7 +35,7 @@ export default function PakaianAdatPage() {
           <p className="text-foreground/70 mb-8 leading-relaxed">{mensAttire.description}</p>
 
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {mensAttire.components.map(component => (
+            {mensAttire.components.map((component) => (
               <div key={component.id} className="bg-foreground/5 rounded-lg p-6">
                 <h3 className="text-accent mb-3 text-lg font-semibold">{component.name}</h3>
                 <p className="text-foreground/60 mb-3 text-xs uppercase">{component.type}</p>
@@ -78,7 +79,7 @@ export default function PakaianAdatPage() {
           <p className="text-foreground/70 mb-8 leading-relaxed">{womensAttire.description}</p>
 
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {womensAttire.components.map(component => (
+            {womensAttire.components.map((component) => (
               <div key={component.id} className="bg-foreground/5 rounded-lg p-6">
                 <h3 className="text-accent mb-3 text-lg font-semibold">{component.name}</h3>
                 <p className="text-foreground/60 mb-3 text-xs uppercase">{component.type}</p>
@@ -205,7 +206,7 @@ export default function PakaianAdatPage() {
                       <p className="text-foreground/80 text-sm italic">{occasion.meaning}</p>
                     </div>
                   </div>
-                ),
+                )
               )}
             </div>
 
@@ -237,7 +238,7 @@ export default function PakaianAdatPage() {
                       <span className="text-accent mr-3 font-semibold">{index + 1}.</span>
                       <span className="text-foreground/70 text-sm">{step}</span>
                     </div>
-                  ),
+                  )
                 )}
               </div>
             </div>
@@ -289,14 +290,12 @@ export default function PakaianAdatPage() {
                 ></div>
                 <h3 className="text-accent mb-2 text-lg font-semibold">{colorData.color}</h3>
                 <p className="text-foreground/70 mb-3 text-sm">{colorData.meaning}</p>
-                <p className="text-foreground/60 text-xs italic">
-                  Digunakan: {colorData.usage}
-                </p>
+                <p className="text-foreground/60 text-xs italic">Digunakan: {colorData.usage}</p>
               </div>
             ))}
           </div>
           <div className="bg-accent/10 mt-8 rounded-lg p-6">
-            <p className="text-foreground/80 italic leading-relaxed">
+            <p className="text-foreground/80 leading-relaxed italic">
               {pakaianData.colorSymbolism.philosophy}
             </p>
           </div>

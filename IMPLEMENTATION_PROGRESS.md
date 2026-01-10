@@ -51,12 +51,15 @@ Total **10 major tasks completed** dari Phase 1 implementation plan.
 ### 2. Media Library Management System
 
 #### `content/data/media.json`
+
 Centralized metadata database untuk:
+
 - **Images**: Photographer credits, licensing, descriptions
 - **Videos**: Duration, captions, creators
 - **Audio**: Performers, duration, instruments
 
 **Schema Fields:**
+
 ```json
 {
   "id": "unique-identifier",
@@ -72,6 +75,7 @@ Centralized metadata database untuk:
 **File:** `content/data/media.json`
 
 #### Helper Functions (`lib/data.ts`)
+
 ```typescript
 getAllImages()
 getImageById(id)
@@ -87,6 +91,7 @@ searchMedia(query)
 ### 3. TypeScript Type Definitions
 
 #### Extended Types (`types/index.ts`)
+
 ```typescript
 interface Fakta {
   // Existing fields
@@ -114,7 +119,9 @@ interface MediaLibrary { ... }
 ### 4. Reusable UI Components
 
 #### A. Gallery Component (`components/ui/Gallery.tsx`)
+
 **Features:**
+
 - ✅ Responsive grid layout (2, 3, or 4 columns)
 - ✅ Lightbox viewer with keyboard navigation
 - ✅ Image lazy loading & optimization
@@ -124,6 +131,7 @@ interface MediaLibrary { ... }
 - ✅ Mobile-friendly touch gestures
 
 **Props:**
+
 ```typescript
 images: MediaImage[]
 columns?: 2 | 3 | 4
@@ -132,17 +140,15 @@ showCredits?: boolean
 ```
 
 **Usage:**
+
 ```tsx
-<Gallery
-  images={pustahImages}
-  columns={3}
-  aspectRatio="video"
-  showCredits={true}
-/>
+<Gallery images={pustahImages} columns={3} aspectRatio="video" showCredits={true} />
 ```
 
 #### B. MediaCard Component (`components/ui/MediaCard.tsx`)
+
 **Features:**
+
 - ✅ Image support with fallback to gradient background
 - ✅ Category badge overlay
 - ✅ Hover animations & effects
@@ -150,6 +156,7 @@ showCredits?: boolean
 - ✅ Auto-optimized images with Next.js Image
 
 **Props:**
+
 ```typescript
 title: string
 description: string
@@ -160,6 +167,7 @@ icon?: React.ReactNode
 ```
 
 **Usage:**
+
 ```tsx
 <MediaCardGrid columns={3}>
   <MediaCard
@@ -177,13 +185,16 @@ icon?: React.ReactNode
 ### 5. Homepage Enhancements (`app/page.tsx`)
 
 #### A. Hero Section with Background Image Support
+
 **Changes:**
+
 - Absolute positioned background container
 - Gradient overlay for text readability
 - Ready for hero background images (currently gradient fallback)
 - Improved vertical spacing (py-32 md:py-40)
 
 **Structure:**
+
 ```tsx
 <section className="relative overflow-hidden">
   {/* Background Image (ready to uncomment) */}
@@ -192,7 +203,7 @@ icon?: React.ReactNode
   </div>
 
   {/* Overlay */}
-  <div className="absolute inset-0 bg-gradient-to-b from-background/50 to-background/80" />
+  <div className="from-background/50 to-background/80 absolute inset-0 bg-gradient-to-b" />
 
   {/* Content (relative z-10) */}
   <div className="relative z-10">...</div>
@@ -200,10 +211,12 @@ icon?: React.ReactNode
 ```
 
 #### B. "Jelajahi Budaya Batak" Section Upgrade
+
 **Before:** 3 cards with emojis (📜 📚 🎭)
 **After:** 6 professional MediaCards with images
 
 **New Cards:**
+
 1. Aksara Batak → `/budaya/aksara-batak`
 2. Sistem Marga → `/marga`
 3. Adat Istiadat → `/budaya/adat-istiadat`
@@ -212,13 +225,16 @@ icon?: React.ReactNode
 6. **NEW:** Kuliner → `/budaya/kuliner`
 
 **Features:**
+
 - Professional image placeholders
 - Category badges
 - Staggered animations (Framer Motion)
 - "Lihat Semua Kategori" CTA button
 
 #### C. "Tahukah Kamu" Component Upgrade (`components/ui/TahukahKamu.tsx`)
+
 **New Features:**
+
 - ✅ Display image alongside text (responsive flex layout)
 - ✅ "Refresh" button for new random facts
 - ✅ "Pelajari Lebih Lanjut" link to related page
@@ -226,6 +242,7 @@ icon?: React.ReactNode
 - ✅ Mobile: stacked layout, Desktop: side-by-side
 
 **Visual Structure:**
+
 ```
 ┌─────────────────────────────────────┐
 │ ┌────────┐  Tahukah Kamu? [Badge]  │
@@ -240,14 +257,15 @@ icon?: React.ReactNode
 ### 6. Data Enhancements
 
 #### Updated `content/data/fakta.json`
+
 **Extended 4 entries with image metadata:**
 
-| ID | Kategori | Image Added | Related Page |
-|----|----------|-------------|--------------|
-| 1  | Aksara   | ✅ aksara-sample.jpg | /budaya/aksara-batak |
-| 5  | Kesenian | ✅ kesenian-tortor.jpg | /budaya/kesenian |
-| 8  | Kesenian | ✅ kesenian-ulos.jpg | /budaya/kesenian |
-| 9  | Budaya   | ✅ budaya-ruma-bolon.jpg | /budaya/arsitektur |
+| ID  | Kategori | Image Added              | Related Page         |
+| --- | -------- | ------------------------ | -------------------- |
+| 1   | Aksara   | ✅ aksara-sample.jpg     | /budaya/aksara-batak |
+| 5   | Kesenian | ✅ kesenian-tortor.jpg   | /budaya/kesenian     |
+| 8   | Kesenian | ✅ kesenian-ulos.jpg     | /budaya/kesenian     |
+| 9   | Budaya   | ✅ budaya-ruma-bolon.jpg | /budaya/arsitektur   |
 
 **Remaining 8 entries:** Can be extended later with images
 
@@ -294,23 +312,24 @@ Route (app)
 
 ## 📊 Implementation Statistics
 
-| Metric | Count |
-|--------|-------|
-| **New Components** | 2 (Gallery, MediaCard) |
-| **Enhanced Components** | 2 (TahukahKamu, Homepage) |
-| **New Files Created** | 4 |
-| **Files Modified** | 5 |
-| **New Directories** | 50+ |
-| **New TypeScript Interfaces** | 5 |
-| **New Helper Functions** | 8 |
-| **Dependencies Added** | 8 |
-| **Lines of Code Added** | ~800 |
+| Metric                        | Count                     |
+| ----------------------------- | ------------------------- |
+| **New Components**            | 2 (Gallery, MediaCard)    |
+| **Enhanced Components**       | 2 (TahukahKamu, Homepage) |
+| **New Files Created**         | 4                         |
+| **Files Modified**            | 5                         |
+| **New Directories**           | 50+                       |
+| **New TypeScript Interfaces** | 5                         |
+| **New Helper Functions**      | 8                         |
+| **Dependencies Added**        | 8                         |
+| **Lines of Code Added**       | ~800                      |
 
 ---
 
 ## ✅ Phase 2 - Content Expansion (COMPLETED)
 
 ### Completion Date
+
 **December 11, 2025**
 
 ### Implementation Summary
@@ -319,16 +338,16 @@ Phase 2 successfully delivered comprehensive content expansion for the InfoBatak
 
 ### Key Deliverables
 
-| Component | Delivered |
-|-----------|-----------|
-| **New Pages Created** | 5 (/budaya, /arsitektur, /kuliner, /pakaian-adat, /bahasa) |
-| **New Data Files** | 4 (arsitektur.json, kuliner.json, pakaian.json, bahasa.json) |
-| **Gallery Enhancements** | 4 (Pustaha, Gondang, Tortor, Ulos) |
-| **New Helper Functions** | 20+ |
-| **New TypeScript Types** | 10+ |
-| **Navigation Routes Added** | 5 |
-| **Total Static Pages** | 16 (was 11, added 5) |
-| **Lines of Code Added** | ~3,500 |
+| Component                   | Delivered                                                    |
+| --------------------------- | ------------------------------------------------------------ |
+| **New Pages Created**       | 5 (/budaya, /arsitektur, /kuliner, /pakaian-adat, /bahasa)   |
+| **New Data Files**          | 4 (arsitektur.json, kuliner.json, pakaian.json, bahasa.json) |
+| **Gallery Enhancements**    | 4 (Pustaha, Gondang, Tortor, Ulos)                           |
+| **New Helper Functions**    | 20+                                                          |
+| **New TypeScript Types**    | 10+                                                          |
+| **Navigation Routes Added** | 5                                                            |
+| **Total Static Pages**      | 16 (was 11, added 5)                                         |
+| **Lines of Code Added**     | ~3,500                                                       |
 
 ### New Pages Details
 
@@ -384,6 +403,7 @@ Phase 2 successfully delivered comprehensive content expansion for the InfoBatak
 ### Data Infrastructure
 
 **New JSON Data Files:**
+
 - `arsitektur.json` - 4 house types, construction techniques, spatial organization (~250 lines)
 - `kuliner.json` - 6 dishes, 2 drinks, ceremonial foods, ingredients, philosophy (~320 lines)
 - `pakaian.json` - Attire components, 6 ulos types, traditions, symbolism (~380 lines)
@@ -394,6 +414,7 @@ Phase 2 successfully delivered comprehensive content expansion for the InfoBatak
 ### Gallery Enhancements
 
 **Existing Pages Enhanced:**
+
 1. **`/budaya/aksara-batak`** - Added Pustaha gallery section
 2. **`/budaya/kesenian`** - Added 3 galleries:
    - Gondang instruments (3-column grid)
@@ -403,6 +424,7 @@ Phase 2 successfully delivered comprehensive content expansion for the InfoBatak
 ### Navigation Updates
 
 **Navbar.tsx - Budaya Dropdown Expanded:**
+
 - Before: 3 links
 - After: 8 links (added overview + 4 new categories)
 - New structure includes "Semua Kategori" overview link
@@ -479,22 +501,27 @@ Route (app)
 ### High Priority Images Needed (20-30 images)
 
 **Homepage:**
+
 - 3-5 hero background images (1920x800px)
 - 6 featured card images (800x600px)
 
 **Fakta Widget:**
+
 - 8 category images (1 per remaining fakta entry)
 
 **Aksara Batak Page:**
+
 - Ina ni Surat chart (SVG or high-res PNG)
 - 5-8 Pustaha manuscript photos
 
 **Kesenian Page:**
+
 - 8-10 Gondang instrument photos
 - 10-12 Tortor movement sequence photos
 - 15-20 Ulos pattern close-ups
 
 ### Medium Priority (40-60 images)
+
 - Architecture photos (Ruma Bolon, Sopo)
 - Traditional attire photography
 - Culinary food styling photos
@@ -508,11 +535,13 @@ Route (app)
 ### How to Add Images
 
 1. **Place image file** in appropriate folder:
+
    ```
    /public/images/budaya/aksara/pustaha-01.jpg
    ```
 
 2. **Add metadata to media.json**:
+
    ```json
    {
      "id": "pustaha-01",
@@ -527,12 +556,13 @@ Route (app)
    ```
 
 3. **Use in component**:
+
    ```tsx
    import { getImagesByCategory } from '@/lib/data';
 
    const pustahImages = getImagesByCategory('Budaya', 'Aksara Batak');
 
-   <Gallery images={pustahImages} columns={3} />
+   <Gallery images={pustahImages} columns={3} />;
    ```
 
 ### How to Add New Category Cards

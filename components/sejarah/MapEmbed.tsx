@@ -68,8 +68,8 @@ export function MapEmbed({
   // If coordinates are invalid, show fallback
   if (!validCoordinates) {
     return (
-      <div className="relative w-full overflow-hidden rounded-xl bg-foreground/5">
-        <div className="aspect-video relative">
+      <div className="bg-foreground/5 relative w-full overflow-hidden rounded-xl">
+        <div className="relative aspect-video">
           <Image
             src={fallbackImage}
             alt={`Peta wilayah ${title}`}
@@ -77,10 +77,10 @@ export function MapEmbed({
             className="object-cover"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
           />
-          <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-            <div className="text-center text-white p-4">
+          <div className="absolute inset-0 flex items-center justify-center bg-black/40">
+            <div className="p-4 text-center text-white">
               <svg
-                className="mx-auto h-12 w-12 mb-2 opacity-80"
+                className="mx-auto mb-2 h-12 w-12 opacity-80"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -99,7 +99,7 @@ export function MapEmbed({
                 />
               </svg>
               <p className="text-sm font-medium">Wilayah {title}</p>
-              <p className="text-xs opacity-80 mt-1">Koordinat tidak tersedia</p>
+              <p className="mt-1 text-xs opacity-80">Koordinat tidak tersedia</p>
             </div>
           </div>
         </div>
@@ -110,16 +110,16 @@ export function MapEmbed({
   const mapUrl = generateMapEmbedUrl(latitude, longitude, zoom);
 
   return (
-    <div className="relative w-full overflow-hidden rounded-xl bg-foreground/5">
+    <div className="bg-foreground/5 relative w-full overflow-hidden rounded-xl">
       {/* 16:9 Aspect Ratio Container */}
-      <div className="aspect-video relative">
+      <div className="relative aspect-video">
         {/* Loading Skeleton */}
         {isLoading && !hasError && (
-          <div className="absolute inset-0 z-10 animate-pulse bg-foreground/10">
+          <div className="bg-foreground/10 absolute inset-0 z-10 animate-pulse">
             <div className="flex h-full items-center justify-center">
               <div className="text-center">
                 <svg
-                  className="mx-auto h-10 w-10 animate-spin text-accent"
+                  className="text-accent mx-auto h-10 w-10 animate-spin"
                   fill="none"
                   viewBox="0 0 24 24"
                 >
@@ -137,7 +137,7 @@ export function MapEmbed({
                     d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
                   />
                 </svg>
-                <p className="mt-2 text-sm text-foreground/60">Memuat peta...</p>
+                <p className="text-foreground/60 mt-2 text-sm">Memuat peta...</p>
               </div>
             </div>
           </div>
@@ -153,10 +153,10 @@ export function MapEmbed({
               className="object-cover"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
             />
-            <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-              <div className="text-center text-white p-4">
+            <div className="absolute inset-0 flex items-center justify-center bg-black/40">
+              <div className="p-4 text-center text-white">
                 <svg
-                  className="mx-auto h-12 w-12 mb-2 opacity-80"
+                  className="mx-auto mb-2 h-12 w-12 opacity-80"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -175,7 +175,7 @@ export function MapEmbed({
                   />
                 </svg>
                 <p className="text-sm font-medium">Wilayah {title}</p>
-                <p className="text-xs opacity-80 mt-1">
+                <p className="mt-1 text-xs opacity-80">
                   {latitude.toFixed(4)}°, {longitude.toFixed(4)}°
                 </p>
               </div>
@@ -198,8 +198,8 @@ export function MapEmbed({
 
       {/* Markers Legend (if provided) */}
       {markers.length > 0 && !hasError && (
-        <div className="border-t border-foreground/10 bg-background/80 p-3">
-          <p className="text-xs font-medium text-foreground/70 mb-2">Lokasi Penting:</p>
+        <div className="border-foreground/10 bg-background/80 border-t p-3">
+          <p className="text-foreground/70 mb-2 text-xs font-medium">Lokasi Penting:</p>
           <div className="flex flex-wrap gap-2">
             {markers.slice(0, 5).map((marker, index) => (
               <span
@@ -225,9 +225,7 @@ export function MapEmbed({
               </span>
             ))}
             {markers.length > 5 && (
-              <span className="text-xs text-foreground/50">
-                +{markers.length - 5} lainnya
-              </span>
+              <span className="text-foreground/50 text-xs">+{markers.length - 5} lainnya</span>
             )}
           </div>
         </div>

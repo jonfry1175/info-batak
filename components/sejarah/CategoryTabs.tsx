@@ -26,11 +26,7 @@ const iconMap: Record<string, React.ReactNode> = {
 
 const defaultIcon = <Sparkles className="h-4 w-4" />;
 
-export function CategoryTabs({
-  categories,
-  activeCategory,
-  onCategoryChange,
-}: CategoryTabsProps) {
+export function CategoryTabs({ categories, activeCategory, onCategoryChange }: CategoryTabsProps) {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const activeTabRef = useRef<HTMLButtonElement>(null);
 
@@ -56,8 +52,8 @@ export function CategoryTabs({
   return (
     <div className="relative">
       {/* Gradient fade indicators for scroll */}
-      <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-8 bg-gradient-to-r from-background to-transparent md:hidden" />
-      <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-8 bg-gradient-to-l from-background to-transparent md:hidden" />
+      <div className="from-background pointer-events-none absolute top-0 left-0 z-10 h-full w-8 bg-gradient-to-r to-transparent md:hidden" />
+      <div className="from-background pointer-events-none absolute top-0 right-0 z-10 h-full w-8 bg-gradient-to-l to-transparent md:hidden" />
 
       {/* Scrollable tabs container */}
       <div
@@ -87,7 +83,7 @@ export function CategoryTabs({
               {isActive && (
                 <motion.div
                   layoutId="activeTab"
-                  className="absolute inset-0 rounded-full bg-accent"
+                  className="bg-accent absolute inset-0 rounded-full"
                   transition={{ type: 'spring', bounce: 0.2, duration: 0.6 }}
                 />
               )}

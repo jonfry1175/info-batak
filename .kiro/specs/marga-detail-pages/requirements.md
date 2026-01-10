@@ -89,4 +89,3 @@ Fitur ini bertujuan untuk menambahkan halaman detail untuk setiap marga Batak. K
 4. THE System SHALL support margas without complete detail data by showing available information only
 5. WHEN the data file is updated, THE System SHALL reflect changes after rebuild
 6. THE data structure SHALL use normalized references (margaId) to link with existing marga.json data
-

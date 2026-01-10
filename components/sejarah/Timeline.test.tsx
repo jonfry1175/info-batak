@@ -67,7 +67,9 @@ describe('Property 3: Timeline Chronological Order', () => {
         events.forEach((event) => {
           const found = sorted.some(
             (s) =>
-              s.year === event.year && s.title === event.title && s.description === event.description
+              s.year === event.year &&
+              s.title === event.title &&
+              s.description === event.description
           );
           expect(found).toBe(true);
         });

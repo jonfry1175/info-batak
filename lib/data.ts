@@ -15,7 +15,7 @@ import {
   RumpunBatak,
   RumpunBatakEnhanced,
   EnhancedTokoh,
-  Tokoh
+  Tokoh,
 } from '@/types';
 import faktaData from '@/content/data/fakta.json';
 import margaData from '@/content/data/marga.json';
@@ -68,7 +68,7 @@ export function getFullMargaBySlug(slug: string): (Marga & Partial<MargaDetail>)
   const detail = getMargaDetailBySlug(slug);
   return {
     ...baseMarga,
-    ...(detail ?? {})
+    ...(detail ?? {}),
   };
 }
 
@@ -120,22 +120,25 @@ export function searchMedia(query: string): {
 } {
   const lowerQuery = query.toLowerCase();
 
-  const images = getAllImages().filter((image) =>
-    image.keywords?.some((keyword) => keyword.toLowerCase().includes(lowerQuery)) ||
-    image.description?.toLowerCase().includes(lowerQuery) ||
-    image.alt.toLowerCase().includes(lowerQuery)
+  const images = getAllImages().filter(
+    (image) =>
+      image.keywords?.some((keyword) => keyword.toLowerCase().includes(lowerQuery)) ||
+      image.description?.toLowerCase().includes(lowerQuery) ||
+      image.alt.toLowerCase().includes(lowerQuery)
   );
 
-  const videos = getAllVideos().filter((video) =>
-    video.keywords?.some((keyword) => keyword.toLowerCase().includes(lowerQuery)) ||
-    video.description.toLowerCase().includes(lowerQuery) ||
-    video.title.toLowerCase().includes(lowerQuery)
+  const videos = getAllVideos().filter(
+    (video) =>
+      video.keywords?.some((keyword) => keyword.toLowerCase().includes(lowerQuery)) ||
+      video.description.toLowerCase().includes(lowerQuery) ||
+      video.title.toLowerCase().includes(lowerQuery)
   );
 
-  const audio = getAllAudio().filter((a) =>
-    a.keywords?.some((keyword) => keyword.toLowerCase().includes(lowerQuery)) ||
-    a.description.toLowerCase().includes(lowerQuery) ||
-    a.title.toLowerCase().includes(lowerQuery)
+  const audio = getAllAudio().filter(
+    (a) =>
+      a.keywords?.some((keyword) => keyword.toLowerCase().includes(lowerQuery)) ||
+      a.description.toLowerCase().includes(lowerQuery) ||
+      a.title.toLowerCase().includes(lowerQuery)
   );
 
   return { images, videos, audio };
@@ -151,11 +154,11 @@ export function getAllHouseTypes() {
 }
 
 export function getHouseTypeById(id: string) {
-  return getAllHouseTypes().find(house => house.id === id);
+  return getAllHouseTypes().find((house) => house.id === id);
 }
 
 export function getHouseTypesByRegion(region: string) {
-  return getAllHouseTypes().filter(house => house.region === region);
+  return getAllHouseTypes().filter((house) => house.region === region);
 }
 
 export function getConstructionTechniques() {
@@ -172,15 +175,15 @@ export function getAllDishes() {
 }
 
 export function getDishById(id: string) {
-  return getAllDishes().find(dish => dish.id === id);
+  return getAllDishes().find((dish) => dish.id === id);
 }
 
 export function getDishesByRegion(region: string) {
-  return getAllDishes().filter(dish => dish.region.includes(region));
+  return getAllDishes().filter((dish) => dish.region.includes(region));
 }
 
 export function getDishesByCategory(category: string) {
-  return getAllDishes().filter(dish => dish.category === category);
+  return getAllDishes().filter((dish) => dish.category === category);
 }
 
 export function getAllDrinks() {
@@ -209,7 +212,7 @@ export function getUlosTypes() {
 }
 
 export function getUlosTypeByName(name: string) {
-  return getUlosTypes().find(ulos => ulos.name === name);
+  return getUlosTypes().find((ulos) => ulos.name === name);
 }
 
 export function getRegionalClothingVariations() {
@@ -226,7 +229,7 @@ export function getAllDialects() {
 }
 
 export function getDialectById(id: string) {
-  return getAllDialects().find(dialect => dialect.id === id);
+  return getAllDialects().find((dialect) => dialect.id === id);
 }
 
 export function getCommonPhrases() {
@@ -244,7 +247,6 @@ export function getProverbsExamples() {
 export function getKinshipTerms() {
   return getBahasaData().kinshipTerminology;
 }
-
 
 // Berita (News) functions
 export function getAllBerita(): Berita[] {
@@ -280,12 +282,12 @@ export function getRumpunBySlug(slug: string): RumpunBatakEnhanced | undefined {
 
 // Default coordinates for each rumpun
 const defaultCoordinates: Record<string, { latitude: number; longitude: number }> = {
-  toba: { latitude: 2.6167, longitude: 98.8500 },
-  karo: { latitude: 3.1000, longitude: 98.5000 },
-  simalungun: { latitude: 2.9500, longitude: 99.0500 },
-  pakpak: { latitude: 2.5500, longitude: 98.3000 },
-  angkola: { latitude: 1.5000, longitude: 99.2000 },
-  mandailing: { latitude: 0.8500, longitude: 99.5500 }
+  toba: { latitude: 2.6167, longitude: 98.85 },
+  karo: { latitude: 3.1, longitude: 98.5 },
+  simalungun: { latitude: 2.95, longitude: 99.05 },
+  pakpak: { latitude: 2.55, longitude: 98.3 },
+  angkola: { latitude: 1.5, longitude: 99.2 },
+  mandailing: { latitude: 0.85, longitude: 99.55 },
 };
 
 function getDefaultCoordinates(slug: string): { latitude: number; longitude: number } {
@@ -302,7 +304,7 @@ function normalizeTokohData(tokoh: Tokoh): EnhancedTokoh {
     bidang: tokoh.gelar || 'Tokoh',
     ringkasan: tokoh.deskripsi,
     biografi: tokoh.deskripsi,
-    pencapaian: []
+    pencapaian: [],
   };
 }
 
@@ -331,7 +333,7 @@ export function normalizeRumpunData(data: RumpunBatak | RumpunBatakEnhanced): Ru
       deskripsi: oldData.wilayah,
       koordinat: coords,
       kabupaten: [],
-      landmarks: []
+      landmarks: [],
     },
     sejarah: {
       ringkasan: oldData.sejarah,
@@ -340,7 +342,7 @@ export function normalizeRumpunData(data: RumpunBatak | RumpunBatakEnhanced): Ru
       perlawananKolonial: undefined,
       eraModern: undefined,
       timeline: [],
-      images: undefined
+      images: undefined,
     },
     budaya: {
       ringkasan: oldData.budaya,
@@ -349,9 +351,9 @@ export function normalizeRumpunData(data: RumpunBatak | RumpunBatakEnhanced): Ru
       pakaian: { deskripsi: '' },
       rumahAdat: { deskripsi: '' },
       upacaraAdat: { deskripsi: '' },
-      gallery: undefined
+      gallery: undefined,
     },
-    tokoh: oldData.tokoh.map(normalizeTokohData)
+    tokoh: oldData.tokoh.map(normalizeTokohData),
   };
 }
 

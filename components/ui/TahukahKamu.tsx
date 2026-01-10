@@ -44,14 +44,14 @@ export function TahukahKamu() {
               sizes="(max-width: 768px) 100vw, 192px"
             />
             {fakta.imageCredit && !fakta.imageCredit.includes('Placeholder') && (
-              <div className="absolute bottom-0 left-0 right-0 bg-black/60 px-2 py-1 text-xs text-white">
+              <div className="absolute right-0 bottom-0 left-0 bg-black/60 px-2 py-1 text-xs text-white">
                 © {fakta.imageCredit}
               </div>
             )}
           </div>
         )}
 
-        <div className="min-w-0 flex-1 flex flex-col justify-between">
+        <div className="flex min-w-0 flex-1 flex-col justify-between">
           <div>
             <div className="mb-3 flex items-start gap-2">
               <Info className="text-accent mt-0.5 h-4 w-4 flex-shrink-0" />
@@ -65,7 +65,7 @@ export function TahukahKamu() {
             </AlertDescription>
           </div>
 
-          <div className="flex flex-wrap gap-2 mt-4">
+          <div className="mt-4 flex flex-wrap gap-2">
             <Button onClick={refreshFakta} variant="outline" size="sm">
               <RefreshCw className="mr-2 h-3 w-3" />
               Fakta Lain

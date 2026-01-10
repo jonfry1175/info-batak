@@ -87,4 +87,3 @@ Fitur ini bertujuan untuk meningkatkan halaman detail rumpun Batak (`/sejarah/[s
 3. THE Halaman_Detail_Rumpun SHALL include a sticky table of contents for easy navigation
 4. THE Halaman_Detail_Rumpun SHALL support image lightbox for viewing images in full size
 5. THE Halaman_Detail_Rumpun SHALL maintain consistent styling with the existing design system (Batak colors: red #C1272D accent)
-

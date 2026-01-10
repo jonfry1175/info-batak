@@ -25,23 +25,20 @@ function SubSection({ title, content, icon, defaultOpen = false }: SubSectionPro
   if (!content) return null;
 
   return (
-    <div className="border-b border-foreground/10 last:border-b-0">
+    <div className="border-foreground/10 border-b last:border-b-0">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex w-full items-center justify-between py-4 text-left transition-colors hover:text-accent"
+        className="hover:text-accent flex w-full items-center justify-between py-4 text-left transition-colors"
         aria-expanded={isOpen}
       >
         <div className="flex items-center gap-3">
-          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent/10 text-accent">
+          <span className="bg-accent/10 text-accent flex h-8 w-8 items-center justify-center rounded-lg">
             {icon}
           </span>
-          <span className="font-semibold text-foreground">{title}</span>
+          <span className="text-foreground font-semibold">{title}</span>
         </div>
-        <motion.span
-          animate={{ rotate: isOpen ? 180 : 0 }}
-          transition={{ duration: 0.2 }}
-        >
-          <ChevronDown className="h-5 w-5 text-foreground/60" />
+        <motion.span animate={{ rotate: isOpen ? 180 : 0 }} transition={{ duration: 0.2 }}>
+          <ChevronDown className="text-foreground/60 h-5 w-5" />
         </motion.span>
       </button>
       <AnimatePresence initial={false}>
@@ -53,8 +50,8 @@ function SubSection({ title, content, icon, defaultOpen = false }: SubSectionPro
             transition={{ duration: 0.3, ease: 'easeInOut' }}
             className="overflow-hidden"
           >
-            <div className="pb-4 pl-11 pr-4">
-              <p className="text-sm leading-relaxed text-foreground/70">{content}</p>
+            <div className="pr-4 pb-4 pl-11">
+              <p className="text-foreground/70 text-sm leading-relaxed">{content}</p>
             </div>
           </motion.div>
         )}
@@ -75,7 +72,7 @@ function ImageGallery({ images }: ImageGalleryProps) {
   return (
     <>
       <div className="mt-8">
-        <h4 className="mb-4 text-lg font-semibold text-foreground">Galeri Sejarah</h4>
+        <h4 className="text-foreground mb-4 text-lg font-semibold">Galeri Sejarah</h4>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {images.map((image, index) => (
             <motion.div
@@ -96,9 +93,7 @@ function ImageGallery({ images }: ImageGalleryProps) {
                 />
                 <div className="absolute inset-0 bg-black/0 transition-colors duration-300 group-hover:bg-black/20" />
               </div>
-              {image.caption && (
-                <p className="mt-2 text-xs text-foreground/60">{image.caption}</p>
-              )}
+              {image.caption && <p className="text-foreground/60 mt-2 text-xs">{image.caption}</p>}
             </motion.div>
           ))}
         </div>
@@ -116,7 +111,7 @@ function ImageGallery({ images }: ImageGalleryProps) {
           >
             <button
               onClick={() => setSelectedImage(null)}
-              className="absolute right-4 top-4 rounded-full bg-white/10 p-2 text-white transition-colors hover:bg-white/20"
+              className="absolute top-4 right-4 rounded-full bg-white/10 p-2 text-white transition-colors hover:bg-white/20"
               aria-label="Tutup"
             >
               <svg
@@ -225,20 +220,18 @@ export function SejarahSection({ sejarah, rumpunNama }: SejarahSectionProps) {
       >
         {/* Section Header */}
         <div className="mb-6">
-          <h2 className="text-2xl font-bold text-foreground md:text-3xl">
-            Sejarah {rumpunNama}
-          </h2>
-          <div className="mt-2 h-1 w-16 rounded-full bg-accent" />
+          <h2 className="text-foreground text-2xl font-bold md:text-3xl">Sejarah {rumpunNama}</h2>
+          <div className="bg-accent mt-2 h-1 w-16 rounded-full" />
         </div>
 
         {/* Overview/Ringkasan */}
-        <div className="mb-8 rounded-xl border border-foreground/10 bg-background p-6 shadow-sm">
-          <p className="text-base leading-relaxed text-foreground/80">{sejarah.ringkasan}</p>
+        <div className="border-foreground/10 bg-background mb-8 rounded-xl border p-6 shadow-sm">
+          <p className="text-foreground/80 text-base leading-relaxed">{sejarah.ringkasan}</p>
         </div>
 
         {/* Collapsible Sub-sections */}
         {hasContent && (
-          <div className="mb-8 rounded-xl border border-foreground/10 bg-background shadow-sm">
+          <div className="border-foreground/10 bg-background mb-8 rounded-xl border shadow-sm">
             {subSections.map((section) => (
               <SubSection
                 key={section.key}
@@ -254,9 +247,7 @@ export function SejarahSection({ sejarah, rumpunNama }: SejarahSectionProps) {
         {/* Timeline */}
         {sejarah.timeline && sejarah.timeline.length > 0 && (
           <div className="mb-8">
-            <h3 className="mb-6 text-xl font-semibold text-foreground">
-              Timeline Sejarah
-            </h3>
+            <h3 className="text-foreground mb-6 text-xl font-semibold">Timeline Sejarah</h3>
             <Timeline events={sejarah.timeline} />
           </div>
         )}

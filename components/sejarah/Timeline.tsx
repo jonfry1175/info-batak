@@ -73,19 +73,19 @@ function TimelineItem({ event, index, isLeft }: TimelineItemProps) {
       <div
         className={`relative w-full md:w-[calc(50%-2rem)] ${isLeft ? 'md:pr-0' : 'md:pl-0'} pl-8 md:pl-0`}
       >
-        <div className="rounded-xl border border-foreground/10 bg-background p-4 shadow-sm transition-shadow hover:shadow-md">
+        <div className="border-foreground/10 bg-background rounded-xl border p-4 shadow-sm transition-shadow hover:shadow-md">
           {/* Year Badge */}
           <div
-            className={`mb-3 inline-flex items-center rounded-full bg-accent/10 px-3 py-1 text-sm font-semibold text-accent`}
+            className={`bg-accent/10 text-accent mb-3 inline-flex items-center rounded-full px-3 py-1 text-sm font-semibold`}
           >
             {event.year}
           </div>
 
           {/* Title */}
-          <h4 className="mb-2 text-lg font-semibold text-foreground">{event.title}</h4>
+          <h4 className="text-foreground mb-2 text-lg font-semibold">{event.title}</h4>
 
           {/* Description */}
-          <p className="text-sm leading-relaxed text-foreground/70">{event.description}</p>
+          <p className="text-foreground/70 text-sm leading-relaxed">{event.description}</p>
 
           {/* Optional Image */}
           {event.image && (
@@ -104,11 +104,11 @@ function TimelineItem({ event, index, isLeft }: TimelineItemProps) {
         </div>
 
         {/* Connector dot - Mobile */}
-        <div className="absolute left-0 top-6 h-4 w-4 rounded-full border-4 border-accent bg-background md:hidden" />
+        <div className="border-accent bg-background absolute top-6 left-0 h-4 w-4 rounded-full border-4 md:hidden" />
 
         {/* Connector dot - Desktop */}
         <div
-          className={`absolute top-6 hidden h-4 w-4 rounded-full border-4 border-accent bg-background md:block ${
+          className={`border-accent bg-background absolute top-6 hidden h-4 w-4 rounded-full border-4 md:block ${
             isLeft ? '-right-2 translate-x-1/2' : '-left-2 -translate-x-1/2'
           }`}
         />
@@ -128,10 +128,10 @@ export function Timeline({ events }: TimelineProps) {
   return (
     <div className="relative">
       {/* Vertical Line - Mobile */}
-      <div className="absolute left-[7px] top-0 h-full w-0.5 bg-foreground/20 md:hidden" />
+      <div className="bg-foreground/20 absolute top-0 left-[7px] h-full w-0.5 md:hidden" />
 
       {/* Vertical Line - Desktop (centered) */}
-      <div className="absolute left-1/2 top-0 hidden h-full w-0.5 -translate-x-1/2 bg-foreground/20 md:block" />
+      <div className="bg-foreground/20 absolute top-0 left-1/2 hidden h-full w-0.5 -translate-x-1/2 md:block" />
 
       {/* Timeline Items */}
       <div className="space-y-6 md:space-y-8">
@@ -146,7 +146,7 @@ export function Timeline({ events }: TimelineProps) {
       </div>
 
       {/* End marker */}
-      <div className="absolute bottom-0 left-[3px] h-3 w-3 rounded-full bg-accent md:left-1/2 md:-translate-x-1/2" />
+      <div className="bg-accent absolute bottom-0 left-[3px] h-3 w-3 rounded-full md:left-1/2 md:-translate-x-1/2" />
     </div>
   );
 }

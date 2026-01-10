@@ -40,27 +40,26 @@ export default function BeritaPage() {
       <PageHero
         title="Berita & Artikel"
         subtitle="Informasi terkini dan artikel menarik seputar budaya, sejarah, dan kehidupan masyarakat Batak"
-        backgroundImage="/images/homepage/hero-lake-toba.jpg"
+        backgroundImage="/images/berita/hero-berita.png"
         overlayOpacity={0.5}
       />
       <div className="w-full px-4 py-12">
         <div className="mx-auto max-w-7xl">
+          {featuredBerita.length > 0 && (
+            <FeaturedSection berita={featuredBerita} formatTanggal={formatTanggal} />
+          )}
 
-        {featuredBerita.length > 0 && (
-          <FeaturedSection berita={featuredBerita} formatTanggal={formatTanggal} />
-        )}
+          <FilterButtons
+            kategoriList={kategoriList}
+            selectedKategori={selectedKategori}
+            setSelectedKategori={setSelectedKategori}
+          />
 
-        <FilterButtons
-          kategoriList={kategoriList}
-          selectedKategori={selectedKategori}
-          setSelectedKategori={setSelectedKategori}
-        />
-
-        <NewsGrid
-          selectedKategori={selectedKategori}
-          filteredBerita={filteredBerita}
-          formatTanggal={formatTanggal}
-        />
+          <NewsGrid
+            selectedKategori={selectedKategori}
+            filteredBerita={filteredBerita}
+            formatTanggal={formatTanggal}
+          />
         </div>
       </div>
     </>
@@ -89,7 +88,7 @@ function FeaturedSection({
                 unoptimized
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
-              <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+              <div className="absolute right-0 bottom-0 left-0 p-6 text-white">
                 <span className="bg-accent mb-3 inline-block rounded-full px-3 py-1 text-xs font-medium">
                   {berita[0].kategori}
                 </span>
@@ -113,11 +112,11 @@ function FeaturedSection({
                     unoptimized
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
-                  <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+                  <div className="absolute right-0 bottom-0 left-0 p-4 text-white">
                     <span className="bg-accent mb-2 inline-block rounded-full px-2 py-0.5 text-xs font-medium">
                       {item.kategori}
                     </span>
-                    <h3 className="text-lg font-bold leading-tight">{item.judul}</h3>
+                    <h3 className="text-lg leading-tight font-bold">{item.judul}</h3>
                     <span className="mt-1 block text-xs text-white/60">
                       {formatTanggal(item.tanggal)}
                     </span>
@@ -220,10 +219,10 @@ function NewsGrid({
                         {formatTanggal(berita.tanggal)}
                       </span>
                     </div>
-                    <h3 className="text-foreground mb-2 text-lg font-bold leading-tight transition-colors group-hover:text-accent">
+                    <h3 className="text-foreground group-hover:text-accent mb-2 text-lg leading-tight font-bold transition-colors">
                       {berita.judul}
                     </h3>
-                    <p className="text-foreground/70 mb-4 flex-1 text-sm line-clamp-2">
+                    <p className="text-foreground/70 mb-4 line-clamp-2 flex-1 text-sm">
                       {berita.ringkasan}
                     </p>
                     <div className="flex flex-wrap gap-1.5">

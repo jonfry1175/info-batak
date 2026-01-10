@@ -30,14 +30,14 @@ flowchart TD
 
 ### Batch Structure
 
-| Batch | Rumpun | Marga Count | Marga List |
-|-------|--------|-------------|------------|
-| 1 | Toba | 5 | Siahaan, Simbolon, Sinaga, Hutabarat, Napitupulu |
-| 2 | Karo | 4 | Sembiring, Tarigan, Karo-Karo, Perangin-angin |
-| 3 | Simalungun | 5 | Saragih, Purba, Sinaga, Damanik, Simatupang |
-| 4 | Pakpak | 4 | Tumanggor, Manik, Banurea, Bancin |
-| 5 | Mandailing | 4 | Lubis, Rangkuti, Daulay, Hasibuan |
-| 6 | Angkola | 5 | Harahap, Siregar, Rambe, Batubara, Pohan |
+| Batch | Rumpun     | Marga Count | Marga List                                       |
+| ----- | ---------- | ----------- | ------------------------------------------------ |
+| 1     | Toba       | 5           | Siahaan, Simbolon, Sinaga, Hutabarat, Napitupulu |
+| 2     | Karo       | 4           | Sembiring, Tarigan, Karo-Karo, Perangin-angin    |
+| 3     | Simalungun | 5           | Saragih, Purba, Sinaga, Damanik, Simatupang      |
+| 4     | Pakpak     | 4           | Tumanggor, Manik, Banurea, Bancin                |
+| 5     | Mandailing | 4           | Lubis, Rangkuti, Daulay, Hasibuan                |
+| 6     | Angkola    | 5           | Harahap, Siregar, Rambe, Batubara, Pohan         |
 
 ## Components and Interfaces
 
@@ -45,13 +45,15 @@ flowchart TD
 
 Template ini akan digunakan untuk setiap batch research:
 
-```markdown
+````markdown
 # Research Task: Data Detail Marga Batak
 
 ## Konteks
+
 Anda adalah peneliti budaya Batak yang bertugas mengisi data detail marga untuk website InfoBatak.id. Website ini bertujuan melestarikan dan mengedukasi tentang sejarah, budaya, adat istiadat, aksara, dan sistem marga Batak.
 
 ## Tugas
+
 Lakukan research mendalam untuk marga-marga berikut dari rumpun [NAMA_RUMPUN]:
 [DAFTAR_MARGA]
 
@@ -105,6 +107,7 @@ Setiap marga HARUS menghasilkan object JSON dengan struktur berikut:
   "updatedAt": "[YYYY-MM-DD]"
 }
 ```
+````
 
 ## Referensi Data Marga (dari marga.json)
 
@@ -115,6 +118,7 @@ Setiap marga HARUS menghasilkan object JSON dengan struktur berikut:
 Berikut contoh data marga yang sudah ada sebagai referensi kualitas dan format:
 
 ### Contoh 1: Sitorus (Toba)
+
 ```json
 {
   "margaId": "1",
@@ -171,6 +175,7 @@ Berikut contoh data marga yang sudah ada sebagai referensi kualitas dan format:
 ```
 
 ### Contoh 2: Ginting (Karo)
+
 ```json
 {
   "margaId": "7",
@@ -228,6 +233,7 @@ Berikut contoh data marga yang sudah ada sebagai referensi kualitas dan format:
 ## Panduan Kualitas Konten
 
 ### WAJIB:
+
 1. Gunakan terminologi Batak yang benar dengan penjelasan dalam Bahasa Indonesia
 2. Minimal 2 ancestors dalam tarombo
 3. Minimal 2 sub-marga dalam tarombo (jika ada informasi)
@@ -237,12 +243,14 @@ Berikut contoh data marga yang sudah ada sebagai referensi kualitas dan format:
 7. relatedMargas harus menggunakan slug yang valid dari marga.json
 
 ### HINDARI:
+
 1. Jangan fabrikasi informasi jika tidak yakin
 2. Jangan copy-paste dari marga lain
 3. Jangan gunakan placeholder seperti "[TBD]" atau "[Unknown]"
 4. Jangan campur informasi antar rumpun
 
 ### JIKA INFORMASI TIDAK TERSEDIA:
+
 - Untuk ancestors: gunakan "Ompu [Nama Marga]" sebagai leluhur generik
 - Untuk tokoh: cari tokoh kontemporer dari marga tersebut
 - Untuk tradisi: gunakan tradisi umum rumpun yang relevan
@@ -259,7 +267,8 @@ Hasilkan output dalam format JSON array yang valid:
   ...
 ]
 ```
-```
+
+````
 
 ## Data Models
 
@@ -311,21 +320,22 @@ interface Tokoh {
   bidang: string;
   deskripsi: string;
 }
-```
+````
 
 ## Correctness Properties
 
-*A property is a characteristic or behavior that should hold true across all valid executions of a system-essentially, a formal statement about what the system should do. Properties serve as the bridge between human-readable specifications and machine-verifiable correctness guarantees.*
+_A property is a characteristic or behavior that should hold true across all valid executions of a system-essentially, a formal statement about what the system should do. Properties serve as the bridge between human-readable specifications and machine-verifiable correctness guarantees._
 
 ### Property 1: Schema Validation
 
-*For any* generated marga detail object, it SHALL contain all required fields: margaId, slug, sejarah, asalUsul, tarombo (with description, ancestors, subMargas), wilayah (with nama, deskripsi, latitude, longitude, provinsi, kabupaten), tradisi, tokoh, relatedMargas, and updatedAt.
+_For any_ generated marga detail object, it SHALL contain all required fields: margaId, slug, sejarah, asalUsul, tarombo (with description, ancestors, subMargas), wilayah (with nama, deskripsi, latitude, longitude, provinsi, kabupaten), tradisi, tokoh, relatedMargas, and updatedAt.
 
 **Validates: Requirements 2.1, 2.2, 2.3, 2.4, 2.5**
 
 ### Property 2: Minimum Content Requirements
 
-*For any* generated marga detail object:
+_For any_ generated marga detail object:
+
 - tarombo.ancestors array SHALL have length >= 2
 - tarombo.subMargas array SHALL have length >= 2
 - tradisi array SHALL have length >= 2
@@ -335,7 +345,7 @@ interface Tokoh {
 
 ### Property 3: Related Margas Validity
 
-*For any* generated marga detail object, all items in relatedMargas array SHALL be valid slugs that exist in marga.json.
+_For any_ generated marga detail object, all items in relatedMargas array SHALL be valid slugs that exist in marga.json.
 
 **Validates: Requirements 2.1**
 
@@ -343,16 +353,17 @@ interface Tokoh {
 
 ### Validation Errors
 
-| Error Type | Handling |
-|------------|----------|
-| Missing required field | Reject output, request regeneration |
-| Invalid JSON format | Reject output, request regeneration |
-| Invalid relatedMargas slug | Flag for manual review |
-| Insufficient content (below minimums) | Flag for enhancement |
+| Error Type                            | Handling                            |
+| ------------------------------------- | ----------------------------------- |
+| Missing required field                | Reject output, request regeneration |
+| Invalid JSON format                   | Reject output, request regeneration |
+| Invalid relatedMargas slug            | Flag for manual review              |
+| Insufficient content (below minimums) | Flag for enhancement                |
 
 ### Research Gaps
 
 Jika LLM tidak dapat menemukan informasi yang cukup:
+
 1. Gunakan informasi umum rumpun sebagai fallback
 2. Tandai field dengan catatan "[Perlu verifikasi]" di deskripsi
 3. Jangan biarkan field kosong atau null

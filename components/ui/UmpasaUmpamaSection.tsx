@@ -48,9 +48,9 @@ export function UmpasaUmpamaSection({
   };
 
   const [mode, setMode] = useState<Mode>(defaultMode);
-  const [currentExample, setCurrentExample] = useState<
-    UmpasaExample | ProverbsExample | null
-  >(() => getRandomExample(defaultMode));
+  const [currentExample, setCurrentExample] = useState<UmpasaExample | ProverbsExample | null>(() =>
+    getRandomExample(defaultMode)
+  );
 
   const handleToggle = (newMode: Mode) => {
     setMode(newMode);
@@ -69,26 +69,21 @@ export function UmpasaUmpamaSection({
   const hasUsage = isUmpasa && 'usage' in currentExample;
 
   return (
-    <section
-      id="sastra"
-      className={cn('mb-24 scroll-mt-24', className)}
-    >
-      <div className="relative overflow-hidden rounded-3xl bg-foreground text-background p-8 md:p-16 text-center">
+    <section id="sastra" className={cn('mb-24 scroll-mt-24', className)}>
+      <div className="bg-foreground text-background relative overflow-hidden rounded-3xl p-8 text-center md:p-16">
         <div className="absolute inset-0 bg-[url('/images/pattern-batak.png')] opacity-10" />
-        <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-transparent" />
+        <div className="from-accent/20 absolute inset-0 bg-gradient-to-br to-transparent" />
 
         <div className="relative z-10 mx-auto max-w-3xl">
           {showTitle && (
             <>
               <div className="mb-6 flex justify-center">
-                <div className="rounded-full bg-background/10 p-4 backdrop-blur-sm">
-                  <Quote className="h-8 w-8 text-accent" />
+                <div className="bg-background/10 rounded-full p-4 backdrop-blur-sm">
+                  <Quote className="text-accent h-8 w-8" />
                 </div>
               </div>
 
-              <h2 className="mb-8 text-3xl font-bold md:text-4xl">
-                Sastra Lisan: Umpasa & Umpama
-              </h2>
+              <h2 className="mb-8 text-3xl font-bold md:text-4xl">Sastra Lisan: Umpasa & Umpama</h2>
             </>
           )}
 
@@ -100,7 +95,7 @@ export function UmpasaUmpamaSection({
               className={cn(
                 'rounded-full',
                 mode === 'umpasa'
-                  ? 'bg-accent text-white hover:bg-accent/90'
+                  ? 'bg-accent hover:bg-accent/90 text-white'
                   : 'border-background/30 bg-background/10 text-background hover:bg-background/20'
               )}
             >
@@ -112,7 +107,7 @@ export function UmpasaUmpamaSection({
               className={cn(
                 'rounded-full',
                 mode === 'umpama'
-                  ? 'bg-accent text-white hover:bg-accent/90'
+                  ? 'bg-accent hover:bg-accent/90 text-white'
                   : 'border-background/30 bg-background/10 text-background hover:bg-background/20'
               )}
             >
@@ -122,42 +117,38 @@ export function UmpasaUmpamaSection({
 
           {/* Current Example Display */}
           <div className="mb-10 space-y-2">
-            <p className="text-xl italic font-medium md:text-2xl text-background/90">
+            <p className="text-background/90 text-xl font-medium italic md:text-2xl">
               &quot;{currentExample.toba}&quot;
             </p>
-            <p className="text-background/60">
-              ({currentExample.indonesian})
-            </p>
+            <p className="text-background/60">({currentExample.indonesian})</p>
           </div>
 
           {/* Meaning and Usage */}
-          <div className="mb-6 rounded-xl bg-background/5 p-6 backdrop-blur-sm border border-white/10 text-left">
-            <h3 className="mb-2 font-bold text-accent">Makna:</h3>
-            <p className="text-sm text-background/80 mb-4">
-              {currentExample.meaning}
-            </p>
+          <div className="bg-background/5 mb-6 rounded-xl border border-white/10 p-6 text-left backdrop-blur-sm">
+            <h3 className="text-accent mb-2 font-bold">Makna:</h3>
+            <p className="text-background/80 mb-4 text-sm">{currentExample.meaning}</p>
             {hasUsage && (
               <>
-                <h3 className="mb-2 font-bold text-accent">Penggunaan:</h3>
-                <p className="text-sm text-background/80">
-                  {currentExample.usage}
-                </p>
+                <h3 className="text-accent mb-2 font-bold">Penggunaan:</h3>
+                <p className="text-background/80 text-sm">{currentExample.usage}</p>
               </>
             )}
           </div>
 
           {/* Info Cards */}
-          <div className="grid gap-6 text-left md:grid-cols-2 text-background/80 mb-6">
-            <div className="rounded-xl bg-background/5 p-6 backdrop-blur-sm border border-white/10">
-              <h3 className="mb-2 font-bold text-accent">Umpasa (Pantun)</h3>
+          <div className="text-background/80 mb-6 grid gap-6 text-left md:grid-cols-2">
+            <div className="bg-background/5 rounded-xl border border-white/10 p-6 backdrop-blur-sm">
+              <h3 className="text-accent mb-2 font-bold">Umpasa (Pantun)</h3>
               <p className="text-sm">
-                Digunakan dalam upacara adat untuk menyampaikan berkat (pasu-pasu). Memiliki sampiran dan isi yang rimanya teratur.
+                Digunakan dalam upacara adat untuk menyampaikan berkat (pasu-pasu). Memiliki
+                sampiran dan isi yang rimanya teratur.
               </p>
             </div>
-            <div className="rounded-xl bg-background/5 p-6 backdrop-blur-sm border border-white/10">
-              <h3 className="mb-2 font-bold text-accent">Umpama (Perumpamaan)</h3>
+            <div className="bg-background/5 rounded-xl border border-white/10 p-6 backdrop-blur-sm">
+              <h3 className="text-accent mb-2 font-bold">Umpama (Perumpamaan)</h3>
               <p className="text-sm">
-                Ungkapan kiasan yang mengambil contoh dari alam atau sifat binatang untuk menasihati kebijaksanaan hidup.
+                Ungkapan kiasan yang mengambil contoh dari alam atau sifat binatang untuk menasihati
+                kebijaksanaan hidup.
               </p>
             </div>
           </div>
@@ -166,7 +157,7 @@ export function UmpasaUmpamaSection({
           <Button
             onClick={handleRefresh}
             variant="outline"
-            className="rounded-full border-background/30 bg-background/10 text-background hover:bg-background/20"
+            className="border-background/30 bg-background/10 text-background hover:bg-background/20 rounded-full"
           >
             <RefreshCw className="mr-2 h-4 w-4" />
             Lihat Contoh Lain

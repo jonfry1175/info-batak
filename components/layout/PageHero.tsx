@@ -21,10 +21,7 @@ export function PageHero({
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       {/* Dark overlay */}
-      <div
-        className="absolute inset-0 bg-black"
-        style={{ opacity: overlayOpacity }}
-      />
+      <div className="absolute inset-0 bg-black" style={{ opacity: overlayOpacity }} />
 
       {/* Content */}
       <div className="relative z-10 px-4 text-center">

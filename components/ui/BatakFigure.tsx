@@ -30,11 +30,7 @@ export function BatakFigure() {
       />
 
       {/* Ulos Pattern Details */}
-      <motion.g
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.5 }}
-      >
+      <motion.g initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }}>
         <line x1="90" y1="190" x2="150" y2="190" stroke="white" strokeWidth="2" />
         <line x1="90" y1="200" x2="150" y2="200" stroke="white" strokeWidth="2" />
         <line x1="90" y1="210" x2="150" y2="210" stroke="white" strokeWidth="2" />
@@ -124,11 +120,7 @@ export function BatakFigure() {
       </motion.g>
 
       {/* Face Details */}
-      <motion.g
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.4 }}
-      >
+      <motion.g initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.4 }}>
         {/* Eyes */}
         <circle cx="110" cy="68" r="3" fill="black" />
         <circle cx="130" cy="68" r="3" fill="black" />
@@ -141,11 +133,7 @@ export function BatakFigure() {
           fill="none"
           strokeLinecap="round"
           animate={{
-            d: [
-              'M110 78 Q120 83 130 78',
-              'M110 78 Q120 85 130 78',
-              'M110 78 Q120 83 130 78',
-            ],
+            d: ['M110 78 Q120 83 130 78', 'M110 78 Q120 85 130 78', 'M110 78 Q120 83 130 78'],
           }}
           transition={{
             repeat: Infinity,
@@ -156,11 +144,7 @@ export function BatakFigure() {
       </motion.g>
 
       {/* Legs */}
-      <motion.g
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.6 }}
-      >
+      <motion.g initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6 }}>
         {/* Left Leg */}
         <rect x="95" y="260" width="15" height="15" className="fill-foreground/90" rx="3" />
 
@@ -183,4 +167,3 @@ export function BatakFigure() {
     </motion.svg>
   );
 }
-

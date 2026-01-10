@@ -31,7 +31,7 @@ export function MediaCard({
   icon,
   index = 0,
   className,
-  aspectRatio = "aspect-video",
+  aspectRatio = 'aspect-video',
 }: MediaCardProps) {
   return (
     <motion.div
@@ -41,9 +41,9 @@ export function MediaCard({
       className={`h-full ${className || ''}`}
     >
       <Link href={href} className="group block h-full">
-        <Card className="h-full overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-accent/10 hover:border-accent/50 flex flex-col">
+        <Card className="hover:shadow-accent/10 hover:border-accent/50 flex h-full flex-col overflow-hidden transition-all duration-300 hover:shadow-lg">
           {image ? (
-            <div className={`relative ${aspectRatio} overflow-hidden shrink-0`}>
+            <div className={`relative ${aspectRatio} shrink-0 overflow-hidden`}>
               <Image
                 src={image}
                 alt={imageAlt || title}
@@ -53,14 +53,14 @@ export function MediaCard({
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
               {category && (
-                <Badge className="absolute left-4 top-4 bg-accent text-white hover:bg-accent/90">
+                <Badge className="bg-accent hover:bg-accent/90 absolute top-4 left-4 text-white">
                   {category}
                 </Badge>
               )}
             </div>
           ) : (
-            <div className="relative aspect-video overflow-hidden bg-gradient-to-br from-accent/10 to-accent/5">
-              <div className="flex h-full items-center justify-center text-accent">
+            <div className="from-accent/10 to-accent/5 relative aspect-video overflow-hidden bg-gradient-to-br">
+              <div className="text-accent flex h-full items-center justify-center">
                 {icon || (
                   <div className="text-6xl opacity-50">
                     <svg
@@ -81,7 +81,7 @@ export function MediaCard({
                 )}
               </div>
               {category && (
-                <Badge className="absolute left-4 top-4 bg-accent text-white hover:bg-accent/90">
+                <Badge className="bg-accent hover:bg-accent/90 absolute top-4 left-4 text-white">
                   {category}
                 </Badge>
               )}
@@ -89,9 +89,7 @@ export function MediaCard({
           )}
 
           <CardHeader>
-            <CardTitle className="group-hover:text-accent transition-colors">
-              {title}
-            </CardTitle>
+            <CardTitle className="group-hover:text-accent transition-colors">{title}</CardTitle>
             <CardDescription>{description}</CardDescription>
           </CardHeader>
 

@@ -1,11 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import * as fc from 'fast-check';
 import { getAllRumpunEnhanced } from '@/lib/data';
-import {
-  getCategoryData,
-  getNonEmptyCategories,
-  getCategoryTitle,
-} from './BudayaSection';
+import { getCategoryData, getNonEmptyCategories, getCategoryTitle } from './BudayaSection';
 import { defaultBudayaCategories } from './CategoryTabs';
 import type { RumpunBatakEnhanced, BudayaEnhanced, BudayaCategory } from '@/types';
 
@@ -21,29 +17,23 @@ describe('Property 5: Budaya Category Completeness', () => {
 
   it('should have budaya data for all enhanced rumpun', () => {
     fc.assert(
-      fc.property(
-        fc.constantFrom(...allEnhancedRumpun),
-        (rumpun: RumpunBatakEnhanced) => {
-          expect(rumpun.budaya).toBeDefined();
-          expect(typeof rumpun.budaya).toBe('object');
-          expect(rumpun.budaya).not.toBeNull();
-          return true;
-        }
-      ),
+      fc.property(fc.constantFrom(...allEnhancedRumpun), (rumpun: RumpunBatakEnhanced) => {
+        expect(rumpun.budaya).toBeDefined();
+        expect(typeof rumpun.budaya).toBe('object');
+        expect(rumpun.budaya).not.toBeNull();
+        return true;
+      }),
       { numRuns: 100 }
     );
   });
 
   it('should have ringkasan for all budaya data', () => {
     fc.assert(
-      fc.property(
-        fc.constantFrom(...allEnhancedRumpun),
-        (rumpun: RumpunBatakEnhanced) => {
-          expect(typeof rumpun.budaya.ringkasan).toBe('string');
-          expect(rumpun.budaya.ringkasan.length).toBeGreaterThan(0);
-          return true;
-        }
-      ),
+      fc.property(fc.constantFrom(...allEnhancedRumpun), (rumpun: RumpunBatakEnhanced) => {
+        expect(typeof rumpun.budaya.ringkasan).toBe('string');
+        expect(rumpun.budaya.ringkasan.length).toBeGreaterThan(0);
+        return true;
+      }),
       { numRuns: 100 }
     );
   });
@@ -72,25 +62,22 @@ describe('Property 5: Budaya Category Completeness', () => {
 
   it('should have non-empty description for all categories in enhanced rumpun', () => {
     fc.assert(
-      fc.property(
-        fc.constantFrom(...allEnhancedRumpun),
-        (rumpun: RumpunBatakEnhanced) => {
-          // All 5 categories should have non-empty descriptions
-          const nonEmptyCategories = getNonEmptyCategories(rumpun.budaya);
+      fc.property(fc.constantFrom(...allEnhancedRumpun), (rumpun: RumpunBatakEnhanced) => {
+        // All 5 categories should have non-empty descriptions
+        const nonEmptyCategories = getNonEmptyCategories(rumpun.budaya);
 
-          // At least some categories should have content
-          expect(nonEmptyCategories.length).toBeGreaterThan(0);
+        // At least some categories should have content
+        expect(nonEmptyCategories.length).toBeGreaterThan(0);
 
-          // Each non-empty category should have valid description
-          nonEmptyCategories.forEach((categoryId) => {
-            const categoryData = getCategoryData(rumpun.budaya, categoryId);
-            expect(categoryData).not.toBeNull();
-            expect(categoryData!.deskripsi.length).toBeGreaterThan(0);
-          });
+        // Each non-empty category should have valid description
+        nonEmptyCategories.forEach((categoryId) => {
+          const categoryData = getCategoryData(rumpun.budaya, categoryId);
+          expect(categoryData).not.toBeNull();
+          expect(categoryData!.deskripsi.length).toBeGreaterThan(0);
+        });
 
-          return true;
-        }
-      ),
+        return true;
+      }),
       { numRuns: 100 }
     );
   });
@@ -167,22 +154,19 @@ describe('Property 5: Budaya Category Completeness', () => {
 
   it('should have gallery array if present', () => {
     fc.assert(
-      fc.property(
-        fc.constantFrom(...allEnhancedRumpun),
-        (rumpun: RumpunBatakEnhanced) => {
-          if (rumpun.budaya.gallery) {
-            expect(Array.isArray(rumpun.budaya.gallery)).toBe(true);
+      fc.property(fc.constantFrom(...allEnhancedRumpun), (rumpun: RumpunBatakEnhanced) => {
+        if (rumpun.budaya.gallery) {
+          expect(Array.isArray(rumpun.budaya.gallery)).toBe(true);
 
-            rumpun.budaya.gallery.forEach((item) => {
-              expect(typeof item.src).toBe('string');
-              expect(typeof item.alt).toBe('string');
-              expect(typeof item.category).toBe('string');
-            });
-          }
-
-          return true;
+          rumpun.budaya.gallery.forEach((item) => {
+            expect(typeof item.src).toBe('string');
+            expect(typeof item.alt).toBe('string');
+            expect(typeof item.category).toBe('string');
+          });
         }
-      ),
+
+        return true;
+      }),
       { numRuns: 100 }
     );
   });

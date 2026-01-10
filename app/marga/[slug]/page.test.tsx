@@ -125,7 +125,9 @@ describe('Property 3: Conditional Section Rendering', () => {
         if (detail?.relatedMargas?.length) {
           expect(screen.getByText('Marga Terkait')).toBeInTheDocument();
           detail.relatedMargas.forEach((slugRelated) => {
-            expect(screen.getByRole('link', { name: new RegExp(slugRelated, 'i') })).toBeInTheDocument();
+            expect(
+              screen.getByRole('link', { name: new RegExp(slugRelated, 'i') })
+            ).toBeInTheDocument();
           });
         } else {
           expect(screen.queryByText('Marga Terkait')).not.toBeInTheDocument();
@@ -138,7 +140,6 @@ describe('Property 3: Conditional Section Rendering', () => {
     );
   });
 });
-
 
 /**
  * **Feature: marga-detail-pages, Test 6.1: End-to-End Navigation**
@@ -187,10 +188,10 @@ describe('Test 6.1: End-to-End Navigation', () => {
 
         // Step 2: Verify detail page renders correctly
         render(await MargaDetailPage({ params: Promise.resolve({ slug: marga.slug }) }));
-        
+
         // Verify marga name is displayed
         expect(screen.getByText(marga.nama)).toBeInTheDocument();
-        
+
         // Step 3: Verify back navigation exists
         const backLinks = screen.getAllByRole('link', { name: /Kembali ke daftar marga/i });
         expect(backLinks.length).toBeGreaterThan(0);
@@ -203,7 +204,6 @@ describe('Test 6.1: End-to-End Navigation', () => {
     );
   });
 });
-
 
 /**
  * **Feature: marga-detail-pages, Test 6.2: 404 Handling**
@@ -250,7 +250,6 @@ describe('Test 6.2: 404 Handling for Invalid Slugs', () => {
   });
 });
 
-
 /**
  * **Feature: marga-detail-pages, Test 6.3: Partial Data Handling**
  * **Validates: Requirements 7.4**
@@ -275,7 +274,9 @@ describe('Test 6.3: Partial Data Handling', () => {
 
       // Basic info should still be displayed
       expect(screen.getByText(margaWithoutDetail.nama)).toBeInTheDocument();
-      expect(screen.getAllByText(new RegExp(margaWithoutDetail.rumpun, 'i')).length).toBeGreaterThan(0);
+      expect(
+        screen.getAllByText(new RegExp(margaWithoutDetail.rumpun, 'i')).length
+      ).toBeGreaterThan(0);
 
       // Back navigation should exist
       const backLinks = screen.getAllByRole('link', { name: /Kembali ke daftar marga/i });
@@ -300,8 +301,14 @@ describe('Test 6.3: Partial Data Handling', () => {
       const detail = getMargaDetailBySlug(marga.slug);
       if (!detail) return false;
       // Check if some optional fields are missing
-      const hasAllFields = detail.sejarah && detail.asalUsul && detail.tarombo && 
-                          detail.wilayah && detail.tradisi && detail.tokoh && detail.relatedMargas;
+      const hasAllFields =
+        detail.sejarah &&
+        detail.asalUsul &&
+        detail.tarombo &&
+        detail.wilayah &&
+        detail.tradisi &&
+        detail.tokoh &&
+        detail.relatedMargas;
       return !hasAllFields;
     });
 
@@ -339,7 +346,7 @@ describe('Test 6.3: Partial Data Handling', () => {
 
         // Basic info should always be present
         expect(screen.getByText(marga.nama)).toBeInTheDocument();
-        
+
         // Back navigation should always exist
         const backLinks = screen.getAllByRole('link', { name: /Kembali ke daftar marga/i });
         expect(backLinks.length).toBeGreaterThan(0);

@@ -12,23 +12,23 @@ export default function Home() {
   const latestBerita = getLatestBerita(3);
 
   return (
-    <div className="w-full bg-background overflow-x-hidden">
+    <div className="bg-background w-full overflow-x-hidden">
       <Hero />
 
       <PhilosophySection />
 
       {/* Featured Sections - Bento Grid Style */}
-      <section className="px-4 py-24 relative">
+      <section className="relative px-4 py-24">
         <div className="container mx-auto max-w-7xl">
           <div className="mb-16 text-center">
-            <h2 className="text-3xl md:text-5xl font-bold mb-6">Jelajahi Budaya Batak</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <h2 className="mb-6 text-3xl font-bold md:text-5xl">Jelajahi Budaya Batak</h2>
+            <p className="text-muted-foreground mx-auto max-w-2xl text-lg">
               Telusuri kekayaan budaya Batak dari aksara tradisional, sistem kekerabatan, hingga
               seni dan adat istiadat yang kaya makna.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[300px]">
+          <div className="grid auto-rows-[300px] grid-cols-1 gap-6 md:grid-cols-3">
             {/* Marga - Large Feature (2x2) */}
             <div className="md:col-span-2 md:row-span-2">
               <MediaCard
@@ -81,8 +81,8 @@ export default function Home() {
               />
             </div>
 
-             {/* Arsitektur - Standard (1x1) */}
-             <div className="md:col-span-1">
+            {/* Arsitektur - Standard (1x1) */}
+            <div className="md:col-span-1">
               <MediaCard
                 title="Rumah Adat"
                 description="Telusuri arsitektur unik Ruma Bolon dan Sopo."
@@ -117,9 +117,9 @@ export default function Home() {
       </section>
 
       {/* Did You Know - With Pattern Background */}
-      <section className="relative py-24 overflow-hidden">
-        <div className="absolute inset-0 bg-accent/5 pattern-grid" />
-        <div className="container mx-auto px-4 relative z-10">
+      <section className="relative overflow-hidden py-24">
+        <div className="bg-accent/5 pattern-grid absolute inset-0" />
+        <div className="relative z-10 container mx-auto px-4">
           <div className="mx-auto max-w-4xl">
             <TahukahKamu />
           </div>
@@ -127,29 +127,38 @@ export default function Home() {
       </section>
 
       {/* Sastra Lisan: Umpasa & Umpama */}
-      <section className="px-4 py-24 bg-background">
+      <section className="bg-background px-4 py-24">
         <div className="container mx-auto max-w-7xl">
           <UmpasaUmpamaSection />
         </div>
       </section>
 
       {/* Latest News Preview - Simple Clean Layout */}
-      <section className="px-4 py-24 bg-background">
+      <section className="bg-background px-4 py-24">
         <div className="container mx-auto max-w-7xl">
-          <div className="flex items-end justify-between mb-12 border-b pb-4">
+          <div className="mb-12 flex items-end justify-between border-b pb-4">
             <div>
-              <h2 className="text-3xl font-bold mb-2">Berita Terkini</h2>
-              <p className="text-muted-foreground">Update terbaru seputar budaya dan komunitas Batak</p>
+              <h2 className="mb-2 text-3xl font-bold">Berita Terkini</h2>
+              <p className="text-muted-foreground">
+                Update terbaru seputar budaya dan komunitas Batak
+              </p>
             </div>
-            <Link href="/berita" className="text-accent hover:text-accent/80 font-medium hover:underline mb-1 hidden sm:block">
+            <Link
+              href="/berita"
+              className="text-accent hover:text-accent/80 mb-1 hidden font-medium hover:underline sm:block"
+            >
               Lihat Semua →
             </Link>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
             {latestBerita.map((berita) => (
-              <Link key={berita.id} href={`/berita/${berita.slug}`} className="group cursor-pointer">
-                <div className="aspect-video rounded-xl mb-4 overflow-hidden relative">
+              <Link
+                key={berita.id}
+                href={`/berita/${berita.slug}`}
+                className="group cursor-pointer"
+              >
+                <div className="relative mb-4 aspect-video overflow-hidden rounded-xl">
                   <Image
                     src={berita.gambar}
                     alt={berita.gambarAlt}
@@ -159,20 +168,29 @@ export default function Home() {
                   />
                 </div>
                 <div className="space-y-2">
-                  <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                    <span className="bg-accent/10 text-accent px-2 py-0.5 rounded-full">{berita.kategori}</span>
-                    <span>• {new Date(berita.tanggal).toLocaleDateString('id-ID', { day: 'numeric', month: 'short', year: 'numeric' })}</span>
+                  <div className="text-muted-foreground flex items-center gap-2 text-xs">
+                    <span className="bg-accent/10 text-accent rounded-full px-2 py-0.5">
+                      {berita.kategori}
+                    </span>
+                    <span>
+                      •{' '}
+                      {new Date(berita.tanggal).toLocaleDateString('id-ID', {
+                        day: 'numeric',
+                        month: 'short',
+                        year: 'numeric',
+                      })}
+                    </span>
                   </div>
-                  <h3 className="font-bold text-lg group-hover:text-accent transition-colors">{berita.judul}</h3>
-                  <p className="text-muted-foreground text-sm line-clamp-2">
-                    {berita.ringkasan}
-                  </p>
+                  <h3 className="group-hover:text-accent text-lg font-bold transition-colors">
+                    {berita.judul}
+                  </h3>
+                  <p className="text-muted-foreground line-clamp-2 text-sm">{berita.ringkasan}</p>
                 </div>
               </Link>
             ))}
           </div>
           <div className="mt-8 text-center sm:hidden">
-             <Link href="/berita" className="text-accent font-medium hover:underline">
+            <Link href="/berita" className="text-accent font-medium hover:underline">
               Lihat Semua Berita →
             </Link>
           </div>
