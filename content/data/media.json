@@ -213,6 +213,32 @@
       "description": "Seamless texture of traditional Batak Gorga wood carving patterns",
       "keywords": ["batak", "pattern", "gorga", "texture", "background"],
       "placeholder": false
+    },
+    {
+      "id": "hero-aksara",
+      "src": "/images/budaya/aksara/hero-aksara.png",
+      "alt": "Ancient Batak Pustaha script close up",
+      "category": "Budaya",
+      "subcategory": "Aksara Batak",
+      "photographer": "AI Generated",
+      "year": 2025,
+      "license": "Public Domain",
+      "description": "Cinematic close-up of ancient Batak script on a Pustaha manuscript",
+      "keywords": ["batak", "aksara", "pustaha", "script", "hero"],
+      "placeholder": false
+    },
+    {
+      "id": "illustration-pustaha",
+      "src": "/images/budaya/aksara/illustration-pustaha.png",
+      "alt": "Traditional Batak Pustaha Book",
+      "category": "Budaya",
+      "subcategory": "Aksara Batak",
+      "photographer": "AI Generated",
+      "year": 2025,
+      "license": "Public Domain",
+      "description": "Accordion-style Batak Pustaha book made of bark",
+      "keywords": ["batak", "pustaha", "book", "manuscript", "illustration"],
+      "placeholder": false
     }
   ],
   "videos": [

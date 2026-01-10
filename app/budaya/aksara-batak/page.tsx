@@ -1,6 +1,7 @@
 import { Gallery } from '@/components/ui/Gallery';
 import { getImagesByCategory } from '@/lib/data';
 import { PageHero } from '@/components/layout/PageHero';
+import Image from 'next/image';
 
 export default function AksaraBatakPage() {
   // Get images for Pustaha gallery
@@ -11,31 +12,39 @@ export default function AksaraBatakPage() {
       <PageHero
         title="Aksara Batak"
         subtitle="Jelajahi kekayaan aksara tradisional Batak yang menjadi warisan budaya leluhur"
-        backgroundImage="/images/homepage/card-aksara.jpg"
+        backgroundImage="/images/budaya/aksara/hero-aksara.png"
       />
       <div className="w-full px-4 py-12">
         <div className="mx-auto max-w-5xl">
           {/* Definition */}
           <section className="mb-16">
-            <div className="bg-accent/10 border-accent rounded-lg border-l-4 p-8">
-              <h2 className="text-accent mb-4 text-3xl font-bold">Apa itu Aksara Batak?</h2>
-              <div className="text-foreground/80 space-y-4 leading-relaxed">
-                <p>
-                  Aksara Batak adalah sistem tulisan tradisional yang digunakan oleh masyarakat
-                  Batak di Sumatera Utara. Aksara ini termasuk dalam kelompok aksara <em>Brahmi</em>{' '}
-                  atau
-                  <em>Pallava</em> yang memiliki kemiripan dengan aksara-aksara lain di Nusantara
-                  seperti Aksara Jawa, Sunda, dan Bali.
-                </p>
-                <p>
-                  Aksara Batak digunakan untuk menulis berbagai bahasa Batak, termasuk Batak Toba,
-                  Karo, Simalungun, Pakpak/Dairi, dan Mandailing. Setiap sub-etnis Batak memiliki
-                  variasi aksara yang sedikit berbeda namun tetap memiliki dasar yang sama.
-                </p>
-                <p>
-                  Aksara ini memiliki nilai spiritual dan kebudayaan yang tinggi, karena digunakan
-                  dalam penulisan kitab-kitab pusaka (<em>pustaha</em>) yang berisi pengetahuan
-                  tradisional, ramalan, mantra, dan berbagai ilmu pengetahuan leluhur.
+            <div className="grid gap-8 md:grid-cols-2 lg:items-center">
+              <div className="bg-accent/5 border-accent rounded-lg border-l-4 p-8">
+                <h2 className="text-accent mb-4 text-3xl font-bold">Apa itu Aksara Batak?</h2>
+                <div className="text-foreground/80 space-y-4 leading-relaxed">
+                  <p>
+                    Aksara Batak adalah sistem tulisan tradisional yang digunakan oleh masyarakat
+                    Batak di Sumatera Utara. Aksara ini termasuk dalam kelompok aksara <em>Brahmi</em>{' '}
+                    atau <em>Pallava</em> yang memiliki kemiripan dengan aksara-aksara lain di
+                    Nusantara seperti Aksara Jawa, Sunda, dan Bali.
+                  </p>
+                  <p>
+                    Aksara ini memiliki nilai spiritual dan kebudayaan yang tinggi, karena digunakan
+                    dalam penulisan kitab-kitab pusaka (<em>pustaha</em>) yang berisi pengetahuan
+                    tradisional, ramalan, mantra, dan berbagai ilmu pengetahuan leluhur.
+                  </p>
+                </div>
+              </div>
+              <div className="relative aspect-[4/3] overflow-hidden rounded-xl shadow-lg transition-transform hover:scale-[1.02]">
+                <Image
+                  src="/images/budaya/aksara/illustration-pustaha.png"
+                  alt="Traditional Batak Pustaha"
+                  fill
+                  className="object-cover"
+                />
+                <div className="from-black/60 to-transparent absolute inset-0 bg-gradient-to-t" />
+                <p className="absolute bottom-4 left-4 text-sm font-medium text-white">
+                  Pustaha: Kitab kuno beraksara Batak
                 </p>
               </div>
             </div>
@@ -91,48 +100,46 @@ export default function AksaraBatakPage() {
 
             {/* Ina ni Surat */}
             <div className="mb-10">
-              <div className="bg-accent/10 border-accent mb-6 rounded-lg border-l-4 p-6">
+              <div className="bg-accent/5 border-accent mb-6 rounded-lg border-l-4 p-6">
                 <h3 className="text-accent mb-3 text-2xl font-bold">Ina ni Surat (Huruf Induk)</h3>
-                <p className="text-foreground/80 mb-4">
-                  Ina ni Surat adalah 19 huruf dasar dalam aksara Batak. Setiap huruf memiliki bunyi
-                  konsonan + vokal 'a' sebagai bunyi dasar.
+                <p className="text-foreground/80 mb-6">
+                  Ina ni Surat adalah 19 huruf dasar dalam aksara Batak. Setiap huruf secara default
+                  mengandung bunyi vokal 'a'.
                 </p>
-                <div className="bg-background rounded-lg p-6">
-                  <p className="text-foreground/70 mb-4 font-mono text-sm">
-                    Contoh urutan Ina ni Surat (Batak Toba):
-                  </p>
-                  <div className="grid grid-cols-2 gap-3 md:grid-cols-3">
-                    <div className="bg-foreground/5 rounded p-3">
-                      <span className="font-bold">ha</span> - ᯂ
+                <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+                  {[
+                    { char: 'ha', symbol: 'ᯂ' },
+                    { char: 'na', symbol: 'ᯉ' },
+                    { char: 'ba', symbol: 'ᯅ' },
+                    { char: 'ka', symbol: 'ᯂ' },
+                    { char: 'da', symbol: 'ᯑ' },
+                    { char: 'ta', symbol: 'ᯖ' },
+                    { char: 'sa', symbol: 'ᯘ' },
+                    { char: 'wa', symbol: 'ᯂ' }, // Use correct symbol if distinct in font
+                    { char: 'la', symbol: 'ᯞ' },
+                    { char: 'pa', symbol: 'ᯇ' },
+                    { char: 'ja', symbol: 'ᯐ' },
+                    { char: 'ya', symbol: 'ᯛ' },
+                    { char: 'ma', symbol: 'ᯔ' },
+                    { char: 'ga', symbol: 'ᯎ' },
+                    { char: 'ra', symbol: 'ᯒ' },
+                    { char: 'nga', symbol: 'ᯝ' },
+                    { char: 'nya', symbol: 'ᯠ' },
+                    { char: 'i', symbol: 'ᯤ' },
+                    { char: 'u', symbol: 'ᯥ' },
+                  ].map((item) => (
+                    <div
+                      key={item.char}
+                      className="bg-background group hover:border-accent flex flex-col items-center justify-center rounded-xl border p-4 text-center shadow-sm transition-all hover:-translate-y-1 hover:shadow-md"
+                    >
+                      <span className="text-foreground mb-2 text-4xl font-medium">
+                        {item.symbol}
+                      </span>
+                      <span className="text-accent font-mono text-lg font-bold uppercase">
+                        {item.char}
+                      </span>
                     </div>
-                    <div className="bg-foreground/5 rounded p-3">
-                      <span className="font-bold">na</span> - ᯉ
-                    </div>
-                    <div className="bg-foreground/5 rounded p-3">
-                      <span className="font-bold">ba</span> - ᯅ
-                    </div>
-                    <div className="bg-foreground/5 rounded p-3">
-                      <span className="font-bold">ka</span> - ᯂ
-                    </div>
-                    <div className="bg-foreground/5 rounded p-3">
-                      <span className="font-bold">da</span> - ᯑ
-                    </div>
-                    <div className="bg-foreground/5 rounded p-3">
-                      <span className="font-bold">ta</span> - ᯖ
-                    </div>
-                    <div className="bg-foreground/5 rounded p-3">
-                      <span className="font-bold">sa</span> - ᯘ
-                    </div>
-                    <div className="bg-foreground/5 rounded p-3">
-                      <span className="font-bold">pa</span> - ᯇ
-                    </div>
-                    <div className="bg-foreground/5 rounded p-3">
-                      <span className="font-bold">ma</span> - ᯔ
-                    </div>
-                  </div>
-                  <p className="text-foreground/60 mt-4 text-xs">
-                    Dan masih ada 10 huruf lagi: ga, ja, wa, la, ra, nga, nya, ya, i, u
-                  </p>
+                  ))}
                 </div>
               </div>
             </div>
@@ -224,6 +231,7 @@ export default function AksaraBatakPage() {
               />
             </section>
           )}
+
 
           {/* Call to Action */}
           <section className="bg-foreground/5 rounded-lg p-8 text-center">
