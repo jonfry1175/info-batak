@@ -29,7 +29,7 @@ Implementasi enhancement halaman detail rumpun Batak dengan peta interaktif, kon
     - **Validates: Requirements 5.5**
     - Test file: `lib/rumpun-enhanced.test.ts`
 
-- [-] 2. Update data rumpun.json dengan enhanced content
+- [x] 2. Update data rumpun.json dengan enhanced content
   - [x] 2.1 Update data Batak Toba dengan format enhanced
     - Tambah koordinat wilayah (2.6167, 98.8500 - Danau Toba)
     - Tambah kabupaten dan landmarks
@@ -43,75 +43,75 @@ Implementasi enhancement halaman detail rumpun Batak dengan peta interaktif, kon
     - Struktur sama seperti Toba
     - _Requirements: 5.1, 5.2, 5.3, 5.4_
 
-  - [-] 2.3 Update data 4 rumpun lainnya (Simalungun, Pakpak, Angkola, Mandailing)
+  - [x] 2.3 Update data 4 rumpun lainnya (Simalungun, Pakpak, Angkola, Mandailing)
     - Koordinat dan data enhanced untuk masing-masing
     - _Requirements: 5.1, 5.2, 5.3, 5.4_
 
-- [ ] 3. Checkpoint - Verifikasi data layer
+- [x] 3. Checkpoint - Verifikasi data layer
   - Ensure semua data rumpun sudah dalam format enhanced
   - Ensure backward compatibility function bekerja
   - Ensure all property tests pass
   - Ask user if questions arise
 
-- [ ] 4. Buat komponen MapEmbed
-  - [ ] 4.1 Implementasi komponen `components/sejarah/MapEmbed.tsx`
+- [x] 4. Buat komponen MapEmbed
+  - [x] 4.1 Implementasi komponen `components/sejarah/MapEmbed.tsx`
     - Google Maps iframe embed dengan koordinat
     - Fallback image jika embed gagal
     - Responsive container 16:9 aspect ratio
     - Loading skeleton state
     - _Requirements: 1.1, 1.4, 1.5_
 
-  - [ ] 4.2 Write property test untuk map coordinate validation
+  - [x] 4.2 Write property test untuk map coordinate validation
     - **Property 2: Map Component Data Binding**
     - **Validates: Requirements 1.1, 1.3**
     - Test file: `components/sejarah/MapEmbed.test.tsx`
 
-- [ ] 5. Buat komponen TimelineComponent
-  - [ ] 5.1 Implementasi komponen `components/sejarah/Timeline.tsx`
+- [x] 5. Buat komponen TimelineComponent
+  - [x] 5.1 Implementasi komponen `components/sejarah/Timeline.tsx`
     - Vertical timeline dengan alternating layout
     - Year badge dengan accent color
     - Animated entry dengan Framer Motion
     - Optional image per event
     - _Requirements: 2.2, 2.3_
 
-  - [ ] 5.2 Write property test untuk timeline chronological order
+  - [x] 5.2 Write property test untuk timeline chronological order
     - **Property 3: Timeline Chronological Order**
     - **Validates: Requirements 2.2, 2.3**
     - Test file: `components/sejarah/Timeline.test.tsx`
 
-- [ ] 6. Buat komponen SejarahSection
-  - [ ] 6.1 Implementasi komponen `components/sejarah/SejarahSection.tsx`
+- [x] 6. Buat komponen SejarahSection
+  - [x] 6.1 Implementasi komponen `components/sejarah/SejarahSection.tsx`
     - Overview dengan ringkasan
     - Collapsible sub-sections (Asal Usul, Kerajaan, Perlawanan, Era Modern)
     - Integrate TimelineComponent
     - Image gallery untuk sejarah
     - _Requirements: 2.1, 2.4, 2.5_
 
-  - [ ] 6.2 Write property test untuk sejarah section structure
+  - [x] 6.2 Write property test untuk sejarah section structure
     - **Property 4: Sejarah Section Structure**
     - **Validates: Requirements 2.1**
     - Test file: `components/sejarah/SejarahSection.test.tsx`
 
-- [ ] 7. Buat komponen BudayaSection dengan CategoryTabs
-  - [ ] 7.1 Implementasi komponen `components/sejarah/CategoryTabs.tsx`
+- [x] 7. Buat komponen BudayaSection dengan CategoryTabs
+  - [x] 7.1 Implementasi komponen `components/sejarah/CategoryTabs.tsx`
     - Horizontal scrollable tabs on mobile
     - Icon + label untuk setiap tab
     - Active state dengan accent color
     - _Requirements: 3.4_
 
-  - [ ] 7.2 Implementasi komponen `components/sejarah/BudayaSection.tsx`
+  - [x] 7.2 Implementasi komponen `components/sejarah/BudayaSection.tsx`
     - Integrate CategoryTabs
     - Category content cards
     - Gallery component untuk images
     - Placeholder untuk empty categories
     - _Requirements: 3.1, 3.2, 3.3, 3.5_
 
-  - [ ] 7.3 Write property test untuk budaya category completeness
+  - [x] 7.3 Write property test untuk budaya category completeness
     - **Property 5: Budaya Category Completeness**
     - **Validates: Requirements 3.1, 3.2**
     - Test file: `components/sejarah/BudayaSection.test.tsx`
 
-- [ ] 8. Checkpoint - Verifikasi komponen section
+- [-] 8. Checkpoint - Verifikasi komponen section
   - Ensure MapEmbed, Timeline, SejarahSection, BudayaSection render correctly
   - Ensure all property tests pass
   - Ask user if questions arise
