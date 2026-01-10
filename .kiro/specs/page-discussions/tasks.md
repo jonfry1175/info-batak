@@ -44,23 +44,23 @@ Implementasi fitur diskusi per halaman untuk InfoBatak.id menggunakan TypeScript
     - **Property 15: Comment Data Completeness** - Stored comments have all required fields
     - **Validates: Requirements 2.1, 8.3**
 
-- [ ] 3. Checkpoint - Database and Data Layer
+- [x] 3. Checkpoint - Database and Data Layer
   - Ensure migrations run successfully
   - Verify RLS policies work correctly
   - Ask the user if questions arise
 
-- [ ] 4. Create useDiscussion Hook
-  - [ ] 4.1 Implement useDiscussion hook in hooks/useDiscussion.ts
+- [x] 4. Create useDiscussion Hook
+  - [x] 4.1 Implement useDiscussion hook in hooks/useDiscussion.ts
     - State: comments, loading, error, totalCount, hasMore, replyingTo
     - Actions: addComment, deleteComment, toggleLike, loadMore, setReplyingTo
     - Initial fetch on mount with page_path
     - _Requirements: 1.1, 2.1, 4.1, 5.2_
-  - [ ] 4.2 Add Supabase Realtime subscription
+  - [x] 4.2 Add Supabase Realtime subscription
     - Subscribe to comments table changes for current page_path
     - Handle INSERT, DELETE events
     - Subscribe to comment_likes changes
     - _Requirements: 6.1, 6.2, 6.3_
-  - [ ] 4.3 Write property tests for useDiscussion
+  - [x] 4.3 Write property tests for useDiscussion
     - **Property 1: Comment Sorting** - Comments returned newest first
     - **Property 4: Pagination** - Max 10 comments per page
     - **Property 14: Comment Count Display** - Count matches actual comments
