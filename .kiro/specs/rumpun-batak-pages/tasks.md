@@ -101,7 +101,7 @@ Implementasi fitur halaman rumpun Batak dengan card visual dan halaman detail un
     - **Property 2: Navigation Correctness**
     - **Validates: Requirements 2.1**
 
-- [-] 8. Final checkpoint - Verifikasi semua fitur
+- [x] 8. Final checkpoint - Verifikasi semua fitur
   - Ensure semua 6 route detail berfungsi
   - Ensure navigasi dari card ke detail benar
   - Ensure tokoh penting muncul di halaman detail
