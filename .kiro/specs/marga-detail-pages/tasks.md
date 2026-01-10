@@ -53,58 +53,58 @@ Implementasi fitur halaman detail marga dengan navigasi dari card marga ke halam
     - **Property 1: Navigation from Card to Detail**
     - **Validates: Requirements 1.1**
 
-- [ ] 4. Buat halaman detail marga
-  - [ ] 4.1 Buat dynamic route `app/marga/[slug]/page.tsx`
+- [x] 4. Buat halaman detail marga
+  - [x] 4.1 Buat dynamic route `app/marga/[slug]/page.tsx`
     - Implementasi `generateStaticParams` untuk SSG
     - Load data dengan `getFullMargaBySlug()`
     - Handle 404 untuk invalid slug dengan `notFound()`
     - _Requirements: 1.3, 2.1, 2.4_
 
-  - [ ] 4.2 Implementasi Hero section
+  - [x] 4.2 Implementasi Hero section
     - Nama marga sebagai heading
     - Rumpun badge
     - Deskripsi singkat
     - _Requirements: 2.1, 2.2, 2.3_
 
-  - [ ] 4.3 Implementasi Sejarah section
+  - [x] 4.3 Implementasi Sejarah section
     - Render hanya jika data sejarah tersedia
     - _Requirements: 3.1, 3.3_
 
-  - [ ] 4.4 Implementasi Asal Usul section
+  - [x] 4.4 Implementasi Asal Usul section
     - Render hanya jika data asalUsul tersedia
     - _Requirements: 3.2_
 
-  - [ ] 4.5 Implementasi Tarombo section
+  - [x] 4.5 Implementasi Tarombo section
     - Render ancestors jika tersedia
     - Render sub-margas jika tersedia
     - _Requirements: 4.1, 4.2, 4.3_
 
-  - [ ] 4.6 Implementasi Wilayah section dengan Map
+  - [x] 4.6 Implementasi Wilayah section dengan Map
     - Render deskripsi wilayah
     - Embed Google Maps atau static map image dengan koordinat
     - _Requirements: 5.1, 5.2, 5.3, 5.4_
 
-  - [ ] 4.7 Implementasi Tradisi section
+  - [x] 4.7 Implementasi Tradisi section
     - Render list tradisi jika tersedia
     - _Requirements: 6.1_
 
-  - [ ] 4.8 Implementasi Tokoh section
+  - [x] 4.8 Implementasi Tokoh section
     - Render tokoh terkenal jika tersedia
     - _Requirements: 6.2_
 
-  - [ ] 4.9 Implementasi Related Margas section
+  - [x] 4.9 Implementasi Related Margas section
     - Render link ke marga terkait jika tersedia
     - _Requirements: 6.3_
 
-  - [ ] 4.10 Implementasi Back navigation
+  - [x] 4.10 Implementasi Back navigation
     - Link kembali ke halaman /marga
     - _Requirements: 2.4_
 
-  - [ ] 4.11 Write property test untuk basic info rendering
+  - [x] 4.11 Write property test untuk basic info rendering
     - **Property 2: Basic Info Rendering Completeness**
     - **Validates: Requirements 2.1, 2.2, 2.3, 2.4**
 
-  - [ ] 4.12 Write property test untuk conditional section rendering
+  - [x] 4.12 Write property test untuk conditional section rendering
     - **Property 3: Conditional Section Rendering**
     - **Validates: Requirements 3.1, 3.2, 4.1, 4.2, 4.3, 5.1, 5.2, 5.4, 6.1, 6.2, 6.3, 7.4**
 
