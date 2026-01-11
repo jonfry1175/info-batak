@@ -14,7 +14,7 @@ export default function SejarahPage() {
       <PageHero
         title="Sejarah Batak"
         subtitle="Menelusuri jejak sejarah, asal usul, dan kekayaan budaya masyarakat Batak di Sumatera Utara"
-        backgroundImage="/images/homepage/hero-lake-toba.jpg"
+        backgroundImage="/images/sejarah/hero-sejarah.png"
       />
 
       <div className="w-full px-4 py-16">

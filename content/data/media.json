@@ -27,6 +27,19 @@
       "placeholder": false
     },
     {
+      "id": "hero-sejarah",
+      "src": "/images/sejarah/hero-sejarah.png",
+      "alt": "Lansekap Danau Toba purba saat matahari terbit dengan siluet rumah adat Batak",
+      "category": "Sejarah",
+      "subcategory": "Hero",
+      "photographer": "AI Generated",
+      "year": 2025,
+      "license": "Public Domain",
+      "description": "Cinematic landscape of ancient Lake Toba region at sunrise with traditional Batak houses in silhouette",
+      "keywords": ["sejarah", "batak", "danau toba", "landscape", "hero"],
+      "placeholder": false
+    },
+    {
       "id": "hero-lake-toba",
       "src": "/images/homepage/hero-lake-toba.jpg",
       "alt": "Pemandangan indah Danau Toba dengan pulau Samosir",
