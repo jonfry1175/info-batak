@@ -6,12 +6,12 @@ Implementasi fitur upload gambar untuk komentar di InfoBatak.id. Menggunakan Sup
 
 ## Tasks
 
-- [ ] 1. Setup database dan storage
-  - [ ] 1.1 Tambah kolom image_url di tabel comments
+- [x] 1. Setup database dan storage
+  - [x] 1.1 Tambah kolom image_url di tabel comments
     - Jalankan migration untuk menambah kolom `image_url TEXT DEFAULT NULL`
     - Tambah index untuk query optimization
     - _Requirements: 4.1_
-  - [ ] 1.2 Setup Supabase Storage bucket
+  - [x] 1.2 Setup Supabase Storage bucket
     - Buat bucket "comment-images" dengan public access
     - Setup RLS policies untuk upload (authenticated only) dan read (public)
     - _Requirements: 4.1, 4.3, 4.4_
