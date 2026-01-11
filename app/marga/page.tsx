@@ -7,6 +7,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Badge } from '@/components/ui/badge';
 import { MargaFilterVisual } from '@/components/marga/MargaFilterVisual';
 import { PageHero } from '@/components/layout/PageHero';
+import { PageDiscussion } from '@/components/discussion';
 import Link from 'next/link';
 
 export default function MargaPage() {
@@ -113,6 +114,9 @@ export default function MargaPage() {
               </p>
             </div>
           </div>
+
+          {/* Discussion Section */}
+          <PageDiscussion />
         </div>
       </div>
     </>

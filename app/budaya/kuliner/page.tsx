@@ -1,5 +1,7 @@
+import Image from 'next/image';
 import { Gallery } from '@/components/ui/Gallery';
 import { PageDiscussion } from '@/components/discussion';
+import { PageHero } from '@/components/layout/PageHero';
 import {
   getAllDishes,
   getAllDrinks,
@@ -23,296 +25,357 @@ export default function KulinerPage() {
   const soups = dishes.filter((d) => d.category === 'soup');
 
   return (
-    <div className="w-full px-4 py-12">
-      <div className="mx-auto max-w-5xl">
-        {/* Header */}
-        <h1 className="text-accent mb-6 text-4xl font-bold md:text-5xl">
-          Kuliner Tradisional Batak
-        </h1>
-        <p className="text-foreground/70 mb-12 text-lg leading-relaxed">
-          Kuliner Batak terkenal dengan cita rasa yang kuat, kaya rempah, dan unik. Penggunaan
-          <span className="font-semibold"> andaliman</span> (merica Batak) memberikan sensasi
-          kesemutan yang khas. Setiap hidangan tidak hanya lezat, tetapi juga sarat dengan makna
-          budaya dan filosofi kehidupan masyarakat Batak.
-        </p>
+    <>
+      <PageHero
+        title="Kuliner Tradisional Batak"
+        subtitle="Cita rasa rempah yang kuat, pedas, dan penuh makna budaya. Sebuah warisan leluhur yang menggugah selera."
+        backgroundImage="/images/budaya/kuliner/hero-kuliner.png"
+      />
 
-        {/* Signature Dishes Grid */}
-        <section className="mb-16">
-          <h2 className="mb-6 text-3xl font-bold">Hidangan Utama</h2>
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-            {mainDishes.map((dish) => (
-              <div key={dish.id} className="bg-foreground/5 overflow-hidden rounded-lg">
-                <div className="p-6">
-                  <h3 className="text-accent mb-2 text-2xl font-semibold">{dish.name}</h3>
-                  {dish.alternateName && (
-                    <p className="text-foreground/60 mb-4 text-sm italic">{dish.alternateName}</p>
-                  )}
-                  <p className="text-foreground/70 mb-4 leading-relaxed">{dish.description}</p>
+      <div className="w-full px-4 py-12">
+        <div className="mx-auto max-w-5xl">
+          {/* Header Description - Removed as it's now partly in Hero, but let's keep a brief intro if needed, or rely on Hero subtitle */
+          /* Keeping a small intro text below hero is good for SEO and context */
+          }
+          <div className="mb-16 text-center">
+             <p className="mx-auto max-w-3xl text-lg leading-relaxed text-foreground/80">
+              Kuliner Batak terkenal dengan penggunaan bumbu yang khas seperti 
+              <span className="font-semibold text-accent"> andaliman</span> (merica Batak) yang memberikan 
+              sensasi kesemutan. Setiap hidangan tidak hanya lezat, tetapi juga sarat dengan 
+              filosofi kehidupan masyarakat Batak, mempererat persaudaraan dalam konsep Dalihan Na Tolu.
+            </p>
+          </div>
 
-                  <div className="mb-4">
-                    <h4 className="text-accent mb-2 text-sm font-semibold">Rasa:</h4>
-                    <p className="text-foreground/70 text-sm">{dish.taste}</p>
+          {/* Signature Dishes Grid */}
+          <section className="mb-20">
+            <h2 className="mb-8 flex items-center gap-3 text-3xl font-bold">
+              <span className="h-8 w-2 rounded-full bg-accent"></span>
+              Hidangan Utama
+            </h2>
+            
+            {/* Featured Image for Main Dishes */}
+            <div className="relative mb-10 h-[400px] w-full overflow-hidden rounded-2xl shadow-xl">
+               <Image
+                 src="/images/budaya/kuliner/arsik.png"
+                 alt="Arsik Ikan Mas"
+                 fill
+                 className="object-cover transition-transform duration-700 hover:scale-105"
+               />
+               <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-6">
+                 <p className="text-xl font-bold text-white">Arsik Ikan Mas</p>
+                 <p className="text-white/80">Simbol keberkatan dan kehidupan dalam budaya Batak</p>
+               </div>
+            </div>
+
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+              {mainDishes.map((dish) => (
+                <div key={dish.id} className="group overflow-hidden rounded-xl border border-foreground/10 bg-background shadow-sm transition-all hover:shadow-md">
+                  <div className="p-6">
+                    <div className="mb-4 flex items-start justify-between">
+                      <div>
+                        <h3 className="text-2xl font-bold text-accent group-hover:underline decoration-accent/30 underline-offset-4">{dish.name}</h3>
+                        {dish.alternateName && (
+                          <p className="text-sm italic text-foreground/60">{dish.alternateName}</p>
+                        )}
+                      </div>
+                      <div className="rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent">
+                        Utama
+                      </div>
+                    </div>
+                    
+                    <p className="mb-6 leading-relaxed text-foreground/70">{dish.description}</p>
+
+                    <div className="mb-6 grid grid-cols-2 gap-4">
+                      <div className="rounded-lg bg-foreground/5 p-3">
+                        <h4 className="mb-1 text-xs font-semibold text-accent uppercase tracking-wider">Rasa</h4>
+                        <p className="text-sm text-foreground/80">{dish.taste}</p>
+                      </div>
+                      <div className="rounded-lg bg-foreground/5 p-3">
+                         <h4 className="mb-1 text-xs font-semibold text-accent uppercase tracking-wider">Bumbu Utama</h4>
+                         <p className="text-sm text-foreground/80 truncate">{dish.mainIngredients.slice(0, 3).join(', ')}...</p>
+                      </div>
+                    </div>
+
+                    <div className="border-t border-dashed border-foreground/20 pt-4">
+                      <h4 className="mb-2 flex items-center text-sm font-semibold text-accent">
+                        <span className="mr-2">💡</span> Makna Budaya
+                      </h4>
+                      <p className="text-sm text-foreground/70">{dish.significance}</p>
+                    </div>
                   </div>
+                </div>
+              ))}
+            </div>
+          </section>
 
-                  <div className="mb-4">
-                    <h4 className="text-accent mb-2 text-sm font-semibold">Bahan Utama:</h4>
-                    <div className="flex flex-wrap gap-2">
-                      {dish.mainIngredients.slice(0, 5).map((ingredient, idx) => (
-                        <span
-                          key={idx}
-                          className="bg-accent/20 text-accent rounded-full px-3 py-1 text-xs"
-                        >
-                          {ingredient}
-                        </span>
-                      ))}
-                      {dish.mainIngredients.length > 5 && (
-                        <span className="text-foreground/60 text-xs">
-                          +{dish.mainIngredients.length - 5} lainnya
-                        </span>
+          {/* Andaliman Highlight */}
+          <section className="mb-20 overflow-hidden rounded-2xl bg-gradient-to-br from-background to-foreground/5 shadow-lg ring-1 ring-foreground/10">
+            <div className="grid grid-cols-1 md:grid-cols-2">
+              <div className="relative h-64 min-h-[300px] w-full md:h-full">
+                <Image
+                  src="/images/budaya/kuliner/andaliman.png"
+                  alt="Andaliman Fresh"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-8 md:p-12">
+                <div className="mb-4 inline-block rounded-full bg-accent/10 px-4 py-1.5 text-sm font-semibold text-accent">
+                  Rempah Khas Batak
+                </div>
+                <h2 className="mb-4 text-3xl font-bold text-foreground">
+                  {kulinerData.ingredients.andaliman.name}
+                </h2>
+                <h3 className="mb-6 text-xl font-medium text-foreground/60 italic">
+                  "{kulinerData.ingredients.andaliman.scientificName}"
+                </h3>
+                
+                <p className="mb-8 text-lg leading-relaxed text-foreground/80">
+                  {kulinerData.ingredients.andaliman.description}
+                </p>
+
+                <div className="space-y-6">
+                  <div>
+                    <h4 className="mb-2 text-sm font-bold uppercase tracking-widest text-accent">Karakteristik Rasa</h4>
+                    <p className="text-foreground/70">
+                      {kulinerData.ingredients.andaliman.taste}
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="mb-2 text-sm font-bold uppercase tracking-widest text-accent">Penggunaan</h4>
+                    <p className="text-foreground/70">
+                      {kulinerData.ingredients.andaliman.usage}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Tuak Section */}
+          <section className="mb-20">
+            <h2 className="mb-8 flex items-center gap-3 text-3xl font-bold">
+              <span className="h-8 w-2 rounded-full bg-accent"></span>
+              Tuak: Minuman Tradisi
+            </h2>
+            
+            {drinks
+              .filter((drink) => drink.id === 'tuak')
+              .map((drink) => (
+                <div key={drink.id} className="overflow-hidden rounded-2xl bg-foreground/5 dark:bg-foreground/10">
+                  <div className="grid grid-cols-1 lg:grid-cols-2">
+                    <div className="p-8 lg:p-12">
+                      <h3 className="mb-4 text-3xl font-bold text-accent">{drink.name}</h3>
+                      <p className="mb-8 text-lg leading-relaxed text-foreground/80">{drink.description}</p>
+                      
+                      <div className="mb-8 grid grid-cols-2 gap-6">
+                        <div className="rounded-xl bg-background p-4 shadow-sm">
+                           <span className="block text-xs font-bold uppercase text-accent">Rasa</span>
+                           <span className="text-lg font-medium">{drink.taste}</span>
+                        </div>
+                        <div className="rounded-xl bg-background p-4 shadow-sm">
+                           <span className="block text-xs font-bold uppercase text-accent">Kadar Alkohol</span>
+                           <span className="text-lg font-medium">{drink.alcoholContent}</span>
+                        </div>
+                      </div>
+
+                      <div className="space-y-4">
+                        <h4 className="font-semibold text-foreground">Peran dalam Budaya:</h4>
+                        <ul className="space-y-3">
+                          {drink.culturalRole?.map((role, idx) => (
+                            <li key={idx} className="flex items-start gap-3">
+                              <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-accent flex-shrink-0"></span>
+                              <span className="text-foreground/80">{role}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                    
+                    <div className="relative h-[400px] min-h-full lg:h-auto">
+                      <Image
+                        src="/images/budaya/kuliner/tuak.png"
+                        alt="Tuak Batak Traditional Drink"
+                        fill
+                        className="object-cover"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent p-8 flex items-end">
+                         <p className="text-white/90 italic font-medium">"{drink.tradition}"</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+          </section>
+
+           {/* Appetizers & Soups */}
+           {appetizers.length > 0 && (
+            <section className="mb-20">
+              <h2 className="mb-8 flex items-center gap-3 text-3xl font-bold">
+                <span className="h-8 w-2 rounded-full bg-accent"></span>
+                Hidangan Pembuka & Sayur
+              </h2>
+              <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+                {[...appetizers, ...soups].map((dish) => (
+                  <div key={dish.id} className="flex flex-col rounded-xl border border-foreground/10 bg-card p-6 shadow-sm transition-all hover:shadow-md hover:border-accent/30">
+                    <h3 className="mb-2 text-xl font-bold text-foreground">{dish.name}</h3>
+                    <p className="mb-4 flex-grow text-sm leading-relaxed text-foreground/70">
+                      {dish.description}
+                    </p>
+                    <div className="mt-auto">
+                      <div className="mb-3 inline-block rounded bg-accent/10 px-2 py-1 text-xs font-medium text-accent">
+                        {dish.taste}
+                      </div>
+                      {dish.healthNote && (
+                        <p className="text-xs italic text-foreground/50 border-l-2 border-accent/50 pl-2">
+                          {dish.healthNote}
+                        </p>
                       )}
                     </div>
                   </div>
+                ))}
+              </div>
+            </section>
+          )}
 
-                  <div className="bg-accent/10 rounded p-4">
-                    <h4 className="text-accent mb-1 text-sm font-semibold">Makna Budaya:</h4>
-                    <p className="text-foreground/80 text-sm">{dish.significance}</p>
-                  </div>
-
-                  {dish.culturalNote && (
-                    <div className="mt-4">
-                      <p className="text-foreground/70 text-sm italic">"{dish.culturalNote}"</p>
+          {/* Ceremonial Foods */}
+          {ceremonialFoods.length > 0 && (
+            <section className="mb-20">
+              <div className="mb-8 text-center">
+                 <h2 className="mb-4 text-3xl font-bold">Makanan Upacara Adat</h2>
+                 <p className="mx-auto max-w-2xl text-foreground/70">
+                  Simbolisme dalam setiap suguhan, melambangkan doa, harapan, dan struktur sosial Dalihan Na Tolu.
+                 </p>
+              </div>
+              
+              <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+                {ceremonialFoods.map((food, index) => (
+                  <div key={food.id} className={`relative flex flex-col overflow-hidden rounded-2xl ${index % 2 === 0 ? 'bg-accent/5' : 'bg-foreground/5'} p-8`}>
+                    <div className="mb-4 flex items-center justify-between">
+                      <h3 className="text-2xl font-bold text-accent">{food.name}</h3>
+                      <span className="rounded-full bg-background px-3 py-1 text-xs font-bold uppercase tracking-wider text-foreground shadow-sm">
+                        Sakral
+                      </span>
                     </div>
-                  )}
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Appetizers & Soups */}
-        {appetizers.length > 0 && (
-          <section className="mb-16">
-            <h2 className="mb-6 text-3xl font-bold">Hidangan Pembuka & Sayur</h2>
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-              {[...appetizers, ...soups].map((dish) => (
-                <div key={dish.id} className="bg-foreground/5 rounded-lg p-6">
-                  <h3 className="text-accent mb-2 text-xl font-semibold">{dish.name}</h3>
-                  <p className="text-foreground/70 mb-4 text-sm leading-relaxed">
-                    {dish.description}
-                  </p>
-                  <div className="bg-accent/10 rounded p-3">
-                    <p className="text-foreground/80 text-xs">
-                      <span className="font-semibold">Rasa:</span> {dish.taste}
-                    </p>
-                  </div>
-                  {dish.healthNote && (
-                    <p className="text-foreground/60 mt-3 text-xs italic">💡 {dish.healthNote}</p>
-                  )}
-                </div>
-              ))}
-            </div>
-          </section>
-        )}
-
-        {/* Andaliman Highlight */}
-        <section className="mb-16">
-          <h2 className="mb-6 text-3xl font-bold">Andaliman: Rempah Khas Batak</h2>
-          <div className="bg-accent/10 border-accent rounded-lg border-l-4 p-8">
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-              <div className="md:col-span-2">
-                <h3 className="text-accent mb-3 text-2xl font-semibold">
-                  {kulinerData.ingredients.andaliman.name}
-                </h3>
-                <p className="text-foreground/80 mb-4 leading-relaxed">
-                  {kulinerData.ingredients.andaliman.description}
-                </p>
-                <div className="mb-4">
-                  <h4 className="text-accent mb-2 text-sm font-semibold">Karakteristik Rasa:</h4>
-                  <p className="text-foreground/70 text-sm">
-                    {kulinerData.ingredients.andaliman.taste}
-                  </p>
-                </div>
-                <div className="bg-foreground/5 rounded p-4">
-                  <h4 className="text-accent mb-2 text-sm font-semibold">Penggunaan:</h4>
-                  <p className="text-foreground/80 text-sm">
-                    {kulinerData.ingredients.andaliman.usage}
-                  </p>
-                </div>
-              </div>
-              <div className="flex flex-col justify-center">
-                <div className="bg-foreground/5 rounded-lg p-4 text-center">
-                  <p className="text-accent mb-2 text-sm font-semibold">Nama Ilmiah</p>
-                  <p className="text-foreground/70 text-xs italic">
-                    {kulinerData.ingredients.andaliman.scientificName}
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Tuak Section */}
-        <section className="mb-16">
-          <h2 className="mb-6 text-3xl font-bold">Tuak: Minuman Sakral Batak</h2>
-          {drinks
-            .filter((drink) => drink.id === 'tuak')
-            .map((drink) => (
-              <div key={drink.id} className="bg-foreground/5 rounded-lg p-8">
-                <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-                  <div>
-                    <h3 className="text-accent mb-4 text-2xl font-semibold">{drink.name}</h3>
-                    <p className="text-foreground/70 mb-6 leading-relaxed">{drink.description}</p>
-
-                    <div className="mb-4">
-                      <h4 className="text-accent mb-2 text-sm font-semibold">Proses Pembuatan:</h4>
-                      <p className="text-foreground/70 text-sm">{drink.process}</p>
-                    </div>
-
-                    <div className="grid grid-cols-2 gap-4">
-                      <div className="bg-background rounded p-3">
-                        <p className="text-accent mb-1 text-xs font-semibold">Rasa</p>
-                        <p className="text-foreground/70 text-xs">{drink.taste}</p>
-                      </div>
-                      <div className="bg-background rounded p-3">
-                        <p className="text-accent mb-1 text-xs font-semibold">Kadar Alkohol</p>
-                        <p className="text-foreground/70 text-xs">{drink.alcoholContent}</p>
-                      </div>
+                    <p className="mb-2 text-sm font-semibold text-foreground/80">Acara: {food.occasion}</p>
+                    <p className="mb-6 text-foreground/70">{food.description}</p>
+                    
+                    <div className="mt-auto rounded-xl bg-background/50 p-4 backdrop-blur-sm">
+                      <p className="text-sm italic text-foreground/80">
+                        <span className="font-bold text-accent">Makna:</span> {food.significance}
+                      </p>
                     </div>
                   </div>
+                ))}
+              </div>
+            </section>
+          )}
 
-                  <div>
-                    <h4 className="text-accent mb-3 text-lg font-semibold">Peran Budaya</h4>
-                    <div className="space-y-3">
-                      {drink.culturalRole?.map((role, idx) => (
-                        <div key={idx} className="bg-accent/10 flex items-start rounded p-3">
-                          <span className="text-accent mr-2">•</span>
-                          <span className="text-foreground/80 text-sm">{role}</span>
+          {/* Cooking Philosophy */}
+          <section className="mb-20 rounded-3xl bg-foreground/5 p-8 md:p-12">
+            <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
+               <div>
+                  <h2 className="mb-6 text-3xl font-bold">Filosofi Kuliner</h2>
+                  <p className="mb-8 text-lg leading-relaxed text-foreground/70">
+                    {kulinerData.cookingPhilosophy.description}
+                  </p>
+                  
+                  <div className="space-y-6">
+                    {kulinerData.cookingPhilosophy.principles.map((principle: any, index: number) => (
+                      <div key={index} className="flex gap-4">
+                        <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-circle bg-accent text-xl font-bold text-white rounded-full">
+                          {index + 1}
                         </div>
-                      ))}
-                    </div>
-
-                    <div className="bg-accent/10 mt-6 rounded p-4">
-                      <h4 className="text-accent mb-2 text-sm font-semibold">Tradisi:</h4>
-                      <p className="text-foreground/80 text-sm italic">{drink.tradition}</p>
-                    </div>
+                        <div>
+                          <h3 className="mb-1 text-lg font-bold text-foreground">{principle.name}</h3>
+                          <p className="text-foreground/70 text-sm leading-relaxed">
+                            {principle.explanation}
+                          </p>
+                        </div>
+                      </div>
+                    ))}
                   </div>
-                </div>
-              </div>
-            ))}
-        </section>
-
-        {/* Ceremonial Foods */}
-        {ceremonialFoods.length > 0 && (
-          <section className="mb-16">
-            <h2 className="mb-6 text-3xl font-bold">Makanan Upacara Adat</h2>
-            <p className="text-foreground/70 mb-8 leading-relaxed">
-              Makanan tertentu memiliki peran khusus dalam upacara adat Batak, melambangkan berbagi
-              berkat dan kebersamaan.
-            </p>
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-              {ceremonialFoods.map((food) => (
-                <div key={food.id} className="bg-foreground/5 rounded-lg p-6">
-                  <h3 className="text-accent mb-2 text-xl font-semibold">{food.name}</h3>
-                  <p className="text-foreground/60 mb-4 text-sm">Acara: {food.occasion}</p>
-                  <p className="text-foreground/70 mb-4 text-sm leading-relaxed">
-                    {food.description}
-                  </p>
-                  <div className="bg-accent/10 rounded p-4">
-                    <p className="text-accent mb-1 text-xs font-semibold">Makna:</p>
-                    <p className="text-foreground/80 text-sm">{food.significance}</p>
-                  </div>
-                  {food.tradition && (
-                    <p className="text-foreground/70 mt-4 text-xs italic">{food.tradition}</p>
-                  )}
-                </div>
-              ))}
+               </div>
+               <div className="relative min-h-[300px] overflow-hidden rounded-2xl">
+                 <Image 
+                   src="/images/budaya/adat/dalihan-na-tolu.png"
+                   alt="Filosofi Batak"
+                   fill
+                   className="object-cover opacity-80"
+                 />
+                 <div className="absolute inset-0 bg-accent/10 mix-blend-multiply"></div>
+               </div>
             </div>
           </section>
-        )}
 
-        {/* Cooking Philosophy */}
-        <section className="mb-16">
-          <h2 className="mb-6 text-3xl font-bold">Filosofi Kuliner Batak</h2>
-          <p className="text-foreground/70 mb-8 leading-relaxed">
-            {kulinerData.cookingPhilosophy.description}
-          </p>
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-            {kulinerData.cookingPhilosophy.principles.map((principle: any, index: number) => (
-              <div key={index} className="bg-foreground/5 rounded-lg p-6">
-                <h3 className="text-accent mb-3 text-lg font-semibold">{principle.name}</h3>
-                <p className="text-foreground/70 text-sm leading-relaxed">
-                  {principle.explanation}
-                </p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Dining Etiquette */}
-        <section className="mb-16">
-          <h2 className="mb-6 text-3xl font-bold">Tata Cara Makan</h2>
-          <div className="bg-accent/10 border-accent rounded-lg border-l-4 p-8">
-            <p className="text-foreground/80 mb-6 leading-relaxed">
-              {kulinerData.diningEtiquette.description}
-            </p>
-            <div className="space-y-3">
-              {kulinerData.diningEtiquette.rules.map((rule: string, index: number) => (
-                <div key={index} className="bg-foreground/5 flex items-start rounded p-4">
-                  <span className="text-accent mr-3 text-lg">→</span>
-                  <span className="text-foreground/80 text-sm">{rule}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Regional Variations */}
-        <section className="mb-16">
-          <h2 className="mb-6 text-3xl font-bold">Variasi Regional</h2>
-          <p className="text-foreground/70 mb-8 leading-relaxed">
-            {kulinerData.regionalVariations.description}
-          </p>
-          <div className="grid grid-cols-1 gap-6">
-            {kulinerData.regionalVariations.variations.map((region: any, index: number) => (
-              <div key={index} className="bg-foreground/5 rounded-lg p-6">
-                <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
-                  <div>
-                    <h3 className="text-accent mb-2 text-xl font-semibold">{region.region}</h3>
-                    <p className="text-foreground/70 text-sm">{region.characteristics}</p>
+          {/* Dining Etiquette */}
+          <section className="mb-20">
+            <h2 className="mb-8 flex items-center gap-3 text-3xl font-bold">
+              <span className="h-8 w-2 rounded-full bg-accent"></span>
+              Tata Cara Makan
+            </h2>
+            <div className="rounded-2xl border border-accent/20 bg-accent/5 p-8 md:p-10">
+              <p className="mb-8 text-lg font-medium text-foreground/80">
+                {kulinerData.diningEtiquette.description}
+              </p>
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                {kulinerData.diningEtiquette.rules.map((rule: string, index: number) => (
+                  <div key={index} className="flex items-center gap-4 rounded-lg bg-background p-4 shadow-sm">
+                    <span className="flex h-8 w-8 items-center justify-center rounded-full bg-accent/10 text-accent text-lg">✓</span>
+                    <span className="text-sm font-medium text-foreground/80">{rule}</span>
                   </div>
-                  <div className="md:col-span-2">
-                    <h4 className="text-accent mb-2 text-sm font-semibold">Hidangan Khas:</h4>
-                    <div className="flex flex-wrap gap-2">
-                      {region.specialty.map((dish: string, idx: number) => (
-                        <span
-                          key={idx}
-                          className="bg-accent/20 text-accent rounded-full px-3 py-1 text-xs"
-                        >
-                          {dish}
-                        </span>
-                      ))}
+                ))}
+              </div>
+            </div>
+          </section>
+
+          {/* Regional Variations */}
+          <section className="mb-20">
+             <div className="mb-8 flex items-end justify-between border-b pb-4">
+               <div>
+                 <h2 className="text-3xl font-bold">Variasi Regional</h2>
+                 <p className="mt-2 text-foreground/60">{kulinerData.regionalVariations.description}</p>
+               </div>
+             </div>
+             
+             <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+                {kulinerData.regionalVariations.variations.map((region: any, index: number) => (
+                  <div key={index} className="group relative overflow-hidden rounded-xl bg-gradient-to-br from-foreground/5 to-foreground/10 p-6 transition-all hover:-translate-y-1 hover:shadow-lg">
+                    <div className="absolute right-0 top-0 -mt-4 -mr-4 h-24 w-24 rounded-full bg-accent/10 transition-transform group-hover:scale-150"></div>
+                    
+                    <h3 className="relative z-10 mb-2 text-2xl font-bold text-accent">{region.region}</h3>
+                    <p className="relative z-10 mb-4 text-sm text-foreground/70">{region.characteristics}</p>
+                    
+                    <div className="relative z-10">
+                      <h4 className="mb-2 text-xs font-bold text-foreground/50 uppercase">Hidangan Khas</h4>
+                      <div className="flex flex-wrap gap-2">
+                        {region.specialty.map((dish: string, idx: number) => (
+                          <span
+                            key={idx}
+                            className="rounded-md bg-background/80 px-2 py-1 text-xs font-medium text-foreground shadow-sm backdrop-blur-sm"
+                          >
+                            {dish}
+                          </span>
+                        ))}
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Gallery Section */}
-        {kulinerImages.length > 0 && (
-          <section className="mb-16">
-            <h2 className="mb-6 text-3xl font-bold">Galeri Kuliner Batak</h2>
-            <p className="text-foreground/70 mb-6">
-              Koleksi foto hidangan tradisional Batak yang menggugah selera.
-            </p>
-            <Gallery images={kulinerImages} columns={3} aspectRatio="square" showCredits={true} />
+                ))}
+            </div>
           </section>
-        )}
 
-        {/* Discussion Section */}
-        <PageDiscussion />
+          {/* Gallery Section */}
+          {kulinerImages.length > 0 && (
+            <section className="mb-20">
+              <h2 className="mb-8 text-center text-3xl font-bold">Galeri Kuliner Batak</h2>
+              <Gallery images={kulinerImages} columns={3} aspectRatio="square" showCredits={true} />
+            </section>
+          )}
+
+          {/* Discussion Section */}
+          <PageDiscussion />
+        </div>
       </div>
-    </div>
+    </>
   );
 }

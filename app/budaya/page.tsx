@@ -1,5 +1,6 @@
 import { MediaCard, MediaCardGrid } from '@/components/ui/MediaCard';
 import { PageHero } from '@/components/layout/PageHero';
+import { PageDiscussion } from '@/components/discussion';
 
 export default function BudayaPage() {
   const budayaCategories = [
@@ -192,6 +193,9 @@ export default function BudayaPage() {
               </div>
             </div>
           </section>
+
+          {/* Discussion Section */}
+          <PageDiscussion />
         </div>
       </div>
     </>

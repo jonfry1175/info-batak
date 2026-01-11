@@ -1,4 +1,5 @@
 import { PageHero } from '@/components/layout/PageHero';
+import { PageDiscussion } from '@/components/discussion';
 
 export default function TentangPage() {
   return (
@@ -148,6 +149,8 @@ export default function TentangPage() {
             </div>
           </section>
 
+          {/* Discussion Section */}
+          <PageDiscussion />
         </div>
       </div>
     </>

@@ -343,6 +343,71 @@
       "description": "Close up of text in Pustaha Laklak Rambe",
       "keywords": ["batak", "pustaha", "text", "script"],
       "placeholder": false
+    },
+    {
+      "id": "hero-kuliner",
+      "src": "/images/budaya/kuliner/hero-kuliner.png",
+      "alt": "Hidangan tradisional Batak yang lezat",
+      "category": "Budaya",
+      "subcategory": "Kuliner",
+      "photographer": "AI Generated",
+      "year": 2025,
+      "license": "Public Domain",
+      "description": "Majestic spread of Batak traditional food including Arsik and Saksang",
+      "keywords": ["batak", "kuliner", "food", "arsik", "saksang"],
+      "placeholder": false
+    },
+    {
+      "id": "kuliner-arsik",
+      "src": "/images/budaya/kuliner/arsik.png",
+      "alt": "Arsik Ikan Mas",
+      "category": "Budaya",
+      "subcategory": "Kuliner",
+      "photographer": "AI Generated",
+      "year": 2025,
+      "license": "Public Domain",
+      "description": "Close up details of Arsik Ikan Mas with yellow sauce",
+      "keywords": ["batak", "arsik", "ikan mas", "kuliner"],
+      "placeholder": false
+    },
+    {
+      "id": "kuliner-andaliman",
+      "src": "/images/budaya/kuliner/andaliman.png",
+      "alt": "Andaliman (Merica Batak)",
+      "category": "Budaya",
+      "subcategory": "Kuliner",
+      "photographer": "AI Generated",
+      "year": 2025,
+      "license": "Public Domain",
+      "description": "Macro photography of fresh green Andaliman peppers",
+      "keywords": ["batak", "andaliman", "spice", "pepper"],
+      "placeholder": false
+    },
+    {
+      "id": "kuliner-tuak",
+      "src": "/images/budaya/kuliner/tuak.png",
+      "alt": "Tuak dalam gelas bambu",
+      "category": "Budaya",
+      "subcategory": "Kuliner",
+      "photographer": "AI Generated",
+      "year": 2025,
+      "license": "Public Domain",
+      "description": "Traditional Tuak drink served in bamboo cup",
+      "keywords": ["batak", "tuak", "drink", "bamboo"],
+      "placeholder": false
+    },
+    {
+       "id": "kuliner-illustration-filosofi",
+       "src": "/images/budaya/adat/dalihan-na-tolu.png",
+       "alt": "Filosofi Batak illustration",
+       "category": "Budaya",
+       "subcategory": "Kuliner",
+       "photographer": "AI Generated",
+       "year": 2025,
+       "license": "Public Domain",
+       "description": "Illustration reused for philosophy",
+       "keywords": ["batak", "filosofi"],
+       "placeholder": false
     }
   ],
   "videos": [
