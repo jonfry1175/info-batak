@@ -8,7 +8,7 @@ export default function AdatIstiadatPage() {
       <PageHero
         title="Adat Istiadat Batak"
         subtitle="Memahami nilai-nilai filosofis dan tradisi yang mengatur kehidupan masyarakat Batak"
-        backgroundImage="/images/homepage/card-adat.jpg"
+        backgroundImage="/images/budaya/adat/hero-adat.png"
       />
 
       <div className="relative w-full overflow-hidden">

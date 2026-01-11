@@ -1,4 +1,5 @@
 import { PageDiscussion } from '@/components/discussion';
+import { PageHero } from '@/components/layout/PageHero';
 import {
   getAllDialects,
   getCommonPhrases,
@@ -15,7 +16,13 @@ export default function BahasaPage() {
   const bahasaData = getBahasaData();
 
   return (
-    <div className="w-full px-4 py-12">
+    <>
+      <PageHero
+        title="Bahasa Batak"
+        subtitle="Identitas dan kekayaan tutur kata masyarakat Batak yang penuh makna dan filosofi"
+        backgroundImage="/images/budaya/bahasa/hero-bahasa.png"
+      />
+      <div className="w-full px-4 py-12">
       <div className="mx-auto max-w-5xl">
         {/* Header */}
         <h1 className="text-accent mb-6 text-4xl font-bold md:text-5xl">Bahasa Batak</h1>
@@ -425,5 +432,6 @@ export default function BahasaPage() {
         <PageDiscussion />
       </div>
     </div>
+    </>
   );
 }

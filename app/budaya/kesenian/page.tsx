@@ -31,7 +31,7 @@ export default function KesenianPage() {
       <PageHero
         title="Kesenian Batak"
         subtitle="Menjelajahi kekayaan seni musik, tari, dan kerajinan tradisional Batak yang sarat makna dan filosofi"
-        backgroundImage="/images/homepage/card-kesenian.jpg"
+        backgroundImage="/images/budaya/kesenian/hero-kesenian.png"
       />
 
       <div className="bg-background w-full pt-16 pb-20">
