@@ -149,6 +149,34 @@ export default function TentangPage() {
             </div>
           </section>
 
+          {/* Hubungi Kami */}
+          <section className="mb-16">
+            <h2 className="mb-6 text-center text-3xl font-bold">Hubungi Kami</h2>
+            <div className="bg-foreground/5 border-foreground/10 rounded-lg border p-8 text-center">
+              <p className="text-foreground/80 mb-6 text-lg">
+                Punya pertanyaan, saran, atau ingin berkontribusi? Jangan ragu untuk menghubungi kami.
+              </p>
+              <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-6 sm:space-y-0">
+                <a
+                  href="mailto:jonfrymarbun@gmail.com"
+                  className="bg-accent hover:bg-accent/90 inline-flex items-center rounded-lg px-6 py-3 font-semibold text-white transition-colors"
+                >
+                  <span className="mr-2">✉️</span>
+                  Kirim Email
+                </a>
+                <a
+                  href="https://instagram.com/jonfry1175"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border-foreground/20 hover:bg-foreground/5 text-foreground inline-flex items-center rounded-lg border px-6 py-3 font-semibold transition-colors"
+                >
+                  <span className="mr-2">📱</span>
+                  Instagram
+                </a>
+              </div>
+            </div>
+          </section>
+
           {/* Discussion Section */}
           <PageDiscussion />
         </div>

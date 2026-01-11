@@ -44,7 +44,7 @@ Implementasi fitur upload gambar untuk komentar di InfoBatak.id. Menggunakan Sup
     - Handle errors gracefully
     - _Requirements: 3.3_
 
-- [ ] 3. Checkpoint - Validasi utilities
+- [x] 3. Checkpoint - Validasi utilities
   - Ensure all tests pass, ask the user if questions arise.
 
 - [ ] 4. Implementasi useImageUpload hook
