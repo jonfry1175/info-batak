@@ -16,30 +16,30 @@ Implementasi fitur upload gambar untuk komentar di InfoBatak.id. Menggunakan Sup
     - Setup RLS policies untuk upload (authenticated only) dan read (public)
     - _Requirements: 4.1, 4.3, 4.4_
 
-- [ ] 2. Implementasi image upload utilities
-  - [ ] 2.1 Buat fungsi validasi file di `lib/image-upload.ts`
+- [x] 2. Implementasi image upload utilities
+  - [x] 2.1 Buat fungsi validasi file di `lib/image-upload.ts`
     - Validasi MIME type (JPEG, PNG, GIF, WebP)
     - Validasi file size (max 5MB)
     - Return error codes untuk pesan Indonesia
     - _Requirements: 1.2, 1.3, 1.4, 1.5_
-  - [ ] 2.2 Write property test untuk file validation
+  - [x] 2.2 Write property test untuk file validation
     - **Property 1: File Type Validation**
     - **Property 2: File Size Validation**
     - **Validates: Requirements 1.2, 1.3**
-  - [ ] 2.3 Buat fungsi generate storage path
+  - [x] 2.3 Buat fungsi generate storage path
     - Format: `{user_id}/{uuid}.{extension}`
     - Gunakan crypto.randomUUID() untuk unique filename
     - _Requirements: 4.2, 4.5_
-  - [ ] 2.4 Write property test untuk storage path generation
+  - [x] 2.4 Write property test untuk storage path generation
     - **Property 4: Unique Filename Generation**
     - **Property 5: Storage Path Structure**
     - **Validates: Requirements 4.2, 4.5**
-  - [ ] 2.5 Buat fungsi upload image ke Supabase Storage
+  - [x] 2.5 Buat fungsi upload image ke Supabase Storage
     - Upload file ke bucket "comment-images"
     - Return public URL setelah upload sukses
     - Handle errors dengan error codes
     - _Requirements: 1.7, 4.1_
-  - [ ] 2.6 Buat fungsi delete image dari Storage
+  - [x] 2.6 Buat fungsi delete image dari Storage
     - Delete file berdasarkan path
     - Handle errors gracefully
     - _Requirements: 3.3_
