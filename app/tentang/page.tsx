@@ -1,4 +1,5 @@
 import { PageHero } from '@/components/layout/PageHero';
+import { PageDiscussion } from '@/components/discussion';
 
 export default function TentangPage() {
   return (
@@ -148,13 +149,8 @@ export default function TentangPage() {
             </div>
           </section>
 
-          {/* Tech Stack (Optional) */}
-          <section className="text-center">
-            <p className="text-foreground/60 text-sm">
-              Website ini dibangun dengan teknologi modern: Next.js, TypeScript, Tailwind CSS, dan
-              Framer Motion untuk memberikan pengalaman terbaik kepada Anda.
-            </p>
-          </section>
+          {/* Discussion Section */}
+          <PageDiscussion />
         </div>
       </div>
     </>

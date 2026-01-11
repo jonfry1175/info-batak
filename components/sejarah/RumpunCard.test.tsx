@@ -69,12 +69,12 @@ describe('Property 1: Card Rendering Completeness', () => {
     );
   });
 
-  it('should render "Pelajari lebih lanjut" text for every rumpun', () => {
+  it('should render "Jelajahi Budaya" text for every rumpun', () => {
     fc.assert(
       fc.property(fc.constantFrom(...allRumpun), (rumpun: RumpunBatak) => {
         render(<RumpunCard rumpun={rumpun} />);
 
-        const readMoreText = screen.getByText('Pelajari lebih lanjut');
+        const readMoreText = screen.getByText('Jelajahi Budaya');
         expect(readMoreText).toBeInTheDocument();
 
         // Clean up after each iteration

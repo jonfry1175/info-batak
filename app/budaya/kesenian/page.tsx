@@ -6,11 +6,15 @@ import { PageHero } from '@/components/layout/PageHero';
 import { MediaCard } from '@/components/ui/MediaCard';
 import { Button } from '@/components/ui/button';
 import { UmpasaUmpamaSection } from '@/components/ui/UmpasaUmpamaSection';
+import { DiscussionSection } from '@/components/discussion';
 import Link from 'next/link';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 import { PlayCircle, Music, Move, Scissors, BookOpen } from 'lucide-react';
 
 export default function KesenianPage() {
+  const pathname = usePathname();
+  
   // Get images for galleries
   const gondangImages = getImagesByCategory('Budaya', 'Gondang');
   const tortorImages = getImagesByCategory('Budaya', 'Tortor');
@@ -27,7 +31,7 @@ export default function KesenianPage() {
       <PageHero
         title="Kesenian Batak"
         subtitle="Menjelajahi kekayaan seni musik, tari, dan kerajinan tradisional Batak yang sarat makna dan filosofi"
-        backgroundImage="/images/homepage/card-kesenian.jpg"
+        backgroundImage="/images/budaya/kesenian/hero-kesenian.png"
       />
 
       <div className="bg-background w-full pt-16 pb-20">
@@ -320,6 +324,9 @@ export default function KesenianPage() {
 
           {/* Sastra Lisan */}
           <UmpasaUmpamaSection />
+
+          {/* Discussion Section */}
+          <DiscussionSection pagePath={pathname} />
         </div>
       </div>
     </>

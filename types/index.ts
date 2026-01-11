@@ -503,3 +503,51 @@ export interface AuthState {
   loading: boolean;
   error: string | null;
 }
+
+// Discussion types
+export interface Comment {
+  id: string;
+  user_id: string;
+  page_path: string;
+  content: string;
+  parent_id: string | null;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface CommentWithUser extends Comment {
+  user: {
+    display_name: string | null;
+    avatar_url: string | null;
+  };
+  like_count: number;
+  is_liked: boolean;
+}
+
+export interface CommentWithReplies extends CommentWithUser {
+  replies: CommentWithUser[];
+}
+
+export interface CommentLike {
+  id: string;
+  user_id: string;
+  comment_id: string;
+  created_at: string;
+}
+
+export type DiscussionError =
+  | 'AUTH_REQUIRED'
+  | 'VALIDATION_ERROR'
+  | 'NOT_FOUND'
+  | 'FORBIDDEN'
+  | 'NETWORK_ERROR'
+  | 'SERVER_ERROR';
+
+export const discussionErrorMessages: Record<DiscussionError, string> = {
+  AUTH_REQUIRED: 'Silakan login untuk melanjutkan.',
+  VALIDATION_ERROR: 'Komentar tidak valid.',
+  NOT_FOUND: 'Komentar tidak ditemukan.',
+  FORBIDDEN: 'Anda tidak memiliki izin untuk aksi ini.',
+  NETWORK_ERROR: 'Tidak dapat terhubung. Periksa koneksi internet.',
+  SERVER_ERROR: 'Terjadi kesalahan. Silakan coba lagi.',
+};

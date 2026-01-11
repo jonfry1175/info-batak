@@ -4,11 +4,13 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { ChevronLeft, MapPin } from 'lucide-react';
+import { usePathname } from 'next/navigation';
 import { MapEmbed } from '@/components/sejarah/MapEmbed';
 import { SejarahSection } from '@/components/sejarah/SejarahSection';
 import { BudayaSection } from '@/components/sejarah/BudayaSection';
 import { TokohCard } from '@/components/sejarah/TokohCard';
 import { TableOfContents, defaultRumpunSections } from '@/components/sejarah/TableOfContents';
+import { DiscussionSection } from '@/components/discussion';
 import type { RumpunBatakEnhanced, MapMarker } from '@/types';
 
 // Animation variants for sections
@@ -68,6 +70,7 @@ interface RumpunDetailClientProps {
 }
 
 export function RumpunDetailClient({ rumpun }: RumpunDetailClientProps) {
+  const pathname = usePathname();
   // Generate map markers from landmarks and kabupaten
   const mapMarkers: MapMarker[] = [
     // Center marker
@@ -285,6 +288,16 @@ export function RumpunDetailClient({ rumpun }: RumpunDetailClientProps) {
                 </div>
               )}
             </motion.section>
+
+            {/* Discussion Section */}
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: '-100px' }}
+              variants={sectionVariants}
+            >
+              <DiscussionSection pagePath={pathname} />
+            </motion.div>
           </main>
         </div>
       </div>

@@ -1,4 +1,6 @@
 import { Gallery } from '@/components/ui/Gallery';
+import { PageHero } from '@/components/layout/PageHero';
+import { PageDiscussion } from '@/components/discussion';
 import {
   getMensAttire,
   getWomensAttire,
@@ -18,7 +20,13 @@ export default function PakaianAdatPage() {
   const ulosImages = getImagesByCategory('Budaya', 'Ulos');
 
   return (
-    <div className="w-full px-4 py-12">
+    <>
+      <PageHero
+        title="Pakaian Adat Batak"
+        subtitle="Keagungan tenun Ulos dan busana tradisional yang memancarkan identitas budaya"
+        backgroundImage="/images/budaya/pakaian/hero-pakaian.png"
+      />
+      <div className="w-full px-4 py-12">
       <div className="mx-auto max-w-5xl">
         {/* Header */}
         <h1 className="text-accent mb-6 text-4xl font-bold md:text-5xl">Pakaian Adat Batak</h1>
@@ -372,7 +380,11 @@ export default function PakaianAdatPage() {
             <Gallery images={ulosImages} columns={4} aspectRatio="square" showCredits={true} />
           </section>
         )}
+
+        {/* Discussion Section */}
+        <PageDiscussion />
       </div>
     </div>
+    </>
   );
 }

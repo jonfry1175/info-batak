@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { Badge } from '@/components/ui/badge';
 import { getAllMargaSlugs, getFullMargaBySlug, getMargaBySlug } from '@/lib/data';
 import { MargaDetail } from '@/types';
+import { MargaDiscussion } from './MargaDiscussion';
 
 type Params = { slug: string };
 
@@ -267,6 +268,9 @@ export default async function MargaDetailPage({ params }: { params: Promise<Para
             </div>
           </section>
         )}
+
+        {/* Discussion Section */}
+        <MargaDiscussion />
 
         {/* Back Navigation */}
         <div className="flex justify-center">

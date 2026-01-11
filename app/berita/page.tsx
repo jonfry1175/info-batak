@@ -7,6 +7,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { getAllBerita, getFeaturedBerita } from '@/lib/data';
 import { BeritaKategori } from '@/types';
 import { PageHero } from '@/components/layout/PageHero';
+import { PageDiscussion } from '@/components/discussion';
 
 const kategoriList: BeritaKategori[] = [
   'Budaya',
@@ -60,6 +61,11 @@ export default function BeritaPage() {
             filteredBerita={filteredBerita}
             formatTanggal={formatTanggal}
           />
+
+          {/* Discussion Section */}
+          <div className="mt-16">
+            <PageDiscussion />
+          </div>
         </div>
       </div>
     </>

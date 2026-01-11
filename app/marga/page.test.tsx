@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { render, cleanup } from '@testing-library/react';
+import { render, cleanup } from '@/lib/test-utils';
 import * as fc from 'fast-check';
 import MargaPage from './page';
 import { getAllMarga } from '@/lib/data';

@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import { MediaCard } from '@/components/ui/MediaCard';
 import { Hero } from '@/components/home/Hero';
 import { PhilosophySection } from '@/components/home/PhilosophySection';
+import { PageDiscussion } from '@/components/discussion';
 import { getLatestBerita } from '@/lib/data';
 
 export default function Home() {
@@ -194,6 +195,13 @@ export default function Home() {
               Lihat Semua Berita →
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* Discussion Section */}
+      <section className="bg-background px-4 py-24">
+        <div className="container mx-auto max-w-4xl">
+          <PageDiscussion />
         </div>
       </section>
     </div>

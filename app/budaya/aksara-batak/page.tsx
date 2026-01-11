@@ -1,6 +1,7 @@
 import { Gallery } from '@/components/ui/Gallery';
 import { getImagesByCategory } from '@/lib/data';
 import { PageHero } from '@/components/layout/PageHero';
+import { PageDiscussion } from '@/components/discussion';
 import Image from 'next/image';
 
 export default function AksaraBatakPage() {
@@ -241,6 +242,9 @@ export default function AksaraBatakPage() {
               dengan mempelajari, menggunakan, dan mengajarkannya kepada generasi selanjutnya.
             </p>
           </section>
+
+          {/* Discussion Section */}
+          <PageDiscussion />
         </div>
       </div>
     </>

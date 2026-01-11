@@ -795,12 +795,12 @@
         "deskripsi": "Seniman yang melestarikan musik Simalungun."
       }
     ],
-    "relatedMargas": ["saragih", "sinaga"],
+    "relatedMargas": ["saragih", "sinaga-simalungun"],
     "updatedAt": "2025-01-10"
   },
   {
     "margaId": "14",
-    "slug": "sinaga",
+    "slug": "sinaga-simalungun",
     "sejarah": "Di Simalungun, Sinaga adalah salah satu dari empat marga raja (SISADAPUR). Berbeda dengan Toba, Sinaga Simalungun memiliki sejarah kerajaan di Batangiou dan Tanah Jawa.",
     "asalUsul": "Leluhur Sinaga di Simalungun dikaitkan dengan Raja Saniang Naga dari Kerajaan Batangiou. Mereka memiliki wilayah kedaulatan sendiri sebelum integrasi wilayah.",
     "tarombo": {

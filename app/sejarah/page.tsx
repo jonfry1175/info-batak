@@ -2,6 +2,7 @@ import { Sidebar } from '@/components/layout/Sidebar';
 import { RumpunCard } from '@/components/sejarah/RumpunCard';
 import { getAllRumpun } from '@/lib/data';
 import { PageHero } from '@/components/layout/PageHero';
+import { PageDiscussion } from '@/components/discussion';
 import { BookOpen, Users, MapPin, History } from 'lucide-react';
 import Link from 'next/link';
 
@@ -13,7 +14,7 @@ export default function SejarahPage() {
       <PageHero
         title="Sejarah Batak"
         subtitle="Menelusuri jejak sejarah, asal usul, dan kekayaan budaya masyarakat Batak di Sumatera Utara"
-        backgroundImage="/images/homepage/hero-lake-toba.jpg"
+        backgroundImage="/images/sejarah/hero-sejarah.png"
       />
 
       <div className="w-full px-4 py-16">
@@ -101,6 +102,9 @@ export default function SejarahPage() {
                   </div>
                 </div>
               </section>
+
+              {/* Discussion Section */}
+              <PageDiscussion />
             </div>
 
             {/* Sidebar */}

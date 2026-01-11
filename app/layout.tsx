@@ -25,7 +25,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="id" suppressHydrationWarning>
-      <body className="flex min-h-screen flex-col antialiased">
+      <body className="flex min-h-screen flex-col antialiased relative">
+        {/* Global Background Pattern */}
+        <div className="bg-gorga-pattern pointer-events-none fixed inset-0 z-[-1] opacity-[0.03]" />
         <ThemeProvider>
           <AuthProvider>
             <Navbar />
