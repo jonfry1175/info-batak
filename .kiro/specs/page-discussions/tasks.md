@@ -147,7 +147,7 @@ Implementasi fitur diskusi per halaman untuk InfoBatak.id menggunakan TypeScript
     - **Property 13: Cascade Delete** - Deleting parent deletes replies
     - **Validates: Requirements 5.3**
 
-- [ ] 11. Final Checkpoint
+- [x] 11. Final Checkpoint
   - Ensure all tests pass
   - Verify all requirements are met
   - Ask the user if questions arise
