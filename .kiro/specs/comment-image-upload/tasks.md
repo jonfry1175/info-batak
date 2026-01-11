@@ -47,41 +47,41 @@ Implementasi fitur upload gambar untuk komentar di InfoBatak.id. Menggunakan Sup
 - [x] 3. Checkpoint - Validasi utilities
   - Ensure all tests pass, ask the user if questions arise.
 
-- [ ] 4. Implementasi useImageUpload hook
-  - [ ] 4.1 Buat hook `useImageUpload` di `hooks/useImageUpload.ts`
+- [x] 4. Implementasi useImageUpload hook
+  - [x] 4.1 Buat hook `useImageUpload` di `hooks/useImageUpload.ts`
     - State: selectedFile, previewUrl, isUploading, uploadProgress, error
     - Actions: selectImage, removeImage, uploadImage, resetState
     - Generate preview URL dengan URL.createObjectURL
     - Cleanup preview URL on unmount
     - _Requirements: 1.6, 3.1, 3.2, 5.2, 5.3_
-  - [ ] 4.2 Write property test untuk preview state management
+  - [x] 4.2 Write property test untuk preview state management
     - **Property 6: Preview State Management**
     - **Validates: Requirements 3.2**
 
-- [ ] 5. Implementasi UI components
-  - [ ] 5.1 Buat komponen ImageUpload di `components/discussion/ImageUpload.tsx`
+- [x] 5. Implementasi UI components
+  - [x] 5.1 Buat komponen ImageUpload di `components/discussion/ImageUpload.tsx`
     - File input dengan accept untuk image types
     - Drag-and-drop support
     - Icon button untuk trigger file picker
     - Theme-aware styling (light/dark mode)
     - _Requirements: 1.1, 5.1, 5.4, 5.5_
-  - [ ] 5.2 Buat komponen ImagePreview di `components/discussion/ImagePreview.tsx`
+  - [x] 5.2 Buat komponen ImagePreview di `components/discussion/ImagePreview.tsx`
     - Tampilkan thumbnail preview
     - Remove button untuk hapus gambar
     - Loading indicator saat upload
     - _Requirements: 1.6, 3.1, 5.2, 5.6_
-  - [ ] 5.3 Buat komponen CommentImage di `components/discussion/CommentImage.tsx`
+  - [x] 5.3 Buat komponen CommentImage di `components/discussion/CommentImage.tsx`
     - Tampilkan gambar dengan lazy loading
     - Click handler untuk buka lightbox
     - Error placeholder jika gagal load
     - _Requirements: 2.1, 2.2, 2.4, 2.5_
-  - [ ] 5.4 Buat komponen Lightbox di `components/discussion/Lightbox.tsx`
+  - [x] 5.4 Buat komponen Lightbox di `components/discussion/Lightbox.tsx`
     - Modal full-screen untuk gambar
     - Close button dan click outside to close
     - Keyboard support (Escape to close)
     - _Requirements: 2.3_
 
-- [ ] 6. Checkpoint - Validasi UI components
+- [-] 6. Checkpoint - Validasi UI components
   - Ensure all tests pass, ask the user if questions arise.
 
 - [ ] 7. Integrasi dengan sistem diskusi
