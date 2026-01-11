@@ -107,8 +107,8 @@ Implementasi fitur upload gambar untuk komentar di InfoBatak.id. Menggunakan Sup
     - **Property 7: Cascade Delete Storage**
     - **Validates: Requirements 3.3**
 
-- [-] 8. Update types
-  - [-] 8.1 Update TypeScript types di `types/index.ts`
+- [x] 8. Update types
+  - [x] 8.1 Update TypeScript types di `types/index.ts`
     - Tambah image_url ke Comment interface
     - Tambah ImageUploadError type
     - Tambah imageErrorMessages constant

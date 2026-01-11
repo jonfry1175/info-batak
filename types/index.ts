@@ -552,3 +552,21 @@ export const discussionErrorMessages: Record<DiscussionError, string> = {
   NETWORK_ERROR: 'Tidak dapat terhubung. Periksa koneksi internet.',
   SERVER_ERROR: 'Terjadi kesalahan. Silakan coba lagi.',
 };
+
+// Image Upload types
+export type ImageUploadError =
+  | 'INVALID_TYPE'
+  | 'FILE_TOO_LARGE'
+  | 'NO_FILE'
+  | 'AUTH_REQUIRED'
+  | 'UPLOAD_FAILED'
+  | 'DELETE_FAILED';
+
+export const imageErrorMessages: Record<ImageUploadError, string> = {
+  INVALID_TYPE: 'Format file tidak didukung. Gunakan JPEG, PNG, GIF, atau WebP.',
+  FILE_TOO_LARGE: 'Ukuran file terlalu besar. Maksimal 5MB.',
+  NO_FILE: 'Tidak ada file yang dipilih.',
+  AUTH_REQUIRED: 'Silakan login untuk mengupload gambar.',
+  UPLOAD_FAILED: 'Gagal mengupload gambar. Silakan coba lagi.',
+  DELETE_FAILED: 'Gagal menghapus gambar.',
+};

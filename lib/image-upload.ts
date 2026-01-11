@@ -4,6 +4,11 @@
  */
 
 import { getSupabaseClient } from './supabase';
+import type { ImageUploadError } from '@/types';
+
+// Re-export types from central types file
+export type { ImageUploadError } from '@/types';
+export { imageErrorMessages } from '@/types';
 
 // ============================================================================
 // Constants
@@ -21,27 +26,6 @@ export const MAX_FILE_SIZE = 5 * 1024 * 1024; // 5MB in bytes
 export const STORAGE_BUCKET = 'comment-images';
 
 export type AllowedImageType = (typeof ALLOWED_IMAGE_TYPES)[number];
-
-// ============================================================================
-// Error Types and Messages
-// ============================================================================
-
-export type ImageUploadError =
-    | 'INVALID_TYPE'
-    | 'FILE_TOO_LARGE'
-    | 'NO_FILE'
-    | 'AUTH_REQUIRED'
-    | 'UPLOAD_FAILED'
-    | 'DELETE_FAILED';
-
-export const imageErrorMessages: Record<ImageUploadError, string> = {
-    INVALID_TYPE: 'Format file tidak didukung. Gunakan JPEG, PNG, GIF, atau WebP.',
-    FILE_TOO_LARGE: 'Ukuran file terlalu besar. Maksimal 5MB.',
-    NO_FILE: 'Tidak ada file yang dipilih.',
-    AUTH_REQUIRED: 'Silakan login untuk mengupload gambar.',
-    UPLOAD_FAILED: 'Gagal mengupload gambar. Silakan coba lagi.',
-    DELETE_FAILED: 'Gagal menghapus gambar.',
-};
 
 // ============================================================================
 // Validation Types
