@@ -50,7 +50,7 @@ export async function fetchComments(
             .from('comments')
             .select(`
         *,
-        profiles!comments_user_id_fkey (
+        profiles!comments_user_id_profiles_fkey (
           display_name,
           avatar_url
         )
@@ -84,7 +84,7 @@ export async function fetchComments(
             .from('comments')
             .select(`
         *,
-        profiles!comments_user_id_fkey (
+        profiles!comments_user_id_profiles_fkey (
           display_name,
           avatar_url
         )
