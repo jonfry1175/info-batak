@@ -126,9 +126,9 @@ describe('Property 3: Conditional Section Rendering', () => {
           if (detail?.relatedMargas?.length) {
             expect(screen.getByText('Marga Terkait')).toBeInTheDocument();
             detail.relatedMargas.forEach((slugRelated) => {
-              expect(
-                screen.getByRole('link', { name: new RegExp(slugRelated, 'i') })
-              ).toBeInTheDocument();
+              // Check by href since link text shows marga name, not slug
+              const link = document.querySelector(`a[href="/marga/${slugRelated}"]`);
+              expect(link).toBeInTheDocument();
             });
           } else {
             expect(screen.queryByText('Marga Terkait')).not.toBeInTheDocument();
