@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import { PageDiscussion } from '@/components/discussion';
 import { PageHero } from '@/components/layout/PageHero';
 import {
@@ -7,6 +8,31 @@ import {
   getKinshipTerms,
   getBahasaData,
 } from '@/lib/data';
+
+export const metadata: Metadata = {
+  title: 'Bahasa Batak - Dialek, Umpasa, Kosakata & Sistem Kekerabatan',
+  description:
+    'Pelajari bahasa Batak: dialek Toba, Karo, Simalungun, Angkola, Mandailing; frasa umum, umpasa (peribahasa), sistem kekerabatan Dalihan Na Tolu, dan tradisi sastra lisan Pustaha.',
+  keywords: [
+    'bahasa batak',
+    'dialek batak toba',
+    'umpasa batak',
+    'kosakata batak',
+    'belajar bahasa batak',
+    'partuturon batak',
+    'horas batak',
+  ],
+  openGraph: {
+    title: 'Bahasa Batak - Dialek & Tradisi Lisan',
+    description:
+      'Ragam dialek bahasa Batak, umpasa, dan sistem kekerabatan yang kaya makna filosofis.',
+    url: 'https://infobatak.id/budaya/bahasa',
+    images: ['/images/budaya/bahasa/hero-bahasa.png'],
+  },
+  alternates: {
+    canonical: 'https://infobatak.id/budaya/bahasa',
+  },
+};
 
 export default function BahasaPage() {
   const dialects = getAllDialects();

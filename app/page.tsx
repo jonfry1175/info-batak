@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { TahukahKamu } from '@/components/ui/TahukahKamu';
@@ -8,6 +9,21 @@ import { Hero } from '@/components/home/Hero';
 import { PhilosophySection } from '@/components/home/PhilosophySection';
 import { PageDiscussion } from '@/components/discussion';
 import { getLatestBerita } from '@/lib/data';
+
+export const metadata: Metadata = {
+  title: 'InfoBatak.id - Portal Budaya Batak Terlengkap | Sejarah, Marga, Adat',
+  description:
+    'Temukan kekayaan budaya Batak: sistem marga lengkap (170+ marga), sejarah 6 rumpun Batak, aksara Batak, adat istiadat Dalihan Na Tolu, ulos, tortor, dan kuliner tradisional. Portal edukasi budaya Batak terlengkap di Indonesia.',
+  openGraph: {
+    title: 'InfoBatak.id - Portal Budaya Batak Terlengkap',
+    description:
+      'Portal edukasi budaya Batak terlengkap. Pelajari sejarah, sistem marga, adat istiadat, aksara, dan kekayaan budaya dari 6 rumpun Batak.',
+    url: 'https://infobatak.id',
+  },
+  alternates: {
+    canonical: 'https://infobatak.id',
+  },
+};
 
 export default function Home() {
   const latestBerita = getLatestBerita(3);

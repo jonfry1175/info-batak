@@ -1,8 +1,34 @@
+import { Metadata } from 'next';
 import { Gallery } from '@/components/ui/Gallery';
 import { getImagesByCategory } from '@/lib/data';
 import { PageHero } from '@/components/layout/PageHero';
 import { PageDiscussion } from '@/components/discussion';
 import Image from 'next/image';
+
+export const metadata: Metadata = {
+  title: 'Aksara Batak - Sejarah, Panduan Membaca & Pustaha',
+  description:
+    'Pelajari Aksara Batak tradisional: Ina ni Surat (19 huruf dasar), Anak ni Surat (tanda diakritik), sejarah dari Pallava, dan media Pustaha. Termasuk dalam Unicode sejak 2010.',
+  keywords: [
+    'aksara batak',
+    'huruf batak',
+    'pustaha',
+    'ina ni surat',
+    'anak ni surat',
+    'tulisan batak',
+    'surat batak',
+  ],
+  openGraph: {
+    title: 'Aksara Batak - Warisan Tulisan Tradisional',
+    description:
+      'Panduan lengkap membaca dan memahami Aksara Batak tradisional yang digunakan dalam Pustaha.',
+    url: 'https://infobatak.id/budaya/aksara-batak',
+    images: ['/images/budaya/aksara/hero-aksara.png'],
+  },
+  alternates: {
+    canonical: 'https://infobatak.id/budaya/aksara-batak',
+  },
+};
 
 export default function AksaraBatakPage() {
   // Get images for Pustaha gallery

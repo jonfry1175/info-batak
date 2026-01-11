@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import { Sidebar } from '@/components/layout/Sidebar';
 import { RumpunCard } from '@/components/sejarah/RumpunCard';
 import { getAllRumpun } from '@/lib/data';
@@ -5,6 +6,31 @@ import { PageHero } from '@/components/layout/PageHero';
 import { PageDiscussion } from '@/components/discussion';
 import { BookOpen, Users, MapPin, History } from 'lucide-react';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'Sejarah Batak - Asal Usul & 6 Rumpun Suku Batak',
+  description:
+    'Pelajari sejarah lengkap suku Batak dari asal usul Si Raja Batak, Pusuk Buhit, hingga perkembangan 6 rumpun: Toba, Karo, Simalungun, Pakpak, Angkola, dan Mandailing. Sejarah migrasi dan penyebaran di Sumatera Utara.',
+  keywords: [
+    'sejarah batak',
+    'asal usul batak',
+    'si raja batak',
+    'pusuk buhit',
+    'rumpun batak',
+    'suku batak',
+    'sejarah danau toba',
+  ],
+  openGraph: {
+    title: 'Sejarah Batak - Asal Usul & 6 Rumpun Suku Batak',
+    description:
+      'Telusuri jejak sejarah suku Batak dari legenda Si Raja Batak hingga 6 rumpun di Sumatera Utara.',
+    url: 'https://infobatak.id/sejarah',
+    images: ['/images/sejarah/hero-sejarah.png'],
+  },
+  alternates: {
+    canonical: 'https://infobatak.id/sejarah',
+  },
+};
 
 export default function SejarahPage() {
   const rumpunList = getAllRumpun();

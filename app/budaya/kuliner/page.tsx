@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import Image from 'next/image';
 import { Gallery } from '@/components/ui/Gallery';
 import { PageDiscussion } from '@/components/discussion';
@@ -9,6 +10,32 @@ import {
   getKulinerData,
   getImagesByCategory,
 } from '@/lib/data';
+
+export const metadata: Metadata = {
+  title: 'Kuliner Batak - Arsik, Saksang, Naniura & Andaliman',
+  description:
+    'Temukan kuliner khas Batak: Arsik ikan mas, Saksang daging babi, Naniura (sashimi Batak), hidangan ceremonial, dengan bumbu andaliman yang khas. Filosofi dan tradisi makan masyarakat Batak.',
+  keywords: [
+    'makanan batak',
+    'arsik ikan mas',
+    'saksang',
+    'naniura',
+    'andaliman',
+    'tuak batak',
+    'kuliner batak',
+    'masakan batak',
+  ],
+  openGraph: {
+    title: 'Kuliner Batak - Cita Rasa Tradisional Sumatera Utara',
+    description:
+      'Hidangan khas Batak dengan bumbu andaliman dan filosofi mendalam dalam setiap sajian.',
+    url: 'https://infobatak.id/budaya/kuliner',
+    images: ['/images/budaya/kuliner/hero-kuliner.png'],
+  },
+  alternates: {
+    canonical: 'https://infobatak.id/budaya/kuliner',
+  },
+};
 
 export default function KulinerPage() {
   const dishes = getAllDishes();
