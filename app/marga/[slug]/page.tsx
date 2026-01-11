@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
@@ -10,6 +11,49 @@ type Params = { slug: string };
 
 export async function generateStaticParams() {
   return getAllMargaSlugs().map((slug) => ({ slug }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<Params> | Params;
+}): Promise<Metadata> {
+  const resolvedParams = await params;
+  const marga = getFullMargaBySlug(resolvedParams.slug);
+
+  if (!marga) {
+    return {
+      title: 'Marga Tidak Ditemukan',
+    };
+  }
+
+  const title = `Marga ${marga.nama} - Sejarah, Asal Usul & Tokoh | Batak ${marga.rumpun}`;
+  const description =
+    marga.deskripsi ||
+    `Pelajari sejarah dan asal usul marga ${marga.nama} dari rumpun Batak ${marga.rumpun}. Temukan informasi lengkap tentang tarombo, wilayah asal, tradisi, dan tokoh terkenal bermarga ${marga.nama}.`;
+
+  return {
+    title,
+    description,
+    keywords: [
+      `marga ${marga.nama.toLowerCase()}`,
+      `arti marga ${marga.nama.toLowerCase()}`,
+      `sejarah marga ${marga.nama.toLowerCase()}`,
+      `batak ${marga.rumpun.toLowerCase()}`,
+      `marga batak ${marga.rumpun.toLowerCase()}`,
+      'marga batak',
+      'silsilah batak',
+    ],
+    openGraph: {
+      title,
+      description,
+      url: `https://infobatak.id/marga/${resolvedParams.slug}`,
+      images: ['/images/homepage/card-marga.jpg'],
+    },
+    alternates: {
+      canonical: `https://infobatak.id/marga/${resolvedParams.slug}`,
+    },
+  };
 }
 
 export default async function MargaDetailPage({ params }: { params: Promise<Params> | Params }) {

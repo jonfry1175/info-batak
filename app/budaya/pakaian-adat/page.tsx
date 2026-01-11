@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import { Gallery } from '@/components/ui/Gallery';
 import { PageHero } from '@/components/layout/PageHero';
 import { PageDiscussion } from '@/components/discussion';
@@ -8,6 +9,31 @@ import {
   getPakaianData,
   getImagesByCategory,
 } from '@/lib/data';
+
+export const metadata: Metadata = {
+  title: 'Pakaian Adat Batak - Ulos, Mangulosi & Busana Tradisional',
+  description:
+    'Pelajari pakaian adat Batak: filosofi Ulos yang sakral, tradisi Mangulosi, busana pria (Tali-tali, Hende) dan wanita, jenis-jenis ulos (Ragidup, Sadum, Sibolang), dan simbolisme warna.',
+  keywords: [
+    'ulos batak',
+    'pakaian adat batak',
+    'mangulosi',
+    'kain tenun batak',
+    'ulos ragidup',
+    'busana tradisional batak',
+    'ulos sadum',
+  ],
+  openGraph: {
+    title: 'Pakaian Adat Batak - Ulos & Busana Tradisional',
+    description:
+      'Kain Ulos yang sakral dan pakaian adat Batak dengan filosofi mendalam dalam setiap motif.',
+    url: 'https://infobatak.id/budaya/pakaian-adat',
+    images: ['/images/budaya/pakaian/hero-pakaian.png'],
+  },
+  alternates: {
+    canonical: 'https://infobatak.id/budaya/pakaian-adat',
+  },
+};
 
 const SectionImage = ({ src, alt, caption }: { src: string; alt: string; caption?: string }) => (
   <div className="mb-8 overflow-hidden rounded-xl border border-foreground/10 bg-background shadow-lg">

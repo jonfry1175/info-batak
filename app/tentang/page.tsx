@@ -1,5 +1,21 @@
+import { Metadata } from 'next';
 import { PageHero } from '@/components/layout/PageHero';
 import { PageDiscussion } from '@/components/discussion';
+
+export const metadata: Metadata = {
+  title: 'Tentang InfoBatak.id - Misi Pelestarian Budaya Batak',
+  description:
+    'InfoBatak.id adalah portal digital yang berkomitmen melestarikan dan mengedukasi tentang sejarah, budaya, adat, aksara, dan sistem marga Batak untuk generasi muda dan masyarakat luas.',
+  openGraph: {
+    title: 'Tentang InfoBatak.id',
+    description:
+      'Portal digital pelestarian budaya Batak dengan konten edukatif dan akurat.',
+    url: 'https://infobatak.id/tentang',
+  },
+  alternates: {
+    canonical: 'https://infobatak.id/tentang',
+  },
+};
 
 export default function TentangPage() {
   return (
