@@ -11,7 +11,7 @@ interface CommentListProps {
   replyingTo: string | null;
   onReply: (commentId: string) => void;
   onCancelReply: () => void;
-  onSubmitReply: (content: string) => Promise<boolean>;
+  onSubmitReply: (content: string, imageUrl?: string) => Promise<boolean>;
   onLike: (commentId: string) => Promise<boolean>;
   onDelete: (commentId: string) => Promise<boolean>;
   hasMore: boolean;

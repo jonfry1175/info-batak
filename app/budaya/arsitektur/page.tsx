@@ -1,9 +1,35 @@
+import { Metadata } from 'next';
 import { Gallery } from '@/components/ui/Gallery';
 import { PageHero } from '@/components/layout/PageHero';
 import { PageDiscussion } from '@/components/discussion';
 import Image from 'next/image';
 import { getAllHouseTypes, getConstructionTechniques, getArsitekturData } from '@/lib/data';
 import { getImagesByCategory } from '@/lib/data';
+
+export const metadata: Metadata = {
+  title: 'Arsitektur Batak - Ruma Bolon, Sopo & Teknik Konstruksi',
+  description:
+    'Jelajahi arsitektur tradisional Batak: Ruma Bolon dengan atap perahu terbalik, Sopo lumbung padi, teknik konstruksi tanpa paku, simbolisme kosmologi, dan ukiran Gorga. Warisan arsitektur yang megah.',
+  keywords: [
+    'rumah adat batak',
+    'ruma bolon',
+    'sopo batak',
+    'arsitektur batak',
+    'rumah panggung batak',
+    'gorga batak',
+    'rumah tradisional batak',
+  ],
+  openGraph: {
+    title: 'Arsitektur Batak - Rumah Adat & Teknik Konstruksi',
+    description:
+      'Keagungan arsitektur tradisional Batak dengan konstruksi unik tanpa paku dan filosofi mendalam.',
+    url: 'https://infobatak.id/budaya/arsitektur',
+    images: ['/images/budaya/arsitektur/hero-arsitektur.png'],
+  },
+  alternates: {
+    canonical: 'https://infobatak.id/budaya/arsitektur',
+  },
+};
 
 export default function ArsitekturPage() {
   const houseTypes = getAllHouseTypes();

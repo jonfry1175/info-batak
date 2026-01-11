@@ -1,6 +1,33 @@
+import { Metadata } from 'next';
 import Image from 'next/image';
 import { PageHero } from '@/components/layout/PageHero';
 import { PageDiscussion } from '@/components/discussion';
+
+export const metadata: Metadata = {
+  title: 'Adat Istiadat Batak - Dalihan Na Tolu, Upacara & Nilai Budaya',
+  description:
+    'Pahami filosofi Dalihan Na Tolu (Hula-hula, Dongan Tubu, Boru), upacara adat Mangulosi, Horja, Saur Matua, dan nilai luhur budaya Batak: Hamoraon, Hagabeon, Hasangapon.',
+  keywords: [
+    'dalihan na tolu',
+    'adat istiadat batak',
+    'hula-hula',
+    'dongan tubu',
+    'boru',
+    'mangulosi',
+    'upacara batak',
+    'tradisi batak',
+  ],
+  openGraph: {
+    title: 'Adat Istiadat Batak - Dalihan Na Tolu & Tradisi',
+    description:
+      'Filosofi Dalihan Na Tolu dan berbagai upacara adat yang mengatur kehidupan masyarakat Batak.',
+    url: 'https://infobatak.id/budaya/adat-istiadat',
+    images: ['/images/budaya/adat/hero-adat.png'],
+  },
+  alternates: {
+    canonical: 'https://infobatak.id/budaya/adat-istiadat',
+  },
+};
 
 export default function AdatIstiadatPage() {
   return (

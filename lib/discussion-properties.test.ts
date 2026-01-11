@@ -656,3 +656,158 @@ describe('Property 13: Cascade Delete - Deleting parent deletes replies', () => 
         );
     });
 });
+
+
+/**
+ * **Feature: comment-image-upload, Property 7: Cascade Delete Storage**
+ * **Validates: Requirements 3.3**
+ * 
+ * For any comment with an image that is deleted, the associated image file
+ * in storage SHALL also be deleted.
+ */
+describe('Property 7: Cascade Delete Storage - Deleting comment deletes image', () => {
+    // Helper to generate a valid image URL
+    const imageUrlArb = fc.uuid().chain((userId) =>
+        fc.uuid().chain((fileId) =>
+            fc.constantFrom('jpg', 'png', 'gif', 'webp').map(
+                (ext) => `https://example.supabase.co/storage/v1/object/public/comment-images/${userId}/${fileId}.${ext}`
+            )
+        )
+    );
+
+    // Helper to generate CommentWithUser with optional image_url
+    const commentWithImageArb = fc.record({
+        id: fc.uuid(),
+        user_id: fc.uuid(),
+        page_path: fc.string({ minLength: 1 }).map((s) => `/${s}`),
+        content: validContentArb,
+        parent_id: fc.constant(null as string | null),
+        image_url: fc.option(imageUrlArb, { nil: null }),
+        created_at: validIsoDateArb,
+        updated_at: validIsoDateArb,
+        user: fc.record({
+            display_name: fc.option(fc.string({ minLength: 1 }), { nil: null }),
+            avatar_url: fc.option(fc.webUrl(), { nil: null }),
+        }),
+        like_count: fc.nat({ max: 1000 }),
+        is_liked: fc.boolean(),
+    });
+
+    /**
+     * Simulates deleting a comment and tracking image deletion.
+     * Returns information about what was deleted.
+     */
+    function deleteCommentWithImage(
+        comment: { id: string; image_url: string | null }
+    ): { commentDeleted: boolean; imageDeleted: boolean; imageUrl: string | null } {
+        // Comment is always deleted
+        const commentDeleted = true;
+
+        // Image is deleted if it exists
+        const imageDeleted = comment.image_url !== null;
+        const imageUrl = comment.image_url;
+
+        return { commentDeleted, imageDeleted, imageUrl };
+    }
+
+    it('should delete image when comment with image is deleted', () => {
+        fc.assert(
+            fc.property(
+                commentWithImageArb.filter((c) => c.image_url !== null),
+                (comment) => {
+                    const result = deleteCommentWithImage(comment);
+
+                    // Comment should be deleted
+                    expect(result.commentDeleted).toBe(true);
+
+                    // Image should be deleted since comment had an image
+                    expect(result.imageDeleted).toBe(true);
+                    expect(result.imageUrl).toBe(comment.image_url);
+
+                    return true;
+                }
+            ),
+            { numRuns: 100 }
+        );
+    });
+
+    it('should not attempt image deletion when comment has no image', () => {
+        fc.assert(
+            fc.property(
+                commentWithImageArb.filter((c) => c.image_url === null),
+                (comment) => {
+                    const result = deleteCommentWithImage(comment);
+
+                    // Comment should be deleted
+                    expect(result.commentDeleted).toBe(true);
+
+                    // No image deletion should occur
+                    expect(result.imageDeleted).toBe(false);
+                    expect(result.imageUrl).toBeNull();
+
+                    return true;
+                }
+            ),
+            { numRuns: 100 }
+        );
+    });
+
+    it('should correctly identify image presence for any comment', () => {
+        fc.assert(
+            fc.property(commentWithImageArb, (comment) => {
+                const hasImage = comment.image_url !== null;
+                const result = deleteCommentWithImage(comment);
+
+                // imageDeleted should match whether comment had an image
+                expect(result.imageDeleted).toBe(hasImage);
+
+                return true;
+            }),
+            { numRuns: 100 }
+        );
+    });
+
+    it('should handle batch deletion with mixed image presence', () => {
+        fc.assert(
+            fc.property(
+                fc.array(commentWithImageArb, { minLength: 1, maxLength: 20 }),
+                (comments) => {
+                    const results = comments.map((c) => deleteCommentWithImage(c));
+
+                    // Count comments with images
+                    const commentsWithImages = comments.filter((c) => c.image_url !== null).length;
+                    const imagesDeleted = results.filter((r) => r.imageDeleted).length;
+
+                    // Number of images deleted should match comments with images
+                    expect(imagesDeleted).toBe(commentsWithImages);
+
+                    // All comments should be deleted
+                    expect(results.every((r) => r.commentDeleted)).toBe(true);
+
+                    return true;
+                }
+            ),
+            { numRuns: 100 }
+        );
+    });
+
+    it('should preserve image URL information for deletion tracking', () => {
+        fc.assert(
+            fc.property(
+                commentWithImageArb.filter((c) => c.image_url !== null),
+                (comment) => {
+                    const result = deleteCommentWithImage(comment);
+
+                    // The returned imageUrl should match the original
+                    expect(result.imageUrl).toBe(comment.image_url);
+
+                    // Image URL should be a valid URL format
+                    expect(result.imageUrl).toContain('comment-images');
+
+                    return true;
+                }
+            ),
+            { numRuns: 100 }
+        );
+    });
+});

@@ -1,5 +1,21 @@
+import { Metadata } from 'next';
 import { PageHero } from '@/components/layout/PageHero';
 import { PageDiscussion } from '@/components/discussion';
+
+export const metadata: Metadata = {
+  title: 'Tentang InfoBatak.id - Misi Pelestarian Budaya Batak',
+  description:
+    'InfoBatak.id adalah portal digital yang berkomitmen melestarikan dan mengedukasi tentang sejarah, budaya, adat, aksara, dan sistem marga Batak untuk generasi muda dan masyarakat luas.',
+  openGraph: {
+    title: 'Tentang InfoBatak.id',
+    description:
+      'Portal digital pelestarian budaya Batak dengan konten edukatif dan akurat.',
+    url: 'https://infobatak.id/tentang',
+  },
+  alternates: {
+    canonical: 'https://infobatak.id/tentang',
+  },
+};
 
 export default function TentangPage() {
   return (
@@ -145,6 +161,34 @@ export default function TentangPage() {
                 <p className="text-accent text-center font-medium">
                   Mari bersama-sama melestarikan warisan budaya Batak untuk generasi mendatang.
                 </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Hubungi Kami */}
+          <section className="mb-16">
+            <h2 className="mb-6 text-center text-3xl font-bold">Hubungi Kami</h2>
+            <div className="bg-foreground/5 border-foreground/10 rounded-lg border p-8 text-center">
+              <p className="text-foreground/80 mb-6 text-lg">
+                Punya pertanyaan, saran, atau ingin berkontribusi? Jangan ragu untuk menghubungi kami.
+              </p>
+              <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-6 sm:space-y-0">
+                <a
+                  href="mailto:jonfrymarbun@gmail.com"
+                  className="bg-accent hover:bg-accent/90 inline-flex items-center rounded-lg px-6 py-3 font-semibold text-white transition-colors"
+                >
+                  <span className="mr-2">✉️</span>
+                  Kirim Email
+                </a>
+                <a
+                  href="https://instagram.com/jonfry1175"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border-foreground/20 hover:bg-foreground/5 text-foreground inline-flex items-center rounded-lg border px-6 py-3 font-semibold transition-colors"
+                >
+                  <span className="mr-2">📱</span>
+                  Instagram
+                </a>
               </div>
             </div>
           </section>

@@ -5,13 +5,16 @@ import { useAuth } from '@/components/AuthProvider';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
+import { ImageUpload } from './ImageUpload';
+import { ImagePreview } from './ImagePreview';
+import { useImageUpload } from '@/hooks/useImageUpload';
 
 const MAX_COMMENT_LENGTH = 1000;
 
 interface CommentFormProps {
   pagePath: string;
   parentId?: string;
-  onSubmit: (content: string) => Promise<boolean>;
+  onSubmit: (content: string, imageUrl?: string) => Promise<boolean>;
   onCancel?: () => void;
   placeholder?: string;
   autoFocus?: boolean;
@@ -26,6 +29,8 @@ interface CommentFormProps {
  * - 2.4: Clear input on success
  * - 2.5: Limit to 1000 characters
  * - 3.1: Show reply input when clicking reply
+ * - 1.7: Upload image before create comment (image upload)
+ * - 5.3: Disable submit while uploading (image upload)
  */
 export function CommentForm({
   pagePath,
@@ -41,12 +46,26 @@ export function CommentForm({
   const [error, setError] = useState<string | null>(null);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
+  // Image upload hook
+  const {
+    selectedFile,
+    previewUrl,
+    isUploading,
+    uploadProgress,
+    error: imageError,
+    selectImage,
+    removeImage,
+    uploadImage,
+    resetState: resetImageState,
+  } = useImageUpload();
+
   const isReply = !!parentId;
   const trimmedContent = content.trim();
   const charCount = trimmedContent.length;
   const isOverLimit = charCount > MAX_COMMENT_LENGTH;
   const isEmpty = charCount === 0;
-  const isDisabled = isEmpty || isOverLimit || isSubmitting;
+  // Disable submit when empty, over limit, submitting, or uploading
+  const isDisabled = isEmpty || isOverLimit || isSubmitting || isUploading;
 
   // Auto-focus for reply forms
   useEffect(() => {
@@ -72,10 +91,23 @@ export function CommentForm({
     setError(null);
 
     try {
-      const success = await onSubmit(trimmedContent);
+      // Upload image first if selected
+      let imageUrl: string | undefined;
+      if (selectedFile) {
+        const uploadedUrl = await uploadImage();
+        if (!uploadedUrl) {
+          // Upload failed, error is already set by the hook
+          setIsSubmitting(false);
+          return;
+        }
+        imageUrl = uploadedUrl;
+      }
+
+      const success = await onSubmit(trimmedContent, imageUrl);
       
       if (success) {
         setContent('');
+        resetImageState();
         // Reset textarea height
         if (textareaRef.current) {
           textareaRef.current.style.height = 'auto';
@@ -105,6 +137,23 @@ export function CommentForm({
     );
   }
 
+  /**
+   * Handles image selection from ImageUpload component.
+   */
+  const handleImageSelect = (file: File) => {
+    selectImage(file);
+  };
+
+  /**
+   * Handles image selection error.
+   */
+  const handleImageError = (errorMessage: string) => {
+    setError(errorMessage);
+  };
+
+  // Combined error from form or image upload
+  const displayError = error || imageError;
+
   return (
     <form 
       onSubmit={handleSubmit} 
@@ -116,7 +165,7 @@ export function CommentForm({
           value={content}
           onChange={(e) => setContent(e.target.value)}
           placeholder={placeholder}
-          disabled={isSubmitting || authLoading}
+          disabled={isSubmitting || authLoading || isUploading}
           rows={isReply ? 2 : 3}
           className={cn(
             'w-full resize-none rounded-lg border bg-background px-4 py-3 text-sm',
@@ -131,11 +180,22 @@ export function CommentForm({
         />
       </div>
 
+      {/* Image preview */}
+      {selectedFile && previewUrl && (
+        <ImagePreview
+          file={selectedFile}
+          previewUrl={previewUrl}
+          onRemove={removeImage}
+          isUploading={isUploading}
+          uploadProgress={uploadProgress}
+        />
+      )}
+
       {/* Character counter and error */}
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
-          {error && (
-            <p className="text-sm text-destructive">{error}</p>
+          {displayError && (
+            <p className="text-sm text-destructive">{displayError}</p>
           )}
         </div>
         <span 
@@ -150,25 +210,34 @@ export function CommentForm({
       </div>
 
       {/* Action buttons */}
-      <div className="flex items-center justify-end gap-2">
-        {isReply && onCancel && (
+      <div className="flex items-center justify-between">
+        {/* Image upload button */}
+        <ImageUpload
+          onImageSelect={handleImageSelect}
+          onError={handleImageError}
+          disabled={isSubmitting || isUploading || !!selectedFile}
+        />
+
+        <div className="flex items-center gap-2">
+          {isReply && onCancel && (
+            <Button
+              type="button"
+              variant="ghost"
+              size="sm"
+              onClick={onCancel}
+              disabled={isSubmitting || isUploading}
+            >
+              Batal
+            </Button>
+          )}
           <Button
-            type="button"
-            variant="ghost"
+            type="submit"
             size="sm"
-            onClick={onCancel}
-            disabled={isSubmitting}
+            disabled={isDisabled}
           >
-            Batal
+            {isSubmitting || isUploading ? 'Mengirim...' : isReply ? 'Balas' : 'Kirim'}
           </Button>
-        )}
-        <Button
-          type="submit"
-          size="sm"
-          disabled={isDisabled}
-        >
-          {isSubmitting ? 'Mengirim...' : isReply ? 'Balas' : 'Kirim'}
-        </Button>
+        </div>
       </div>
     </form>
   );

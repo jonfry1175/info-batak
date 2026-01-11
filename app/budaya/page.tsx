@@ -1,6 +1,34 @@
+import { Metadata } from 'next';
 import { MediaCard, MediaCardGrid } from '@/components/ui/MediaCard';
 import { PageHero } from '@/components/layout/PageHero';
 import { PageDiscussion } from '@/components/discussion';
+
+export const metadata: Metadata = {
+  title: 'Budaya Batak - Adat, Kesenian, Aksara, Arsitektur & Kuliner',
+  description:
+    'Jelajahi kekayaan budaya Batak: filosofi Dalihan Na Tolu, kesenian Tortor & Gondang, aksara tradisional, arsitektur Ruma Bolon, kuliner khas Arsik & Saksang, pakaian adat Ulos dan ragam bahasa Batak.',
+  keywords: [
+    'budaya batak',
+    'dalihan na tolu',
+    'tortor',
+    'gondang batak',
+    'aksara batak',
+    'rumah adat batak',
+    'ulos',
+    'makanan batak',
+    'adat istiadat batak',
+  ],
+  openGraph: {
+    title: 'Budaya Batak - Kekayaan Tradisi & Kesenian',
+    description:
+      'Eksplorasi lengkap budaya Batak: adat istiadat, kesenian, aksara, arsitektur, kuliner, pakaian, dan bahasa.',
+    url: 'https://infobatak.id/budaya',
+    images: ['/images/homepage/hero-tortor.jpg'],
+  },
+  alternates: {
+    canonical: 'https://infobatak.id/budaya',
+  },
+};
 
 export default function BudayaPage() {
   const budayaCategories = [

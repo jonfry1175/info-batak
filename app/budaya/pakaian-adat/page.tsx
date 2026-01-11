@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import { Gallery } from '@/components/ui/Gallery';
 import { PageHero } from '@/components/layout/PageHero';
 import { PageDiscussion } from '@/components/discussion';
@@ -8,6 +9,48 @@ import {
   getPakaianData,
   getImagesByCategory,
 } from '@/lib/data';
+
+export const metadata: Metadata = {
+  title: 'Pakaian Adat Batak - Ulos, Mangulosi & Busana Tradisional',
+  description:
+    'Pelajari pakaian adat Batak: filosofi Ulos yang sakral, tradisi Mangulosi, busana pria (Tali-tali, Hende) dan wanita, jenis-jenis ulos (Ragidup, Sadum, Sibolang), dan simbolisme warna.',
+  keywords: [
+    'ulos batak',
+    'pakaian adat batak',
+    'mangulosi',
+    'kain tenun batak',
+    'ulos ragidup',
+    'busana tradisional batak',
+    'ulos sadum',
+  ],
+  openGraph: {
+    title: 'Pakaian Adat Batak - Ulos & Busana Tradisional',
+    description:
+      'Kain Ulos yang sakral dan pakaian adat Batak dengan filosofi mendalam dalam setiap motif.',
+    url: 'https://infobatak.id/budaya/pakaian-adat',
+    images: ['/images/budaya/pakaian/hero-pakaian.png'],
+  },
+  alternates: {
+    canonical: 'https://infobatak.id/budaya/pakaian-adat',
+  },
+};
+
+const SectionImage = ({ src, alt, caption }: { src: string; alt: string; caption?: string }) => (
+  <div className="mb-8 overflow-hidden rounded-xl border border-foreground/10 bg-background shadow-lg">
+    <div className="relative aspect-video w-full overflow-hidden">
+      <img 
+        src={src} 
+        alt={alt} 
+        className="h-full w-full object-cover transition-transform duration-700 hover:scale-105" 
+      />
+    </div>
+    {caption && (
+      <div className="bg-foreground/5 p-3 text-center text-sm italic text-foreground/70 border-t border-foreground/5">
+        {caption}
+      </div>
+    )}
+  </div>
+);
 
 export default function PakaianAdatPage() {
   const mensAttire = getMensAttire();
@@ -41,6 +84,12 @@ export default function PakaianAdatPage() {
         <section className="mb-16">
           <h2 className="mb-6 text-3xl font-bold">Pakaian Adat Pria</h2>
           <p className="text-foreground/70 mb-8 leading-relaxed">{mensAttire.description}</p>
+          
+          <SectionImage 
+            src="/images/budaya/pakaian/pakaian-pria-visual.png" 
+            alt="Pakaian Adat Pria Batak"
+            caption="Busana adat pria Batak melambangkan wibawa dan kepemimpinan"
+          />
 
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {mensAttire.components.map((component) => (
@@ -85,6 +134,12 @@ export default function PakaianAdatPage() {
         <section className="mb-16">
           <h2 className="mb-6 text-3xl font-bold">Pakaian Adat Wanita</h2>
           <p className="text-foreground/70 mb-8 leading-relaxed">{womensAttire.description}</p>
+
+          <SectionImage 
+            src="/images/budaya/pakaian/pakaian-wanita-visual.png" 
+            alt="Pakaian Adat Wanita Batak"
+            caption="Keanggunan busana wanita Batak dengan dominasi warna merah, hitam, dan emas"
+          />
 
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {womensAttire.components.map((component) => (
@@ -139,6 +194,12 @@ export default function PakaianAdatPage() {
             </p>
           </div>
 
+          <SectionImage 
+            src="/images/budaya/pakaian/jenis-ulos-visual.png" 
+            alt="Berbagai Jenis Ulos Batak"
+            caption="Ragam jenis Ulos dengan motif dan filosofi yang berbeda"
+          />
+
           {/* Ulos Types Grid */}
           <h3 className="mb-6 text-2xl font-semibold">Jenis-Jenis Ulos</h3>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
@@ -191,6 +252,13 @@ export default function PakaianAdatPage() {
         {/* Mangulosi Tradition */}
         <section className="mb-16">
           <h2 className="mb-6 text-3xl font-bold">Tradisi Mangulosi (Memberi Ulos)</h2>
+          
+          <SectionImage 
+            src="/images/budaya/pakaian/mangulosi-visual.png" 
+            alt="Upacara Mangulosi"
+            caption="Mangulosi: Simbol pemberian berkat dan perlindungan dalam adat Batak"
+          />
+
           <div className="bg-foreground/5 mb-8 rounded-lg p-8">
             <p className="text-foreground/70 mb-6 leading-relaxed">
               {pakaianData.ulosSignificance.givingTradition.description}
@@ -233,6 +301,13 @@ export default function PakaianAdatPage() {
         {/* Weaving Tradition */}
         <section className="mb-16">
           <h2 className="mb-6 text-3xl font-bold">Tradisi Menenun Ulos</h2>
+          
+          <SectionImage 
+            src="/images/budaya/pakaian/menenun-ulos-visual.png" 
+            alt="Menenun Ulos Tradisional"
+            caption="Proses menenun Ulos yang membutuhkan kesabaran dan keahlian tinggi"
+          />
+
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             <div className="bg-foreground/5 rounded-lg p-6">
               <h3 className="text-accent mb-4 text-xl font-semibold">Proses Menenun</h3>
@@ -315,6 +390,12 @@ export default function PakaianAdatPage() {
           <p className="text-foreground/70 mb-8 leading-relaxed">
             {pakaianData.regionalVariations.description}
           </p>
+
+          <SectionImage 
+            src="/images/budaya/pakaian/variasi-regional-visual.png" 
+            alt="Variasi Regional Pakaian Adat Batak"
+            caption="Perbedaan ciri khas busana dan hiasan kepala antar sub-etnis Batak"
+          />
           <div className="grid grid-cols-1 gap-6">
             {pakaianData.regionalVariations.variations.map((region: any, index: number) => (
               <div key={index} className="bg-foreground/5 rounded-lg p-6">

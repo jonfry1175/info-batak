@@ -1,0 +1,33 @@
+{
+  "name": "InfoBatak.id",
+  "short_name": "InfoBatak",
+  "description": "Portal digital tentang sejarah, budaya, adat, aksara, dan sistem marga Batak. Sumber informasi terlengkap tentang budaya Batak.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#C1272D",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "id",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["education", "culture", "reference"],
+  "screenshots": [],
+  "prefer_related_applications": false
+}
