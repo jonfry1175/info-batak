@@ -114,7 +114,7 @@ Implementasi fitur upload gambar untuk komentar di InfoBatak.id. Menggunakan Sup
     - Tambah imageErrorMessages constant
     - _Requirements: 1.4, 1.5_
 
-- [ ] 9. Final checkpoint
+- [x] 9. Final checkpoint
   - Ensure all tests pass, ask the user if questions arise.
 
 ## Notes
