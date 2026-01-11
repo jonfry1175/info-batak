@@ -81,34 +81,34 @@ Implementasi fitur upload gambar untuk komentar di InfoBatak.id. Menggunakan Sup
     - Keyboard support (Escape to close)
     - _Requirements: 2.3_
 
-- [-] 6. Checkpoint - Validasi UI components
+- [x] 6. Checkpoint - Validasi UI components
   - Ensure all tests pass, ask the user if questions arise.
 
-- [ ] 7. Integrasi dengan sistem diskusi
-  - [ ] 7.1 Update CommentForm untuk support image upload
+- [x] 7. Integrasi dengan sistem diskusi
+  - [x] 7.1 Update CommentForm untuk support image upload
     - Tambah ImageUpload dan ImagePreview components
     - Disable submit saat uploading
     - Upload image sebelum create comment
     - Pass image_url ke createComment
     - _Requirements: 1.7, 5.3_
-  - [ ] 7.2 Update fungsi createComment di `lib/discussion.ts`
+  - [x] 7.2 Update fungsi createComment di `lib/discussion.ts`
     - Tambah parameter optional imageUrl
     - Simpan image_url ke database
     - _Requirements: 1.7_
-  - [ ] 7.3 Update CommentItem untuk tampilkan gambar
+  - [x] 7.3 Update CommentItem untuk tampilkan gambar
     - Render CommentImage jika image_url ada
     - Integrate Lightbox untuk full-size view
     - _Requirements: 2.1, 2.2, 2.3_
-  - [ ] 7.4 Update deleteComment untuk hapus gambar dari storage
+  - [x] 7.4 Update deleteComment untuk hapus gambar dari storage
     - Fetch image_url sebelum delete
     - Delete image dari storage setelah delete comment
     - _Requirements: 3.3_
-  - [ ] 7.5 Write property test untuk cascade delete
+  - [x] 7.5 Write property test untuk cascade delete
     - **Property 7: Cascade Delete Storage**
     - **Validates: Requirements 3.3**
 
-- [ ] 8. Update types
-  - [ ] 8.1 Update TypeScript types di `types/index.ts`
+- [-] 8. Update types
+  - [-] 8.1 Update TypeScript types di `types/index.ts`
     - Tambah image_url ke Comment interface
     - Tambah ImageUploadError type
     - Tambah imageErrorMessages constant

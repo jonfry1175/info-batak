@@ -31,7 +31,7 @@ export interface UseDiscussionReturn {
     hasMore: boolean;
 
     // Actions
-    addComment: (content: string, parentId?: string) => Promise<boolean>;
+    addComment: (content: string, parentId?: string, imageUrl?: string) => Promise<boolean>;
     deleteComment: (commentId: string) => Promise<boolean>;
     toggleLike: (commentId: string) => Promise<boolean>;
     loadMore: () => Promise<void>;
@@ -117,10 +117,10 @@ export function useDiscussion(pagePath: string): UseDiscussionReturn {
 
     /**
      * Adds a new comment or reply
-     * Requirements: 2.1
+     * Requirements: 2.1, 1.7 (image upload)
      */
-    const addComment = useCallback(async (content: string, parentId?: string): Promise<boolean> => {
-        const result = await createComment(pagePath, content, parentId);
+    const addComment = useCallback(async (content: string, parentId?: string, imageUrl?: string): Promise<boolean> => {
+        const result = await createComment(pagePath, content, parentId, imageUrl);
 
         if (result.error) {
             setError(result.error);

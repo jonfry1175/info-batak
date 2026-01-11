@@ -511,6 +511,7 @@ export interface Comment {
   page_path: string;
   content: string;
   parent_id: string | null;
+  image_url: string | null;
   created_at: string;
   updated_at: string;
 }

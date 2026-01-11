@@ -1,4 +1,5 @@
 import { getSupabaseClient } from '@/lib/supabase';
+import { deleteImage } from '@/lib/image-upload';
 import type {
     Comment,
     CommentWithUser,
@@ -137,6 +138,7 @@ export async function fetchComments(
             page_path: comment.page_path,
             content: comment.content,
             parent_id: comment.parent_id,
+            image_url: comment.image_url || null,
             created_at: comment.created_at,
             updated_at: comment.updated_at,
             user: {
@@ -180,12 +182,13 @@ export async function fetchComments(
 /**
  * Creates a new comment or reply.
  * 
- * Requirements: 2.1 (save and display immediately)
+ * Requirements: 2.1 (save and display immediately), 1.7 (save image_url with comment)
  */
 export async function createComment(
     pagePath: string,
     content: string,
-    parentId?: string
+    parentId?: string,
+    imageUrl?: string
 ): Promise<DiscussionResult<Comment>> {
     const supabase = getSupabaseClient();
 
@@ -223,7 +226,7 @@ export async function createComment(
             }
         }
 
-        // Insert the comment
+        // Insert the comment with optional image_url
         const { data: newComment, error: insertError } = await supabase
             .from('comments')
             .insert({
@@ -231,6 +234,7 @@ export async function createComment(
                 page_path: pagePath,
                 content: trimmedContent,
                 parent_id: parentId || null,
+                image_url: imageUrl || null,
             })
             .select()
             .single();
@@ -249,8 +253,9 @@ export async function createComment(
 
 /**
  * Deletes a comment. Cascade delete of replies is handled by the database.
+ * Also deletes associated image from storage if present.
  * 
- * Requirements: 5.2 (remove from database), 5.3 (cascade delete replies)
+ * Requirements: 5.2 (remove from database), 5.3 (cascade delete replies), 3.3 (delete image from storage)
  */
 export async function deleteComment(
     commentId: string
@@ -264,10 +269,10 @@ export async function deleteComment(
             return { data: null, error: 'AUTH_REQUIRED' };
         }
 
-        // Verify the comment exists and belongs to the user
+        // Verify the comment exists and belongs to the user, also fetch image_url
         const { data: comment, error: fetchError } = await supabase
             .from('comments')
-            .select('id, user_id')
+            .select('id, user_id, image_url')
             .eq('id', commentId)
             .single();
 
@@ -279,6 +284,9 @@ export async function deleteComment(
             return { data: null, error: 'FORBIDDEN' };
         }
 
+        // Store image_url before deleting the comment
+        const imageUrl = comment.image_url;
+
         // Delete the comment (RLS will also enforce ownership)
         const { error: deleteError } = await supabase
             .from('comments')
@@ -288,6 +296,16 @@ export async function deleteComment(
         if (deleteError) {
             console.error('Error deleting comment:', deleteError);
             return { data: null, error: 'SERVER_ERROR' };
+        }
+
+        // Delete associated image from storage if present
+        if (imageUrl) {
+            const imageDeleted = await deleteImage(imageUrl);
+            if (!imageDeleted) {
+                // Log the error but don't fail the operation
+                // The comment is already deleted, image cleanup is best-effort
+                console.warn('Failed to delete image from storage:', imageUrl);
+            }
         }
 
         return { data: true, error: null };

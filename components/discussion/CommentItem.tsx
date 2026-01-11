@@ -4,6 +4,8 @@ import { useState } from 'react';
 import { useAuth } from '@/components/AuthProvider';
 import { Button } from '@/components/ui/button';
 import { CommentForm } from './CommentForm';
+import { CommentImage } from './CommentImage';
+import { Lightbox } from './Lightbox';
 import { cn } from '@/lib/utils';
 import type { CommentWithUser, CommentWithReplies } from '@/types';
 
@@ -16,7 +18,7 @@ interface CommentItemProps {
   onDelete: (commentId: string) => void;
   replyingTo?: string | null;
   onCancelReply?: () => void;
-  onSubmitReply?: (content: string) => Promise<boolean>;
+  onSubmitReply?: (content: string, imageUrl?: string) => Promise<boolean>;
   pagePath: string;
 }
 
@@ -129,6 +131,9 @@ function TrashIcon() {
  * - 1.3: Display nested replies
  * - 4.3: Show like status
  * - 5.1: Show delete option for owner
+ * - 2.1: Display image below comment text (image upload)
+ * - 2.2: Show thumbnail that can be clicked to view full size (image upload)
+ * - 2.3: Open lightbox/modal showing full-size image (image upload)
  */
 export function CommentItem({
   comment,
@@ -144,12 +149,14 @@ export function CommentItem({
 }: CommentItemProps) {
   const { user } = useAuth();
   const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
+  const [lightboxOpen, setLightboxOpen] = useState(false);
   
   const displayName = comment.user.display_name || 'Pengguna';
   const avatarUrl = comment.user.avatar_url;
   const isReply = !!comment.parent_id;
   const hasReplies = 'replies' in comment && comment.replies.length > 0;
   const isShowingReplyForm = replyingTo === comment.id;
+  const hasImage = !!comment.image_url;
   
   // Prevent self-liking
   const canLike = user && comment.user_id !== user.id;
@@ -203,6 +210,15 @@ export function CommentItem({
           <p className="mt-1 text-sm text-foreground whitespace-pre-wrap break-words">
             {comment.content}
           </p>
+
+          {/* Comment image */}
+          {hasImage && comment.image_url && (
+            <CommentImage
+              imageUrl={comment.image_url}
+              alt={`Gambar dari ${displayName}`}
+              onImageClick={() => setLightboxOpen(true)}
+            />
+          )}
 
           {/* Actions */}
           <div className="mt-2 flex items-center gap-1">
@@ -306,6 +322,15 @@ export function CommentItem({
             />
           ))}
         </div>
+      )}
+
+      {/* Lightbox for full-size image view */}
+      {hasImage && comment.image_url && (
+        <Lightbox
+          imageUrl={comment.image_url}
+          isOpen={lightboxOpen}
+          onClose={() => setLightboxOpen(false)}
+        />
       )}
     </div>
   );

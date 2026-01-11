@@ -104,13 +104,13 @@ export function DiscussionSection({ pagePath, className }: DiscussionSectionProp
     setReplyingTo,
   } = useDiscussion(pagePath);
 
-  const handleAddComment = async (content: string): Promise<boolean> => {
-    return addComment(content);
+  const handleAddComment = async (content: string, imageUrl?: string): Promise<boolean> => {
+    return addComment(content, undefined, imageUrl);
   };
 
-  const handleAddReply = async (content: string): Promise<boolean> => {
+  const handleAddReply = async (content: string, imageUrl?: string): Promise<boolean> => {
     if (!replyingTo) return false;
-    return addComment(content, replyingTo);
+    return addComment(content, replyingTo, imageUrl);
   };
 
   return (
