@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     description:
       'Telusuri jejak sejarah suku Batak dari legenda Si Raja Batak hingga 6 rumpun di Sumatera Utara.',
     url: 'https://infobatak.id/sejarah',
-    images: ['/images/sejarah/hero-sejarah.png'],
+    images: ['/images/sejarah/hero-sejarah-new.png'],
   },
   alternates: {
     canonical: 'https://infobatak.id/sejarah',
@@ -40,7 +40,7 @@ export default function SejarahPage() {
       <PageHero
         title="Sejarah Batak"
         subtitle="Menelusuri jejak sejarah, asal usul, dan kekayaan budaya masyarakat Batak di Sumatera Utara"
-        backgroundImage="/images/sejarah/hero-sejarah.png"
+        backgroundImage="/images/sejarah/hero-sejarah-new.png"
       />
 
       <div className="w-full px-4 py-16">

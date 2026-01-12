@@ -28,15 +28,15 @@
     },
     {
       "id": "hero-sejarah",
-      "src": "/images/sejarah/hero-sejarah.png",
-      "alt": "Lansekap Danau Toba purba saat matahari terbit dengan siluet rumah adat Batak",
+      "src": "/images/sejarah/hero-sejarah-new.png",
+      "alt": "Pemandangan mistis Gunung Pusuk Buhit dengan desa adat Batak kuno di kaki gunung",
       "category": "Sejarah",
       "subcategory": "Hero",
       "photographer": "AI Generated",
       "year": 2025,
       "license": "Public Domain",
-      "description": "Cinematic landscape of ancient Lake Toba region at sunrise with traditional Batak houses in silhouette",
-      "keywords": ["sejarah", "batak", "danau toba", "landscape", "hero"],
+      "description": "Cinematic view of sacred Pusuk Buhit mountain with ancient Batak village in the foreground, misty and mystical atmosphere",
+      "keywords": ["sejarah", "batak", "pusuk buhit", "rumah bolon", "landscape", "hero"],
       "placeholder": false
     },
     {

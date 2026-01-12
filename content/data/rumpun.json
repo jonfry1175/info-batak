@@ -4,7 +4,7 @@
     "nama": "Batak Toba",
     "slug": "toba",
     "deskripsi": "Sub-etnis terbesar yang mendiami kawasan sekitar Danau Toba, dikenal dengan tradisi marga yang kuat dan musik Gondang.",
-    "gambar": "/images/rumpun/toba.jpg",
+    "gambar": "/images/rumpun/toba-new.png",
     "wilayah": {
       "nama": "Tanah Batak Toba",
       "deskripsi": "Wilayah Batak Toba membentang di sekitar Danau Toba, danau vulkanik terbesar di dunia. Kawasan ini meliputi dataran tinggi dengan ketinggian 900-1.500 meter di atas permukaan laut, dikelilingi pegunungan Bukit Barisan.",
@@ -196,7 +196,7 @@
     "nama": "Batak Karo",
     "slug": "karo",
     "deskripsi": "Mendiami dataran tinggi Karo dengan budaya Merga Silima dan tradisi pertanian yang kuat.",
-    "gambar": "/images/rumpun/karo.jpg",
+    "gambar": "/images/rumpun/karo-new.png",
     "wilayah": {
       "nama": "Tanah Karo",
       "deskripsi": "Wilayah Batak Karo terletak di dataran tinggi Tanah Karo yang subur di kaki Gunung Sinabung dan Sibayak. Kawasan ini berada pada ketinggian 600-1.400 meter di atas permukaan laut dengan iklim sejuk yang cocok untuk pertanian sayuran dan buah-buahan.",
@@ -382,7 +382,7 @@
     "nama": "Batak Simalungun",
     "slug": "simalungun",
     "deskripsi": "Dikenal dengan kerajaan Simalungun dan tradisi Tortor Simalungun yang anggun.",
-    "gambar": "/images/rumpun/simalungun.jpg",
+    "gambar": "/images/rumpun/simalungun-new.png",
     "wilayah": {
       "nama": "Tanah Simalungun",
       "deskripsi": "Wilayah Batak Simalungun terletak di bagian timur Danau Toba, membentang dari dataran tinggi hingga pesisir timur Sumatera Utara. Kawasan ini memiliki topografi yang bervariasi dari pegunungan hingga dataran rendah.",
@@ -551,7 +551,7 @@
     "nama": "Batak Pakpak",
     "slug": "pakpak",
     "deskripsi": "Mendiami wilayah Dairi dengan tradisi Sulang-sulang dan kearifan lokal yang unik.",
-    "gambar": "/images/rumpun/pakpak.jpg",
+    "gambar": "/images/rumpun/pakpak-new.png",
     "wilayah": {
       "nama": "Tanah Pakpak",
       "deskripsi": "Wilayah Batak Pakpak terletak di pegunungan Dairi di barat Danau Toba. Kawasan ini memiliki topografi bergunung-gunung dengan ketinggian 800-1.500 meter di atas permukaan laut. Masyarakat Pakpak hidup dari pertanian dan hasil hutan.",
@@ -716,7 +716,7 @@
     "nama": "Batak Angkola",
     "slug": "angkola",
     "deskripsi": "Mendiami Tapanuli Selatan dengan pengaruh budaya Minangkabau dan tradisi Gordang Sambilan.",
-    "gambar": "/images/rumpun/angkola.jpg",
+    "gambar": "/images/rumpun/angkola-new.png",
     "wilayah": {
       "nama": "Tanah Angkola",
       "deskripsi": "Wilayah Batak Angkola terletak di Tapanuli Selatan bagian utara, membentang dari pegunungan hingga lembah sungai. Kawasan ini memiliki pengaruh budaya Minangkabau karena letaknya yang berbatasan dengan Sumatera Barat.",
@@ -890,7 +890,7 @@
     "nama": "Batak Mandailing",
     "slug": "mandailing",
     "deskripsi": "Mendiami Mandailing Natal dengan tradisi Islam yang kuat dan Gordang Sambilan.",
-    "gambar": "/images/rumpun/mandailing.jpg",
+    "gambar": "/images/rumpun/mandailing-new.png",
     "wilayah": {
       "nama": "Tanah Mandailing",
       "deskripsi": "Wilayah Batak Mandailing terletak di Mandailing Natal di selatan Tapanuli. Kawasan ini berbatasan langsung dengan Sumatera Barat dan memiliki pengaruh budaya Minangkabau yang kuat. Islam masuk lebih awal ke wilayah ini dibanding wilayah Batak lainnya.",
