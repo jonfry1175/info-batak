@@ -97,6 +97,15 @@ export default function KulinerPage() {
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
               {mainDishes.map((dish) => (
                 <div key={dish.id} className="group overflow-hidden rounded-xl border border-foreground/10 bg-background shadow-sm transition-all hover:shadow-md">
+                  <div className="relative h-56 w-full overflow-hidden">
+                    <Image
+                      src={dish.image}
+                      alt={dish.name}
+                      fill
+                      className="object-cover transition-transform duration-700 group-hover:scale-105"
+                      sizes="(min-width: 768px) 50vw, 100vw"
+                    />
+                  </div>
                   <div className="p-6">
                     <div className="mb-4 flex items-start justify-between">
                       <div>
@@ -236,7 +245,7 @@ export default function KulinerPage() {
           </section>
 
            {/* Appetizers & Soups */}
-           {appetizers.length > 0 && (
+            {appetizers.length > 0 && (
             <section className="mb-20">
               <h2 className="mb-8 flex items-center gap-3 text-3xl font-bold">
                 <span className="h-8 w-2 rounded-full bg-accent"></span>
@@ -244,20 +253,31 @@ export default function KulinerPage() {
               </h2>
               <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
                 {[...appetizers, ...soups].map((dish) => (
-                  <div key={dish.id} className="flex flex-col rounded-xl border border-foreground/10 bg-card p-6 shadow-sm transition-all hover:shadow-md hover:border-accent/30">
-                    <h3 className="mb-2 text-xl font-bold text-foreground">{dish.name}</h3>
-                    <p className="mb-4 flex-grow text-sm leading-relaxed text-foreground/70">
-                      {dish.description}
-                    </p>
-                    <div className="mt-auto">
-                      <div className="mb-3 inline-block rounded bg-accent/10 px-2 py-1 text-xs font-medium text-accent">
-                        {dish.taste}
+                  <div key={dish.id} className="group flex flex-col overflow-hidden rounded-xl border border-foreground/10 bg-card shadow-sm transition-all hover:shadow-md hover:border-accent/30">
+                    <div className="relative h-44 w-full">
+                      <Image
+                        src={dish.image}
+                        alt={dish.name}
+                        fill
+                        className="object-cover transition-transform duration-700 group-hover:scale-105"
+                        sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                      />
+                    </div>
+                    <div className="flex flex-col p-6">
+                      <h3 className="mb-2 text-xl font-bold text-foreground">{dish.name}</h3>
+                      <p className="mb-4 flex-grow text-sm leading-relaxed text-foreground/70">
+                        {dish.description}
+                      </p>
+                      <div className="mt-auto">
+                        <div className="mb-3 inline-block rounded bg-accent/10 px-2 py-1 text-xs font-medium text-accent">
+                          {dish.taste}
+                        </div>
+                        {dish.healthNote && (
+                          <p className="text-xs italic text-foreground/50 border-l-2 border-accent/50 pl-2">
+                            {dish.healthNote}
+                          </p>
+                        )}
                       </div>
-                      {dish.healthNote && (
-                        <p className="text-xs italic text-foreground/50 border-l-2 border-accent/50 pl-2">
-                          {dish.healthNote}
-                        </p>
-                      )}
                     </div>
                   </div>
                 ))}
@@ -268,33 +288,45 @@ export default function KulinerPage() {
           {/* Ceremonial Foods */}
           {ceremonialFoods.length > 0 && (
             <section className="mb-20">
-              <div className="mb-8 text-center">
-                 <h2 className="mb-4 text-3xl font-bold">Makanan Upacara Adat</h2>
-                 <p className="mx-auto max-w-2xl text-foreground/70">
-                  Simbolisme dalam setiap suguhan, melambangkan doa, harapan, dan struktur sosial Dalihan Na Tolu.
-                 </p>
-              </div>
-              
-              <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
-                {ceremonialFoods.map((food, index) => (
-                  <div key={food.id} className={`relative flex flex-col overflow-hidden rounded-2xl ${index % 2 === 0 ? 'bg-accent/5' : 'bg-foreground/5'} p-8`}>
-                    <div className="mb-4 flex items-center justify-between">
-                      <h3 className="text-2xl font-bold text-accent">{food.name}</h3>
-                      <span className="rounded-full bg-background px-3 py-1 text-xs font-bold uppercase tracking-wider text-foreground shadow-sm">
-                        Sakral
-                      </span>
-                    </div>
-                    <p className="mb-2 text-sm font-semibold text-foreground/80">Acara: {food.occasion}</p>
-                    <p className="mb-6 text-foreground/70">{food.description}</p>
-                    
-                    <div className="mt-auto rounded-xl bg-background/50 p-4 backdrop-blur-sm">
-                      <p className="text-sm italic text-foreground/80">
-                        <span className="font-bold text-accent">Makna:</span> {food.significance}
-                      </p>
-                    </div>
-                  </div>
-                ))}
-              </div>
+               <div className="mb-8 text-center">
+                  <h2 className="mb-4 text-3xl font-bold">Makanan Upacara Adat</h2>
+                  <p className="mx-auto max-w-2xl text-foreground/70">
+                   Simbolisme dalam setiap suguhan, melambangkan doa, harapan, dan struktur sosial Dalihan Na Tolu.
+                  </p>
+               </div>
+               
+               <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+                 {ceremonialFoods.map((food, index) => (
+                   <div key={food.id} className={`relative flex flex-col overflow-hidden rounded-2xl ${index % 2 === 0 ? 'bg-accent/5' : 'bg-foreground/5'} p-0`}>
+                     <div className="relative h-56 w-full overflow-hidden">
+                       <Image
+                         src={food.image}
+                         alt={food.name}
+                         fill
+                         className="object-cover"
+                         sizes="(min-width: 1024px) 50vw, 100vw"
+                       />
+                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                     </div>
+                     <div className="p-8">
+                       <div className="mb-4 flex items-center justify-between">
+                         <h3 className="text-2xl font-bold text-accent">{food.name}</h3>
+                         <span className="rounded-full bg-background px-3 py-1 text-xs font-bold uppercase tracking-wider text-foreground shadow-sm">
+                           Sakral
+                         </span>
+                       </div>
+                       <p className="mb-2 text-sm font-semibold text-foreground/80">Acara: {food.occasion}</p>
+                       <p className="mb-6 text-foreground/70">{food.description}</p>
+                       
+                       <div className="mt-auto rounded-xl bg-background/50 p-4 backdrop-blur-sm">
+                         <p className="text-sm italic text-foreground/80">
+                           <span className="font-bold text-accent">Makna:</span> {food.significance}
+                         </p>
+                       </div>
+                     </div>
+                   </div>
+                 ))}
+               </div>
             </section>
           )}
 
