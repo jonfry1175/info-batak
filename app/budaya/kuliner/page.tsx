@@ -8,7 +8,6 @@ import {
   getAllDrinks,
   getCeremonialFoods,
   getKulinerData,
-  getImagesByCategory,
 } from '@/lib/data';
 
 export const metadata: Metadata = {
@@ -43,8 +42,39 @@ export default function KulinerPage() {
   const ceremonialFoods = getCeremonialFoods();
   const kulinerData = getKulinerData();
 
-  // Get images for gallery
-  const kulinerImages = getImagesByCategory('Budaya', 'Kuliner');
+  // Build gallery images directly from kuliner data to ensure relevance
+  const kulinerImages = [
+    ...dishes.map((dish) => ({
+      id: dish.id,
+      src: dish.image,
+      alt: dish.name,
+      category: 'Budaya' as const,
+      subcategory: 'Kuliner',
+      description: dish.description,
+      photographer: 'InfoBatak',
+      placeholder: false,
+    })),
+    ...drinks.map((drink) => ({
+      id: drink.id,
+      src: drink.image,
+      alt: drink.name,
+      category: 'Budaya' as const,
+      subcategory: 'Kuliner',
+      description: drink.description,
+      photographer: 'InfoBatak',
+      placeholder: false,
+    })),
+    ...ceremonialFoods.map((food) => ({
+      id: food.id,
+      src: food.image,
+      alt: food.name,
+      category: 'Budaya' as const,
+      subcategory: 'Kuliner',
+      description: food.description,
+      photographer: 'InfoBatak',
+      placeholder: false,
+    })),
+  ];
 
   // Group dishes by category
   const mainDishes = dishes.filter((d) => d.category === 'main_dish');
