@@ -54,7 +54,7 @@
         "deskripsi": "Bupati Toba."
       }
     ],
-    "relatedMargas": ["manurung", "sirait"],
+    "relatedMargas": ["siahaan", "simbolon"],
     "updatedAt": "2025-01-11"
   },
   {
@@ -1092,7 +1092,7 @@
         "deskripsi": "Tokoh masyarakat Pakpak."
       }
     ],
-    "relatedMargas": ["banurea", "berutu"],
+    "relatedMargas": ["banurea", "tumanggor"],
     "updatedAt": "2025-01-10"
   },
   {
@@ -1149,7 +1149,7 @@
         "deskripsi": "Mantan Bupati Pakpak Bharat (Jalur kekerabatan sering erat)."
       }
     ],
-    "relatedMargas": ["berutu", "manik"],
+    "relatedMargas": ["manik", "bancin"],
     "updatedAt": "2025-01-10"
   },
   {
@@ -1206,7 +1206,7 @@
         "deskripsi": "Tokoh pendidikan di daerah Pakpak."
       }
     ],
-    "relatedMargas": ["boangmanalu", "berutu"],
+    "relatedMargas": ["tumanggor", "manik"],
     "updatedAt": "2025-01-10"
   },
   {
@@ -1263,7 +1263,7 @@
         "deskripsi": "Pengacara senior dan aktivis HAM."
       }
     ],
-    "relatedMargas": ["lubis", "pulungan"],
+    "relatedMargas": ["lubis", "rangkuti"],
     "updatedAt": "2025-01-11"
   },
   {
@@ -1320,7 +1320,7 @@
         "deskripsi": "Tokoh militer Indonesia, salah satu pendiri badan intelijen negara."
       }
     ],
-    "relatedMargas": ["nasution", "hutasuhut"],
+    "relatedMargas": ["nasution", "daulay"],
     "updatedAt": "2025-01-10"
   },
   {
@@ -1377,7 +1377,7 @@
         "deskripsi": "Sastrawan dan penulis Indonesia angkatan Pujangga Baru."
       }
     ],
-    "relatedMargas": ["parinduri", "pulungan"],
+    "relatedMargas": ["nasution", "hasibuan"],
     "updatedAt": "2025-01-10"
   },
   {
@@ -1434,7 +1434,7 @@
         "deskripsi": "Penulis sejarah Mandailing (catatan: meski marga Lubis, sering membahas kaitan antar marga)."
       }
     ],
-    "relatedMargas": ["hasibuan", "pasaribu"],
+    "relatedMargas": ["hasibuan", "lubis"],
     "updatedAt": "2025-01-10"
   },
   {
@@ -1491,7 +1491,7 @@
         "deskripsi": "Pengacara senior dan mantan anggota Dewan Pertimbangan Presiden."
       }
     ],
-    "relatedMargas": ["hutangjulung", "daulay"],
+    "relatedMargas": ["daulay", "nasution"],
     "updatedAt": "2025-01-10"
   },
   {
@@ -1613,7 +1613,7 @@
         "deskripsi": "Sastrawan Angkatan Balai Pustaka, penulis 'Azab dan Sengsara'."
       }
     ],
-    "relatedMargas": ["harahap", "ritonga"],
+    "relatedMargas": ["harahap", "rambe"],
     "updatedAt": "2025-01-10"
   },
   {
@@ -1667,7 +1667,7 @@
         "deskripsi": "Tokoh pendidikan di Tapanuli Selatan."
       }
     ],
-    "relatedMargas": ["simamora", "manalu"],
+    "relatedMargas": ["siregar", "batubara"],
     "updatedAt": "2025-01-10"
   },
   {
@@ -1721,7 +1721,7 @@
         "deskripsi": "Politisi muda."
       }
     ],
-    "relatedMargas": ["lubis", "pasaribu"],
+    "relatedMargas": ["harahap", "pohan"],
     "updatedAt": "2025-01-10"
   },
   {
@@ -1775,7 +1775,7 @@
         "deskripsi": "Akademisi."
       }
     ],
-    "relatedMargas": ["siagian", "simanjuntak"],
+    "relatedMargas": ["harahap", "siregar"],
     "updatedAt": "2025-01-10"
   }
 ]
